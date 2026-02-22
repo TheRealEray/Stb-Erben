@@ -1,0 +1,1051 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "dropdown": {
+      "taxCriminal": "Steuerstraf- & Bußgeldverfahren",
+      "insolvency": "Insolvenzbezogene Beratung & Krisenbegleitung",
+      "exitTax": "Wegzugssteuer & Internationales",
+      "ecommerce": "E-Commerce & Online-Handel",
+      "healthcare": "Heilberufe & MVZ",
+      "realEstate": "Immobilien & Vermögen",
+      "succession": "Nachfolge & Umstrukturierung",
+      "support": "Laufende Betreuung"
+    },
+    "about": "Über uns",
+    "faq": "FAQ",
+    "knowledge": "Wissen",
+    "tools": "Tools",
+    "pricing": "Honorar",
+    "career": "Karriere",
+    "contact": "Kontakt"
+  },
+  "pages": {
+    "services": {
+      "hero": {
+        "title": "Unsere Leistungen im Überblick",
+        "subtitle": "Mehr als Buchhaltung – wir begleiten Sie strategisch in allen steuerlichen Belangen.",
+        "cta1": "Beratung anfragen",
+        "cta2": "Zu den Leistungen"
+      },
+      "taxCriminal": {
+        "title": "Steuerstraf- & Bußgeldverfahren",
+        "intro": "Verteidigung und Begleitung in steuerstrafrechtlichen Verfahren – diskret, kompetent, strategisch.",
+        "description": "Steuerliche Fehler oder Unklarheiten können schnell zu einem Steuerstrafverfahren oder Bußgeldverfahren führen. Die Konsequenzen sind oft gravierend: Geldstrafen, Freiheitsstrafen, Reputationsschäden. Wir verteidigen und begleiten Sie in allen Phasen – von der Selbstanzeige bis zum Abschluss des Verfahrens.",
+        "servicesTitle": "Unsere Leistungen:",
+        "service1": "Selbstanzeigen:Prüfung der Voraussetzungen, Erstellung und Einreichung strafbefreiender Selbstanzeigen nach § 371 AO",
+        "service2": "Verteidigung in Steuerstrafverfahren:Begleitung bei Ermittlungsverfahren (Durchsuchungen, Vernehmungen, Anklagen)",
+        "service3": "Bußgeldverfahren:Verteidigung bei steuerlichen Ordnungswidrigkeiten",
+        "service4": "Kommunikation mit Behörden:Steuerfahndung, Staatsanwaltschaft, Finanzamt – wir übernehmen die Kommunikation",
+        "service5": "Strategische Beratung:Risikobewertung, Verfahrensstrategie, Schadensbegrenzung",
+        "service6": "Kooperation mit Strafverteidigern:Enge Zusammenarbeit mit spezialisierten Fachanwälten für Strafrecht",
+        "service7": "Krisenmanagement:Diskretion, schnelle Reaktion, klare Strategie",
+        "importantLabel": "Wichtig:",
+        "importantText": "Bei steuerstrafrechtlichen Fragen ist schnelles Handeln entscheidend. Kontaktieren Sie uns umgehend – auch außerhalb der Geschäftszeiten. Erste Beratung innerhalb von 24 Stunden.",
+        "cta": "Sofort vertraulich beraten lassen →"
+      },
+      "insolvency": {
+        "title": "Insolvenzbezogene Beratung & Krisenbegleitung",
+        "intro": "Finanzielle Krisen erfordern schnelles, strukturiertes Handeln. Wir begleiten Sie bei der Bewertung Ihrer Situation, der Entwicklung von Handlungsalternativen und der Umsetzung wirtschaftlich sinnvoller Lösungen – von der Krisenfrüherkennung bis zur Sanierung oder Insolvenz.",
+        "servicesTitle": "Unsere Leistungen:",
+        "service1": "Krisenfrüherkennung und wirtschaftliche Analyse",
+        "service2": "Entwicklung von Sanierungskonzepten",
+        "service3": "Begleitung bei Verhandlungen mit Gläubigern und Finanzierern",
+        "service4": "Steuerliche Beratung bei Sanierung und Entschuldung",
+        "service5": "Vorbereitung und Begleitung von Insolvenzverfahren",
+        "service6": "Beratung zu Insolvenzanfechtung und Haftungsrisiken",
+        "service7": "Zusammenarbeit mit Insolvenzverwaltern, Rechtsanwälten und Sanierungsberatern",
+        "noteLabel": "Hinweis:",
+        "noteText": "Je früher Sie handeln, desto mehr Gestaltungsspielraum haben Sie. Wir unterstützen Sie diskret und mit klarem Fokus auf wirtschaftlich tragfähige Lösungen.",
+        "cta": "Beratung anfragen"
+      },
+      "exitTax": {
+        "title": "Wegzugssteuer & Internationales",
+        "intro": "Ein Wegzug aus Deutschland bringt zahlreiche steuerliche Fragestellungen mit sich: Wegzugsbesteuerung, Doppelbesteuerungsabkommen, internationale Unternehmensstrukturen. Wir begleiten Sie bei der steuerlichen Einordnung und Planung – strukturiert, transparent und vorausschauend.",
+        "servicesTitle": "Unsere Leistungen:",
+        "service1": "Steuerliche Beratung bei Wegzug (Wegzugsbesteuerung nach § 6 AStG)",
+        "service2": "Analyse von Doppelbesteuerungsabkommen",
+        "service3": "Entwicklung internationaler Unternehmens- und Beteiligungsstrukturen",
+        "service4": "Grenzüberschreitende Vermögensplanung",
+        "service5": "Beratung zu Entstrickung und Stundungsmodellen",
+        "service6": "Laufende Betreuung bei Auslandsbezug (Ansässigkeitsbescheinigungen, ausländische Einkünfte)",
+        "cta": "Beratung anfragen"
+      },
+      "ecommerce": {
+        "title": "E-Commerce & Online-Handel",
+        "intro": "Internationaler Online-Handel ist komplex: Umsatzsteuer bei Plattformen (Amazon, eBay, Shopify), One-Stop-Shop (OSS), Lieferschwellen, Importregeln. Wir sind spezialisiert auf E-Commerce und helfen Ihnen, steuerlich sicher zu wachsen – egal ob Sie gerade starten oder bereits international verkaufen.",
+        "servicesTitle": "Unsere Leistungen:",
+        "service1": "Umsatzsteuer bei internationalen Plattformen (Amazon, eBay, Kaufland, Otto, Shopify etc.)",
+        "service2": "One-Stop-Shop (OSS) Registrierung und laufende Meldungen",
+        "service3": "Prüfung und Optimierung von Plattformmodellen (FBA, Dropshipping, B2B)",
+        "service4": "Strukturierung für Skalierung (GmbH, Holdingmodelle)",
+        "service5": "Import-/Export-Beratung (Brexit, Drittland, Zoll)",
+        "service6": "Steuerliche Begleitung bei Internationalisierung",
+        "service7": "Verteidigung bei Umsatzsteuer-Betriebsprüfungen",
+        "cta": "Beratung anfragen"
+      },
+      "healthcare": {
+        "title": "Heilberufe & Medizin",
+        "intro": "Ärzte, Zahnärzte, Apotheken, MVZ – Heilberufe haben besondere steuerliche Anforderungen. Gesellschaftsstrukturen (Einzelpraxis, Praxisgemeinschaft, BAG, MVZ-GmbH), Immobilienstrukturen, Nachfolgeplanung: Wir kennen die Besonderheiten und begleiten Sie individuell.",
+        "servicesTitle": "Unsere Leistungen:",
+        "service1": "Gründungsberatung (Einzelpraxis, Gemeinschaftspraxis, BAG, MVZ)",
+        "service2": "Gesellschaftsstrukturen und Gesellschaftsverträge (steuerliche Beratung als Nebenleistung)",
+        "service3": "Immobilienstrukturen bei Praxen (Eigentum, Miete, Betriebsaufspaltung)",
+        "service4": "Nachfolgeplanung und Praxisverkauf",
+        "service5": "Laufende Betreuung (Buchhaltung, Jahresabschluss, Steuererklärungen)",
+        "service6": "Investitionsabzugsbeträge und Abschreibungen",
+        "service7": "Kooperationsmodelle (steuerliche Einordnung)",
+        "cta": "Beratung anfragen"
+      },
+      "realEstate": {
+        "title": "Immobilien & Vermögen",
+        "intro": "Immobilien im Privatvermögen oder Betriebsvermögen? GmbH & Co. KG oder Einzelunternehmen? Vermögensübertragung an die nächste Generation? Wir entwickeln steueroptimale Strukturen und begleiten Sie bei der Umsetzung.",
+        "servicesTitle": "Unsere Leistungen:",
+        "service1": "Immobilienbesteuerung (privat und gewerblich)",
+        "service2": "Gesellschaftsmodelle (GmbH & Co. KG, GmbH, KG, Einzelunternehmen)",
+        "service3": "Vermögensübertragung und Schenkung (Freibeträge, 10-Jahres-Frist)",
+        "service4": "Spekulationsfristen und Abschreibungen (AfA, Sonder-AfA)",
+        "service5": "Betriebsaufspaltung und gewerblicher Grundstückshandel",
+        "service6": "Begleitung bei Immobilienkauf und -verkauf",
+        "service7": "Laufende Verwaltung (Buchhaltung für Immobilien-GmbHs)",
+        "cta": "Beratung anfragen"
+      },
+      "succession": {
+        "title": "Nachfolge & Umstrukturierung",
+        "intro": "Unternehmensübertragung an die nächste Generation, Verkauf, Umwandlung in eine Holding – Nachfolge und Umstrukturierung sind steuerlich hochkomplex. Wir entwickeln Strategien, die Vermögen schützen und Steuern optimieren.",
+        "servicesTitle": "Unsere Leistungen:",
+        "service1": "Unternehmensübertragung (Schenkung, Verkauf, gemischte Modelle)",
+        "service2": "Holdingmodelle und Familien-Holdingstrukturen",
+        "service3": "Umwandlungen nach UmwStG (Verschmelzung, Spaltung, Formwechsel, Einbringung)",
+        "service4": "Betriebsaufspaltung und Entflechtung",
+        "service5": "Erbschaft- und Schenkungsteuer (Freibeträge, Begünstigungen)",
+        "service6": "Gesellschaftsverträge und Testamentsgestaltung (rechtliche Beratung als Nebenleistung)",
+        "service7": "Laufende Begleitung und Umsetzung",
+        "cta": "Beratung anfragen"
+      },
+      "support": {
+        "title": "Laufende Betreuung & Buchhaltung",
+        "intro": "Sie wollen sich auf Ihr Geschäft konzentrieren, nicht auf Buchhaltung und Steuern? Wir übernehmen die komplette laufende Betreuung – von der Finanzbuchhaltung bis zur Steuererklärung. Auf Wunsch auch als ergänzende Beratung zu Ihrem internen Team.",
+        "servicesTitle": "Unsere Leistungen:",
+        "service1": "Finanzbuchhaltung (DATEV, digitale Belegerfassung)",
+        "service2": "Lohnbuchhaltung und Lohnsteueranmeldungen",
+        "service3": "Jahresabschlüsse (HGB, EStG) und Einnahmen-Überschuss-Rechnung (EÜR)",
+        "service4": "Alle Steuererklärungen (Einkommensteuer, Körperschaftsteuer, Umsatzsteuer, Gewerbesteuer)",
+        "service5": "Betriebswirtschaftliche Auswertungen (BWA) und Controlling",
+        "service6": "Begleitung bei Betriebsprüfungen und Einsprüchen",
+        "service7": "Krisenberatung und Restrukturierung",
+        "service8": "Verteidigung in Steuerstraf- und Bußgeldverfahren",
+        "cta": "Beratung anfragen"
+      },
+      "additional": {
+        "title": "Weitere Spezialisierungen",
+        "intro": "Über unsere Hauptschwerpunkte hinaus bieten wir weitere spezialisierte Leistungen:",
+        "service1": "Rechtliche Beratung als Nebenleistunggemäß § 5 Abs. 1 RDG (Gesellschaftsverträge, Vertragsgestaltung im steuerlichen Kontext)",
+        "service2": "Steuerstraf- und Bußgeldverfahren:Verteidigung und Begleitung",
+        "service3": "Gemeinnützigkeit & Vereine:Vereine, Stiftungen, gGmbHs, Anerkennungsverfahren",
+        "service4": "Digitalisierung & KI im Unternehmen:Steuerliche Einordnung, Prozessoptimierung, Automatisierung",
+        "service5": "Branchen-Know-how:Handwerk & Bau, Mobilität & Logistik, Handel, Pflege & Soziales",
+        "cta": "Beratung anfragen"
+      },
+      "ctaSection": {
+        "title": "Sie sind unsicher, welche Leistung zu Ihnen passt?",
+        "subtitle": "Lassen Sie uns sprechen – im Erstgespräch finden wir heraus, wie wir Ihnen helfen können.",
+        "button": "Erstgespräch anfragen"
+      }
+    },
+    "karriere": {
+      "hero": {
+        "title": "Karriere bei uns",
+        "subtitle": "Mehr als ein Arbeitsplatz. Eine Perspektive."
+      },
+      "intro": {
+        "text": "Wir glauben: Gute Arbeit entsteht dort, wo Struktur, Freiheit und Wertschätzung zusammenkommen. Deshalb schaffen wir ein Umfeld, in dem Menschen langfristig wachsen, Verantwortung übernehmen und gerne bleiben."
+      },
+      "benefits": {
+        "title": "Was dich bei uns erwartet",
+        "card1": {
+          "title": "Arbeitsumfeld & moderne Zusammenarbeit",
+          "subtitle": "Effizient, digital, professionell",
+          "point1": "• Vollständig digitale Kanzleistrukturen mit modernster IT-Ausstattung",
+          "point2": "• Zeitgemäße Arbeitsplätze",
+          "point3": "• Ortsflexibles Arbeiten – im Büro, hybrid oder remote",
+          "point4": "• Strukturierte Prozesse für fokussiertes Arbeiten",
+          "point5": "• Verlässliche Arbeitszeiten statt permanenter Erreichbarkeit"
+        },
+        "card2": {
+          "title": "Flexibilität & Lebensqualität",
+          "subtitle": "Leistung braucht Erholung",
+          "point1": "• Individuelle Arbeitszeitmodelle",
+          "point2": "• Überdurchschnittlicher Urlaubsanspruch (bis zu 32 Tage)",
+          "point3": "• Klare Vertretungsregelungen – Urlaub bleibt Urlaub",
+          "point4": "• Moderne Benefits zur Entlastung im Alltag",
+          "point5": "• Unterstützung bei Mobilität (Jobticket, Parkplatz)"
+        },
+        "card3": {
+          "title": "Teamkultur & Miteinander",
+          "subtitle": "Professionell – aber menschlich",
+          "point1": "• Regelmäßige Teamformate und gemeinsame Aktivitäten",
+          "point2": "• Kanzleiinterne Events",
+          "point3": "• Wertschätzende Feedbackkultur statt Hierarchiedenken",
+          "point4": "• Offene Kommunikation auf Augenhöhe",
+          "point5": "• Leistung wird gesehen und anerkannt"
+        },
+        "card4": {
+          "title": "Fachliche Entwicklung & Karrierewege",
+          "subtitle": "Wachsen ist bei uns kein Zufall, sondern Konzept",
+          "point1": "• Individuelle Weiterbildungsplanung mit Zeitkontingent",
+          "point2": "• Unterstützung bei berufsbegleitenden Studiengängen",
+          "point3": "• Gezielte Förderung zum Steuerberater-Examen",
+          "point4": "• Aufbau eigener fachlicher Schwerpunkte",
+          "point5": "• Möglichkeit zur fachlichen Führungsverantwortung",
+          "point6": "• Aktive Mitgestaltung von Kanzleistrukturen"
+        },
+        "card5": {
+          "title": "Perspektiven & Beteiligung",
+          "subtitle": "Karriere bedeutet bei uns Mitwirkung",
+          "point1": "• Transparente Karrieremodelle statt leerer Titel",
+          "point2": "• Leistungsorientierte variable Vergütungskomponenten",
+          "point3": "• Beteiligung an unternehmerischem Wachstum",
+          "point4": "• Übernahme von Team-, Standort- oder Projektverantwortung",
+          "point5": "• Mitwirkung an neuen Geschäftsfeldern"
+        },
+        "card6": {
+          "title": "Moderne Benefits & besondere Möglichkeiten",
+          "subtitle": "Mehr als Standardleistungen",
+          "point1": "• Monatliche Sachzuwendungen",
+          "point2": "• Zusätzliche Sonderleistungen nach Vereinbarung",
+          "point3": "• Flexible Modelle zur Verbindung von Arbeit, Reisen und Familie"
+        }
+      },
+      "target": {
+        "title": "Wen wir ansprechen",
+        "intro": "Wir suchen Menschen, die nicht nur einen Job suchen, sondern eine berufliche Heimat mit echter Perspektive:",
+        "card1": {
+          "title": "Fachlich wachsen möchten",
+          "text": "Du willst nicht stehen bleiben, sondern dich kontinuierlich weiterentwickeln – fachlich, methodisch und strategisch."
+        },
+        "card2": {
+          "title": "Verantwortung übernehmen wollen",
+          "text": "Du suchst Gestaltungsspielraum und bist bereit, für Ergebnisse einzustehen – ohne ständige Mikrosteuerung."
+        },
+        "card3": {
+          "title": "Strukturiert arbeiten und mitdenken",
+          "text": "Du schätzt klare Prozesse, willst aber nicht nur Anweisungen abarbeiten, sondern aktiv mitgestalten."
+        },
+        "card4": {
+          "title": "Langfristiges Zuhause suchen",
+          "text": "Du suchst keine Durchgangsstation, sondern eine berufliche Heimat mit echter Perspektive und Wertschätzung."
+        },
+        "closing": "Ganz gleich, ob Berufseinsteiger, erfahrene Fachkraft oder ambitionierter Wechsel – entscheidend ist dein Anspruch an dich selbst."
+      },
+      "cta": {
+        "title": "Dein Einstieg bei uns",
+        "text": "Der Bewerbungsprozess ist bewusst unkompliziert und diskret gehalten. Ein erstes Gespräch dient dem gegenseitigen Kennenlernen – ohne Druck, ohne Formalismus.",
+        "button": "Jetzt Kontakt aufnehmen"
+      }
+    },
+    "wissen": {
+      "hero": {
+        "title": "Wissen Steuerliche Außenprüfung",
+        "subtitle": "Was Sie über Betriebsprüfungen wissen sollten – Ablauf, Rechte und strategische Begleitung"
+      },
+      "intro": "Eine steuerliche Außenprüfung ist für viele Unternehmer, Selbstständige und Freiberufler ein erheblicher Einschnitt. Was häufig als „Routineprüfung\" beginnt, kann schnell zu Steuernachzahlungen, Zinsbelastungen oder sogar steuerstrafrechtlichen Risiken führen.",
+      "what": {
+        "title": "Was ist eine steuerliche Außenprüfung?",
+        "text1": "Die steuerliche Außenprüfung ist ein gesetzlich geregeltes Prüfungsverfahren, mit dem die Finanzverwaltung die steuerlichen Verhältnisse eines Steuerpflichtigen umfassend überprüft. Rechtsgrundlage sind insbesondere die §§ 193 ff. Abgabenordnung (AO) sowie die Betriebsprüfungsordnung.",
+        "goal": "<strong style=\"color: var(--color-primary);\">Ziel der Außenprüfung:</strong> Gleichmäßigkeit der Besteuerung unter Beachtung des Verhältnismäßigkeitsgrundsatzes."
+      },
+      "whatIsChecked": {
+        "title": "Was prüft die Finanzverwaltung tatsächlich?",
+        "intro": "Im Rahmen einer steuerlichen Außenprüfung beschränkt sich die Finanzverwaltung nicht auf einen reinen Zahlenabgleich. Vielmehr nimmt sie eine gesamtbetriebliche Würdigung vor, bei der wirtschaftliche Abläufe, organisatorische Strukturen und unternehmerische Entscheidungen umfassend bewertet werden.",
+        "card1": {
+          "title": "Betriebliche Abläufe",
+          "description": "Arbeitsabläufe, Zuständigkeiten, Einkaufs- und Verkaufsprozesse, Lagerhaltung"
+        },
+        "card2": {
+          "title": "Kalkulationen & Preise",
+          "description": "Rohgewinnaufschläge, Wareneinsatzquoten, Preisvergleiche"
+        },
+        "card3": {
+          "title": "Kassenführung",
+          "description": "Ordnungsgemäße Aufzeichnungen, formelle Korrektheit"
+        },
+        "card4": {
+          "title": "Unternehmerische Entscheidungen",
+          "description": "Investitionen, Personalstrukturen, Vertragsgestaltungen"
+        }
+      },
+      "whoIsAudited": {
+        "title": "Wer wird geprüft – und wie oft?",
+        "intro": "Außenprüfungen betreffen nicht nur Großunternehmen. Die Prüfungsdichte richtet sich nach Größenklassen, Branche, Auffälligkeiten und Risikokriterien der Finanzverwaltung.",
+        "subtitle": "Betroffene Unternehmensformen:",
+        "item1": "Kapitalgesellschaften (GmbH, UG, AG)",
+        "item2": "Personengesellschaften",
+        "item3": "Einzelunternehmer und Freiberufler",
+        "item4": "Unternehmer mit Kassenführung oder Bargeschäften",
+        "item5": "International tätige Unternehmen"
+      },
+      "auditProcess": {
+        "title": "Der Ablauf der Außenprüfung",
+        "step1": {
+          "title": "Die Prüfungsanordnung",
+          "intro": "Jede Außenprüfung beginnt mit einer Prüfungsanordnung. Diese muss enthalten:",
+          "item1": "Rechtsgrundlage der Prüfung",
+          "item2": "Prüfungszeitraum",
+          "item3": "Betroffene Steuerarten",
+          "item4": "Ggf. besondere Prüfungsschwerpunkte",
+          "warningLabel": "⚠️ Wichtig:",
+          "warningText": "Die Prüfungsanordnung ist kein bloßer Formalakt, sondern der erste strategische Ansatzpunkt. Fehler oder Unklarheiten können hier bereits rechtlich angreifbar sein."
+        },
+        "step2": {
+          "title": "Mitwirkungspflichten",
+          "description": "Der Steuerpflichtige ist zur Mitwirkung verpflichtet – jedoch nicht grenzenlos. Grundsätzlich erfolgt die Prüfung in den Geschäftsräumen des Steuerpflichtigen. Dauer und Umfang müssen sich am notwendigen Maß orientieren."
+        },
+        "step3": {
+          "title": "Datenzugriff und digitale Prüfung",
+          "description": "Die Finanzverwaltung greift zunehmend auf digitale Auswertungen zurück (IDEA, Kennzahlenvergleiche, Zeitreihenanalysen)."
+        }
+      },
+      "estimation": {
+        "title": "Schätzung von Besteuerungsgrundlagen (§ 162 AO)",
+        "whenAllowed": {
+          "title": "Wann ist eine Schätzung zulässig?",
+          "intro": "Eine Schätzung ist zulässig, wenn:",
+          "item1": "Buchführung formelle oder materielle Mängel aufweist",
+          "item2": "Aufzeichnungen nicht vorgelegt werden",
+          "item3": "Kassenführung nicht ordnungsgemäß ist",
+          "warningLabel": "⚠️ Wichtig:",
+          "warningText": "Nicht jeder formelle Mangel rechtfertigt automatisch eine Vollschätzung."
+        },
+        "requirements": {
+          "title": "Anforderungen an eine ordnungsgemäße Schätzung",
+          "intro": "Die Rechtsprechung verlangt, dass eine Schätzung:",
+          "item1": "Schlüssig",
+          "is": "ist",
+          "item2": "Wirtschaftlich möglich",
+          "item3": "Realitätsnah",
+          "item4": "Verhältnismäßig",
+          "note": "Pauschale oder schematische Zuschläge sind unzulässig."
+        }
+      },
+      "benchmarks": {
+        "title": "Richtsatzsammlungen – Grenzen und Rechtsprechung",
+        "intro": "Die Finanzverwaltung nutzt branchenspezifische Richtsatzsammlungen als Vergleichswerte. Diese dürfen jedoch nicht mechanisch angewendet werden.",
+        "principles": {
+          "title": "Zentrale Rechtsprechungsgrundsätze (BFH)",
+          "item1": "Richtsätze sind Orientierungshilfen, keine verbindlichen Maßstäbe",
+          "item2": "Individuelle betriebliche Besonderheiten müssen berücksichtigt werden",
+          "item3": "Statistische Durchschnittswerte bilden keine Unternehmensrealität ab"
+        }
+      },
+      "ourApproach": {
+        "title": "Unser Ansatz: Einzelfall statt Statistik",
+        "intro": "Eine steuerliche Außenprüfung darf keine „Statistikbesteuerung\" sein. Wir setzen daher konsequent auf:",
+        "item1": "Die Herausarbeitung der individuellen Unternehmensstruktur",
+        "item2": "Die rechtliche Begrenzung von Schätzungen",
+        "item3": "Die argumentative Einordnung von Richtsätzen und Kennzahlen in den konkreten betrieblichen Kontext",
+        "goal": "Ziel ist es, pauschale Annahmen der Finanzverwaltung durch nachvollziehbare, rechtlich belastbare Einzelfallargumente zu ersetzen."
+      },
+      "howWeHelp": {
+        "title": "Wie wir Sie begleiten",
+        "description": "Wir begleiten unsere Mandanten umfassend von der Prüfungsanordnung bis zur Klage vor dem Bundesfinanzhof. Unser Fokus liegt nicht auf bloßer Reaktion, sondern auf frühzeitiger Strukturierung, rechtlicher Einordnung und strategischer Verhandlungsführung mit der Finanzverwaltung."
+      },
+      "cta": {
+        "title": "Haben Sie Fragen zur Betriebsprüfung?",
+        "description": "Nehmen Sie Kontakt mit uns auf – wir beraten Sie gerne zu Ihrem konkreten Fall.",
+        "button": "Jetzt Kontakt aufnehmen"
+      }
+    },
+    "tools": {
+      "hero": {
+        "title": "Steuer-Tools & Rechner",
+        "subtitle": "Hilfreiche Online-Rechner und Tools für Ihre Steuerplanung. Schnell, kostenlos und einfach zu bedienen."
+      },
+      "intro": "Nutzen Sie unsere handverlesene Sammlung an Steuerrechnern, Formularen und Tools. Diese externen Rechner öffnen sich in einem neuen Fenster.",
+      "taxCalculators": {
+        "heading": "Steuerrechner",
+        "incomeTax": {
+          "title": "Einkommensteuer-Rechner",
+          "text": "Berechnen Sie Ihre Einkommensteuer und Solidaritätszuschlag",
+          "link": "Zum Rechner →"
+        },
+        "giftTax": {
+          "title": "Schenkungssteuer-Rechner",
+          "text": "Freibeträge und Steuer bei Schenkungen ermitteln",
+          "link": "Zum Rechner →"
+        },
+        "grossNet": {
+          "title": "Brutto/Nettolohnrechner",
+          "text": "Nettogehalt aus Bruttolohn berechnen inkl. Sozialabgaben",
+          "link": "Zum Rechner →"
+        }
+      },
+      "socialSecurity": {
+        "heading": "Sozialversicherung & Arbeit",
+        "parentalBenefit": {
+          "title": "Elterngeld-Rechner",
+          "text": "Elterngeldanspruch berechnen und optimieren",
+          "link": "Zum Rechner →"
+        },
+        "careBenefit": {
+          "title": "Pflegegeld-Rechner",
+          "text": "Pflegegeld und Pflegesachleistungen ermitteln",
+          "link": "Zum Rechner →"
+        },
+        "maternityProtection": {
+          "title": "Mutterschutz-Rechner",
+          "text": "Mutterschutzfristen berechnen",
+          "link": "Zum Rechner →"
+        },
+        "workingDays": {
+          "title": "Arbeitstage-Rechner",
+          "text": "Arbeitstage zwischen zwei Daten ermitteln",
+          "link": "Zum Rechner →"
+        },
+        "miniJob": {
+          "title": "Minijob-Rechner",
+          "text": "Abgaben und Kosten bei Minijobs berechnen",
+          "link": "Zum Rechner →"
+        }
+      },
+      "businessStartup": {
+        "heading": "Unternehmensgründung",
+        "founderCheck": {
+          "title": "Gründercheck",
+          "text": "Sind Sie bereit für die Selbstständigkeit? Prüfen Sie es",
+          "link": "Zum Tool →"
+        },
+        "businessPlan": {
+          "title": "Businessplan",
+          "text": "Vorlage und Leitfaden für Ihren Businessplan",
+          "link": "Zum Tool →"
+        },
+        "fundingCalculator": {
+          "title": "Förderrechner",
+          "text": "Welche Fördermittel stehen Ihnen zu?",
+          "link": "Zum Rechner →"
+        },
+        "gmbhChecklist": {
+          "title": "Gründungscheckliste GmbH",
+          "text": "Alle Schritte zur GmbH-Gründung im Überblick",
+          "link": "Zur Checkliste →"
+        },
+        "pensionPlan": {
+          "title": "Betriebliche Altersvorsorge",
+          "text": "Rechner für betriebliche Altersvorsorge",
+          "link": "Zum Rechner →"
+        }
+      },
+      "additionalTools": {
+        "heading": "Weitere Tools",
+        "deadlineCalculator": {
+          "title": "Fristenrechner (BGB)",
+          "text": "Gesetzliche Fristen nach BGB berechnen",
+          "link": "Zum Rechner →"
+        },
+        "loanCalculator": {
+          "title": "Kreditrechner",
+          "text": "Kreditraten und Zinsen berechnen",
+          "link": "Zum Rechner →"
+        },
+        "sampleContracts": {
+          "title": "Musterverträge",
+          "text": "Kostenlose Musterverträge und Vorlagen",
+          "link": "Zu den Vorlagen →"
+        },
+        "forms": {
+          "title": "Formulare",
+          "text": "Wichtige Steuerformulare zum Download",
+          "link": "Zu den Formularen →"
+        },
+        "tables": {
+          "title": "Tabellen",
+          "text": "Steuertabellen und Übersichten",
+          "link": "Zu den Tabellen →"
+        }
+      },
+      "note": {
+        "title": "Hinweis zu den Tools",
+        "text": "Die hier verlinkten Rechner und Tools sind externe Angebote und öffnen sich in einem neuen Fenster. Wir übernehmen keine Gewähr für die Richtigkeit der Berechnungen. Bei konkreten Fragen zu Ihrer steuerlichen Situation kontaktieren Sie uns gerne für eine persönliche Beratung."
+      },
+      "cta": {
+        "title": "Fragen zu Ihrer Steuersituation?",
+        "subtitle": "Online-Rechner sind ein guter erster Schritt. Für eine fundierte Beratung stehen wir Ihnen persönlich zur Verfügung.",
+        "button": "Jetzt Beratung anfragen"
+      }
+    },
+    "about": {
+      "hero": {
+        "title": "Über Steuerkanzlei Ibrahim Erben",
+        "subtitle": "Steuerberatung aus Düren – persönlich, kompetent, vorausschauend. Ihr Partner für komplexe Steuerfragen.",
+        "cta1": "Kennenlernen",
+        "cta2": "Unsere Werte"
+      },
+      "story": {
+        "heading": "Wir schaffen Klarheit, bevor Sie entscheiden",
+        "intro": "Steuerliche Entscheidungen sind selten dringend – aber fast immer folgenschwer. Wenn Sie vor wichtigen Weichenstellungen stehen, brauchen Sie keine schnellen Antworten, sondern fundierte Einschätzungen, klare Strategien und einen Partner, der mitdenkt.",
+        "paragraph2": "Viele Unternehmer kommen zu uns, wenn klassische Steuerberatung nicht mehr ausreicht. Wenn Strukturen wachsen, Geschäftsfelder komplexer werden oder internationale Bezüge hinzukommen. Wenn Sie nicht nur Steuererklärungen brauchen, sondern strategische Gestaltung, Risikobewertung und belastbare Konzepte.",
+        "paragraph3": "Oft arbeiten wir mit Unternehmen, die bereits Holdingstrukturen, Beteiligungen oder grenzüberschreitende Modelle haben – aber das steuerliche Potenzial nicht vollständig nutzen oder Risiken übersehen. Wir analysieren, was da ist, identifizieren Schwachstellen und entwickeln Lösungen, die rechtssicher funktionieren und wirtschaftlich Sinn ergeben.",
+        "paragraph4": "Darüber hinaus betreuen wir bereits auf Erfolgskurs eingestellte Mandanten, bei denen die steuerliche Beratung in der Vergangenheit häufig auf laufende Deklaration reduziert war und Gestaltungspotenziale nicht erkannt oder nicht genutzt wurden. Dies betrifft insbesondere wachstumsstarke Unternehmer, Influencer und Blogger mit hoher Reichweite sowie Mandanten mit breit angelegten und dynamischen Geschäftsfeldern.",
+        "paragraph5": "Was unsere Kanzlei auszeichnet, ist einestrukturierte, strategische und verfahrenssichere Arbeitsweisesowie einehohe Erfolgsquote– insbesondere in Gestaltungsfragen, Betriebsprüfungen, streitigen Verfahren und sensiblen steuerstrafrechtlichen Konstellationen. Unser Fokus liegt dabei nicht auf kurzfristigen Einzelmaßnahmen, sondern auf nachhaltigen, rechtssicheren Lösungen, die auch unter Prüfungs- und Haftungsgesichtspunkten Bestand haben.",
+        "paragraph6": "Wir verstehen uns dabei auch alsBerater für Berater. In komplexen oder besonders sensiblen Sachverhalten werden wir regelmäßig von Steuerberatern, Wirtschaftsprüfern und Rechtsanwälten hinzugezogen, um Spezialfragen einzuordnen, Strukturen weiterzuentwickeln oder Gestaltungen fachlich abzusichern."
+      },
+      "philosophy": {
+        "heading": "Unsere Philosophie",
+        "card1Title": "Persönlich",
+        "card1Text": "Sie haben einen festen Ansprechpartner – keine Rotation, keine Anonymität. Wir lernen Ihr Geschäft kennen und begleiten Sie langfristig.",
+        "card2Title": "Proaktiv",
+        "card2Text": "Wir denken mit, informieren Sie über gesetzliche Änderungen und zeigen Optimierungspotenziale – nicht nur auf Nachfrage.",
+        "card3Title": "Digital",
+        "card3Text": "Moderne Tools, Cloud-Buchhaltung, Video-Calls – wir arbeiten digital, effizient und ortsunabhängig. Vor Ort in Düren sind Sie natürlich auch willkommen.",
+        "card4Title": "Spezialisiert",
+        "card4Text": "Tiefes Wissen in unseren Schwerpunkten statt oberflächliche Allround-Beratung. Wenn wir Ihnen helfen können, tun wir das richtig."
+      },
+      "team": {
+        "heading": "Unser Team",
+        "intro": "[ANNAHME] Unser Team besteht aus erfahrenen Steuerberatern und Fachangestellten, die sich auf ihre Fachgebiete spezialisiert haben. Wir arbeiten Hand in Hand, um Ihnen die beste Beratung zu bieten.",
+        "outro": "Gemeinsam bilden wir ein starkes Team – mit Expertise, Erfahrung und echtem Interesse an Ihrem Erfolg."
+      },
+      "location": {
+        "heading": "Unser Standort in Düren",
+        "intro": "[ANNAHME] Mitten in Düren, gut erreichbar und mit Parkplätzen vor Ort. Sie arbeiten lieber digital? Kein Problem – viele unserer Mandanten arbeiten ausschließlich remote mit uns.",
+        "addressLabel": "Adresse",
+        "phoneLabel": "Telefon",
+        "emailLabel": "Email"
+      },
+      "cta": {
+        "title": "Lernen Sie uns kennen",
+        "subtitle": "Im persönlichen Gespräch – vor Ort oder digital.",
+        "button": "Termin vereinbaren"
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "Lassen Sie uns sprechen",
+        "subtitle": "Wir freuen uns auf Ihre Nachricht. Kontaktieren Sie uns telefonisch, per E-Mail oder über unser Kontaktformular – wir melden uns innerhalb von 24 Stunden."
+      },
+      "form": {
+        "heading": "Nachricht senden",
+        "intro": "Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+        "nameLabel": "Name *",
+        "emailLabel": "E-Mail-Adresse *",
+        "phoneLabel": "Telefon (optional)",
+        "subjectLabel": "Betreff *",
+        "subjectPlaceholder": "Bitte wählen Sie...",
+        "subjectOption1": "Allgemeine Anfrage",
+        "subjectOption2": "Karriere",
+        "subjectOption3": "Fragen und Anliegen",
+        "subjectOption4": "Steuerberatung",
+        "subjectOption5": "Terminanfrage",
+        "messageLabel": "Ihre Nachricht *",
+        "attachmentsLabel": "Anhänge (optional)",
+        "attachmentsNote": "Max. 10 MB pro Datei. Erlaubte Formate: PDF, DOC, DOCX, JPG, PNG",
+        "privacyLabel": "Ich habe dieDatenschutzerklärunggelesen und bin mit der Verarbeitung meiner Daten zum Zweck der Bearbeitung meiner Anfrage einverstanden. *",
+        "submitButton": "Nachricht senden"
+      },
+      "info": {
+        "heading": "Kontaktdaten",
+        "intro": "Sie erreichen uns auch direkt per Telefon oder E-Mail.",
+        "addressLabel": "Adresse",
+        "phoneLabel": "Telefon",
+        "emailLabel": "E-Mail",
+        "hoursLabel": "Öffnungszeiten",
+        "hoursValue": "Montag–Freitag08:30–18:00 Uhr"
+      },
+      "reviews": {
+        "title": "Was unsere Mandanten sagen",
+        "button": "Bewerten Sie uns auf Google"
+      },
+      "social": {
+        "title": "Folgen Sie uns",
+        "whatsapp": "WhatsApp",
+        "telegram": "Telegram",
+        "instagram": "Instagram"
+      },
+      "map": {
+        "heading": "So finden Sie uns",
+        "intro": "Weierstraße 43, 52349 Düren – mitten in Düren, gut erreichbar."
+      }
+    },
+    "faq": {
+      "hero": {
+        "title": "Häufig gestellte Fragen",
+        "subtitle": "Transparenz von Anfang an. Hier finden Sie Antworten auf die wichtigsten Fragen zu unserer Arbeitsweise, Kosten und Leistungen.",
+        "cta1": "Persönliche Frage stellen",
+        "cta2": "Zu den FAQs"
+      },
+      "sections": {
+        "general": "Allgemeine Fragen",
+        "consultation": "Erstgespräch & Kosten",
+        "collaboration": "Zusammenarbeit",
+        "specializations": "Spezialisierungen",
+        "other": "Weitere Fragen",
+        "audits": "Betriebsprüfungen & Verfahren",
+        "taxcriminal": "Steuerstrafrecht",
+        "restructuring": "Umstrukturierungen",
+        "crisis": "Krise & Insolvenz",
+        "international": "Internationales & Türkei"
+      },
+      "q1": {
+        "q": "Für wen sind Sie die richtige Kanzlei?",
+        "a": "Wir sind spezialisiert auf Unternehmer, Selbstständige und Freiberufler mit komplexen steuerlichen Fragestellungen. Unsere Schwerpunkte liegen auf Wegzugssteuer, E-Commerce, Heilberufen, Immobilien und Unternehmensstrukturen. Wenn Sie proaktive Beratung auf Augenhöhe suchen – nicht nur jährliche Steuererklärungen –, sind Sie bei uns richtig."
+      },
+      "q2": {
+        "q": "Arbeiten Sie auch überregional/remote?",
+        "a": "Ja, absolut. Viele unserer Mandanten sitzen deutschlandweit oder im Ausland. Wir nutzen moderne Tools für die digitale Zusammenarbeit: Video-Calls, Cloud-Buchhaltung, sichere Dokumentenübermittlung. Persönliche Treffen sind natürlich auch möglich – vor Ort in Düren oder bei Ihnen."
+      },
+      "q3": {
+        "q": "Welche Software nutzen Sie?",
+        "a": "Wir arbeiten mit DATEV für Buchhaltung und Lohn – dem Branchenstandard für professionelle Steuerberatung. Für die digitale Zusammenarbeit nutzen wir moderne Cloud-Lösungen, sichere Dokumentenportale und Video-Conferencing. Die Zusammenarbeit ist ortsunabhängig und effizient möglich."
+      },
+      "q4": {
+        "q": "Was kostet das Erstgespräch?",
+        "a": "Das erste Gespräch (30 Minuten) ist für Sie kostenfrei. Wir lernen uns kennen, Sie schildern Ihre Situation und wir klären, wie wir Ihnen helfen können. Erst danach erhalten Sie ein transparentes Angebot – ohne versteckte Kosten."
+      },
+      "q5": {
+        "q": "Wie läuft das Erstgespräch ab?",
+        "a": "Das Erstgespräch ist unverbindlich und dauert ca. 30 Minuten. Wir lernen uns kennen, Sie schildern Ihre Situation und Ihre Fragen. Wir geben Ihnen eine erste Einschätzung und klären, ob und wie wir zusammenarbeiten können. Danach entscheiden Sie in Ruhe, ob Sie mit uns arbeiten möchten."
+      },
+      "q6": {
+        "q": "Welche Unterlagen sollte ich mitbringen?",
+        "a": "Für das Erstgespräch brauchen Sie keine Unterlagen. Eine kurze Beschreibung Ihrer Situation genügt (z. B. \"Ich plane einen Wegzug ins Ausland\" oder \"Ich verkaufe auf Amazon international\"). Alle Details besprechen wir dann im Gespräch. Bei konkreten Projekten können Sie gerne relevante Unterlagen mitbringen, ist aber keine Voraussetzung."
+      },
+      "q7": {
+        "q": "Wie berechnen sich Ihre Honorare?",
+        "a": "Unsere Honorare richten sich nach der Steuerberatervergütungsverordnung (StBVV) oder nach individueller Vereinbarung. Bei Projekten (z. B. Wegzugsberatung, Strukturierung) bieten wir oft Pauschalpreise an – so wissen Sie von Anfang an, was auf Sie zukommt. Bei laufender Betreuung arbeiten wir mit monatlichen Pauschalen oder nach tatsächlichem Aufwand. Transparenz ist uns wichtig: Sie erhalten immer vorher ein klares Angebot."
+      },
+      "q8": {
+        "q": "Gibt es Pauschalpreise?",
+        "a": "Ja, für viele Leistungen bieten wir Pauschalpreise an – zum Beispiel für Jahresabschlüsse, Steuererklärungen oder Beratungsprojekte. Bei laufender Betreuung arbeiten wir mit monatlichen Fixpreisen. So haben Sie Planungssicherheit. Wir besprechen das individuell im Erstgespräch."
+      },
+      "q9": {
+        "q": "Bekomme ich einen festen Ansprechpartner?",
+        "a": "Ja, unbedingt. Sie haben einen festen Steuerberater als Ansprechpartner – keine Rotation, keine Anonymität. Ihr Steuerberater kennt Ihr Geschäft, Ihre Ziele und Ihre Situation. Bei Abwesenheit (Urlaub, Krankheit) wird ein Kollege Sie vertreten – aber Ihr Hauptansprechpartner bleibt immer gleich."
+      },
+      "q10": {
+        "q": "Wie schnell reagieren Sie auf Anfragen?",
+        "a": "Wir melden uns in der Regel innerhalb von 24 Stunden (an Werktagen). Bei dringenden Anliegen (z. B. laufende Betriebsprüfung, Fristen) oft noch am selben Tag. Telefonisch erreichen Sie uns Mo–Fr von 08:30–18:00 Uhr."
+      },
+      "q11": {
+        "q": "Können wir digital zusammenarbeiten?",
+        "a": "Ja, das ist sogar unser Standard. Wir nutzen Cloud-Buchhaltung (DATEV), sichere Dokumentenportale und Video-Calls. Viele unserer Mandanten arbeiten ausschließlich digital mit uns – ohne jemals vor Ort gewesen zu sein. Natürlich können Sie uns auch persönlich in Düren besuchen, wenn Sie das möchten."
+      },
+      "q12": {
+        "q": "Übernehmen Sie auch die laufende Buchhaltung?",
+        "a": "Ja. Wir übernehmen Finanzbuchhaltung, Lohnbuchhaltung, Jahresabschlüsse und alle Steuererklärungen – auf Wunsch komplett oder als ergänzende Beratung zu Ihrem internen Team. Wir passen uns Ihren Anforderungen an."
+      },
+      "q13": {
+        "q": "Was ist Wegzugssteuer und wen betrifft sie?",
+        "a": "Die Wegzugsbesteuerung (§ 6 AStG) betrifft Personen, die Deutschland verlassen und dabei Anteile an einer Kapitalgesellschaft (z. B. GmbH) halten. Bei Wegzug werden stille Reserven steuerlich erfasst – auch wenn kein Verkauf stattfindet. Das betrifft vor allem Unternehmer, Gesellschafter und Geschäftsführer mit GmbH-Anteilen. Wir beraten Sie zu Strategien, Stundungsmodellen und steuerlichen Alternativen."
+      },
+      "q14": {
+        "q": "Beraten Sie auch bei E-Commerce/Amazon?",
+        "a": "Ja, E-Commerce und Online-Handel sind einer unserer Schwerpunkte. Wir beraten zu Umsatzsteuer bei internationalen Plattformen (Amazon, eBay, Shopify etc.), OSS (One-Stop-Shop), FBA, Dropshipping, Strukturierung für Wachstum und vieles mehr. Ob Sie gerade starten oder bereits international verkaufen – wir helfen Ihnen, steuerlich sicher zu wachsen."
+      },
+      "q15": {
+        "q": "Unterstützen Sie bei Betriebsprüfungen?",
+        "a": "Ja, unbedingt. Wir begleiten Sie während der gesamten Betriebsprüfung: Vorbereitung, Durchführung, Schlussbesprechung und ggf. Einspruch. Unser Ziel ist, dass Sie gut vorbereitet sind und keine unangenehmen Überraschungen erleben. Wenn Sie bereits eine Prüfungsanordnung erhalten haben, nehmen Sie schnell Kontakt mit uns auf."
+      },
+      "q16": {
+        "q": "Beraten Sie auch bei Immobilien?",
+        "a": "Ja. Wir beraten bei Immobilien im Privat- und Betriebsvermögen, Gesellschaftsmodellen (GmbH & Co. KG etc.), Vermögensübertragung, Spekulationsfristen, Abschreibungen und vielem mehr. Immobilien sind steuerlich hochkomplex – wir entwickeln Lösungen, die zu Ihrer Situation passen."
+      },
+      "q17": {
+        "q": "Unterstützen Sie auch Heilberufe (Ärzte, Apotheken)?",
+        "a": "Ja, Heilberufe sind einer unserer Schwerpunkte. Wir beraten Ärzte, Zahnärzte, Apotheken und MVZ bei Gründung, Gesellschaftsstrukturen, Immobilienstrukturen, Nachfolgeplanung und laufender Betreuung. Heilberufe haben besondere steuerliche Anforderungen – wir kennen sie."
+      },
+      "q18": {
+        "q": "Wie schnell kann ich einen Termin bekommen?",
+        "a": "In der Regel innerhalb von 3–5 Werktagen. Bei dringenden Anliegen (z. B. Betriebsprüfung, nahende Fristen) oft auch kurzfristiger. Kontaktieren Sie uns einfach – wir finden eine Lösung."
+      },
+      "q19": {
+        "q": "Bieten Sie auch Rechtsberatung an?",
+        "a": "Als Steuerberater dürfen wir rechtliche Beratung als Nebenleistung gemäß § 5 Abs. 1 RDG anbieten – also Rechtsberatung, die unmittelbar mit der steuerlichen Beratung zusammenhängt (z. B. Gesellschaftsverträge im steuerlichen Kontext). Bei komplexen rechtlichen Fragen arbeiten wir mit spezialisierten Rechtsanwälten zusammen."
+      },
+      "q20": {
+        "q": "Arbeiten Sie auch mit Existenzgründern?",
+        "a": "Ja, gerne. Wir begleiten Sie von der Gründung bis zum Wachstum: Rechtsformwahl, Gewerbeanmeldung, Finanzamt-Anmeldung, laufende Buchhaltung, Steuererklärungen. Besonders bei E-Commerce-Gründungen, Heilberufen oder geplanter Internationalisierung haben wir viel Erfahrung."
+      },
+      "q100": {
+        "q": "Begleiten Sie Betriebsprüfungen aktiv?",
+        "a": "Selbstverständlich. Wir übernehmen die Kommunikation mit der Finanzverwaltung, strukturieren Prüfungsfelder vor und begleiten die Prüfung strategisch – mit dem Ziel, Risiken zu minimieren und Eskalationen zu vermeiden."
+      },
+      "q101": {
+        "q": "Beraten Sie auch bei steuerlichen Risiken und Haftungsfragen?",
+        "a": "Ja. Ein Schwerpunkt unserer Arbeit liegt in der Identifikation und Bewertung steuerlicher Risiken, insbesondere im Zusammenhang mit Geschäftsführerverantwortung, verdeckten Gewinnausschüttungen, Haftungsnormen und steuerstrafrechtlichen Schnittstellen."
+      },
+      "q102": {
+        "q": "Übernehmen Sie Mandate mit Vorbelastungen oder Fehlern aus der Vergangenheit?",
+        "a": "Ja. Häufig kommen Mandanten zu uns, wenn frühere Gestaltungen nicht optimal waren oder Risiken entstanden sind. Wir analysieren, priorisieren und entwickeln rechtssichere Lösungen – auch unter Zeitdruck."
+      },
+      "q103": {
+        "q": "Beraten Sie auch bei der Neustrukturierung nach Fehlern?",
+        "a": "Ja. Wir analysieren bestehende Fehler, priorisieren Risiken und entwickeln rechtssichere Korrektur- und Neuausrichtungsmodelle – mit Augenmaß und Strategie."
+      },
+      "q104": {
+        "q": "Sind Sie auch im Steuerstrafrecht tätig?",
+        "a": "Ja. Wir beraten präventiv bei steuerstrafrechtlichen Risiken sowie begleitend bei laufenden Verfahren – stets mit Fokus auf Schadensbegrenzung, Strukturierung und rechtssichere Kommunikation."
+      },
+      "q105": {
+        "q": "Wie stark ist Ihre Kanzlei im Steuerstrafrecht vernetzt?",
+        "a": "Sehr stark. Wir arbeiten eng mit spezialisierten Rechtsanwälten zusammen und kennen die Schnittstellen zwischen Steuerrecht, Steuerstrafrecht und Verfahrensrecht genau."
+      },
+      "q106": {
+        "q": "Begleiten Sie auch Selbstanzeigen oder Präventivmaßnahmen?",
+        "a": "Ja. Wir beraten sowohl präventiv zur Vermeidung steuerstrafrechtlicher Risiken als auch begleitend bei bereits bestehenden Problemkonstellationen."
+      },
+      "q107": {
+        "q": "Beraten Sie auch bei Umstrukturierungen und Umwandlungen?",
+        "a": "Ja. Wir begleiten Verschmelzungen, Spaltungen, Einbringungen, Formwechsel und Holding-Neustrukturierungen – sowohl steuerlich als auch konzeptionell. Ziel ist stets eine rechtssichere und wirtschaftlich sinnvolle Umsetzung."
+      },
+      "q108": {
+        "q": "Beraten Sie auch bei Gesellschafterkonflikten oder Trennungen?",
+        "a": "Ja. Gerade in Gesellschafterstreitigkeiten, Austritten oder Umstrukturierungen ist steuerliche Expertise entscheidend, um wirtschaftliche Schäden zu vermeiden oder zu begrenzen."
+      },
+      "q109": {
+        "q": "Können Sie bestehende Strukturen „gesund prüfen\"?",
+        "a": "Ja. Viele Mandanten beauftragen uns gezielt mit einer steuerlichen Risiko- und Potenzialanalyse bestehender Strukturen – ohne sofortige Umstrukturierung, aber mit klaren Handlungsempfehlungen."
+      },
+      "q110": {
+        "q": "Begleiten Sie auch Unternehmensverkäufe oder -beteiligungen?",
+        "a": "Ja. Wir beraten bei Share-Deals, Asset-Deals, Beteiligungserwerben und -verkäufen sowie bei der steueroptimalen Vorbereitung von Transaktionen."
+      },
+      "q111": {
+        "q": "Begleiten Sie Mandanten nur bei Wachstum oder auch in Krisenzeiten?",
+        "a": "Beides. Wir begleiten unsere Mandanten sowohl in guten Zeiten – bei Strukturierung, Expansion und Optimierung – als auch in schwierigen Phasen wie Unternehmenskrisen, Liquiditätsengpässen oder Insolvenzsituationen. Gerade in Krisen ist eine vorausschauende und belastbare steuerliche Beratung entscheidend."
+      },
+      "q112": {
+        "q": "Sind Sie auch bei Unternehmenskrisen und Insolvenzen beratend tätig?",
+        "a": "Ja. Wir beraten bei Sanierungen, Restrukturierungen, drohender Zahlungsunfähigkeit, Insolvenzantragspflichten sowie im laufenden Insolvenzverfahren. Unser Fokus liegt dabei auf Haftungsvermeidung, Strukturwahrung und rechtssicherer Begleitung."
+      },
+      "q113": {
+        "q": "Übernehmen Sie auch Mandate mit internationalem Bezug außerhalb der Türkei?",
+        "a": "Ja. Neben Türkei-Bezügen beraten wir auch bei weiteren grenzüberschreitenden Sachverhalten, insbesondere im europäischen Kontext sowie bei internationaler Umsatzsteuer."
+      },
+      "q114": {
+        "q": "Kennen Sie sich im türkischen Steuerrecht aus?",
+        "a": "Ja. Wir verfügen über fundierte Erfahrung in deutsch-türkischen Steuersachverhalten und arbeiten eng mit qualifizierten Kooperationspartnern in der Türkei zusammen."
+      },
+      "closing": {
+        "heading": "Ihre Frage war nicht dabei?",
+        "text": "Schreiben Sie uns – wir beantworten Ihre Fragen gerne persönlich.",
+        "button": "Kontakt aufnehmen"
+      }
+    },
+    "pricing": {
+      "hero": {
+        "title": "Honorar & Vergütung",
+        "subtitle": "Transparente Preise, faire Konditionen. Wir legen Wert auf klare Kommunikation – auch bei den Kosten."
+      },
+      "intro": "Jedes Mandat ist individuell. Wir bieten verschiedene Vergütungsmodelle – je nachdem, was zu Ihrer Situation passt. Alle Preise verstehen sich zzgl. gesetzlicher Mehrwertsteuer.",
+      "freeContact": {
+        "title": "Kostenloser Erstkontakt",
+        "intro": "Das erste Telefonat ist immer kostenfrei. Schildern Sie uns kurz Ihr Anliegen – wir klären, ob und wie wir Ihnen helfen können.",
+        "phoneLabel": "Rufen Sie uns an:",
+        "benefit1": "✓ Erste Einschätzung Ihrer Situation",
+        "benefit2": "✓ Klärung, ob wir der richtige Ansprechpartner sind",
+        "benefit3": "✓ Unverbindlich und kostenfrei",
+        "benefit4": "✓ Keine Verpflichtung zur Zusammenarbeit"
+      },
+      "initialConsultation": {
+        "title": "Erstgespräch",
+        "option1": {
+          "title": "Beratungsgespräch",
+          "price": "EUR 395",
+          "unit": "pro Stunde (netto)",
+          "description": "Wenn Sie eine konkrete steuerliche Fragestellung haben und eine fundierte Beratung wünschen, berechnen wir EUR 395 netto pro Stunde.",
+          "benefit1": "✓ Detaillierte Analyse Ihrer Situation",
+          "benefit2": "✓ Konkrete Handlungsempfehlungen",
+          "benefit3": "✓ Schriftliche Zusammenfassung"
+        },
+        "option2": {
+          "title": "Kennenlern-Gespräch",
+          "price": "Kostenfrei",
+          "unit": "bei Übernahme laufender Betreuung",
+          "description": "Wenn es nur um ein erstes Kennenlernen geht oder Sie an einer laufenden Zusammenarbeit interessiert sind, ist das Erstgespräch für Sie kostenfrei.",
+          "benefit1": "✓ Unverbindliches Kennenlernen",
+          "benefit2": "✓ Vorstellung unserer Arbeitsweise",
+          "benefit3": "✓ Individuelle Angebotserstellung"
+        }
+      },
+      "designConsulting": {
+        "title": "Gestaltungsberatung & Projektarbeit",
+        "intro": "Bei komplexen steuerlichen Fragestellungen, Strukturierungen oder einmaligen Projekten arbeiten wir entweder auf Stundenbasis oder mit Auftragspauschalen.",
+        "hourlyRate": {
+          "title": "Stundensätze",
+          "range": "EUR 180 - 220",
+          "unit": "durchschnittlich pro Stunde (netto)",
+          "description": "Wir arbeiten im Team: Steuerberater und qualifizierte Fachmitarbeiter. So profitieren Sie von Expertise auf verschiedenen Ebenen – bei fairen Stundensätzen.",
+          "benefit1": "✓ Team-Ansatz für optimale Effizienz",
+          "benefit2": "✓ Transparente Zeiterfassung",
+          "benefit3": "✓ Regelmäßige Zwischenrechnungen"
+        },
+        "flatFee": {
+          "title": "Auftragspauschalen",
+          "price": "Nach Vereinbarung",
+          "unit": "für definierte Leistungen",
+          "description": "Für klar definierte Projekte bieten wir Festpreise an. So haben Sie Planungssicherheit und wissen vorab, welche Kosten auf Sie zukommen.",
+          "benefit1": "✓ Planungssicherheit durch Festpreis",
+          "benefit2": "✓ Keine versteckten Kosten",
+          "benefit3": "✓ Klare Leistungsbeschreibung"
+        },
+        "examples": {
+          "title": "Beispiele für Gestaltungsberatung:",
+          "item1": "Gutachten und Stellungnahmen",
+          "item2": "Umwandlungen (Verschmelzung, Spaltung, Formwechsel)",
+          "item3": "Gründungsberatung (GmbH, Holding, UG)",
+          "item4": "Wegzugsplanung und internationale Strukturierung",
+          "item5": "Nachfolgeplanung und Unternehmensübertragung",
+          "item6": "Due Diligence und Unternehmensbewertung"
+        }
+      },
+      "ongoingSupport": {
+        "title": "Laufende Steuerberatung",
+        "intro": "Die laufende steuerliche Betreuung wird nach der Steuerberatervergütungsverordnung (StBVV) abgerechnet. Die Höhe richtet sich nach verschiedenen Faktoren:",
+        "factor1": {
+          "title": "Gegenstandswert",
+          "text": "Umsatz, Gewinn, Bilanzsumme – je nach Leistung"
+        },
+        "factor2": {
+          "title": "Komplexität",
+          "text": "Rechtsform, Anzahl Geschäftsvorfälle, Besonderheiten"
+        },
+        "factor3": {
+          "title": "Umfang",
+          "text": "Anzahl Mitarbeiter, Konten, Belege"
+        },
+        "approach": "Unser Ansatz:Wir orientieren uns in der Regel am Mittelwert der StBVV. So erhalten Sie qualitativ hochwertige Leistungen zu fairen Konditionen.",
+        "services": {
+          "title": "Typische Leistungen der laufenden Betreuung:",
+          "item1": "Monatliche Finanzbuchhaltung",
+          "item2": "Lohnbuchhaltung und Lohnsteueranmeldungen",
+          "item3": "Umsatzsteuer-Voranmeldungen",
+          "item4": "Jahresabschluss (HGB, EStG) oder EÜR",
+          "item5": "Alle Steuererklärungen (ESt, KSt, GewSt, USt)",
+          "item6": "Betriebswirtschaftliche Auswertungen (BWA)",
+          "item7": "Laufende steuerliche Beratung"
+        }
+      },
+      "cta": {
+        "title": "Individuelles Angebot gewünscht?",
+        "text": "Sprechen Sie uns im Ersttermin auf ein individuelles Angebot an. Wir erstellen Ihnen eine transparente Kalkulation – abgestimmt auf Ihre Anforderungen.",
+        "button": "Jetzt Erstgespräch anfragen"
+      },
+      "faq": {
+        "title": "Häufige Fragen zum Honorar",
+        "q1": "Sind die genannten Preise Brutto oder Netto?",
+        "a1": "Alle genannten Preise verstehen sich als Netto-Preise. Hinzu kommt die gesetzliche Mehrwertsteuer (derzeit 19%).",
+        "q2": "Kann ich vorab wissen, was die Beratung kostet?",
+        "a2": "Ja. Nach dem Erstgespräch erhalten Sie von uns ein transparentes Angebot. Bei laufender Betreuung zeigen wir Ihnen anhand Ihrer Zahlen eine konkrete Kalkulation. Bei Projektarbeit vereinbaren wir vorab einen Festpreis oder ein Budget.",
+        "q3": "Was ist die Steuerberatervergütungsverordnung (StBVV)?",
+        "a3": "Die StBVV regelt die Gebühren für steuerliche Leistungen gesetzlich. Sie enthält Gebührentabellen und Rahmen (von 1/10 bis 10/10), innerhalb derer Steuerberater ihre Vergütung festlegen können. Wir orientieren uns in der Regel am Mittelwert (5/10 bis 6/10).",
+        "q4": "Gibt es versteckte Kosten?",
+        "a4": "Nein. Wir legen Wert auf Transparenz. Alle Kosten werden vorab besprochen und schriftlich festgehalten. Änderungen oder zusätzliche Leistungen stimmen wir vorher mit Ihnen ab.",
+        "q5": "Wie wird bei laufender Betreuung abgerechnet?",
+        "a5": "In der Regel monatlich oder quartalsweise. Sie erhalten eine detaillierte Rechnung mit Aufschlüsselung der erbrachten Leistungen. So behalten Sie jederzeit den Überblick."
+      }
+    }
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "contact": "Kontakt",
+    "openingHours": "Öffnungszeiten:",
+    "hours": "Mo–Fr: 08:30–18:00",
+    "legal": "Rechtliches",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "copyright": "© 2026 Steuerkanzlei Ibrahim Erben. Alle Rechte vorbehalten."
+  },
+  "meta": {
+    "title": "Steuerberater Düren | Steuerkanzlei Ibrahim Erben | Wegzug, E-Commerce, Unternehmensberatung"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Steuerberatung für vorausschauende Unternehmer",
+      "subtitle": "Wegzug, E-Commerce, Umstrukturierung – wir schaffen Klarheit, bevor Sie entscheiden.",
+      "ctaPrimary": "Erstgespräch anfragen",
+      "ctaSecondary": "Unsere Leistungen"
+    },
+    "slide2": {
+      "title": "Steuerstrafsachen & Bußgeldverfahren",
+      "subtitle": "Schnelles Handeln ist entscheidend. Wir verteidigen und begleiten Sie diskret und kompetent – auch am Wochenende.",
+      "ctaPrimary": "Sofortberatung anfragen",
+      "ctaSecondary": "Notfallkontakt"
+    },
+    "slide3": {
+      "title": "Planen Sie den Wegzug ins Ausland?",
+      "subtitle": "Frühzeitige Planung vermeidet teure Steuerfallen. Wir analysieren Ihre Situation und zeigen Gestaltungsmöglichkeiten auf.",
+      "ctaPrimary": "Wegzugsberatung starten",
+      "ctaSecondary": "Erstgespräch buchen"
+    },
+    "slide4": {
+      "title": "E-Commerce & Online-Handel",
+      "subtitle": "Amazon, eBay, Shopify – internationale Umsatzsteuer korrekt handhaben. Von Anfang an steuerlich sicher skalieren.",
+      "ctaPrimary": "E-Commerce Beratung",
+      "ctaSecondary": "Häufige Fragen"
+    },
+    "slide5": {
+      "title": "Spezialisierung auf komplexe Steuerfragen",
+      "subtitle": "Wenn Standardlösungen nicht ausreichen: Wir begleiten Unternehmer bei hochspezialisierten steuerlichen Herausforderungen.",
+      "stat1Label": "Fachbereiche",
+      "stat2Label": "Digitale Prozesse",
+      "stat3Label": "Notfall-Reaktionszeit"
+    }
+  },
+  "trustBar": {
+    "personal": "Persönlicher Ansprechpartner",
+    "digital": "Digitale Zusammenarbeit",
+    "expertise": "Branchenspezialisierung",
+    "proactive": "Proaktive Beratung"
+  },
+  "problemSolution": {
+    "heading": "Kennen Sie diese Fragen?",
+    "problem1": {
+      "title": "Umzug ins Ausland – aber was ist mit der Steuer?",
+      "text": "Ein Wegzug aus Deutschland wirft viele steuerliche Fragen auf. Wir begleiten Sie bei der steuerlichen Bewertung und Planung – strukturiert, transparent und vorausschauend.",
+      "link": "Mehr zur Wegzugsbesteuerung →"
+    },
+    "problem2": {
+      "title": "E-Commerce grenzüberschreitend – welche USt-Regeln gelten?",
+      "text": "Internationaler Online-Handel ist komplex: OSS, Plattformregelungen, Lieferschwellen. Wir sorgen für Klarheit und optimale Steuerstrukturen für Ihr Wachstum.",
+      "link": "Mehr zu E-Commerce →"
+    },
+    "problem3": {
+      "title": "Unternehmen wächst – brauche ich eine Holding?",
+      "text": "Steuereffiziente Unternehmens- und Beteiligungsstrukturen können Vermögen schützen und Steuern optimieren. Wir entwickeln Lösungen, die zu Ihnen passen.",
+      "link": "Mehr zur Strukturierung →"
+    }
+  },
+  "competencies": {
+    "heading": "Unsere Kernkompetenzen",
+    "subheading": "Unsere Beratung verbindet steuerliche Gestaltung, rechtliche Expertise und strategische Weitsicht. Wir begleiten Unternehmen, Unternehmer und Gesellschafter in allen steuerlich und rechtlich sensiblen Phasen – von der Strukturierung bis zur Krise.",
+    "exitTax": {
+      "title": "Wegzugsbesteuerung & International",
+      "text": "Steuerliche Wegzugsplanung, Doppelbesteuerungsabkommen, internationale Strukturen.",
+      "link": "Mehr erfahren →"
+    },
+    "ecommerce": {
+      "title": "E-Commerce & Online-Handel",
+      "text": "Umsatzsteuer bei Amazon, eBay & Co., OSS, Plattformmodelle, Skalierung.",
+      "link": "Mehr erfahren →"
+    },
+    "healthcare": {
+      "title": "Heilberufe & MVZ",
+      "text": "Ärzte, Apotheken, MVZ – Unternehmensstrukturen, Immobilien, Nachfolgeplanung.",
+      "link": "Mehr erfahren →"
+    },
+    "insolvency": {
+      "title": "Insolvenzbezogene Beratung & Krisenbegleitung",
+      "text": "Krisenfrüherkennung, Sanierungskonzepte, Begleitung in Insolvenzverfahren.",
+      "link": "Mehr erfahren →"
+    },
+    "realEstate": {
+      "title": "Immobilien & Vermögen",
+      "text": "Immobilienbesteuerung, Unternehmensmodelle, Vermögensübertragung.",
+      "link": "Mehr erfahren →"
+    },
+    "succession": {
+      "title": "Nachfolge & Umstrukturierung",
+      "text": "Unternehmensübertragung, Holdingmodelle, Umwandlungen, Familienunternehmen.",
+      "link": "Mehr erfahren →"
+    },
+    "support": {
+      "title": "Laufende Betreuung",
+      "text": "Buchhaltung, Lohnabrechnung, Jahresabschluss, Steuererklärungen – alles aus einer Hand.",
+      "link": "Mehr erfahren →"
+    }
+  },
+  "homepage": {
+    "highlightedService": {
+      "title": "Steuerstraf- & Bußgeldverfahren – Verteidigung & Begleitung",
+      "text": "Steuerliche Fehler können ernsthafte Konsequenzen haben. Wir verteidigen und begleiten Sie in Steuerstraf- und Bußgeldverfahren – kompetent, diskret und mit klarer Strategie. Selbstanzeigen, Verfahrensbegleitung, Kommunikation mit Behörden.",
+      "button": "Sofort Beratung anfragen →"
+    },
+    "faqTeaser": {
+      "heading": "Häufige Fragen",
+      "q1": "Was kostet die Erstberatung?",
+      "a1": "Das erste Gespräch (30 Minuten) ist für Sie kostenfrei. Wir lernen uns kennen, Sie schildern Ihre Situation und wir klären, wie wir Ihnen helfen können. Erst danach erhalten Sie ein transparentes Angebot.",
+      "q2": "Welche Unterlagen brauche ich für das Erstgespräch?",
+      "a2": "Für das Erstgespräch brauchen Sie keine Unterlagen. Eine kurze Beschreibung Ihrer Situation genügt. Alle Details besprechen wir dann im Gespräch.",
+      "q3": "Arbeiten Sie auch digital/remote?",
+      "a3": "Ja, absolut. Wir nutzen moderne Tools für die digitale Zusammenarbeit: Video-Calls, Cloud-Buchhaltung, sichere Dokumentenübermittlung. Viele unserer Mandanten arbeiten ausschließlich digital mit uns.",
+      "q4": "Übernehmen Sie auch die laufende Buchhaltung?",
+      "a4": "Ja. Wir übernehmen Finanzbuchhaltung, Lohnbuchhaltung, Jahresabschlüsse und alle Steuererklärungen – auf Wunsch komplett oder als ergänzende Beratung zu Ihrem internen Team.",
+      "q5": "Wie schnell kann ich einen Termin bekommen?",
+      "a5": "In der Regel innerhalb von 3–5 Werktagen. Bei dringenden Anliegen (z. B. Betriebsprüfung, Fristen) oft auch kurzfristiger. Kontaktieren Sie uns einfach.",
+      "seeAll": "Alle Fragen ansehen"
+    },
+    "quickActions": {
+      "heading": "Schnelle Hilfe bei dringenden Themen",
+      "taxCriminal": {
+        "title": "Steuerstrafverfahren?",
+        "text": "Schnelles Handeln ist entscheidend. Wir beraten Sie innerhalb von 24 Stunden – auch am Wochenende.",
+        "link": "Sofort Kontakt aufnehmen →"
+      },
+      "exitTax": {
+        "title": "Wegzug ins Ausland?",
+        "text": "Frühzeitige Planung spart Steuern. Wir analysieren Ihre Situation und zeigen Gestaltungsmöglichkeiten.",
+        "link": "Wegzugsberatung anfragen →"
+      },
+      "ecommerce": {
+        "title": "E-Commerce international?",
+        "text": "Amazon, eBay, Shopify – wir kennen die Fallstricke. Steuerlich sicher von Anfang an.",
+        "link": "E-Commerce Beratung starten →"
+      }
+    },
+    "aboutTeaser": {
+      "heading": "Über Steuerkanzlei Ibrahim Erben",
+      "text": "Wir sind eine Steuerberatungskanzlei in Düren mit Spezialisierung auf komplexe nationale und internationale Steuerfragen. Unser Fokus liegt auf Wegzugssteuer, E-Commerce, Heilberufen, Immobilien und Unternehmensstrukturen. Wir schaffen Klarheit, bevor Sie entscheiden – persönlich, digital und kompetent.",
+      "button": "Mehr über uns erfahren"
+    }
+  },
+  "trustIndicators": {
+    "heading": "Warum Mandanten uns vertrauen",
+    "subheading": "Erfolgreiche Steuerberatung basiert auf Fachwissen, Erfahrung und persönlicher Zusammenarbeit.",
+    "specialization": {
+      "title": "Spezialisierung statt Generalistentum",
+      "text": "Wir konzentrieren uns auf komplexe Fachgebiete: Wegzugssteuer, E-Commerce, Steuerstrafrecht, Unternehmensstrukturen. Das bedeutet tiefes Fachwissen statt Oberflächlichkeit."
+    },
+    "personal": {
+      "title": "Fester Ansprechpartner",
+      "text": "Sie arbeiten mit einem festen Steuerberater zusammen – keine wechselnden Ansprechpartner, keine Anonymität. Ihr Berater kennt Ihr Geschäft und Ihre Ziele."
+    },
+    "digital": {
+      "title": "Vollständig digitale Prozesse",
+      "text": "Cloud-Buchhaltung, sichere Dokumentenportale, Video-Calls: Moderne Zusammenarbeit ohne Medienbrüche. Arbeiten Sie von überall – wir auch."
+    },
+    "proactive": {
+      "title": "Proaktive Beratung",
+      "text": "Wir reagieren nicht nur auf Ihre Fragen, sondern denken voraus: Gestaltungsmöglichkeiten, Fristen, Risiken. Sie erhalten Handlungsempfehlungen, bevor Probleme entstehen."
+    },
+    "international": {
+      "title": "Internationale Kompetenz",
+      "text": "Doppelbesteuerungsabkommen, grenzüberschreitende Strukturen, internationale Umsatzsteuer: Wir begleiten Sie über deutsche Grenzen hinaus."
+    },
+    "quality": {
+      "title": "Langfristige Partnerschaft",
+      "text": "Steuerberatung ist Vertrauenssache. Viele unserer Mandanten arbeiten seit Jahren mit uns – weil Kontinuität und Verlässlichkeit zählen."
+    }
+  },
+  "process": {
+    "heading": "In 3 Schritten zum klaren Ergebnis",
+    "subheading": "So arbeiten wir zusammen – transparent und strukturiert.",
+    "step1": {
+      "title": "Erstgespräch",
+      "text": "Wir hören zu und verstehen Ihre Situation. Im persönlichen Gespräch (vor Ort oder digital) klären wir Ihre Fragen und Ziele."
+    },
+    "step2": {
+      "title": "Analyse & Strategie",
+      "text": "Wir entwickeln Lösungen und klären offene Fragen. Sie erhalten eine klare Einschätzung und konkrete Handlungsempfehlungen."
+    },
+    "step3": {
+      "title": "Umsetzung & Begleitung",
+      "text": "Wir setzen um und bleiben Ihr fester Ansprechpartner – laufend oder bei Bedarf. Sie haben jederzeit Klarheit über den aktuellen Stand."
+    }
+  },
+  "cta": {
+    "heading": "Bereit für Klarheit?",
+    "subheading": "Lassen Sie uns über Ihre steuerliche Zukunft sprechen.",
+    "button": "Jetzt Erstgespräch anfragen"
+  }
+}

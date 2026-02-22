@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title">Steuerberater Düren | Steuerkanzlei Ibrahim Erben | Wegzug, E-Commerce, Unternehmensberatung</title>
+    <meta name="description" content="Steuerberatung für vorausschauende Unternehmer. Spezialisiert auf Wegzugsbesteuerung, E-Commerce, Heilberufe & Immobilien. Persönlich. Digital. Kompetent." data-i18n-content="meta.description">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/images/logo.png" alt="Steuerkanzlei Ibrahim Erben Logo" class="header__logo-img">
+                </a>
+                <div class="header__right">
+                    <nav class="nav" aria-label="Hauptnavigation">
+                        <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
+                            ☰
+                        </button>
+                        <ul class="nav__list">
+                            <li><a href="index.html" class="nav__link nav__link--active" data-i18n="nav.home">Startseite</a></li>
+                            <li class="nav__item--has-dropdown">
+                                <a href="leistungen.html" class="nav__link nav__link--has-dropdown" data-i18n="nav.services">Leistungen</a>
+                                <ul class="nav__dropdown">
+                                    <li><a href="leistungen.html#steuerstrafrecht" class="nav__dropdown-link nav__dropdown-link--featured" data-i18n="nav.dropdown.taxCriminal">Steuerstraf- & Bußgeldverfahren</a></li>
+                                    <li><a href="leistungen.html#insolvenz" class="nav__dropdown-link" data-i18n="nav.dropdown.insolvency">Insolvenzbezogene Beratung & Krisenbegleitung</a></li>
+                                    <li><a href="leistungen.html#wegzug" class="nav__dropdown-link" data-i18n="nav.dropdown.exitTax">Wegzugssteuer & Internationales</a></li>
+                                    <li><a href="leistungen.html#ecommerce" class="nav__dropdown-link" data-i18n="nav.dropdown.ecommerce">E-Commerce & Online-Handel</a></li>
+                                    <li><a href="leistungen.html#heilberufe" class="nav__dropdown-link" data-i18n="nav.dropdown.healthcare">Heilberufe & MVZ</a></li>
+                                    <li><a href="leistungen.html#immobilien" class="nav__dropdown-link" data-i18n="nav.dropdown.realEstate">Immobilien & Vermögen</a></li>
+                                    <li><a href="leistungen.html#nachfolge" class="nav__dropdown-link" data-i18n="nav.dropdown.succession">Nachfolge & Umstrukturierung</a></li>
+                                    <li><a href="leistungen.html#betreuung" class="nav__dropdown-link" data-i18n="nav.dropdown.support">Laufende Betreuung</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="ueber-uns.html" class="nav__link" data-i18n="nav.about">Über uns</a></li>
+                            <li><a href="faq.html" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
+                            <li class="nav__item--has-dropdown">
+                                <a href="wissen.html" class="nav__link nav__link--has-dropdown" data-i18n="nav.knowledge">Wissen</a>
+                                <ul class="nav__dropdown">
+                                    <li><a href="wissen-aussenpruefung.html" class="nav__dropdown-link">Steuerliche Außenprüfung</a></li>
+                                    <li><a href="wissen-steuerstrafrecht.html" class="nav__dropdown-link">Steuerstrafrecht</a></li>
+                                    <li><a href="wissen-umwandlungssteuerrecht.html" class="nav__dropdown-link">Umwandlungssteuerrecht</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="tools.html" class="nav__link" data-i18n="nav.tools">Tools</a></li>
+                            <li><a href="honorar.html" class="nav__link" data-i18n="nav.pricing">Honorar</a></li>
+                            <li><a href="karriere.html" class="nav__link" data-i18n="nav.career">Karriere</a></li>
+                            <li><a href="kontakt.html" class="nav__link" data-i18n="nav.contact">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <button class="lang-switcher__button" id="lang-button" aria-label="Sprache wählen" aria-expanded="false">
+                            <span class="lang-flag">🇩🇪</span>
+                            <span>DE</span>
+                        </button>
+                        <div class="lang-switcher__dropdown" id="lang-dropdown">
+                            <a href="?lang=de" class="lang-switcher__option lang-switcher__option--active">
+                                <span class="lang-flag">🇩🇪</span> Deutsch
+                            </a>
+                            <a href="?lang=tr" class="lang-switcher__option">
+                                <span class="lang-flag">🇹🇷</span> Türkçe
+                            </a>
+                            <a href="?lang=en" class="lang-switcher__option">
+                                <span class="lang-flag">🇬🇧</span> English
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Search Button -->
+                    <button class="search-toggle" aria-label="Suche öffnen">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" role="progressbar" aria-label="Reading progress">
+        <div class="progress-bar__fill"></div>
+    </div>
+
+
+    <!-- Hero Section with Slideshow -->
+    <section class="hero hero--slideshow">
+        <div class="hero__slideshow">
+            <!-- Slide 1: Main -->
+            <div class="hero__slide hero__slide--active" style="background: linear-gradient(135deg, rgba(0, 40, 100, 0.5) 0%, rgba(0, 20, 60, 0.6) 100%), url('assets/images/hero-slide-1.png') center/cover no-repeat;">
+                <div class="container">
+                    <div class="hero__content">
+                        <div class="hero__text">
+                            <h1 class="hero__title" data-i18n="hero.slide1.title">Steuerberatung für vorausschauende Unternehmer</h1>
+                            <p class="hero__subtitle" data-i18n="hero.slide1.subtitle">
+                                Wegzug, E-Commerce, Umstrukturierung – wir schaffen Klarheit, bevor Sie entscheiden.
+                            </p>
+                            <div class="hero__cta">
+                                <a href="kontakt.html" class="btn btn--primary btn--large" data-i18n="hero.slide1.ctaPrimary">Erstgespräch anfragen</a>
+                                <a href="leistungen.html" class="btn btn--secondary btn--large" data-i18n="hero.slide1.ctaSecondary">Unsere Leistungen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Steuerstrafrecht -->
+            <div class="hero__slide" style="background: linear-gradient(135deg, rgba(100, 20, 20, 0.5) 0%, rgba(60, 10, 10, 0.6) 100%), url('assets/images/hero-slide-2.png') center/cover no-repeat;">
+                <div class="container">
+                    <div class="hero__content">
+                        <div class="hero__text">
+                            <h1 class="hero__title" data-i18n="hero.slide2.title">Steuerstrafsachen & Bußgeldverfahren</h1>
+                            <p class="hero__subtitle" data-i18n="hero.slide2.subtitle">
+                                Schnelles Handeln ist entscheidend. Wir verteidigen und begleiten Sie diskret und kompetent – auch am Wochenende.
+                            </p>
+                            <div class="hero__cta">
+                                <a href="leistungen.html#steuerstrafrecht" class="btn btn--primary btn--large" style="background: white; color: #dc2626; border-color: white;" data-i18n="hero.slide2.ctaPrimary">Sofortberatung anfragen</a>
+                                <a href="kontakt.html" class="btn btn--secondary btn--large" data-i18n="hero.slide2.ctaSecondary">Notfallkontakt</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Wegzug -->
+            <div class="hero__slide" style="background: linear-gradient(135deg, rgba(20, 40, 100, 0.5) 0%, rgba(10, 30, 80, 0.6) 100%), url('assets/images/hero-slide-3.png') center/cover no-repeat;">
+                <div class="container">
+                    <div class="hero__content">
+                        <div class="hero__text">
+                            <h1 class="hero__title" data-i18n="hero.slide3.title">Planen Sie den Wegzug ins Ausland?</h1>
+                            <p class="hero__subtitle" data-i18n="hero.slide3.subtitle">
+                                Frühzeitige Planung vermeidet teure Steuerfallen. Wir analysieren Ihre Situation und zeigen Gestaltungsmöglichkeiten auf.
+                            </p>
+                            <div class="hero__cta">
+                                <a href="leistungen.html#wegzug" class="btn btn--primary btn--large" data-i18n="hero.slide3.ctaPrimary">Wegzugsberatung starten</a>
+                                <a href="kontakt.html" class="btn btn--secondary btn--large" data-i18n="hero.slide3.ctaSecondary">Erstgespräch buchen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: E-Commerce -->
+            <div class="hero__slide" style="background: linear-gradient(135deg, rgba(5, 150, 105, 0.7) 0%, rgba(4, 120, 87, 0.8) 100%), url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&q=80') center/cover no-repeat;">
+                <div class="container">
+                    <div class="hero__content">
+                        <div class="hero__text">
+                            <h1 class="hero__title" data-i18n="hero.slide4.title">E-Commerce & Online-Handel</h1>
+                            <p class="hero__subtitle" data-i18n="hero.slide4.subtitle">
+                                Amazon, eBay, Shopify – internationale Umsatzsteuer korrekt handhaben. Von Anfang an steuerlich sicher skalieren.
+                            </p>
+                            <div class="hero__cta">
+                                <a href="leistungen.html#ecommerce" class="btn btn--primary btn--large" data-i18n="hero.slide4.ctaPrimary">E-Commerce Beratung</a>
+                                <a href="faq.html" class="btn btn--secondary btn--large" data-i18n="hero.slide4.ctaSecondary">Häufige Fragen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Specialized Expertise -->
+            <div class="hero__slide" style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.7) 0%, rgba(109, 40, 217, 0.8) 100%), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80') center/cover no-repeat;">
+                <div class="container">
+                    <div class="hero__content hero__content--centered">
+                        <div class="hero__text" style="text-align: center;">
+                            <h1 class="hero__title" data-i18n="hero.slide5.title">Spezialisierung auf komplexe Steuerfragen</h1>
+                            <p class="hero__subtitle" data-i18n="hero.slide5.subtitle">
+                                Wenn Standardlösungen nicht ausreichen: Wir begleiten Unternehmer bei hochspezialisierten steuerlichen Herausforderungen.
+                            </p>
+                        </div>
+                        <div class="hero__stats hero__stats--large">
+                            <div class="hero__stat">
+                                <div class="hero__stat-icon">
+                                    <img src="assets/images/icon-globe.svg" alt="">
+                                </div>
+                                <div class="hero__stat-number">7</div>
+                                <div class="hero__stat-label" data-i18n="hero.slide5.stat1Label">Fachbereiche</div>
+                            </div>
+                            <div class="hero__stat">
+                                <div class="hero__stat-icon">
+                                    <img src="assets/images/icon-target.svg" alt="">
+                                </div>
+                                <div class="hero__stat-number">100%</div>
+                                <div class="hero__stat-label" data-i18n="hero.slide5.stat2Label">Digitale Prozesse</div>
+                            </div>
+                            <div class="hero__stat">
+                                <div class="hero__stat-icon">
+                                    <img src="assets/images/icon-zap.svg" alt="">
+                                </div>
+                                <div class="hero__stat-number">24h</div>
+                                <div class="hero__stat-label" data-i18n="hero.slide5.stat3Label">Notfall-Reaktionszeit</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slideshow Controls -->
+        <div class="hero__controls">
+            <button class="hero__control hero__control--prev" aria-label="Vorherige Folie">▲</button>
+            <div class="hero__indicators">
+                <button class="hero__indicator hero__indicator--active" data-slide="0" aria-label="Folie 1"></button>
+                <button class="hero__indicator" data-slide="1" aria-label="Folie 2"></button>
+                <button class="hero__indicator" data-slide="2" aria-label="Folie 3"></button>
+                <button class="hero__indicator" data-slide="3" aria-label="Folie 4"></button>
+                <button class="hero__indicator" data-slide="4" aria-label="Folie 5"></button>
+            </div>
+            <button class="hero__control hero__control--next" aria-label="Nächste Folie">▼</button>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-bar__grid">
+                <div class="trust-bar__item">
+                    <img src="assets/images/icon-user.svg" alt="" class="trust-bar__icon" aria-hidden="true">
+                    <span class="trust-bar__label" data-i18n="trustBar.personal">Persönlicher Ansprechpartner</span>
+                </div>
+                <div class="trust-bar__item">
+                    <img src="assets/images/icon-monitor.svg" alt="" class="trust-bar__icon" aria-hidden="true">
+                    <span class="trust-bar__label" data-i18n="trustBar.digital">Digitale Zusammenarbeit</span>
+                </div>
+                <div class="trust-bar__item">
+                    <img src="assets/images/icon-target.svg" alt="" class="trust-bar__icon" aria-hidden="true">
+                    <span class="trust-bar__label" data-i18n="trustBar.expertise">Branchenspezialisierung</span>
+                </div>
+                <div class="trust-bar__item">
+                    <img src="assets/images/icon-zap.svg" alt="" class="trust-bar__icon" aria-hidden="true">
+                    <span class="trust-bar__label" data-i18n="trustBar.proactive">Proaktive Beratung</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem-Solution Section -->
+    <section class="section problem-solution">
+        <div class="container">
+            <h2 class="text-center" data-i18n="problemSolution.heading">Kennen Sie diese Fragen?</h2>
+            <div class="problem-solution__grid">
+                <div class="problem-box">
+                    <h3 class="problem-box__title" data-i18n="problemSolution.problem1.title">Umzug ins Ausland – aber was ist mit der Steuer?</h3>
+                    <p data-i18n="problemSolution.problem1.text">Ein Wegzug aus Deutschland wirft viele steuerliche Fragen auf. Wir begleiten Sie bei der steuerlichen Bewertung und Planung – strukturiert, transparent und vorausschauend.</p>
+                    <a href="leistungen.html#wegzug" class="card__link" data-i18n="problemSolution.problem1.link">Mehr zur Wegzugsbesteuerung →</a>
+                </div>
+                <div class="problem-box">
+                    <h3 class="problem-box__title" data-i18n="problemSolution.problem2.title">E-Commerce grenzüberschreitend – welche USt-Regeln gelten?</h3>
+                    <p data-i18n="problemSolution.problem2.text">Internationaler Online-Handel ist komplex: OSS, Plattformregelungen, Lieferschwellen. Wir sorgen für Klarheit und optimale Steuerstrukturen für Ihr Wachstum.</p>
+                    <a href="leistungen.html#ecommerce" class="card__link" data-i18n="problemSolution.problem2.link">Mehr zu E-Commerce →</a>
+                </div>
+                <div class="problem-box">
+                    <h3 class="problem-box__title" data-i18n="problemSolution.problem3.title">Unternehmen wächst – brauche ich eine Holding?</h3>
+                    <p data-i18n="problemSolution.problem3.text">Steuereffiziente Unternehmens- und Beteiligungsstrukturen können Vermögen schützen und Steuern optimieren. Wir entwickeln Lösungen, die zu Ihnen passen.</p>
+                    <a href="leistungen.html#strukturierung" class="card__link" data-i18n="problemSolution.problem3.link">Mehr zur Strukturierung →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kernkompetenzen -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center" data-i18n="competencies.heading">Unsere Kernkompetenzen</h2>
+            <p class="text-center mb-xl" style="color: var(--color-text-light); max-width: 800px; margin-left: auto; margin-right: auto;" data-i18n="competencies.subheading">
+                Unsere Beratung verbindet steuerliche Gestaltung, rechtliche Expertise und strategische Weitsicht. Wir begleiten Unternehmen, Unternehmer und Gesellschafter in allen steuerlich und rechtlich sensiblen Phasen – von der Strukturierung bis zur Krise.
+            </p>
+
+            <!-- Highlighted Service: Steuerstrafrecht -->
+            <div class="card" style="max-width: 900px; margin: 0 auto var(--spacing-xl); background: linear-gradient(135deg, #fee2e2 0%, #fef3c7 100%); border: 2px solid #ef4444;">
+                <div style="display: flex; align-items: flex-start; gap: var(--spacing-lg); flex-wrap: wrap;">
+                    <img src="assets/images/icon-shield.svg" alt="" style="width: 64px; height: 64px; color: #dc2626; flex-shrink: 0;" aria-hidden="true">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 class="card__title" style="color: #991b1b; margin-bottom: var(--spacing-sm);" data-i18n="homepage.highlightedService.title">Steuerstraf- & Bußgeldverfahren – Verteidigung & Begleitung</h3>
+                        <p style="color: #7c2d12; margin-bottom: var(--spacing-md);" data-i18n="homepage.highlightedService.text">
+                            Steuerliche Fehler können ernsthafte Konsequenzen haben. Wir verteidigen und begleiten Sie in Steuerstraf- und Bußgeldverfahren – kompetent, diskret und mit klarer Strategie. Selbstanzeigen, Verfahrensbegleitung, Kommunikation mit Behörden.
+                        </p>
+                        <a href="leistungen.html#steuerstrafrecht" class="btn btn--primary" style="background-color: #dc2626; border-color: #dc2626;" data-i18n="homepage.highlightedService.button">Sofort Beratung anfragen →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- First row: 4 cards -->
+            <div class="grid grid--4" style="margin-bottom: var(--spacing-lg);">
+                <div class="card card--icon">
+                    <img src="assets/images/icon-globe.svg" alt="" class="card__icon" aria-hidden="true">
+                    <h3 class="card__title" data-i18n="competencies.exitTax.title">Wegzugsbesteuerung & International</h3>
+                    <p class="card__text" data-i18n="competencies.exitTax.text">Steuerliche Wegzugsplanung, Doppelbesteuerungsabkommen, internationale Strukturen.</p>
+                    <a href="leistungen.html#wegzug" class="card__link" data-i18n="competencies.exitTax.link">Mehr erfahren →</a>
+                </div>
+                <div class="card card--icon">
+                    <img src="assets/images/icon-shopping-cart.svg" alt="" class="card__icon" aria-hidden="true">
+                    <h3 class="card__title" data-i18n="competencies.ecommerce.title">E-Commerce & Online-Handel</h3>
+                    <p class="card__text" data-i18n="competencies.ecommerce.text">Umsatzsteuer bei Amazon, eBay & Co., OSS, Plattformmodelle, Skalierung.</p>
+                    <a href="leistungen.html#ecommerce" class="card__link" data-i18n="competencies.ecommerce.link">Mehr erfahren →</a>
+                </div>
+                <div class="card card--icon">
+                    <img src="assets/images/icon-heart-pulse.svg" alt="" class="card__icon" aria-hidden="true">
+                    <h3 class="card__title" data-i18n="competencies.healthcare.title">Heilberufe & MVZ</h3>
+                    <p class="card__text" data-i18n="competencies.healthcare.text">Ärzte, Apotheken, MVZ – Unternehmensstrukturen, Immobilien, Nachfolgeplanung.</p>
+                    <a href="leistungen.html#heilberufe" class="card__link" data-i18n="competencies.healthcare.link">Mehr erfahren →</a>
+                </div>
+                <div class="card card--icon">
+                    <img src="assets/images/icon-refresh.svg" alt="" class="card__icon" aria-hidden="true">
+                    <h3 class="card__title" data-i18n="competencies.insolvency.title">Insolvenzbezogene Beratung & Krisenbegleitung</h3>
+                    <p class="card__text" data-i18n="competencies.insolvency.text">Krisenfrüherkennung, Sanierungskonzepte, Begleitung in Insolvenzverfahren.</p>
+                    <a href="leistungen.html#insolvenz" class="card__link" data-i18n="competencies.insolvency.link">Mehr erfahren →</a>
+                </div>
+            </div>
+
+            <!-- Second row: 3 cards -->
+            <div class="grid grid--3">
+                <div class="card card--icon">
+                    <img src="assets/images/icon-building.svg" alt="" class="card__icon" aria-hidden="true">
+                    <h3 class="card__title" data-i18n="competencies.realEstate.title">Immobilien & Vermögen</h3>
+                    <p class="card__text" data-i18n="competencies.realEstate.text">Immobilienbesteuerung, Unternehmensmodelle, Vermögensübertragung.</p>
+                    <a href="leistungen.html#immobilien" class="card__link" data-i18n="competencies.realEstate.link">Mehr erfahren →</a>
+                </div>
+                <div class="card card--icon">
+                    <img src="assets/images/icon-refresh.svg" alt="" class="card__icon" aria-hidden="true">
+                    <h3 class="card__title" data-i18n="competencies.succession.title">Nachfolge & Umstrukturierung</h3>
+                    <p class="card__text" data-i18n="competencies.succession.text">Unternehmensübertragung, Holdingmodelle, Umwandlungen, Familienunternehmen.</p>
+                    <a href="leistungen.html#nachfolge" class="card__link" data-i18n="competencies.succession.link">Mehr erfahren →</a>
+                </div>
+                <div class="card card--icon">
+                    <img src="assets/images/icon-chart.svg" alt="" class="card__icon" aria-hidden="true">
+                    <h3 class="card__title" data-i18n="competencies.support.title">Laufende Betreuung</h3>
+                    <p class="card__text" data-i18n="competencies.support.text">Buchhaltung, Lohnabrechnung, Jahresabschluss, Steuererklärungen – alles aus einer Hand.</p>
+                    <a href="leistungen.html#betreuung" class="card__link" data-i18n="competencies.support.link">Mehr erfahren →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators & Certifications -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="text-center" data-i18n="trustIndicators.heading">Warum Mandanten uns vertrauen</h2>
+            <p class="text-center mb-xl" style="color: var(--color-text-light); max-width: 800px; margin-left: auto; margin-right: auto;" data-i18n="trustIndicators.subheading">
+                Erfolgreiche Steuerberatung basiert auf Fachwissen, Erfahrung und persönlicher Zusammenarbeit.
+            </p>
+
+            <div class="grid grid--3">
+                <div class="card card--icon">
+                    <img src="assets/images/icon-target.svg" alt="" class="card__icon" aria-hidden="true">
+                    <h3 class="card__title" data-i18n="trustIndicators.specialization.title">Spezialisierung statt Generalistentum</h3>
+                    <p class="card__text" data-i18n="trustIndicators.specialization.text">Wir konzentrieren uns auf komplexe Fachgebiete: Wegzugssteuer, E-Commerce, Steuerstrafrecht, Unternehmensstrukturen. Das bedeutet tiefes Fachwissen statt Oberflächlichkeit.</p>
+                </div>
+                <div class="card card--icon">
+                    <img src="assets/images/icon-user.svg" alt="" class="card__icon" aria-hidden="true">
+                    <h3 class="card__title" data-i18n="trustIndicators.personal.title">Fester Ansprechpartner</h3>
+                    <p class="card__text" data-i18n="trustIndicators.personal.text">Sie arbeiten mit einem festen Steuerberater zusammen – keine wechselnden Ansprechpartner, keine Anonymität. Ihr Berater kennt Ihr Geschäft und Ihre Ziele.</p>
+                </div>
+                <div class="card card--icon">
+                    <img src="assets/images/icon-monitor.svg" alt="" class="card__icon" aria-hidden="true">
+                    <h3 class="card__title" data-i18n="trustIndicators.digital.title">Vollständig digitale Prozesse</h3>
+                    <p class="card__text" data-i18n="trustIndicators.digital.text">Cloud-Buchhaltung, sichere Dokumentenportale, Video-Calls: Moderne Zusammenarbeit ohne Medienbrüche. Arbeiten Sie von überall – wir auch.</p>
+                </div>
+                <div class="card card--icon">
+                    <img src="assets/images/icon-shield.svg" alt="" class="card__icon" aria-hidden="true">
+                    <h3 class="card__title" data-i18n="trustIndicators.proactive.title">Proaktive Beratung</h3>
+                    <p class="card__text" data-i18n="trustIndicators.proactive.text">Wir reagieren nicht nur auf Ihre Fragen, sondern denken voraus: Gestaltungsmöglichkeiten, Fristen, Risiken. Sie erhalten Handlungsempfehlungen, bevor Probleme entstehen.</p>
+                </div>
+                <div class="card card--icon">
+                    <img src="assets/images/icon-globe.svg" alt="" class="card__icon" aria-hidden="true">
+                    <h3 class="card__title" data-i18n="trustIndicators.international.title">Internationale Kompetenz</h3>
+                    <p class="card__text" data-i18n="trustIndicators.international.text">Doppelbesteuerungsabkommen, grenzüberschreitende Strukturen, internationale Umsatzsteuer: Wir begleiten Sie über deutsche Grenzen hinaus.</p>
+                </div>
+                <div class="card card--icon">
+                    <img src="assets/images/icon-checkmark.svg" alt="" class="card__icon" aria-hidden="true">
+                    <h3 class="card__title" data-i18n="trustIndicators.quality.title">Langfristige Partnerschaft</h3>
+                    <p class="card__text" data-i18n="trustIndicators.quality.text">Steuerberatung ist Vertrauenssache. Viele unserer Mandanten arbeiten seit Jahren mit uns – weil Kontinuität und Verlässlichkeit zählen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ablauf -->
+    <section class="section section-alt process">
+        <div class="container">
+            <h2 data-i18n="process.heading">In 3 Schritten zum klaren Ergebnis</h2>
+            <p style="color: var(--color-text-light); max-width: 700px; margin: 0 auto var(--spacing-xl);" data-i18n="process.subheading">
+                So arbeiten wir zusammen – transparent und strukturiert.
+            </p>
+            <div class="process__steps">
+                <div class="step">
+                    <span class="step__number">1</span>
+                    <h3 class="step__title" data-i18n="process.step1.title">Erstgespräch</h3>
+                    <p class="step__text" data-i18n="process.step1.text">
+                        Wir hören zu und verstehen Ihre Situation. Im persönlichen Gespräch (vor Ort oder digital) klären wir Ihre Fragen und Ziele.
+                    </p>
+                </div>
+                <div class="step">
+                    <span class="step__number">2</span>
+                    <h3 class="step__title" data-i18n="process.step2.title">Analyse & Strategie</h3>
+                    <p class="step__text" data-i18n="process.step2.text">
+                        Wir entwickeln Lösungen und klären offene Fragen. Sie erhalten eine klare Einschätzung und konkrete Handlungsempfehlungen.
+                    </p>
+                </div>
+                <div class="step">
+                    <span class="step__number">3</span>
+                    <h3 class="step__title" data-i18n="process.step3.title">Umsetzung & Begleitung</h3>
+                    <p class="step__text" data-i18n="process.step3.text">
+                        Wir setzen um und bleiben Ihr fester Ansprechpartner – laufend oder bei Bedarf. Sie haben jederzeit Klarheit über den aktuellen Stand.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Teaser -->
+    <section class="section">
+        <div class="container-narrow">
+            <h2 class="text-center" data-i18n="homepage.faqTeaser.heading">Häufige Fragen</h2>
+            <ul class="faq__list">
+                <li class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span data-i18n="homepage.faqTeaser.q1">Was kostet die Erstberatung?</span>
+                        <span class="faq__icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p data-i18n="homepage.faqTeaser.a1">Das erste Gespräch (30 Minuten) ist für Sie kostenfrei. Wir lernen uns kennen, Sie schildern Ihre Situation und wir klären, wie wir Ihnen helfen können. Erst danach erhalten Sie ein transparentes Angebot.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span data-i18n="homepage.faqTeaser.q2">Welche Unterlagen brauche ich für das Erstgespräch?</span>
+                        <span class="faq__icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p data-i18n="homepage.faqTeaser.a2">Für das Erstgespräch brauchen Sie keine Unterlagen. Eine kurze Beschreibung Ihrer Situation genügt. Alle Details besprechen wir dann im Gespräch.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span data-i18n="homepage.faqTeaser.q3">Arbeiten Sie auch digital/remote?</span>
+                        <span class="faq__icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p data-i18n="homepage.faqTeaser.a3">Ja, absolut. Wir nutzen moderne Tools für die digitale Zusammenarbeit: Video-Calls, Cloud-Buchhaltung, sichere Dokumentenübermittlung. Viele unserer Mandanten arbeiten ausschließlich digital mit uns.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span data-i18n="homepage.faqTeaser.q4">Übernehmen Sie auch die laufende Buchhaltung?</span>
+                        <span class="faq__icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p data-i18n="homepage.faqTeaser.a4">Ja. Wir übernehmen Finanzbuchhaltung, Lohnbuchhaltung, Jahresabschlüsse und alle Steuererklärungen – auf Wunsch komplett oder als ergänzende Beratung zu Ihrem internen Team.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span data-i18n="homepage.faqTeaser.q5">Wie schnell kann ich einen Termin bekommen?</span>
+                        <span class="faq__icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p data-i18n="homepage.faqTeaser.a5">In der Regel innerhalb von 3–5 Werktagen. Bei dringenden Anliegen (z. B. Betriebsprüfung, Fristen) oft auch kurzfristiger. Kontaktieren Sie uns einfach.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="text-center mt-lg">
+                <a href="faq.html" class="btn btn--primary" data-i18n="homepage.faqTeaser.seeAll">Alle Fragen ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions / Featured Services -->
+    <section class="section" style="background: var(--color-bg-dark);">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: var(--spacing-xl);" data-i18n="homepage.quickActions.heading">Schnelle Hilfe bei dringenden Themen</h2>
+            <div class="grid grid--3">
+                <!-- Steuerstrafrecht -->
+                <div style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius); border-left: 4px solid #dc2626; box-shadow: var(--shadow-md);">
+                    <img src="assets/images/icon-shield.svg" alt="" style="width: 40px; height: 40px; color: #dc2626; margin-bottom: var(--spacing-sm);">
+                    <h3 style="font-size: 1.125rem; color: #991b1b; margin-bottom: var(--spacing-sm);" data-i18n="homepage.quickActions.taxCriminal.title">Steuerstrafverfahren?</h3>
+                    <p style="font-size: 0.9375rem; color: var(--color-text-light); margin-bottom: var(--spacing-md);" data-i18n="homepage.quickActions.taxCriminal.text">
+                        Schnelles Handeln ist entscheidend. Wir beraten Sie innerhalb von 24 Stunden – auch am Wochenende.
+                    </p>
+                    <a href="leistungen.html#steuerstrafrecht" style="color: #dc2626; font-weight: 600; font-size: 0.9375rem;" data-i18n="homepage.quickActions.taxCriminal.link">Sofort Kontakt aufnehmen →</a>
+                </div>
+
+                <!-- Wegzug geplant -->
+                <div style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius); border-left: 4px solid #3b82f6; box-shadow: var(--shadow-md);">
+                    <img src="assets/images/icon-globe.svg" alt="" style="width: 40px; height: 40px; color: #3b82f6; margin-bottom: var(--spacing-sm);">
+                    <h3 style="font-size: 1.125rem; color: #1e40af; margin-bottom: var(--spacing-sm);" data-i18n="homepage.quickActions.exitTax.title">Wegzug ins Ausland?</h3>
+                    <p style="font-size: 0.9375rem; color: var(--color-text-light); margin-bottom: var(--spacing-md);" data-i18n="homepage.quickActions.exitTax.text">
+                        Frühzeitige Planung spart Steuern. Wir analysieren Ihre Situation und zeigen Gestaltungsmöglichkeiten.
+                    </p>
+                    <a href="leistungen.html#wegzug" style="color: #3b82f6; font-weight: 600; font-size: 0.9375rem;" data-i18n="homepage.quickActions.exitTax.link">Wegzugsberatung anfragen →</a>
+                </div>
+
+                <!-- E-Commerce Start -->
+                <div style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius); border-left: 4px solid #10b981; box-shadow: var(--shadow-md);">
+                    <img src="assets/images/icon-shopping-cart.svg" alt="" style="width: 40px; height: 40px; color: #10b981; margin-bottom: var(--spacing-sm);">
+                    <h3 style="font-size: 1.125rem; color: #065f46; margin-bottom: var(--spacing-sm);" data-i18n="homepage.quickActions.ecommerce.title">E-Commerce international?</h3>
+                    <p style="font-size: 0.9375rem; color: var(--color-text-light); margin-bottom: var(--spacing-md);" data-i18n="homepage.quickActions.ecommerce.text">
+                        Amazon, eBay, Shopify – wir kennen die Fallstricke. Steuerlich sicher von Anfang an.
+                    </p>
+                    <a href="leistungen.html#ecommerce" style="color: #10b981; font-weight: 600; font-size: 0.9375rem;" data-i18n="homepage.quickActions.ecommerce.link">E-Commerce Beratung starten →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Über uns Teaser -->
+    <section class="section section-alt">
+        <div class="container-narrow text-center">
+            <h2 data-i18n="homepage.aboutTeaser.heading">Über Steuerkanzlei Ibrahim Erben</h2>
+            <p style="color: var(--color-text-light); font-size: 1.125rem; line-height: 1.8;" data-i18n="homepage.aboutTeaser.text">
+                Wir sind eine Steuerberatungskanzlei in Düren mit Spezialisierung auf komplexe nationale und internationale Steuerfragen. Unser Fokus liegt auf Wegzugssteuer, E-Commerce, Heilberufen, Immobilien und Unternehmensstrukturen. Wir schaffen Klarheit, bevor Sie entscheiden – persönlich, digital und kompetent.
+            </p>
+            <a href="ueber-uns.html" class="btn btn--primary mt-lg" data-i18n="homepage.aboutTeaser.button">Mehr über uns erfahren</a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-section__title" data-i18n="cta.heading">Bereit für Klarheit?</h2>
+            <p class="cta-section__subtitle" data-i18n="cta.subheading">
+                Lassen Sie uns über Ihre steuerliche Zukunft sprechen.
+            </p>
+            <a href="kontakt.html" class="btn btn--primary btn--large" data-i18n="cta.button">Jetzt Erstgespräch anfragen</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <h3 class="footer__section-title">Steuerkanzlei Ibrahim Erben</h3>
+                    <p class="footer__text">
+                        Weierstraße 43<br>
+                        52349 Düren<br>
+                        Deutschland
+                    </p>
+                </div>
+                <div>
+                    <h3 class="footer__section-title" data-i18n="footer.contact">Kontakt</h3>
+                    <p class="footer__text">
+                        <a href="tel:+492421998481" class="footer__link">+49 2421 99 848 10</a><br>
+                        <a href="mailto:info@stberben.com" class="footer__link">info@stberben.com</a><br>
+                        Fax: +49 2421 99 848 29
+                    </p>
+                    <p class="footer__text">
+                        <strong data-i18n="footer.openingHours">Öffnungszeiten:</strong><br>
+                        <span data-i18n="footer.hours">Mo–Fr: 08:30–18:00</span>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="footer__section-title" data-i18n="footer.navigation">Navigation</h3>
+                    <p class="footer__text">
+                        <a href="leistungen.html" class="footer__link" data-i18n="nav.services">Leistungen</a><br>
+                        <a href="ueber-uns.html" class="footer__link" data-i18n="nav.about">Über uns</a><br>
+                        <a href="faq.html" class="footer__link" data-i18n="nav.faq">FAQ</a><br>
+                        <a href="wissen.html" class="footer__link" data-i18n="nav.knowledge">Wissen</a><br>
+                        <a href="tools.html" class="footer__link" data-i18n="nav.tools">Tools</a><br>
+                        <a href="honorar.html" class="footer__link" data-i18n="nav.pricing">Honorar</a><br>
+                        <a href="karriere.html" class="footer__link" data-i18n="nav.career">Karriere</a><br>
+                        <a href="kontakt.html" class="footer__link" data-i18n="nav.contact">Kontakt</a>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="footer__section-title" data-i18n="footer.legal">Rechtliches</h3>
+                    <p class="footer__text">
+                        <a href="impressum.html" class="footer__link" data-i18n="footer.imprint">Impressum</a><br>
+                        <a href="datenschutz.html" class="footer__link" data-i18n="footer.privacy">Datenschutz</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 Steuerkanzlei Ibrahim Erben. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JS for FAQ Accordion, Mobile Menu, and Language Switcher -->
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq__question').forEach(button => {
+            button.addEventListener('click', () => {
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+                button.setAttribute('aria-expanded', !isExpanded);
+                const answer = button.nextElementSibling;
+                answer.classList.toggle('is-open');
+            });
+        });
+
+        // Mobile Menu Toggle
+        const navToggle = document.querySelector('.nav__toggle');
+        const navList = document.querySelector('.nav__list');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = navList.classList.contains('is-open');
+                navList.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', !isOpen);
+                navToggle.textContent = isOpen ? '☰' : '✕';
+            });
+        }
+
+        // Language Switcher
+        const langButton = document.getElementById('lang-button');
+        const langDropdown = document.getElementById('lang-dropdown');
+
+        if (langButton && langDropdown) {
+            langButton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isOpen = langDropdown.classList.contains('is-open');
+                langDropdown.classList.toggle('is-open');
+                langButton.setAttribute('aria-expanded', !isOpen);
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', () => {
+                langDropdown.classList.remove('is-open');
+                langButton.setAttribute('aria-expanded', 'false');
+            });
+
+            // Prevent dropdown from closing when clicking inside
+            langDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        }
+
+        // Dropdown Navigation (for mobile - on desktop it's handled by CSS hover)
+        const dropdownItems = document.querySelectorAll('.nav__item--has-dropdown');
+
+        dropdownItems.forEach(item => {
+            const link = item.querySelector('.nav__link--has-dropdown');
+            const dropdown = item.querySelector('.nav__dropdown');
+
+            if (link && dropdown) {
+                // On mobile, toggle dropdown on click
+                link.addEventListener('click', (e) => {
+                    // Only prevent default and toggle on mobile (when nav toggle is visible)
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+
+                        // Close other open dropdowns
+                        dropdownItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.classList.remove('is-open');
+                            }
+                        });
+
+                        // Toggle current dropdown
+                        item.classList.toggle('is-open');
+                    }
+                });
+
+                // Close mobile menu when a dropdown link is clicked
+                const dropdownLinks = dropdown.querySelectorAll('.nav__dropdown-link');
+                dropdownLinks.forEach(dropdownLink => {
+                    dropdownLink.addEventListener('click', () => {
+                        // Only close on mobile
+                        if (window.innerWidth <= 768) {
+                            // Close the dropdown
+                            item.classList.remove('is-open');
+                            // Close the main mobile menu
+                            if (navList && navToggle) {
+                                navList.classList.remove('is-open');
+                                navToggle.setAttribute('aria-expanded', 'false');
+                                navToggle.textContent = '☰';
+                            }
+                        }
+                    });
+                });
+            }
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav__item--has-dropdown')) {
+                dropdownItems.forEach(item => {
+                    item.classList.remove('is-open');
+                });
+            }
+        });
+
+        // Hero Slideshow
+        const slides = document.querySelectorAll('.hero__slide');
+        const indicators = document.querySelectorAll('.hero__indicator');
+        const prevBtn = document.querySelector('.hero__control--prev');
+        const nextBtn = document.querySelector('.hero__control--next');
+        const heroControls = document.querySelector('.hero__controls');
+        let currentSlide = 0;
+        let slideInterval = null;
+        let controlsTimeout = null;
+
+        function showSlide(index) {
+            // Remove active class from all slides and indicators
+            slides.forEach(slide => slide.classList.remove('hero__slide--active'));
+            indicators.forEach(indicator => indicator.classList.remove('hero__indicator--active'));
+
+            // Add active class to current slide and indicator
+            slides[index].classList.add('hero__slide--active');
+            indicators[index].classList.add('hero__indicator--active');
+
+            // Show controls temporarily when slide changes
+            showControlsTemporarily();
+        }
+
+        function showControlsTemporarily() {
+            if (heroControls) {
+                // Clear existing timeout
+                if (controlsTimeout) {
+                    clearTimeout(controlsTimeout);
+                }
+
+                // Show controls
+                heroControls.classList.add('show');
+
+                // Hide after 0.2 seconds
+                controlsTimeout = setTimeout(() => {
+                    heroControls.classList.remove('show');
+                }, 200);
+            }
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function startAutoSlide() {
+            // Clear any existing interval first
+            if (slideInterval !== null) {
+                clearInterval(slideInterval);
+                slideInterval = null;
+            }
+            // Start new interval
+            slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        }
+
+        function stopAutoSlide() {
+            if (slideInterval !== null) {
+                clearInterval(slideInterval);
+                slideInterval = null;
+            }
+        }
+
+        // Event listeners for controls
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                stopAutoSlide();
+                nextSlide();
+                startAutoSlide();
+            });
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                stopAutoSlide();
+                prevSlide();
+                startAutoSlide();
+            });
+        }
+
+        // Event listeners for indicators
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                stopAutoSlide();
+                currentSlide = index;
+                showSlide(currentSlide);
+                startAutoSlide();
+            });
+        });
+
+        // Pause slideshow on hover
+        const heroSection = document.querySelector('.hero--slideshow');
+        if (heroSection) {
+            heroSection.addEventListener('mouseenter', stopAutoSlide);
+            heroSection.addEventListener('mouseleave', startAutoSlide);
+        }
+
+        // Start auto-slide
+        if (slides.length > 0) {
+            startAutoSlide();
+        }
+    </script>
+
+    <!-- Search Modal -->
+    <div class="search-modal">
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input type="text" class="search-input" placeholder="Suchen Sie nach Themen, Leistungen oder Informationen...">
+                <button class="search-close" aria-label="Schließen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Sticky Contact CTA -->
+<a href="kontakt.html" class="sticky-cta">
+    <svg class="sticky-cta__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+    </svg>
+    <span class="sticky-cta__text" data-i18n="features.stickyCta.contact">Jetzt Beratung anfragen</span>
+</a>
+
+<!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Nach oben scrollen">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <!-- Cookie Consent -->
+    <script src="assets/js/cookies.js"></script>
+
+    <!-- Navigation Helpers -->
+    <script src="assets/js/navigation-helpers.js"></script>
+
+    <!-- i18n Translation System -->
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/features.js"></script>
+</body>
+</html>
+<!-- Updated 1771721391 -->
+<!-- Updated 1771721875 -->
+<!-- Updated 1771722072 -->

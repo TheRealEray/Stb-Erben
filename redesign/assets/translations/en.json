@@ -1,0 +1,1028 @@
+{
+  "meta": {
+    "title": "Tax Advisor Düren | Steuerkanzlei Ibrahim Erben | Exit Tax, E-Commerce, Business Consulting",
+    "description": "Tax consulting for forward-thinking entrepreneurs. Specialized in exit taxation, e-commerce, healthcare professions & real estate. Personal. Digital. Competent."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "faq": "FAQ",
+    "knowledge": "Knowledge",
+    "tools": "Tools",
+    "pricing": "Pricing",
+    "career": "Career",
+    "contact": "Contact",
+    "dropdown": {
+      "taxCriminal": "Tax Criminal & Penalty Proceedings",
+      "insolvency": "Insolvency Advisory & Crisis Management",
+      "exitTax": "Exit Tax & International",
+      "ecommerce": "E-Commerce & Online Business",
+      "healthcare": "Healthcare Professions & MVZ",
+      "realEstate": "Real Estate & Assets",
+      "succession": "Succession & Restructuring",
+      "support": "Ongoing Support"
+    }
+  },
+  "hero": {
+    "slide1": {
+      "title": "Tax Consulting for Forward-Thinking Entrepreneurs",
+      "subtitle": "Exit tax, e-commerce, restructuring – we create clarity before you decide.",
+      "ctaPrimary": "Request Initial Consultation",
+      "ctaSecondary": "Our Services"
+    },
+    "slide2": {
+      "title": "Tax Criminal & Penalty Proceedings",
+      "subtitle": "Quick action is crucial. We defend and accompany you discreetly and competently – also available on weekends.",
+      "ctaPrimary": "Request Immediate Consultation",
+      "ctaSecondary": "Emergency Contact",
+      "badge": "24/7"
+    },
+    "slide3": {
+      "title": "Planning to Move Abroad?",
+      "subtitle": "Early planning avoids expensive tax traps. We analyze your situation and show design opportunities.",
+      "ctaPrimary": "Start Exit Tax Consultation",
+      "ctaSecondary": "Book Initial Meeting"
+    },
+    "slide4": {
+      "title": "E-Commerce & Online Business",
+      "subtitle": "Amazon, eBay, Shopify – handle international VAT correctly. Scale tax-securely from the start.",
+      "ctaPrimary": "E-Commerce Consulting",
+      "ctaSecondary": "Frequently Asked Questions"
+    },
+    "slide5": {
+      "title": "Specialization in Complex Tax Matters",
+      "subtitle": "When standard solutions are not enough: We support entrepreneurs in highly specialized tax challenges.",
+      "stat1Label": "Specializations",
+      "stat2Label": "Digital Processes",
+      "stat3Label": "Emergency Response Time"
+    }
+  },
+  "trustBar": {
+    "personal": "Personal Contact",
+    "digital": "Digital Collaboration",
+    "expertise": "Industry Specialization",
+    "proactive": "Proactive Consulting"
+  },
+  "problemSolution": {
+    "heading": "Do You Know These Questions?",
+    "problem1": {
+      "title": "Moving abroad – but what about taxes?",
+      "text": "Relocating from Germany raises numerous tax questions. We accompany you in tax assessment and planning – structured, transparent, and forward-looking.",
+      "link": "More about exit tax →"
+    },
+    "problem2": {
+      "title": "E-commerce across borders – which VAT rules apply?",
+      "text": "International online commerce is complex: OSS, platform regulations, delivery thresholds. We provide clarity and optimal tax structures for your growth.",
+      "link": "More about e-commerce →"
+    },
+    "problem3": {
+      "title": "Company growing – do I need a holding?",
+      "text": "Tax-efficient corporate and shareholding structures can protect assets and optimize taxes. We develop solutions that fit your needs.",
+      "link": "More about structuring →"
+    }
+  },
+  "competencies": {
+    "heading": "Our Specializations",
+    "subheading": "Our consulting combines tax structuring, legal expertise, and strategic foresight. We accompany companies, entrepreneurs, and shareholders through all tax and legally sensitive phases – from structuring to crisis management.",
+    "exitTax": {
+      "title": "Exit Tax & International",
+      "text": "Tax planning for exit, double taxation agreements, international structures.",
+      "link": "Learn more →"
+    },
+    "ecommerce": {
+      "title": "E-Commerce & Online Trade",
+      "text": "VAT on Amazon, eBay & Co., OSS, platform models, scaling.",
+      "link": "Learn more →"
+    },
+    "healthcare": {
+      "title": "Healthcare Professions & MVZ",
+      "text": "Doctors, pharmacies, MVZ – corporate structures, real estate, succession planning.",
+      "link": "Learn more →"
+    },
+    "realEstate": {
+      "title": "Real Estate & Assets",
+      "text": "Real estate taxation, corporate models, asset transfer.",
+      "link": "Learn more →"
+    },
+    "succession": {
+      "title": "Succession & Restructuring",
+      "text": "Business transfer, holding models, conversions, family businesses.",
+      "link": "Learn more →"
+    },
+    "support": {
+      "title": "Ongoing Support",
+      "text": "Accounting, payroll, annual financial statements, tax returns – all from one source.",
+      "link": "Learn more →"
+    },
+    "insolvency": {
+      "title": "Insolvency Advisory & Crisis Management",
+      "text": "Early crisis detection, restructuring concepts, support in insolvency proceedings.",
+      "link": "Learn more →"
+    }
+  },
+  "trustIndicators": {
+    "heading": "Why Clients Trust Us",
+    "subheading": "Successful tax consulting is based on expertise, experience, and personal collaboration.",
+    "specialization": {
+      "title": "Specialization Instead of Generalism",
+      "text": "We focus on complex specializations: Exit tax, e-commerce, tax criminal law, corporate structures. This means deep expertise instead of superficiality."
+    },
+    "personal": {
+      "title": "Dedicated Contact Person",
+      "text": "You work with a dedicated tax advisor – no changing contacts, no anonymity. Your advisor knows your business and your goals."
+    },
+    "digital": {
+      "title": "Fully Digital Processes",
+      "text": "Cloud accounting, secure document portals, video calls: Modern collaboration without media breaks. Work from anywhere – so do we."
+    },
+    "proactive": {
+      "title": "Proactive Consulting",
+      "text": "We don't just respond to your questions, we think ahead: Design opportunities, deadlines, risks. You receive action recommendations before problems arise."
+    },
+    "international": {
+      "title": "International Competence",
+      "text": "Double taxation agreements, cross-border structures, international VAT: We accompany you beyond German borders."
+    },
+    "quality": {
+      "title": "Long-term Partnership",
+      "text": "Tax consulting is a matter of trust. Many of our clients have worked with us for years – because continuity and reliability matter."
+    }
+  },
+  "process": {
+    "heading": "Clear Results in 3 Steps",
+    "subheading": "How we work together – transparent and structured.",
+    "step1": {
+      "title": "Initial Consultation",
+      "text": "We listen and understand your situation. In a personal meeting (in person or digital), we clarify your questions and goals."
+    },
+    "step2": {
+      "title": "Analysis & Strategy",
+      "text": "We develop solutions and clarify open questions. You receive a clear assessment and concrete action recommendations."
+    },
+    "step3": {
+      "title": "Implementation & Support",
+      "text": "We implement and remain your permanent contact – ongoing or as needed. You always have clarity about the current status."
+    }
+  },
+  "cta": {
+    "heading": "Ready for Clarity?",
+    "subheading": "Let's talk about your tax future.",
+    "button": "Request Initial Consultation Now"
+  },
+  "footer": {
+    "contact": "Contact",
+    "navigation": "Navigation",
+    "legal": "Legal",
+    "openingHours": "Opening Hours:",
+    "hours": "Mon–Fri: 08:30–18:00",
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2026 Steuerkanzlei Ibrahim Erben. All rights reserved."
+  },
+  "homepage": {
+    "highlightedService": {
+      "title": "Tax Criminal & Penalty Proceedings – Defense & Support",
+      "text": "Tax errors can have serious consequences. We defend and support you in tax criminal and penalty proceedings – competently, discreetly, and with a clear strategy. Voluntary disclosures, case support, communication with authorities.",
+      "button": "Request Immediate Consultation →"
+    },
+    "faqTeaser": {
+      "heading": "Frequently Asked Questions",
+      "q1": "How much does the initial consultation cost?",
+      "a1": "The first consultation (30 minutes) is free of charge. We get to know each other, you describe your situation, and we clarify how we can help you. Only then will you receive a transparent offer.",
+      "q2": "What documents do I need for the initial consultation?",
+      "a2": "You don't need any documents for the initial consultation. A brief description of your situation is sufficient. We'll discuss all details during the conversation.",
+      "q3": "Do you also work digitally/remotely?",
+      "a3": "Yes, absolutely. We use modern tools for digital collaboration: video calls, cloud accounting, secure document transmission. Many of our clients work exclusively digitally with us.",
+      "q4": "Do you also handle ongoing bookkeeping?",
+      "a4": "Yes. We handle financial accounting, payroll accounting, annual financial statements, and all tax returns – completely or as supplementary consulting to your internal team, as you wish.",
+      "q5": "How quickly can I get an appointment?",
+      "a5": "Usually within 3–5 business days. For urgent matters (e.g., tax audit, deadlines), often even sooner. Just contact us.",
+      "seeAll": "View All Questions"
+    },
+    "quickActions": {
+      "heading": "Quick Help for Urgent Matters",
+      "taxCriminal": {
+        "title": "Tax criminal proceedings?",
+        "text": "Quick action is crucial. We advise you within 24 hours – also on weekends.",
+        "link": "Get in Touch Immediately →"
+      },
+      "exitTax": {
+        "title": "Moving abroad?",
+        "text": "Early planning saves taxes. We analyze your situation and show design opportunities.",
+        "link": "Request Exit Tax Consulting →"
+      },
+      "ecommerce": {
+        "title": "International e-commerce?",
+        "text": "Amazon, eBay, Shopify – we know the pitfalls. Tax-secure from the start.",
+        "link": "Start E-Commerce Consulting →"
+      }
+    },
+    "aboutTeaser": {
+      "heading": "About Steuerkanzlei Ibrahim Erben",
+      "text": "Tax decisions shape your entrepreneurial future. That's why we focus on forward-looking consulting rather than mere number processing. As a specialized firm in Düren, we support you with complex tax questions – from exit tax to e-commerce to corporate restructuring. What sets us apart: We create clarity before you decide. Personal in contact, digital in collaboration, competent in execution.",
+      "button": "Learn More About Us"
+    }
+  },
+  "pages": {
+    "services": {
+      "hero": {
+        "title": "Our Services Overview",
+        "subtitle": "More than bookkeeping – we accompany you strategically in all tax matters.",
+        "cta1": "Request Consultation",
+        "cta2": "View Services",
+        "badge1": "7 Specializations",
+        "badge2": "Specialized",
+        "badge3": "Comprehensive"
+      },
+      "taxCriminal": {
+        "title": "Tax Criminal & Penalty Proceedings",
+        "intro": "Defense and support in tax criminal proceedings – discreet, competent, strategic.",
+        "description": "Tax errors or uncertainties can quickly lead to criminal tax proceedings or penalty proceedings. The consequences are often severe: fines, imprisonment, reputational damage. We defend and accompany you in all phases – from voluntary disclosure to case completion.",
+        "servicesTitle": "Our Services:",
+        "service1": "Voluntary Disclosures: Review of requirements, preparation and submission of penalty-exempting voluntary disclosures under § 371 AO",
+        "service2": "Defense in Tax Criminal Proceedings: Support during investigations (searches, interrogations, indictments)",
+        "service3": "Penalty Proceedings: Defense in tax-related administrative offenses",
+        "service4": "Communication with Authorities: Tax investigation, prosecution, tax office – we handle communication",
+        "service5": "Strategic Consulting: Risk assessment, procedural strategy, damage limitation",
+        "service6": "Cooperation with Criminal Defense Lawyers: Close collaboration with specialized criminal law attorneys",
+        "service7": "Crisis Management: Discretion, quick response, clear strategy",
+        "importantLabel": "Important:",
+        "importantText": "In tax criminal matters, quick action is crucial. Contact us immediately – also outside business hours. Initial consultation within 24 hours.",
+        "cta": "Get Confidential Consultation Now →"
+      },
+      "exitTax": {
+        "title": "Exit Tax & International",
+        "intro": "Relocating from Germany raises numerous tax questions: exit taxation, double taxation agreements, international corporate structures. We accompany you in tax assessment and planning – structured, transparent, and forward-looking.",
+        "servicesTitle": "Our Services:",
+        "service1": "Tax consulting for exit (exit taxation under § 6 AStG)",
+        "service2": "Analysis of double taxation agreements",
+        "service3": "Development of international corporate and shareholding structures",
+        "service4": "Cross-border wealth planning",
+        "service5": "Consulting on deemed disposal and deferral models",
+        "service6": "Ongoing support for foreign relations (certificates of residence, foreign income)",
+        "cta": "Request Consultation"
+      },
+      "ecommerce": {
+        "title": "E-Commerce & Online Trade",
+        "intro": "International online commerce is complex: VAT on platforms (Amazon, eBay, Shopify), One-Stop-Shop (OSS), delivery thresholds, import regulations. We specialize in e-commerce and help you grow tax-securely – whether you're just starting or already selling internationally.",
+        "servicesTitle": "Our Services:",
+        "service1": "VAT on international platforms (Amazon, eBay, Kaufland, Otto, Shopify, etc.)",
+        "service2": "One-Stop-Shop (OSS) registration and ongoing filings",
+        "service3": "Review and optimization of platform models (FBA, Dropshipping, B2B)",
+        "service4": "Structuring for scaling (GmbH, holding models)",
+        "service5": "Import/export consulting (Brexit, third countries, customs)",
+        "service6": "Tax support during internationalization",
+        "service7": "Defense in VAT audits",
+        "cta": "Request Consultation"
+      },
+      "healthcare": {
+        "title": "Healthcare Professions & Medicine",
+        "intro": "Doctors, dentists, pharmacies, MVZ – healthcare professions have special tax requirements. Corporate structures (solo practice, group practice, BAG, MVZ-GmbH), real estate structures, succession planning: We know the specifics and support you individually.",
+        "servicesTitle": "Our Services:",
+        "service1": "Start-up consulting (solo practice, group practice, BAG, MVZ)",
+        "service2": "Corporate structures and partnership agreements (tax consulting as ancillary service)",
+        "service3": "Real estate structures for practices (ownership, rental, business split)",
+        "service4": "Succession planning and practice sale",
+        "service5": "Ongoing support (bookkeeping, annual financial statements, tax returns)",
+        "service6": "Investment allowances and depreciation",
+        "service7": "Cooperation models (tax classification)",
+        "cta": "Request Consultation"
+      },
+      "realEstate": {
+        "title": "Real Estate & Assets",
+        "intro": "Real estate in private or business assets? GmbH & Co. KG or sole proprietorship? Asset transfer to the next generation? We develop tax-optimal structures and support you in implementation.",
+        "servicesTitle": "Our Services:",
+        "service1": "Real estate taxation (private and commercial)",
+        "service2": "Corporate models (GmbH & Co. KG, GmbH, KG, sole proprietorship)",
+        "service3": "Asset transfer and gifts (allowances, 10-year period)",
+        "service4": "Speculation periods and depreciation (AfA, special AfA)",
+        "service5": "Business split and commercial real estate trading",
+        "service6": "Support during real estate purchase and sale",
+        "service7": "Ongoing management (bookkeeping for real estate GmbHs)",
+        "cta": "Request Consultation"
+      },
+      "succession": {
+        "title": "Succession & Restructuring",
+        "intro": "Business transfer to the next generation, sale, conversion to a holding – succession and restructuring are highly complex from a tax perspective. We develop strategies that protect assets and optimize taxes.",
+        "servicesTitle": "Our Services:",
+        "service1": "Business transfer (gift, sale, mixed models)",
+        "service2": "Holding models and family holding structures",
+        "service3": "Conversions under UmwStG (merger, split, change of form, contribution)",
+        "service4": "Business split and unbundling",
+        "service5": "Inheritance and gift tax (allowances, exemptions)",
+        "service6": "Partnership agreements and will design (legal consulting as ancillary service)",
+        "service7": "Ongoing support and implementation",
+        "cta": "Request Consultation"
+      },
+      "support": {
+        "title": "Ongoing Support & Bookkeeping",
+        "intro": "You want to focus on your business, not on bookkeeping and taxes? We handle complete ongoing support – from financial accounting to tax returns. Also available as supplementary consulting to your internal team.",
+        "servicesTitle": "Our Services:",
+        "service1": "Financial accounting (DATEV, digital document capture)",
+        "service2": "Payroll accounting and payroll tax registrations",
+        "service3": "Annual financial statements (HGB, EStG) and income-surplus calculation (EÜR)",
+        "service4": "All tax returns (income tax, corporate tax, VAT, trade tax)",
+        "service5": "Business evaluations (BWA) and controlling",
+        "service6": "Support during audits and appeals",
+        "service7": "Crisis consulting and restructuring",
+        "service8": "Defense in tax criminal and penalty proceedings",
+        "cta": "Request Consultation"
+      },
+      "insolvency": {
+        "title": "Insolvency Advisory & Crisis Management",
+        "intro": "Financial crises require quick, structured action. We accompany you in assessing your situation, developing action alternatives, and implementing economically viable solutions – from early crisis detection to restructuring or insolvency.",
+        "servicesTitle": "Our Services:",
+        "service1": "Early crisis detection and economic analysis",
+        "service2": "Development of restructuring concepts",
+        "service3": "Support in negotiations with creditors and financiers",
+        "service4": "Tax consulting for restructuring and debt relief",
+        "service5": "Preparation and support of insolvency proceedings",
+        "service6": "Consulting on insolvency challenges and liability risks",
+        "service7": "Cooperation with insolvency administrators, lawyers and restructuring consultants",
+        "noteLabel": "Note:",
+        "noteText": "The earlier you act, the more room you have to maneuver. We support you discreetly and with a clear focus on economically viable solutions.",
+        "cta": "Request Consultation"
+      },
+      "additional": {
+        "title": "Additional Specializations",
+        "intro": "Beyond our main focus areas, we offer additional specialized services:",
+        "service1": "Legal consulting as ancillary service according to § 5 Para. 1 RDG (partnership agreements, contract design in tax context)",
+        "service2": "Tax criminal and penalty proceedings: Defense and support",
+        "service3": "Non-profit & Associations: Associations, foundations, gGmbHs, recognition procedures",
+        "service4": "Digitalization & AI in Business: Tax classification, process optimization, automation",
+        "service5": "Industry expertise: Crafts & construction, mobility & logistics, trade, care & social services",
+        "cta": "Request Consultation"
+      },
+      "ctaSection": {
+        "title": "Not sure which service fits your needs?",
+        "subtitle": "Let's talk – in the initial consultation we'll figure out how we can help you.",
+        "button": "Request Initial Consultation"
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "Let's Talk",
+        "subtitle": "We look forward to your message. Contact us by phone, email, or through our contact form – we'll respond within 24 hours."
+      }
+    },
+    "about": {
+      "hero": {
+        "title": "About Steuerkanzlei Ibrahim Erben",
+        "subtitle": "Tax consulting from Düren – personal, competent, forward-thinking. Your partner for complex tax questions.",
+        "cta1": "Get to Know Us",
+        "cta2": "Our Values",
+        "stat1": "Years",
+        "stat2": "Clients"
+      },
+      "story": {
+        "heading": "We create clarity before you decide",
+        "intro": "Tax decisions are rarely urgent – but almost always consequential. When facing important strategic decisions, you don't need quick answers, but well-founded assessments, clear strategies, and a partner who thinks ahead.",
+        "paragraph2": "Many entrepreneurs come to us when traditional tax consulting is no longer sufficient. When structures grow, business areas become more complex, or international connections are added. When you need not just tax returns, but strategic structuring, risk assessment, and reliable concepts.",
+        "paragraph3": "We often work with companies that already have holding structures, participations, or cross-border models – but don't fully utilize the tax potential or overlook risks. We analyze what exists, identify weaknesses, and develop solutions that work legally and make economic sense.",
+        "paragraph4": "Additionally, we serve clients already on a path to success where tax consulting in the past was often reduced to routine declarations and structuring potentials were not recognized or utilized. This particularly includes high-growth entrepreneurs, influencers and bloggers with high reach, as well as clients with broad and dynamic business areas.",
+        "paragraph5": "What distinguishes our firm is a structured, strategic, and procedurally secure working method as well as a high success rate – particularly in structuring issues, tax audits, contentious proceedings, and sensitive tax criminal law situations. Our focus is not on short-term individual measures, but on sustainable, legally secure solutions that withstand audit and liability considerations.",
+        "paragraph6": "We also see ourselves as advisors to advisors. In complex or particularly sensitive matters, we are regularly called upon by tax advisors, auditors, and lawyers to assess specialized questions, develop structures, or technically secure planning."
+      },
+      "philosophy": {
+        "heading": "Our Philosophy",
+        "card1Title": "Personal",
+        "card1Text": "You have a dedicated contact person – no rotation, no anonymity. We get to know your business and support you long-term.",
+        "card2Title": "Proactive",
+        "card2Text": "We think ahead, inform you about legal changes, and identify optimization potential – not just on request.",
+        "card3Title": "Digital",
+        "card3Text": "Modern tools, cloud accounting, video calls – we work digitally, efficiently, and location-independently. Of course, you're also welcome in person in Düren.",
+        "card4Title": "Specialized",
+        "card4Text": "Deep knowledge in our focus areas instead of superficial all-around consulting. When we can help you, we do it right."
+      },
+      "team": {
+        "heading": "Our Team",
+        "intro": "[ASSUMPTION] Our team consists of experienced tax consultants and specialists who have specialized in their respective fields. We work hand in hand to provide you with the best consulting.",
+        "outro": "Together we form a strong team – with expertise, experience, and genuine interest in your success."
+      },
+      "location": {
+        "heading": "Our Location in Düren",
+        "intro": "[ASSUMPTION] In the heart of Düren, easily accessible with on-site parking. Prefer working digitally? No problem – many of our clients work exclusively remotely with us.",
+        "addressLabel": "Address",
+        "phoneLabel": "Phone",
+        "emailLabel": "Email"
+      },
+      "cta": {
+        "title": "Get to know us",
+        "subtitle": "In a personal conversation – on-site or digital.",
+        "button": "Schedule Appointment"
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "Let's Talk",
+        "subtitle": "We look forward to your message. Contact us by phone, email, or through our contact form – we'll respond within 24 hours.",
+        "badge": "24h Response"
+      },
+      "form": {
+        "heading": "Send Message",
+        "intro": "Fill out the form – we'll get back to you within 24 hours.",
+        "nameLabel": "Name *",
+        "namePlaceholder": "Your Name",
+        "emailLabel": "Email Address *",
+        "emailPlaceholder": "your@email.com",
+        "phoneLabel": "Phone (optional)",
+        "phonePlaceholder": "+49 123 456789",
+        "subjectLabel": "Subject *",
+        "subjectPlaceholder": "Please select...",
+        "subjectOption1": "General Inquiry",
+        "subjectOption2": "Career",
+        "subjectOption3": "Questions and Concerns",
+        "subjectOption4": "Tax Consulting",
+        "subjectOption5": "Appointment Request",
+        "messageLabel": "Your Message *",
+        "messagePlaceholder": "Briefly describe your inquiry...",
+        "attachmentsLabel": "Attachments (optional)",
+        "attachmentsNote": "Max. 10 MB per file",
+        "privacyLabel": "I have read the privacy policy and agree to the processing of my data for the purpose of handling my inquiry. *",
+        "submitButton": "Send Message",
+        "requiredFieldsAlert": "Please fill in all required fields.",
+        "invalidEmailAlert": "Please enter a valid email address.",
+        "successMessage": "Thank you for your message! We'll get back to you within 24 hours.\n\n(NOTE: This is a demo. In the live version, the form would be sent to your backend.)"
+      },
+      "info": {
+        "heading": "Contact Information",
+        "intro": "You can also reach us directly by phone or email.",
+        "addressLabel": "Address",
+        "phoneLabel": "Phone",
+        "emailLabel": "Email",
+        "hoursLabel": "Opening Hours",
+        "hoursValue": "Monday–Friday\n08:30–18:00"
+      },
+      "map": {
+        "heading": "How to Find Us",
+        "intro": "Weierstraße 43, 52349 Düren – in the heart of Düren, easily accessible."
+      },
+      "reviews": {
+        "title": "What Our Clients Say",
+        "cta": "Review Us on Google"
+      },
+      "social": {
+        "title": "Follow Us",
+        "whatsapp": "WhatsApp",
+        "telegram": "Telegram",
+        "instagram": "Instagram"
+      }
+    },
+    "faq": {
+      "hero": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Transparency from the start. Here you'll find answers to the most important questions about our approach, costs, and services.",
+        "cta1": "Ask Personal Question",
+        "cta2": "Go to FAQs"
+      },
+      "sections": {
+        "general": "General Questions",
+        "consultation": "Initial Consultation & Costs",
+        "collaboration": "Collaboration",
+        "specializations": "Specializations",
+        "other": "Additional Questions"
+      },
+      "q1": {
+        "q": "Who is your firm right for?",
+        "a": "We specialize in entrepreneurs, self-employed professionals, and freelancers with complex tax matters. Our focus areas include exit tax, e-commerce, healthcare professions, real estate, and corporate structures. If you're looking for proactive consulting on equal footing – not just annual tax returns – you're in the right place."
+      },
+      "q2": {
+        "q": "Do you also work nationwide/remotely?",
+        "a": "Yes, absolutely. Many of our clients are located throughout Germany or abroad. We use modern tools for digital collaboration: video calls, cloud accounting, secure document transmission. Personal meetings are of course also possible – at our office in Düren or at your location."
+      },
+      "q3": {
+        "q": "What software do you use?",
+        "a": "We work with DATEV for accounting and payroll – the industry standard for professional tax consulting. For digital collaboration, we use modern cloud solutions, secure document portals, and video conferencing. Collaboration is location-independent and efficient."
+      },
+      "q4": {
+        "q": "How much does the initial consultation cost?",
+        "a": "The first consultation (30 minutes) is free of charge. We get to know each other, you describe your situation, and we clarify how we can help you. Only then will you receive a transparent offer – with no hidden costs."
+      },
+      "q5": {
+        "q": "How does the initial consultation work?",
+        "a": "The initial consultation is non-binding and lasts approximately 30 minutes. We get to know each other, you describe your situation and questions. We give you an initial assessment and clarify whether and how we can work together. After that, you decide at your leisure whether you want to work with us."
+      },
+      "q6": {
+        "q": "What documents should I bring?",
+        "a": "You don't need any documents for the initial consultation. A brief description of your situation is sufficient (e.g., \"I'm planning to relocate abroad\" or \"I sell internationally on Amazon\"). We'll discuss all details during the conversation. For specific projects, you're welcome to bring relevant documents, but it's not required."
+      },
+      "q7": {
+        "q": "How are your fees calculated?",
+        "a": "Our fees are based on the German Tax Consultant Fee Regulation (StBVV) or by individual agreement. For projects (e.g., exit tax consulting, structuring), we often offer flat rates – so you know from the start what to expect. For ongoing support, we work with monthly flat rates or based on actual effort. Transparency is important to us: you'll always receive a clear offer in advance."
+      },
+      "q8": {
+        "q": "Do you offer flat rates?",
+        "a": "Yes, we offer flat rates for many services – for example, for annual financial statements, tax returns, or consulting projects. For ongoing support, we work with monthly fixed prices. This gives you planning security. We'll discuss this individually during the initial consultation."
+      },
+      "q9": {
+        "q": "Will I have a dedicated contact person?",
+        "a": "Yes, absolutely. You have a dedicated tax consultant as your contact person – no rotation, no anonymity. Your tax consultant knows your business, your goals, and your situation. In case of absence (vacation, illness), a colleague will represent them – but your main contact person always remains the same."
+      },
+      "q10": {
+        "q": "How quickly do you respond to inquiries?",
+        "a": "We typically respond within 24 hours (on business days). For urgent matters (e.g., ongoing audit, deadlines), often on the same day. You can reach us by phone Mon–Fri from 08:30–18:00."
+      },
+      "q11": {
+        "q": "Can we work together digitally?",
+        "a": "Yes, that's actually our standard. We use cloud accounting (DATEV), secure document portals, and video calls. Many of our clients work exclusively digitally with us – without ever having been on-site. Of course, you can also visit us personally in Düren if you prefer."
+      },
+      "q12": {
+        "q": "Do you also handle ongoing bookkeeping?",
+        "a": "Yes. We handle financial accounting, payroll accounting, annual financial statements, and all tax returns – completely or as supplementary consulting to your internal team, as you wish. We adapt to your requirements."
+      },
+      "q13": {
+        "q": "What is exit tax and who does it affect?",
+        "a": "Exit taxation (§ 6 AStG) affects individuals who leave Germany while holding shares in a corporation (e.g., GmbH). Upon exit, hidden reserves are taxed – even if no sale takes place. This mainly affects entrepreneurs, shareholders, and managing directors with GmbH shares. We advise you on strategies, deferral models, and tax alternatives."
+      },
+      "q14": {
+        "q": "Do you also advise on e-commerce/Amazon?",
+        "a": "Yes, e-commerce and online trade are one of our focus areas. We advise on VAT for international platforms (Amazon, eBay, Shopify, etc.), OSS (One-Stop-Shop), FBA, dropshipping, structuring for growth, and much more. Whether you're just starting or already selling internationally – we help you grow tax-securely."
+      },
+      "q15": {
+        "q": "Do you support during tax audits?",
+        "a": "Yes, absolutely. We accompany you throughout the entire tax audit: preparation, execution, final meeting, and objection if necessary. Our goal is for you to be well-prepared and experience no unpleasant surprises. If you've already received an audit notice, contact us quickly."
+      },
+      "q16": {
+        "q": "Do you also advise on real estate?",
+        "a": "Yes. We advise on real estate in private and business assets, corporate models (GmbH & Co. KG, etc.), asset transfer, speculation periods, depreciation, and much more. Real estate is tax-wise highly complex – we develop solutions that fit your situation."
+      },
+      "q17": {
+        "q": "Do you also support healthcare professions (doctors, pharmacies)?",
+        "a": "Yes, healthcare professions are one of our focus areas. We advise doctors, dentists, pharmacies, and MVZ on founding, corporate structures, real estate structures, succession planning, and ongoing support. Healthcare professions have special tax requirements – we know them."
+      },
+      "q18": {
+        "q": "How quickly can I get an appointment?",
+        "a": "Usually within 3–5 business days. For urgent matters (e.g., tax audit, approaching deadlines), often even sooner. Just contact us – we'll find a solution."
+      },
+      "q19": {
+        "q": "Do you also offer legal consulting?",
+        "a": "As tax consultants, we may offer legal consulting as an ancillary service according to § 5 Para. 1 RDG – i.e., legal consulting directly related to tax consulting (e.g., partnership agreements in a tax context). For complex legal questions, we work together with specialized attorneys."
+      },
+      "q20": {
+        "q": "Do you also work with start-ups?",
+        "a": "Yes, gladly. We accompany you from founding to growth: choice of legal form, business registration, tax office registration, ongoing bookkeeping, tax returns. We have extensive experience especially with e-commerce start-ups, healthcare professions, or planned internationalization."
+      },
+      "closing": {
+        "heading": "Didn't find your question?",
+        "text": "Write to us – we're happy to answer your questions personally.",
+        "button": "Get in Touch"
+      }
+    },
+    "wissen": {
+      "hero": {
+        "title": "Knowledge Tax Field Audit",
+        "subtitle": "What you should know about tax audits – process, rights and strategic support"
+      },
+      "intro": "A tax field audit is a significant intervention for many entrepreneurs, self-employed professionals and freelancers. What often begins as a \"routine audit\" can quickly lead to back taxes, interest charges or even tax criminal law risks.",
+      "what": {
+        "title": "What is a tax field audit?",
+        "text1": "The tax field audit is a legally regulated examination procedure in which the tax authorities comprehensively examine the tax affairs of a taxpayer. The legal basis is in particular §§ 193 ff. Tax Code (AO) and the tax audit regulations.",
+        "goal": "<strong style=\"color: var(--color-primary);\">Purpose of the field audit:</strong> Uniformity of taxation in compliance with the principle of proportionality."
+      },
+      "whatIsChecked": {
+        "title": "What does the tax authority actually examine?",
+        "intro": "As part of a tax field audit, the tax authorities do not limit themselves to a mere comparison of figures. Rather, they conduct a comprehensive business assessment in which economic processes, organizational structures and entrepreneurial decisions are comprehensively evaluated.",
+        "card1": {
+          "title": "Business Processes",
+          "description": "Workflows, responsibilities, purchasing and sales processes, warehousing"
+        },
+        "card2": {
+          "title": "Calculations & Prices",
+          "description": "Gross profit margins, goods input ratios, price comparisons"
+        },
+        "card3": {
+          "title": "Cash Management",
+          "description": "Proper records, formal correctness"
+        },
+        "card4": {
+          "title": "Business Decisions",
+          "description": "Investments, personnel structures, contract designs"
+        }
+      },
+      "whoIsAudited": {
+        "title": "Who is audited – and how often?",
+        "intro": "Field audits do not only affect large companies. The audit frequency depends on size classes, industry, irregularities and risk criteria of the tax authorities.",
+        "subtitle": "Affected business forms:",
+        "item1": "Corporations (GmbH, UG, AG)",
+        "item2": "Partnerships",
+        "item3": "Sole proprietors and freelancers",
+        "item4": "Entrepreneurs with cash management or cash transactions",
+        "item5": "Internationally active companies"
+      },
+      "auditProcess": {
+        "title": "The field audit process",
+        "step1": {
+          "title": "The audit order",
+          "intro": "Every field audit begins with an audit order. This must contain:",
+          "item1": "Legal basis of the audit",
+          "item2": "Audit period",
+          "item3": "Tax types affected",
+          "item4": "Any special audit focuses",
+          "warningLabel": "⚠️ Important:",
+          "warningText": "The audit order is not a mere formality, but the first strategic starting point. Errors or ambiguities can already be legally challengeable here."
+        },
+        "step2": {
+          "title": "Cooperation obligations",
+          "description": "The taxpayer is obliged to cooperate – but not without limits. In principle, the audit takes place on the taxpayer's business premises. Duration and scope must be oriented to the necessary measure."
+        },
+        "step3": {
+          "title": "Data access and digital audit",
+          "description": "The tax authorities increasingly resort to digital evaluations (IDEA, key figure comparisons, time series analyses)."
+        }
+      },
+      "estimation": {
+        "title": "Estimation of tax bases (§ 162 AO)",
+        "whenAllowed": {
+          "title": "When is an estimation permissible?",
+          "intro": "An estimation is permissible if:",
+          "item1": "Bookkeeping shows formal or material deficiencies",
+          "item2": "Records are not submitted",
+          "item3": "Cash management is not proper",
+          "warningLabel": "⚠️ Important:",
+          "warningText": "Not every formal deficiency automatically justifies a full estimation."
+        },
+        "requirements": {
+          "title": "Requirements for a proper estimation",
+          "intro": "Case law requires that an estimation:",
+          "item1": "Consistent",
+          "item2": "Economically possible",
+          "item3": "Realistic",
+          "item4": "Proportionate",
+          "is": "is",
+          "note": "Blanket or schematic surcharges are inadmissible."
+        }
+      },
+      "benchmarks": {
+        "title": "Benchmark collections – limits and case law",
+        "intro": "The tax authorities use industry-specific benchmark collections as reference values. However, these may not be applied mechanically.",
+        "principles": {
+          "title": "Central case law principles (BFH)",
+          "item1": "Benchmarks are guidance aids, not binding standards",
+          "item2": "Individual business characteristics must be considered",
+          "item3": "Statistical average values do not reflect business reality"
+        }
+      },
+      "ourApproach": {
+        "title": "Our approach: Individual case instead of statistics",
+        "intro": "A tax field audit must not be \"statistics taxation\". We therefore consistently focus on:",
+        "item1": "Elaboration of the individual business structure",
+        "item2": "Legal limitation of estimations",
+        "item3": "Argumentative classification of benchmarks and key figures in the concrete business context",
+        "goal": "The goal is to replace blanket assumptions by the tax authorities with comprehensible, legally reliable individual case arguments."
+      },
+      "howWeHelp": {
+        "title": "How we support you",
+        "description": "We comprehensively support our clients from the audit order to the lawsuit before the Federal Tax Court. Our focus is not on mere reaction, but on early structuring, legal classification and strategic negotiation with the tax authorities."
+      },
+      "cta": {
+        "title": "Do you have questions about tax audits?",
+        "description": "Contact us – we are happy to advise you on your specific case.",
+        "button": "Contact Us Now"
+      }
+    },
+    "tools": {
+      "hero": {
+        "title": "Tax Tools & Calculators",
+        "subtitle": "Helpful online calculators and tools for your tax planning. Fast, free, and easy to use."
+      },
+      "intro": "Use our hand-picked collection of tax calculators, forms, and tools. These external calculators open in a new window.",
+      "taxCalculators": {
+        "heading": "Tax Calculators",
+        "incomeTax": {
+          "title": "Income Tax Calculator",
+          "text": "Calculate your income tax and solidarity surcharge",
+          "link": "Go to Calculator →"
+        },
+        "giftTax": {
+          "title": "Gift Tax Calculator",
+          "text": "Determine allowances and tax on gifts",
+          "link": "Go to Calculator →"
+        },
+        "grossNet": {
+          "title": "Gross/Net Salary Calculator",
+          "text": "Calculate net salary from gross salary incl. social contributions",
+          "link": "Go to Calculator →"
+        }
+      },
+      "socialSecurity": {
+        "heading": "Social Security & Employment",
+        "parentalBenefit": {
+          "title": "Parental Benefit Calculator",
+          "text": "Calculate and optimize parental benefit entitlement",
+          "link": "Go to Calculator →"
+        },
+        "careBenefit": {
+          "title": "Care Benefit Calculator",
+          "text": "Determine care allowance and care benefits",
+          "link": "Go to Calculator →"
+        },
+        "maternityProtection": {
+          "title": "Maternity Protection Calculator",
+          "text": "Calculate maternity protection periods",
+          "link": "Go to Calculator →"
+        },
+        "workingDays": {
+          "title": "Working Days Calculator",
+          "text": "Determine working days between two dates",
+          "link": "Go to Calculator →"
+        },
+        "miniJob": {
+          "title": "Mini-Job Calculator",
+          "text": "Calculate contributions and costs for mini-jobs",
+          "link": "Go to Calculator →"
+        }
+      },
+      "businessStartup": {
+        "heading": "Business Startup",
+        "founderCheck": {
+          "title": "Founder Check",
+          "text": "Are you ready for self-employment? Check it",
+          "link": "Go to Tool →"
+        },
+        "businessPlan": {
+          "title": "Business Plan",
+          "text": "Template and guide for your business plan",
+          "link": "Go to Tool →"
+        },
+        "fundingCalculator": {
+          "title": "Funding Calculator",
+          "text": "What funding is available to you?",
+          "link": "Go to Calculator →"
+        },
+        "gmbhChecklist": {
+          "title": "GmbH Formation Checklist",
+          "text": "All steps for GmbH formation at a glance",
+          "link": "Go to Checklist →"
+        },
+        "pensionPlan": {
+          "title": "Company Pension Plan",
+          "text": "Calculator for company pension plans",
+          "link": "Go to Calculator →"
+        }
+      },
+      "additionalTools": {
+        "heading": "Additional Tools",
+        "deadlineCalculator": {
+          "title": "Deadline Calculator (BGB)",
+          "text": "Calculate legal deadlines according to BGB",
+          "link": "Go to Calculator →"
+        },
+        "loanCalculator": {
+          "title": "Loan Calculator",
+          "text": "Calculate loan installments and interest",
+          "link": "Go to Calculator →"
+        },
+        "sampleContracts": {
+          "title": "Sample Contracts",
+          "text": "Free sample contracts and templates",
+          "link": "Go to Templates →"
+        },
+        "forms": {
+          "title": "Forms",
+          "text": "Important tax forms for download",
+          "link": "Go to Forms →"
+        },
+        "tables": {
+          "title": "Tables",
+          "text": "Tax tables and overviews",
+          "link": "Go to Tables →"
+        }
+      },
+      "note": {
+        "title": "Note About the Tools",
+        "text": "The calculators and tools linked here are external offers and open in a new window. We do not guarantee the accuracy of the calculations. For specific questions about your tax situation, please contact us for personal advice."
+      },
+      "cta": {
+        "title": "Questions About Your Tax Situation?",
+        "subtitle": "Online calculators are a good first step. For well-founded advice, we are personally available.",
+        "button": "Request Consultation Now"
+      }
+    },
+    "pricing": {
+      "hero": {
+        "title": "Fees & Compensation",
+        "subtitle": "Transparent prices, fair terms. We value clear communication – also regarding costs."
+      },
+      "intro": "Every mandate is individual. We offer various compensation models – depending on what suits your situation. All prices are subject to statutory VAT.",
+      "freeContact": {
+        "title": "Free Initial Contact",
+        "intro": "The first phone call is always free. Briefly describe your concern – we'll clarify whether and how we can help you.",
+        "phoneLabel": "Call us:",
+        "benefit1": "✓ Initial assessment of your situation",
+        "benefit2": "✓ Clarification if we are the right contact",
+        "benefit3": "✓ Non-binding and free of charge",
+        "benefit4": "✓ No obligation to cooperate"
+      },
+      "initialConsultation": {
+        "title": "Initial Consultation",
+        "option1": {
+          "title": "Advisory Meeting",
+          "price": "EUR 395",
+          "unit": "per hour (net)",
+          "description": "If you have a specific tax question and want well-founded advice, we charge EUR 395 net per hour.",
+          "benefit1": "✓ Detailed analysis of your situation",
+          "benefit2": "✓ Concrete action recommendations",
+          "benefit3": "✓ Written summary"
+        },
+        "option2": {
+          "title": "Getting-to-Know Meeting",
+          "price": "Free of charge",
+          "unit": "when taking on ongoing support",
+          "description": "If it's just about a first meeting or you're interested in ongoing collaboration, the initial consultation is free for you.",
+          "benefit1": "✓ Non-binding introduction",
+          "benefit2": "✓ Presentation of our working method",
+          "benefit3": "✓ Individual offer creation"
+        }
+      },
+      "designConsulting": {
+        "title": "Tax Structuring & Project Work",
+        "intro": "For complex tax issues, structuring, or one-time projects, we work either on an hourly basis or with project flat rates.",
+        "hourlyRate": {
+          "title": "Hourly Rates",
+          "range": "EUR 180 - 220",
+          "unit": "average per hour (net)",
+          "description": "We work as a team: tax advisors and qualified specialists. This way you benefit from expertise at various levels – at fair hourly rates.",
+          "benefit1": "✓ Team approach for optimal efficiency",
+          "benefit2": "✓ Transparent time recording",
+          "benefit3": "✓ Regular interim invoices"
+        },
+        "flatFee": {
+          "title": "Project Flat Rates",
+          "price": "By agreement",
+          "unit": "for defined services",
+          "description": "For clearly defined projects, we offer fixed prices. This gives you planning security and you know in advance what costs to expect.",
+          "benefit1": "✓ Planning security through fixed price",
+          "benefit2": "✓ No hidden costs",
+          "benefit3": "✓ Clear service description"
+        },
+        "examples": {
+          "title": "Examples of tax structuring:",
+          "item1": "Expert opinions and statements",
+          "item2": "Conversions (merger, split, change of form)",
+          "item3": "Start-up consulting (GmbH, Holding, UG)",
+          "item4": "Exit planning and international structuring",
+          "item5": "Succession planning and business transfer",
+          "item6": "Due diligence and company valuation"
+        }
+      },
+      "ongoingSupport": {
+        "title": "Ongoing Tax Advisory",
+        "intro": "Ongoing tax support is billed according to the German Tax Consultant Fee Regulation (StBVV). The amount depends on various factors:",
+        "factor1": {
+          "title": "Object Value",
+          "text": "Revenue, profit, balance sheet total – depending on service"
+        },
+        "factor2": {
+          "title": "Complexity",
+          "text": "Legal form, number of transactions, special features"
+        },
+        "factor3": {
+          "title": "Scope",
+          "text": "Number of employees, accounts, documents"
+        },
+        "approach": "Our approach: We generally orient ourselves to the mid-range of the StBVV. This way you receive high-quality services at fair terms.",
+        "services": {
+          "title": "Typical services of ongoing support:",
+          "item1": "Monthly financial accounting",
+          "item2": "Payroll accounting and payroll tax registrations",
+          "item3": "VAT advance returns",
+          "item4": "Annual financial statements (HGB, EStG) or EÜR",
+          "item5": "All tax returns (income tax, corporate tax, trade tax, VAT)",
+          "item6": "Business evaluations (BWA)",
+          "item7": "Ongoing tax consulting"
+        }
+      },
+      "cta": {
+        "title": "Want an Individual Offer?",
+        "text": "Talk to us about an individual offer at the initial appointment. We'll create a transparent calculation – tailored to your requirements.",
+        "button": "Request Initial Consultation Now"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions About Fees",
+        "q1": "Are the prices mentioned gross or net?",
+        "a1": "All prices mentioned are net prices. Statutory VAT (currently 19%) is added.",
+        "q2": "Can I know in advance what the consultation costs?",
+        "a2": "Yes. After the initial consultation, you'll receive a transparent offer from us. For ongoing support, we'll show you a concrete calculation based on your figures. For project work, we agree on a fixed price or budget in advance.",
+        "q3": "What is the German Tax Consultant Fee Regulation (StBVV)?",
+        "a3": "The StBVV legally regulates fees for tax services. It contains fee tables and ranges (from 1/10 to 10/10) within which tax consultants can set their compensation. We generally orient ourselves to the mid-range (5/10 to 6/10).",
+        "q4": "Are there hidden costs?",
+        "a4": "No. We value transparency. All costs are discussed in advance and recorded in writing. We coordinate changes or additional services with you beforehand.",
+        "q5": "How is ongoing support billed?",
+        "a5": "Usually monthly or quarterly. You receive a detailed invoice with a breakdown of services provided. This way you always keep track."
+      }
+    },
+    "karriere": {
+      "hero": {
+        "title": "Career with Us",
+        "subtitle": "More than a workplace. A perspective."
+      },
+      "intro": {
+        "text": "We believe: Good work emerges where structure, freedom and appreciation come together. That's why we create an environment where people can grow long-term, take responsibility and want to stay."
+      },
+      "benefits": {
+        "title": "What awaits you with us",
+        "card1": {
+          "title": "Work Environment & Modern Collaboration",
+          "subtitle": "Efficient, digital, professional",
+          "point1": "• Fully digital firm structures with state-of-the-art IT equipment",
+          "point2": "• Contemporary workplaces",
+          "point3": "• Location-flexible working – in the office, hybrid or remote",
+          "point4": "• Structured processes for focused work",
+          "point5": "• Reliable working hours instead of permanent availability"
+        },
+        "card2": {
+          "title": "Flexibility & Quality of Life",
+          "subtitle": "Performance requires recovery",
+          "point1": "• Individual working time models",
+          "point2": "• Above-average vacation entitlement (up to 32 days)",
+          "point3": "• Clear representation arrangements – vacation remains vacation",
+          "point4": "• Modern benefits for relief in everyday life",
+          "point5": "• Support for mobility (job ticket, parking)"
+        },
+        "card3": {
+          "title": "Team Culture & Togetherness",
+          "subtitle": "Professional – but human",
+          "point1": "• Regular team formats and joint activities",
+          "point2": "• Internal firm events",
+          "point3": "• Appreciative feedback culture instead of hierarchical thinking",
+          "point4": "• Open communication at eye level",
+          "point5": "• Performance is seen and recognized"
+        },
+        "card4": {
+          "title": "Professional Development & Career Paths",
+          "subtitle": "Growth with us is not coincidence, but concept",
+          "point1": "• Individual continuing education planning with time contingent",
+          "point2": "• Support for part-time degree programs",
+          "point3": "• Targeted promotion for tax consultant exam",
+          "point4": "• Building your own professional focus areas",
+          "point5": "• Opportunity for professional leadership responsibility",
+          "point6": "• Active participation in shaping firm structures"
+        },
+        "card5": {
+          "title": "Prospects & Participation",
+          "subtitle": "Career means participation with us",
+          "point1": "• Transparent career models instead of empty titles",
+          "point2": "• Performance-oriented variable compensation components",
+          "point3": "• Participation in entrepreneurial growth",
+          "point4": "• Taking on team, location or project responsibility",
+          "point5": "• Participation in new business areas"
+        },
+        "card6": {
+          "title": "Modern Benefits & Special Opportunities",
+          "subtitle": "More than standard services",
+          "point1": "• Monthly benefits in kind",
+          "point2": "• Additional special services by agreement",
+          "point3": "• Flexible models for combining work, travel and family"
+        }
+      },
+      "target": {
+        "title": "Who we're looking for",
+        "intro": "We're looking for people who are not just seeking a job, but a professional home with real perspective:",
+        "card1": {
+          "title": "Want to Grow Professionally",
+          "text": "You don't want to stand still, but to continuously develop yourself – professionally, methodologically and strategically."
+        },
+        "card2": {
+          "title": "Want to Take Responsibility",
+          "text": "You seek creative freedom and are willing to stand by your results – without constant micromanagement."
+        },
+        "card3": {
+          "title": "Work Structured and Think Along",
+          "text": "You appreciate clear processes, but don't want to just execute instructions – you want to actively shape things."
+        },
+        "card4": {
+          "title": "Seek a Long-term Home",
+          "text": "You're not looking for a stopover, but a professional home with real perspective and appreciation."
+        },
+        "closing": "Whether you're a career starter, experienced professional or ambitious switcher – what matters is your standards for yourself."
+      },
+      "cta": {
+        "title": "Your entry with us",
+        "text": "The application process is deliberately kept uncomplicated and discreet. An initial conversation serves mutual acquaintance – without pressure, without formalism.",
+        "button": "Contact Us Now"
+      }
+    }
+  },
+  "features": {
+    "readingTime": "Reading time: {minutes} minutes",
+    "printPage": "Print page",
+    "downloadPDF": "Download as PDF",
+    "stickyCta": {
+      "contact": "Request consultation now",
+      "callNow": "Call now",
+      "bookAppointment": "Book appointment"
+    }
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "services": "Services",
+    "knowledge": "Knowledge",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "tools": "Tools",
+    "pricing": "Pricing",
+    "career": "Career"
+  }
+}

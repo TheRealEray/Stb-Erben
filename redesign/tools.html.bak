@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steuer-Tools & Rechner | Steuerkanzlei Ibrahim Erben Düren</title>
+    <meta name="description" content="Hilfreiche Steuerrechner und Tools: Einkommensteuer, Elterngeld, Brutto/Netto, Gründercheck und mehr. Kostenlose Online-Rechner für Ihre Steuerplanung.">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/images/logo.png" alt="Steuerkanzlei Ibrahim Erben Logo" class="header__logo-img">
+                </a>
+                <div class="header__right">
+                    <nav class="nav" aria-label="Hauptnavigation">
+                        <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
+                            ☰
+                        </button>
+                        <ul class="nav__list">
+                            <li><a href="index.html" class="nav__link" data-i18n="nav.home">Startseite</a></li>
+                            <li class="nav__item--has-dropdown">
+                                <a href="leistungen.html" class="nav__link nav__link--has-dropdown" data-i18n="nav.services">Leistungen</a>
+                                <ul class="nav__dropdown">
+                                    <li><a href="leistungen.html#steuerstrafrecht" class="nav__dropdown-link nav__dropdown-link--featured" data-i18n="nav.dropdown.taxCriminal">Steuerstraf- & Bußgeldverfahren</a></li>
+                                    <li><a href="leistungen.html#insolvenz" class="nav__dropdown-link" data-i18n="nav.dropdown.insolvency">Insolvenzbezogene Beratung & Krisenbegleitung</a></li>
+                                    <li><a href="leistungen.html#wegzug" class="nav__dropdown-link" data-i18n="nav.dropdown.exitTax">Wegzugssteuer & Internationales</a></li>
+                                    <li><a href="leistungen.html#ecommerce" class="nav__dropdown-link" data-i18n="nav.dropdown.ecommerce">E-Commerce & Online-Handel</a></li>
+                                    <li><a href="leistungen.html#heilberufe" class="nav__dropdown-link" data-i18n="nav.dropdown.healthcare">Heilberufe & MVZ</a></li>
+                                    <li><a href="leistungen.html#immobilien" class="nav__dropdown-link" data-i18n="nav.dropdown.realEstate">Immobilien & Vermögen</a></li>
+                                    <li><a href="leistungen.html#nachfolge" class="nav__dropdown-link" data-i18n="nav.dropdown.succession">Nachfolge & Umstrukturierung</a></li>
+                                    <li><a href="leistungen.html#betreuung" class="nav__dropdown-link" data-i18n="nav.dropdown.support">Laufende Betreuung</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="ueber-uns.html" class="nav__link" data-i18n="nav.about">Über uns</a></li>
+                            <li><a href="faq.html" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
+                            <li class="nav__item--has-dropdown">
+                                <a href="wissen.html" class="nav__link nav__link--has-dropdown" data-i18n="nav.knowledge">Wissen</a>
+                                <ul class="nav__dropdown">
+                                    <li><a href="wissen-aussenpruefung.html" class="nav__dropdown-link">Steuerliche Außenprüfung</a></li>
+                                    <li><a href="wissen-steuerstrafrecht.html" class="nav__dropdown-link">Steuerstrafrecht</a></li>
+                                    <li><a href="wissen-umwandlungssteuerrecht.html" class="nav__dropdown-link">Umwandlungssteuerrecht</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="tools.html" class="nav__link nav__link--active" data-i18n="nav.tools">Tools</a></li>
+                            <li><a href="honorar.html" class="nav__link" data-i18n="nav.pricing">Honorar</a></li>
+                            <li><a href="karriere.html" class="nav__link" data-i18n="nav.career">Karriere</a></li>
+                            <li><a href="kontakt.html" class="nav__link" data-i18n="nav.contact">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <button class="lang-switcher__button" id="lang-button" aria-label="Sprache wählen" aria-expanded="false">
+                            <span class="lang-flag">🇩🇪</span>
+                            <span>DE</span>
+                        </button>
+                        <div class="lang-switcher__dropdown" id="lang-dropdown">
+                            <a href="?lang=de" class="lang-switcher__option lang-switcher__option--active">
+                                <span class="lang-flag">🇩🇪</span> Deutsch
+                            </a>
+                            <a href="?lang=tr" class="lang-switcher__option">
+                                <span class="lang-flag">🇹🇷</span> Türkçe
+                            </a>
+                            <a href="?lang=en" class="lang-switcher__option">
+                                <span class="lang-flag">🇬🇧</span> English
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    <!-- Search Button -->
+                    <button class="search-toggle" aria-label="Suche öffnen">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" role="progressbar" aria-label="Reading progress">
+        <div class="progress-bar__fill"></div>
+    </div>
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link" data-i18n="breadcrumbs.home">Startseite</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+                    <span class="breadcrumbs__current" aria-current="page" data-i18n="breadcrumbs.tools">Tools</span>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero hero--static" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1920&q=80') center/cover no-repeat;">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title" data-i18n="pages.tools.hero.title">Steuer-Tools & Rechner</h1>
+                    <button class="btn btn--secondary btn--icon print-button" onclick="window.print()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 1.25rem; height: 1.25rem;">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                        </svg>
+                        <span data-i18n="features.printPage">Seite drucken</span>
+                    </button>
+
+                <!-- Reading Time -->
+                <div class="reading-time">
+                    <svg class="reading-time__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="reading-time__text">
+                        Lesezeit: <span class="reading-time__minutes">--</span> Minuten
+                    </span>
+                </div>
+
+                    <p class="hero__subtitle" data-i18n="pages.tools.hero.subtitle">
+                        Hilfreiche Online-Rechner und Tools für Ihre Steuerplanung. Schnell, kostenlos und einfach zu bedienen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Overview -->
+    <section class="section">
+        <div class="container">
+            <p class="text-center mb-xl" style="color: var(--color-text-light); max-width: 800px; margin-left: auto; margin-right: auto;" data-i18n="pages.tools.intro">
+                Nutzen Sie unsere handverlesene Sammlung an Steuerrechnern, Formularen und Tools. Diese externen Rechner öffnen sich in einem neuen Fenster.
+            </p>
+
+            <!-- Category 1: Steuerrechner -->
+            <div class="service-detail__category" style="margin-bottom: var(--spacing-2xl);">
+                <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.tools.taxCalculators.heading">Steuerrechner</h2>
+                <div class="grid grid--3">
+                    <div class="card card--hover" onclick="openTool('einkommensteuer')" style="cursor: pointer;">
+                        <img src="assets/images/icon-chart.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.taxCalculators.incomeTax.title">Einkommensteuer-Rechner</h3>
+                        <p class="card__text" data-i18n="pages.tools.taxCalculators.incomeTax.text">Berechnen Sie Ihre Einkommensteuer und Solidaritätszuschlag</p>
+                        <span class="card__link" data-i18n="pages.tools.taxCalculators.incomeTax.link">Zum Rechner →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('schenkungssteuer')" style="cursor: pointer;">
+                        <img src="assets/images/icon-refresh.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.taxCalculators.giftTax.title">Schenkungssteuer-Rechner</h3>
+                        <p class="card__text" data-i18n="pages.tools.taxCalculators.giftTax.text">Freibeträge und Steuer bei Schenkungen ermitteln</p>
+                        <span class="card__link" data-i18n="pages.tools.taxCalculators.giftTax.link">Zum Rechner →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('brutto-netto')" style="cursor: pointer;">
+                        <img src="assets/images/icon-monitor.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.taxCalculators.grossNet.title">Brutto/Nettolohnrechner</h3>
+                        <p class="card__text" data-i18n="pages.tools.taxCalculators.grossNet.text">Nettogehalt aus Bruttolohn berechnen inkl. Sozialabgaben</p>
+                        <span class="card__link" data-i18n="pages.tools.taxCalculators.grossNet.link">Zum Rechner →</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2: Sozialversicherung & Arbeit -->
+            <div class="service-detail__category" style="margin-bottom: var(--spacing-2xl);">
+                <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.tools.socialSecurity.heading">Sozialversicherung & Arbeit</h2>
+                <div class="grid grid--3">
+                    <div class="card card--hover" onclick="openTool('elterngeld')" style="cursor: pointer;">
+                        <img src="assets/images/icon-user.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.socialSecurity.parentalBenefit.title">Elterngeld-Rechner</h3>
+                        <p class="card__text" data-i18n="pages.tools.socialSecurity.parentalBenefit.text">Elterngeldanspruch berechnen und optimieren</p>
+                        <span class="card__link" data-i18n="pages.tools.socialSecurity.parentalBenefit.link">Zum Rechner →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('pflegegeld')" style="cursor: pointer;">
+                        <img src="assets/images/icon-heart-pulse.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.socialSecurity.careBenefit.title">Pflegegeld-Rechner</h3>
+                        <p class="card__text" data-i18n="pages.tools.socialSecurity.careBenefit.text">Pflegegeld und Pflegesachleistungen ermitteln</p>
+                        <span class="card__link" data-i18n="pages.tools.socialSecurity.careBenefit.link">Zum Rechner →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('mutterschutz')" style="cursor: pointer;">
+                        <img src="assets/images/icon-shield.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.socialSecurity.maternityProtection.title">Mutterschutz-Rechner</h3>
+                        <p class="card__text" data-i18n="pages.tools.socialSecurity.maternityProtection.text">Mutterschutzfristen berechnen</p>
+                        <span class="card__link" data-i18n="pages.tools.socialSecurity.maternityProtection.link">Zum Rechner →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('arbeitstage')" style="cursor: pointer;">
+                        <img src="assets/images/icon-clock.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.socialSecurity.workingDays.title">Arbeitstage-Rechner</h3>
+                        <p class="card__text" data-i18n="pages.tools.socialSecurity.workingDays.text">Arbeitstage zwischen zwei Daten ermitteln</p>
+                        <span class="card__link" data-i18n="pages.tools.socialSecurity.workingDays.link">Zum Rechner →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('minijob')" style="cursor: pointer;">
+                        <img src="assets/images/icon-checkmark.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.socialSecurity.miniJob.title">Minijob-Rechner</h3>
+                        <p class="card__text" data-i18n="pages.tools.socialSecurity.miniJob.text">Abgaben und Kosten bei Minijobs berechnen</p>
+                        <span class="card__link" data-i18n="pages.tools.socialSecurity.miniJob.link">Zum Rechner →</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: Unternehmensgründung -->
+            <div class="service-detail__category" style="margin-bottom: var(--spacing-2xl);">
+                <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.tools.businessStartup.heading">Unternehmensgründung</h2>
+                <div class="grid grid--3">
+                    <div class="card card--hover" onclick="openTool('gruendercheck')" style="cursor: pointer;">
+                        <img src="assets/images/icon-target.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.businessStartup.founderCheck.title">Gründercheck</h3>
+                        <p class="card__text" data-i18n="pages.tools.businessStartup.founderCheck.text">Sind Sie bereit für die Selbstständigkeit? Prüfen Sie es</p>
+                        <span class="card__link" data-i18n="pages.tools.businessStartup.founderCheck.link">Zum Tool →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('businessplan')" style="cursor: pointer;">
+                        <img src="assets/images/icon-building.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.businessStartup.businessPlan.title">Businessplan</h3>
+                        <p class="card__text" data-i18n="pages.tools.businessStartup.businessPlan.text">Vorlage und Leitfaden für Ihren Businessplan</p>
+                        <span class="card__link" data-i18n="pages.tools.businessStartup.businessPlan.link">Zum Tool →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('foerderrechner')" style="cursor: pointer;">
+                        <img src="assets/images/icon-zap.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.businessStartup.fundingCalculator.title">Förderrechner</h3>
+                        <p class="card__text" data-i18n="pages.tools.businessStartup.fundingCalculator.text">Welche Fördermittel stehen Ihnen zu?</p>
+                        <span class="card__link" data-i18n="pages.tools.businessStartup.fundingCalculator.link">Zum Rechner →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('gmbh-checkliste')" style="cursor: pointer;">
+                        <img src="assets/images/icon-checkmark.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.businessStartup.gmbhChecklist.title">Gründungscheckliste GmbH</h3>
+                        <p class="card__text" data-i18n="pages.tools.businessStartup.gmbhChecklist.text">Alle Schritte zur GmbH-Gründung im Überblick</p>
+                        <span class="card__link" data-i18n="pages.tools.businessStartup.gmbhChecklist.link">Zur Checkliste →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('altersvorsorge')" style="cursor: pointer;">
+                        <img src="assets/images/icon-shield.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.businessStartup.pensionPlan.title">Betriebliche Altersvorsorge</h3>
+                        <p class="card__text" data-i18n="pages.tools.businessStartup.pensionPlan.text">Rechner für betriebliche Altersvorsorge</p>
+                        <span class="card__link" data-i18n="pages.tools.businessStartup.pensionPlan.link">Zum Rechner →</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4: Weitere Tools -->
+            <div class="service-detail__category">
+                <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.tools.additionalTools.heading">Weitere Tools</h2>
+                <div class="grid grid--3">
+                    <div class="card card--hover" onclick="openTool('fristenrechner')" style="cursor: pointer;">
+                        <img src="assets/images/icon-clock.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.additionalTools.deadlineCalculator.title">Fristenrechner (BGB)</h3>
+                        <p class="card__text" data-i18n="pages.tools.additionalTools.deadlineCalculator.text">Gesetzliche Fristen nach BGB berechnen</p>
+                        <span class="card__link" data-i18n="pages.tools.additionalTools.deadlineCalculator.link">Zum Rechner →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('kreditrechner')" style="cursor: pointer;">
+                        <img src="assets/images/icon-chart.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.additionalTools.loanCalculator.title">Kreditrechner</h3>
+                        <p class="card__text" data-i18n="pages.tools.additionalTools.loanCalculator.text">Kreditraten und Zinsen berechnen</p>
+                        <span class="card__link" data-i18n="pages.tools.additionalTools.loanCalculator.link">Zum Rechner →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('mustervertraege')" style="cursor: pointer;">
+                        <img src="assets/images/icon-monitor.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.additionalTools.sampleContracts.title">Musterverträge</h3>
+                        <p class="card__text" data-i18n="pages.tools.additionalTools.sampleContracts.text">Kostenlose Musterverträge und Vorlagen</p>
+                        <span class="card__link" data-i18n="pages.tools.additionalTools.sampleContracts.link">Zu den Vorlagen →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('formulare')" style="cursor: pointer;">
+                        <img src="assets/images/icon-mail.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.additionalTools.forms.title">Formulare</h3>
+                        <p class="card__text" data-i18n="pages.tools.additionalTools.forms.text">Wichtige Steuerformulare zum Download</p>
+                        <span class="card__link" data-i18n="pages.tools.additionalTools.forms.link">Zu den Formularen →</span>
+                    </div>
+
+                    <div class="card card--hover" onclick="openTool('tabellen')" style="cursor: pointer;">
+                        <img src="assets/images/icon-chart.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.tools.additionalTools.tables.title">Tabellen</h3>
+                        <p class="card__text" data-i18n="pages.tools.additionalTools.tables.text">Steuertabellen und Übersichten</p>
+                        <span class="card__link" data-i18n="pages.tools.additionalTools.tables.link">Zu den Tabellen →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Note Section -->
+    <section class="section section-alt">
+        <div class="container-narrow text-center">
+            <div class="placeholder">
+                <h3 class="placeholder__title" data-i18n="pages.tools.note.title">Hinweis zu den Tools</h3>
+                <p class="placeholder__text" data-i18n="pages.tools.note.text">
+                    Die hier verlinkten Rechner und Tools sind externe Angebote und öffnen sich in einem neuen Fenster. Wir übernehmen keine Gewähr für die Richtigkeit der Berechnungen. Bei konkreten Fragen zu Ihrer steuerlichen Situation kontaktieren Sie uns gerne für eine persönliche Beratung.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-section__title" data-i18n="pages.tools.cta.title">Fragen zu Ihrer Steuersituation?</h2>
+            <p class="cta-section__subtitle" data-i18n="pages.tools.cta.subtitle">
+                Online-Rechner sind ein guter erster Schritt. Für eine fundierte Beratung stehen wir Ihnen persönlich zur Verfügung.
+            </p>
+            <a href="kontakt.html" class="btn btn--primary btn--large" data-i18n="pages.tools.cta.button">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <h3 class="footer__section-title">Steuerkanzlei Ibrahim Erben Steuerberatung</h3>
+                    <p class="footer__text">
+                        Weierstraße 43<br>
+                        52349 Düren<br>
+                        Deutschland
+                    </p>
+                </div>
+                <div>
+                    <h3 class="footer__section-title">Kontakt</h3>
+                    <p class="footer__text">
+                        <a href="tel:+492421998481" class="footer__link">+49 2421 99 848 10</a><br>
+                        <a href="mailto:info@stberben.com" class="footer__link">info@stberben.com</a><br>
+                        Fax: +49 2421 99 848 29
+                    </p>
+                    <p class="footer__text">
+                        <strong>Öffnungszeiten:</strong><br>
+                        Mo–Fr: 08:00–18:30 Uhr
+                    </p>
+                </div>
+                <div>
+                    <h3 class="footer__section-title" data-i18n="footer.navigation">Navigation</h3>
+                    <p class="footer__text">
+                        <a href="leistungen.html" class="footer__link" data-i18n="nav.services">Leistungen</a><br>
+                        <a href="ueber-uns.html" class="footer__link" data-i18n="nav.about">Über uns</a><br>
+                        <a href="faq.html" class="footer__link" data-i18n="nav.faq">FAQ</a><br>
+                        <a href="wissen.html" class="footer__link" data-i18n="nav.knowledge">Wissen</a><br>
+                        <a href="tools.html" class="footer__link" data-i18n="nav.tools">Tools</a><br>
+                        <a href="honorar.html" class="footer__link" data-i18n="nav.pricing">Honorar</a><br>
+                        <a href="karriere.html" class="footer__link" data-i18n="nav.career">Karriere</a><br>
+                        <a href="kontakt.html" class="footer__link" data-i18n="nav.contact">Kontakt</a>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="footer__section-title">Rechtliches</h3>
+                    <p class="footer__text">
+                        <a href="impressum.html" class="footer__link">Impressum</a><br>
+                        <a href="datenschutz.html" class="footer__link">Datenschutz</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Steuerkanzlei Ibrahim Erben Steuerberatung. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JS for Mobile Menu and Language Switcher -->
+    <script>
+        // Mobile Menu Toggle
+        const navToggle = document.querySelector('.nav__toggle');
+        const navList = document.querySelector('.nav__list');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = navList.classList.contains('is-open');
+                navList.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', !isOpen);
+                navToggle.textContent = isOpen ? '☰' : '✕';
+            });
+        }
+
+        // Language Switcher
+        const langButton = document.getElementById('lang-button');
+        const langDropdown = document.getElementById('lang-dropdown');
+
+        if (langButton && langDropdown) {
+            langButton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isOpen = langDropdown.classList.contains('is-open');
+                langDropdown.classList.toggle('is-open');
+                langButton.setAttribute('aria-expanded', !isOpen);
+            });
+
+            document.addEventListener('click', () => {
+                langDropdown.classList.remove('is-open');
+                langButton.setAttribute('aria-expanded', 'false');
+            });
+
+            langDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        }
+
+        // Dropdown Navigation
+        const dropdownItems = document.querySelectorAll('.nav__item--has-dropdown');
+
+        dropdownItems.forEach(item => {
+            const link = item.querySelector('.nav__link--has-dropdown');
+            const dropdown = item.querySelector('.nav__dropdown');
+
+            if (link && dropdown) {
+                link.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        dropdownItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.classList.remove('is-open');
+                            }
+                        });
+                        item.classList.toggle('is-open');
+                    }
+                });
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav__item--has-dropdown')) {
+                dropdownItems.forEach(item => {
+                    item.classList.remove('is-open');
+                });
+            }
+        });
+    </script>
+
+    <!-- Modal Popup -->
+    <div id="tool-modal" class="tool-modal">
+        <div class="tool-modal__overlay"></div>
+        <div class="tool-modal__content">
+            <button class="tool-modal__close" aria-label="Schließen">&times;</button>
+            <div id="modal-body" class="tool-modal__body">
+                <!-- Tool content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- i18n Translation System -->
+    <!-- Cookie Consent -->
+    <script src="assets/js/cookies.js"></script>
+
+    <!-- Navigation Helpers -->
+    <script src="assets/js/navigation-helpers.js"></script>
+    <!-- Search Modal -->
+    <div class="search-modal">
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input type="text" class="search-input" placeholder="Suchen Sie nach Themen, Leistungen oder Informationen...">
+                <button class="search-close" aria-label="Schließen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Sticky Contact CTA -->
+<a href="kontakt.html" class="sticky-cta">
+    <svg class="sticky-cta__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+    </svg>
+    <span class="sticky-cta__text" data-i18n="features.stickyCta.contact">Jetzt Beratung anfragen</span>
+</a>
+
+<!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Nach oben scrollen">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script src="assets/js/tools.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/features.js"></script>
+</body>
+</html>
+<!-- Updated 1771721945 -->

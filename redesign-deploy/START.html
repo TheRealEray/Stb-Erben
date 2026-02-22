@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website starten - Steuerkanzlei Ibrahim Erben</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            color: #1f2937;
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            color: #1e3a8a;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            color: #4b5563;
+        }
+        .btn {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+            transition: all 0.2s;
+            box-shadow: 0 4px 12px rgba(0,102,204,0.3);
+        }
+        .btn:hover {
+            background: #0052a3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,102,204,0.4);
+        }
+        .btn-secondary {
+            background: #6b7280;
+        }
+        .btn-secondary:hover {
+            background: #4b5563;
+        }
+        .highlight {
+            background: #fef3c7;
+            padding: 1.5rem;
+            border-left: 4px solid #f59e0b;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        .highlight strong {
+            color: #92400e;
+        }
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        li {
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 0.5rem;
+        }
+        .success {
+            background: #d1fae5;
+            border-left-color: #10b981;
+        }
+        .warning {
+            background: #fee2e2;
+            border-left-color: #ef4444;
+        }
+        .emoji {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+        }
+        .status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        .status-done {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        .status-todo {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="emoji">🚀</span>Website starten</h1>
+        <p style="font-size: 1.25rem; color: #1e3a8a; font-weight: 600;">
+            Steuerkanzlei Ibrahim Erben - Düren
+        </p>
+
+        <div class="highlight success">
+            <strong>✅ Die Website ist fertig und einsatzbereit!</strong>
+        </div>
+
+        <h2>📂 Website jetzt ansehen:</h2>
+        <div style="margin: 1.5rem 0;">
+            <a href="index.html" class="btn">🏠 Zur Startseite</a>
+            <a href="leistungen.html" class="btn btn-secondary">📋 Leistungen</a>
+            <a href="kontakt.html" class="btn btn-secondary">📞 Kontakt</a>
+        </div>
+
+        <h2>📄 Alle Seiten im Überblick:</h2>
+        <ul>
+            <li><strong>index.html</strong> – Startseite <span class="status status-done">FERTIG</span></li>
+            <li><strong>leistungen.html</strong> – Detaillierte Leistungen <span class="status status-done">FERTIG</span></li>
+            <li><strong>ueber-uns.html</strong> – Über die Kanzlei <span class="status status-done">FERTIG</span></li>
+            <li><strong>faq.html</strong> – Häufige Fragen <span class="status status-done">FERTIG</span></li>
+            <li><strong>kontakt.html</strong> – Kontaktformular <span class="status status-done">FERTIG</span></li>
+            <li><strong>impressum.html</strong> – Impressum <span class="status status-todo">MUSS ERGÄNZT WERDEN</span></li>
+            <li><strong>datenschutz.html</strong> – Datenschutz <span class="status status-todo">MUSS ERGÄNZT WERDEN</span></li>
+        </ul>
+
+        <div class="highlight warning">
+            <strong>⚠️ WICHTIG vor Veröffentlichung:</strong>
+            <ul style="margin-top: 0.5rem;">
+                <li>Impressum vollständig ausfüllen (Name: Ibrahim Erben, Steuerberaterkammer, USt-ID)</li>
+                <li>Datenschutzerklärung DSGVO-konform erstellen</li>
+                <li>Kontaktformular mit Backend verbinden (aktuell nur Demo)</li>
+                <li>Team-Foto von Ibrahim Erben hinzufügen</li>
+            </ul>
+        </div>
+
+        <h2>📖 Hilfe & Anleitungen:</h2>
+        <ul>
+            <li><strong>STARTE-HIER.md</strong> – Schnellstart-Anleitung (öffnen mit Texteditor)</li>
+            <li><strong>README.md</strong> – Vollständige Dokumentation</li>
+        </ul>
+
+        <h2>✏️ Texte ändern:</h2>
+        <p>
+            1. HTML-Datei mit Texteditor öffnen (z.B. TextEdit, VS Code)<br>
+            2. Text suchen und ändern<br>
+            3. Speichern → Browser aktualisieren (F5)<br>
+            4. Fertig!
+        </p>
+
+        <h2>🌐 Website veröffentlichen:</h2>
+        <p>
+            <strong>Bei Hostinger (Ihr Hoster):</strong>
+        </p>
+        <ul>
+            <li>Bei Hostinger einloggen</li>
+            <li>File Manager öffnen</li>
+            <li>Alle Dateien aus diesem Ordner hochladen</li>
+            <li>Fertig!</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>📞 Aktuelle Kontaktdaten:</strong>
+            <ul style="margin-top: 0.5rem;">
+                <li>Adresse: Weierstraße 43, 52349 Düren</li>
+                <li>Telefon: +49 2421 99 848 10</li>
+                <li>Email: info@stberben.com</li>
+                <li>Öffnungszeiten: Mo-Fr 08:30–18:00</li>
+            </ul>
+            <p style="margin-top: 0.5rem; color: #92400e;">
+                ➡️ Bitte prüfen Sie diese Daten und korrigieren Sie sie bei Bedarf in den HTML-Dateien!
+            </p>
+        </div>
+
+        <h2>🎉 Viel Erfolg!</h2>
+        <p>
+            Ihre neue Website ist modern, schnell und professionell. Klicken Sie oben auf "Zur Startseite", um sie anzusehen.
+        </p>
+
+        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 2px solid #e5e7eb;">
+            <p style="text-align: center; color: #6b7280; font-size: 0.875rem;">
+                © 2026 Steuerkanzlei Ibrahim Erben · Alle Rechte vorbehalten
+            </p>
+        </div>
+    </div>
+</body>
+</html>

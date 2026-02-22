@@ -1,0 +1,72 @@
+BILDER FÜR DIE WEBSITE
+
+Dieser Ordner enthält Platzhalter-Bilder und Anleitungen, welche Bilder Sie noch hinzufügen sollten.
+
+═══════════════════════════════════════════════════════════════════
+BENÖTIGTE BILDER
+═══════════════════════════════════════════════════════════════════
+
+1. HERO-HINTERGRUND (index.html)
+   Dateiname: hero-background.jpg
+   Größe: 1920x1080px
+   Motiv: Professionelles Büro, Düren Stadtansicht, oder abstraktes Business-Motiv
+   Stil: Hell, freundlich, professionell
+   Quellen: Eigene Fotos oder lizenzfreie Bilder (Unsplash, Pexels)
+
+2. TEAM-FOTO (ueber-uns.html)
+   Dateiname: team-ibrahim-erben.jpg
+   Größe: 400x400px (quadratisch)
+   Motiv: Professionelles Porträt von Ibrahim Erben
+   Stil: Business-Outfit, freundlich, professionell
+   Wichtig: Gute Beleuchtung, neutraler Hintergrund
+
+3. STANDORT-FOTO (ueber-uns.html, optional)
+   Dateiname: standort-dueren.jpg
+   Größe: 1200x800px
+   Motiv: Kanzlei-Gebäude von außen oder Empfangsbereich
+   Stil: Einladend, professionell
+
+4. LEISTUNGS-BILDER (leistungen.html, optional)
+   - wegzug.jpg (Internationales Thema)
+   - ecommerce.jpg (Online-Handel)
+   - heilberufe.jpg (Medizin/Praxis)
+   - immobilien.jpg (Gebäude)
+   - nachfolge.jpg (Übergabe/Generationen)
+   Größe: 800x600px
+   Stil: Professionell, nicht zu stockphoto-mäßig
+
+═══════════════════════════════════════════════════════════════════
+LIZENZFREIE BILDQUELLEN (kostenlos)
+═══════════════════════════════════════════════════════════════════
+
+Unsplash.com - Hochwertige, kostenlose Bilder
+Pexels.com - Große Auswahl, kostenlos
+Pixabay.com - Kostenlos, viele Business-Motive
+
+Suchbegriffe (englisch):
+- "professional office"
+- "business meeting"
+- "accountant workspace"
+- "modern office building"
+- "business portrait professional"
+
+WICHTIG: Immer die Lizenz prüfen und ggf. Fotografen nennen!
+
+═══════════════════════════════════════════════════════════════════
+BILDER EINFÜGEN
+═══════════════════════════════════════════════════════════════════
+
+1. Bild in diesen Ordner kopieren (assets/images/)
+2. HTML-Datei öffnen
+3. Platzhalter suchen (z.B. "placeholder-team.svg")
+4. Durch echten Dateinamen ersetzen:
+
+   Vorher:
+   <img src="assets/images/placeholder-team.svg" alt="Team">
+
+   Nachher:
+   <img src="assets/images/team-ibrahim-erben.jpg" alt="Ibrahim Erben, Steuerberater">
+
+5. Speichern und im Browser prüfen
+
+═══════════════════════════════════════════════════════════════════

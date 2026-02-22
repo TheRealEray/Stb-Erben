@@ -1,0 +1,89 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(plutil:*)",
+      "Bash(bash:*)",
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(open:*)",
+      "Bash(\"/Users/eray/Desktop/IE Steuerberatung/redesign/assets/css/styles.css\":*)",
+      "Bash(curl:*)",
+      "Bash(netlify deploy:*)",
+      "Bash(for file in leistungen.html ueber-uns.html kontakt.html faq.html impressum.html datenschutz.html)",
+      "Bash(do sed -i '' 's|<a href=\"\"index.html\"\" class=\"\"header__logo\"\">Steuerkanzlei Ibrahim Erben</a>|<a href=\"\"index.html\"\" class=\"\"header__logo\"\">\\\\n                    <img src=\"\"assets/images/logo.png\"\" alt=\"\"Steuerkanzlei Ibrahim Erben Logo\"\" class=\"\"header__logo-img\"\">\\\\n                </a>|g' \"$file\")",
+      "Bash(done)",
+      "Bash(git add:*)",
+      "Bash(grep:*)",
+      "Bash(netlify status:*)",
+      "Bash(wc:*)",
+      "Bash(claude auth status:*)",
+      "Bash(git checkout:*)",
+      "Bash(unzip:*)",
+      "Bash(for:*)",
+      "Bash(do)",
+      "Bash(if ! grep -q \"assets/js/cookies.js\" \"$file\")",
+      "Bash(then)",
+      "Bash(fi)",
+      "Bash(textutil:*)",
+      "Bash(if [ -f \"$file\" ])",
+      "Bash(echo:*)",
+      "Bash(else)",
+      "WebFetch(domain:steuerkanzlei-erben-demo.netlify.app)",
+      "WebFetch(domain:6999c1898418dbc209ada3a8--steuerkanzlei-erben-demo.netlify.app)",
+      "WebFetch(domain:6999c1f88c460fb8cf5a8f02--steuerkanzlei-erben-demo.netlify.app)",
+      "Bash(find:*)",
+      "Bash(md5:*)",
+      "Bash(netlify api listSiteDeploys:*)",
+      "Bash(zip:*)",
+      "WebFetch(domain:699a432e36da8b360b9b8aac--steuerkanzlei-erben-demo.netlify.app)",
+      "WebFetch(domain:699a43902f53324fb783887a--steuerkanzlei-erben-demo.netlify.app)",
+      "WebFetch(domain:699a43f770b5ee41241036e9--steuerkanzlei-erben-demo.netlify.app)",
+      "Bash(do echo \"=== $page ===\")",
+      "Bash(chmod:*)",
+      "Bash(./test-deployment.sh:*)",
+      "Bash(/tmp/simulate-toc.sh:*)",
+      "Bash(/tmp/test-toc-hierarchy.md:*)",
+      "Bash(\"/tmp/update_sticky_cta.sh\":*)",
+      "Bash(__NEW_LINE_a83a86f2b5531628__ chmod +x \"/tmp/update_sticky_cta.sh\")",
+      "Bash(/tmp/update_sticky_cta.sh:*)",
+      "Bash(/tmp/add_batch1_features.py:*)",
+      "Bash(/tmp/add_breadcrumbs_fix.py:*)",
+      "Bash(__NEW_LINE_ae47cfa72d668a49__ echo \"=== Testing leistungen.html ===\")",
+      "Bash(__NEW_LINE_39c5ba57c2b62fd6__ echo \"=== Testing ueber-uns.html ===\")",
+      "Bash(__NEW_LINE_5ff8fce26a26efff__ echo \"=== Testing faq.html ===\")",
+      "Bash(__NEW_LINE_4223cf9a3234d016__ echo \"=== Testing honorar.html ===\")",
+      "Bash(__NEW_LINE_43d762a69d49d997__ echo \"=== Testing kontakt.html ===\")",
+      "Bash(__NEW_LINE_71783633c0c3b7c8__ echo \"=== Testing wissen.html ===\")",
+      "Bash(/tmp/test_summary.txt:*)",
+      "Bash(do echo \"=== wissen-$page.html ===\")",
+      "Bash(do echo -n \"$page.html: \")",
+      "Bash(do echo -e \"\\\\n--- wissen-$page.html ---\")",
+      "Bash(do echo -n \"$page.html: reading-time=\")",
+      "Bash(do echo -n \"wissen-$page.html: reading-time=\")"
+    ]
+  },
+  "hooks": {
+    "TaskCompleted": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/quality-gate.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/quality-gate.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

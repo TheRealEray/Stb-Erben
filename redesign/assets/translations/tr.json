@@ -1,0 +1,1029 @@
+{
+  "meta": {
+    "title": "Vergi Danışmanı Düren | Steuerkanzlei Ibrahim Erben | Yurtdışına Çıkış, E-Ticaret",
+    "description": "Geleceğe bakan girişimciler için vergi danışmanlığı. Yurtdışına çıkış vergisi, e-ticaret, sağlık meslek ve gayrimenkul konularında uzmanız."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "about": "Hakkımızda",
+    "faq": "SSS",
+    "knowledge": "Bilgi",
+    "tools": "Araçlar",
+    "pricing": "Ücretler",
+    "career": "Kariyer",
+    "contact": "İletişim",
+    "dropdown": {
+      "taxCriminal": "Vergi Ceza & Para Cezası Davaları",
+      "insolvency": "İflas Danışmanlığı & Kriz Yönetimi",
+      "exitTax": "Yurtdışına Çıkış Vergisi & Uluslararası",
+      "ecommerce": "E-Ticaret & Online Satış",
+      "healthcare": "Sağlık Meslekleri & MVZ",
+      "realEstate": "Gayrimenkul & Varlık",
+      "succession": "Halef & Yeniden Yapılandırma",
+      "support": "Sürekli Destek"
+    }
+  },
+  "hero": {
+    "slide1": {
+      "title": "Geleceğe Bakan Girişimciler İçin Vergi Danışmanlığı",
+      "subtitle": "Yurtdışına çıkış, e-ticaret, yapılandırma – karar vermeden önce netlik sağlıyoruz.",
+      "ctaPrimary": "İlk Görüşme Talep Et",
+      "ctaSecondary": "Hizmetlerimiz"
+    },
+    "slide2": {
+      "title": "Vergi Ceza & Para Cezası Davaları",
+      "subtitle": "Hızlı hareket kritik önem taşır. Sizi gizli ve yetkin bir şekilde savunuyor ve eşlik ediyoruz – hafta sonları da.",
+      "ctaPrimary": "Hemen Danışmanlık İste",
+      "ctaSecondary": "Acil İletişim",
+      "badge": "24/7"
+    },
+    "slide3": {
+      "title": "Yurtdışına Çıkış Planlıyor musunuz?",
+      "subtitle": "Erken planlama pahalı vergi tuzaklarından kaçınmanızı sağlar. Durumunuzu analiz ediyor ve tasarım olanaklarını gösteriyoruz.",
+      "ctaPrimary": "Çıkış Danışmanlığı Başlat",
+      "ctaSecondary": "İlk Görüşme"
+    },
+    "slide4": {
+      "title": "E-Ticaret & Online Satış",
+      "subtitle": "Amazon, eBay, Shopify – uluslararası KDV'yi doğru yönetin. Başından itibaren vergisel olarak güvenli büyüme.",
+      "ctaPrimary": "E-Ticaret Danışmanlığı",
+      "ctaSecondary": "Sık Sorulan Sorular",
+      "badge": "24/7"
+    },
+    "slide5": {
+      "title": "Karmaşık Vergi Sorularında Uzmanlaşma",
+      "subtitle": "Standart çözümler yeterli olmadığında: Girişimcilere yüksek düzeyde uzmanlaşmış vergi zorluklarında eşlik ediyoruz.",
+      "stat1Label": "Uzmanlık Alanı",
+      "stat2Label": "Dijital Süreçler",
+      "stat3Label": "Acil Yanıt Süresi"
+    }
+  },
+  "trustBar": {
+    "personal": "Kişisel Danışman",
+    "digital": "Dijital İşbirliği",
+    "expertise": "Sektör Uzmanlığı",
+    "proactive": "Proaktif Danışmanlık"
+  },
+  "problemSolution": {
+    "heading": "Bu Soruları Biliyor Musunuz?",
+    "problem1": {
+      "title": "Yurtdışına taşınma – peki vergi ne olacak?",
+      "text": "Almanya'dan çıkış birçok vergisel soru getirir. Vergisel değerlendirme ve planlamada size eşlik ediyoruz – yapılandırılmış, şeffaf ve ileriye dönük.",
+      "link": "Yurtdışı çıkış vergisi hakkında daha fazla →"
+    },
+    "problem2": {
+      "title": "Sınır ötesi e-ticaret – hangi KDV kuralları geçerli?",
+      "text": "Uluslararası online ticaret karmaşıktır: OSS, platform düzenlemeleri, teslimat eşikleri. Büyümeniz için netlik ve optimal vergi yapıları sağlıyoruz.",
+      "link": "E-ticaret hakkında daha fazla →"
+    },
+    "problem3": {
+      "title": "Şirket büyüyor – bir holding'e ihtiyacım var mı?",
+      "text": "Vergi açısından verimli şirket ve katılım yapıları varlığı koruyabilir ve vergileri optimize edebilir. Size uygun çözümler geliştiriyoruz.",
+      "link": "Yapılandırma hakkında daha fazla →"
+    }
+  },
+  "competencies": {
+    "heading": "Uzmanlık Alanlarımız",
+    "subheading": "Danışmanlığımız vergisel yapılandırmayı, hukuki uzmanlığı ve stratejik uzak görüşlülüğü birleştirir. Şirketlere, girişimcilere ve ortaklara vergisel ve hukuki açıdan hassas tüm aşamalarda eşlik ediyoruz – yapılandırmadan kriz yönetimine kadar.",
+    "exitTax": {
+      "title": "Yurtdışı Çıkış Vergisi & Uluslararası",
+      "text": "Çıkış vergi planlaması, çifte vergilendirme anlaşmaları, uluslararası yapılar.",
+      "link": "Daha fazla bilgi →"
+    },
+    "ecommerce": {
+      "title": "E-Ticaret & Online Ticaret",
+      "text": "Amazon, eBay & Co.'da KDV, OSS, platform modelleri, ölçeklendirme.",
+      "link": "Daha fazla bilgi →"
+    },
+    "healthcare": {
+      "title": "Sağlık Meslekleri & MVZ",
+      "text": "Doktorlar, eczaneler, MVZ – şirket yapıları, gayrimenkuller, veraset planlaması.",
+      "link": "Daha fazla bilgi →"
+    },
+    "realEstate": {
+      "title": "Gayrimenkul & Varlık",
+      "text": "Gayrimenkul vergilendirmesi, şirket modelleri, varlık devri.",
+      "link": "Daha fazla bilgi →"
+    },
+    "succession": {
+      "title": "Veraset & Yapılandırma",
+      "text": "Şirket devri, holding modelleri, dönüşümler, aile şirketleri.",
+      "link": "Daha fazla bilgi →"
+    },
+    "support": {
+      "title": "Sürekli Destek",
+      "text": "Muhasebe, bordro, yıllık mali tablo, vergi beyannameleri – hepsi tek elden.",
+      "link": "Daha fazla bilgi →"
+    },
+    "insolvency": {
+      "title": "İflas Danışmanlığı & Kriz Yönetimi",
+      "text": "Erken kriz tespiti, yeniden yapılandırma konseptleri, iflas prosedürlerinde destek.",
+      "link": "Daha fazla bilgi →"
+    }
+  },
+  "trustIndicators": {
+    "heading": "Müşteriler Neden Bize Güveniyor",
+    "subheading": "Başarılı vergi danışmanlığı uzmanlık, deneyim ve kişisel işbirliğine dayanır.",
+    "specialization": {
+      "title": "Generalist Yaklaşım Yerine Uzmanlaşma",
+      "text": "Karmaşık uzmanlık alanlarına odaklanıyoruz: Yurtdışı çıkış vergisi, e-ticaret, vergi ceza hukuku, şirket yapıları. Bu yüzeysellik yerine derin uzmanlık anlamına gelir."
+    },
+    "personal": {
+      "title": "Sabit İletişim Kişisi",
+      "text": "Sabit bir vergi danışmanıyla çalışırsınız – değişen muhataplar yok, anonimlik yok. Danışmanınız işinizi ve hedeflerinizi tanır."
+    },
+    "digital": {
+      "title": "Tamamen Dijital Süreçler",
+      "text": "Bulut muhasebe, güvenli belge portalları, video görüşmeleri: Medya kesintisi olmayan modern işbirliği. Her yerden çalışın – biz de öyle."
+    },
+    "proactive": {
+      "title": "Proaktif Danışmanlık",
+      "text": "Sadece sorularınıza cevap vermiyoruz, ileriye bakıyoruz: Tasarım olanakları, son tarihler, riskler. Sorunlar ortaya çıkmadan önce eylem önerileri alırsınız."
+    },
+    "international": {
+      "title": "Uluslararası Yeterlilik",
+      "text": "Çifte vergilendirme anlaşmaları, sınır ötesi yapılar, uluslararası KDV: Sizi Alman sınırlarının ötesinde de destekliyoruz."
+    },
+    "quality": {
+      "title": "Uzun Vadeli Ortaklık",
+      "text": "Vergi danışmanlığı güven meselesidir. Müşterilerimizin çoğu yıllardır bizimle çalışıyor – çünkü süreklilik ve güvenilirlik önemli."
+    }
+  },
+  "process": {
+    "heading": "3 Adımda Net Sonuca",
+    "subheading": "Böyle çalışıyoruz – şeffaf ve yapılandırılmış.",
+    "step1": {
+      "title": "İlk Görüşme",
+      "text": "Dinliyoruz ve durumunuzu anlıyoruz. Kişisel görüşmede (yüz yüze veya dijital) sorularınızı ve hedeflerinizi netleştiriyoruz."
+    },
+    "step2": {
+      "title": "Analiz & Strateji",
+      "text": "Çözümler geliştiriyoruz ve açık soruları netleştiriyoruz. Net bir değerlendirme ve somut eylem önerileri alırsınız."
+    },
+    "step3": {
+      "title": "Uygulama & Destek",
+      "text": "Uyguluyoruz ve sabit muhatabınız olarak kalıyoruz – sürekli veya ihtiyaç halinde. Mevcut durum hakkında her zaman netliğe sahip olursunuz."
+    }
+  },
+  "cta": {
+    "heading": "Netliğe Hazır mısınız?",
+    "subheading": "Vergisel geleceğiniz hakkında konuşalım.",
+    "button": "Şimdi İlk Görüşme Talep Et"
+  },
+  "footer": {
+    "contact": "İletişim",
+    "navigation": "Navigasyon",
+    "legal": "Yasal",
+    "openingHours": "Çalışma Saatleri:",
+    "hours": "Pzt–Cuma: 08:30–18:00",
+    "imprint": "Künye",
+    "privacy": "Gizlilik Politikası",
+    "copyright": "© 2026 Steuerkanzlei Ibrahim Erben. Tüm hakları saklıdır."
+  },
+  "homepage": {
+    "highlightedService": {
+      "title": "Vergi Ceza & Para Cezası Davaları – Savunma & Destek",
+      "text": "Vergi hataları ciddi sonuçlara yol açabilir. Vergi ceza ve para cezası davalarında sizi savunuyor ve eşlik ediyoruz – yetkin, gizli ve net strateji ile. Gönüllü bildirimler, dava desteği, makamlarla iletişim.",
+      "button": "Hemen Danışmanlık İste →"
+    },
+    "faqTeaser": {
+      "heading": "Sık Sorulan Sorular",
+      "q1": "İlk görüşmenin maliyeti ne kadardır?",
+      "a1": "İlk görüşme (30 dakika) sizin için ücretsizdir. Tanışıyoruz, durumunuzu anlatıyorsunuz ve size nasıl yardımcı olabileceğimizi netleştiriyoruz. Ancak ondan sonra şeffaf bir teklif alırsınız.",
+      "q2": "İlk görüşme için hangi belgelere ihtiyacım var?",
+      "a2": "İlk görüşme için herhangi bir belgeye ihtiyacınız yoktur. Durumunuzun kısa bir açıklaması yeterlidir. Tüm detayları görüşmede konuşuruz.",
+      "q3": "Dijital/uzaktan da çalışıyor musunuz?",
+      "a3": "Evet, kesinlikle. Dijital işbirliği için modern araçlar kullanıyoruz: video aramaları, bulut muhasebesi, güvenli belge iletimi. Müşterilerimizin çoğu bizimle sadece dijital olarak çalışıyor.",
+      "q4": "Sürekli defter tutmayı da üstleniyor musunuz?",
+      "a4": "Evet. Mali muhasebe, bordro muhasebesi, yıllık mali tablolar ve tüm vergi beyannamelerini üstleniyoruz – istediğiniz gibi tamamen veya dahili ekibinize ek danışmanlık olarak.",
+      "q5": "Ne kadar hızlı randevu alabilirim?",
+      "a5": "Genellikle 3–5 iş günü içinde. Acil konularda (ör. vergi denetimi, son tarihler) genellikle daha da hızlı. Sadece bizimle iletişime geçin.",
+      "seeAll": "Tüm Soruları Gör"
+    },
+    "quickActions": {
+      "heading": "Acil Konularda Hızlı Yardım",
+      "taxCriminal": {
+        "title": "Vergi ceza davası mı?",
+        "text": "Hızlı hareket kritiktir. 24 saat içinde danışmanlık veriyoruz – hafta sonları da.",
+        "link": "Hemen İletişime Geçin →"
+      },
+      "exitTax": {
+        "title": "Yurtdışına mı taşınıyorsunuz?",
+        "text": "Erken planlama vergi tasarrufu sağlar. Durumunuzu analiz ediyor ve tasarım olanakları gösteriyoruz.",
+        "link": "Çıkış Danışmanlığı İste →"
+      },
+      "ecommerce": {
+        "title": "Uluslararası e-ticaret?",
+        "text": "Amazon, eBay, Shopify – tuzakları biliyoruz. Başından itibaren vergisel güvenlik.",
+        "link": "E-Ticaret Danışmanlığı Başlat →"
+      }
+    },
+    "aboutTeaser": {
+      "heading": "Steuerkanzlei Ibrahim Erben Hakkında",
+      "text": "Vergi kararları girişimcilik geleceğinizi şekillendirir. Bu nedenle salt sayı işleme yerine ileriye dönük danışmanlığa odaklanıyoruz. Düren'de uzmanlaşmış bir firma olarak karmaşık vergi sorularında size eşlik ediyoruz – yurtdışı çıkıştan e-ticarete, şirket yeniden yapılandırmasına kadar. Bizi farklı kılan: Karar vermeden önce netlik sağlıyoruz. İletişimde kişisel, işbirliğinde dijital, uygulamada yetkin.",
+      "button": "Hakkımızda Daha Fazla Bilgi"
+    }
+  },
+  "pages": {
+    "services": {
+      "hero": {
+        "title": "Hizmetlerimize Genel Bakış",
+        "subtitle": "Muhasebeden fazlası – tüm vergi konularında stratejik olarak size eşlik ediyoruz.",
+        "cta1": "Danışmanlık İste",
+        "cta2": "Hizmetlere Git",
+        "badge1": "7 Uzmanlık Alanı",
+        "badge2": "Uzmanlaşmış",
+        "badge3": "Kapsamlı"
+      },
+      "taxCriminal": {
+        "title": "Vergi Ceza & Para Cezası Davaları",
+        "intro": "Vergi ceza davalarında savunma ve destek – gizli, yetkin, stratejik.",
+        "description": "Vergi hataları veya belirsizlikler hızla vergi ceza davalarına veya para cezası davalarına yol açabilir. Sonuçlar genellikle ciddidir: para cezaları, hapis cezaları, itibar kaybı. Sizi tüm aşamalarda savunuyor ve eşlik ediyoruz – gönüllü bildirimden dava tamamlanmasına kadar.",
+        "servicesTitle": "Hizmetlerimiz:",
+        "service1": "Gönüllü Bildirimler: Gerekliliklerin incelenmesi, § 371 AO kapsamında ceza muafiyeti sağlayan gönüllü bildirimlerin hazırlanması ve sunulması",
+        "service2": "Vergi Ceza Davalarında Savunma: Soruşturmalar sırasında destek (aramalar, sorgular, iddianameler)",
+        "service3": "Para Cezası Davaları: Vergi ile ilgili idari suçlarda savunma",
+        "service4": "Makamlarla İletişim: Vergi soruşturması, savcılık, vergi dairesi – iletişimi biz yönetiyoruz",
+        "service5": "Stratejik Danışmanlık: Risk değerlendirmesi, dava stratejisi, zarar sınırlandırma",
+        "service6": "Ceza Avukatlarıyla İşbirliği: Uzmanlaşmış ceza hukuku avukatlarıyla yakın işbirliği",
+        "service7": "Kriz Yönetimi: Gizlilik, hızlı yanıt, net strateji",
+        "importantLabel": "Önemli:",
+        "importantText": "Vergi ceza konularında hızlı hareket kritiktir. Bize derhal ulaşın – mesai saatleri dışında da. 24 saat içinde ilk danışmanlık.",
+        "cta": "Hemen Gizli Danışmanlık Alın →"
+      },
+      "exitTax": {
+        "title": "Yurtdışı Çıkış Vergisi & Uluslararası",
+        "intro": "Almanya'dan taşınmak birçok vergi sorusu ortaya çıkarır: çıkış vergisi, çifte vergilendirme anlaşmaları, uluslararası şirket yapıları. Vergi değerlendirme ve planlamada size eşlik ediyoruz – yapılandırılmış, şeffaf ve ileriye dönük.",
+        "servicesTitle": "Hizmetlerimiz:",
+        "service1": "Çıkış için vergi danışmanlığı (§ 6 AStG kapsamında çıkış vergisi)",
+        "service2": "Çifte vergilendirme anlaşmalarının analizi",
+        "service3": "Uluslararası şirket ve katılım yapılarının geliştirilmesi",
+        "service4": "Sınır ötesi servet planlaması",
+        "service5": "Tasfiye ve erteleme modelleri hakkında danışmanlık",
+        "service6": "Yurtdışı ilişkiler için sürekli destek (ikamet sertifikaları, yabancı gelir)",
+        "cta": "Danışmanlık İste"
+      },
+      "ecommerce": {
+        "title": "E-Ticaret & Online Ticaret",
+        "intro": "Uluslararası online ticaret karmaşıktır: platformlarda KDV (Amazon, eBay, Shopify), Tek Durak Dükkânı (OSS), teslimat eşikleri, ithalat düzenlemeleri. E-ticarette uzmanız ve vergi açısından güvenli büyümenize yardımcı oluyoruz – yeni başlıyor veya zaten uluslararası satış yapıyor olun.",
+        "servicesTitle": "Hizmetlerimiz:",
+        "service1": "Uluslararası platformlarda KDV (Amazon, eBay, Kaufland, Otto, Shopify, vb.)",
+        "service2": "Tek Durak Dükkânı (OSS) kaydı ve sürekli beyanlar",
+        "service3": "Platform modellerinin incelenmesi ve optimizasyonu (FBA, Dropshipping, B2B)",
+        "service4": "Ölçeklendirme için yapılandırma (GmbH, holding modelleri)",
+        "service5": "İthalat/ihracat danışmanlığı (Brexit, üçüncü ülkeler, gümrük)",
+        "service6": "Uluslararasılaşma sırasında vergi desteği",
+        "service7": "KDV denetimlerinde savunma",
+        "cta": "Danışmanlık İste"
+      },
+      "healthcare": {
+        "title": "Sağlık Meslekleri & Tıp",
+        "intro": "Doktorlar, dişhekimleri, eczaneler, MVZ – sağlık mesleklerinin özel vergi gereksinimleri vardır. Şirket yapıları (bireysel pratik, grup pratik, BAG, MVZ-GmbH), gayrimenkul yapıları, veraset planlaması: Özellikleri biliyoruz ve size bireysel destek veriyoruz.",
+        "servicesTitle": "Hizmetlerimiz:",
+        "service1": "Kuruluş danışmanlığı (bireysel pratik, grup pratik, BAG, MVZ)",
+        "service2": "Şirket yapıları ve ortaklık anlaşmaları (yan hizmet olarak vergi danışmanlığı)",
+        "service3": "Pratikler için gayrimenkul yapıları (mülkiyet, kira, iş bölünmesi)",
+        "service4": "Veraset planlaması ve pratik satışı",
+        "service5": "Sürekli destek (muhasebe, yıllık mali tablolar, vergi beyannameleri)",
+        "service6": "Yatırım indirimleri ve amortismanlar",
+        "service7": "İşbirliği modelleri (vergi sınıflandırması)",
+        "cta": "Danışmanlık İste"
+      },
+      "realEstate": {
+        "title": "Gayrimenkul & Varlık",
+        "intro": "Özel veya ticari varlıklarda gayrimenkul? GmbH & Co. KG veya şahıs şirketi? Varlığın bir sonraki nesle devri? Vergi açısından optimal yapılar geliştiriyor ve uygulamada size destek veriyoruz.",
+        "servicesTitle": "Hizmetlerimiz:",
+        "service1": "Gayrimenkul vergilendirmesi (özel ve ticari)",
+        "service2": "Şirket modelleri (GmbH & Co. KG, GmbH, KG, şahıs şirketi)",
+        "service3": "Varlık devri ve bağışlar (muafiyetler, 10 yıllık süre)",
+        "service4": "Spekülasyon süreleri ve amortismanlar (AfA, özel AfA)",
+        "service5": "İş bölünmesi ve ticari gayrimenkul ticareti",
+        "service6": "Gayrimenkul alım ve satımında destek",
+        "service7": "Sürekli yönetim (gayrimenkul GmbH'leri için muhasebe)",
+        "cta": "Danışmanlık İste"
+      },
+      "succession": {
+        "title": "Veraset & Yapılandırma",
+        "intro": "Şirketin bir sonraki nesle devri, satış, bir holding'e dönüştürme – veraset ve yeniden yapılandırma vergi açısından son derece karmaşıktır. Varlıkları koruyan ve vergileri optimize eden stratejiler geliştiriyoruz.",
+        "servicesTitle": "Hizmetlerimiz:",
+        "service1": "Şirket devri (bağış, satış, karma modeller)",
+        "service2": "Holding modelleri ve aile holding yapıları",
+        "service3": "UmwStG kapsamında dönüşümler (birleşme, bölünme, şekil değişikliği, katkı)",
+        "service4": "İş bölünmesi ve ayrıştırma",
+        "service5": "Miras ve bağış vergisi (muafiyetler, istisnalar)",
+        "service6": "Ortaklık anlaşmaları ve vasiyet tasarımı (yan hizmet olarak hukuki danışmanlık)",
+        "service7": "Sürekli destek ve uygulama",
+        "cta": "Danışmanlık İste"
+      },
+      "support": {
+        "title": "Sürekli Destek & Muhasebe",
+        "intro": "İşinize odaklanmak istiyorsunuz, muhasebe ve vergilere değil mi? Mali muhasebeden vergi beyannamelerine kadar tam sürekli desteği üstleniyoruz. İç ekibinize ek danışmanlık olarak da mevcuttur.",
+        "servicesTitle": "Hizmetlerimiz:",
+        "service1": "Mali muhasebe (DATEV, dijital belge yakalama)",
+        "service2": "Bordro muhasebesi ve bordro vergisi kayıtları",
+        "service3": "Yıllık mali tablolar (HGB, EStG) ve gelir-fazlalık hesaplaması (EÜR)",
+        "service4": "Tüm vergi beyannameleri (gelir vergisi, kurumlar vergisi, KDV, ticaret vergisi)",
+        "service5": "İşletme değerlendirmeleri (BWA) ve kontrol",
+        "service6": "Denetimler ve itirazlar sırasında destek",
+        "service7": "Kriz danışmanlığı ve yeniden yapılandırma",
+        "service8": "Vergi ceza ve para cezası davalarında savunma",
+        "cta": "Danışmanlık İste"
+      },
+      "insolvency": {
+        "title": "İflas Danışmanlığı & Kriz Yönetimi",
+        "intro": "Mali krizler hızlı, yapılandırılmış hareket gerektirir. Durumunuzu değerlendirmede, eylem alternatiflerini geliştirmede ve ekonomik olarak anlamlı çözümlerin uygulanmasında size eşlik ediyoruz – erken kriz tespitinden iyileştirme veya iflasa kadar.",
+        "servicesTitle": "Hizmetlerimiz:",
+        "service1": "Erken kriz tespiti ve ekonomik analiz",
+        "service2": "İyileştirme konseptlerinin geliştirilmesi",
+        "service3": "Alacaklılar ve finansörlerle müzakerelerde destek",
+        "service4": "İyileştirme ve borçtan kurtulmada vergi danışmanlığı",
+        "service5": "İflas prosedürlerinin hazırlanması ve desteği",
+        "service6": "İflas itirazı ve sorumluluk riskleri hakkında danışmanlık",
+        "service7": "İflas yöneticileri, avukatlar ve iyileştirme danışmanlarıyla işbirliği",
+        "noteLabel": "Not:",
+        "noteText": "Ne kadar erken hareket ederseniz, o kadar fazla tasarım alanınız olur. Sizi gizli bir şekilde ve ekonomik olarak sürdürülebilir çözümlere net odaklanarak destekliyoruz.",
+        "cta": "Danışmanlık İste"
+      },
+      "additional": {
+        "title": "Ek Uzmanlıklar",
+        "intro": "Ana odak alanlarımızın ötesinde, ek özel hizmetler sunuyoruz:",
+        "service1": "§ 5 Para. 1 RDG'ye göre yan hizmet olarak hukuki danışmanlık (ortaklık anlaşmaları, vergi bağlamında sözleşme tasarımı)",
+        "service2": "Vergi ceza ve para cezası davaları: Savunma ve destek",
+        "service3": "Kar Amacı Gütmeyen & Dernekler: Dernekler, vakıflar, gGmbH'ler, tanıma prosedürleri",
+        "service4": "Dijitalleşme & İşte Yapay Zeka: Vergi sınıflandırması, süreç optimizasyonu, otomasyon",
+        "service5": "Sektör uzmanlığı: Zanaat & inşaat, mobilite & lojistik, ticaret, bakım & sosyal hizmetler",
+        "cta": "Danışmanlık İste"
+      },
+      "ctaSection": {
+        "title": "Hangi hizmetin ihtiyacınıza uyduğundan emin değil misiniz?",
+        "subtitle": "Hadi konuşalım – ilk danışmada size nasıl yardımcı olabileceğimizi bulacağız.",
+        "button": "İlk Görüşme Talep Et"
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "Hadi Konuşalım",
+        "subtitle": "Mesajınızı bekliyoruz. Bize telefon, e-posta veya iletişim formu aracılığıyla ulaşın – 24 saat içinde size dönüş yapıyoruz."
+      }
+    },
+    "about": {
+      "hero": {
+        "title": "Steuerkanzlei Ibrahim Erben Hakkında",
+        "subtitle": "Düren'den vergi danışmanlığı – kişisel, yetkin, ileriye dönük. Karmaşık vergi sorunlarında ortağınız.",
+        "cta1": "Tanışalım",
+        "cta2": "Değerlerimiz",
+        "stat1": "Yıl",
+        "stat2": "Müşteri"
+      },
+      "story": {
+        "heading": "Karar vermeden önce netlik sağlıyoruz",
+        "intro": "Vergisel kararlar nadiren acildir – ancak neredeyse her zaman sonuçları ağırdır. Önemli kararlar almadan önce hızlı cevaplara değil, temelli değerlendirmelere, net stratejilere ve birlikte düşünen bir ortağa ihtiyacınız var.",
+        "paragraph2": "Birçok girişimci, klasik vergi danışmanlığı artık yeterli olmadığında bize geliyor. Yapılar büyüdüğünde, iş alanları daha karmaşık hale geldiğinde veya uluslararası bağlantılar eklendiğinde. Sadece vergi beyannamelerine değil, stratejik yapılandırmaya, risk değerlendirmesine ve güvenilir konseptlere ihtiyaç duyduğunuzda.",
+        "paragraph3": "Sıklıkla halihazırda holding yapıları, katılımlar veya sınır ötesi modellere sahip ancak vergisel potansiyeli tam olarak kullanamayan veya riskleri gözden kaçıran şirketlerle çalışıyoruz. Mevcut durumu analiz ediyor, zayıf noktaları belirliyoruz ve hukuki açıdan güvenli çalışan ve ekonomik olarak mantıklı olan çözümler geliştiriyoruz.",
+        "paragraph4": "Bunun ötesinde, geçmişte vergi danışmanlığının sıklıkla sadece rutin beyana indirgendiği ve yapılandırma potansiyellerinin tanınmadığı veya kullanılmadığı başarı yolundaki müşterilere de hizmet veriyoruz. Bu özellikle hızlı büyüyen girişimcileri, yüksek erişime sahip influencer'ları ve blogger'ları ile geniş ve dinamik iş alanlarına sahip müşterileri içerir.",
+        "paragraph5": "Kanzlemizi öne çıkaran şey, yapılandırılmış, stratejik ve prosedür güvenli çalışma yöntemimiz ile yüksek başarı oranımızdır – özellikle yapılandırma sorularında, işletme denetimlerinde, ihtilaflı prosedürlerde ve hassas vergi ceza hukuku konularında. Odağımız kısa vadeli tek önlemlerde değil, denetim ve sorumluluk açısından da geçerliliği olan sürdürülebilir, hukuki açıdan güvenli çözümlerdedir.",
+        "paragraph6": "Kendimizi aynı zamanda danışmanlar için danışman olarak görüyoruz. Karmaşık veya özellikle hassas durumlarda, özel soruları değerlendirmek, yapıları geliştirmek veya planlamaları teknik olarak güvence altına almak için vergi danışmanları, mali müşavirler ve avukatlar tarafından düzenli olarak göreve çağrılıyoruz."
+      },
+      "philosophy": {
+        "heading": "Felsefemiz",
+        "card1Title": "Kişisel",
+        "card1Text": "Sabit bir iletişim kişiniz var – rotasyon yok, anonimlik yok. İşinizi tanıyor ve size uzun vadede eşlik ediyoruz.",
+        "card2Title": "Proaktif",
+        "card2Text": "Birlikte düşünüyor, yasal değişiklikler hakkında sizi bilgilendiriyor ve optimizasyon potansiyelleri gösteriyoruz – sadece talep üzerine değil.",
+        "card3Title": "Dijital",
+        "card3Text": "Modern araçlar, bulut muhasebesi, video aramalar – dijital, verimli ve konumdan bağımsız çalışıyoruz. Düren'de yüz yüze görüşmeye de tabii ki hoş geldiniz.",
+        "card4Title": "Uzmanlaşmış",
+        "card4Text": "Yüzeysel genel danışmanlık yerine odak alanlarımızda derin bilgi. Size yardımcı olabilirsek, bunu doğru yapıyoruz."
+      },
+      "team": {
+        "heading": "Ekibimiz",
+        "intro": "[VARSAYIM] Ekibimiz, kendi uzmanlık alanlarında uzmanlaşmış deneyimli vergi danışmanları ve uzmanlardan oluşmaktadır. Size en iyi danışmanlığı sunmak için el ele çalışıyoruz.",
+        "outro": "Birlikte güçlü bir ekip oluşturuyoruz – uzmanlık, deneyim ve başarınıza gerçek ilgi ile."
+      },
+      "location": {
+        "heading": "Düren'deki Konumumuz",
+        "intro": "[VARSAYIM] Düren'in merkezinde, kolayca erişilebilir ve yerinde park yerleri ile. Dijital çalışmayı mı tercih ediyorsunuz? Sorun değil – birçok müşterimiz bizimle sadece uzaktan çalışıyor.",
+        "addressLabel": "Adres",
+        "phoneLabel": "Telefon",
+        "emailLabel": "E-posta"
+      },
+      "cta": {
+        "title": "Bizi tanıyın",
+        "subtitle": "Kişisel görüşmede – yerinde veya dijital.",
+        "button": "Randevu Al"
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "Hadi Konuşalım",
+        "subtitle": "Mesajınızı bekliyoruz. Bize telefon, e-posta veya iletişim formu aracılığıyla ulaşın – 24 saat içinde size dönüş yapıyoruz.",
+        "badge": "24s Yanıt"
+      },
+      "form": {
+        "heading": "Mesaj Gönder",
+        "intro": "Formu doldurun – 24 saat içinde size geri dönüş yapacağız.",
+        "nameLabel": "İsim *",
+        "namePlaceholder": "Adınız",
+        "emailLabel": "E-posta Adresi *",
+        "emailPlaceholder": "sizin@email.com",
+        "phoneLabel": "Telefon (isteğe bağlı)",
+        "phonePlaceholder": "+49 123 456789",
+        "subjectLabel": "Konu *",
+        "subjectPlaceholder": "Lütfen seçiniz...",
+        "subjectOption1": "Genel Sorgu",
+        "subjectOption2": "Kariyer",
+        "subjectOption3": "Sorular ve Talepler",
+        "subjectOption4": "Vergi Danışmanlığı",
+        "subjectOption5": "Randevu Talebi",
+        "messageLabel": "Mesajınız *",
+        "messagePlaceholder": "Talebinizi kısaca açıklayın...",
+        "attachmentsLabel": "Ekler (isteğe bağlı)",
+        "attachmentsNote": "Dosya başına maks. 10 MB",
+        "privacyLabel": "Gizlilik politikasını okudum ve verilerimin talebimi işlemek amacıyla işlenmesini kabul ediyorum. *",
+        "submitButton": "Mesaj Gönder",
+        "requiredFieldsAlert": "Lütfen tüm zorunlu alanları doldurun.",
+        "invalidEmailAlert": "Lütfen geçerli bir e-posta adresi girin.",
+        "successMessage": "Mesajınız için teşekkür ederiz! 24 saat içinde size geri dönüş yapacağız.\n\n(NOT: Bu bir demo. Canlı versiyonda form backend'inize gönderilecektir.)"
+      },
+      "info": {
+        "heading": "İletişim Bilgileri",
+        "intro": "Bize doğrudan telefon veya e-posta ile de ulaşabilirsiniz.",
+        "addressLabel": "Adres",
+        "phoneLabel": "Telefon",
+        "emailLabel": "E-posta",
+        "hoursLabel": "Çalışma Saatleri",
+        "hoursValue": "Pazartesi–Cuma\n08:30–18:00"
+      },
+      "map": {
+        "heading": "Bizi Nasıl Bulursunuz",
+        "intro": "Weierstraße 43, 52349 Düren – Düren'in merkezinde, kolayca erişilebilir."
+      },
+      "reviews": {
+        "title": "Müşterilerimiz Ne Diyor",
+        "cta": "Bizi Google'da Değerlendirin"
+      },
+      "social": {
+        "title": "Bizi Takip Edin",
+        "whatsapp": "WhatsApp",
+        "telegram": "Telegram",
+        "instagram": "Instagram"
+      }
+    },
+    "faq": {
+      "hero": {
+        "title": "Sık Sorulan Sorular",
+        "subtitle": "Baştan sona şeffaflık. Burada çalışma şeklimiz, maliyetler ve hizmetlerle ilgili en önemli soruların cevaplarını bulacaksınız.",
+        "cta1": "Kişisel Soru Sor",
+        "cta2": "SSS'lere Git"
+      },
+      "sections": {
+        "general": "Genel Sorular",
+        "consultation": "İlk Görüşme & Maliyetler",
+        "collaboration": "İşbirliği",
+        "specializations": "Uzmanlıklar",
+        "other": "Diğer Sorular"
+      },
+      "q1": {
+        "q": "Firmanız kimin için uygun?",
+        "a": "Karmaşık vergi konularına sahip girişimciler, serbest meslek sahipleri ve serbest çalışanlar konusunda uzmanız. Odak alanlarımız yurtdışı çıkış vergisi, e-ticaret, sağlık meslekleri, gayrimenkul ve şirket yapılarıdır. Eşit düzeyde proaktif danışmanlık arıyorsanız – sadece yıllık vergi beyanları değil – doğru yerdesiniz."
+      },
+      "q2": {
+        "q": "Ulusal çapta/uzaktan da çalışıyor musunuz?",
+        "a": "Evet, kesinlikle. Müşterilerimizin çoğu Almanya genelinde veya yurtdışında bulunmaktadır. Dijital işbirliği için modern araçlar kullanıyoruz: video aramaları, bulut muhasebesi, güvenli belge iletimi. Kişisel toplantılar da tabii ki mümkündür – Düren'deki ofisimizde veya sizin yerinizde."
+      },
+      "q3": {
+        "q": "Hangi yazılımı kullanıyorsunuz?",
+        "a": "Muhasebe ve bordro için profesyonel vergi danışmanlığının sektör standardı olan DATEV ile çalışıyoruz. Dijital işbirliği için modern bulut çözümleri, güvenli belge portalları ve video konferans kullanıyoruz. İşbirliği konumdan bağımsız ve verimli bir şekilde mümkündür."
+      },
+      "q4": {
+        "q": "İlk görüşmenin maliyeti ne kadardır?",
+        "a": "İlk görüşme (30 dakika) sizin için ücretsizdir. Tanışıyoruz, durumunuzu anlatıyorsunuz ve size nasıl yardımcı olabileceğimizi netleştiriyoruz. Ancak ondan sonra şeffaf bir teklif alırsınız – gizli maliyet yok."
+      },
+      "q5": {
+        "q": "İlk görüşme nasıl işliyor?",
+        "a": "İlk görüşme bağlayıcı değildir ve yaklaşık 30 dakika sürer. Tanışıyoruz, durumunuzu ve sorularınızı anlatıyorsunuz. Size ilk değerlendirmeyi veriyoruz ve işbirliği yapıp yapamayacağımızı netleştiriyoruz. Sonrasında bizimle çalışmak isteyip istemediğinize rahatça karar verirsiniz."
+      },
+      "q6": {
+        "q": "Hangi belgeleri getirmeliyim?",
+        "a": "İlk görüşme için herhangi bir belgeye ihtiyacınız yoktur. Durumunuzun kısa bir açıklaması yeterlidir (ör. \"Yurtdışına taşınmayı planlıyorum\" veya \"Amazon'da uluslararası satış yapıyorum\"). Tüm detayları görüşmede konuşuruz. Belirli projeler için ilgili belgeleri getirmekten çekinmeyin, ancak zorunlu değildir."
+      },
+      "q7": {
+        "q": "Ücretleriniz nasıl hesaplanıyor?",
+        "a": "Ücretlerimiz Alman Vergi Danışmanı Ücret Yönetmeliği'ne (StBVV) veya bireysel anlaşmaya göredir. Projeler için (ör. çıkış vergisi danışmanlığı, yapılandırma) genellikle sabit fiyatlar sunuyoruz – böylece baştan ne bekleyeceğinizi biliyorsunuz. Sürekli destek için aylık sabit ücretler veya gerçek çabaya dayalı çalışıyoruz. Şeffaflık bizim için önemlidir: önceden her zaman net bir teklif alırsınız."
+      },
+      "q8": {
+        "q": "Sabit fiyatlar sunuyor musunuz?",
+        "a": "Evet, birçok hizmet için sabit fiyatlar sunuyoruz – örneğin yıllık mali tablolar, vergi beyannameleri veya danışmanlık projeleri için. Sürekli destek için aylık sabit fiyatlarla çalışıyoruz. Bu size planlama güvenliği sağlar. Bunu ilk görüşmede bireysel olarak görüşürüz."
+      },
+      "q9": {
+        "q": "Sabit bir iletişim kişim olacak mı?",
+        "a": "Evet, kesinlikle. İletişim kişiniz olarak sabit bir vergi danışmanınız var – rotasyon yok, anonimlik yok. Vergi danışmanınız işinizi, hedeflerinizi ve durumunuzu tanır. Yokluk durumunda (tatil, hastalık) bir meslektaşı onları temsil edecektir – ancak ana iletişim kişiniz her zaman aynı kalır."
+      },
+      "q10": {
+        "q": "Sorulara ne kadar hızlı yanıt veriyorsunuz?",
+        "a": "Genellikle 24 saat içinde yanıt veriyoruz (iş günlerinde). Acil konularda (ör. devam eden denetim, son tarihler) genellikle aynı gün. Telefon ile Pzt–Cuma 08:30–18:00 arasında bize ulaşabilirsiniz."
+      },
+      "q11": {
+        "q": "Dijital olarak birlikte çalışabilir miyiz?",
+        "a": "Evet, bu aslında standardımızdır. Bulut muhasebesi (DATEV), güvenli belge portalları ve video aramalar kullanıyoruz. Müşterilerimizin çoğu bizimle sadece dijital olarak çalışıyor – hiç yerinde olmadan. Tabii ki isterseniz Düren'de bizi şahsen de ziyaret edebilirsiniz."
+      },
+      "q12": {
+        "q": "Sürekli defter tutmayı da üstleniyor musunuz?",
+        "a": "Evet. Mali muhasebe, bordro muhasebesi, yıllık mali tablolar ve tüm vergi beyannamelerini üstleniyoruz – istediğiniz gibi tamamen veya dahili ekibinize ek danışmanlık olarak. Gereksinimlerinize uyum sağlıyoruz."
+      },
+      "q13": {
+        "q": "Çıkış vergisi nedir ve kimi etkiler?",
+        "a": "Çıkış vergisi (§ 6 AStG), bir sermaye şirketinde (ör. GmbH) pay sahibi olarak Almanya'yı terk eden kişileri etkiler. Çıkışta gizli yedekler vergilendirilir – satış olmasa bile. Bu özellikle GmbH payları olan girişimcileri, ortakları ve genel müdürleri etkiler. Size stratejiler, erteleme modelleri ve vergi alternatifleri konusunda danışmanlık veriyoruz."
+      },
+      "q14": {
+        "q": "E-ticaret/Amazon konusunda da danışmanlık veriyor musunuz?",
+        "a": "Evet, e-ticaret ve online ticaret odak alanlarımızdan biridir. Uluslararası platformlarda (Amazon, eBay, Shopify vb.) KDV, OSS (Tek Durak Dükkânı), FBA, dropshipping, büyüme için yapılandırma ve çok daha fazlası hakkında danışmanlık veriyoruz. Yeni başlıyor veya zaten uluslararası satış yapıyor olun – vergi açısından güvenli büyümenize yardımcı oluyoruz."
+      },
+      "q15": {
+        "q": "Vergi denetimleri sırasında destek oluyor musunuz?",
+        "a": "Evet, kesinlikle. Tüm vergi denetimi boyunca size eşlik ediyoruz: hazırlık, yürütme, final toplantısı ve gerekirse itiraz. Hedefimiz iyi hazırlanmış olmanız ve hoş olmayan sürprizlerle karşılaşmamanızdır. Zaten bir denetim bildirimi aldıysanız, hızlıca bizimle iletişime geçin."
+      },
+      "q16": {
+        "q": "Gayrimenkul konusunda da danışmanlık veriyor musunuz?",
+        "a": "Evet. Özel ve ticari varlıklardaki gayrimenkul, şirket modelleri (GmbH & Co. KG vb.), varlık devri, spekülasyon süreleri, amortisman ve çok daha fazlası hakkında danışmanlık veriyoruz. Gayrimenkul vergi açısından son derece karmaşıktır – durumunuza uyan çözümler geliştiriyoruz."
+      },
+      "q17": {
+        "q": "Sağlık mesleklerini de (doktorlar, eczaneler) destekliyor musunuz?",
+        "a": "Evet, sağlık meslekleri odak alanlarımızdan biridir. Doktorlara, dişhekimlerine, eczanelere ve MVZ'lere kuruluş, şirket yapıları, gayrimenkul yapıları, veraset planlaması ve sürekli destek konularında danışmanlık veriyoruz. Sağlık mesleklerinin özel vergi gereksinimleri vardır – onları biliyoruz."
+      },
+      "q18": {
+        "q": "Ne kadar hızlı randevu alabilirim?",
+        "a": "Genellikle 3–5 iş günü içinde. Acil konularda (ör. vergi denetimi, yaklaşan son tarihler) genellikle daha da hızlı. Sadece bizimle iletişime geçin – bir çözüm buluruz."
+      },
+      "q19": {
+        "q": "Hukuki danışmanlık da sunuyor musunuz?",
+        "a": "Vergi danışmanları olarak § 5 Para. 1 RDG'ye göre yan hizmet olarak hukuki danışmanlık sunabiliriz – yani vergi danışmanlığı ile doğrudan ilgili hukuki danışmanlık (ör. vergi bağlamında ortaklık anlaşmaları). Karmaşık yasal sorular için uzmanlaşmış avukatlarla birlikte çalışıyoruz."
+      },
+      "q20": {
+        "q": "Yeni kurulan şirketlerle de çalışıyor musunuz?",
+        "a": "Evet, memnuniyetle. Kuruluştan büyümeye kadar size eşlik ediyoruz: yasal şekil seçimi, işletme kaydı, vergi dairesi kaydı, sürekli defter tutma, vergi beyannameleri. Özellikle e-ticaret girişimleri, sağlık meslekleri veya planlanan uluslararasılaşma konusunda çok deneyimiz var."
+      },
+      "closing": {
+        "heading": "Sorunuz burada yoktu mu?",
+        "text": "Bize yazın – sorularınızı kişisel olarak cevaplamaktan mutluluk duyarız.",
+        "button": "İletişime Geçin"
+      }
+    },
+    "wissen": {
+      "hero": {
+        "title": "Bilgi Vergi Dış Denetimi",
+        "subtitle": "İşletme denetimleri hakkında bilmeniz gerekenler – süreç, haklar ve stratejik destek"
+      },
+      "intro": "Vergi dış denetimi birçok girişimci, serbest meslek sahibi ve serbest çalışan için önemli bir müdahaledir. Genellikle \"rutin denetim\" olarak başlayan süreç, hızla vergi borcu, faiz yükleri veya hatta vergi ceza hukuku risklerine yol açabilir.",
+      "what": {
+        "title": "Vergi dış denetimi nedir?",
+        "text1": "Vergi dış denetimi, mali idarenin bir mükellefin vergi durumunu kapsamlı bir şekilde incelediği yasal olarak düzenlenmiş bir denetim prosedürüdür. Yasal dayanak özellikle §§ 193 ff. Abgabenordnung (AO) ve işletme denetim yönetmeliğidir.",
+        "goal": "<strong style=\"color: var(--color-primary);\">Dış denetimin amacı:</strong> Orantılılık ilkesine uygun olarak vergilendirmede eşitlik."
+      },
+      "whatIsChecked": {
+        "title": "Mali idare gerçekten neyi denetliyor?",
+        "intro": "Bir vergi dış denetimi kapsamında mali idare kendini salt bir sayı karşılaştırmasıyla sınırlamaz. Aksine, ekonomik süreçlerin, organizasyonel yapıların ve girişimci kararların kapsamlı olarak değerlendirildiği genel bir işletme değerlendirmesi yapar.",
+        "card1": {
+          "title": "İşletme Süreçleri",
+          "description": "İş akışları, sorumluluklar, satın alma ve satış süreçleri, depolama"
+        },
+        "card2": {
+          "title": "Hesaplamalar & Fiyatlar",
+          "description": "Ham kar ek ücretleri, mal giriş oranları, fiyat karşılaştırmaları"
+        },
+        "card3": {
+          "title": "Kasa Yönetimi",
+          "description": "Düzenli kayıtlar, resmi doğruluk"
+        },
+        "card4": {
+          "title": "Girişimci Kararlar",
+          "description": "Yatırımlar, personel yapıları, sözleşme tasarımları"
+        }
+      },
+      "whoIsAudited": {
+        "title": "Kim denetleniyor – ve ne sıklıkla?",
+        "intro": "Dış denetimler sadece büyük şirketleri ilgilendirmez. Denetim yoğunluğu büyüklük sınıflarına, sektöre, anormalliklere ve mali idarenin risk kriterlerine bağlıdır.",
+        "subtitle": "Etkilenen şirket türleri:",
+        "item1": "Sermaye şirketleri (GmbH, UG, AG)",
+        "item2": "Şahıs şirketleri",
+        "item3": "Bireysel girişimciler ve serbest meslek sahipleri",
+        "item4": "Kasa yönetimi veya nakit işlemleri olan girişimciler",
+        "item5": "Uluslararası faaliyet gösteren şirketler"
+      },
+      "auditProcess": {
+        "title": "Dış denetim süreci",
+        "step1": {
+          "title": "Denetim emri",
+          "intro": "Her dış denetim bir denetim emri ile başlar. Bu şunları içermelidir:",
+          "item1": "Denetimin yasal dayanağı",
+          "item2": "Denetim dönemi",
+          "item3": "Etkilenen vergi türleri",
+          "item4": "Varsa özel denetim odak noktaları",
+          "warningLabel": "⚠️ Önemli:",
+          "warningText": "Denetim emri salt bir formalite değil, ilk stratejik başlangıç noktasıdır. Hatalar veya belirsizlikler burada zaten yasal olarak sorgulanabilir."
+        },
+        "step2": {
+          "title": "İşbirliği yükümlülükleri",
+          "description": "Mükellef işbirliği yapmakla yükümlüdür – ancak sınırsız değildir. Denetim temel olarak mükellefin iş yerinde yapılır. Süre ve kapsam gerekli ölçüye uygun olmalıdır."
+        },
+        "step3": {
+          "title": "Veri erişimi ve dijital denetim",
+          "description": "Mali idare giderek dijital değerlendirmelere başvurmaktadır (IDEA, performans göstergesi karşılaştırmaları, zaman serisi analizleri)."
+        }
+      },
+      "estimation": {
+        "title": "Vergilendirme temellerinin tahmini (§ 162 AO)",
+        "whenAllowed": {
+          "title": "Tahmin ne zaman kabul edilebilir?",
+          "intro": "Tahmin şu durumlarda kabul edilebilir:",
+          "item1": "Defter tutma resmi veya maddi eksiklikler gösteriyorsa",
+          "item2": "Kayıtlar sunulmuyorsa",
+          "item3": "Kasa yönetimi düzenli değilse",
+          "warningLabel": "⚠️ Önemli:",
+          "warningText": "Her resmi eksiklik otomatik olarak tam bir tahmini haklı çıkarmaz."
+        },
+        "requirements": {
+          "title": "Düzenli bir tahmin için gereklilikler",
+          "intro": "İçtihat bir tahminin şu şekilde olmasını gerektirir:",
+          "item1": "Tutarlı",
+          "item2": "Ekonomik olarak mümkün",
+          "item3": "Gerçekçi",
+          "item4": "Orantılı",
+          "is": "olmalıdır",
+          "note": "Genel veya şematik ek ücretler kabul edilemez."
+        }
+      },
+      "benchmarks": {
+        "title": "Kılavuz değer koleksiyonları – sınırlar ve içtihat",
+        "intro": "Mali idare sektöre özgü kılavuz değer koleksiyonlarını karşılaştırma değerleri olarak kullanır. Ancak bunlar mekanik olarak uygulanamaz.",
+        "principles": {
+          "title": "Merkezi içtihat ilkeleri (BFH)",
+          "item1": "Kılavuz değerler yönlendirici araçlardır, bağlayıcı standartlar değildir",
+          "item2": "Bireysel işletme özellikleri dikkate alınmalıdır",
+          "item3": "İstatistiksel ortalama değerler şirket gerçekliğini yansıtmaz"
+        }
+      },
+      "ourApproach": {
+        "title": "Yaklaşımımız: İstatistik yerine bireysel vaka",
+        "intro": "Bir vergi dış denetimi bir \"istatistik vergilendirmesi\" olmamalıdır. Bu nedenle tutarlı bir şekilde şunlara odaklanıyoruz:",
+        "item1": "Bireysel şirket yapısının ortaya çıkarılması",
+        "item2": "Tahminlerin yasal olarak sınırlandırılması",
+        "item3": "Kılavuz değerlerin ve performans göstergelerinin somut işletme bağlamına argümantatif olarak yerleştirilmesi",
+        "goal": "Amaç, mali idarenin genel varsayımlarını anlaşılabilir, yasal olarak güvenilir bireysel vaka argümanlarıyla değiştirmektir."
+      },
+      "howWeHelp": {
+        "title": "Size nasıl eşlik ediyoruz",
+        "description": "Müşterilerimize denetim emrinden Federal Mali Mahkeme önündeki davaya kadar kapsamlı destek veriyoruz. Odağımız salt tepkide değil, erken yapılandırma, yasal sınıflandırma ve mali idareyle stratejik müzakere yürütmededir."
+      },
+      "cta": {
+        "title": "İşletme denetimi hakkında sorularınız mı var?",
+        "description": "Bizimle iletişime geçin – somut durumunuz hakkında size memnuniyetle danışmanlık veririz.",
+        "button": "Şimdi İletişime Geçin"
+      }
+    },
+    "tools": {
+      "hero": {
+        "title": "Vergi Araçları & Hesaplayıcılar",
+        "subtitle": "Vergi planlamanız için faydalı online hesaplayıcılar ve araçlar. Hızlı, ücretsiz ve kullanımı kolay."
+      },
+      "intro": "Özenle seçilmiş vergi hesaplayıcıları, formlar ve araç koleksiyonumuzu kullanın. Bu harici hesaplayıcılar yeni bir pencerede açılır.",
+      "taxCalculators": {
+        "heading": "Vergi Hesaplayıcıları",
+        "incomeTax": {
+          "title": "Gelir Vergisi Hesaplayıcısı",
+          "text": "Gelir verginizi ve dayanışma katkınızı hesaplayın",
+          "link": "Hesaplayıcıya Git →"
+        },
+        "giftTax": {
+          "title": "Bağış Vergisi Hesaplayıcısı",
+          "text": "Bağışlarda muafiyet ve vergiyi belirleyin",
+          "link": "Hesaplayıcıya Git →"
+        },
+        "grossNet": {
+          "title": "Brüt/Net Maaş Hesaplayıcısı",
+          "text": "Brüt maaştan net maaş hesaplama, sosyal katkılar dahil",
+          "link": "Hesaplayıcıya Git →"
+        }
+      },
+      "socialSecurity": {
+        "heading": "Sosyal Güvenlik & Çalışma",
+        "parentalBenefit": {
+          "title": "Ebeveyn Parası Hesaplayıcısı",
+          "text": "Ebeveyn parası hakkını hesaplama ve optimize etme",
+          "link": "Hesaplayıcıya Git →"
+        },
+        "careBenefit": {
+          "title": "Bakım Parası Hesaplayıcısı",
+          "text": "Bakım parası ve bakım yardımlarını belirleme",
+          "link": "Hesaplayıcıya Git →"
+        },
+        "maternityProtection": {
+          "title": "Doğum İzni Hesaplayıcısı",
+          "text": "Doğum koruma sürelerini hesaplama",
+          "link": "Hesaplayıcıya Git →"
+        },
+        "workingDays": {
+          "title": "İş Günü Hesaplayıcısı",
+          "text": "İki tarih arasındaki iş günlerini belirleme",
+          "link": "Hesaplayıcıya Git →"
+        },
+        "miniJob": {
+          "title": "Mini-İş Hesaplayıcısı",
+          "text": "Mini işlerde yükümlülük ve maliyetleri hesaplama",
+          "link": "Hesaplayıcıya Git →"
+        }
+      },
+      "businessStartup": {
+        "heading": "Şirket Kuruluşu",
+        "founderCheck": {
+          "title": "Kurucu Kontrolü",
+          "text": "Serbest mesleğe hazır mısınız? Kontrol edin",
+          "link": "Araca Git →"
+        },
+        "businessPlan": {
+          "title": "İş Planı",
+          "text": "İş planınız için şablon ve kılavuz",
+          "link": "Araca Git →"
+        },
+        "fundingCalculator": {
+          "title": "Destek Hesaplayıcısı",
+          "text": "Hangi desteklere hak kazandınız?",
+          "link": "Hesaplayıcıya Git →"
+        },
+        "gmbhChecklist": {
+          "title": "GmbH Kuruluş Kontrol Listesi",
+          "text": "GmbH kuruluşu için tüm adımlar",
+          "link": "Listeye Git →"
+        },
+        "pensionPlan": {
+          "title": "Şirket Emeklilik Planı",
+          "text": "Şirket emeklilik planı hesaplayıcısı",
+          "link": "Hesaplayıcıya Git →"
+        }
+      },
+      "additionalTools": {
+        "heading": "Diğer Araçlar",
+        "deadlineCalculator": {
+          "title": "Süre Hesaplayıcısı (BGB)",
+          "text": "BGB'ye göre yasal süreleri hesaplama",
+          "link": "Hesaplayıcıya Git →"
+        },
+        "loanCalculator": {
+          "title": "Kredi Hesaplayıcısı",
+          "text": "Kredi taksitleri ve faizleri hesaplama",
+          "link": "Hesaplayıcıya Git →"
+        },
+        "sampleContracts": {
+          "title": "Örnek Sözleşmeler",
+          "text": "Ücretsiz örnek sözleşmeler ve şablonlar",
+          "link": "Şablonlara Git →"
+        },
+        "forms": {
+          "title": "Formlar",
+          "text": "İndirilebilir önemli vergi formları",
+          "link": "Formlara Git →"
+        },
+        "tables": {
+          "title": "Tablolar",
+          "text": "Vergi tabloları ve genel bakışlar",
+          "link": "Tablolara Git →"
+        }
+      },
+      "note": {
+        "title": "Araçlar Hakkında Not",
+        "text": "Burada bağlantısı verilen hesaplayıcılar ve araçlar harici tekliflerdir ve yeni bir pencerede açılır. Hesaplamaların doğruluğu için garanti vermiyoruz. Vergi durumunuzla ilgili belirli sorularınız için kişisel danışmanlık için bizimle iletişime geçebilirsiniz."
+      },
+      "cta": {
+        "title": "Vergi Durumunuz Hakkında Sorularınız mı Var?",
+        "subtitle": "Online hesaplayıcılar iyi bir ilk adımdır. Temellendirilmiş danışmanlık için şahsen hizmetinizdeyiz.",
+        "button": "Şimdi Danışmanlık İsteyin"
+      }
+    },
+    "pricing": {
+      "hero": {
+        "title": "Ücretler & Hizmet Bedeli",
+        "subtitle": "Şeffaf fiyatlar, adil koşullar. Net iletişime önem veriyoruz – maliyetlerde de."
+      },
+      "intro": "Her vekalet bireyseldir. Durumunuza uygun çeşitli ücret modelleri sunuyoruz. Tüm fiyatlar yasal KDV hariçtir.",
+      "freeContact": {
+        "title": "Ücretsiz İlk İletişim",
+        "intro": "İlk telefon görüşmesi her zaman ücretsizdir. Bize konunuzu kısaca anlatın – size nasıl yardımcı olabileceğimizi netleştiririz.",
+        "phoneLabel": "Bizi arayın:",
+        "benefit1": "✓ Durumunuzun ilk değerlendirmesi",
+        "benefit2": "✓ Doğru muhatap olup olmadığımızın netleştirilmesi",
+        "benefit3": "✓ Bağlayıcı olmayan ve ücretsiz",
+        "benefit4": "✓ İşbirliği yükümlülüğü yok"
+      },
+      "initialConsultation": {
+        "title": "İlk Görüşme",
+        "option1": {
+          "title": "Danışma Görüşmesi",
+          "price": "EUR 395",
+          "unit": "saat başına (net)",
+          "description": "Spesifik bir vergi sorunuz varsa ve temellendirilmiş danışmanlık istiyorsanız, saat başına EUR 395 net ücret alıyoruz.",
+          "benefit1": "✓ Durumunuzun detaylı analizi",
+          "benefit2": "✓ Somut eylem önerileri",
+          "benefit3": "✓ Yazılı özet"
+        },
+        "option2": {
+          "title": "Tanışma Görüşmesi",
+          "price": "Ücretsiz",
+          "unit": "sürekli desteği üstlenme durumunda",
+          "description": "Sadece ilk tanışma söz konusuysa veya devam eden bir işbirliği ile ilgileniyorsanız, ilk görüşme sizin için ücretsizdir.",
+          "benefit1": "✓ Bağlayıcı olmayan tanışma",
+          "benefit2": "✓ Çalışma şeklimizin sunumu",
+          "benefit3": "✓ Bireysel teklif oluşturma"
+        }
+      },
+      "designConsulting": {
+        "title": "Yapılandırma Danışmanlığı & Proje Çalışması",
+        "intro": "Karmaşık vergi sorunlarında, yapılandırmalarda veya tek seferlik projelerde saatlik veya sabit fiyat ile çalışırız.",
+        "hourlyRate": {
+          "title": "Saatlik Ücretler",
+          "range": "EUR 180 - 220",
+          "unit": "ortalama saat başına (net)",
+          "description": "Ekip olarak çalışıyoruz: vergi danışmanları ve nitelikli uzmanlar. Böylece adil saatlik ücretlerle farklı seviyelerde uzmanlıktan yararlanırsınız.",
+          "benefit1": "✓ Optimal verimlilik için ekip yaklaşımı",
+          "benefit2": "✓ Şeffaf zaman kaydı",
+          "benefit3": "✓ Düzenli ara faturalar"
+        },
+        "flatFee": {
+          "title": "Sabit Fiyatlar",
+          "price": "Anlaşmaya göre",
+          "unit": "tanımlanmış hizmetler için",
+          "description": "Açıkça tanımlanmış projeler için sabit fiyatlar sunuyoruz. Böylece planlama güvenliğine sahip olursunuz ve önceden hangi maliyetlerin geleceğini bilirsiniz.",
+          "benefit1": "✓ Sabit fiyat ile planlama güvenliği",
+          "benefit2": "✓ Gizli maliyet yok",
+          "benefit3": "✓ Net hizmet tanımı"
+        },
+        "examples": {
+          "title": "Yapılandırma danışmanlığı örnekleri:",
+          "item1": "Raporlar ve görüşler",
+          "item2": "Dönüşümler (birleşme, bölünme, şekil değişikliği)",
+          "item3": "Kuruluş danışmanlığı (GmbH, Holding, UG)",
+          "item4": "Çıkış planlaması ve uluslararası yapılandırma",
+          "item5": "Veraset planlaması ve şirket devri",
+          "item6": "Durum tespiti ve şirket değerlemesi"
+        }
+      },
+      "ongoingSupport": {
+        "title": "Sürekli Vergi Danışmanlığı",
+        "intro": "Sürekli vergi desteği Vergi Danışmanı Ücret Yönetmeliği'ne (StBVV) göre faturalandırılır. Miktar çeşitli faktörlere bağlıdır:",
+        "factor1": {
+          "title": "Değer Nesnesi",
+          "text": "Ciro, kar, bilanço toplamı – hizmete göre"
+        },
+        "factor2": {
+          "title": "Karmaşıklık",
+          "text": "Yasal şekil, işlem sayısı, özellikler"
+        },
+        "factor3": {
+          "title": "Kapsam",
+          "text": "Çalışan sayısı, hesaplar, belgeler"
+        },
+        "approach": "Yaklaşımımız: Genellikle StBVV'nin orta değerine yöneliyoruz. Böylece adil koşullarda kaliteli hizmetler alırsınız.",
+        "services": {
+          "title": "Sürekli desteğin tipik hizmetleri:",
+          "item1": "Aylık mali muhasebe",
+          "item2": "Bordro muhasebesi ve bordro vergisi kayıtları",
+          "item3": "KDV ön beyanları",
+          "item4": "Yıllık mali tablo (HGB, EStG) veya EÜR",
+          "item5": "Tüm vergi beyannameleri (ESt, KSt, GewSt, USt)",
+          "item6": "İşletme değerlendirmeleri (BWA)",
+          "item7": "Sürekli vergi danışmanlığı"
+        }
+      },
+      "cta": {
+        "title": "Bireysel Teklif mi İstiyorsunuz?",
+        "text": "İlk randevuda bireysel bir teklif için bizimle konuşun. Size gereksinimlerinize uygun şeffaf bir hesaplama oluştururuz.",
+        "button": "Şimdi İlk Görüşme Talep Edin"
+      },
+      "faq": {
+        "title": "Ücretler Hakkında Sık Sorulan Sorular",
+        "q1": "Belirtilen fiyatlar Brüt mü Net mi?",
+        "a1": "Belirtilen tüm fiyatlar net fiyatlardır. Buna yasal KDV (şu anda %19) eklenir.",
+        "q2": "Danışmanlığın maliyetini önceden bilebilir miyim?",
+        "a2": "Evet. İlk görüşmeden sonra sizden şeffaf bir teklif alırsınız. Sürekli destekte, rakamlarınıza dayanarak somut bir hesaplama gösteririz. Proje çalışmasında önceden sabit bir fiyat veya bütçe üzerinde anlaşırız.",
+        "q3": "Vergi Danışmanı Ücret Yönetmeliği (StBVV) nedir?",
+        "a3": "StBVV vergi hizmetleri için ücretleri yasal olarak düzenler. 1/10'dan 10/10'a kadar ücret tabloları ve aralıklar içerir, bunların içinde vergi danışmanları ücretlerini belirleyebilir. Genellikle orta değere (5/10 ila 6/10) yöneliyoruz.",
+        "q4": "Gizli maliyetler var mı?",
+        "a4": "Hayır. Şeffaflığa önem veriyoruz. Tüm maliyetler önceden görüşülür ve yazılı olarak kaydedilir. Değişiklikler veya ek hizmetleri önceden sizinle koordine ederiz.",
+        "q5": "Sürekli destekte nasıl faturalandırılır?",
+        "a5": "Genellikle aylık veya üç aylık. Sağlanan hizmetlerin dökümü ile detaylı bir fatura alırsınız. Böylece her zaman genel bakışa sahip olursunuz."
+      }
+    },
+    "karriere": {
+      "hero": {
+        "title": "Bizimle Kariyer",
+        "subtitle": "Bir iş yerinden fazlası. Bir perspektif."
+      },
+      "intro": {
+        "text": "İnanıyoruz ki: İyi iş, yapı, özgürlük ve takdirin bir araya geldiği yerde ortaya çıkar. Bu nedenle insanların uzun vadede büyüyebileceği, sorumluluk alabileceği ve memnuniyetle kalabileceği bir ortam yaratıyoruz."
+      },
+      "benefits": {
+        "title": "Bizde sizi neler bekliyor",
+        "card1": {
+          "title": "Çalışma Ortamı & Modern İşbirliği",
+          "subtitle": "Verimli, dijital, profesyonel",
+          "point1": "• En modern BT donanımıyla tamamen dijital firma yapıları",
+          "point2": "• Çağdaş çalışma alanları",
+          "point3": "• Konum esnekliği – ofiste, hibrit veya uzaktan",
+          "point4": "• Odaklı çalışma için yapılandırılmış süreçler",
+          "point5": "• Sürekli ulaşılabilirlik yerine güvenilir çalışma saatleri"
+        },
+        "card2": {
+          "title": "Esneklik & Yaşam Kalitesi",
+          "subtitle": "Performans dinlenme gerektirir",
+          "point1": "• Bireysel çalışma saati modelleri",
+          "point2": "• Ortalamanın üzerinde tatil hakkı (32 güne kadar)",
+          "point3": "• Net temsil düzenlemeleri – tatil tatil kalır",
+          "point4": "• Günlük yaşamda rahatlama için modern avantajlar",
+          "point5": "• Mobilitede destek (iş kartı, park yeri)"
+        },
+        "card3": {
+          "title": "Takım Kültürü & Birliktelik",
+          "subtitle": "Profesyonel – ama insani",
+          "point1": "• Düzenli ekip formatları ve ortak aktiviteler",
+          "point2": "• Firma içi etkinlikler",
+          "point3": "• Hiyerarşi düşüncesi yerine değer veren geri bildirim kültürü",
+          "point4": "• Eşit düzeyde açık iletişim",
+          "point5": "• Performans görülür ve takdir edilir"
+        },
+        "card4": {
+          "title": "Mesleki Gelişim & Kariyer Yolları",
+          "subtitle": "Büyümek bizde tesadüf değil, bir konsepttir",
+          "point1": "• Zaman kotası ile bireysel sürekli eğitim planlaması",
+          "point2": "• İş hayatıyla birlikte yürütülen çalışma programlarında destek",
+          "point3": "• Vergi danışmanı sınavı için hedefli teşvik",
+          "point4": "• Kendi profesyonel odak alanlarınızı oluşturma",
+          "point5": "• Teknik liderlik sorumluluğu için fırsat",
+          "point6": "• Firma yapılarının aktif olarak şekillendirilmesi"
+        },
+        "card5": {
+          "title": "Perspektifler & Katılım",
+          "subtitle": "Kariyer bizde katılım anlamına gelir",
+          "point1": "• Boş unvanlar yerine şeffaf kariyer modelleri",
+          "point2": "• Performansa dayalı değişken ücret bileşenleri",
+          "point3": "• Girişimci büyümeye katılım",
+          "point4": "• Ekip, lokasyon veya proje sorumluluğu üstlenme",
+          "point5": "• Yeni iş alanlarına katılım"
+        },
+        "card6": {
+          "title": "Modern Avantajlar & Özel Fırsatlar",
+          "subtitle": "Standart hizmetlerden fazlası",
+          "point1": "• Aylık ayni yardımlar",
+          "point2": "• Anlaşmaya göre ek özel hizmetler",
+          "point3": "• Çalışma, seyahat ve aileyi birleştirmek için esnek modeller"
+        }
+      },
+      "target": {
+        "title": "Kime hitap ediyoruz",
+        "intro": "Sadece bir iş değil, gerçek perspektifi olan profesyonel bir yuva arayan insanlar arıyoruz:",
+        "card1": {
+          "title": "Profesyonel Olarak Büyümek İsteyenler",
+          "text": "Durağan kalmak istemiyorsunuz, sürekli gelişmek istiyorsunuz – profesyonel, metodolojik ve stratejik olarak."
+        },
+        "card2": {
+          "title": "Sorumluluk Almak İsteyenler",
+          "text": "Yaratıcı özgürlük arıyorsunuz ve sonuçlarınızın arkasında durmaya hazırsınız – sürekli mikro yönetim olmadan."
+        },
+        "card3": {
+          "title": "Yapılandırılmış Çalışan ve Düşünen",
+          "text": "Net süreçleri takdir ediyorsunuz, ancak sadece talimatları yerine getirmek istemiyorsunuz – aktif olarak şekillendirmek istiyorsunuz."
+        },
+        "card4": {
+          "title": "Uzun Vadeli Yuva Arayanlar",
+          "text": "Geçiş istasyonu aramıyorsunuz, gerçek perspektif ve takdirle profesyonel bir yuva arıyorsunuz."
+        },
+        "closing": "Yeni mezun, deneyimli profesyonel veya hırslı bir değişiklik – önemli olan kendinize olan talebinizdir."
+      },
+      "cta": {
+        "title": "Bizde başlangıcınız",
+        "text": "Başvuru süreci bilinçli olarak karmaşık olmayan ve gizli tutulmuştur. İlk görüşme karşılıklı tanışmaya hizmet eder – baskı olmadan, formalite olmadan.",
+        "button": "Şimdi İletişime Geçin"
+      }
+    }
+  },
+  "features": {
+    "readingTime": "Okuma süresi: {minutes} dakika",
+    "printPage": "Sayfayı yazdır",
+    "downloadPDF": "PDF olarak indir",
+    "stickyCta": {
+      "contact": "Şimdi danışmanlık talep edin",
+      "callNow": "Şimdi ara",
+      "bookAppointment": "Randevu al"
+    }
+  },
+  "breadcrumbs": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "knowledge": "Bilgi",
+    "about": "Hakkımızda",
+    "faq": "SSS",
+    "contact": "İletişim",
+    "tools": "Araçlar",
+    "pricing": "Ücretler",
+    "career": "Kariyer"
+  }
+}

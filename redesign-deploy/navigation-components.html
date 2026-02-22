@@ -1,0 +1,147 @@
+<!--
+    NAVIGATION COMPONENTS
+    Copy and paste these components into your pages as needed
+-->
+
+<!-- ============================================================================
+     SEARCH BUTTON (Add to header navigation)
+     Insert after language switcher in header
+     ============================================================================ -->
+<button class="search-toggle" aria-label="Suche öffnen">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+</button>
+
+
+<!-- ============================================================================
+     SEARCH MODAL (Add before closing </body> tag on ALL pages)
+     ============================================================================ -->
+<div class="search-modal">
+    <div class="search-modal-content">
+        <div class="search-modal-header">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" class="search-input" placeholder="Suchen Sie nach Themen, Leistungen oder Informationen...">
+            <button class="search-close" aria-label="Schließen">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="search-results"></div>
+    </div>
+</div>
+
+
+<!-- ============================================================================
+     BACK BUTTON (Add at start of content section)
+     ============================================================================ -->
+<a href="javascript:void(0)" class="back-button">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 16px; height: 16px;">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+    </svg>
+    Zurück
+</a>
+
+
+<!-- ============================================================================
+     SCROLL TO TOP BUTTON (Add before closing </body> tag on ALL pages)
+     ============================================================================ -->
+<button class="scroll-to-top" aria-label="Nach oben scrollen">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+</button>
+
+
+<!-- ============================================================================
+     TABLE OF CONTENTS SIDEBAR (Add for long content pages)
+     Use with a 2-column grid layout
+     ============================================================================ -->
+<aside class="toc-sidebar">
+    <div class="toc-inner">
+        <h3>
+            Auf dieser Seite
+            <button class="toc-toggle" aria-label="Inhaltsverzeichnis schließen">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 20px; height: 20px;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </h3>
+        <!-- TOC will be generated automatically by JavaScript -->
+    </div>
+</aside>
+
+<!-- TOC Toggle Button for Mobile -->
+<button class="toc-toggle-btn" aria-label="Inhaltsverzeichnis öffnen">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+</button>
+
+
+<!-- ============================================================================
+     EXAMPLE: Full Page Layout with TOC
+     ============================================================================ -->
+<!--
+<section class="section">
+    <div class="container">
+        <a href="javascript:void(0)" class="back-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 16px; height: 16px;">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Zurück
+        </a>
+
+        <div class="grid grid--sidebar" style="grid-template-columns: 1fr 300px; gap: var(--spacing-2xl); align-items: start;">
+
+            <main class="toc-content-area">
+                <h1>Page Title</h1>
+
+                <h2 id="section-1">Section 1</h2>
+                <p>Content...</p>
+
+                <h3 id="section-1-1">Subsection 1.1</h3>
+                <p>Content...</p>
+
+                <h2 id="section-2">Section 2</h2>
+                <p>Content...</p>
+            </main>
+
+            <aside class="toc-sidebar">
+                <div class="toc-inner">
+                    <h3>
+                        Auf dieser Seite
+                        <button class="toc-toggle" aria-label="Inhaltsverzeichnis schließen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 20px; height: 20px;">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </h3>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+</section>
+
+<button class="toc-toggle-btn" aria-label="Inhaltsverzeichnis öffnen">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+</button>
+
+<button class="scroll-to-top" aria-label="Nach oben scrollen">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+</button>
+-->
+
+
+<!-- ============================================================================
+     REQUIRED SCRIPTS (Add before closing </body> tag)
+     ============================================================================ -->
+<script src="assets/js/navigation-helpers.js"></script>
