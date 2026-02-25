@@ -2147,7 +2147,8 @@ li {
   }
 
   .nav__link--has-dropdown::after {
-    float: right;
+    margin-left: auto;
+    flex-shrink: 0;
     transition: transform 0.3s;
   }
 
@@ -2155,19 +2156,23 @@ li {
     transform: rotate(180deg);
   }
 
-  /* On mobile, nav links don't need pill style — full-width rows instead */
+  /* On mobile, nav links use flex so chevron stays right without float issues */
   .nav__link {
     border-radius: 0.375rem;
     padding: 0.5rem 0.75rem;
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
+    box-sizing: border-box;
   }
 
   .nav__dropdown-link {
     padding: var(--spacing-xs) var(--spacing-md);
     font-size: 0.95rem;
+    transition: background 0.15s, color 0.15s;
   }
 
+  /* Remove shifting padding on touch — prevents jump effect */
   .nav__dropdown-link:hover {
     padding-left: var(--spacing-md);
   }
