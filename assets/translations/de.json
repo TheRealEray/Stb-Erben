@@ -543,6 +543,10 @@
         "subjectOption3": "Fragen und Anliegen",
         "subjectOption4": "Steuerberatung",
         "subjectOption5": "Terminanfrage",
+        "namePlaceholder": "Ihr Name",
+        "emailPlaceholder": "ihre@email.de",
+        "phonePlaceholder": "+49 123 456789",
+        "messagePlaceholder": "Beschreiben Sie kurz Ihr Anliegen...",
         "messageLabel": "Ihre Nachricht *",
         "attachmentsLabel": "Anhänge (optional)",
         "attachmentsNote": "Max. 10 MB pro Datei. Erlaubte Formate: PDF, DOC, DOCX, JPG, PNG",
@@ -871,7 +875,8 @@
     }
   },
   "meta": {
-    "title": "Steuerberater Düren | Steuerkanzlei Ibrahim Erben | Wegzug, E-Commerce, Unternehmensberatung"
+    "title": "Steuerberater Düren | Steuerkanzlei Ibrahim Erben | Wegzug, E-Commerce, Unternehmensberatung",
+    "description": "Steuerberatung für vorausschauende Unternehmer. Spezialisiert auf Wegzugsbesteuerung, E-Commerce, Heilberufe & Immobilien. Persönlich. Digital. Kompetent."
   },
   "hero": {
     "slide1": {

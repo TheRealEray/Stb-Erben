@@ -493,7 +493,12 @@
         "consultation": "İlk Görüşme & Maliyetler",
         "collaboration": "İşbirliği",
         "specializations": "Uzmanlıklar",
-        "other": "Diğer Sorular"
+        "other": "Diğer Sorular",
+        "audits": "Denetimler & Prosedürler",
+        "taxcriminal": "Vergi Ceza Hukuku",
+        "restructuring": "Yeniden Yapılandırma",
+        "crisis": "Kriz & İflas",
+        "international": "Uluslararası & Türkiye"
       },
       "q1": {
         "q": "Firmanız kimin için uygun?",
@@ -574,6 +579,66 @@
       "q20": {
         "q": "Yeni kurulan şirketlerle de çalışıyor musunuz?",
         "a": "Evet, memnuniyetle. Kuruluştan büyümeye kadar size eşlik ediyoruz: yasal şekil seçimi, işletme kaydı, vergi dairesi kaydı, sürekli defter tutma, vergi beyannameleri. Özellikle e-ticaret girişimleri, sağlık meslekleri veya planlanan uluslararasılaşma konusunda çok deneyimiz var."
+      },
+      "q100": {
+        "q": "Vergi denetimlerine aktif olarak eşlik ediyor musunuz?",
+        "a": "Kesinlikle. Vergi idaresiyle iletişimi biz yönetiyoruz, denetim alanlarını önceden yapılandırıyoruz ve denetimi stratejik olarak eşlik ediyoruz – riskleri en aza indirme ve tırmanmayı önleme amacıyla."
+      },
+      "q101": {
+        "q": "Vergi riskleri ve sorumluluk konularında da danışmanlık veriyor musunuz?",
+        "a": "Evet. Çalışmamızın odak noktalarından biri, özellikle yönetim kurulu sorumluluğu, gizli kâr dağıtımları, sorumluluk normları ve vergi ceza hukuku kesişimleriyle bağlantılı vergi risklerinin tespiti ve değerlendirilmesidir."
+      },
+      "q102": {
+        "q": "Geçmişteki yükler veya hatalar içeren yetki belgelerini üstleniyor musunuz?",
+        "a": "Evet. Müvekkiller genellikle daha önceki yapılar optimum olmadığında veya riskler ortaya çıktığında bize gelirler. Zaman baskısı altında bile analiz ediyor, önceliklendiriyor ve yasal olarak sağlam çözümler geliştiriyoruz."
+      },
+      "q103": {
+        "q": "Hatalardan sonra yeniden yapılandırma konusunda da danışmanlık veriyor musunuz?",
+        "a": "Evet. Mevcut hataları analiz ediyor, riskleri önceliklendiriyor ve yasal olarak güvenli düzeltme ve yeniden yönelim modelleri geliştiriyoruz – ölçülü değerlendirme ve strateji ile."
+      },
+      "q104": {
+        "q": "Vergi ceza hukukunda da faaliyet gösteriyor musunuz?",
+        "a": "Evet. Vergi ceza hukuku risklerinde hem önleyici olarak hem de devam eden davalarda destekleyici olarak danışmanlık veriyoruz – her zaman zarar sınırlandırma, yapılandırma ve yasal olarak sağlam iletişime odaklanarak."
+      },
+      "q105": {
+        "q": "Firmanız vergi ceza hukukunda ne kadar iyi ağa sahip?",
+        "a": "Çok iyi. Uzmanlaşmış avukatlarla yakın çalışıyoruz ve vergi hukuku, vergi ceza hukuku ve usul hukuku arasındaki ara yüzleri tam olarak biliyoruz."
+      },
+      "q106": {
+        "q": "Gönüllü bildirimleri veya önleyici tedbirleri de destekliyor musunuz?",
+        "a": "Evet. Vergi ceza hukuku risklerini önlemek için hem önleyici olarak hem de mevcut sorunlu durumlar için destekleyici olarak danışmanlık veriyoruz."
+      },
+      "q107": {
+        "q": "Yeniden yapılandırma ve dönüşümler konusunda danışmanlık veriyor musunuz?",
+        "a": "Evet. Birleşmeler, bölünmeler, katkılar, şekil değişiklikleri ve holding yeniden yapılandırmalarına eşlik ediyoruz – hem vergisel hem de kavramsal perspektiften. Hedef her zaman yasal olarak sağlam ve ekonomik olarak mantıklı bir uygulama."
+      },
+      "q108": {
+        "q": "Hissedar anlaşmazlıkları veya ayrılmalar konusunda danışmanlık veriyor musunuz?",
+        "a": "Evet. Özellikle hissedar anlaşmazlıklarında, çıkışlarda veya yeniden yapılandırmalarda, ekonomik zararı önlemek veya sınırlandırmak için vergi uzmanlığı kritik önem taşır."
+      },
+      "q109": {
+        "q": "Mevcut yapıları sağlamlık açısından denetleyebilir misiniz?",
+        "a": "Evet. Pek çok müvekkil bize özellikle mevcut yapıların vergi riski ve potansiyel analizi için görev verir – anlık yeniden yapılandırma olmaksızın, ancak açık eylem önerileriyle."
+      },
+      "q110": {
+        "q": "Şirket satışları veya katılımlara da eşlik ediyor musunuz?",
+        "a": "Evet. Pay devirleri, varlık devirleri, katılım edinimler ve satışlarının yanı sıra işlemlerin vergi açısından optimal olarak hazırlanmasında danışmanlık veriyoruz."
+      },
+      "q111": {
+        "q": "Müvekkillere yalnızca büyüme sürecinde mi yoksa kriz dönemlerinde de eşlik ediyor musunuz?",
+        "a": "Her ikisinde de. Müvekkillere hem iyi zamanlarda – yapılandırma, genişleme ve optimizasyon ile – hem de şirket krizleri, likidite sıkışıklıkları veya iflas durumları gibi zor dönemlerde eşlik ediyoruz. Özellikle krizlerde, ileriye dönük ve güvenilir vergi danışmanlığı kritik önem taşır."
+      },
+      "q112": {
+        "q": "Şirket krizleri ve iflaslarda danışmanlık yapıyor musunuz?",
+        "a": "Evet. Yeniden yapılandırma, reorganizasyon, yaklaşan ödeme acizliği, iflas başvuru yükümlülükleri ve devam eden iflas davalarında danışmanlık veriyoruz. Odak noktamız sorumluluktan kaçınma, yapı koruma ve yasal olarak sağlam destek."
+      },
+      "q113": {
+        "q": "Türkiye dışında uluslararası bağlantılı dosyaları da üstleniyor musunuz?",
+        "a": "Evet. Türkiye bağlantılarının yanı sıra, özellikle Avrupa bağlamında ve uluslararası KDV için diğer sınır ötesi durumlarda da danışmanlık veriyoruz."
+      },
+      "q114": {
+        "q": "Türk vergi hukukuna hakim misiniz?",
+        "a": "Evet. Alman-Türk vergi konularında kapsamlı deneyimimiz var ve Türkiye'deki nitelikli işbirliği ortaklarıyla yakın çalışıyoruz."
       },
       "closing": {
         "heading": "Sorunuz burada yoktu mu?",
