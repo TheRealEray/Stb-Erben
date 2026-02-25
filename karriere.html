@@ -150,121 +150,148 @@
             <h2 class="text-center" style="margin-bottom: 0.5rem;">Aktuelle Stellenangebote</h2>
             <p class="text-center" style="color: var(--color-text-light); max-width: 55ch; margin: 0 auto var(--spacing-xl);">Wir wachsen und suchen engagierte Kolleginnen und Kollegen. Klicken Sie auf eine Stelle, um sich direkt zu bewerben.</p>
 
-            <div class="grid grid--3" style="margin-bottom: var(--spacing-xl);">
+            <div class="job-list" style="margin-bottom: var(--spacing-xl);">
 
-                <!-- Job 1: Steuerfachangestellte/r -->
-                <div class="card" style="border-top: 4px solid var(--color-primary); display: flex; flex-direction: column;">
-                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                        <span style="background: #dbeafe; color: #1e40af; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Vollzeit / Teilzeit</span>
-                        <span style="background: #f0fdf4; color: #15803d; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Ab sofort</span>
+                <!-- Gruppe: Fachkräfte -->
+                <div class="job-list__group">Fachkräfte &amp; Berufsträger</div>
+
+                <div class="job-row">
+                    <div class="job-row__info">
+                        <h3 class="job-row__title">Steuerfachangestellte/r</h3>
+                        <p class="job-row__loc">Düren, NRW</p>
                     </div>
-                    <h3 class="card__title" style="margin-bottom: 0.25rem;">Steuerfachangestellte/r</h3>
-                    <p style="color: var(--color-text-light); font-size: 0.875rem; margin-bottom: 0.875rem;">📍 Düren, NRW</p>
-                    <ul style="list-style: none; padding: 0; color: var(--color-text-light); font-size: 0.9rem; margin: 0 0 1.25rem; flex: 1;">
-                        <li style="padding: 0.2rem 0;">✓ Mandantenbuchhaltung & Jahresabschlüsse</li>
-                        <li style="padding: 0.2rem 0;">✓ Steuererklärungen aller Unternehmensformen</li>
-                        <li style="padding: 0.2rem 0;">✓ Direkte Mandantenkommunikation</li>
+                    <ul class="job-row__bullets">
+                        <li>Mandantenbuchhaltung &amp; Jahresabschlüsse</li>
+                        <li>Steuererklärungen aller Unternehmensformen</li>
+                        <li>Direkte Mandantenkommunikation</li>
                     </ul>
-                    <button class="btn btn--primary" style="width: 100%;" onclick="openJobApplication('Steuerfachangestellte/r')">Jetzt bewerben</button>
+                    <div class="job-row__aside">
+                        <div class="job-row__tags">
+                            <span class="job-tag">Vollzeit / Teilzeit</span>
+                            <span class="job-tag job-tag--now">Ab sofort</span>
+                        </div>
+                        <button class="btn btn--primary btn--sm" onclick="openJobApplication('Steuerfachangestellte/r')">Jetzt bewerben</button>
+                    </div>
                 </div>
 
-                <!-- Job 2: Steuerfachwirt/in -->
-                <div class="card" style="border-top: 4px solid #16a34a; display: flex; flex-direction: column;">
-                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                        <span style="background: #dcfce7; color: #15803d; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Vollzeit / Teilzeit</span>
-                        <span style="background: #f0fdf4; color: #15803d; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Ab sofort</span>
+                <div class="job-row">
+                    <div class="job-row__info">
+                        <h3 class="job-row__title">Steuerfachwirt/in</h3>
+                        <p class="job-row__loc">Düren, NRW</p>
                     </div>
-                    <h3 class="card__title" style="margin-bottom: 0.25rem;">Steuerfachwirt/in</h3>
-                    <p style="color: var(--color-text-light); font-size: 0.875rem; margin-bottom: 0.875rem;">📍 Düren, NRW</p>
-                    <ul style="list-style: none; padding: 0; color: var(--color-text-light); font-size: 0.9rem; margin: 0 0 1.25rem; flex: 1;">
-                        <li style="padding: 0.2rem 0;">✓ Eigenverantwortliche Mandantenbetreuung</li>
-                        <li style="padding: 0.2rem 0;">✓ Jahresabschlüsse & Steuererklärungen</li>
-                        <li style="padding: 0.2rem 0;">✓ Unterstützung bei komplexen Sachverhalten</li>
+                    <ul class="job-row__bullets">
+                        <li>Eigenverantwortliche Mandantenbetreuung</li>
+                        <li>Jahresabschlüsse &amp; Steuererklärungen</li>
+                        <li>Unterstützung bei komplexen Sachverhalten</li>
                     </ul>
-                    <button class="btn btn--primary" style="width: 100%; background: #16a34a; border-color: #16a34a;" onclick="openJobApplication('Steuerfachwirt/in')">Jetzt bewerben</button>
+                    <div class="job-row__aside">
+                        <div class="job-row__tags">
+                            <span class="job-tag">Vollzeit / Teilzeit</span>
+                            <span class="job-tag job-tag--now">Ab sofort</span>
+                        </div>
+                        <button class="btn btn--primary btn--sm" onclick="openJobApplication('Steuerfachwirt/in')">Jetzt bewerben</button>
+                    </div>
                 </div>
 
-                <!-- Job 3: Steuerberater/in -->
-                <div class="card" style="border-top: 4px solid #7c3aed; display: flex; flex-direction: column;">
-                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                        <span style="background: #f5f3ff; color: #5b21b6; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Vollzeit / Teilzeit</span>
-                        <span style="background: #f0fdf4; color: #15803d; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Ab sofort</span>
+                <div class="job-row">
+                    <div class="job-row__info">
+                        <h3 class="job-row__title">Steuerberater/in</h3>
+                        <p class="job-row__loc">Düren, NRW</p>
                     </div>
-                    <h3 class="card__title" style="margin-bottom: 0.25rem;">Steuerberater/in</h3>
-                    <p style="color: var(--color-text-light); font-size: 0.875rem; margin-bottom: 0.875rem;">📍 Düren, NRW</p>
-                    <ul style="list-style: none; padding: 0; color: var(--color-text-light); font-size: 0.9rem; margin: 0 0 1.25rem; flex: 1;">
-                        <li style="padding: 0.2rem 0;">✓ Spezialisierte Mandate (Steuerstrafrecht, Wegzug, E-Commerce)</li>
-                        <li style="padding: 0.2rem 0;">✓ Strategische Mandantenberatung</li>
-                        <li style="padding: 0.2rem 0;">✓ Mitgestaltung der Kanzleientwicklung</li>
+                    <ul class="job-row__bullets">
+                        <li>Mandate in Steuerstrafrecht, Wegzug &amp; E-Commerce</li>
+                        <li>Strategische Mandantenberatung</li>
+                        <li>Mitgestaltung der Kanzleientwicklung</li>
                     </ul>
-                    <button class="btn btn--primary" style="width: 100%; background: #7c3aed; border-color: #7c3aed;" onclick="openJobApplication('Steuerberater/in')">Jetzt bewerben</button>
+                    <div class="job-row__aside">
+                        <div class="job-row__tags">
+                            <span class="job-tag">Vollzeit / Teilzeit</span>
+                            <span class="job-tag job-tag--now">Ab sofort</span>
+                        </div>
+                        <button class="btn btn--primary btn--sm" onclick="openJobApplication('Steuerberater/in')">Jetzt bewerben</button>
+                    </div>
                 </div>
 
-                <!-- Job 4: Bilanzbuchhalter/in -->
-                <div class="card" style="border-top: 4px solid #0891b2; display: flex; flex-direction: column;">
-                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                        <span style="background: #ecfeff; color: #164e63; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Vollzeit / Teilzeit</span>
-                        <span style="background: #f0fdf4; color: #15803d; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Ab sofort</span>
+                <div class="job-row">
+                    <div class="job-row__info">
+                        <h3 class="job-row__title">Bilanzbuchhalter/in</h3>
+                        <p class="job-row__loc">Düren, NRW</p>
                     </div>
-                    <h3 class="card__title" style="margin-bottom: 0.25rem;">Bilanzbuchhalter/in</h3>
-                    <p style="color: var(--color-text-light); font-size: 0.875rem; margin-bottom: 0.875rem;">📍 Düren, NRW</p>
-                    <ul style="list-style: none; padding: 0; color: var(--color-text-light); font-size: 0.9rem; margin: 0 0 1.25rem; flex: 1;">
-                        <li style="padding: 0.2rem 0;">✓ Erstellung von Jahresabschlüssen (HGB)</li>
-                        <li style="padding: 0.2rem 0;">✓ BWA-Erstellung und Controlling</li>
-                        <li style="padding: 0.2rem 0;">✓ Laufende Finanzbuchhaltung (DATEV)</li>
+                    <ul class="job-row__bullets">
+                        <li>Jahresabschlüsse nach HGB</li>
+                        <li>BWA-Erstellung und Controlling</li>
+                        <li>Laufende Finanzbuchhaltung (DATEV)</li>
                     </ul>
-                    <button class="btn btn--primary" style="width: 100%; background: #0891b2; border-color: #0891b2;" onclick="openJobApplication('Bilanzbuchhalter/in')">Jetzt bewerben</button>
+                    <div class="job-row__aside">
+                        <div class="job-row__tags">
+                            <span class="job-tag">Vollzeit / Teilzeit</span>
+                            <span class="job-tag job-tag--now">Ab sofort</span>
+                        </div>
+                        <button class="btn btn--primary btn--sm" onclick="openJobApplication('Bilanzbuchhalter/in')">Jetzt bewerben</button>
+                    </div>
                 </div>
 
-                <!-- Job 5: Kauffrau/Kaufmann für Büromanagement -->
-                <div class="card" style="border-top: 4px solid #e11d48; display: flex; flex-direction: column;">
-                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                        <span style="background: #fff1f2; color: #9f1239; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Vollzeit / Teilzeit</span>
-                        <span style="background: #f0fdf4; color: #15803d; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Ab sofort</span>
+                <div class="job-row">
+                    <div class="job-row__info">
+                        <h3 class="job-row__title">Kauffrau/Kaufmann für Büromanagement</h3>
+                        <p class="job-row__loc">Düren, NRW</p>
                     </div>
-                    <h3 class="card__title" style="margin-bottom: 0.25rem;">Kauffrau/Kaufmann für Büromanagement</h3>
-                    <p style="color: var(--color-text-light); font-size: 0.875rem; margin-bottom: 0.875rem;">📍 Düren, NRW</p>
-                    <ul style="list-style: none; padding: 0; color: var(--color-text-light); font-size: 0.9rem; margin: 0 0 1.25rem; flex: 1;">
-                        <li style="padding: 0.2rem 0;">✓ Empfang & Mandantenkommunikation</li>
-                        <li style="padding: 0.2rem 0;">✓ Kanzleiorganisation & Fristenmanagement</li>
-                        <li style="padding: 0.2rem 0;">✓ Post- und Dokumentenbearbeitung</li>
+                    <ul class="job-row__bullets">
+                        <li>Empfang &amp; Mandantenkommunikation</li>
+                        <li>Kanzleiorganisation &amp; Fristenmanagement</li>
+                        <li>Post- und Dokumentenbearbeitung</li>
                     </ul>
-                    <button class="btn btn--primary" style="width: 100%; background: #e11d48; border-color: #e11d48;" onclick="openJobApplication('Kauffrau/Kaufmann für Büromanagement')">Jetzt bewerben</button>
+                    <div class="job-row__aside">
+                        <div class="job-row__tags">
+                            <span class="job-tag">Vollzeit / Teilzeit</span>
+                            <span class="job-tag job-tag--now">Ab sofort</span>
+                        </div>
+                        <button class="btn btn--primary btn--sm" onclick="openJobApplication('Kauffrau/Kaufmann für Büromanagement')">Jetzt bewerben</button>
+                    </div>
                 </div>
 
-                <!-- Job 6: Azubi Steuerfachangestellte/r -->
-                <div class="card" style="border-top: 4px solid #d97706; display: flex; flex-direction: column;">
-                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                        <span style="background: #fffbeb; color: #92400e; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Ausbildung</span>
-                        <span style="background: #fef9c3; color: #713f12; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Start: Aug. 2026</span>
+                <!-- Gruppe: Ausbildung -->
+                <div class="job-list__group">Ausbildungsplätze 2026</div>
+
+                <div class="job-row">
+                    <div class="job-row__info">
+                        <h3 class="job-row__title">Auszubildende/r Steuerfachangestellte/r</h3>
+                        <p class="job-row__loc">Düren, NRW &nbsp;·&nbsp; 3 Jahre</p>
                     </div>
-                    <h3 class="card__title" style="margin-bottom: 0.25rem;">Auszubildende/r Steuerfachangestellte/r</h3>
-                    <p style="color: var(--color-text-light); font-size: 0.875rem; margin-bottom: 0.875rem;">📍 Düren, NRW &nbsp;·&nbsp; 3 Jahre</p>
-                    <ul style="list-style: none; padding: 0; color: var(--color-text-light); font-size: 0.9rem; margin: 0 0 1.25rem; flex: 1;">
-                        <li style="padding: 0.2rem 0;">✓ Fundierte 3-jährige Ausbildung</li>
-                        <li style="padding: 0.2rem 0;">✓ Mentoring durch erfahrene Steuerberater</li>
-                        <li style="padding: 0.2rem 0;">✓ Sehr gute Übernahmechancen</li>
+                    <ul class="job-row__bullets">
+                        <li>Fundierte 3-jährige Ausbildung</li>
+                        <li>Mentoring durch erfahrene Steuerberater</li>
+                        <li>Sehr gute Übernahmechancen</li>
                     </ul>
-                    <button class="btn btn--primary" style="width: 100%; background: #d97706; border-color: #d97706;" onclick="openJobApplication('Auszubildende/r Steuerfachangestellte/r')">Jetzt bewerben</button>
+                    <div class="job-row__aside">
+                        <div class="job-row__tags">
+                            <span class="job-tag">Ausbildung</span>
+                            <span class="job-tag job-tag--date">Start: Aug. 2026</span>
+                        </div>
+                        <button class="btn btn--primary btn--sm" onclick="openJobApplication('Auszubildende/r Steuerfachangestellte/r')">Jetzt bewerben</button>
+                    </div>
                 </div>
 
-                <!-- Job 7: Azubi Kauffrau/Kaufmann für Büromanagement -->
-                <div class="card" style="border-top: 4px solid #e11d48; display: flex; flex-direction: column;">
-                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                        <span style="background: #fff1f2; color: #9f1239; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Ausbildung</span>
-                        <span style="background: #fef9c3; color: #713f12; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 999px;">Start: Aug. 2026</span>
+                <div class="job-row">
+                    <div class="job-row__info">
+                        <h3 class="job-row__title">Auszubildende/r Kauffrau/Kaufmann für Büromanagement</h3>
+                        <p class="job-row__loc">Düren, NRW &nbsp;·&nbsp; 3 Jahre</p>
                     </div>
-                    <h3 class="card__title" style="margin-bottom: 0.25rem;">Auszubildende/r Kauffrau/Kaufmann für Büromanagement</h3>
-                    <p style="color: var(--color-text-light); font-size: 0.875rem; margin-bottom: 0.875rem;">📍 Düren, NRW &nbsp;·&nbsp; 3 Jahre</p>
-                    <ul style="list-style: none; padding: 0; color: var(--color-text-light); font-size: 0.9rem; margin: 0 0 1.25rem; flex: 1;">
-                        <li style="padding: 0.2rem 0;">✓ Fundierte 3-jährige Ausbildung</li>
-                        <li style="padding: 0.2rem 0;">✓ Kanzleiorganisation & Büromanagement</li>
-                        <li style="padding: 0.2rem 0;">✓ Sehr gute Übernahmechancen</li>
+                    <ul class="job-row__bullets">
+                        <li>Fundierte 3-jährige Ausbildung</li>
+                        <li>Kanzleiorganisation &amp; Büromanagement</li>
+                        <li>Sehr gute Übernahmechancen</li>
                     </ul>
-                    <button class="btn btn--primary" style="width: 100%; background: #e11d48; border-color: #e11d48;" onclick="openJobApplication('Auszubildende/r Kauffrau/Kaufmann für Büromanagement')">Jetzt bewerben</button>
+                    <div class="job-row__aside">
+                        <div class="job-row__tags">
+                            <span class="job-tag">Ausbildung</span>
+                            <span class="job-tag job-tag--date">Start: Aug. 2026</span>
+                        </div>
+                        <button class="btn btn--primary btn--sm" onclick="openJobApplication('Auszubildende/r Kauffrau/Kaufmann für Büromanagement')">Jetzt bewerben</button>
+                    </div>
                 </div>
 
-            </div><!-- /grid -->
+            </div><!-- /job-list -->
 
             <!-- Inline application form — shown on job click -->
             <div id="job-application-container" style="display: none; margin-top: var(--spacing-xl);">
@@ -713,6 +740,113 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
         }
+
+        /* Job List */
+        .job-list {
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .job-list__group {
+            padding: 0.5rem 2rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-text-light);
+            background: var(--color-bg-light);
+            border-bottom: 1px solid var(--color-border);
+        }
+        .job-row {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr 200px;
+            gap: 2rem;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--color-border);
+            border-left: 3px solid transparent;
+            transition: background 0.15s ease, border-left-color 0.15s ease;
+        }
+        .job-row:last-child { border-bottom: none; }
+        .job-row:hover {
+            background: var(--color-bg-light);
+            border-left-color: var(--color-primary);
+        }
+        .job-row__title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 0.2rem;
+            line-height: 1.35;
+        }
+        .job-row__loc {
+            font-size: 0.8rem;
+            color: var(--color-text-light);
+            margin: 0;
+        }
+        .job-row__bullets {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+        .job-row__bullets li {
+            font-size: 0.875rem;
+            color: var(--color-text-light);
+            padding-left: 1.1rem;
+            position: relative;
+            line-height: 1.5;
+        }
+        .job-row__bullets li::before {
+            content: '–';
+            position: absolute;
+            left: 0;
+            color: var(--color-border);
+        }
+        .job-row__aside {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            align-items: flex-start;
+        }
+        .job-row__tags {
+            display: flex;
+            gap: 0.35rem;
+            flex-wrap: wrap;
+        }
+        .job-tag {
+            font-size: 0.68rem;
+            font-weight: 600;
+            padding: 0.2rem 0.55rem;
+            border-radius: 4px;
+            border: 1px solid var(--color-border);
+            color: var(--color-text-light);
+            white-space: nowrap;
+        }
+        .job-tag--now {
+            border-color: rgba(22, 163, 74, 0.4);
+            color: #15803d;
+            background: rgba(22, 163, 74, 0.07);
+        }
+        .job-tag--date {
+            border-color: rgba(30, 58, 138, 0.3);
+            color: var(--color-primary);
+            background: rgba(30, 58, 138, 0.06);
+        }
+        .btn--sm {
+            padding: 0.45rem 1rem;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 768px) {
+            .job-row {
+                grid-template-columns: 1fr;
+                gap: 0.875rem;
+                padding: 1.25rem;
+            }
+            .job-list__group { padding: 0.5rem 1.25rem; }
+        }
     </style>
 
     <!-- Stellenangebote: job application form logic -->
@@ -877,3 +1011,4 @@
 <!-- sticky-scroll-1772039440 -->
 <!-- sticky-fix-1772039711 -->
 <!-- revert-1772040018 -->
+<!-- job-list-1772041081 -->
