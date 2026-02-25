@@ -13,25 +13,25 @@ const NEWS_CACHE_TTL = 24 * 60 * 60 * 1000; // 24 Stunden (täglich aktualisiert
 
 const FEEDS = [
   {
-    url: 'https://www.bundesfinanzministerium.de/RSS/Pressemitteilungen.rss',
+    url: 'https://www.bundesfinanzministerium.de/SiteGlobals/Functions/RSSFeed/DE/Pressemitteilungen/RSSPressemitteilungen.xml',
     source: 'Bundesfinanzministerium',
     category: 'Steuerpolitik',
     icon: '🏛️'
   },
   {
-    url: 'https://www.bundesfinanzministerium.de/RSS/BMF_Schreiben_und_andere_Veroeffentlichungen.rss',
-    source: 'BMF Schreiben',
+    url: 'https://www.bundesfinanzministerium.de/SiteGlobals/Functions/RSSFeed/DE/Steuern/RSSSteuern.xml',
+    source: 'BMF Steuern',
     category: 'Steuerrecht',
     icon: '📋'
   },
   {
-    url: 'https://www.haufe.de/rss/steuer-aktuell.xml',
+    url: 'https://www.haufe.de/xml/rss_129148.xml',
     source: 'Haufe Steuer',
     category: 'Steuerrecht',
     icon: '⚖️'
   },
   {
-    url: 'https://www.bundesrat.de/SharedDocs/rss/DE/news.html',
+    url: 'https://www.bundesrat.de/SiteGlobals/Functions/RSSFeed/RSSGenerator_Announcement.xml?nn=4352850',
     source: 'Bundesrat',
     category: 'Gesetzgebung',
     icon: '📜'

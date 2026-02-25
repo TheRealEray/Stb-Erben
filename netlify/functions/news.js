@@ -8,10 +8,10 @@ const https = require('https');
 const http = require('http');
 
 const ALLOWED_FEEDS = [
-  'https://www.bundesfinanzministerium.de/RSS/Pressemitteilungen.rss',
-  'https://www.bundesfinanzministerium.de/RSS/BMF_Schreiben_und_andere_Veroeffentlichungen.rss',
-  'https://www.haufe.de/rss/steuer-aktuell.xml',
-  'https://www.bundesrat.de/SharedDocs/rss/DE/news.html',
+  'https://www.bundesfinanzministerium.de/SiteGlobals/Functions/RSSFeed/DE/Pressemitteilungen/RSSPressemitteilungen.xml',
+  'https://www.bundesfinanzministerium.de/SiteGlobals/Functions/RSSFeed/DE/Steuern/RSSSteuern.xml',
+  'https://www.haufe.de/xml/rss_129148.xml',
+  'https://www.bundesrat.de/SiteGlobals/Functions/RSSFeed/RSSGenerator_Announcement.xml?nn=4352850',
 ];
 
 const CORS_HEADERS = {
