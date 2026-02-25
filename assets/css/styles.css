@@ -1179,6 +1179,20 @@ li {
   text-decoration: none;
 }
 
+.btn--outline {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn--outline:hover {
+  background: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
 .btn--large {
   padding: var(--spacing-md) var(--spacing-2xl);
   font-size: 1.125rem;
@@ -5595,3 +5609,240 @@ body.is-reading-mode .article {
     min-height: 420px;
   }
 }
+
+
+/* ============================================================
+   SERVICE DETAIL PAGES (sp-*)
+   ============================================================ */
+
+.sp-breadcrumb {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+}
+.sp-breadcrumb a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+.sp-breadcrumb a:hover { color: var(--color-primary); }
+.sp-breadcrumb span { margin: 0 0.4rem; color: var(--color-border); }
+
+.sp-hero {
+    background: linear-gradient(135deg, #0f1f4a 0%, #1e3a8a 65%, #1d4ed8 100%);
+    color: #fff;
+    padding: 4rem 0 4.5rem;
+}
+.sp-hero__tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.22);
+    color: rgba(255,255,255,0.9);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    margin-bottom: 1.25rem;
+    display: inline-block;
+}
+.sp-hero__title {
+    font-size: clamp(1.85rem, 4vw, 2.75rem);
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1rem;
+    max-width: 680px;
+    line-height: 1.15;
+}
+.sp-hero__lead {
+    font-size: 1.1rem;
+    opacity: 0.82;
+    max-width: 580px;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+.sp-hero__actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sp-hero .btn--outline {
+    border-color: rgba(255,255,255,0.35);
+    color: #fff;
+    background: transparent;
+}
+.sp-hero .btn--outline:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.6);
+}
+
+/* Problem scenarios */
+.sp-problems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+.sp-problem {
+    padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+    border-left: 3px solid var(--color-primary);
+    background: var(--color-bg-light);
+    border-radius: 0 8px 8px 0;
+}
+.sp-problem__text {
+    font-size: 0.97rem;
+    color: var(--color-text);
+    line-height: 1.65;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Split layout: text + aside */
+.sp-split {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 3.5rem;
+    align-items: start;
+}
+.sp-split__text h2 { margin-bottom: 0.75rem; }
+.sp-split__text > p { color: var(--color-text-light); line-height: 1.75; }
+
+.sp-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+}
+.sp-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+.sp-checklist li::before {
+    content: '';
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231e3a8a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Key facts box (sticky aside) */
+.sp-keybox {
+    background: var(--color-primary);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    position: sticky;
+    top: 120px;
+}
+.sp-keybox__label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 0.875rem;
+}
+.sp-keybox__text {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.92);
+    margin: 0;
+}
+.sp-keybox__note {
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.6;
+}
+.sp-keybox__cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.25rem;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.sp-keybox__cta:hover { background: rgba(255,255,255,0.25); color: #fff; }
+
+/* Process steps */
+.sp-process {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    position: relative;
+}
+.sp-process::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: var(--color-border);
+}
+.sp-step { text-align: center; position: relative; z-index: 1; }
+.sp-step__num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0 auto 1rem;
+    box-shadow: 0 0 0 4px var(--color-bg), 0 0 0 5px var(--color-primary);
+}
+.sp-step__title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.4rem;
+}
+.sp-step__desc {
+    font-size: 0.82rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+    .sp-split { grid-template-columns: 1fr; }
+    .sp-keybox { position: static; }
+}
+@media (max-width: 768px) {
+    .sp-problems { grid-template-columns: 1fr; }
+    .sp-process {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sp-process::before { display: none; }
+}
+@media (max-width: 480px) {
+    .sp-process { grid-template-columns: 1fr; }
+}
+<!-- Updated 1772055443 -->
