@@ -156,7 +156,8 @@
                         Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden bei Ihnen.
                     </p>
 
-                    <form class="form" id="contact-form">
+                    <form class="form" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="website">
+                        <input type="hidden" name="form-name" value="contact">
                         <div class="form__group">
                             <label for="name" class="form__label" data-i18n="pages.contact.form.nameLabel">Name *</label>
                             <input
@@ -299,9 +300,9 @@
                                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
                             </svg>
-                            <h3>Ihr E-Mail-Programm öffnet sich</h3>
-                            <p>Die Nachricht wurde für Sie vorbereitet. Bitte senden Sie sie über Ihr E-Mail-Programm ab.<br>
-                            Alternativ schreiben Sie uns direkt an <a href="mailto:info@stberben.com">info@stberben.com</a>.</p>
+                            <h3>Nachricht erfolgreich gesendet!</h3>
+                            <p>Vielen Dank für Ihre Anfrage. Wir melden uns innerhalb von 24 Stunden bei Ihnen.<br>
+                            Bei dringenden Anliegen erreichen Sie uns unter <a href="tel:+492421998481">+49 2421 99 848 10</a>.</p>
                         </div>
                     </form>
                 </div>
@@ -348,7 +349,7 @@
                     </div>
 
                     <!-- Google Reviews Widget -->
-                    <div class="google-reviews" style="margin-top: var(--spacing-xl);">
+                    <div class="google-reviews" style="margin-top: var(--spacing-xl);" id="google-reviews-widget">
                         <div class="google-reviews__header">
                             <div class="google-reviews__brand">
                                 <svg class="google-g" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Google" fill="none">
@@ -362,51 +363,18 @@
                                     <div style="font-size: 0.8rem; color: var(--color-text-light);">Steuerkanzlei Ibrahim Erben</div>
                                 </div>
                             </div>
-                            <div class="google-reviews__overall">
-                                <div class="google-reviews__score">5.0</div>
-                                <div class="google-reviews__stars-row">★★★★★</div>
-                                <div class="google-reviews__count">auf Google</div>
+                            <div class="google-reviews__overall" id="reviews-overall" style="display:none;">
+                                <div class="google-reviews__score" id="reviews-score">–</div>
+                                <div class="google-reviews__stars-row" id="reviews-stars"></div>
+                                <div class="google-reviews__count" id="reviews-count"></div>
                             </div>
                         </div>
 
-                        <div class="google-review-card">
-                            <div class="google-review-card__top">
-                                <div class="google-review-card__avatar" style="background:#4285F4;">MK</div>
-                                <div>
-                                    <div class="google-review-card__name">Michael K.</div>
-                                    <div class="google-review-card__stars">★★★★★</div>
-                                    <div class="google-review-card__date">vor 2 Monaten</div>
-                                </div>
-                            </div>
-                            <p class="google-review-card__text">Sehr kompetente Beratung im Bereich Steuerstrafrecht. Herr Erben hat uns in einem komplexen Verfahren professionell und ruhig begleitet. Absolute Empfehlung!</p>
-                        </div>
-
-                        <div class="google-review-card">
-                            <div class="google-review-card__top">
-                                <div class="google-review-card__avatar" style="background:#34A853;">SA</div>
-                                <div>
-                                    <div class="google-review-card__name">Sandra A.</div>
-                                    <div class="google-review-card__stars">★★★★★</div>
-                                    <div class="google-review-card__date">vor 4 Monaten</div>
-                                </div>
-                            </div>
-                            <p class="google-review-card__text">Endlich eine Kanzlei, die schwierige Themen wie Wegzugssteuer und internationales Steuerrecht wirklich beherrscht. Hervorragende Beratung, immer erreichbar.</p>
-                        </div>
-
-                        <div class="google-review-card">
-                            <div class="google-review-card__top">
-                                <div class="google-review-card__avatar" style="background:#EA4335;">TY</div>
-                                <div>
-                                    <div class="google-review-card__name">T. Yıldız</div>
-                                    <div class="google-review-card__stars">★★★★★</div>
-                                    <div class="google-review-card__date">vor 6 Monaten</div>
-                                </div>
-                            </div>
-                            <p class="google-review-card__text">Top Steuerberater! Sehr verständliche Erklärungen, auch auf Türkisch möglich. Die Kanzlei kümmert sich wirklich um jeden Mandanten persönlich.</p>
-                        </div>
+                        <!-- Dynamically loaded reviews -->
+                        <div id="reviews-list"></div>
 
                         <a href="https://www.google.com/maps/search/Steuerkanzlei+Ibrahim+Erben+Weierstra%C3%9Fe+43+D%C3%BCren" target="_blank" rel="noopener noreferrer" class="google-reviews__cta">
-                            Alle Bewertungen auf Google ansehen
+                            Bewertung auf Google hinterlassen
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -656,7 +624,7 @@
         // Form Validation and Submission
         const form = document.getElementById('contact-form');
 
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
 
             // Honeypot check
@@ -688,45 +656,33 @@
                 return;
             }
 
-            // Build email and open mailto
-            const subjectLabel = {
-                allgemein: 'Allgemeine Anfrage',
-                steuerstrafrecht: 'Steuerstraf- & Bußgeldverfahren',
-                insolvenz: 'Insolvenzbezogene Beratung',
-                wegzug: 'Wegzugssteuer & Internationales',
-                ecommerce: 'E-Commerce & Online-Handel',
-                heilberufe: 'Heilberufe & MVZ',
-                immobilien: 'Immobilien & Vermögen',
-                nachfolge: 'Nachfolge & Umstrukturierung',
-                betreuung: 'Laufende Betreuung',
-                karriere: 'Karriere',
-                termin: 'Terminanfrage'
-            }[data.subject] || data.subject;
+            // Submit via Netlify Forms (no email client needed)
+            const submitBtn = form.querySelector('.form__submit');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Wird gesendet…';
 
-            const mailSubject = `Kontaktanfrage: ${subjectLabel}`;
-            const mailBody = [
-                `Name: ${data.name}`,
-                `E-Mail: ${data.email}`,
-                `Telefon: ${data.phone || 'Nicht angegeben'}`,
-                `Betreff: ${subjectLabel}`,
-                '',
-                'Nachricht:',
-                data.message,
-                '',
-                '---',
-                'Diese Anfrage wurde über das Kontaktformular auf stberben.com gesendet.'
-            ].join('\n');
+            try {
+                const response = await fetch('/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(formData).toString()
+                });
 
-            window.location.href = `mailto:info@stberben.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
-            // Show inline success, hide form fields
-            const successEl = document.getElementById('form-success');
-            if (successEl) {
-                form.querySelectorAll('.form__group, .form__submit').forEach(el => el.style.display = 'none');
-                successEl.style.display = 'flex';
+                // Show success state
+                const successEl = document.getElementById('form-success');
+                if (successEl) {
+                    form.querySelectorAll('.form__group, .form__submit').forEach(el => el.style.display = 'none');
+                    successEl.style.display = 'flex';
+                }
+                generateCaptcha();
+            } catch (err) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Nachricht senden';
+                alert('Fehler beim Senden. Bitte schreiben Sie uns direkt an info@stberben.com oder versuchen Sie es erneut.');
+                generateCaptcha();
             }
-
-            generateCaptcha();
         });
 
         // Language Switcher
@@ -780,6 +736,79 @@
                 });
             }
         });
+    </script>
+
+    <!-- Google Reviews Loader -->
+    <script>
+    (function() {
+        function starsHtml(n) {
+            return '★'.repeat(n) + '☆'.repeat(5 - n);
+        }
+
+        function initials(name) {
+            return name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+        }
+
+        const avatarColors = ['#4285F4','#34A853','#EA4335','#FBBC05','#0F9D58','#AB47BC'];
+
+        async function loadReviews() {
+            const listEl    = document.getElementById('reviews-list');
+            const overallEl = document.getElementById('reviews-overall');
+            const scoreEl   = document.getElementById('reviews-score');
+            const starsEl   = document.getElementById('reviews-stars');
+            const countEl   = document.getElementById('reviews-count');
+            if (!listEl) return;
+
+            try {
+                const res = await fetch('/.netlify/functions/reviews');
+                const data = await res.json();
+
+                if (!data.configured || data.error || !data.reviews || data.reviews.length === 0) {
+                    // No API configured or no reviews — show nothing in the list
+                    return;
+                }
+
+                // Show overall score
+                scoreEl.textContent = data.rating.toFixed(1);
+                starsEl.textContent = starsHtml(Math.round(data.rating));
+                countEl.textContent = `${data.total} Bewertungen`;
+                overallEl.style.display = '';
+
+                // Render review cards
+                listEl.innerHTML = data.reviews.map((r, i) => {
+                    const color = avatarColors[i % avatarColors.length];
+                    const avatarHtml = r.avatar
+                        ? `<img src="${r.avatar}" class="google-review-card__avatar" alt="${r.author}" style="object-fit:cover;">`
+                        : `<div class="google-review-card__avatar" style="background:${color};">${initials(r.author)}</div>`;
+                    return `
+                        <div class="google-review-card">
+                            <div class="google-review-card__top">
+                                ${avatarHtml}
+                                <div>
+                                    <div class="google-review-card__name">${r.author}</div>
+                                    <div class="google-review-card__stars">${starsHtml(r.rating)}</div>
+                                    <div class="google-review-card__date">${r.relativeTime}</div>
+                                </div>
+                            </div>
+                            ${r.text ? `<p class="google-review-card__text">${r.text}</p>` : ''}
+                        </div>`;
+                }).join('');
+
+                // Update CTA text
+                const cta = document.querySelector('#google-reviews-widget .google-reviews__cta');
+                if (cta) cta.firstChild.textContent = 'Alle Bewertungen auf Google ansehen ';
+
+            } catch (_) {
+                // Silent fail — widget stays in CTA-only mode
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', loadReviews);
+        } else {
+            loadReviews();
+        }
+    })();
     </script>
 
     <!-- Cookie Consent -->

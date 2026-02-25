@@ -91,11 +91,22 @@ function stripHtml(html) {
 }
 
 // ────────────────────────────────────────────────────────────────
-// Fetch — dual proxy strategy
+// Fetch — 3-strategy proxy chain
 // ────────────────────────────────────────────────────────────────
 
 async function fetchFeed(feed) {
-  // Strategy 1: allorigins.win — returns raw feed content, parse ourselves
+  // Strategy 1: Netlify Function (server-side, most reliable, no CORS)
+  try {
+    const fnUrl = `/.netlify/functions/news?url=${encodeURIComponent(feed.url)}`;
+    const res = await fetch(fnUrl, { signal: AbortSignal.timeout(10000) });
+    if (res.ok) {
+      const xmlStr = await res.text();
+      const articles = parseRSSXml(xmlStr, feed);
+      if (articles.length > 0) return articles;
+    }
+  } catch {}
+
+  // Strategy 2: allorigins.win — public CORS proxy
   try {
     const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(feed.url)}`;
     const res = await fetch(proxyUrl, { signal: AbortSignal.timeout(8000) });
@@ -108,7 +119,7 @@ async function fetchFeed(feed) {
     }
   } catch {}
 
-  // Strategy 2: rss2json.com — parses RSS for us
+  // Strategy 3: rss2json.com — parses RSS for us
   try {
     const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}&count=10`;
     const res = await fetch(apiUrl, { signal: AbortSignal.timeout(6000) });
