@@ -407,6 +407,21 @@ function initSocialDial() {
 }
 
 // ============================================================================
+function initNavBodyClass() {
+    // Adds/removes body.nav-is-open so CSS can hide fixed elements (speed dial, scroll-to-top)
+    // when the mobile/tablet nav is open. Works alongside the inline nav toggle script.
+    const navToggle = document.querySelector('.nav__toggle');
+    const navList = document.querySelector('.nav__list');
+    if (!navToggle || !navList) return;
+
+    navToggle.addEventListener('click', function () {
+        // Run after the inline handler so is-open is already toggled
+        setTimeout(function () {
+            document.body.classList.toggle('nav-is-open', navList.classList.contains('is-open'));
+        }, 0);
+    });
+}
+
 // INITIALIZATION
 // ============================================================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -416,4 +431,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initTOCToggle();
     initSearch();
     initSocialDial();
+    initNavBodyClass();
 });
+// nav-fix-1772025098
