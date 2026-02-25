@@ -147,6 +147,7 @@
          NEUES HERO: Interactive Image Accordion
          ═══════════════════════════════════════════════════════════════ -->
     <section class="hero--accordion">
+        <canvas id="leistungen-dots-canvas" aria-hidden="true"></canvas>
         <div class="container">
             <div class="hero-accordion">
 
@@ -274,8 +275,11 @@
 
             <!-- HIGHLIGHTED: Steuerstrafrecht -->
             <div class="service-detail__category" id="steuerstrafrecht" style="background: linear-gradient(135deg, #fee2e2 0%, #fef3c7 100%); border: 3px solid #ef4444; box-shadow: 0 8px 24px rgba(239, 68, 68, 0.2);">
+                <span class="service-num" style="color: #dc2626;">01</span>
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <img loading="lazy" src="assets/images/icon-shield.svg" alt="" class="icon icon-lg" style="display: inline-block; color: #dc2626;">
+                    <div class="service-icon-badge" style="background: rgba(220, 38, 38, 0.12);">
+                        <img loading="lazy" src="assets/images/icon-shield.svg" alt="" style="color: #dc2626;">
+                    </div>
                     <h2 style="margin: 0; color: #991b1b;" data-i18n="pages.services.taxCriminal.title">Steuerstraf- & Bußgeldverfahren</h2>
                 </div>
                 <p style="font-size: 1.125rem; font-weight: 600; color: #7c2d12;">
@@ -306,8 +310,11 @@
 
             <!-- Insolvenzbezogene Beratung & Krisenbegleitung -->
             <div class="service-detail__category" id="insolvenz" style="border-left: 4px solid #f59e0b; background: #fffbeb;">
+                <span class="service-num" style="color: #d97706;">02</span>
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <img loading="lazy" src="assets/images/icon-refresh.svg" alt="" class="icon icon-md" style="display: inline-block; color: #d97706;">
+                    <div class="service-icon-badge" style="background: rgba(217, 119, 6, 0.12);">
+                        <img loading="lazy" src="assets/images/icon-refresh.svg" alt="" style="color: #d97706;">
+                    </div>
                     <h2 style="margin: 0; color: #92400e;" data-i18n="pages.services.insolvency.title">Insolvenzbezogene Beratung & Krisenbegleitung</h2>
                 </div>
                 <p style="font-size: 1.0625rem; font-weight: 500; color: #b45309;" data-i18n="pages.services.insolvency.intro">
@@ -335,8 +342,11 @@
 
             <!-- Wegzugssteuer - HIGHLIGHTED -->
             <div class="service-detail__category" id="wegzug" style="background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%); border: 2px solid #3b82f6; box-shadow: 0 6px 16px rgba(59, 130, 246, 0.15);">
+                <span class="service-num" style="color: #1e40af;">03</span>
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <img loading="lazy" src="assets/images/icon-globe.svg" alt="" class="icon icon-lg" style="display: inline-block; color: #1e40af;">
+                    <div class="service-icon-badge" style="background: rgba(30, 64, 175, 0.12);">
+                        <img loading="lazy" src="assets/images/icon-globe.svg" alt="" style="color: #1e40af;">
+                    </div>
                     <h2 style="margin: 0; color: #1e3a8a;" data-i18n="pages.services.exitTax.title">Wegzugssteuer & Internationales</h2>
                 </div>
                 <p style="font-size: 1.0625rem; font-weight: 500; color: #1e40af;" data-i18n="pages.services.exitTax.intro">
@@ -360,8 +370,11 @@
 
             <!-- E-Commerce - HIGHLIGHTED -->
             <div class="service-detail__category" id="ecommerce" style="background: linear-gradient(135deg, #dcfce7 0%, #d1fae5 100%); border: 2px solid #10b981; box-shadow: 0 6px 16px rgba(16, 185, 129, 0.15);">
+                <span class="service-num" style="color: #059669;">04</span>
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <img loading="lazy" src="assets/images/icon-shopping-cart.svg" alt="" class="icon icon-lg" style="display: inline-block; color: #059669;">
+                    <div class="service-icon-badge" style="background: rgba(5, 150, 105, 0.12);">
+                        <img loading="lazy" src="assets/images/icon-shopping-cart.svg" alt="" style="color: #059669;">
+                    </div>
                     <h2 style="margin: 0; color: #065f46;" data-i18n="pages.services.ecommerce.title">E-Commerce & Online-Handel</h2>
                 </div>
                 <p style="font-size: 1.0625rem; font-weight: 500; color: #047857;" data-i18n="pages.services.ecommerce.intro">
@@ -386,8 +399,11 @@
 
             <!-- Heilberufe -->
             <div class="service-detail__category" id="heilberufe" style="border-left: 4px solid #ec4899; background: #fdf2f8;">
+                <span class="service-num" style="color: #db2777;">05</span>
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <img loading="lazy" src="assets/images/icon-heart-pulse.svg" alt="" class="icon icon-md" style="display: inline-block; color: #db2777;">
+                    <div class="service-icon-badge" style="background: rgba(219, 39, 119, 0.12);">
+                        <img loading="lazy" src="assets/images/icon-heart-pulse.svg" alt="" style="color: #db2777;">
+                    </div>
                     <h2 style="margin: 0; color: #9f1239;" data-i18n="pages.services.healthcare.title">Heilberufe & MVZ</h2>
                 </div>
                 <p data-i18n="pages.services.healthcare.intro">
@@ -412,8 +428,11 @@
 
             <!-- Immobilien -->
             <div class="service-detail__category" id="immobilien" style="border-left: 4px solid #f59e0b; background: #fffbeb;">
+                <span class="service-num" style="color: #d97706;">06</span>
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <img loading="lazy" src="assets/images/icon-building.svg" alt="" class="icon icon-md" style="display: inline-block; color: #d97706;">
+                    <div class="service-icon-badge" style="background: rgba(217, 119, 6, 0.12);">
+                        <img loading="lazy" src="assets/images/icon-building.svg" alt="" style="color: #d97706;">
+                    </div>
                     <h2 style="margin: 0; color: #92400e;" data-i18n="pages.services.realEstate.title">Immobilien & Vermögen</h2>
                 </div>
                 <p data-i18n="pages.services.realEstate.intro">
@@ -438,8 +457,11 @@
 
             <!-- Nachfolge -->
             <div class="service-detail__category" id="nachfolge" style="border-left: 4px solid #8b5cf6; background: #faf5ff;">
+                <span class="service-num" style="color: #7c3aed;">07</span>
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <img loading="lazy" src="assets/images/icon-refresh.svg" alt="" class="icon icon-md" style="display: inline-block; color: #7c3aed;">
+                    <div class="service-icon-badge" style="background: rgba(124, 58, 237, 0.12);">
+                        <img loading="lazy" src="assets/images/icon-refresh.svg" alt="" style="color: #7c3aed;">
+                    </div>
                     <h2 style="margin: 0; color: #5b21b6;" data-i18n="pages.services.succession.title">Nachfolge & Umstrukturierung</h2>
                 </div>
                 <p data-i18n="pages.services.succession.intro">
@@ -464,8 +486,11 @@
 
             <!-- Laufende Betreuung -->
             <div class="service-detail__category" id="betreuung" style="border-left: 4px solid #06b6d4; background: #ecfeff;">
+                <span class="service-num" style="color: #0891b2;">08</span>
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <img loading="lazy" src="assets/images/icon-chart.svg" alt="" class="icon icon-md" style="display: inline-block; color: #0891b2;">
+                    <div class="service-icon-badge" style="background: rgba(8, 145, 178, 0.12);">
+                        <img loading="lazy" src="assets/images/icon-chart.svg" alt="" style="color: #0891b2;">
+                    </div>
                     <h2 style="margin: 0; color: #164e63;" data-i18n="pages.services.support.title">Laufende Betreuung & Buchhaltung</h2>
                 </div>
                 <p data-i18n="pages.services.support.intro">
@@ -726,7 +751,7 @@
                 // On mobile, toggle dropdown on click
                 link.addEventListener('click', (e) => {
                     // Only prevent default and toggle on mobile (when nav toggle is visible)
-                    if (window.innerWidth <= 768) {
+                    if (window.getComputedStyle(navToggle).display !== "none") {
                         e.preventDefault();
 
                         // Close other open dropdowns
@@ -848,6 +873,66 @@
         <span class="whatsapp-btn__tooltip">WhatsApp schreiben</span>
     </a>
 
+    <!-- Leistungen hero: subtle animated dot grid -->
+    <script>
+    (function () {
+      var SPACING = 32, RADIUS = 2.2, time = 0;
+      var w = 0, h = 0, cols = 0, rows = 0;
+      var canvas, ctx;
+
+      function resize() {
+        var section = canvas.parentElement;
+        var nw = section.offsetWidth || section.clientWidth;
+        var nh = section.offsetHeight || section.clientHeight;
+        if (!nw || !nh) return;
+        w = canvas.width = Math.round(nw);
+        h = canvas.height = Math.round(nh);
+        cols = Math.ceil(w / SPACING) + 2;
+        rows = Math.ceil(h / SPACING) + 2;
+      }
+
+      function draw() {
+        if (w > 0 && h > 0) {
+          ctx.clearRect(0, 0, w, h);
+          var isDark = document.body && document.body.getAttribute('data-theme') === 'dark';
+          ctx.fillStyle = isDark ? '#93c5fd' : '#1e3a8a';
+          var cMax = Math.max(cols - 1, 1), rMax = Math.max(rows - 1, 1);
+          for (var r = 0; r < rows; r++) {
+            for (var c = 0; c < cols; c++) {
+              var dx = (c / cMax) - 0.5, dy = (r / rMax) - 0.5;
+              var dist = Math.sqrt(dx * dx + dy * dy) * 2.4;
+              var alpha = (Math.sin(dist * 4.2 - time) * 0.5 + 0.5) * 0.22 + 0.04;
+              ctx.globalAlpha = alpha;
+              ctx.beginPath();
+              ctx.arc(c * SPACING, r * SPACING, RADIUS, 0, Math.PI * 2);
+              ctx.fill();
+            }
+          }
+          ctx.globalAlpha = 1;
+          time += 0.022;
+        }
+        requestAnimationFrame(draw);
+      }
+
+      function init() {
+        canvas = document.getElementById('leistungen-dots-canvas');
+        if (!canvas) return;
+        ctx = canvas.getContext('2d');
+        resize();
+        // retry once in case layout wasn't ready yet
+        setTimeout(resize, 200);
+        window.addEventListener('resize', resize);
+        draw();
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    }());
+    </script>
+
     <!-- Batch 2: Click-to-Call (mobile only) -->
     <a href="tel:+4924219984810" class="call-btn" aria-label="Jetzt anrufen">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -863,3 +948,6 @@
 <!-- Updated 1771723401 -->
 <!-- accordion-deploy-1771762866 -->
 <!-- mobile-accordion-1771777579 -->
+<!-- Updated 1772020453 -->
+<!-- dots-fix-1772020684 -->
+<!-- nav-mobile-fix-1772021699 -->

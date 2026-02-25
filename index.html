@@ -108,7 +108,7 @@
     <section class="hero hero--slideshow">
         <div class="hero__slideshow">
             <!-- Slide 1: Main -->
-            <div class="hero__slide hero__slide--active" style="background: linear-gradient(135deg, rgba(0, 40, 100, 0.5) 0%, rgba(0, 20, 60, 0.6) 100%), url('assets/images/hero-slide-1.png') center/cover no-repeat;">
+            <div class="hero__slide hero__slide--active" style="background: linear-gradient(135deg, rgba(0, 40, 100, 0.55) 0%, rgba(0, 20, 60, 0.65) 100%), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80') center/cover no-repeat;">
                 <div class="container">
                     <div class="hero__content">
                         <div class="hero__text">
@@ -761,7 +761,7 @@
                 // On mobile, toggle dropdown on click
                 link.addEventListener('click', (e) => {
                     // Only prevent default and toggle on mobile (when nav toggle is visible)
-                    if (window.innerWidth <= 768) {
+                    if (window.getComputedStyle(navToggle).display !== "none") {
                         e.preventDefault();
 
                         // Close other open dropdowns
@@ -781,7 +781,7 @@
                 dropdownLinks.forEach(dropdownLink => {
                     dropdownLink.addEventListener('click', () => {
                         // Only close on mobile
-                        if (window.innerWidth <= 768) {
+                        if (window.getComputedStyle(navToggle).display !== "none") {
                             // Close the dropdown
                             item.classList.remove('is-open');
                             // Close the main mobile menu
@@ -984,3 +984,4 @@
 <!-- nav-redesign 1771779957 -->
 <!-- slides-neutral 1771802216 -->
 <!-- slide2-neutral 1771802407 -->
+<!-- Updated 1772020453 -->

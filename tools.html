@@ -293,18 +293,6 @@
         </div>
     </section>
 
-    <!-- Note Section -->
-    <section class="section section-alt">
-        <div class="container-narrow text-center">
-            <div class="placeholder">
-                <h3 class="placeholder__title" data-i18n="pages.tools.note.title">Hinweis zu den Tools</h3>
-                <p class="placeholder__text" data-i18n="pages.tools.note.text">
-                    Die hier verlinkten Rechner und Tools sind externe Angebote und öffnen sich in einem neuen Fenster. Wir übernehmen keine Gewähr für die Richtigkeit der Berechnungen. Bei konkreten Fragen zu Ihrer steuerlichen Situation kontaktieren Sie uns gerne für eine persönliche Beratung.
-                </p>
-            </div>
-        </div>
-    </section>
-
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
@@ -517,7 +505,7 @@
 
             if (link && dropdown) {
                 link.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
+                    if (window.getComputedStyle(navToggle).display !== "none") {
                         e.preventDefault();
                         dropdownItems.forEach(otherItem => {
                             if (otherItem !== item) {
@@ -616,3 +604,4 @@
 </html>
 <!-- Updated 1771721945 -->
 <!-- Updated 1771723401 -->
+<!-- Updated 1772020453 -->
