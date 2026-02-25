@@ -3,15 +3,13 @@
  * Fetches live RSS feeds from official German tax news sources
  * and renders them as a filterable editorial article layout.
  *
- * Sources: BMF, Haufe Steuern, BRAK, Bundesrat
- * Proxy: rss2json.com (free, no key needed for public feeds)
- * Cache: sessionStorage (1h TTL)
+ * Sources: BMF (2 feeds), Haufe Steuern, Bundesrat
+ * Proxy: allorigins.win (primary) + rss2json.com (fallback)
+ * Cache: localStorage (24h TTL) — only cached when articles > 0
  */
 
-const NEWS_CACHE_KEY = 'news_cache';
+const NEWS_CACHE_KEY = 'news_cache_v2';
 const NEWS_CACHE_TTL = 24 * 60 * 60 * 1000; // 24 Stunden (täglich aktualisiert)
-
-const RSS2JSON = 'https://api.rss2json.com/v1/api.json?rss_url=';
 
 const FEEDS = [
   {
@@ -21,46 +19,65 @@ const FEEDS = [
     icon: '🏛️'
   },
   {
+    url: 'https://www.bundesfinanzministerium.de/RSS/BMF_Schreiben_und_andere_Veroeffentlichungen.rss',
+    source: 'BMF Schreiben',
+    category: 'Steuerrecht',
+    icon: '📋'
+  },
+  {
     url: 'https://www.haufe.de/rss/steuer-aktuell.xml',
     source: 'Haufe Steuer',
     category: 'Steuerrecht',
     icon: '⚖️'
   },
   {
-    url: 'https://www.bundesrat.de/SharedDocs/rss/DE/news-top.html',
+    url: 'https://www.bundesrat.de/SharedDocs/rss/DE/news.html',
     source: 'Bundesrat',
     category: 'Gesetzgebung',
     icon: '📜'
-  },
-  {
-    url: 'https://www.nwb.de/service/rss/steuern-rss.xml',
-    source: 'NWB',
-    category: 'Steuerrecht',
-    icon: '📰'
   }
 ];
 
 // ────────────────────────────────────────────────────────────────
-// Fetch & Cache
+// RSS Parsing (direct via DOMParser)
 // ────────────────────────────────────────────────────────────────
 
-async function fetchFeed(feed) {
-  const apiUrl = `${RSS2JSON}${encodeURIComponent(feed.url)}&count=10`;
+function parseRSSXml(xmlStr, feed) {
   try {
-    const res = await fetch(apiUrl);
-    if (!res.ok) return [];
-    const data = await res.json();
-    if (data.status !== 'ok' || !Array.isArray(data.items)) return [];
+    const doc = new DOMParser().parseFromString(xmlStr, 'application/xml');
+    // Check for parse error
+    if (doc.querySelector('parsererror')) return [];
 
-    return data.items.map(item => ({
-      title: item.title || '',
-      link: item.link || '#',
-      description: stripHtml(item.description || item.content || ''),
-      date: item.pubDate ? new Date(item.pubDate) : new Date(),
-      source: feed.source,
-      category: feed.category,
-      icon: feed.icon
-    }));
+    const items = doc.querySelectorAll('item');
+    if (!items.length) return [];
+
+    return Array.from(items).slice(0, 10).map(item => {
+      const text = tag => item.querySelector(tag)?.textContent?.trim() || '';
+
+      // <link> in RSS is a self-closing tag or contains text — try multiple approaches
+      let link = text('link');
+      if (!link) {
+        // Some feeds put the URL in guid
+        const guid = item.querySelector('guid');
+        if (guid && guid.getAttribute('isPermaLink') !== 'false') {
+          link = guid.textContent.trim();
+        }
+      }
+      if (!link || link === '') link = '#';
+
+      const pubDate = text('pubDate') || text('date') || text('dc\\:date');
+      const date = pubDate ? new Date(pubDate) : new Date();
+
+      return {
+        title: text('title'),
+        link,
+        description: stripHtml(text('description') || text('content\\:encoded') || ''),
+        date: isNaN(date.getTime()) ? new Date() : date,
+        source: feed.source,
+        category: feed.category,
+        icon: feed.icon
+      };
+    }).filter(a => a.title && a.title.length > 2);
   } catch {
     return [];
   }
@@ -73,13 +90,54 @@ function stripHtml(html) {
   return text.replace(/\s+/g, ' ').trim().slice(0, 240);
 }
 
-async function loadAllNews() {
-  // Check cache
+// ────────────────────────────────────────────────────────────────
+// Fetch — dual proxy strategy
+// ────────────────────────────────────────────────────────────────
+
+async function fetchFeed(feed) {
+  // Strategy 1: allorigins.win — returns raw feed content, parse ourselves
   try {
-    const cached = sessionStorage.getItem(NEWS_CACHE_KEY);
+    const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(feed.url)}`;
+    const res = await fetch(proxyUrl, { signal: AbortSignal.timeout(8000) });
+    if (res.ok) {
+      const json = await res.json();
+      if (json.contents) {
+        const articles = parseRSSXml(json.contents, feed);
+        if (articles.length > 0) return articles;
+      }
+    }
+  } catch {}
+
+  // Strategy 2: rss2json.com — parses RSS for us
+  try {
+    const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}&count=10`;
+    const res = await fetch(apiUrl, { signal: AbortSignal.timeout(6000) });
+    if (res.ok) {
+      const data = await res.json();
+      if (data.status === 'ok' && Array.isArray(data.items) && data.items.length > 0) {
+        return data.items.map(item => ({
+          title: item.title || '',
+          link: item.link || '#',
+          description: stripHtml(item.description || item.content || ''),
+          date: item.pubDate ? new Date(item.pubDate) : new Date(),
+          source: feed.source,
+          category: feed.category,
+          icon: feed.icon
+        })).filter(a => a.title);
+      }
+    }
+  } catch {}
+
+  return [];
+}
+
+async function loadAllNews() {
+  // Check localStorage cache (only exists if a previous fetch returned articles)
+  try {
+    const cached = localStorage.getItem(NEWS_CACHE_KEY);
     if (cached) {
       const { data, ts } = JSON.parse(cached);
-      if (Date.now() - ts < NEWS_CACHE_TTL) {
+      if (Date.now() - ts < NEWS_CACHE_TTL && Array.isArray(data) && data.length > 0) {
         return data.map(a => ({ ...a, date: new Date(a.date) }));
       }
     }
@@ -91,20 +149,22 @@ async function loadAllNews() {
     .filter(r => r.status === 'fulfilled')
     .flatMap(r => r.value);
 
-  // Sort newest first, deduplicate by title
+  // Deduplicate by title, sort newest first
   const seen = new Set();
   const unique = articles
     .filter(a => {
-      if (seen.has(a.title)) return false;
+      if (!a.title || seen.has(a.title)) return false;
       seen.add(a.title);
       return true;
     })
     .sort((a, b) => b.date - a.date);
 
-  // Cache
-  try {
-    sessionStorage.setItem(NEWS_CACHE_KEY, JSON.stringify({ data: unique, ts: Date.now() }));
-  } catch {}
+  // Cache only when we actually got articles
+  if (unique.length > 0) {
+    try {
+      localStorage.setItem(NEWS_CACHE_KEY, JSON.stringify({ data: unique, ts: Date.now() }));
+    } catch {}
+  }
 
   return unique;
 }
@@ -227,7 +287,7 @@ function renderNmEmpty() {
   `;
 }
 
-/** Error state */
+/** Error state — links to original sources as fallback */
 function renderNmError() {
   return `
     <div class="nm-empty">
@@ -237,8 +297,13 @@ function renderNmError() {
         <line x1="12" y1="8" x2="12" y2="12"></line>
         <line x1="12" y1="16" x2="12.01" y2="16"></line>
       </svg>
-      <p>Nachrichten konnten nicht geladen werden. Bitte Seite neu laden.</p>
-      <button class="btn btn--secondary" onclick="initNews()">Erneut versuchen</button>
+      <p>Nachrichten konnten nicht geladen werden.</p>
+      <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;">
+        <a href="https://www.bundesfinanzministerium.de/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html" target="_blank" rel="noopener" class="btn btn--secondary" style="font-size:.85rem">BMF Pressemitteilungen</a>
+        <a href="https://www.haufe.de/steuern/steuer-aktuell/" target="_blank" rel="noopener" class="btn btn--secondary" style="font-size:.85rem">Haufe Steuer</a>
+        <a href="https://www.bundesrat.de/DE/presse/pressemitteilungen/pressemitteilungen-node.html" target="_blank" rel="noopener" class="btn btn--secondary" style="font-size:.85rem">Bundesrat</a>
+      </div>
+      <button class="btn btn--primary" style="margin-top:1rem" onclick="initNews()">Erneut versuchen</button>
     </div>
   `;
 }
@@ -317,7 +382,7 @@ async function initNews() {
 
     if (allArticles.length === 0) {
       if (featured) featured.innerHTML = '';
-      grid.innerHTML = renderNmEmpty();
+      grid.innerHTML = renderNmError();
       return;
     }
 

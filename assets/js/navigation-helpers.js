@@ -298,28 +298,29 @@ function initSearch() {
 function performSearch(query, resultsContainer) {
     // Simple client-side search through page content
     const searchablePages = [
-        { title: 'Startseite', url: 'index.html', keywords: 'steuerberatung düren ibrahim erben wegzugssteuer ecommerce' },
-        { title: 'Leistungen', url: 'leistungen.html', keywords: 'steuerstrafrecht insolvenz wegzug ecommerce heilberufe immobilien nachfolge betreuung' },
-        { title: 'Steuerstraf- & Bußgeldverfahren', url: 'leistungen.html#steuerstrafrecht', keywords: 'steuerstrafrecht selbstanzeige verteidigung bußgeld ermittlung' },
-        { title: 'Wegzugssteuer & Internationales', url: 'leistungen.html#wegzug', keywords: 'wegzugssteuer ausland doppelbesteuerung international entstrickung' },
-        { title: 'E-Commerce & Online-Handel', url: 'leistungen.html#ecommerce', keywords: 'ecommerce amazon ebay shopify oss umsatzsteuer online handel' },
-        { title: 'Heilberufe & MVZ', url: 'leistungen.html#heilberufe', keywords: 'arzt zahnarzt apotheke mvz praxis medizin' },
-        { title: 'Immobilien & Vermögen', url: 'leistungen.html#immobilien', keywords: 'immobilien vermögen grundstück haus wohnung immobiliensteuer' },
-        { title: 'Nachfolge & Umstrukturierung', url: 'leistungen.html#nachfolge', keywords: 'nachfolge umstrukturierung holding umwandlung unternehmensübertragung' },
-        { title: 'Laufende Betreuung', url: 'leistungen.html#betreuung', keywords: 'buchhaltung lohnbuchhaltung jahresabschluss steuererklärung betreuung' },
-        { title: 'Über uns', url: 'ueber-uns.html', keywords: 'team kanzlei über uns philosophie standort düren' },
-        { title: 'FAQ', url: 'faq.html', keywords: 'fragen antworten häufig faq hilfe' },
-        { title: 'Wissen', url: 'wissen.html', keywords: 'wissen module außenprüfung steuerstrafrecht umwandlungssteuerrecht' },
-        { title: 'Steuerliche Außenprüfung', url: 'wissen-aussenpruefung.html', keywords: 'außenprüfung betriebsprüfung finanzamt prüfung' },
-        { title: 'Steuerstrafrecht', url: 'wissen-steuerstrafrecht.html', keywords: 'steuerstrafrecht verfahren selbstanzeige verteidigung' },
-        { title: 'Umwandlungssteuerrecht', url: 'wissen-umwandlungssteuerrecht.html', keywords: 'umwandlung verschmelzung spaltung formwechsel einbringung holding' },
-        { title: 'Tools', url: 'tools.html', keywords: 'tools rechner einkommensteuer brutto netto elterngeld steuerrechner' },
-        { title: 'Honorar', url: 'honorar.html', keywords: 'honorar preise kosten vergütung gebühren pauschale stundensatz' },
-        { title: 'Karriere', url: 'karriere.html', keywords: 'karriere jobs stellenangebote arbeiten team mitarbeiter' },
-        { title: 'Kontakt', url: 'kontakt.html', keywords: 'kontakt telefon email adresse düren weierstraße' }
+        { title: 'Startseite', url: 'index.html', keywords: 'steuerberatung düren ibrahim erben wegzugssteuer ecommerce 2025 2026 steuerkanzlei' },
+        { title: 'Leistungen', url: 'leistungen.html', keywords: 'steuerstrafrecht insolvenz wegzug ecommerce heilberufe immobilien nachfolge betreuung §370 §153' },
+        { title: 'Steuerstraf- & Bußgeldverfahren', url: 'leistungen.html#steuerstrafrecht', keywords: 'steuerstrafrecht selbstanzeige verteidigung bußgeld ermittlung §370 §371 §378 abgabenordnung ao strafrecht' },
+        { title: 'Wegzugssteuer & Internationales', url: 'leistungen.html#wegzug', keywords: 'wegzugssteuer ausland doppelbesteuerung international entstrickung §6 außensteuergesetz astg dba' },
+        { title: 'E-Commerce & Online-Handel', url: 'leistungen.html#ecommerce', keywords: 'ecommerce amazon ebay shopify oss umsatzsteuer online handel §3a §22f §25e ustg vat' },
+        { title: 'Heilberufe & MVZ', url: 'leistungen.html#heilberufe', keywords: 'arzt zahnarzt apotheke mvz praxis medizin §4 ustg steuerbefreiung heilbehandlung' },
+        { title: 'Immobilien & Vermögen', url: 'leistungen.html#immobilien', keywords: 'immobilien vermögen grundstück haus wohnung immobiliensteuer §23 estg spekulationssteuer 10 jahre' },
+        { title: 'Nachfolge & Umstrukturierung', url: 'leistungen.html#nachfolge', keywords: 'nachfolge umstrukturierung holding umwandlung unternehmensübertragung §13 §13a erbschaftsteuer schenkung' },
+        { title: 'Laufende Betreuung', url: 'leistungen.html#betreuung', keywords: 'buchhaltung lohnbuchhaltung jahresabschluss steuererklärung betreuung datev §4 estg gewinnermittlung' },
+        { title: 'Über uns', url: 'ueber-uns.html', keywords: 'kanzlei über uns philosophie standort düren weierstraße 43 52349' },
+        { title: 'FAQ', url: 'faq.html', keywords: 'fragen antworten häufig faq hilfe steuerberater kosten ablauf erstgespräch' },
+        { title: 'Wissen', url: 'wissen.html', keywords: 'wissen module außenprüfung steuerstrafrecht umwandlungssteuerrecht ratgeber leitfaden' },
+        { title: 'Steuerliche Außenprüfung', url: 'wissen-aussenpruefung.html', keywords: 'außenprüfung betriebsprüfung finanzamt prüfung §193 §194 §201 ao prüfungsanordnung schlussbesprechung' },
+        { title: 'Steuerstrafrecht', url: 'wissen-steuerstrafrecht.html', keywords: 'steuerstrafrecht verfahren selbstanzeige verteidigung §370 §371 §153 steuerhinterziehung strafbefreiende' },
+        { title: 'Umwandlungssteuerrecht', url: 'wissen-umwandlungssteuerrecht.html', keywords: 'umwandlung verschmelzung spaltung formwechsel einbringung holding §20 §21 §24 umwandlungssteuergesetz umwstg' },
+        { title: 'Tools & Steuerrechner', url: 'tools.html', keywords: 'tools rechner einkommensteuer brutto netto elterngeld steuerrechner 2025 minijob 556 grundfreibetrag 12096 pflegegeld kindergeld 250' },
+        { title: 'Honorar & Kosten', url: 'honorar.html', keywords: 'honorar preise kosten vergütung gebühren pauschale stundensatz steuerberatervergütungsverordnung stbvv rvo §13' },
+        { title: 'Karriere', url: 'karriere.html', keywords: 'karriere jobs stellenangebote arbeiten team mitarbeiter steuerberater steuerfachangestellter ausbildung' },
+        { title: 'Kontakt', url: 'kontakt.html', keywords: 'kontakt telefon email adresse düren weierstraße 43 52349 02421 99 848 10 info@stberben.com' },
+        { title: 'News & Steuernachrichten', url: 'news.html', keywords: 'news nachrichten steuern aktuell bmf bundesfinanzministerium haufe 2025 2026 gesetz änderung' }
     ];
 
-    const queryLower = query.toLowerCase();
+    const queryLower = query.toLowerCase().replace(/^§\s*/, '§');
     const results = searchablePages.filter(page => {
         const titleMatch = page.title.toLowerCase().includes(queryLower);
         const keywordsMatch = page.keywords.toLowerCase().includes(queryLower);

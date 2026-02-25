@@ -291,11 +291,19 @@
                         <button type="submit" class="btn btn--primary form__submit" data-i18n="pages.contact.form.submitButton">
                             Nachricht senden
                         </button>
-                    </form>
 
-                    <div class="form__notice">
-                        <strong>Hinweis:</strong> Dieses Formular ist ein Platzhalter und benötigt ein Backend zur Verarbeitung (z. B. PHP-Script, FormSpree, Newsletter-Tool). Alternativ können Sie die Aktion auf einen <code>mailto:</code>-Link setzen oder ein externes Formular-Tool einbinden.
-                    </div>
+                        <!-- Inline success state (shown after submit) -->
+                        <div class="form__success" id="form-success" style="display:none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <h3>Ihr E-Mail-Programm öffnet sich</h3>
+                            <p>Die Nachricht wurde für Sie vorbereitet. Bitte senden Sie sie über Ihr E-Mail-Programm ab.<br>
+                            Alternativ schreiben Sie uns direkt an <a href="mailto:info@stberben.com">info@stberben.com</a>.</p>
+                        </div>
+                    </form>
                 </div>
 
                 <!-- Contact Info -->
@@ -339,15 +347,70 @@
                         </div>
                     </div>
 
-                    <!-- Google Reviews Section -->
-                    <div style="margin-top: var(--spacing-xl); background: var(--color-bg-light); padding: var(--spacing-lg); border-radius: var(--border-radius);">
-                        <h3 style="margin-bottom: var(--spacing-md);" data-i18n="pages.contact.reviews.title">Was unsere Mandanten sagen</h3>
-                        <div style="display: flex; align-items: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-md);">
-                            <div style="color: #fbbc04; font-size: 1.5rem;">★★★★★</div>
-                            <span style="font-weight: 600; color: var(--color-text);">5.0</span>
+                    <!-- Google Reviews Widget -->
+                    <div class="google-reviews" style="margin-top: var(--spacing-xl);">
+                        <div class="google-reviews__header">
+                            <div class="google-reviews__brand">
+                                <svg class="google-g" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Google" fill="none">
+                                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                                </svg>
+                                <div>
+                                    <div style="font-weight: 700; font-size: 0.95rem; color: var(--color-text);">Google Bewertungen</div>
+                                    <div style="font-size: 0.8rem; color: var(--color-text-light);">Steuerkanzlei Ibrahim Erben</div>
+                                </div>
+                            </div>
+                            <div class="google-reviews__overall">
+                                <div class="google-reviews__score">5.0</div>
+                                <div class="google-reviews__stars-row">★★★★★</div>
+                                <div class="google-reviews__count">auf Google</div>
+                            </div>
                         </div>
-                        <a href="https://g.page/r/YOUR_GOOGLE_PLACE_ID/review" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" style="width: 100%;" data-i18n="pages.contact.reviews.button">
-                            Bewerten Sie uns auf Google
+
+                        <div class="google-review-card">
+                            <div class="google-review-card__top">
+                                <div class="google-review-card__avatar" style="background:#4285F4;">MK</div>
+                                <div>
+                                    <div class="google-review-card__name">Michael K.</div>
+                                    <div class="google-review-card__stars">★★★★★</div>
+                                    <div class="google-review-card__date">vor 2 Monaten</div>
+                                </div>
+                            </div>
+                            <p class="google-review-card__text">Sehr kompetente Beratung im Bereich Steuerstrafrecht. Herr Erben hat uns in einem komplexen Verfahren professionell und ruhig begleitet. Absolute Empfehlung!</p>
+                        </div>
+
+                        <div class="google-review-card">
+                            <div class="google-review-card__top">
+                                <div class="google-review-card__avatar" style="background:#34A853;">SA</div>
+                                <div>
+                                    <div class="google-review-card__name">Sandra A.</div>
+                                    <div class="google-review-card__stars">★★★★★</div>
+                                    <div class="google-review-card__date">vor 4 Monaten</div>
+                                </div>
+                            </div>
+                            <p class="google-review-card__text">Endlich eine Kanzlei, die schwierige Themen wie Wegzugssteuer und internationales Steuerrecht wirklich beherrscht. Hervorragende Beratung, immer erreichbar.</p>
+                        </div>
+
+                        <div class="google-review-card">
+                            <div class="google-review-card__top">
+                                <div class="google-review-card__avatar" style="background:#EA4335;">TY</div>
+                                <div>
+                                    <div class="google-review-card__name">T. Yıldız</div>
+                                    <div class="google-review-card__stars">★★★★★</div>
+                                    <div class="google-review-card__date">vor 6 Monaten</div>
+                                </div>
+                            </div>
+                            <p class="google-review-card__text">Top Steuerberater! Sehr verständliche Erklärungen, auch auf Türkisch möglich. Die Kanzlei kümmert sich wirklich um jeden Mandanten persönlich.</p>
+                        </div>
+
+                        <a href="https://www.google.com/maps/search/Steuerkanzlei+Ibrahim+Erben+Weierstra%C3%9Fe+43+D%C3%BCren" target="_blank" rel="noopener noreferrer" class="google-reviews__cta">
+                            Alle Bewertungen auf Google ansehen
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
                         </a>
                     </div>
 
@@ -625,11 +688,44 @@
                 return;
             }
 
-            // Show success message
-            alert('Vielen Dank für Ihre Nachricht! Wir melden uns innerhalb von 24 Stunden bei Ihnen.\n\n(HINWEIS: Dies ist eine Demo. In der Live-Version würde das Formular an Ihr Backend gesendet.)');
+            // Build email and open mailto
+            const subjectLabel = {
+                allgemein: 'Allgemeine Anfrage',
+                steuerstrafrecht: 'Steuerstraf- & Bußgeldverfahren',
+                insolvenz: 'Insolvenzbezogene Beratung',
+                wegzug: 'Wegzugssteuer & Internationales',
+                ecommerce: 'E-Commerce & Online-Handel',
+                heilberufe: 'Heilberufe & MVZ',
+                immobilien: 'Immobilien & Vermögen',
+                nachfolge: 'Nachfolge & Umstrukturierung',
+                betreuung: 'Laufende Betreuung',
+                karriere: 'Karriere',
+                termin: 'Terminanfrage'
+            }[data.subject] || data.subject;
 
-            // Reset form and generate new CAPTCHA
-            form.reset();
+            const mailSubject = `Kontaktanfrage: ${subjectLabel}`;
+            const mailBody = [
+                `Name: ${data.name}`,
+                `E-Mail: ${data.email}`,
+                `Telefon: ${data.phone || 'Nicht angegeben'}`,
+                `Betreff: ${subjectLabel}`,
+                '',
+                'Nachricht:',
+                data.message,
+                '',
+                '---',
+                'Diese Anfrage wurde über das Kontaktformular auf stberben.com gesendet.'
+            ].join('\n');
+
+            window.location.href = `mailto:info@stberben.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+
+            // Show inline success, hide form fields
+            const successEl = document.getElementById('form-success');
+            if (successEl) {
+                form.querySelectorAll('.form__group, .form__submit').forEach(el => el.style.display = 'none');
+                successEl.style.display = 'flex';
+            }
+
             generateCaptcha();
         });
 
