@@ -206,7 +206,7 @@ class I18n {
 
       // Add or update lang parameter
       try {
-        const url = new URL(href, window.location.origin);
+        const url = new URL(href, window.location.href);
 
         // Only update if it's a relative link to the same site
         if (url.origin === window.location.origin) {
