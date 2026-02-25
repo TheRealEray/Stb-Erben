@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umwandlungssteuerrecht | Steuerberater Steuerkanzlei Ibrahim Erben Düren</title>
+    <meta name="description" content="Einführung in das Umwandlungssteuerrecht mit 6 Modulen: Von GmbH-Umwandlung bis internationale Sachverhalte und Praxisbeispiele.">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/images/logo.png" alt="Steuerkanzlei Ibrahim Erben Logo" class="header__logo-img">
+                </a>
+                <div class="header__right">
+                    <nav class="nav" aria-label="Hauptnavigation">
+                        <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
+                            ☰
+                        </button>
+                        <ul class="nav__list">
+                            <li><a href="index.html" class="nav__link" data-i18n="nav.home">Startseite</a></li>
+                            <li class="nav__item--has-dropdown">
+                                <a href="leistungen.html" class="nav__link nav__link--has-dropdown" data-i18n="nav.services">Leistungen</a>
+                                <ul class="nav__dropdown">
+                                    <li><a href="leistungen.html#steuerstrafrecht" class="nav__dropdown-link nav__dropdown-link--featured" data-i18n="nav.dropdown.taxCriminal">Steuerstraf- & Bußgeldverfahren</a></li>
+                                    <li><a href="leistungen.html#insolvenz" class="nav__dropdown-link" data-i18n="nav.dropdown.insolvency">Insolvenzbezogene Beratung & Krisenbegleitung</a></li>
+                                    <li><a href="leistungen.html#wegzug" class="nav__dropdown-link" data-i18n="nav.dropdown.exitTax">Wegzugssteuer & Internationales</a></li>
+                                    <li><a href="leistungen.html#ecommerce" class="nav__dropdown-link" data-i18n="nav.dropdown.ecommerce">E-Commerce & Online-Handel</a></li>
+                                    <li><a href="leistungen.html#heilberufe" class="nav__dropdown-link" data-i18n="nav.dropdown.healthcare">Heilberufe & MVZ</a></li>
+                                    <li><a href="leistungen.html#immobilien" class="nav__dropdown-link" data-i18n="nav.dropdown.realEstate">Immobilien & Vermögen</a></li>
+                                    <li><a href="leistungen.html#nachfolge" class="nav__dropdown-link" data-i18n="nav.dropdown.succession">Nachfolge & Umstrukturierung</a></li>
+                                    <li><a href="leistungen.html#betreuung" class="nav__dropdown-link" data-i18n="nav.dropdown.support">Laufende Betreuung</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="ueber-uns.html" class="nav__link" data-i18n="nav.about">Über uns</a></li>
+                            <li><a href="faq.html" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
+                            <li class="nav__item--has-dropdown">
+                                <a href="wissen.html" class="nav__link nav__link--active nav__link--has-dropdown" data-i18n="nav.knowledge.label">Wissen</a>
+                                <ul class="nav__dropdown">
+                                    <li><a href="wissen-aussenpruefung.html" class="nav__dropdown-link" data-i18n="nav.knowledge.aussenpruefung">Steuerliche Außenprüfung</a></li>
+                                    <li><a href="wissen-steuerstrafrecht.html" class="nav__dropdown-link" data-i18n="nav.knowledge.steuerstrafrecht">Steuerstrafrecht</a></li>
+                                    <li><a href="wissen-umwandlungssteuerrecht.html" class="nav__dropdown-link" data-i18n="nav.knowledge.umwandlung">Umwandlungssteuerrecht</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="tools.html" class="nav__link" data-i18n="nav.tools">Tools</a></li>
+                            <li><a href="honorar.html" class="nav__link" data-i18n="nav.pricing">Honorar</a></li>
+                            <li><a href="karriere.html" class="nav__link" data-i18n="nav.career">Karriere</a></li>
+                            <li><a href="news.html" class="nav__link" data-i18n="nav.news">News</a></li>
+                            <li><a href="kontakt.html" class="nav__link" data-i18n="nav.contact">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <button class="lang-switcher__button" id="lang-button" aria-label="Sprache wählen" aria-expanded="false">
+                            <span class="lang-flag">🇩🇪</span>
+                            <span>DE</span>
+                        </button>
+                        <div class="lang-switcher__dropdown" id="lang-dropdown">
+                            <a href="?lang=de" class="lang-switcher__option lang-switcher__option--active">
+                                <span class="lang-flag">🇩🇪</span>
+                                <span>Deutsch</span>
+                            </a>
+                            <a href="?lang=tr" class="lang-switcher__option">
+                                <span class="lang-flag">🇹🇷</span>
+                                <span>Türkçe</span>
+                            </a>
+                            <a href="?lang=en" class="lang-switcher__option">
+                                <span class="lang-flag">🇬🇧</span>
+                                <span>English</span>
+                            </a>
+                        </div>
+                    </div>
+                                    <!-- Dark Mode Toggle (Header) -->
+                <button class="dark-mode-toggle" aria-label="Dark Mode umschalten" aria-checked="false" title="Dark Mode">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                    <!-- Search Button -->
+                    <button class="search-toggle" aria-label="Suche öffnen">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link" data-i18n="breadcrumbs.home">Startseite</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+                    <a href="wissen.html" class="breadcrumbs__link" data-i18n="breadcrumbs.knowledge">Wissen</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+                    <span class="breadcrumbs__current" aria-current="page">Umwandlungssteuerrecht</span>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero hero--static" style="background: linear-gradient(135deg, rgba(0, 40, 100, 0.5) 0%, rgba(0, 20, 60, 0.6) 100%), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200') center/cover no-repeat;">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Umwandlungssteuerrecht</h1>
+                <p class="hero__subtitle">
+                    Grundlagen und Systematik – 6 Module zum systematischen Wissensaufbau
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Module Navigation -->
+    <section class="section" style="background: var(--color-bg-alt); padding: var(--spacing-lg) 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: var(--spacing-lg);">Module im Überblick</h2>
+            <div class="grid grid--3" style="gap: var(--spacing-md);">
+                <a href="#umwandlungssteuerrecht-einfuehrung" class="card" style="text-decoration: none;">
+                    <h3 class="card__title" style="color: var(--color-primary); margin-bottom: 0.5rem;">Einführung</h3>
+                    <p style="margin: 0; color: var(--color-text-light); font-size: 0.95rem;">Grundlagen und Systematik</p>
+                </a>
+                <a href="#modul1-gmbh-personengesellschaft" class="card" style="text-decoration: none;">
+                    <h3 class="card__title" style="color: var(--color-primary); margin-bottom: 0.5rem;">Modul 1</h3>
+                    <p style="margin: 0; color: var(--color-text-light); font-size: 0.95rem;">Umwandlung GmbH → Personengesellschaft</p>
+                </a>
+                <a href="#modul2-einbringung" class="card" style="text-decoration: none;">
+                    <h3 class="card__title" style="color: var(--color-primary); margin-bottom: 0.5rem;">Modul 2</h3>
+                    <p style="margin: 0; color: var(--color-text-light); font-size: 0.95rem;">Einbringung in eine GmbH</p>
+                </a>
+                <a href="#modul3-holding" class="card" style="text-decoration: none;">
+                    <h3 class="card__title" style="color: var(--color-primary); margin-bottom: 0.5rem;">Modul 3</h3>
+                    <p style="margin: 0; color: var(--color-text-light); font-size: 0.95rem;">Holding-Strukturen</p>
+                </a>
+                <a href="#modul4-international" class="card" style="text-decoration: none;">
+                    <h3 class="card__title" style="color: var(--color-primary); margin-bottom: 0.5rem;">Modul 4</h3>
+                    <p style="margin: 0; color: var(--color-text-light); font-size: 0.95rem;">Internationale Umwandlungen</p>
+                </a>
+                <a href="#modul5-betriebspruefung" class="card" style="text-decoration: none;">
+                    <h3 class="card__title" style="color: var(--color-primary); margin-bottom: 0.5rem;">Modul 5</h3>
+                    <p style="margin: 0; color: var(--color-text-light); font-size: 0.95rem;">Umwandlungen in der Betriebsprüfung</p>
+                </a>
+                <a href="#modul6-praxisbeispiele" class="card" style="text-decoration: none;">
+                    <h3 class="card__title" style="color: var(--color-primary); margin-bottom: 0.5rem;">Modul 6</h3>
+                    <p style="margin: 0; color: var(--color-text-light); font-size: 0.95rem;">Praxisbeispiele & typische Fehler</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back Button & TOC Container -->
+    <div style="background: white; padding: var(--spacing-md) 0 0 0;">
+        <div class="container">
+            <a href="wissen.html" class="back-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 16px; height: 16px;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Zurück zur Wissensübersicht
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+
+    <!-- Einführung Umwandlungssteuerrecht -->
+    <section id="umwandlungssteuerrecht-einfuehrung" style="padding: var(--spacing-xl) 0;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <article class="article">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: var(--spacing-md);">
+                    <h2 style="color: var(--color-primary); border-bottom: 3px solid var(--color-primary); padding-bottom: var(--spacing-sm); margin: 0; flex: 1 1 auto;">Einführung in das Umwandlungssteuerrecht (UmwStG)</h2>
+                    <button class="btn btn--secondary btn--icon print-button" onclick="window.print()" style="flex-shrink: 0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 1.25rem; height: 1.25rem;">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                        </svg>
+                        <span data-i18n="features.printPage">Seite drucken</span>
+                    </button>
+                    <button class="reading-mode-btn" aria-label="Lesemodus aktivieren">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"></path>
+                        </svg>
+                        Lesemodus
+                    </button>
+
+                </div>
+
+                <!-- Reading Time -->
+                <div class="reading-time">
+                    <svg class="reading-time__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="reading-time__text">
+                        Lesezeit: <span class="reading-time__minutes">--</span> Minuten
+                    </span>
+                </div>
+
+                <p style="font-size: 1.125rem; line-height: 1.8;">
+                    Unternehmerische Strukturen verändern sich – Unternehmen wachsen, werden umstrukturiert, aufgeteilt, zusammengeführt oder an die nächste Generation übergeben. Genau hier setzt das Umwandlungssteuerrecht an.
+                </p>
+
+                <p>Das Umwandlungssteuerrecht regelt die steuerlichen Folgen von Umwandlungen nach dem Umwandlungsgesetz (UmwG). Ziel ist es, wirtschaftlich sinnvolle Strukturmaßnahmen nicht allein aus steuerlichen Gründen zu verhindern, sondern unter bestimmten Voraussetzungen steuerneutral oder steuerbegünstigt zu ermöglichen.</p>
+
+                <p>Rechtsgrundlage ist das Umwandlungssteuergesetz (UmwStG), das detailliert festlegt, wann stille Reserven aufgedeckt werden müssen – und wann nicht.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">Warum ist das Umwandlungssteuerrecht so praxisrelevant?</h3>
+                <p>Nahezu jede größere strukturelle Maßnahme berührt das Umwandlungssteuerrecht, etwa bei:</p>
+                <ul>
+                    <li>Formwechsel einer GmbH in eine Personengesellschaft</li>
+                    <li>Einbringung eines Einzelunternehmens in eine GmbH</li>
+                    <li>Verschmelzung mehrerer Gesellschaften</li>
+                    <li>Aufspaltung oder Abspaltung von Unternehmensteilen</li>
+                    <li>Aufbau oder Umstrukturierung von Holdingstrukturen</li>
+                    <li>Vorbereitung von Unternehmensverkäufen oder Nachfolgeregelungen</li>
+                </ul>
+                <p><strong>Ohne sorgfältige steuerliche Planung kann eine Umwandlung hohe Steuerbelastungen auslösen – insbesondere durch die Aufdeckung stiller Reserven.</strong></p>
+
+                <h3 style="margin-top: var(--spacing-xl);">Grundprinzip des Umwandlungssteuerrechts</h3>
+                <p>Das Umwandlungssteuerrecht folgt einem klaren Leitgedanken:</p>
+                <p style="font-weight: 600; font-style: italic;">Strukturänderungen sollen steuerlich möglichst neutral erfolgen, solange als wesentliches Kriterium das deutsche Besteuerungsrecht erhalten bleibt.</p>
+
+                <p>Deshalb erlaubt das Gesetz unter bestimmten Voraussetzungen:</p>
+                <ul>
+                    <li>Buchwertfortführung statt Ansatz zu Verkehrswerten</li>
+                    <li>Steuerliche Rückwirkung auf einen früheren Übertragungsstichtag</li>
+                    <li>Fortführung von Abschreibungen, Rücklagen und Buchwerten</li>
+                    <li>Vermeidung sofortiger Besteuerung von Veräußerungsgewinnen</li>
+                </ul>
+                <p><strong>Diese Vorteile gelten jedoch nicht automatisch, sondern nur, wenn die gesetzlichen Voraussetzungen exakt eingehalten werden.</strong></p>
+
+                <h3 style="margin-top: var(--spacing-xl);">Anwendungsbereich des Umwandlungssteuerrechts</h3>
+                <p>Das UmwStG gilt für Umwandlungen im Sinne des Umwandlungsgesetzes, insbesondere für:</p>
+                <ul>
+                    <li>Verschmelzungen</li>
+                    <li>Spaltungen (Auf- und Abspaltung)</li>
+                    <li>Formwechsel</li>
+                    <li>Vermögensübertragungen</li>
+                    <li>Einbringungen von Betrieben, Teilbetrieben oder Anteilen</li>
+                </ul>
+                <p><strong>Wichtig:</strong> Das UmwStG ist vorrangig für unbeschränkt steuerpflichtige Rechtsträger konzipiert. Internationale Sachverhalte erfordern eine besonders sorgfältige Prüfung.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">Buchwert, Teilwert oder gemeiner Wert – warum das entscheidend ist</h3>
+                <p>Zentraler Punkt jeder Umwandlung ist die Frage: Mit welchem Wert werden die übertragenen Wirtschaftsgüter angesetzt?</p>
+
+                <p>Das UmwStG kennt drei Bewertungsstufen:</p>
+                <ul>
+                    <li><strong>Buchwert</strong> → regelmäßig steuerneutral</li>
+                    <li><strong>Zwischenwert</strong> → teilweise Besteuerung</li>
+                    <li><strong>Teilwert / gemeiner Wert</strong> → sofortige Besteuerung der stillen Reserven</li>
+                </ul>
+
+                <p>Die Wahl (oder der Zwang) zu einem bestimmten Wertansatz entscheidet unter anderem über:</p>
+                <ul>
+                    <li>Höhe der Steuerbelastung</li>
+                    <li>Zeitpunkt der Besteuerung</li>
+                    <li>Risiken zukünftiger Nachversteuerung (Sperrfristen!)</li>
+                </ul>
+
+                <h3 style="margin-top: var(--spacing-xl);">Steuerliche Rückwirkung – Gestaltung mit Zeitwirkung</h3>
+                <p>Ein besonderer Vorteil des Umwandlungssteuerrechts ist die steuerliche Rückwirkung:</p>
+                <p>Das Gesetz erlaubt, Umwandlungen steuerlich auf einen früheren Stichtag zurück zu beziehen (bis zu acht Monate), obwohl die rechtliche Eintragung erst später erfolgt.</p>
+
+                <p>Dadurch können:</p>
+                <ul>
+                    <li>Gewinne oder Verluste gezielt zugeordnet werden</li>
+                    <li>Abschreibungen optimiert werden</li>
+                    <li>Jahresabschlüsse strategisch gestaltet werden</li>
+                </ul>
+
+                <h3 style="margin-top: var(--spacing-xl);">Sperrfristen und Missbrauchsvermeidung</h3>
+                <p>Steuerliche Begünstigungen stehen fast immer unter zeitlichen Bedingungen. Typische Sperrfristen betragen:</p>
+                <ul>
+                    <li>5 Jahre</li>
+                    <li>7 Jahre</li>
+                </ul>
+                <p><strong>Verstöße</strong> – etwa durch frühzeitige Veräußerung, Einbringung oder Aufgabe – können regelmäßig zu einer rückwirkenden Nachversteuerung führen. Das Umwandlungssteuerrecht ist daher kein Standardrecht, sondern ein hochsensibles Gestaltungsinstrument, das präzise Planung sowie Umsetzung erfordert.</p>
+
+                <div class="card" style="background: linear-gradient(135deg, rgba(0, 60, 140, 0.08) 0%, rgba(0, 40, 100, 0.12) 100%); margin: var(--spacing-xl) 0;">
+                    <h3 style="margin-top: 0; color: var(--color-primary);">Fazit: Umwandlungssteuerrecht als Gestaltungsrecht ermöglicht Umwandlungen und damit enorme Chancen:</h3>
+                    <ul>
+                        <li>Steueroptimierung</li>
+                        <li>Haftungsbegrenzung</li>
+                        <li>Nachfolgeplanung</li>
+                        <li>Vorbereitung von Investoren oder Exits</li>
+                    </ul>
+                    <p style="margin-bottom: 0;"><strong>Gleichzeitig</strong> zählen Umwandlungen zu den steuerlich riskantesten Maßnahmen, wenn sie ohne fundierte Beratung und Fachwissen durchgeführt werden. Eine saubere Strukturierung im Umwandlungssteuerrecht entscheidet oft darüber, ob eine Umstrukturierung wirtschaftlich sinnvoll oder steuerlich ruinös wird.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Modul 1 -->
+    <section id="modul1-gmbh-personengesellschaft" class="section" style="background: var(--color-bg-alt);">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <article class="article">
+                <h2 style="color: var(--color-primary); border-bottom: 3px solid var(--color-primary); padding-bottom: var(--spacing-sm); margin-bottom: var(--spacing-lg);">Modul 1: Umwandlung einer GmbH in eine Personengesellschaft</h2>
+                <p style="font-style: italic; color: var(--color-text-light);">(Formwechsel oder Verschmelzung – steuerlich nach dem UmwStG)</p>
+
+                <p style="font-size: 1.125rem; line-height: 1.8;">Die Umwandlung einer GmbH in eine Personengesellschaft gehört zu den häufigen, aber auch riskanten Strukturmaßnahmen im Umwandlungssteuerrecht. Sie wird oft genutzt, um:</p>
+                <ul>
+                    <li>laufende Steuerbelastungen zu senken,</li>
+                    <li>flexiblere Gewinnverteilungen zu ermöglichen,</li>
+                    <li>Haftungs- und Nachfolgefragen neu zu ordnen,</li>
+                    <li>oder um eine spätere Veräußerung vorzubereiten.</li>
+                </ul>
+                <p><strong>Steuerlich ist diese Umwandlung kein Automatismus, sondern nur unter strengen Voraussetzungen steuerneutral möglich.</strong></p>
+
+                <h3>1. Zivilrechtlicher Ausgangspunkt</h3>
+                <p>Zivilrechtlich erfolgt die Umwandlung regelmäßig durch einen Formwechsel nach dem Umwandlungsgesetz.</p>
+                <ul>
+                    <li>Die GmbH bleibt wirtschaftlich bestehen</li>
+                    <li>Nur die Rechtsform ändert sich (z. B. in eine KG oder OHG)</li>
+                    <li>Vermögen, Verträge und Rechtsverhältnisse gehen im Wege der Gesamtrechtsnachfolge über</li>
+                </ul>
+                <p><strong>Steuerlich ist diese Kontinuität nicht selbstverständlich.</strong></p>
+
+                <h3 style="margin-top: var(--spacing-xl);">2. Steuerliche Einordnung nach dem Umwandlungssteuergesetz</h3>
+                <p>Steuerlich wird der Formwechsel einer Kapitalgesellschaft in eine Personengesellschaft nach § 14 UmwStG behandelt.</p>
+                <p><strong>Kernpunkt:</strong> Die Vorschriften über den Vermögensübergang auf eine Personengesellschaft (§§ 3–8 UmwStG) gelten entsprechend.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">3. Der entscheidende Punkt: Buchwertfortführung oder Aufdeckung stiller Reserven</h3>
+                <p>Bei der Umwandlung stellt sich zwingend die Frage: Dürfen die Wirtschaftsgüter mit Buchwerten fortgeführt werden – oder müssen stille Reserven versteuert werden?</p>
+
+                <p><strong>Buchwertfortführung ist möglich, wenn:</strong></p>
+                <ul>
+                    <li>das übergehende Vermögen Betriebsvermögen der Personengesellschaft wird,</li>
+                    <li>das deutsche Besteuerungsrecht an den stillen Reserven erhalten bleibt,</li>
+                    <li>keine schädliche Gegenleistung gewährt wird,</li>
+                    <li>und keine missbräuchliche Gestaltung vorliegt.</li>
+                </ul>
+
+                <p>In diesem Fall:</p>
+                <ul>
+                    <li>keine sofortige Besteuerung stiller Reserven</li>
+                    <li>keine Aufdeckung stiller Reserven</li>
+                    <li>Abschreibungen laufen fort</li>
+                </ul>
+
+                <div style="background: rgba(255, 193, 7, 0.1); border-left: 4px solid #ffc107; padding: 1rem; margin: var(--spacing-md) 0;">
+                    <strong style="color: #f57c00;">Kein Automatismus!</strong> Schon kleine Fehler (z. B. Sonderentnahmen, Vorabgewinne, schädliche Mitunternehmerstrukturen) können zur Zwangsbewertung mit dem Teilwert führen.
+                </div>
+
+                <h3 style="margin-top: var(--spacing-xl);">4. Steuerliche Rückwirkung – Gestaltungsspielraum mit Risiko</h3>
+                <p>Auch beim Formwechsel ist eine steuerliche Rückwirkung möglich:</p>
+                <ul>
+                    <li>Übertragungsbilanz der GmbH</li>
+                    <li>Eröffnungsbilanz der Personengesellschaft</li>
+                    <li>Rückbezug auf einen Stichtag bis zu acht Monate vor Registereintragung</li>
+                </ul>
+
+                <p>Das erlaubt:</p>
+                <ul>
+                    <li>gezielte Gewinnzuordnung</li>
+                    <li>Abschreibungsoptimierung</li>
+                    <li>Jahresabschluss-Gestaltung</li>
+                </ul>
+
+                <p><strong>Aber:</strong> Fehler bei der zeitlichen Zuordnung zählen zu den klassischen Prüfungs- und Angriffspunkten der Finanzverwaltung.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">5. Auswirkungen auf Gesellschafterebene</h3>
+                <p>Mit der Umwandlung ändert sich nicht nur die Gesellschaft – sondern auch die Besteuerung der Gesellschafter:</p>
+                <ul>
+                    <li>Wechsel von Körperschaftsteuer auf Einkommensteuer</li>
+                    <li>Einführung von Sonderbetriebsvermögen</li>
+                    <li>neue Gewinnermittlung auf Mitunternehmerebene</li>
+                    <li>Wegfall der Abgeltungsteuer</li>
+                    <li>unmittelbare persönliche Haftung für Steuerfolgen</li>
+                </ul>
+                <p>Gerade hier entstehen häufig unterschätzte Mehrbelastungen, obwohl die Umwandlung „steuerneutral" geplant war.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">6. Sperrfristen: Die häufigste Fehlerquelle</h3>
+                <p>Die Buchwertfortführung steht regelmäßig unter Nachbehaltens- und Sperrfristen.</p>
+
+                <p><strong>Typische Risiken:</strong></p>
+                <ul>
+                    <li>spätere Veräußerung von Mitunternehmeranteilen</li>
+                    <li>Einbringung der Personengesellschaft in eine Kapitalgesellschaft</li>
+                    <li>Aufgabe oder Veräußerung des Betriebs innerhalb weniger Jahre</li>
+                </ul>
+
+                <p><strong>Folge:</strong> Rückwirkende Besteuerung der stillen Reserven – oft mehrere Jahre später – mit Zinsen. Das Umwandlungssteuerrecht verzeiht hier keine Gestaltungsfehler.</p>
+
+                <div class="card" style="background: linear-gradient(135deg, rgba(0, 60, 140, 0.08) 0%, rgba(0, 40, 100, 0.12) 100%); margin: var(--spacing-xl) 0;">
+                    <h3 style="margin-top: 0; color: var(--color-primary);">7. Praxisfazit für Mandanten</h3>
+                    <p>Die Umwandlung einer GmbH in eine Personengesellschaft ist: <strong>ein hochwirksames Gestaltungsinstrument</strong> – aber <strong>kein „Steuersparmodell von der Stange".</strong></p>
+
+                    <p>Sie erfordert:</p>
+                    <ul>
+                        <li>exakte Strukturplanung,</li>
+                        <li>saubere Bilanzierung,</li>
+                        <li>klare Gesellschafterregelungen,</li>
+                        <li>und eine vorausschauende Exit-Strategie.</li>
+                    </ul>
+                </div>
+
+                <h3 style="margin-top: var(--spacing-xl);">Warum sollte man eine GmbH in eine Personengesellschaft umwandeln?</h3>
+                <p>Die Umwandlung einer GmbH in eine Personengesellschaft ist kein Ausnahmefall, sondern in vielen Konstellationen eine bewusste strategische Entscheidung. Sie folgt klaren steuerlichen, wirtschaftlichen und strukturellen Gründen.</p>
+
+                <p><strong>Wichtig vorab:</strong> Eine GmbH ist nicht „besser" oder „schlechter" als eine Personengesellschaft – sie ist anders. Und genau diese Unterschiede machen die Umwandlung in bestimmten Situationen sinnvoll.</p>
+
+                <h4 style="margin-top: var(--spacing-lg);">1. Steuerliche Entlastung bei laufenden Gewinnen</h4>
+
+                <p><strong>Ausgangslage bei der GmbH</strong></p>
+                <p>Bei der GmbH fallen auf Ebene der Gesellschaft an:</p>
+                <ul>
+                    <li>Körperschaftsteuer</li>
+                    <li>Solidaritätszuschlag</li>
+                    <li>Gewerbesteuer</li>
+                </ul>
+                <p>Zusätzlich kommt bei Ausschüttungen an die Gesellschafter:</p>
+                <ul>
+                    <li>Abgeltungsteuer oder Teileinkünfteverfahren</li>
+                </ul>
+                <p style="font-style: italic;">→ Doppelte Besteuerungsebene</p>
+
+                <p><strong>Vorteil der Personengesellschaft</strong></p>
+                <p>Bei der Personengesellschaft:</p>
+                <ul>
+                    <li>Besteuerung auf Gesellschafterebene</li>
+                    <li>keine Körperschaftsteuer</li>
+                    <li>Gewinne können unmittelbar zugeordnet werden</li>
+                </ul>
+                <p><strong>Typischer Anwendungsfall:</strong> Unternehmer mit dauerhaft hohen Gewinnen, die nicht im Unternehmen thesauriert werden sollen.</p>
+                <p style="font-style: italic;">→ Ergebnis: Niedrigere Gesamtsteuerbelastung bei gleicher wirtschaftlicher Leistung.</p>
+
+                <h4 style="margin-top: var(--spacing-lg);">2. Flexiblere Gewinnverteilung und Entnahmen</h4>
+                <p><strong>GmbH: stark formalisiert</strong></p>
+                <ul>
+                    <li>Gewinnverteilung strikt nach Gesellschaftsanteilen</li>
+                    <li>Ausschüttungsbeschlüsse erforderlich</li>
+                    <li>Entnahmen nur eingeschränkt möglich</li>
+                </ul>
+
+                <p><strong>Personengesellschaft: hohe Gestaltungsfreiheit</strong></p>
+                <ul>
+                    <li>Gewinnverteilungen können frei vereinbart werden</li>
+                    <li>Vorabgewinne möglich</li>
+                    <li>flexible Entnahmen</li>
+                    <li>individuelle Beteiligung an Chancen und Risiken</li>
+                </ul>
+                <p><strong>Typischer Anwendungsfall:</strong> Mehrere Gesellschafter mit unterschiedlicher Arbeitsleistung, Verantwortung oder Kapitalbeteiligung.</p>
+
+                <h4 style="margin-top: var(--spacing-lg);">3. Nutzung persönlicher Steuervorteile der Gesellschafter</h4>
+                <p>In der Personengesellschaft können genutzt werden:</p>
+                <ul>
+                    <li>persönliche Freibeträge</li>
+                    <li>Verlustverrechnung mit anderen Einkünften</li>
+                    <li>Tarifermäßigungen</li>
+                    <li>Sonderbetriebsausgaben</li>
+                    <li>Sonderabschreibungen</li>
+                </ul>
+                <p>Diese Instrumente stehen bei der GmbH entweder gar nicht oder nur sehr eingeschränkt zur Verfügung.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Modul 2 -->
+    <section id="modul2-einbringung" class="section">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <article class="article">
+                <h2 style="color: var(--color-primary); border-bottom: 3px solid var(--color-primary); padding-bottom: var(--spacing-sm); margin-bottom: var(--spacing-lg);">Modul 2: Einbringung eines Einzelunternehmens oder Teilbetriebs in eine GmbH</h2>
+                <p style="font-style: italic; color: var(--color-text-light);">(§§ 20 ff. UmwStG)</p>
+
+                <p style="font-size: 1.125rem; line-height: 1.8;">Die Einbringung eines Einzelunternehmens oder eines Teilbetriebs oder einen Mitunternehmeranteils in eine GmbH ist eine der wichtigsten Gestaltungsmaßnahmen im deutschen Steuerrecht. Sie markiert häufig den Übergang von einer personenbezogenen zu einer kapitalorientierten Unternehmensstruktur. Ziel ist es, das operative Geschäft in eine GmbH zu überführen, ohne sofort eine hohe Steuerbelastung auszulösen.</p>
+
+                <h3>1. Ausgangslage: Das Einzelunternehmen</h3>
+                <p>Viele Unternehmen starten als Einzelunternehmen oder Personengesellschaft. Mit zunehmendem Wachstum treten jedoch typische Grenzen auf:</p>
+                <ul>
+                    <li>unbegrenzte persönliche Haftung</li>
+                    <li>steigende Gewinne mit hoher Einkommensteuerbelastung</li>
+                    <li>eingeschränkte Möglichkeiten zur Beteiligung Dritter</li>
+                    <li>fehlende Trennung zwischen Unternehmer- und Unternehmensvermögen</li>
+                </ul>
+                <p>In dieser Phase wird die GmbH als Zielstruktur interessant.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">2. Ziel der Einbringung nach §§ 20 ff. UmwStG</h3>
+                <p>Das Umwandlungssteuerrecht ermöglicht es, beispielsweise ein Einzelunternehmen oder einen Teilbetrieb gegen Gewährung von GmbH-Anteilen einzubringen – und dabei:</p>
+                <ul>
+                    <li>stille Reserven nicht sofort zu versteuern</li>
+                    <li>Buchwerte fortzuführen</li>
+                    <li>die Steuerbelastung zeitlich zu verlagern</li>
+                    <li>die Haftung auf Gesellschaftsebene zu begrenzen</li>
+                </ul>
+                <p>Rechtsgrundlage hierfür sind insbesondere §§ 20 bis 23 UmwStG.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">3. Was kann eingebracht werden?</h3>
+                <p><strong>Einbringungsfähig sind:</strong></p>
+                <ul>
+                    <li>ein gesamter Betrieb</li>
+                    <li>ein Teilbetrieb</li>
+                    <li>ein Mitunternehmeranteil</li>
+                    <li>unter bestimmten Voraussetzungen auch Kapitalgesellschaftsanteile</li>
+                </ul>
+
+                <p><strong>Nicht ausreichend ist:</strong></p>
+                <ul>
+                    <li>die bloße Übertragung einzelner Wirtschaftsgüter ohne funktionale Einheit</li>
+                </ul>
+                <p>Entscheidend ist die Teilbetriebsfähigkeit (d. h. organisatorisch abgrenzbare, selbständig lebensfähige Einheit).</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">4. Gegenleistung: Gesellschaftsanteile als Schlüsselvoraussetzung</h3>
+                <p><strong>Zwingende Voraussetzung</strong> für die Anwendung der §§ 20 ff. UmwStG ist: Die Einbringung erfolgt gegen Gewährung neuer Gesellschaftsanteile an der GmbH.</p>
+
+                <p>Zusätzliche Gegenleistungen (z. B. Geldzahlungen):</p>
+                <ul>
+                    <li>sind nur in engen Grenzen zulässig</li>
+                    <li>können zur teilweisen Besteuerung führen</li>
+                </ul>
+                <p><strong>Eine fehlerhafte Gegenleistungsstruktur ist einer der häufigsten Gründe für das Scheitern einer steuerneutralen Einbringung.</strong></p>
+
+                <h3 style="margin-top: var(--spacing-xl);">5. Bewertungswahlrecht: Buchwert oder höherer Wert</h3>
+                <h4>Grundsatz (§ 20 Abs. 2 UmwStG)</h4>
+                <p>Die GmbH darf das eingebrachte Betriebsvermögen ansetzen mit:</p>
+                <ul>
+                    <li>dem Buchwert → regelmäßig steuerneutral</li>
+                    <li>oder einem höheren Wert bis zum Teilwert → teilweise Besteuerung</li>
+                </ul>
+                <p>Der Buchwertansatz ist der Regelfall in der Gestaltungsberatung.</p>
+
+                <h4>Zwang zum Teilwert (§ 20 Abs. 3 UmwStG)</h4>
+                <p>Der gemeine Wert muss angesetzt werden, wenn:</p>
+                <ul>
+                    <li>das deutsche Besteuerungsrecht künftig entfällt (z. B. Wegzug, Auslandssachverhalte)</li>
+                </ul>
+                <p>In diesem Fall: sofortige Besteuerung der stillen Reserven.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">6. Sperrfristen und Nachversteuerung (§§ 21, 22 UmwStG)</h3>
+                <p>Die Steuerneutralität ist zeitlich gebunden.</p>
+
+                <p><strong>Typische Sperrfristverletzungen:</strong></p>
+                <ul>
+                    <li>Verkauf der GmbH-Anteile</li>
+                    <li>Einbringung der Anteile in eine andere Gesellschaft</li>
+                    <li>Wegzug des Gesellschafters</li>
+                    <li>verdeckte Einlagen oder Umstrukturierungen</li>
+                </ul>
+
+                <p><strong>Folge:</strong> rückwirkende Besteuerung der stillen Reserven – häufig Jahre nach der eigentlichen Einbringung.</p>
+                <p style="font-style: italic;">Das Risiko liegt nicht im Einbringungszeitpunkt – sondern in der späteren Entwicklung.</p>
+
+                <div class="card" style="background: linear-gradient(135deg, rgba(0, 60, 140, 0.08) 0%, rgba(0, 40, 100, 0.12) 100%); margin: var(--spacing-xl) 0;">
+                    <h3 style="margin-top: 0; color: var(--color-primary);">Praxisfazit</h3>
+                    <p>Die Einbringung eines Einzelunternehmens oder Teilbetriebs in eine GmbH ist: <strong>eines der mächtigsten Gestaltungsinstrumente im Steuerrecht</strong> – aber auch <strong>eines der fehleranfälligsten.</strong></p>
+
+                    <p>Sie funktioniert nur, wenn:</p>
+                    <ul>
+                        <li>Struktur, Bewertung und Zeitachse exakt aufeinander abgestimmt sind</li>
+                        <li>die weitere Entwicklung vorab mitgedacht wird</li>
+                        <li>Sperrfristen und Exit-Szenarien klar definiert sind</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Modul 3 -->
+    <section id="modul3-holding" class="section" style="background: var(--color-bg-alt);">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <article class="article">
+                <h2 style="color: var(--color-primary); border-bottom: 3px solid var(--color-primary); padding-bottom: var(--spacing-sm); margin-bottom: var(--spacing-lg);">Modul 3: Holding-Strukturen, Sperrfristen und typische Gestaltungsfehler</h2>
+
+                <p style="font-size: 1.125rem; line-height: 1.8;">Holding-Strukturen gelten als Königsdisziplin der steuerlichen Gestaltung. Richtig aufgebaut, ermöglichen sie Steuerstundung, Vermögensschutz, strategische Flexibilität und weitere steuerliche Besonderheiten. Falsch umgesetzt, führen sie zu rückwirkenden Steuerbelastungen, oft erst Jahre nach der Umstrukturierung.</p>
+
+                <p><strong>Gerade im Umwandlungssteuerrecht liegen die größten Risiken nicht im Umwandlungszeitpunkt, sondern in der Folgegestaltung.</strong></p>
+
+                <h3>1. Warum Holding-Strukturen so beliebt sind</h3>
+                <p>Eine Holding-Struktur liegt vor, wenn eine Gesellschaft (Holding) Beteiligungen an beispielsweise operativen Gesellschaften hält.</p>
+
+                <p><strong>Typische Ziele:</strong></p>
+                <ul>
+                    <li>Steueroptimierung bei Gewinnausschüttungen</li>
+                    <li>Steuerbegünstigte Veräußerung von Beteiligungen</li>
+                    <li>Trennung von operativem Risiko und Vermögen</li>
+                    <li>Reinvestition von Gewinnen</li>
+                    <li>Vorbereitung von Investoren, Exits oder Nachfolge</li>
+                </ul>
+                <p>Das Umwandlungssteuerrecht ist häufig der Einstiegspunkt in eine Holding-Struktur.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">2. Der klassische Weg in die Holding – und wo die Risiken liegen</h3>
+                <p>In der Praxis werden Holding-Strukturen häufig aufgebaut durch:</p>
+                <ul>
+                    <li>Einbringung eines Einzelunternehmens in eine GmbH (§§ 20 ff. UmwStG)</li>
+                    <li>Einbringung von GmbH-Anteilen in eine Holding-GmbH</li>
+                    <li>Formwechsel oder Spaltung zur Strukturierung von Geschäftsbereichen</li>
+                </ul>
+                <p>Diese Schritte sind grundsätzlich steuerneutral möglich, jedoch unter strengen Voraussetzungen.</p>
+
+                <p><strong>Der entscheidende Punkt:</strong> Steuerneutralität ist im Umwandlungssteuerrecht zeitlich und sachlich bedingt.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">3. Sperrfristen – der häufigste Stolperstein</h3>
+                <p>Nahezu jede steuerneutrale Umwandlung steht unter Sperrfristen.</p>
+
+                <p><strong>Typische Zeiträume:</strong></p>
+                <ul>
+                    <li>5 Jahre</li>
+                    <li>7 Jahre</li>
+                </ul>
+
+                <p>Innerhalb dieser Fristen sind bestimmte Handlungen schädlich – selbst dann, wenn sie wirtschaftlich sinnvoll erscheinen.</p>
+
+                <p><strong>Typische Sperrfristverletzungen:</strong></p>
+                <ul>
+                    <li>Verkauf von GmbH-Anteilen</li>
+                    <li>Einbringung der Anteile in eine andere Gesellschaft</li>
+                    <li>Aufnahme eines Investors auf falscher Ebene</li>
+                    <li>Wegzug des Gesellschafters ins Ausland</li>
+                    <li>verdeckte Einlagen oder Umstrukturierungen</li>
+                    <li>Auflösung oder Aufgabe des Betriebs</li>
+                </ul>
+
+                <p><strong>Folge:</strong> Rückwirkende Aufdeckung der stillen Reserven inkl. Nachzahlungszinsen – oft Jahre später.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">4. Einbringungsgeborene Anteile – ein unterschätztes Risiko</h3>
+                <p>Anteile, die im Rahmen einer Einbringung nach §§ 20 ff. UmwStG entstehen, gelten als: <strong>einbringungsgeborene Anteile.</strong></p>
+
+                <p>Diese Anteile unterliegen besonderen steuerlichen Regeln:</p>
+                <ul>
+                    <li>Veräußerung löst Besteuerung aus</li>
+                    <li>auch ohne tatsächlichen Verkauf möglich (z. B. Wegzug)</li>
+                    <li>Stundung nur unter engen Voraussetzungen</li>
+                    <li>Sperrfristen greifen auch bei indirekten Vorgängen</li>
+                </ul>
+
+                <p><strong>Viele Holding-Strukturen scheitern nicht an der Einbringung selbst, sondern an der falschen Weiterverwendung dieser Anteile.</strong></p>
+
+                <h3 style="margin-top: var(--spacing-xl);">5. Typische Gestaltungsfehler aus der Praxis</h3>
+
+                <div class="card" style="margin: var(--spacing-md) 0; background: rgba(220, 53, 69, 0.05); border-left: 4px solid #dc3545;">
+                    <h4 style="margin-top: 0;">Fehler 1: Holding „nachträglich" denken</h4>
+                    <p>Die Umwandlung wird durchgeführt, ohne die spätere Holding-Struktur vollständig zu planen.</p>
+                    <p style="margin-bottom: 0; font-style: italic;">→ Folge: Spätere Umstrukturierungen werden sperrfristverletzend.</p>
+                </div>
+
+                <div class="card" style="margin: var(--spacing-md) 0; background: rgba(220, 53, 69, 0.05); border-left: 4px solid #dc3545;">
+                    <h4 style="margin-top: 0;">Fehler 2: Investor auf falscher Ebene</h4>
+                    <p>Ein Investor steigt nicht in die operative Gesellschaft, sondern in die Holding ein – ohne Sperrfristen zu prüfen.</p>
+                    <p style="margin-bottom: 0; font-style: italic;">→ Folge: Nachversteuerung der Einbringung.</p>
+                </div>
+
+                <div class="card" style="margin: var(--spacing-md) 0; background: rgba(220, 53, 69, 0.05); border-left: 4px solid #dc3545;">
+                    <h4 style="margin-top: 0;">Fehler 3: Wegzug wird nicht mitgedacht</h4>
+                    <p>Der Gesellschafter verlegt Jahre später seinen Wohnsitz ins Ausland.</p>
+                    <p style="margin-bottom: 0; font-style: italic;">→ Folge: Besteuerung der stillen Reserven auch ohne Verkauf.</p>
+                </div>
+
+                <div class="card" style="margin: var(--spacing-md) 0; background: rgba(220, 53, 69, 0.05); border-left: 4px solid #dc3545;">
+                    <h4 style="margin-top: 0;">Fehler 4: Vermögensverschiebungen innerhalb der Gruppe</h4>
+                    <p>Verrechnungspreise, verdeckte Einlagen oder Darlehen werden falsch strukturiert.</p>
+                    <p style="margin-bottom: 0; font-style: italic;">→ Folge: Schädliche Gegenleistungen im Sinne des UmwStG.</p>
+                </div>
+
+                <div class="card" style="margin: var(--spacing-md) 0; background: rgba(220, 53, 69, 0.05); border-left: 4px solid #dc3545;">
+                    <h4 style="margin-top: 0;">Fehler 5: Zeitachse wird unterschätzt</h4>
+                    <p>„Das liegt doch schon Jahre zurück" – ein gefährlicher Irrtum.</p>
+                    <p style="margin-bottom: 0; font-style: italic;">Sperrfristen wirken lang und rückwirkend.</p>
+                </div>
+
+                <h3 style="margin-top: var(--spacing-xl);">6. Holding-Strukturen sind kein Baukastensystem</h3>
+                <p>Das Umwandlungssteuerrecht ist kein Modulsystem, bei dem man später beliebig erweitert. Jede Umwandlung legt eine steuerliche DNA fest, die die nächsten Jahre – oft Jahrzehnte – prägt.</p>
+
+                <p><strong>Deshalb müssen bereits beim ersten Schritt geklärt werden:</strong></p>
+                <ul>
+                    <li>Wie soll die Struktur in 3, 5 oder 10 Jahren aussehen?</li>
+                    <li>Gibt es Exit-, Verkaufs- oder Nachfolgepläne?</li>
+                    <li>Ist ein Wegzug oder internationale Tätigkeit denkbar?</li>
+                    <li>Wo sollen Investoren einsteigen?</li>
+                    <li>Welche Vermögenswerte sollen langfristig geschützt werden?</li>
+                </ul>
+
+                <div class="card" style="background: linear-gradient(135deg, rgba(0, 60, 140, 0.08) 0%, rgba(0, 40, 100, 0.12) 100%); margin: var(--spacing-xl) 0;">
+                    <h3 style="margin-top: 0; color: var(--color-primary);">7. Praxisfazit für Mandanten</h3>
+                    <p>Holding-Strukturen sind hochwirksam, aber nur dann sicher, wenn:</p>
+                    <ul>
+                        <li>Umwandlungssteuerrecht strategisch, nicht isoliert gedacht wird</li>
+                        <li>Sperrfristen aktiv gemanagt werden</li>
+                        <li>Folgegestaltungen von Anfang an eingeplant sind</li>
+                        <li>jede Veränderung steuerlich vorgeprüft wird</li>
+                    </ul>
+                    <p style="margin-bottom: 0; font-weight: 600; font-style: italic;">→ Die größte Steuer entsteht nicht beim Umbau – sondern beim falschen Weiterbauen.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Modul 4 -->
+    <section id="modul4-international" class="section">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <article class="article">
+                <h2 style="color: var(--color-primary); border-bottom: 3px solid var(--color-primary); padding-bottom: var(--spacing-sm); margin-bottom: var(--spacing-lg);">Modul 4: Internationale Umwandlungen, Wegzug & Wegzugsbesteuerung</h2>
+
+                <p style="font-size: 1.125rem; line-height: 1.8;">Internationale Sachverhalte verändern die Spielregeln des Umwandlungssteuerrechts grundlegend. Was im Inland steuerneutral möglich ist, kann bei Auslandsbezug sofort oder zeitverzögert zu einer massiven Steuerbelastung führen.</p>
+
+                <p><strong>Der zentrale Prüfstein lautet immer:</strong> Bleibt das deutsche Besteuerungsrecht an den stillen Reserven erhalten – oder geht es verloren?</p>
+
+                <h3>1. Warum internationale Umwandlungen besonders risikobehaftet sind</h3>
+                <p>Internationale Bezüge entstehen häufig schleichend, z. B. durch:</p>
+                <ul>
+                    <li>Wegzug des Gesellschafters ins Ausland</li>
+                    <li>Beteiligung ausländischer Gesellschaften</li>
+                    <li>Einbringung in ausländische Kapitalgesellschaften</li>
+                    <li>Verlagerung von Geschäftsaktivitäten</li>
+                    <li>internationale Holding-Strukturen</li>
+                    <li>spätere Expansion oder Investoren</li>
+                </ul>
+
+                <p><strong>Viele dieser Schritte sind zivilrechtlich unproblematisch, steuerlich jedoch hochgefährlich, wenn sie nicht vorab geprüft werden.</strong></p>
+
+                <h3 style="margin-top: var(--spacing-xl);">2. Grundprinzip des Umwandlungssteuerrechts bei Auslandsbezug</h3>
+                <p>Das Umwandlungssteuerrecht erlaubt Steuerneutralität nur solange:</p>
+                <ul>
+                    <li>Deutschland das Besteuerungsrecht an den stillen Reserven behält</li>
+                    <li>eine spätere Besteuerung realistisch sichergestellt ist</li>
+                </ul>
+
+                <p><strong>Sobald dieses Besteuerungsrecht entfällt oder eingeschränkt wird, gilt:</strong></p>
+                <p style="font-style: italic;">→ Zwangsbesteuerung zum gemeinen Wert<br>
+                → sofortige oder gestundete Besteuerung der stillen Reserven<br>
+                → oft ohne tatsächlichen Verkauf</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">3. Internationale Einbringungen (§§ 20, 23 UmwStG)</h3>
+                <h4>Einbringung in ausländische Gesellschaften</h4>
+                <p>Bei Einbringungen in ausländische Kapitalgesellschaften gelten Sonderregeln:</p>
+                <ul>
+                    <li>Steuerneutralität nur bei EU-/EWR-Gesellschaften</li>
+                    <li>strenge Voraussetzungen zur Sicherung des Besteuerungsrechts</li>
+                    <li>zusätzliche Dokumentations- und Nachweispflichten</li>
+                </ul>
+
+                <p><strong>Ist das deutsche Besteuerungsrecht ausgeschlossen oder eingeschränkt:</strong></p>
+                <p style="font-style: italic;">→ Pflichtansatz zum gemeinen Wert<br>
+                → sofortige Aufdeckung stiller Reserven</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">4. Wegzug des Gesellschafters – der klassische „Spätfehler"</h3>
+                <p>Ein besonders häufiger Praxisfall:</p>
+                <ul>
+                    <li>Umwandlung oder Einbringung erfolgt steuerneutral</li>
+                    <li>Jahre später verlegt der Gesellschafter seinen Wohnsitz ins Ausland</li>
+                    <li>keine weitere Umstrukturierung – vermeintlich „passiv"</li>
+                </ul>
+
+                <p><strong>Steuerlich gilt jedoch:</strong></p>
+                <p>Der Wegzug kann so behandelt werden, als wären die Anteile veräußert worden.</p>
+                <p style="font-style: italic;">→ Wegzugsbesteuerung<br>
+                → Besteuerung der stillen Reserven in den Anteilen<br>
+                → auch ohne Verkauf oder Liquiditätszufluss</p>
+
+                <p><strong>Besonders betroffen:</strong></p>
+                <ul>
+                    <li>einbringungsgeborene Anteile</li>
+                    <li>Holding-Strukturen</li>
+                    <li>wachstumsstarke Unternehmen</li>
+                </ul>
+
+                <h3 style="margin-top: var(--spacing-xl);">5. Wegzugsbesteuerung: kein Randthema, sondern Kernrisiko</h3>
+                <p>Die Wegzugsbesteuerung greift insbesondere, wenn:</p>
+                <ul>
+                    <li>Beteiligungen bestehen</li>
+                    <li>das Besteuerungsrecht Deutschlands entfällt</li>
+                    <li>Umwandlungen oder Einbringungen vorangegangen sind</li>
+                </ul>
+
+                <p><strong>Typische Fehleinschätzung:</strong> „Ich ziehe privat weg – das Unternehmen bleibt doch hier."</p>
+                <p>Steuerlich ist diese Trennung nicht haltbar, wenn Anteile betroffen sind.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">6. Stundung ist kein Freibrief</h3>
+                <p>In bestimmten Fällen kann die Steuer gestundet werden:</p>
+                <ul>
+                    <li>nur unter engen Voraussetzungen</li>
+                    <li>häufig zeitlich begrenzt</li>
+                    <li>jederzeit widerruflich</li>
+                    <li>verbunden mit umfangreichen Mitwirkungspflichten</li>
+                </ul>
+
+                <p>Schon kleine Änderungen können dazu führen, dass:</p>
+                <p style="font-style: italic;">→ die Stundung endet<br>
+                → die gesamte Steuer sofort fällig wird</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">7. Typische internationale Gestaltungsfehler</h3>
+
+                <div class="card" style="margin: var(--spacing-md) 0; background: rgba(220, 53, 69, 0.05); border-left: 4px solid #dc3545;">
+                    <h4 style="margin-top: 0;">Fehler 1: Wegzug wird nicht eingeplant</h4>
+                    <p style="margin-bottom: 0;">Der Wegzug erfolgt Jahre nach der Umwandlung – ohne steuerliche Vorbereitung.</p>
+                </div>
+
+                <div class="card" style="margin: var(--spacing-md) 0; background: rgba(220, 53, 69, 0.05); border-left: 4px solid #dc3545;">
+                    <h4 style="margin-top: 0;">Fehler 2: Holding im Ausland „nachgeschoben"</h4>
+                    <p>Eine ausländische Holding wird später zwischengeschaltet.</p>
+                    <p style="margin-bottom: 0; font-style: italic;">→ Sperrfristverletzung & Wegfall der Steuerneutralität.</p>
+                </div>
+
+                <div class="card" style="margin: var(--spacing-md) 0; background: rgba(220, 53, 69, 0.05); border-left: 4px solid #dc3545;">
+                    <h4 style="margin-top: 0;">Fehler 3: EU wird mit Steuerfreiheit verwechselt</h4>
+                    <p style="margin-bottom: 0;">Auch innerhalb der EU ist Steuerneutralität kein Automatismus.</p>
+                </div>
+
+                <div class="card" style="margin: var(--spacing-md) 0; background: rgba(220, 53, 69, 0.05); border-left: 4px solid #dc3545;">
+                    <h4 style="margin-top: 0;">Fehler 4: Doppelbesteuerungsabkommen falsch eingeschätzt</h4>
+                    <p style="margin-bottom: 0;">DBA verhindern nicht automatisch die Wegzugsbesteuerung.</p>
+                </div>
+
+                <h3 style="margin-top: var(--spacing-xl);">8. Internationale Umwandlungen brauchen eine Exit-Strategie</h3>
+                <p>Bei internationalen Sachverhalten muss vor der ersten Umwandlung geklärt werden:</p>
+                <ul>
+                    <li>Ist ein Wegzug denkbar – privat oder geschäftlich?</li>
+                    <li>Soll die Struktur international wachsen?</li>
+                    <li>Wo sollen Gewinne langfristig anfallen?</li>
+                    <li>Wo ist ein Exit realistisch geplant?</li>
+                    <li>Welche Staaten sind künftig beteiligt?</li>
+                </ul>
+
+                <p><strong>Internationale Umwandlungen ohne Exit-Strategie sind steuerlich ein Blindflug.</strong></p>
+
+                <div class="card" style="background: linear-gradient(135deg, rgba(0, 60, 140, 0.08) 0%, rgba(0, 40, 100, 0.12) 100%); margin: var(--spacing-xl) 0;">
+                    <h3 style="margin-top: 0; color: var(--color-primary);">Praxisfazit</h3>
+                    <p>Internationale Umwandlungen und Wegzugssachverhalte sind: <strong>kein nachgelagertes Spezialproblem</strong> – sondern <strong>zentrale Risikofaktoren im Umwandlungssteuerrecht.</strong></p>
+
+                    <p>Die teuersten Steuerfolgen entstehen meist:</p>
+                    <ul>
+                        <li>nicht beim Umwandlungsakt</li>
+                        <li>sondern Jahre später, bei scheinbar privaten Entscheidungen</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Modul 5 -->
+    <section id="modul5-betriebspruefung" class="section" style="background: var(--color-bg-alt);">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <article class="article">
+                <h2 style="color: var(--color-primary); border-bottom: 3px solid var(--color-primary); padding-bottom: var(--spacing-sm); margin-bottom: var(--spacing-lg);">Modul 5: Umwandlungen in der Betriebsprüfung & finanzgerichtliche Risiken</h2>
+
+                <p style="font-size: 1.125rem; line-height: 1.8;">Umwandlungen wirken auf dem Papier oft sauber und steuerneutral. In der Praxis entscheidet sich ihre steuerliche Wirkung jedoch häufig erst Jahre später – im Rahmen einer Betriebsprüfung oder vor den Finanzgerichten. Gerade Umwandlungen gehören zu den prüfungsintensivsten Sachverhalten der Finanzverwaltung.</p>
+
+                <h3>1. Warum Umwandlungen besonders häufig geprüft werden</h3>
+                <p>Aus Sicht der Finanzverwaltung sind Umwandlungen besonders sensibel, weil sie:</p>
+                <ul>
+                    <li>hohe stille Reserven betreffen</li>
+                    <li>gezielt Steuerwirkungen verschieben</li>
+                    <li>langfristige Steuerstundungen ermöglichen</li>
+                    <li>Gestaltungsspielräume eröffnen, die missbrauchsanfällig sind</li>
+                </ul>
+
+                <p>Deshalb gelten Umwandlungen als klassischer Prüfungsschwerpunkt, insbesondere bei:</p>
+                <ul>
+                    <li>Holding-Strukturen</li>
+                    <li>Einbringungen nach §§ 20 ff. UmwStG</li>
+                    <li>Formwechseln</li>
+                    <li>internationalen Sachverhalten</li>
+                    <li>Wegzugskonstellationen</li>
+                </ul>
+
+                <h3 style="margin-top: var(--spacing-xl);">2. Typischer Prüfungsablauf bei Umwandlungen</h3>
+                <p>In der Betriebsprüfung wird regelmäßig geprüft:</p>
+                <ul>
+                    <li>War die Umwandlung zivilrechtlich wirksam?</li>
+                    <li>Wurden die richtigen Wertansätze gewählt (Buchwert / Teilwert)?</li>
+                    <li>Waren die Voraussetzungen für Steuerneutralität erfüllt?</li>
+                    <li>Wurde das deutsche Besteuerungsrecht gesichert?</li>
+                    <li>Wurden Sperrfristen eingehalten?</li>
+                    <li>Gab es schädliche Gegenleistungen oder Folgegestaltungen?</li>
+                </ul>
+
+                <p><strong>Wichtig:</strong> Die Prüfung beschränkt sich nicht auf das Umwandlungsjahr, sondern erfasst häufig mehrere Folgejahre.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">3. Typische Angriffspunkte der Finanzverwaltung</h3>
+
+                <h4>3.1 Teilbetriebsfähigkeit</h4>
+                <ul>
+                    <li>War wirklich ein Teilbetrieb vorhanden?</li>
+                    <li>Oder wurden nur einzelne Wirtschaftsgüter übertragen?</li>
+                </ul>
+                <p style="font-style: italic;">→ Fehleinschätzung führt regelmäßig zur Zwangsbesteuerung.</p>
+
+                <h4>3.2 Bewertungsfehler</h4>
+                <ul>
+                    <li>falscher Buchwertansatz</li>
+                    <li>fehlende Dokumentation</li>
+                    <li>unzulässige Zwischenwerte</li>
+                </ul>
+                <p style="font-style: italic;">→ Folge: Aufdeckung stiller Reserven.</p>
+
+                <h4>3.3 Steuerliche Rückwirkung</h4>
+                <ul>
+                    <li>falscher Übertragungsstichtag</li>
+                    <li>nicht zulässige Entnahmen oder Einlagen</li>
+                    <li>zeitliche Unstimmigkeiten</li>
+                </ul>
+                <p style="font-style: italic;">→ Rückwirkung wird versagt.</p>
+
+                <h4>3.4 Sperrfristverletzungen</h4>
+                <ul>
+                    <li>spätere Anteilsverkäufe</li>
+                    <li>Umstrukturierungen innerhalb der Gruppe</li>
+                    <li>Wegzug des Gesellschafters</li>
+                </ul>
+                <p style="font-style: italic;">→ Rückwirkende Besteuerung oft erst Jahre später.</p>
+
+                <h4>3.5 Missbrauchsvorwurf</h4>
+                <ul>
+                    <li>wirtschaftlich nicht nachvollziehbare Gestaltung</li>
+                    <li>kurzfristige Umwandlungen mit Anschlussveräußerung</li>
+                    <li>fehlende unternehmerische Gründe</li>
+                </ul>
+                <p style="font-style: italic;">→ Anwendung der Missbrauchsregelungen.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">4. Die besondere Gefahr: Zeitverzögerte Besteuerung</h3>
+                <p>Eine der größten Risiken im Umwandlungssteuerrecht ist die zeitverzögerte Steuerwirkung:</p>
+                <ul>
+                    <li>Umwandlung erfolgt steuerneutral</li>
+                    <li>Jahre später: Betriebsprüfung</li>
+                    <li>Feststellung einer Sperrfristverletzung oder eines Formfehlers</li>
+                    <li>Rückwirkende Besteuerung + Zinsen</li>
+                </ul>
+
+                <p>Viele Mandanten sind darauf nicht vorbereitet, da:</p>
+                <ul>
+                    <li>kein Liquiditätszufluss erfolgt ist</li>
+                    <li>Gewinne längst reinvestiert wurden</li>
+                </ul>
+
+                <h3 style="margin-top: var(--spacing-xl);">5. Umwandlungen vor dem Finanzgericht</h3>
+                <p>Umwandlungsfälle führen überdurchschnittlich häufig zu:</p>
+                <ul>
+                    <li>Einspruchsverfahren</li>
+                    <li>Klageverfahren vor den Finanzgerichten</li>
+                    <li>Streit über Wertansätze, Teilbetriebe und Sperrfristen</li>
+                </ul>
+
+                <p><strong>Typische Streitfragen:</strong></p>
+                <ul>
+                    <li>Was ist ein Teilbetrieb?</li>
+                    <li>Wann entfällt das Besteuerungsrecht?</li>
+                    <li>Wann liegt eine schädliche Gegenleistung vor?</li>
+                    <li>Wie weit reicht die Rückwirkung?</li>
+                    <li>Wann ist eine Gestaltung missbräuchlich?</li>
+                </ul>
+                <p>Die Rechtsprechung ist dabei hoch differenziert – pauschale Lösungen gibt es nicht.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">6. Beweislast und Dokumentation</h3>
+                <p><strong>In der Praxis entscheidend:</strong> Die Beweislast liegt regelmäßig beim Steuerpflichtigen.</p>
+
+                <p>Fehlt:</p>
+                <ul>
+                    <li>eine saubere Umwandlungsdokumentation</li>
+                    <li>eine nachvollziehbare Strukturbegründung</li>
+                    <li>eine klare Zeit- und Bewertungslogik</li>
+                </ul>
+                <p style="font-style: italic;">→ steigen die Risiken in der Betriebsprüfung erheblich.</p>
+
+                <h3 style="margin-top: var(--spacing-xl);">7. Prävention: Was wirklich schützt</h3>
+                <p>Aus Beratungssicht entscheidend:</p>
+                <ul>
+                    <li>Umwandlungen nicht isoliert, sondern strategisch planen</li>
+                    <li>spätere Entwicklung (Exit, Wegzug, Investoren) mitdenken</li>
+                    <li>saubere Vertrags- und Bilanzstruktur</li>
+                    <li>laufende Sperrfristüberwachung</li>
+                    <li>frühzeitige Begleitung bei Betriebsprüfungen</li>
+                </ul>
+                <p><strong>Gute Umwandlungsberatung zeigt sich nicht beim Umbau, sondern bei der Verteidigung Jahre später.</strong></p>
+
+                <div class="card" style="background: linear-gradient(135deg, rgba(0, 60, 140, 0.08) 0%, rgba(0, 40, 100, 0.12) 100%); margin: var(--spacing-xl) 0;">
+                    <h3 style="margin-top: 0; color: var(--color-primary);">Praxisfazit</h3>
+                    <p>Umwandlungen sind steuerlich gestaltbar – aber nur so lange, wie sie einer Betriebsprüfung standhalten.</p>
+
+                    <p>Die größten Risiken entstehen:</p>
+                    <ul>
+                        <li>nicht durch den Umwandlungsakt selbst</li>
+                        <li>sondern durch Formfehler, Zeitabläufe und Folgeentscheidungen</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Modul 6 -->
+    <section id="modul6-praxisbeispiele" class="section">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <article class="article">
+                <h2 style="color: var(--color-primary); border-bottom: 3px solid var(--color-primary); padding-bottom: var(--spacing-sm); margin-bottom: var(--spacing-lg);">Modul 6: Praxisbeispiele & typische Fehler aus echten Fällen</h2>
+                <p style="font-style: italic; color: var(--color-text-light);">(anonymisiert aus Beratung, Betriebsprüfung und Verfahren)</p>
+
+                <p style="font-size: 1.125rem; line-height: 1.8;">Im Umwandlungssteuerrecht scheitern Gestaltungen selten an einzelnen Vorschriften – sondern an Fehleinschätzungen, Zeitabläufen und Folgeentscheidungen. Die folgenden Praxisbeispiele zeigen typische Konstellationen, wie sie regelmäßig in Betriebsprüfungen und finanzgerichtlichen Verfahren auftreten.</p>
+
+                <div class="card" style="margin: var(--spacing-xl) 0; background: rgba(40, 167, 69, 0.05); border-left: 4px solid #28a745;">
+                    <h3 style="margin-top: 0; color: #28a745;">Praxisfall 1: Steuerneutrale Einbringung – Jahre später alles verloren</h3>
+
+                    <p><strong>Ausgangslage:</strong> Ein Einzelunternehmer bringt sein Unternehmen steuerneutral in eine GmbH ein (§§ 20 ff. UmwStG). Buchwertansatz, saubere Verträge, alles korrekt umgesetzt.</p>
+
+                    <p><strong>Was passiert später:</strong> Fünf Jahre später verlegt der Gesellschafter seinen Wohnsitz ins Ausland – rein privat, ohne Umstrukturierung.</p>
+
+                    <p><strong>Fehler:</strong> Der Wegzug wurde bei der Einbringung nicht mitgedacht.</p>
+
+                    <p><strong>Folge:</strong></p>
+                    <ul>
+                        <li>Wegzugsbesteuerung</li>
+                        <li>Besteuerung der stillen Reserven in den GmbH-Anteilen</li>
+                        <li>kein Verkauf, kein Liquiditätszufluss</li>
+                    </ul>
+
+                    <p style="margin-bottom: 0; font-weight: 600;">Lehre: Umwandlungen wirken über Jahre. Private Entscheidungen können steuerliche Großfolgen auslösen.</p>
+                </div>
+
+                <div class="card" style="margin: var(--spacing-xl) 0; background: rgba(40, 167, 69, 0.05); border-left: 4px solid #28a745;">
+                    <h3 style="margin-top: 0; color: #28a745;">Praxisfall 2: Holding-Struktur – Investor auf falscher Ebene</h3>
+
+                    <p><strong>Ausgangslage:</strong> Ein Unternehmer baut nach einer Einbringung eine Holding-Struktur auf. Ziel: Wachstum, Investoren, Exit.</p>
+
+                    <p><strong>Was passiert später:</strong> Ein Investor steigt auf Holding-Ebene ein – wirtschaftlich sinnvoll, steuerlich fatal.</p>
+
+                    <p><strong>Fehler:</strong> Die GmbH-Anteile waren einbringungsgeboren und standen noch unter Sperrfrist.</p>
+
+                    <p><strong>Folge:</strong></p>
+                    <ul>
+                        <li>Sperrfristverletzung</li>
+                        <li>rückwirkende Besteuerung der gesamten Einbringung</li>
+                        <li>erhebliche Steuernachzahlung + Zinsen</li>
+                    </ul>
+
+                    <p style="margin-bottom: 0; font-weight: 600;">Lehre: Investorenfragen müssen vor der Umwandlung geklärt sein – nicht erst beim Einstieg.</p>
+                </div>
+
+                <div class="card" style="margin: var(--spacing-xl) 0; background: rgba(40, 167, 69, 0.05); border-left: 4px solid #28a745;">
+                    <h3 style="margin-top: 0; color: #28a745;">Praxisfall 3: Teilbetrieb – nur auf dem Papier</h3>
+
+                    <p><strong>Ausgangslage:</strong> Eine GmbH spaltet einen Geschäftsbereich steuerneutral ab. Begründung: eigenständiger Teilbetrieb.</p>
+
+                    <p><strong>Betriebsprüfung:</strong> Die Finanzverwaltung prüft die tatsächliche Organisation.</p>
+
+                    <p><strong>Fehler:</strong></p>
+                    <ul>
+                        <li>kein eigenständiger Kundenstamm</li>
+                        <li>keine personelle Abgrenzung</li>
+                        <li>keine organisatorische Selbständigkeit</li>
+                    </ul>
+                    <p style="font-style: italic;">→ Kein Teilbetrieb, sondern bloße Wirtschaftsgüterübertragung.</p>
+
+                    <p><strong>Folge:</strong></p>
+                    <ul>
+                        <li>Versagung der Buchwertfortführung</li>
+                        <li>Besteuerung zum Teilwert</li>
+                    </ul>
+
+                    <p style="margin-bottom: 0; font-weight: 600;">Lehre: Teilbetriebe müssen gelebt, nicht nur beschrieben werden.</p>
+                </div>
+
+                <div class="card" style="margin: var(--spacing-xl) 0; background: rgba(40, 167, 69, 0.05); border-left: 4px solid #28a745;">
+                    <h3 style="margin-top: 0; color: #28a745;">Praxisfall 4: Steuerliche Rückwirkung falsch genutzt</h3>
+
+                    <p><strong>Ausgangslage:</strong> Einbringung mit steuerlicher Rückwirkung auf einen früheren Stichtag.</p>
+
+                    <p><strong>Fehler:</strong></p>
+                    <ul>
+                        <li>Entnahmen nach dem Rückwirkungsstichtag</li>
+                        <li>Einlagen zeitlich falsch zugeordnet</li>
+                        <li>widersprüchliche Buchführung</li>
+                    </ul>
+
+                    <p><strong>Folge:</strong></p>
+                    <ul>
+                        <li>Rückwirkung wird versagt</li>
+                        <li>Besteuerung im falschen Jahr</li>
+                        <li>erhebliche Nachzahlungen</li>
+                    </ul>
+
+                    <p style="margin-bottom: 0; font-weight: 600;">Lehre: Steuerliche Rückwirkung ist ein Präzisionsinstrument – kein Gestaltungsspielraum ohne Kontrolle.</p>
+                </div>
+
+                <div class="card" style="margin: var(--spacing-xl) 0; background: rgba(40, 167, 69, 0.05); border-left: 4px solid #28a745;">
+                    <h3 style="margin-top: 0; color: #28a745;">Praxisfall 5: „Das ist doch lange her" – Irrtum in der Betriebsprüfung</h3>
+
+                    <p><strong>Ausgangslage:</strong> Umwandlung liegt 8–10 Jahre zurück. Mandant geht von Verjährung aus.</p>
+
+                    <p><strong>Betriebsprüfung:</strong> Prüfer untersucht Sperrfristen und Folgegestaltungen.</p>
+
+                    <p><strong>Fehler:</strong> Eine spätere Umstrukturierung innerhalb der Gruppe war sperrfristverletzend.</p>
+
+                    <p><strong>Folge:</strong></p>
+                    <ul>
+                        <li>rückwirkende Besteuerung</li>
+                        <li>Nachzahlungszinsen</li>
+                        <li>wirtschaftlich hohe Belastung</li>
+                    </ul>
+
+                    <p style="margin-bottom: 0; font-weight: 600;">Lehre: Sperrfristen wirken länger als viele Mandanten denken.</p>
+                </div>
+
+                <h3 style="margin-top: var(--spacing-xl);">Typische Fehler – zusammengefasst</h3>
+                <p>In der Praxis besonders häufig:</p>
+                <ul>
+                    <li>Holding-Struktur ohne Gesamtstrategie</li>
+                    <li>Wegzug oder Internationalisierung nicht eingeplant</li>
+                    <li>Teilbetriebsfähigkeit überschätzt</li>
+                    <li>Sperrfristen nicht überwacht</li>
+                    <li>Umwandlung isoliert betrachtet</li>
+                    <li>fehlende oder lückenhafte Dokumentation</li>
+                </ul>
+
+                <h3 style="margin-top: var(--spacing-xl);">Was diese Fälle gemeinsam haben</h3>
+                <p>Nicht die Umwandlung selbst war das Problem – sondern:</p>
+                <ul>
+                    <li>fehlende Langfristplanung</li>
+                    <li>mangelnde Begleitung nach der Umwandlung</li>
+                    <li>Unterschätzung späterer Entscheidungen</li>
+                </ul>
+                <p><strong>Umwandlungssteuerrecht ist kein einmaliges Projekt, sondern ein mehrjähriger Prozess.</strong></p>
+
+                <div class="card" style="background: linear-gradient(135deg, rgba(0, 60, 140, 0.08) 0%, rgba(0, 40, 100, 0.12) 100%); margin: var(--spacing-xl) 0;">
+                    <h3 style="margin-top: 0; color: var(--color-primary);">Abschlussfazit für Mandanten</h3>
+                    <p style="margin-bottom: 0;">Umwandlungen bieten enorme Chancen – aber nur, wenn sie strategisch, vorausschauend und dauerhaft begleitet werden. <strong>Die teuersten Fehler entstehen nicht beim ersten Schritt, sondern beim zweiten, dritten oder vierten.</strong></p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="card" style="margin-top: var(--spacing-xl); background: var(--color-primary); color: white; text-align: center; padding: var(--spacing-xl);">
+                <h3 style="margin-bottom: var(--spacing-md); color: white;">Haben Sie Fragen zum Umwandlungssteuerrecht?</h3>
+                <p style="margin-bottom: var(--spacing-lg); opacity: 0.95;">
+                    Nehmen Sie Kontakt mit uns auf – wir beraten Sie gerne zu Ihrem konkreten Fall.
+                </p>
+                <a href="kontakt.html" class="btn" style="background: white; color: var(--color-primary); border: none;">Jetzt Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOC Sidebar -->
+    <aside class="toc-sidebar">
+        <div class="toc-inner">
+            <h3>
+                Auf dieser Seite
+                <button class="toc-toggle" aria-label="Inhaltsverzeichnis schließen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 20px; height: 20px;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </h3>
+            <!-- TOC will be generated automatically by JavaScript -->
+        </div>
+    </aside>
+
+    <!-- TOC Toggle Button -->
+    <button class="toc-toggle-btn" aria-label="Inhaltsverzeichnis öffnen">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+
+                <!-- Col 1: Newsletter -->
+                <div class="footer__col footer__col--newsletter">
+                    <h2 class="footer__headline" data-i18n="footer.newsletter.title">Bleiben Sie informiert</h2>
+                    <p class="footer__text" data-i18n="footer.newsletter.desc">Aktuelle Steuernews und wichtige Gesetzesänderungen direkt in Ihr Postfach.</p>
+                    <form class="footer__newsletter-form" id="footer-newsletter-form" novalidate>
+                        <div class="footer__newsletter-input-wrap">
+                            <input type="email" class="footer__newsletter-input" id="footer-newsletter-email"
+                                placeholder="Ihre E-Mail-Adresse" data-i18n-placeholder="footer.newsletter.placeholder" required>
+                            <button type="submit" class="footer__newsletter-btn" aria-label="Newsletter abonnieren">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="footer__newsletter-success" id="footer-newsletter-success" data-i18n="footer.newsletter.success">
+                            ✓ Vielen Dank! Sie werden benachrichtigt.
+                        </p>
+                    </form>
+                    <div class="footer__glow"></div>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.navigation">Navigation</h3>
+                    <nav class="footer__nav">
+                        <a href="leistungen.html" class="footer__link" data-i18n="nav.services">Leistungen</a>
+                        <a href="ueber-uns.html" class="footer__link" data-i18n="nav.about">Über uns</a>
+                        <a href="faq.html" class="footer__link" data-i18n="nav.faq">FAQ</a>
+                        <a href="wissen.html" class="footer__link" data-i18n="nav.knowledge.label">Wissen</a>
+                        <a href="tools.html" class="footer__link" data-i18n="nav.tools">Tools</a>
+                        <a href="honorar.html" class="footer__link" data-i18n="nav.pricing">Honorar</a>
+                        <a href="karriere.html" class="footer__link" data-i18n="nav.career">Karriere</a>
+                        <a href="kontakt.html" class="footer__link" data-i18n="nav.contact">Kontakt</a>
+                    </nav>
+                </div>
+
+                <!-- Col 3: Kontakt -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.contact">Kontakt</h3>
+                    <address class="footer__address">
+                        <p class="footer__text">
+                            Weierstraße 43<br>
+                            52349 Düren<br>
+                            Deutschland
+                        </p>
+                        <p class="footer__text">
+                            <a href="tel:+492421998481" class="footer__link">+49 2421 99 848 10</a><br>
+                            <a href="mailto:info@stberben.com" class="footer__link">info@stberben.com</a><br>
+                            Fax: +49 2421 99 848 29
+                        </p>
+                        <p class="footer__text">
+                            <strong data-i18n="footer.openingHours">Öffnungszeiten:</strong><br>
+                            <span data-i18n="footer.hours">Mo–Fr: 08:30–18:00</span>
+                        </p>
+                    </address>
+                </div>
+
+                <!-- Col 4: Social + Dark Mode -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.followUs">Folgen Sie uns</h3>
+                    <div class="footer__social-links">
+                        <!-- LinkedIn -->
+                        <div class="footer__social-item">
+                            <a href="https://www.linkedin.com/company/steuerkanzlei-ibrahim-erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">LinkedIn</span>
+                        </div>
+                        <!-- Facebook -->
+                        <div class="footer__social-item">
+                            <a href="https://www.facebook.com/steuerkanzlei.erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">Facebook</span>
+                        </div>
+                        <!-- Instagram -->
+                        <div class="footer__social-item">
+                            <a href="https://www.instagram.com/steuerkanzlei_erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">Instagram</span>
+                        </div>
+                        <!-- X / Twitter -->
+                        <div class="footer__social-item">
+                            <a href="https://x.com/stbkanzlei_erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">X (Twitter)</span>
+                        </div>
+                    </div>
+                    <!-- Dark Mode Toggle -->
+                    <div class="footer__theme-toggle">
+                        <svg class="footer__theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <button class="footer__toggle-switch" id="dark-mode-toggle"
+                            role="switch" aria-checked="false" aria-label="Dark Mode umschalten">
+                            <span class="footer__toggle-thumb"></span>
+                        </button>
+                        <svg class="footer__theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer__bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 Steuerkanzlei Ibrahim Erben. Alle Rechte vorbehalten.</p>
+                <nav class="footer__bottom-nav" aria-label="Rechtliches">
+                    <a href="impressum.html" class="footer__link" data-i18n="footer.imprint">Impressum</a>
+                    <a href="datenschutz.html" class="footer__link" data-i18n="footer.privacy">Datenschutz</a>
+                    <a href="#cookie-settings" class="footer__link" id="footer-cookie-btn" data-i18n="footer.cookieSettings">Cookie-Einstellungen</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <script src="assets/js/cookies.js"></script>
+
+    <!-- Navigation Helpers -->
+    <script src="assets/js/navigation-helpers.js"></script>
+    <!-- Search Modal -->
+    <div class="search-modal">
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input type="text" class="search-input" placeholder="Suchen Sie nach Themen, Leistungen oder Informationen...">
+                <button class="search-close" aria-label="Schließen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <!-- Sticky CTA -->
+    </div>
+
+    <a href="kontakt.html" class="sticky-cta">
+        <svg class="sticky-cta__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+        <span class="sticky-cta__text" data-i18n="features.stickyCta.contact">Jetzt Beratung anfragen</span>
+    </a>
+
+    <button class="scroll-to-top" aria-label="Nach oben scrollen">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/features.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Batch 2: WhatsApp Direct Link -->
+    <a href="https://wa.me/4924219984810?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Steuerberatung."
+        class="whatsapp-btn" target="_blank" rel="noopener noreferrer"
+        aria-label="WhatsApp-Kontakt öffnen">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-btn__tooltip">WhatsApp schreiben</span>
+    </a>
+
+    <!-- Batch 2: Click-to-Call (mobile only) -->
+    <a href="tel:+4924219984810" class="call-btn" aria-label="Jetzt anrufen">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        <span class="call-btn__tooltip">Jetzt anrufen</span>
+    </a>
+
+</body>
+</html>
+<!-- Updated Sa. 21 Feb. 2026 16:32:21 EET -->
+<!-- Deploy 1771717505 -->
+<!-- Updated 1771721279 -->
+<!-- Updated 1771722615 -->
+<!-- Updated 1771723127 -->

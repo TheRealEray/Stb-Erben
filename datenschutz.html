@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz | Steuerkanzlei Ibrahim Erben Steuerberatung</title>
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/images/logo.png" alt="Steuerkanzlei Ibrahim Erben Logo" class="header__logo-img">
+                </a>
+                <nav class="nav" aria-label="Hauptnavigation">
+                    <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
+                        ☰
+                    </button>
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link" data-i18n="nav.home">Home</a></li>
+                        <li><a href="leistungen.html" class="nav__link" data-i18n="nav.services">Leistungen</a></li>
+                        <li><a href="ueber-uns.html" class="nav__link" data-i18n="nav.about">Über uns</a></li>
+                        <li><a href="faq.html" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
+                        <li class="nav__item--has-dropdown">
+                            <a href="wissen.html" class="nav__link nav__link--has-dropdown" data-i18n="nav.knowledge.label">Wissen</a>
+                            <ul class="nav__dropdown">
+                                <li><a href="wissen-aussenpruefung.html" class="nav__dropdown-link" data-i18n="nav.knowledge.aussenpruefung">Steuerliche Außenprüfung</a></li>
+                                <li><a href="wissen-steuerstrafrecht.html" class="nav__dropdown-link" data-i18n="nav.knowledge.steuerstrafrecht">Steuerstrafrecht</a></li>
+                                <li><a href="wissen-umwandlungssteuerrecht.html" class="nav__dropdown-link" data-i18n="nav.knowledge.umwandlung">Umwandlungssteuerrecht</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="tools.html" class="nav__link" data-i18n="nav.tools">Tools</a></li>
+                        <li><a href="honorar.html" class="nav__link" data-i18n="nav.pricing">Honorar</a></li>
+                        <li><a href="karriere.html" class="nav__link" data-i18n="nav.career">Karriere</a></li>
+                        <li><a href="news.html" class="nav__link" data-i18n="nav.news">News</a></li>
+                            <li><a href="kontakt.html" class="nav__link" data-i18n="nav.contact">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-switcher__button" id="lang-button" aria-label="Sprache wählen" aria-expanded="false">
+                        <span class="lang-flag">🇩🇪</span>
+                        <span>DE</span>
+                    </button>
+                    <div class="lang-switcher__dropdown" id="lang-dropdown">
+                        <a href="?lang=de" class="lang-switcher__option lang-switcher__option--active">
+                            <span class="lang-flag">🇩🇪</span> Deutsch
+                        </a>
+                        <a href="?lang=tr" class="lang-switcher__option">
+                            <span class="lang-flag">🇹🇷</span> Türkçe
+                        </a>
+                        <a href="?lang=en" class="lang-switcher__option">
+                            <span class="lang-flag">🇬🇧</span> English
+                        </a>
+                    </div>
+                </div>
+                <!-- Dark Mode Toggle (Header) -->
+                <button class="dark-mode-toggle" aria-label="Dark Mode umschalten" aria-checked="false" title="Dark Mode">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="section">
+        <div class="container-narrow">
+            <h1>Datenschutzerklärung</h1>
+
+            <!-- Hinweis für nicht-deutschsprachige Nutzer -->
+            <p data-i18n="legal.germanOnly" style="font-style: italic; color: var(--color-text-light); margin-bottom: 2rem; padding: 0.75rem 1rem; background: var(--color-bg-alt); border-radius: 0.375rem; border-left: 3px solid var(--color-accent);"></p>
+
+            <h2>1. Verantwortlicher</h2>
+            <p>
+                Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) und sonstiger datenschutzrechtlicher Bestimmungen ist:
+            </p>
+            <p>
+                <strong>Steuerkanzlei Ibrahim Erben Steuerberatung</strong><br>
+                Inhaber: Ibrahim Erben<br>
+                Weierstraße 43<br>
+                52349 Düren<br>
+                Deutschland<br>
+                <br>
+                Telefon: <a href="tel:+4924219984810">+49 2421 99 848 10</a><br>
+                E-Mail: <a href="mailto:info@stberben.com">info@stberben.com</a>
+            </p>
+
+            <h2>2. Allgemeines zur Datenverarbeitung</h2>
+            <p>
+                Wir verarbeiten personenbezogene Daten unserer Nutzer grundsätzlich nur, soweit dies zur Bereitstellung einer
+                funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Verarbeitung personenbezogener
+                Daten unserer Nutzer erfolgt regelmäßig nur nach Einwilligung des Nutzers. Eine Ausnahme gilt in solchen Fällen,
+                in denen eine vorherige Einholung einer Einwilligung aus tatsächlichen Gründen nicht möglich ist und die Verarbeitung
+                der Daten durch gesetzliche Vorschriften gestattet ist.
+            </p>
+            <p>
+                Soweit wir für Verarbeitungsvorgänge personenbezogener Daten eine Einwilligung der betroffenen Person einholen,
+                dient Art. 6 Abs. 1 lit. a DSGVO als Rechtsgrundlage. Bei der Verarbeitung von personenbezogenen Daten, die zur
+                Erfüllung eines Vertrages, dessen Vertragspartei die betroffene Person ist, erforderlich ist, dient Art. 6 Abs. 1
+                lit. b DSGVO als Rechtsgrundlage. Ist die Verarbeitung zur Wahrung eines berechtigten Interesses unseres Unternehmens
+                oder eines Dritten erforderlich und überwiegen die Interessen, Grundrechte und Grundfreiheiten des Betroffenen das
+                erstgenannte Interesse nicht, so dient Art. 6 Abs. 1 lit. f DSGVO als Rechtsgrundlage für die Verarbeitung.
+            </p>
+
+            <h2>3. Hosting durch Netlify</h2>
+            <p>
+                Diese Website wird gehostet bei Netlify, Inc., 44 Montgomery Street, Suite 300, San Francisco, CA 94104, USA.
+                Netlify ist unser Auftragsverarbeiter gemäß Art. 28 DSGVO. Wir haben mit Netlify einen
+                Auftragsverarbeitungsvertrag (Data Processing Agreement) abgeschlossen.
+            </p>
+            <p>
+                Da Netlify ein US-amerikanisches Unternehmen ist, können Daten in die USA übertragen werden. Netlify LLC nimmt
+                am EU-U.S. Data Privacy Framework teil und stellt Standardvertragsklauseln (SCC) gemäß Art. 46 DSGVO bereit,
+                die eine angemessene Datenschutzgarantie sicherstellen. Weitere Informationen finden Sie in der
+                <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener">Datenschutzerklärung von Netlify</a>.
+            </p>
+            <p>
+                Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer zuverlässigen Bereitstellung unserer Website).
+            </p>
+
+            <h2>4. Server-Logfiles</h2>
+            <p>
+                Der Provider der Seiten (Netlify) erhebt und speichert automatisch Informationen in so genannten Server-Logfiles,
+                die Ihr Browser automatisch übermittelt. Dies sind:
+            </p>
+            <ul>
+                <li>IP-Adresse des anfragenden Rechners</li>
+                <li>Datum und Uhrzeit der Serveranfrage</li>
+                <li>Name und URL der abgerufenen Datei</li>
+                <li>Website, von der aus der Zugriff erfolgt (Referrer-URL)</li>
+                <li>Verwendeter Browser und ggf. das Betriebssystem</li>
+                <li>HTTP-Statuscode</li>
+            </ul>
+            <p>
+                Diese Daten werden nicht mit anderen Datenquellen zusammengeführt und nach spätestens 7 Tagen automatisch gelöscht.
+                Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO. Der Betrieb der Website erfordert die technisch fehlerfreie
+                Erfassung dieser Daten.
+            </p>
+
+            <h2>5. Kontaktaufnahme</h2>
+
+            <h3>5.1 Kontaktformular</h3>
+            <p>
+                Wenn Sie uns über das Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular
+                inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von
+                Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+            </p>
+            <p>
+                Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen / Vertragserfüllung) sowie
+                Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der effektiven Bearbeitung Ihrer Anfrage).
+                Die Daten werden gelöscht, sobald sie für die Erreichung des Zwecks ihrer Erhebung nicht mehr erforderlich sind,
+                spätestens jedoch nach Ablauf etwaiger gesetzlicher Aufbewahrungsfristen.
+            </p>
+
+            <h3>5.2 E-Mail-Kontakt</h3>
+            <p>
+                Wenn Sie uns per E-Mail kontaktieren, wird Ihre Nachricht inklusive aller daraus hervorgehenden personenbezogenen
+                Daten (Name, E-Mail-Adresse, Inhalt der Anfrage) zum Zwecke der Bearbeitung bei uns gespeichert und verarbeitet.
+            </p>
+            <p>
+                Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (soweit die Anfrage auf Vertragsanbahnung gerichtet ist) sowie
+                Art. 6 Abs. 1 lit. f DSGVO (im Übrigen). Steuerrechtliche Aufbewahrungsfristen (§ 147 AO) bleiben unberührt.
+            </p>
+
+            <h3>5.3 Telefonkontakt</h3>
+            <p>
+                Wenn Sie uns telefonisch kontaktieren, verarbeiten wir Ihre Telefonnummer und die im Gespräch mitgeteilten
+                Informationen zur Bearbeitung Ihres Anliegens. Rechtsgrundlage: Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO.
+            </p>
+
+            <h2>6. Cookies und lokale Speicherung</h2>
+            <p>
+                Diese Website setzt ausschließlich technisch notwendige Cookies und nutzt den lokalen Browserspeicher
+                (localStorage) für folgende Zwecke:
+            </p>
+            <ul>
+                <li><strong>Cookie-Zustimmung:</strong> Speicherung Ihrer Entscheidung zur Cookie-Nutzung (localStorage, kein Ablaufdatum).</li>
+                <li><strong>Dark Mode:</strong> Speicherung Ihrer Farbschema-Präferenz (localStorage, kein Ablaufdatum).</li>
+                <li><strong>Spracheinstellung:</strong> Speicherung Ihrer Sprachauswahl (localStorage, kein Ablaufdatum).</li>
+            </ul>
+            <p>
+                Es werden keine Tracking-Cookies, Marketing-Cookies oder Drittanbieter-Cookies gesetzt. Für technisch
+                notwendige Cookies ist keine Einwilligung gemäß § 25 Abs. 2 Nr. 2 TDDDG erforderlich. Rechtsgrundlage
+                für die Datenverarbeitung: Art. 6 Abs. 1 lit. f DSGVO.
+            </p>
+
+            <h2>7. Externe Dienste</h2>
+
+            <h3>7.1 Google Maps</h3>
+            <p>
+                Auf unserer Kontaktseite binden wir den Kartendienst Google Maps ein. Anbieter ist die Google Ireland Limited,
+                Gordon House, Barrow Street, Dublin 4, Irland (Muttergesellschaft: Google LLC, 1600 Amphitheatre Parkway,
+                Mountain View, CA 94043, USA).
+            </p>
+            <p>
+                Die Karte wird erst nach Ihrer aktiven Zustimmung (Klick auf den Aktivierungsbutton) geladen, um eine
+                Datenübertragung ohne Ihre Kenntnis zu verhindern (sog. 2-Klick-Lösung). Erst nach Aktivierung wird Ihre
+                IP-Adresse an Google-Server übertragen, die sich ggf. in den USA befinden können.
+            </p>
+            <p>
+                Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der anschaulichen Darstellung
+                unseres Standorts). Die Datenübertragung in die USA erfolgt auf Grundlage der Standardvertragsklauseln der
+                EU-Kommission. Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+            </p>
+
+            <h3>7.2 WhatsApp-Link</h3>
+            <p>
+                Auf unserer Website befindet sich ein Direktlink zu WhatsApp. Beim Klick auf den Link wird Ihr WhatsApp-Client
+                geöffnet. Eine Datenübertragung findet durch unsere Website selbst nicht statt; die Datenverarbeitung erfolgt
+                dann durch WhatsApp (Meta Platforms Ireland Ltd.). Für deren Datenschutzpraxis sind wir nicht verantwortlich.
+            </p>
+
+            <h3>7.3 Externe Links (Social Media)</h3>
+            <p>
+                Unsere Website enthält Links zu unseren Profilen bei LinkedIn, Facebook, Instagram und X (Twitter). Diese Links
+                führen zu den jeweiligen Plattformen. Beim Klick werden Daten an die Plattformbetreiber übertragen. Durch das
+                bloße Vorhandensein dieser Links auf unserer Website werden keine Daten an die Plattformen übertragen
+                (keine eingebetteten Plugins oder Tracking-Pixel).
+            </p>
+
+            <h2>8. Rechte der betroffenen Personen</h2>
+            <p>Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:</p>
+            <ul>
+                <li><strong>Auskunftsrecht</strong> (Art. 15 DSGVO): Sie können Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten verlangen.</li>
+                <li><strong>Recht auf Berichtigung</strong> (Art. 16 DSGVO): Sie können die Berichtigung unrichtiger oder Vervollständigung unvollständiger Daten verlangen.</li>
+                <li><strong>Recht auf Löschung</strong> (Art. 17 DSGVO): Sie können unter bestimmten Voraussetzungen die Löschung Ihrer Daten verlangen.</li>
+                <li><strong>Recht auf Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO): Sie können unter bestimmten Voraussetzungen die Einschränkung der Verarbeitung Ihrer Daten verlangen.</li>
+                <li><strong>Recht auf Datenübertragbarkeit</strong> (Art. 20 DSGVO): Sie können verlangen, dass wir Ihre Daten in einem strukturierten, gängigen und maschinenlesbaren Format an Sie oder einen Dritten übermitteln.</li>
+                <li><strong>Widerspruchsrecht</strong> (Art. 21 DSGVO): Sie können der Verarbeitung Ihrer Daten, die auf Art. 6 Abs. 1 lit. f DSGVO beruht, jederzeit aus Gründen, die sich aus Ihrer besonderen Situation ergeben, widersprechen.</li>
+                <li><strong>Widerruf der Einwilligung</strong> (Art. 7 Abs. 3 DSGVO): Sofern die Datenverarbeitung auf Ihrer Einwilligung beruht, können Sie diese jederzeit ohne Angabe von Gründen widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt.</li>
+            </ul>
+            <p>
+                Zur Geltendmachung Ihrer Rechte wenden Sie sich bitte an:
+                <a href="mailto:info@stberben.com">info@stberben.com</a>
+            </p>
+
+            <h2>9. Beschwerderecht bei der Aufsichtsbehörde</h2>
+            <p>
+                Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen
+                Daten durch uns zu beschweren (Art. 77 DSGVO). Die für uns zuständige Aufsichtsbehörde ist:
+            </p>
+            <p>
+                <strong>Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)</strong><br>
+                Kavalleriestraße 2–4<br>
+                40213 Düsseldorf<br>
+                Telefon: +49 211 38424-0<br>
+                E-Mail: <a href="mailto:poststelle@ldi.nrw.de">poststelle@ldi.nrw.de</a><br>
+                Website: <a href="https://www.ldi.nrw.de" target="_blank" rel="noopener">www.ldi.nrw.de</a>
+            </p>
+
+            <h2>10. Kein Datenschutzbeauftragter</h2>
+            <p>
+                Wir haben keinen Datenschutzbeauftragten bestellt, da wir als Steuerkanzlei die Voraussetzungen für
+                eine Bestellungspflicht nach Art. 37 DSGVO nicht erfüllen (keine regelmäßige und systematische umfangreiche
+                Überwachung von Personen sowie keine umfangreiche Verarbeitung besonderer Kategorien personenbezogener Daten
+                als Kerntätigkeit).
+            </p>
+            <p>
+                Für datenschutzrechtliche Anfragen wenden Sie sich bitte direkt an: <a href="mailto:info@stberben.com">info@stberben.com</a>
+            </p>
+
+            <h2>11. Datensicherheit</h2>
+            <p>
+                Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine
+                SSL-/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie an dem Schloss-Symbol in der
+                Adresszeile Ihres Browsers und daran, dass die Adresse mit „https://" beginnt.
+            </p>
+            <p>
+                Wir treffen im Übrigen geeignete technische und organisatorische Maßnahmen, um Ihre Daten gegen zufällige
+                oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten
+                Zugriff Dritter zu schützen.
+            </p>
+
+            <h2>12. Aktualität und Änderung dieser Datenschutzerklärung</h2>
+            <p>
+                Diese Datenschutzerklärung ist aktuell gültig und hat den Stand: <strong>Februar 2026</strong>.
+            </p>
+            <p>
+                Durch die Weiterentwicklung unserer Website oder aufgrund geänderter gesetzlicher bzw. behördlicher
+                Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern. Die jeweils aktuelle
+                Datenschutzerklärung kann jederzeit auf dieser Seite abgerufen werden.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+
+                <!-- Col 1: Newsletter -->
+                <div class="footer__col footer__col--newsletter">
+                    <h2 class="footer__headline" data-i18n="footer.newsletter.title">Bleiben Sie informiert</h2>
+                    <p class="footer__text" data-i18n="footer.newsletter.desc">Aktuelle Steuernews und wichtige Gesetzesänderungen direkt in Ihr Postfach.</p>
+                    <form class="footer__newsletter-form" id="footer-newsletter-form" novalidate>
+                        <div class="footer__newsletter-input-wrap">
+                            <input type="email" class="footer__newsletter-input" id="footer-newsletter-email"
+                                placeholder="Ihre E-Mail-Adresse" data-i18n-placeholder="footer.newsletter.placeholder" required>
+                            <button type="submit" class="footer__newsletter-btn" aria-label="Newsletter abonnieren">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="footer__newsletter-success" id="footer-newsletter-success" data-i18n="footer.newsletter.success">
+                            ✓ Vielen Dank! Sie werden benachrichtigt.
+                        </p>
+                    </form>
+                    <div class="footer__glow"></div>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.navigation">Navigation</h3>
+                    <nav class="footer__nav">
+                        <a href="leistungen.html" class="footer__link" data-i18n="nav.services">Leistungen</a>
+                        <a href="ueber-uns.html" class="footer__link" data-i18n="nav.about">Über uns</a>
+                        <a href="faq.html" class="footer__link" data-i18n="nav.faq">FAQ</a>
+                        <a href="wissen.html" class="footer__link" data-i18n="nav.knowledge.label">Wissen</a>
+                        <a href="tools.html" class="footer__link" data-i18n="nav.tools">Tools</a>
+                        <a href="honorar.html" class="footer__link" data-i18n="nav.pricing">Honorar</a>
+                        <a href="karriere.html" class="footer__link" data-i18n="nav.career">Karriere</a>
+                        <a href="kontakt.html" class="footer__link" data-i18n="nav.contact">Kontakt</a>
+                    </nav>
+                </div>
+
+                <!-- Col 3: Kontakt -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.contact">Kontakt</h3>
+                    <address class="footer__address">
+                        <p class="footer__text">
+                            Weierstraße 43<br>
+                            52349 Düren<br>
+                            Deutschland
+                        </p>
+                        <p class="footer__text">
+                            <a href="tel:+492421998481" class="footer__link">+49 2421 99 848 10</a><br>
+                            <a href="mailto:info@stberben.com" class="footer__link">info@stberben.com</a><br>
+                            Fax: +49 2421 99 848 29
+                        </p>
+                        <p class="footer__text">
+                            <strong data-i18n="footer.openingHours">Öffnungszeiten:</strong><br>
+                            <span data-i18n="footer.hours">Mo–Fr: 08:30–18:00</span>
+                        </p>
+                    </address>
+                </div>
+
+                <!-- Col 4: Social + Dark Mode -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.followUs">Folgen Sie uns</h3>
+                    <div class="footer__social-links">
+                        <!-- LinkedIn -->
+                        <div class="footer__social-item">
+                            <a href="https://www.linkedin.com/company/steuerkanzlei-ibrahim-erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">LinkedIn</span>
+                        </div>
+                        <!-- Facebook -->
+                        <div class="footer__social-item">
+                            <a href="https://www.facebook.com/steuerkanzlei.erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">Facebook</span>
+                        </div>
+                        <!-- Instagram -->
+                        <div class="footer__social-item">
+                            <a href="https://www.instagram.com/steuerkanzlei_erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">Instagram</span>
+                        </div>
+                        <!-- X / Twitter -->
+                        <div class="footer__social-item">
+                            <a href="https://x.com/stbkanzlei_erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">X (Twitter)</span>
+                        </div>
+                    </div>
+                    <!-- Dark Mode Toggle -->
+                    <div class="footer__theme-toggle">
+                        <svg class="footer__theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <button class="footer__toggle-switch" id="dark-mode-toggle"
+                            role="switch" aria-checked="false" aria-label="Dark Mode umschalten">
+                            <span class="footer__toggle-thumb"></span>
+                        </button>
+                        <svg class="footer__theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer__bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 Steuerkanzlei Ibrahim Erben. Alle Rechte vorbehalten.</p>
+                <nav class="footer__bottom-nav" aria-label="Rechtliches">
+                    <a href="impressum.html" class="footer__link" data-i18n="footer.imprint">Impressum</a>
+                    <a href="datenschutz.html" class="footer__link" data-i18n="footer.privacy">Datenschutz</a>
+                    <a href="#cookie-settings" class="footer__link" id="footer-cookie-btn" data-i18n="footer.cookieSettings">Cookie-Einstellungen</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts: cookies → navigation-helpers → i18n → features -->
+    <script src="assets/js/cookies.js"></script>
+    <script src="assets/js/navigation-helpers.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/features.js"></script>
+
+    <!-- Mobile Menu -->
+    <script>
+        const navToggle = document.querySelector('.nav__toggle');
+        const navList = document.querySelector('.nav__list');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = navList.classList.contains('is-open');
+                navList.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', !isOpen);
+                navToggle.textContent = isOpen ? '☰' : '✕';
+            });
+        }
+    </script>
+
+    <!-- WhatsApp Direct Link -->
+    <a href="https://wa.me/4924219984810?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Steuerberatung."
+        class="whatsapp-btn" target="_blank" rel="noopener noreferrer"
+        aria-label="WhatsApp-Kontakt öffnen">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-btn__tooltip">WhatsApp schreiben</span>
+    </a>
+
+    <!-- Click-to-Call (mobile only) -->
+    <a href="tel:+4924219984810" class="call-btn" aria-label="Jetzt anrufen">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        <span class="call-btn__tooltip">Jetzt anrufen</span>
+    </a>
+
+</body>
+</html>

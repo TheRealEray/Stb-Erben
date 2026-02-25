@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steuer-Aktuell | Steuerkanzlei Ibrahim Erben</title>
+    <meta name="description" content="Aktuelle Neuigkeiten aus der Steuerwelt – täglich aktualisiert. Gesetzgebung, Rechtsprechung, Finanzverwaltung.">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <style>
+        /* ═══════════════════════════════════════════════════════
+           News Magazine Redesign — nm- prefix
+           ═══════════════════════════════════════════════════════ */
+
+        /* Masthead */
+        .nm-masthead {
+            background: linear-gradient(160deg, #080d1a 0%, #0f2044 100%);
+            padding: 3.5rem 0 0;
+            border-bottom: 3px solid #c9973a;
+            position: relative;
+            overflow: hidden;
+        }
+        .nm-masthead::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 60%, rgba(30, 58, 138, 0.35) 0%, transparent 55%),
+                radial-gradient(ellipse at 85% 15%, rgba(201, 151, 58, 0.12) 0%, transparent 45%);
+            pointer-events: none;
+        }
+        .nm-masthead__inner {
+            position: relative;
+            text-align: center;
+            padding-bottom: 2.75rem;
+        }
+        .nm-masthead__top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            font-size: 0.72rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.4);
+        }
+        .nm-live {
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+        .nm-live__dot {
+            width: 7px;
+            height: 7px;
+            background: #22c55e;
+            border-radius: 50%;
+            flex-shrink: 0;
+            animation: nm-pulse 2.5s ease-in-out infinite;
+        }
+        @keyframes nm-pulse {
+            0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(34,197,94,0.4); }
+            50% { opacity: 0.7; transform: scale(0.85); box-shadow: 0 0 0 4px rgba(34,197,94,0); }
+        }
+        .nm-live__label {
+            color: #22c55e;
+            font-weight: 800;
+            font-size: 0.68rem;
+            letter-spacing: 0.16em;
+        }
+        .nm-top-sep {
+            width: 1px;
+            height: 14px;
+            background: rgba(255,255,255,0.18);
+        }
+        .nm-masthead__date {
+            color: rgba(255,255,255,0.45);
+        }
+        .nm-masthead__rule {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 0 auto 1.75rem;
+            max-width: 520px;
+        }
+        .nm-masthead__rule::before,
+        .nm-masthead__rule::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(201,151,58,0.5), transparent);
+        }
+        .nm-masthead__rule-diamond {
+            color: #c9973a;
+            font-size: 0.6rem;
+        }
+        .nm-masthead__title {
+            font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+            font-size: clamp(2.8rem, 7vw, 5.5rem);
+            font-weight: 900;
+            color: #fff;
+            letter-spacing: -0.03em;
+            line-height: 1;
+            margin: 0;
+        }
+        .nm-masthead__title-dot {
+            color: #c9973a;
+        }
+        .nm-masthead__subtitle {
+            font-size: 0.92rem;
+            color: rgba(255,255,255,0.48);
+            margin: 1.25rem auto 0;
+            max-width: 480px;
+            line-height: 1.65;
+        }
+        .nm-masthead__count-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 1.75rem;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 100px;
+            padding: 0.45rem 1.4rem;
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.5);
+        }
+        .nm-masthead__count-pill strong {
+            color: #c9973a;
+            font-weight: 700;
+        }
+        .nm-count-sep {
+            width: 3px;
+            height: 3px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 50%;
+        }
+
+        /* Ticker */
+        .nm-ticker {
+            display: flex;
+            align-items: center;
+            background: #c9973a;
+            height: 34px;
+            overflow: hidden;
+        }
+        .nm-ticker__label {
+            flex-shrink: 0;
+            background: #080d1a;
+            color: #c9973a;
+            font-size: 0.62rem;
+            font-weight: 800;
+            letter-spacing: 0.18em;
+            padding: 0 1.25rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border-right: 2px solid rgba(201,151,58,0.4);
+        }
+        .nm-ticker__track {
+            flex: 1;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .nm-ticker__text {
+            display: inline-block;
+            animation: nm-ticker-scroll 22s linear infinite;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #080d1a;
+            letter-spacing: 0.06em;
+            padding-left: 2rem;
+        }
+        @keyframes nm-ticker-scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        /* Tab bar */
+        .nm-tabbar {
+            position: sticky;
+            top: 80px;
+            background: #fff;
+            border-bottom: 2px solid #e2e8f0;
+            z-index: 90;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+        .nm-tabs {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+        }
+        .nm-tabs::-webkit-scrollbar { display: none; }
+        .nm-tab {
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            padding: 1rem 1.5rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #64748b;
+            cursor: pointer;
+            white-space: nowrap;
+            letter-spacing: 0.01em;
+            flex-shrink: 0;
+            margin-bottom: -2px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .nm-tab:hover { color: #1e3a8a; }
+        .nm-tab.is-active {
+            color: #1e3a8a;
+            border-bottom-color: #1e3a8a;
+        }
+
+        /* Featured article */
+        .nm-featured-wrap {
+            background: #f1f5fb;
+            padding: 2.5rem 0 0;
+        }
+        .nm-featured {
+            background: linear-gradient(130deg, #080d1a 0%, #132552 55%, #1a3875 100%);
+            border-radius: 6px;
+            padding: 3rem 3.5rem;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 2rem;
+            align-items: center;
+            min-height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .nm-featured::after {
+            content: '';
+            position: absolute;
+            top: 0; right: 0;
+            width: 45%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(201,151,58,0.07));
+            pointer-events: none;
+        }
+        .nm-featured__badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: #c9973a;
+            color: #080d1a;
+            font-size: 0.62rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            padding: 0.3rem 0.8rem;
+            border-radius: 2px;
+            margin-bottom: 1rem;
+        }
+        .nm-featured__source {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.45);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 0.85rem;
+        }
+        .nm-featured__title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.3;
+            margin: 0 0 1rem;
+        }
+        .nm-featured__desc {
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.55);
+            line-height: 1.7;
+            margin: 0 0 1.5rem;
+        }
+        .nm-featured__footer {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .nm-featured__date {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.35);
+        }
+        .nm-featured__link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #c9973a;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding-bottom: 1px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, gap 0.2s;
+        }
+        .nm-featured__link:hover { border-bottom-color: #c9973a; gap: 0.75rem; }
+        .nm-featured__deco {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(5rem, 10vw, 8rem);
+            font-weight: 900;
+            color: rgba(255,255,255,0.04);
+            line-height: 1;
+            flex-shrink: 0;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        /* Grid */
+        .nm-grid-wrap {
+            background: #f1f5fb;
+            padding: 2rem 0 5rem;
+        }
+        .nm-grid-header {
+            display: flex;
+            align-items: baseline;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .nm-grid-header__title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .nm-grid-header__count {
+            font-size: 0.78rem;
+            color: #94a3b8;
+        }
+        .nm-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+        }
+
+        /* Card */
+        .nm-card {
+            background: #fff;
+            border: 1px solid #dde4f0;
+            border-left: 4px solid transparent;
+            border-radius: 0 4px 4px 0;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            transition: border-left-color 0.2s, box-shadow 0.25s, transform 0.25s;
+            animation: nm-card-in 0.45s ease both;
+        }
+        @keyframes nm-card-in {
+            from { opacity: 0; transform: translateY(14px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nm-card:hover {
+            border-left-color: #1e3a8a;
+            box-shadow: 0 6px 24px rgba(30, 58, 138, 0.1);
+            transform: translateY(-2px);
+        }
+        .nm-card__meta {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .nm-card__source {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: #94a3b8;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+        .nm-card__category {
+            background: #eef2ff;
+            color: #3730a3;
+            font-size: 0.62rem;
+            font-weight: 700;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            padding: 0.15rem 0.55rem;
+            border-radius: 2px;
+        }
+        .nm-card__title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0f172a;
+            line-height: 1.4;
+            margin: 0;
+        }
+        .nm-card__desc {
+            font-size: 0.82rem;
+            color: #64748b;
+            line-height: 1.65;
+            margin: 0;
+            flex: 1;
+        }
+        .nm-card__footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: auto;
+            padding-top: 0.75rem;
+            border-top: 1px solid #f0f4f9;
+        }
+        .nm-card__date {
+            font-size: 0.72rem;
+            color: #94a3b8;
+        }
+        .nm-card__link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            color: #1e3a8a;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: 0.03em;
+            transition: gap 0.2s;
+        }
+        .nm-card__link:hover { gap: 0.55rem; }
+
+        /* Skeleton */
+        .nm-skeleton {
+            background: #fff;
+            border: 1px solid #dde4f0;
+            border-left: 4px solid #e8edf5;
+            border-radius: 0 4px 4px 0;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+        }
+        .nm-skeleton__line {
+            background: linear-gradient(90deg, #f0f4f9 25%, #e2e8f0 50%, #f0f4f9 75%);
+            background-size: 200% 100%;
+            animation: nm-shimmer 1.6s ease-in-out infinite;
+            border-radius: 3px;
+            height: 11px;
+        }
+        .nm-skeleton__line--short { width: 50%; }
+        .nm-skeleton__line--medium { width: 78%; }
+        .nm-skeleton__line--title { height: 16px; }
+        @keyframes nm-shimmer {
+            from { background-position: 200% 0; }
+            to { background-position: -200% 0; }
+        }
+        .nm-skeleton__footer {
+            margin-top: auto;
+            padding-top: 0.75rem;
+            border-top: 1px solid #f0f4f9;
+        }
+        .nm-skeleton__featured {
+            background: linear-gradient(130deg, #131b2e 0%, #1a2840 100%);
+            border-radius: 6px;
+            padding: 3rem 3.5rem;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .nm-skeleton__featured .nm-skeleton__line {
+            background: linear-gradient(90deg, rgba(255,255,255,0.06) 25%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.06) 75%);
+            background-size: 200% 100%;
+        }
+
+        /* Empty / Error */
+        .nm-empty {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 5rem 2rem;
+            color: #94a3b8;
+        }
+        .nm-empty svg { opacity: 0.25; margin-bottom: 1rem; }
+        .nm-empty p { font-size: 0.95rem; margin-bottom: 1.5rem; }
+
+        /* Sources bar */
+        .nm-sources-bar {
+            background: #080d1a;
+            padding: 1.1rem 0;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        .nm-sources-bar__inner {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.3);
+        }
+        .nm-sources-bar__label {
+            color: rgba(255,255,255,0.45);
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            flex-shrink: 0;
+        }
+
+        /* ── Responsive ────────────── */
+        @media (max-width: 960px) {
+            .nm-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .nm-grid { grid-template-columns: 1fr; }
+            .nm-featured { grid-template-columns: 1fr; padding: 2rem 1.75rem; }
+            .nm-featured__deco { display: none; }
+            .nm-masthead { padding-top: 2.5rem; }
+        }
+
+        /* ── Dark mode ─────────────── */
+        [data-theme="dark"] .nm-tabbar {
+            background: #1a2235;
+            border-bottom-color: #2a3a5c;
+        }
+        [data-theme="dark"] .nm-tab { color: rgba(255,255,255,0.45); }
+        [data-theme="dark"] .nm-tab:hover,
+        [data-theme="dark"] .nm-tab.is-active { color: #93b8f5; }
+        [data-theme="dark"] .nm-tab.is-active { border-bottom-color: #93b8f5; }
+        [data-theme="dark"] .nm-featured-wrap,
+        [data-theme="dark"] .nm-grid-wrap { background: #0e1628; }
+        [data-theme="dark"] .nm-grid-header { border-bottom-color: #2a3a5c; }
+        [data-theme="dark"] .nm-grid-header__title { color: #e2e8f0; }
+        [data-theme="dark"] .nm-card {
+            background: #1a2235;
+            border-color: #2a3a5c;
+            border-left-color: transparent;
+        }
+        [data-theme="dark"] .nm-card:hover { border-left-color: #93b8f5; box-shadow: 0 6px 24px rgba(0,0,0,0.3); }
+        [data-theme="dark"] .nm-card__title { color: #e2e8f0; }
+        [data-theme="dark"] .nm-card__desc { color: #8899b8; }
+        [data-theme="dark"] .nm-card__category { background: rgba(55,48,163,0.3); color: #93b8f5; }
+        [data-theme="dark"] .nm-card__footer { border-top-color: #253050; }
+        [data-theme="dark"] .nm-card__link { color: #93b8f5; }
+        [data-theme="dark"] .nm-skeleton {
+            background: #1a2235;
+            border-color: #2a3a5c;
+            border-left-color: #2a3a5c;
+        }
+        [data-theme="dark"] .nm-skeleton__line {
+            background: linear-gradient(90deg, #1e2d4a 25%, #253554 50%, #1e2d4a 75%);
+            background-size: 200% 100%;
+        }
+        [data-theme="dark"] .nm-skeleton__footer { border-top-color: #253050; }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/images/logo.png" alt="Steuerkanzlei Ibrahim Erben Logo" class="header__logo-img">
+                </a>
+                <div class="header__right">
+                    <nav class="nav" aria-label="Hauptnavigation">
+                        <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
+                            ☰
+                        </button>
+                        <ul class="nav__list">
+                            <li><a href="index.html" class="nav__link" data-i18n="nav.home">Startseite</a></li>
+                            <li class="nav__item--has-dropdown">
+                                <a href="leistungen.html" class="nav__link nav__link--has-dropdown" data-i18n="nav.services">Leistungen</a>
+                                <ul class="nav__dropdown">
+                                    <li><a href="leistungen.html#steuerstrafrecht" class="nav__dropdown-link nav__dropdown-link--featured" data-i18n="nav.dropdown.taxCriminal">Steuerstraf- & Bußgeldverfahren</a></li>
+                                    <li><a href="leistungen.html#insolvenz" class="nav__dropdown-link" data-i18n="nav.dropdown.insolvency">Insolvenzbezogene Beratung & Krisenbegleitung</a></li>
+                                    <li><a href="leistungen.html#wegzug" class="nav__dropdown-link" data-i18n="nav.dropdown.exitTax">Wegzugssteuer & Internationales</a></li>
+                                    <li><a href="leistungen.html#ecommerce" class="nav__dropdown-link" data-i18n="nav.dropdown.ecommerce">E-Commerce & Online-Handel</a></li>
+                                    <li><a href="leistungen.html#heilberufe" class="nav__dropdown-link" data-i18n="nav.dropdown.healthcare">Heilberufe & MVZ</a></li>
+                                    <li><a href="leistungen.html#immobilien" class="nav__dropdown-link" data-i18n="nav.dropdown.realEstate">Immobilien & Vermögen</a></li>
+                                    <li><a href="leistungen.html#nachfolge" class="nav__dropdown-link" data-i18n="nav.dropdown.succession">Nachfolge & Umstrukturierung</a></li>
+                                    <li><a href="leistungen.html#betreuung" class="nav__dropdown-link" data-i18n="nav.dropdown.support">Laufende Betreuung</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="ueber-uns.html" class="nav__link" data-i18n="nav.about">Über uns</a></li>
+                            <li><a href="faq.html" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
+                            <li class="nav__item--has-dropdown">
+                                <a href="wissen.html" class="nav__link nav__link--has-dropdown" data-i18n="nav.knowledge.label">Wissen</a>
+                                <ul class="nav__dropdown">
+                                    <li><a href="wissen-aussenpruefung.html" class="nav__dropdown-link" data-i18n="nav.knowledge.aussenpruefung">Steuerliche Außenprüfung</a></li>
+                                    <li><a href="wissen-steuerstrafrecht.html" class="nav__dropdown-link" data-i18n="nav.knowledge.steuerstrafrecht">Steuerstrafrecht</a></li>
+                                    <li><a href="wissen-umwandlungssteuerrecht.html" class="nav__dropdown-link" data-i18n="nav.knowledge.umwandlung">Umwandlungssteuerrecht</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="tools.html" class="nav__link" data-i18n="nav.tools">Tools</a></li>
+                            <li><a href="honorar.html" class="nav__link" data-i18n="nav.pricing">Honorar</a></li>
+                            <li><a href="karriere.html" class="nav__link" data-i18n="nav.career">Karriere</a></li>
+                            <li><a href="news.html" class="nav__link nav__link--active" data-i18n="nav.news">News</a></li>
+                            <li><a href="kontakt.html" class="nav__link" data-i18n="nav.contact">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <button class="lang-switcher__button" id="lang-button" aria-label="Sprache wählen" aria-expanded="false">
+                            <span class="lang-flag">🇩🇪</span>
+                            <span>DE</span>
+                        </button>
+                        <div class="lang-switcher__dropdown" id="lang-dropdown">
+                            <a href="?lang=de" class="lang-switcher__option lang-switcher__option--active">
+                                <span class="lang-flag">🇩🇪</span> Deutsch
+                            </a>
+                            <a href="?lang=tr" class="lang-switcher__option">
+                                <span class="lang-flag">🇹🇷</span> Türkçe
+                            </a>
+                            <a href="?lang=en" class="lang-switcher__option">
+                                <span class="lang-flag">🇬🇧</span> English
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Dark Mode Toggle (Header) -->
+                    <button class="dark-mode-toggle" aria-label="Dark Mode umschalten" aria-checked="false" title="Dark Mode">
+                        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <!-- Search Button -->
+                    <button class="search-toggle" aria-label="Suche öffnen">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══ MASTHEAD ═══ -->
+    <div class="nm-masthead">
+        <div class="container">
+            <div class="nm-masthead__inner">
+                <div class="nm-masthead__top-bar">
+                    <div class="nm-live">
+                        <span class="nm-live__dot"></span>
+                        <span class="nm-live__label">LIVE</span>
+                    </div>
+                    <span class="nm-top-sep"></span>
+                    <span class="nm-masthead__date" id="nm-date"></span>
+                </div>
+
+                <div class="nm-masthead__rule">
+                    <span class="nm-masthead__rule-diamond">◆</span>
+                </div>
+
+                <h1 class="nm-masthead__title" data-i18n="news.title">
+                    Steuer<span class="nm-masthead__title-dot">·</span>Aktuell
+                </h1>
+                <p class="nm-masthead__subtitle" data-i18n="news.subtitle">
+                    Aktuelle Neuigkeiten aus Steuerrecht, Gesetzgebung und Rechtsprechung – täglich aktualisiert.
+                </p>
+
+                <div class="nm-masthead__count-pill">
+                    <strong id="news-count">–</strong> Artikel
+                    <span class="nm-count-sep"></span>
+                    <span id="news-timestamp">Wird geladen…</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ticker strip -->
+        <div class="nm-ticker">
+            <div class="nm-ticker__label">QUELLEN</div>
+            <div class="nm-ticker__track">
+                <span class="nm-ticker__text">Bundesfinanzministerium &nbsp;◆&nbsp; Haufe Steuer &nbsp;◆&nbsp; NWB &nbsp;◆&nbsp; Bundesrat &nbsp;◆&nbsp; Steuerrecht &amp; Gesetzgebung &nbsp;◆&nbsp; Bundesfinanzministerium &nbsp;◆&nbsp; Haufe Steuer &nbsp;◆&nbsp; NWB &nbsp;◆&nbsp; Bundesrat &nbsp;◆&nbsp; Steuerrecht &amp; Gesetzgebung &nbsp;◆&nbsp;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ TAB BAR ═══ -->
+    <div class="nm-tabbar">
+        <div class="container">
+            <div class="nm-tabs" id="news-filters" role="tablist" aria-label="Nach Kategorie filtern">
+                <button class="nm-tab is-active" data-cat="all">Alle</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ FEATURED ARTICLE ═══ -->
+    <div class="nm-featured-wrap">
+        <div class="container">
+            <div id="nm-featured" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <!-- ═══ ARTICLE GRID ═══ -->
+    <section class="nm-grid-wrap">
+        <div class="container">
+            <div class="nm-grid-header">
+                <span class="nm-grid-header__title">Weitere Beiträge</span>
+                <span class="nm-grid-header__count" id="nm-grid-count"></span>
+            </div>
+            <div class="nm-grid" id="news-grid" aria-live="polite" aria-label="Aktuelle Steuernachrichten">
+                <!-- Filled by news.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SOURCES BAR ═══ -->
+    <div class="nm-sources-bar">
+        <div class="container">
+            <div class="nm-sources-bar__inner">
+                <span class="nm-sources-bar__label">Quellen</span>
+                Bundesfinanzministerium · Haufe Steuer · NWB · Bundesrat — Artikel werden direkt von den Verlagen verlinkt. Alle Rechte bei den jeweiligen Herausgebern.
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <!-- Col 1: Newsletter -->
+                <div class="footer__col footer__col--newsletter">
+                    <h2 class="footer__headline" data-i18n="footer.newsletter.title">Bleiben Sie informiert</h2>
+                    <p class="footer__text" data-i18n="footer.newsletter.desc">Aktuelle Steuernews und wichtige Gesetzesänderungen direkt in Ihr Postfach.</p>
+                    <form class="footer__newsletter-form" id="footer-newsletter-form" novalidate>
+                        <div class="footer__newsletter-input-wrap">
+                            <input type="email" class="footer__newsletter-input" id="footer-newsletter-email"
+                                placeholder="Ihre E-Mail-Adresse" data-i18n-placeholder="footer.newsletter.placeholder" required>
+                            <button type="submit" class="footer__newsletter-btn" aria-label="Newsletter abonnieren">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="footer__newsletter-success" id="footer-newsletter-success" data-i18n="footer.newsletter.success">
+                            ✓ Vielen Dank! Sie werden benachrichtigt.
+                        </p>
+                    </form>
+                    <div class="footer__glow"></div>
+                </div>
+                <!-- Col 2: Navigation -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.navigation">Navigation</h3>
+                    <nav class="footer__nav">
+                        <a href="leistungen.html" class="footer__link" data-i18n="nav.services">Leistungen</a>
+                        <a href="ueber-uns.html" class="footer__link" data-i18n="nav.about">Über uns</a>
+                        <a href="faq.html" class="footer__link" data-i18n="nav.faq">FAQ</a>
+                        <a href="wissen.html" class="footer__link" data-i18n="nav.knowledge.label">Wissen</a>
+                        <a href="tools.html" class="footer__link" data-i18n="nav.tools">Tools</a>
+                        <a href="honorar.html" class="footer__link" data-i18n="nav.pricing">Honorar</a>
+                        <a href="karriere.html" class="footer__link" data-i18n="nav.career">Karriere</a>
+                        <a href="news.html" class="footer__link" data-i18n="nav.news">News</a>
+                        <a href="kontakt.html" class="footer__link" data-i18n="nav.contact">Kontakt</a>
+                    </nav>
+                </div>
+                <!-- Col 3: Kontakt -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.contact">Kontakt</h3>
+                    <address class="footer__address">
+                        <p class="footer__text">
+                            Weierstraße 43<br>52349 Düren<br>Deutschland
+                        </p>
+                        <p class="footer__text">
+                            <a href="tel:+492421998481" class="footer__link">+49 2421 99 848 10</a><br>
+                            <a href="mailto:info@stberben.com" class="footer__link">info@stberben.com</a><br>
+                            Fax: +49 2421 99 848 29
+                        </p>
+                        <p class="footer__text">
+                            <strong data-i18n="footer.openingHours">Öffnungszeiten:</strong><br>
+                            <span data-i18n="footer.hours">Mo–Fr: 08:30–18:00</span>
+                        </p>
+                    </address>
+                </div>
+                <!-- Col 4: Social + Dark Mode -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.followUs">Folgen Sie uns</h3>
+                    <div class="footer__social-links">
+                        <div class="footer__social-item">
+                            <a href="https://www.linkedin.com/company/steuerkanzlei-ibrahim-erben" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">LinkedIn</span>
+                        </div>
+                        <div class="footer__social-item">
+                            <a href="https://www.facebook.com/steuerkanzlei.erben" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">Facebook</span>
+                        </div>
+                        <div class="footer__social-item">
+                            <a href="https://www.instagram.com/steuerkanzlei_erben" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">Instagram</span>
+                        </div>
+                        <div class="footer__social-item">
+                            <a href="https://x.com/stbkanzlei_erben" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">X (Twitter)</span>
+                        </div>
+                    </div>
+                    <div class="footer__theme-toggle">
+                        <svg class="footer__theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <button class="footer__toggle-switch" id="dark-mode-toggle" role="switch" aria-checked="false" aria-label="Dark Mode umschalten">
+                            <span class="footer__toggle-thumb"></span>
+                        </button>
+                        <svg class="footer__theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 Steuerkanzlei Ibrahim Erben. Alle Rechte vorbehalten.</p>
+                <nav class="footer__bottom-nav" aria-label="Rechtliches">
+                    <a href="impressum.html" class="footer__link" data-i18n="footer.imprint">Impressum</a>
+                    <a href="datenschutz.html" class="footer__link" data-i18n="footer.privacy">Datenschutz</a>
+                    <a href="#cookie-settings" class="footer__link" id="footer-cookie-btn" data-i18n="footer.cookieSettings">Cookie-Einstellungen</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/cookies.js"></script>
+    <script src="assets/js/navigation-helpers.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/features.js"></script>
+    <script src="assets/js/news.js"></script>
+
+    <!-- Mobile Menu + Date init -->
+    <script>
+        const navToggle = document.querySelector('.nav__toggle');
+        const navList = document.querySelector('.nav__list');
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = navList.classList.contains('is-open');
+                navList.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', !isOpen);
+                navToggle.textContent = isOpen ? '☰' : '✕';
+            });
+        }
+
+        // Set masthead date
+        const nmDate = document.getElementById('nm-date');
+        if (nmDate) {
+            nmDate.textContent = new Date().toLocaleDateString('de-DE', {
+                weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+            });
+        }
+    </script>
+
+    <!-- WhatsApp Direct Link -->
+    <a href="https://wa.me/4924219984810?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Steuerberatung."
+        class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp-Kontakt öffnen">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-btn__tooltip">WhatsApp schreiben</span>
+    </a>
+
+    <!-- Click-to-Call (mobile only) -->
+    <a href="tel:+4924219984810" class="call-btn" aria-label="Jetzt anrufen">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        <span class="call-btn__tooltip">Jetzt anrufen</span>
+    </a>
+
+</body>
+</html>
+<!-- nm-redesign 1772010629 -->

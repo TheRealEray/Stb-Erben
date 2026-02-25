@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Steuerberater Steuerkanzlei Ibrahim Erben Düren</title>
+    <meta name="description" content="Nehmen Sie Kontakt auf: Weierstraße 43, Düren | Tel. +49 2421 99 848 10 | info@stberben.com | Mo–Fr 08:30–18:00">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/images/logo.png" alt="Steuerkanzlei Ibrahim Erben Logo" class="header__logo-img">
+                </a>
+                <div class="header__right">
+                    <nav class="nav" aria-label="Hauptnavigation">
+                        <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
+                            ☰
+                        </button>
+                        <ul class="nav__list">
+                            <li><a href="index.html" class="nav__link" data-i18n="nav.home">Startseite</a></li>
+                            <li class="nav__item--has-dropdown">
+                                <a href="leistungen.html" class="nav__link nav__link--has-dropdown" data-i18n="nav.services">Leistungen</a>
+                                <ul class="nav__dropdown">
+                                    <li><a href="leistungen.html#steuerstrafrecht" class="nav__dropdown-link nav__dropdown-link--featured" data-i18n="nav.dropdown.taxCriminal">Steuerstraf- & Bußgeldverfahren</a></li>
+                                    <li><a href="leistungen.html#insolvenz" class="nav__dropdown-link" data-i18n="nav.dropdown.insolvency">Insolvenzbezogene Beratung & Krisenbegleitung</a></li>
+                                    <li><a href="leistungen.html#wegzug" class="nav__dropdown-link" data-i18n="nav.dropdown.exitTax">Wegzugssteuer & Internationales</a></li>
+                                    <li><a href="leistungen.html#ecommerce" class="nav__dropdown-link" data-i18n="nav.dropdown.ecommerce">E-Commerce & Online-Handel</a></li>
+                                    <li><a href="leistungen.html#heilberufe" class="nav__dropdown-link" data-i18n="nav.dropdown.healthcare">Heilberufe & MVZ</a></li>
+                                    <li><a href="leistungen.html#immobilien" class="nav__dropdown-link" data-i18n="nav.dropdown.realEstate">Immobilien & Vermögen</a></li>
+                                    <li><a href="leistungen.html#nachfolge" class="nav__dropdown-link" data-i18n="nav.dropdown.succession">Nachfolge & Umstrukturierung</a></li>
+                                    <li><a href="leistungen.html#betreuung" class="nav__dropdown-link" data-i18n="nav.dropdown.support">Laufende Betreuung</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="ueber-uns.html" class="nav__link" data-i18n="nav.about">Über uns</a></li>
+                            <li><a href="faq.html" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
+                            <li class="nav__item--has-dropdown">
+                                <a href="wissen.html" class="nav__link nav__link--has-dropdown" data-i18n="nav.knowledge.label">Wissen</a>
+                                <ul class="nav__dropdown">
+                                    <li><a href="wissen-aussenpruefung.html" class="nav__dropdown-link" data-i18n="nav.knowledge.aussenpruefung">Steuerliche Außenprüfung</a></li>
+                                    <li><a href="wissen-steuerstrafrecht.html" class="nav__dropdown-link" data-i18n="nav.knowledge.steuerstrafrecht">Steuerstrafrecht</a></li>
+                                    <li><a href="wissen-umwandlungssteuerrecht.html" class="nav__dropdown-link" data-i18n="nav.knowledge.umwandlung">Umwandlungssteuerrecht</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="tools.html" class="nav__link" data-i18n="nav.tools">Tools</a></li>
+                            <li><a href="honorar.html" class="nav__link" data-i18n="nav.pricing">Honorar</a></li>
+                            <li><a href="karriere.html" class="nav__link" data-i18n="nav.career">Karriere</a></li>
+                            <li><a href="news.html" class="nav__link" data-i18n="nav.news">News</a></li>
+                            <li><a href="kontakt.html" class="nav__link nav__link--active" data-i18n="nav.contact">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <button class="lang-switcher__button" id="lang-button" aria-label="Sprache wählen" aria-expanded="false">
+                            <span class="lang-flag">🇩🇪</span>
+                            <span>DE</span>
+                        </button>
+                        <div class="lang-switcher__dropdown" id="lang-dropdown">
+                            <a href="?lang=de" class="lang-switcher__option lang-switcher__option--active">
+                                <span class="lang-flag">🇩🇪</span> Deutsch
+                            </a>
+                            <a href="?lang=tr" class="lang-switcher__option">
+                                <span class="lang-flag">🇹🇷</span> Türkçe
+                            </a>
+                            <a href="?lang=en" class="lang-switcher__option">
+                                <span class="lang-flag">🇬🇧</span> English
+                            </a>
+                        </div>
+                    </div>
+                                    <!-- Dark Mode Toggle (Header) -->
+                <button class="dark-mode-toggle" aria-label="Dark Mode umschalten" aria-checked="false" title="Dark Mode">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                    <!-- Search Button -->
+                    <button class="search-toggle" aria-label="Suche öffnen">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" role="progressbar" aria-label="Reading progress">
+        <div class="progress-bar__fill"></div>
+    </div>
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link" data-i18n="breadcrumbs.home">Startseite</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+                    <span class="breadcrumbs__current" aria-current="page" data-i18n="breadcrumbs.contact">Kontakt</span>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero hero--static" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80') center/cover no-repeat;">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title" data-i18n="pages.contact.hero.title">Lassen Sie uns sprechen</h1>
+                    <p class="hero__subtitle" data-i18n="pages.contact.hero.subtitle">
+                        Wir freuen uns auf Ihre Nachricht. Kontaktieren Sie uns telefonisch, per E-Mail oder über unser Kontaktformular – wir melden uns innerhalb von 24 Stunden.
+                    </p>
+                    <div class="hero__contact-quick">
+                        <a href="tel:+4924219984810" class="hero__contact-link">
+                            <img loading="lazy" src="assets/images/icon-phone.svg" alt="" style="width: 24px; height: 24px; color: white;">
+                            <span>+49 2421 99 848 10</span>
+                        </a>
+                        <a href="mailto:info@stberben.com" class="hero__contact-link">
+                            <img loading="lazy" src="assets/images/icon-mail.svg" alt="" style="width: 24px; height: 24px; color: white;">
+                            <span>info@stberben.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid--2" style="gap: var(--spacing-2xl);">
+
+                <!-- Contact Form -->
+                <div>
+                    <h2 data-i18n="pages.contact.form.heading">Nachricht senden</h2>
+                    <p style="color: var(--color-text-light); margin-bottom: var(--spacing-lg);" data-i18n="pages.contact.form.intro">
+                        Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden bei Ihnen.
+                    </p>
+
+                    <form class="form" id="contact-form">
+                        <div class="form__group">
+                            <label for="name" class="form__label" data-i18n="pages.contact.form.nameLabel">Name *</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="form__input"
+                                required
+                                data-i18n-placeholder="pages.contact.form.namePlaceholder"
+                                placeholder="Ihr Name"
+                            >
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label" data-i18n="pages.contact.form.emailLabel">E-Mail-Adresse *</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form__input"
+                                required
+                                data-i18n-placeholder="pages.contact.form.emailPlaceholder"
+                                placeholder="ihre@email.de"
+                            >
+                        </div>
+
+                        <div class="form__group">
+                            <label for="phone" class="form__label" data-i18n="pages.contact.form.phoneLabel">Telefon (optional)</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                class="form__input"
+                                data-i18n-placeholder="pages.contact.form.phonePlaceholder"
+                                placeholder="+49 123 456789"
+                            >
+                        </div>
+
+                        <div class="form__group">
+                            <label for="subject" class="form__label" data-i18n="pages.contact.form.subjectLabel">Betreff *</label>
+                            <select
+                                id="subject"
+                                name="subject"
+                                class="form__select"
+                                required
+                            >
+                                <option value="" data-i18n="pages.contact.form.subjectPlaceholder">Bitte wählen Sie...</option>
+                                <option value="allgemein">Allgemeine Anfrage</option>
+                                <option value="steuerstrafrecht">Steuerstraf- & Bußgeldverfahren</option>
+                                <option value="insolvenz">Insolvenzbezogene Beratung & Krisenbegleitung</option>
+                                <option value="wegzug">Wegzugssteuer & Internationales</option>
+                                <option value="ecommerce">E-Commerce & Online-Handel</option>
+                                <option value="heilberufe">Heilberufe & MVZ</option>
+                                <option value="immobilien">Immobilien & Vermögen</option>
+                                <option value="nachfolge">Nachfolge & Umstrukturierung</option>
+                                <option value="betreuung">Laufende Betreuung</option>
+                                <option value="karriere">Karriere</option>
+                                <option value="termin">Terminanfrage</option>
+                            </select>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message" class="form__label" data-i18n="pages.contact.form.messageLabel">Ihre Nachricht *</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                class="form__textarea"
+                                required
+                                data-i18n-placeholder="pages.contact.form.messagePlaceholder"
+                                placeholder="Beschreiben Sie kurz Ihr Anliegen..."
+                            ></textarea>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="attachments" class="form__label" data-i18n="pages.contact.form.attachmentsLabel">Anhänge (optional)</label>
+                            <input
+                                type="file"
+                                id="attachments"
+                                name="attachments"
+                                class="form__input"
+                                accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                                multiple
+                            >
+                            <small style="color: var(--color-text-light); display: block; margin-top: var(--spacing-xs);" data-i18n="pages.contact.form.attachmentsNote">
+                                Max. 10 MB pro Datei. Erlaubte Formate: PDF, DOC, DOCX, JPG, PNG
+                            </small>
+                        </div>
+
+                        <div class="form__group">
+                            <div class="form__checkbox-wrapper">
+                                <input
+                                    type="checkbox"
+                                    id="privacy"
+                                    name="privacy"
+                                    class="form__checkbox"
+                                    required
+                                >
+                                <label for="privacy" class="form__checkbox-label" data-i18n="pages.contact.form.privacyLabel">
+                                    Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten zum Zweck der Bearbeitung meiner Anfrage einverstanden. *
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary form__submit" data-i18n="pages.contact.form.submitButton">
+                            Nachricht senden
+                        </button>
+                    </form>
+
+                    <div class="form__notice">
+                        <strong>Hinweis:</strong> Dieses Formular ist ein Platzhalter und benötigt ein Backend zur Verarbeitung (z. B. PHP-Script, FormSpree, Newsletter-Tool). Alternativ können Sie die Aktion auf einen <code>mailto:</code>-Link setzen oder ein externes Formular-Tool einbinden.
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h2 data-i18n="pages.contact.info.heading">Kontaktdaten</h2>
+                    <p style="color: var(--color-text-light); margin-bottom: var(--spacing-lg);" data-i18n="pages.contact.info.intro">
+                        Sie erreichen uns auch direkt per Telefon oder E-Mail.
+                    </p>
+
+                    <div class="contact-info" style="grid-template-columns: 1fr;">
+                        <div class="contact-info__item" style="text-align: left;">
+                            <span class="contact-info__label" data-i18n="pages.contact.info.addressLabel">Adresse</span>
+                            <span class="contact-info__value">
+                                Steuerkanzlei Ibrahim Erben Steuerberatung<br>
+                                Weierstraße 43<br>
+                                52349 Düren<br>
+                                Deutschland
+                            </span>
+                        </div>
+
+                        <div class="contact-info__item" style="text-align: left;">
+                            <span class="contact-info__label" data-i18n="pages.contact.info.phoneLabel">Telefon</span>
+                            <span class="contact-info__value">
+                                <a href="tel:+492421998481">+49 2421 99 848 10</a>
+                            </span>
+                        </div>
+
+                        <div class="contact-info__item" style="text-align: left;">
+                            <span class="contact-info__label" data-i18n="pages.contact.info.emailLabel">E-Mail</span>
+                            <span class="contact-info__value">
+                                <a href="mailto:info@stberben.com">info@stberben.com</a>
+                            </span>
+                        </div>
+
+                        <div class="contact-info__item" style="text-align: left;">
+                            <span class="contact-info__label" data-i18n="pages.contact.info.hoursLabel">Öffnungszeiten</span>
+                            <span class="contact-info__value" data-i18n="pages.contact.info.hoursValue">
+                                Montag–Freitag<br>
+                                08:30–18:00 Uhr
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Google Reviews Section -->
+                    <div style="margin-top: var(--spacing-xl); background: var(--color-bg-light); padding: var(--spacing-lg); border-radius: var(--border-radius);">
+                        <h3 style="margin-bottom: var(--spacing-md);" data-i18n="pages.contact.reviews.title">Was unsere Mandanten sagen</h3>
+                        <div style="display: flex; align-items: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-md);">
+                            <div style="color: #fbbc04; font-size: 1.5rem;">★★★★★</div>
+                            <span style="font-weight: 600; color: var(--color-text);">5.0</span>
+                        </div>
+                        <a href="https://g.page/r/YOUR_GOOGLE_PLACE_ID/review" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" style="width: 100%;" data-i18n="pages.contact.reviews.button">
+                            Bewerten Sie uns auf Google
+                        </a>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div style="margin-top: var(--spacing-xl);">
+                        <h3 style="margin-bottom: var(--spacing-md);" data-i18n="pages.contact.social.title">Folgen Sie uns</h3>
+                        <div class="grid grid--3" style="gap: var(--spacing-md);">
+                            <a href="https://wa.me/4924219984810" target="_blank" rel="noopener noreferrer" class="card" style="text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: var(--spacing-lg); text-align: center; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer;">
+                                <img loading="lazy" src="assets/images/icon-whatsapp.svg" alt="WhatsApp" style="width: 48px; height: 48px; margin-bottom: var(--spacing-sm); color: #25D366;">
+                                <h4 style="margin: 0; color: var(--color-text);" data-i18n="pages.contact.social.whatsapp">WhatsApp</h4>
+                            </a>
+                            <a href="https://t.me/steuerkanzlei_erben" target="_blank" rel="noopener noreferrer" class="card" style="text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: var(--spacing-lg); text-align: center; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer;">
+                                <img loading="lazy" src="assets/images/icon-telegram.svg" alt="Telegram" style="width: 48px; height: 48px; margin-bottom: var(--spacing-sm); color: #0088cc;">
+                                <h4 style="margin: 0; color: var(--color-text);" data-i18n="pages.contact.social.telegram">Telegram</h4>
+                            </a>
+                            <a href="https://instagram.com/steuerkanzlei_erben" target="_blank" rel="noopener noreferrer" class="card" style="text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: var(--spacing-lg); text-align: center; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer;">
+                                <img loading="lazy" src="assets/images/icon-instagram.svg" alt="Instagram" style="width: 48px; height: 48px; margin-bottom: var(--spacing-sm); color: #E4405F;">
+                                <h4 style="margin: 0; color: var(--color-text);" data-i18n="pages.contact.social.instagram">Instagram</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="text-center" data-i18n="pages.contact.map.heading">So finden Sie uns</h2>
+            <p class="text-center" style="color: var(--color-text-light); margin-bottom: var(--spacing-xl);" data-i18n="pages.contact.map.intro">
+                Weierstraße 43, 52349 Düren – mitten in Düren, gut erreichbar.
+            </p>
+            <iframe
+                class="map-embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.8!2d6.4814!3d50.8053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf3f9c1f9c9c9d%3A0x1!2sWeierstra%C3%9Fe%2043%2C%2052349%20D%C3%BCren!5e0!3m2!1sde!2sde!4v1234567890"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Standort Steuerkanzlei Ibrahim Erben Steuerberatung in Düren">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+
+                <!-- Col 1: Newsletter -->
+                <div class="footer__col footer__col--newsletter">
+                    <h2 class="footer__headline" data-i18n="footer.newsletter.title">Bleiben Sie informiert</h2>
+                    <p class="footer__text" data-i18n="footer.newsletter.desc">Aktuelle Steuernews und wichtige Gesetzesänderungen direkt in Ihr Postfach.</p>
+                    <form class="footer__newsletter-form" id="footer-newsletter-form" novalidate>
+                        <div class="footer__newsletter-input-wrap">
+                            <input type="email" class="footer__newsletter-input" id="footer-newsletter-email"
+                                placeholder="Ihre E-Mail-Adresse" data-i18n-placeholder="footer.newsletter.placeholder" required>
+                            <button type="submit" class="footer__newsletter-btn" aria-label="Newsletter abonnieren">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="footer__newsletter-success" id="footer-newsletter-success" data-i18n="footer.newsletter.success">
+                            ✓ Vielen Dank! Sie werden benachrichtigt.
+                        </p>
+                    </form>
+                    <div class="footer__glow"></div>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.navigation">Navigation</h3>
+                    <nav class="footer__nav">
+                        <a href="leistungen.html" class="footer__link" data-i18n="nav.services">Leistungen</a>
+                        <a href="ueber-uns.html" class="footer__link" data-i18n="nav.about">Über uns</a>
+                        <a href="faq.html" class="footer__link" data-i18n="nav.faq">FAQ</a>
+                        <a href="wissen.html" class="footer__link" data-i18n="nav.knowledge.label">Wissen</a>
+                        <a href="tools.html" class="footer__link" data-i18n="nav.tools">Tools</a>
+                        <a href="honorar.html" class="footer__link" data-i18n="nav.pricing">Honorar</a>
+                        <a href="karriere.html" class="footer__link" data-i18n="nav.career">Karriere</a>
+                        <a href="kontakt.html" class="footer__link" data-i18n="nav.contact">Kontakt</a>
+                    </nav>
+                </div>
+
+                <!-- Col 3: Kontakt -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.contact">Kontakt</h3>
+                    <address class="footer__address">
+                        <p class="footer__text">
+                            Weierstraße 43<br>
+                            52349 Düren<br>
+                            Deutschland
+                        </p>
+                        <p class="footer__text">
+                            <a href="tel:+492421998481" class="footer__link">+49 2421 99 848 10</a><br>
+                            <a href="mailto:info@stberben.com" class="footer__link">info@stberben.com</a><br>
+                            Fax: +49 2421 99 848 29
+                        </p>
+                        <p class="footer__text">
+                            <strong data-i18n="footer.openingHours">Öffnungszeiten:</strong><br>
+                            <span data-i18n="footer.hours">Mo–Fr: 08:30–18:00</span>
+                        </p>
+                    </address>
+                </div>
+
+                <!-- Col 4: Social + Dark Mode -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.followUs">Folgen Sie uns</h3>
+                    <div class="footer__social-links">
+                        <!-- LinkedIn -->
+                        <div class="footer__social-item">
+                            <a href="https://www.linkedin.com/company/steuerkanzlei-ibrahim-erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">LinkedIn</span>
+                        </div>
+                        <!-- Facebook -->
+                        <div class="footer__social-item">
+                            <a href="https://www.facebook.com/steuerkanzlei.erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">Facebook</span>
+                        </div>
+                        <!-- Instagram -->
+                        <div class="footer__social-item">
+                            <a href="https://www.instagram.com/steuerkanzlei_erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">Instagram</span>
+                        </div>
+                        <!-- X / Twitter -->
+                        <div class="footer__social-item">
+                            <a href="https://x.com/stbkanzlei_erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">X (Twitter)</span>
+                        </div>
+                    </div>
+                    <!-- Dark Mode Toggle -->
+                    <div class="footer__theme-toggle">
+                        <svg class="footer__theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <button class="footer__toggle-switch" id="dark-mode-toggle"
+                            role="switch" aria-checked="false" aria-label="Dark Mode umschalten">
+                            <span class="footer__toggle-thumb"></span>
+                        </button>
+                        <svg class="footer__theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer__bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 Steuerkanzlei Ibrahim Erben. Alle Rechte vorbehalten.</p>
+                <nav class="footer__bottom-nav" aria-label="Rechtliches">
+                    <a href="impressum.html" class="footer__link" data-i18n="footer.imprint">Impressum</a>
+                    <a href="datenschutz.html" class="footer__link" data-i18n="footer.privacy">Datenschutz</a>
+                    <a href="#cookie-settings" class="footer__link" id="footer-cookie-btn" data-i18n="footer.cookieSettings">Cookie-Einstellungen</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JS for Form Validation and Mobile Menu -->
+    <script>
+        // Mobile Menu Toggle
+        const navToggle = document.querySelector('.nav__toggle');
+        const navList = document.querySelector('.nav__list');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = navList.classList.contains('is-open');
+                navList.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', !isOpen);
+                navToggle.textContent = isOpen ? '☰' : '✕';
+            });
+        }
+
+        // Form Validation and Submission
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+
+            // Simple validation
+            if (!data.name || !data.email || !data.subject || !data.message || !data.privacy) {
+                const message = window.i18n ? window.i18n.t('pages.contact.form.requiredFieldsAlert') : 'Bitte füllen Sie alle Pflichtfelder aus.';
+                alert(message);
+                return;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(data.email)) {
+                const message = window.i18n ? window.i18n.t('pages.contact.form.invalidEmailAlert') : 'Bitte geben Sie eine gültige E-Mail-Adresse ein.';
+                alert(message);
+                return;
+            }
+
+            // PLACEHOLDER: Here you would normally send the data to a backend
+            // For now, we'll create a mailto link as a fallback
+            const subject = encodeURIComponent(`Kontaktanfrage: ${data.subject}`);
+            const body = encodeURIComponent(
+                `Name: ${data.name}\n` +
+                `E-Mail: ${data.email}\n` +
+                `Telefon: ${data.phone || 'Nicht angegeben'}\n\n` +
+                `Nachricht:\n${data.message}`
+            );
+
+            // Show success message
+            const successMessage = window.i18n ? window.i18n.t('pages.contact.form.successMessage') : 'Vielen Dank für Ihre Nachricht! Wir melden uns innerhalb von 24 Stunden bei Ihnen.\n\n(HINWEIS: Dies ist eine Demo. In der Live-Version würde das Formular an Ihr Backend gesendet.)';
+            alert(successMessage);
+
+            // Optional: Open mailto link
+            // window.location.href = `mailto:info@stberben.com?subject=${subject}&body=${body}`;
+
+            // Reset form
+            form.reset();
+        });
+
+        // Language Switcher
+        const langButton = document.getElementById('lang-button');
+        const langDropdown = document.getElementById('lang-dropdown');
+
+        if (langButton && langDropdown) {
+            langButton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isOpen = langDropdown.classList.contains('is-open');
+                langDropdown.classList.toggle('is-open');
+                langButton.setAttribute('aria-expanded', !isOpen);
+            });
+
+            document.addEventListener('click', () => {
+                langDropdown.classList.remove('is-open');
+                langButton.setAttribute('aria-expanded', 'false');
+            });
+
+            langDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        }
+
+        // Dropdown Navigation
+        const dropdownItems = document.querySelectorAll('.nav__item--has-dropdown');
+
+        dropdownItems.forEach(item => {
+            const link = item.querySelector('.nav__link--has-dropdown');
+            const dropdown = item.querySelector('.nav__dropdown');
+
+            if (link && dropdown) {
+                link.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        dropdownItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.classList.remove('is-open');
+                            }
+                        });
+                        item.classList.toggle('is-open');
+                    }
+                });
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav__item--has-dropdown')) {
+                dropdownItems.forEach(item => {
+                    item.classList.remove('is-open');
+                });
+            }
+        });
+    </script>
+
+    <!-- Cookie Consent -->
+    <script src="assets/js/cookies.js"></script>
+
+    <!-- Navigation Helpers -->
+    <script src="assets/js/navigation-helpers.js"></script>
+    <!-- Search Modal -->
+    <div class="search-modal">
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input type="text" class="search-input" placeholder="Suchen Sie nach Themen, Leistungen oder Informationen...">
+                <button class="search-close" aria-label="Schließen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Nach oben scrollen">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+
+    <!-- i18n Translation System -->
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/features.js"></script>
+
+    <!-- Batch 2: WhatsApp Direct Link -->
+    <a href="https://wa.me/4924219984810?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Steuerberatung."
+        class="whatsapp-btn" target="_blank" rel="noopener noreferrer"
+        aria-label="WhatsApp-Kontakt öffnen">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-btn__tooltip">WhatsApp schreiben</span>
+    </a>
+
+    <!-- Batch 2: Click-to-Call (mobile only) -->
+    <a href="tel:+4924219984810" class="call-btn" aria-label="Jetzt anrufen">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        <span class="call-btn__tooltip">Jetzt anrufen</span>
+    </a>
+
+</body>
+</html>
+<!-- Updated 1771721945 -->
+<!-- Updated 1771723401 -->

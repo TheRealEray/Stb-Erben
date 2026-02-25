@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honorar & Vergütung | Steuerkanzlei Ibrahim Erben Düren</title>
+    <meta name="description" content="Transparente Honorare: Kostenloser Erstkontakt, Erstgespräch ab EUR 395/Std., individuelle Auftragspauschalen. Faire Preise für professionelle Steuerberatung.">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/images/logo.png" alt="Steuerkanzlei Ibrahim Erben Logo" class="header__logo-img">
+                </a>
+                <div class="header__right">
+                    <nav class="nav" aria-label="Hauptnavigation">
+                        <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false">
+                            ☰
+                        </button>
+                        <ul class="nav__list">
+                            <li><a href="index.html" class="nav__link" data-i18n="nav.home">Startseite</a></li>
+                            <li class="nav__item--has-dropdown">
+                                <a href="leistungen.html" class="nav__link nav__link--has-dropdown" data-i18n="nav.services">Leistungen</a>
+                                <ul class="nav__dropdown">
+                                    <li><a href="leistungen.html#steuerstrafrecht" class="nav__dropdown-link nav__dropdown-link--featured" data-i18n="nav.dropdown.taxCriminal">Steuerstraf- & Bußgeldverfahren</a></li>
+                                    <li><a href="leistungen.html#insolvenz" class="nav__dropdown-link" data-i18n="nav.dropdown.insolvency">Insolvenzbezogene Beratung & Krisenbegleitung</a></li>
+                                    <li><a href="leistungen.html#wegzug" class="nav__dropdown-link" data-i18n="nav.dropdown.exitTax">Wegzugssteuer & Internationales</a></li>
+                                    <li><a href="leistungen.html#ecommerce" class="nav__dropdown-link" data-i18n="nav.dropdown.ecommerce">E-Commerce & Online-Handel</a></li>
+                                    <li><a href="leistungen.html#heilberufe" class="nav__dropdown-link" data-i18n="nav.dropdown.healthcare">Heilberufe & MVZ</a></li>
+                                    <li><a href="leistungen.html#immobilien" class="nav__dropdown-link" data-i18n="nav.dropdown.realEstate">Immobilien & Vermögen</a></li>
+                                    <li><a href="leistungen.html#nachfolge" class="nav__dropdown-link" data-i18n="nav.dropdown.succession">Nachfolge & Umstrukturierung</a></li>
+                                    <li><a href="leistungen.html#betreuung" class="nav__dropdown-link" data-i18n="nav.dropdown.support">Laufende Betreuung</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="ueber-uns.html" class="nav__link" data-i18n="nav.about">Über uns</a></li>
+                            <li><a href="faq.html" class="nav__link" data-i18n="nav.faq">FAQ</a></li>
+                            <li class="nav__item--has-dropdown">
+                                <a href="wissen.html" class="nav__link nav__link--has-dropdown" data-i18n="nav.knowledge.label">Wissen</a>
+                                <ul class="nav__dropdown">
+                                    <li><a href="wissen-aussenpruefung.html" class="nav__dropdown-link" data-i18n="nav.knowledge.aussenpruefung">Steuerliche Außenprüfung</a></li>
+                                    <li><a href="wissen-steuerstrafrecht.html" class="nav__dropdown-link" data-i18n="nav.knowledge.steuerstrafrecht">Steuerstrafrecht</a></li>
+                                    <li><a href="wissen-umwandlungssteuerrecht.html" class="nav__dropdown-link" data-i18n="nav.knowledge.umwandlung">Umwandlungssteuerrecht</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="tools.html" class="nav__link" data-i18n="nav.tools">Tools</a></li>
+                            <li><a href="honorar.html" class="nav__link nav__link--active" data-i18n="nav.pricing">Honorar</a></li>
+                            <li><a href="karriere.html" class="nav__link" data-i18n="nav.career">Karriere</a></li>
+                            <li><a href="news.html" class="nav__link" data-i18n="nav.news">News</a></li>
+                            <li><a href="kontakt.html" class="nav__link" data-i18n="nav.contact">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher">
+                        <button class="lang-switcher__button" id="lang-button" aria-label="Sprache wählen" aria-expanded="false">
+                            <span class="lang-flag">🇩🇪</span>
+                            <span>DE</span>
+                        </button>
+                        <div class="lang-switcher__dropdown" id="lang-dropdown">
+                            <a href="?lang=de" class="lang-switcher__option lang-switcher__option--active">
+                                <span class="lang-flag">🇩🇪</span> Deutsch
+                            </a>
+                            <a href="?lang=tr" class="lang-switcher__option">
+                                <span class="lang-flag">🇹🇷</span> Türkçe
+                            </a>
+                            <a href="?lang=en" class="lang-switcher__option">
+                                <span class="lang-flag">🇬🇧</span> English
+                            </a>
+                        </div>
+                    </div>
+                                    <!-- Dark Mode Toggle (Header) -->
+                <button class="dark-mode-toggle" aria-label="Dark Mode umschalten" aria-checked="false" title="Dark Mode">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                    <!-- Search Button -->
+                    <button class="search-toggle" aria-label="Suche öffnen">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" role="progressbar" aria-label="Reading progress">
+        <div class="progress-bar__fill"></div>
+    </div>
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link" data-i18n="breadcrumbs.home">Startseite</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+                    <span class="breadcrumbs__current" aria-current="page" data-i18n="breadcrumbs.fees">Honorar</span>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero hero--static" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url('https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1920&q=80') center/cover no-repeat;">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title" data-i18n="pages.pricing.hero.title">Honorar & Vergütung</h1>
+                    <p class="hero__subtitle" data-i18n="pages.pricing.hero.subtitle">
+                        Transparente Preise, faire Konditionen. Wir legen Wert auf klare Kommunikation – auch bei den Kosten.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Overview -->
+    <section class="section">
+        <div class="container">
+            <p class="text-center mb-xl" style="color: var(--color-text-light); max-width: 800px; margin-left: auto; margin-right: auto;" data-i18n="pages.pricing.intro">
+                Jedes Mandat ist individuell. Wir bieten verschiedene Vergütungsmodelle – je nachdem, was zu Ihrer Situation passt. Alle Preise verstehen sich zzgl. gesetzlicher Mehrwertsteuer.
+            </p>
+
+            <!-- Section 1: Kostenloser Erstkontakt -->
+            <div class="service-detail__category" style="background: linear-gradient(135deg, #dcfce7 0%, #d1fae5 100%); border: 2px solid #10b981; box-shadow: 0 6px 16px rgba(16, 185, 129, 0.15); margin-bottom: var(--spacing-2xl);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <img loading="lazy" src="assets/images/icon-phone.svg" alt="" class="icon icon-lg" style="display: inline-block; color: #059669;">
+                    <h2 style="margin: 0; color: #065f46;" data-i18n="pages.pricing.freeContact.title">Kostenloser Erstkontakt</h2>
+                </div>
+                <p style="font-size: 1.0625rem; font-weight: 500; color: #047857; margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.freeContact.intro">
+                    Das erste Telefonat ist immer kostenfrei. Schildern Sie uns kurz Ihr Anliegen – wir klären, ob und wie wir Ihnen helfen können.
+                </p>
+                <div style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius); margin-bottom: var(--spacing-md);">
+                    <div style="display: flex; align-items: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-sm);">
+                        <img loading="lazy" src="assets/images/icon-phone.svg" alt="" style="width: 24px; height: 24px; color: #059669;">
+                        <strong style="font-size: 1.125rem; color: #065f46;" data-i18n="pages.pricing.freeContact.phoneLabel">Rufen Sie uns an:</strong>
+                    </div>
+                    <p style="font-size: 1.5rem; font-weight: 600; color: #059669; margin: 0;">
+                        <a href="tel:+4924219984810" style="color: #059669; text-decoration: none;">02421 99 848 10</a>
+                    </p>
+                </div>
+                <ul style="list-style: none; padding: 0; margin-bottom: var(--spacing-md);">
+                    <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid rgba(16, 185, 129, 0.2);" data-i18n="pages.pricing.freeContact.benefit1">✓ Erste Einschätzung Ihrer Situation</li>
+                    <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid rgba(16, 185, 129, 0.2);" data-i18n="pages.pricing.freeContact.benefit2">✓ Klärung, ob wir der richtige Ansprechpartner sind</li>
+                    <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid rgba(16, 185, 129, 0.2);" data-i18n="pages.pricing.freeContact.benefit3">✓ Unverbindlich und kostenfrei</li>
+                    <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.freeContact.benefit4">✓ Keine Verpflichtung zur Zusammenarbeit</li>
+                </ul>
+            </div>
+
+            <!-- Section 2: Erstgespräch -->
+            <div class="service-detail__category" style="margin-bottom: var(--spacing-2xl);">
+                <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.pricing.initialConsultation.title">Erstgespräch</h2>
+                <div class="grid grid--2">
+                    <div class="card" style="background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%); border: 2px solid #3b82f6;">
+                        <h3 style="color: #1e40af; margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.initialConsultation.option1.title">Beratungsgespräch</h3>
+                        <div style="font-size: 2rem; font-weight: 700; color: #1e3a8a; margin-bottom: var(--spacing-sm);">
+                            <span data-i18n="pages.pricing.initialConsultation.option1.price">EUR 395</span>
+                        </div>
+                        <p style="color: #3b82f6; font-weight: 500; margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.initialConsultation.option1.unit">pro Stunde (netto)</p>
+                        <p style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.initialConsultation.option1.description">
+                            Wenn Sie eine konkrete steuerliche Fragestellung haben und eine fundierte Beratung wünschen, berechnen wir EUR 395 netto pro Stunde.
+                        </p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.initialConsultation.option1.benefit1">✓ Detaillierte Analyse Ihrer Situation</li>
+                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.initialConsultation.option1.benefit2">✓ Konkrete Handlungsempfehlungen</li>
+                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.initialConsultation.option1.benefit3">✓ Schriftliche Zusammenfassung</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" style="background: linear-gradient(135deg, #dcfce7 0%, #d1fae5 100%); border: 2px solid #10b981;">
+                        <h3 style="color: #065f46; margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.initialConsultation.option2.title">Kennenlern-Gespräch</h3>
+                        <div style="font-size: 2rem; font-weight: 700; color: #059669; margin-bottom: var(--spacing-sm);">
+                            <span data-i18n="pages.pricing.initialConsultation.option2.price">Kostenfrei</span>
+                        </div>
+                        <p style="color: #10b981; font-weight: 500; margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.initialConsultation.option2.unit">bei Übernahme laufender Betreuung</p>
+                        <p style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.initialConsultation.option2.description">
+                            Wenn es nur um ein erstes Kennenlernen geht oder Sie an einer laufenden Zusammenarbeit interessiert sind, ist das Erstgespräch für Sie kostenfrei.
+                        </p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.initialConsultation.option2.benefit1">✓ Unverbindliches Kennenlernen</li>
+                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.initialConsultation.option2.benefit2">✓ Vorstellung unserer Arbeitsweise</li>
+                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.initialConsultation.option2.benefit3">✓ Individuelle Angebotserstellung</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Gestaltungsberatung -->
+            <div class="service-detail__category" style="margin-bottom: var(--spacing-2xl);">
+                <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.pricing.designConsulting.title">Gestaltungsberatung & Projektarbeit</h2>
+                <p style="margin-bottom: var(--spacing-lg);" data-i18n="pages.pricing.designConsulting.intro">
+                    Bei komplexen steuerlichen Fragestellungen, Strukturierungen oder einmaligen Projekten arbeiten wir entweder auf Stundenbasis oder mit Auftragspauschalen.
+                </p>
+
+                <div class="grid grid--2">
+                    <div class="card">
+                        <h3 style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.hourlyRate.title">Stundensätze</h3>
+                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--color-primary); margin-bottom: var(--spacing-sm);">
+                            <span data-i18n="pages.pricing.designConsulting.hourlyRate.range">EUR 180 - 220</span>
+                        </div>
+                        <p style="color: var(--color-text-light); margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.hourlyRate.unit">durchschnittlich pro Stunde (netto)</p>
+                        <p style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.hourlyRate.description">
+                            Wir arbeiten im Team: Steuerberater und qualifizierte Fachmitarbeiter. So profitieren Sie von Expertise auf verschiedenen Ebenen – bei fairen Stundensätzen.
+                        </p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.designConsulting.hourlyRate.benefit1">✓ Team-Ansatz für optimale Effizienz</li>
+                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.designConsulting.hourlyRate.benefit2">✓ Transparente Zeiterfassung</li>
+                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.designConsulting.hourlyRate.benefit3">✓ Regelmäßige Zwischenrechnungen</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.flatFee.title">Auftragspauschalen</h3>
+                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--color-primary); margin-bottom: var(--spacing-sm);">
+                            <span data-i18n="pages.pricing.designConsulting.flatFee.price">Nach Vereinbarung</span>
+                        </div>
+                        <p style="color: var(--color-text-light); margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.flatFee.unit">für definierte Leistungen</p>
+                        <p style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.flatFee.description">
+                            Für klar definierte Projekte bieten wir Festpreise an. So haben Sie Planungssicherheit und wissen vorab, welche Kosten auf Sie zukommen.
+                        </p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.designConsulting.flatFee.benefit1">✓ Planungssicherheit durch Festpreis</li>
+                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.designConsulting.flatFee.benefit2">✓ Keine versteckten Kosten</li>
+                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.designConsulting.flatFee.benefit3">✓ Klare Leistungsbeschreibung</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="background: var(--color-bg-light); padding: var(--spacing-lg); border-radius: var(--border-radius); margin-top: var(--spacing-lg);">
+                    <h4 style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.examples.title">Beispiele für Gestaltungsberatung:</h4>
+                    <ul class="service-detail__list">
+                        <li data-i18n="pages.pricing.designConsulting.examples.item1">Gutachten und Stellungnahmen</li>
+                        <li data-i18n="pages.pricing.designConsulting.examples.item2">Umwandlungen (Verschmelzung, Spaltung, Formwechsel)</li>
+                        <li data-i18n="pages.pricing.designConsulting.examples.item3">Gründungsberatung (GmbH, Holding, UG)</li>
+                        <li data-i18n="pages.pricing.designConsulting.examples.item4">Wegzugsplanung und internationale Strukturierung</li>
+                        <li data-i18n="pages.pricing.designConsulting.examples.item5">Nachfolgeplanung und Unternehmensübertragung</li>
+                        <li data-i18n="pages.pricing.designConsulting.examples.item6">Due Diligence und Unternehmensbewertung</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 4: Laufende Betreuung -->
+            <div class="service-detail__category" style="margin-bottom: var(--spacing-2xl);">
+                <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.pricing.ongoingSupport.title">Laufende Steuerberatung</h2>
+                <p style="margin-bottom: var(--spacing-lg);" data-i18n="pages.pricing.ongoingSupport.intro">
+                    Die laufende steuerliche Betreuung wird nach der Steuerberatervergütungsverordnung (StBVV) abgerechnet. Die Höhe richtet sich nach verschiedenen Faktoren:
+                </p>
+
+                <div class="grid grid--3">
+                    <div class="card card--icon">
+                        <img loading="lazy" src="assets/images/icon-chart.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.pricing.ongoingSupport.factor1.title">Gegenstandswert</h3>
+                        <p class="card__text" data-i18n="pages.pricing.ongoingSupport.factor1.text">Umsatz, Gewinn, Bilanzsumme – je nach Leistung</p>
+                    </div>
+
+                    <div class="card card--icon">
+                        <img loading="lazy" src="assets/images/icon-target.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.pricing.ongoingSupport.factor2.title">Komplexität</h3>
+                        <p class="card__text" data-i18n="pages.pricing.ongoingSupport.factor2.text">Rechtsform, Anzahl Geschäftsvorfälle, Besonderheiten</p>
+                    </div>
+
+                    <div class="card card--icon">
+                        <img loading="lazy" src="assets/images/icon-user.svg" alt="" class="card__icon" aria-hidden="true">
+                        <h3 class="card__title" data-i18n="pages.pricing.ongoingSupport.factor3.title">Umfang</h3>
+                        <p class="card__text" data-i18n="pages.pricing.ongoingSupport.factor3.text">Anzahl Mitarbeiter, Konten, Belege</p>
+                    </div>
+                </div>
+
+                <div style="background: var(--color-bg-light); padding: var(--spacing-lg); border-radius: var(--border-radius); margin-top: var(--spacing-lg);">
+                    <p style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.ongoingSupport.approach">
+                        <strong>Unser Ansatz:</strong> Wir orientieren uns in der Regel am Mittelwert der StBVV. So erhalten Sie qualitativ hochwertige Leistungen zu fairen Konditionen.
+                    </p>
+                    <h4 style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.ongoingSupport.services.title">Typische Leistungen der laufenden Betreuung:</h4>
+                    <ul class="service-detail__list">
+                        <li data-i18n="pages.pricing.ongoingSupport.services.item1">Monatliche Finanzbuchhaltung</li>
+                        <li data-i18n="pages.pricing.ongoingSupport.services.item2">Lohnbuchhaltung und Lohnsteueranmeldungen</li>
+                        <li data-i18n="pages.pricing.ongoingSupport.services.item3">Umsatzsteuer-Voranmeldungen</li>
+                        <li data-i18n="pages.pricing.ongoingSupport.services.item4">Jahresabschluss (HGB, EStG) oder EÜR</li>
+                        <li data-i18n="pages.pricing.ongoingSupport.services.item5">Alle Steuererklärungen (ESt, KSt, GewSt, USt)</li>
+                        <li data-i18n="pages.pricing.ongoingSupport.services.item6">Betriebswirtschaftliche Auswertungen (BWA)</li>
+                        <li data-i18n="pages.pricing.ongoingSupport.services.item7">Laufende steuerliche Beratung</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div style="background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%); padding: var(--spacing-2xl); border-radius: var(--border-radius); text-align: center;">
+                <h2 style="color: #1e3a8a; margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.cta.title">Individuelles Angebot gewünscht?</h2>
+                <p style="font-size: 1.125rem; color: #3b82f6; margin-bottom: var(--spacing-lg); max-width: 700px; margin-left: auto; margin-right: auto;" data-i18n="pages.pricing.cta.text">
+                    Sprechen Sie uns im Ersttermin auf ein individuelles Angebot an. Wir erstellen Ihnen eine transparente Kalkulation – abgestimmt auf Ihre Anforderungen.
+                </p>
+                <a href="kontakt.html" class="btn btn--primary btn--large" data-i18n="pages.pricing.cta.button">Jetzt Erstgespräch anfragen</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt">
+        <div class="container-narrow">
+            <h2 class="text-center" style="margin-bottom: var(--spacing-xl);" data-i18n="pages.pricing.faq.title">Häufige Fragen zum Honorar</h2>
+            <ul class="faq__list">
+                <li class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span data-i18n="pages.pricing.faq.q1">Sind die genannten Preise Brutto oder Netto?</span>
+                        <span class="faq__icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p data-i18n="pages.pricing.faq.a1">Alle genannten Preise verstehen sich als Netto-Preise. Hinzu kommt die gesetzliche Mehrwertsteuer (derzeit 19%).</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span data-i18n="pages.pricing.faq.q2">Kann ich vorab wissen, was die Beratung kostet?</span>
+                        <span class="faq__icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p data-i18n="pages.pricing.faq.a2">Ja. Nach dem Erstgespräch erhalten Sie von uns ein transparentes Angebot. Bei laufender Betreuung zeigen wir Ihnen anhand Ihrer Zahlen eine konkrete Kalkulation. Bei Projektarbeit vereinbaren wir vorab einen Festpreis oder ein Budget.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span data-i18n="pages.pricing.faq.q3">Was ist die Steuerberatervergütungsverordnung (StBVV)?</span>
+                        <span class="faq__icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p data-i18n="pages.pricing.faq.a3">Die StBVV regelt die Gebühren für steuerliche Leistungen gesetzlich. Sie enthält Gebührentabellen und Rahmen (von 1/10 bis 10/10), innerhalb derer Steuerberater ihre Vergütung festlegen können. Wir orientieren uns in der Regel am Mittelwert (5/10 bis 6/10).</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span data-i18n="pages.pricing.faq.q4">Gibt es versteckte Kosten?</span>
+                        <span class="faq__icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p data-i18n="pages.pricing.faq.a4">Nein. Wir legen Wert auf Transparenz. Alle Kosten werden vorab besprochen und schriftlich festgehalten. Änderungen oder zusätzliche Leistungen stimmen wir vorher mit Ihnen ab.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span data-i18n="pages.pricing.faq.q5">Wie wird bei laufender Betreuung abgerechnet?</span>
+                        <span class="faq__icon" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p data-i18n="pages.pricing.faq.a5">In der Regel monatlich oder quartalsweise. Sie erhalten eine detaillierte Rechnung mit Aufschlüsselung der erbrachten Leistungen. So behalten Sie jederzeit den Überblick.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+
+                <!-- Col 1: Newsletter -->
+                <div class="footer__col footer__col--newsletter">
+                    <h2 class="footer__headline" data-i18n="footer.newsletter.title">Bleiben Sie informiert</h2>
+                    <p class="footer__text" data-i18n="footer.newsletter.desc">Aktuelle Steuernews und wichtige Gesetzesänderungen direkt in Ihr Postfach.</p>
+                    <form class="footer__newsletter-form" id="footer-newsletter-form" novalidate>
+                        <div class="footer__newsletter-input-wrap">
+                            <input type="email" class="footer__newsletter-input" id="footer-newsletter-email"
+                                placeholder="Ihre E-Mail-Adresse" data-i18n-placeholder="footer.newsletter.placeholder" required>
+                            <button type="submit" class="footer__newsletter-btn" aria-label="Newsletter abonnieren">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="footer__newsletter-success" id="footer-newsletter-success" data-i18n="footer.newsletter.success">
+                            ✓ Vielen Dank! Sie werden benachrichtigt.
+                        </p>
+                    </form>
+                    <div class="footer__glow"></div>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.navigation">Navigation</h3>
+                    <nav class="footer__nav">
+                        <a href="leistungen.html" class="footer__link" data-i18n="nav.services">Leistungen</a>
+                        <a href="ueber-uns.html" class="footer__link" data-i18n="nav.about">Über uns</a>
+                        <a href="faq.html" class="footer__link" data-i18n="nav.faq">FAQ</a>
+                        <a href="wissen.html" class="footer__link" data-i18n="nav.knowledge.label">Wissen</a>
+                        <a href="tools.html" class="footer__link" data-i18n="nav.tools">Tools</a>
+                        <a href="honorar.html" class="footer__link" data-i18n="nav.pricing">Honorar</a>
+                        <a href="karriere.html" class="footer__link" data-i18n="nav.career">Karriere</a>
+                        <a href="kontakt.html" class="footer__link" data-i18n="nav.contact">Kontakt</a>
+                    </nav>
+                </div>
+
+                <!-- Col 3: Kontakt -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.contact">Kontakt</h3>
+                    <address class="footer__address">
+                        <p class="footer__text">
+                            Weierstraße 43<br>
+                            52349 Düren<br>
+                            Deutschland
+                        </p>
+                        <p class="footer__text">
+                            <a href="tel:+492421998481" class="footer__link">+49 2421 99 848 10</a><br>
+                            <a href="mailto:info@stberben.com" class="footer__link">info@stberben.com</a><br>
+                            Fax: +49 2421 99 848 29
+                        </p>
+                        <p class="footer__text">
+                            <strong data-i18n="footer.openingHours">Öffnungszeiten:</strong><br>
+                            <span data-i18n="footer.hours">Mo–Fr: 08:30–18:00</span>
+                        </p>
+                    </address>
+                </div>
+
+                <!-- Col 4: Social + Dark Mode -->
+                <div class="footer__col">
+                    <h3 class="footer__section-title" data-i18n="footer.followUs">Folgen Sie uns</h3>
+                    <div class="footer__social-links">
+                        <!-- LinkedIn -->
+                        <div class="footer__social-item">
+                            <a href="https://www.linkedin.com/company/steuerkanzlei-ibrahim-erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">LinkedIn</span>
+                        </div>
+                        <!-- Facebook -->
+                        <div class="footer__social-item">
+                            <a href="https://www.facebook.com/steuerkanzlei.erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">Facebook</span>
+                        </div>
+                        <!-- Instagram -->
+                        <div class="footer__social-item">
+                            <a href="https://www.instagram.com/steuerkanzlei_erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">Instagram</span>
+                        </div>
+                        <!-- X / Twitter -->
+                        <div class="footer__social-item">
+                            <a href="https://x.com/stbkanzlei_erben" class="footer__social-btn"
+                                target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <span class="footer__tooltip">X (Twitter)</span>
+                        </div>
+                    </div>
+                    <!-- Dark Mode Toggle -->
+                    <div class="footer__theme-toggle">
+                        <svg class="footer__theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <button class="footer__toggle-switch" id="dark-mode-toggle"
+                            role="switch" aria-checked="false" aria-label="Dark Mode umschalten">
+                            <span class="footer__toggle-thumb"></span>
+                        </button>
+                        <svg class="footer__theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer__bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 Steuerkanzlei Ibrahim Erben. Alle Rechte vorbehalten.</p>
+                <nav class="footer__bottom-nav" aria-label="Rechtliches">
+                    <a href="impressum.html" class="footer__link" data-i18n="footer.imprint">Impressum</a>
+                    <a href="datenschutz.html" class="footer__link" data-i18n="footer.privacy">Datenschutz</a>
+                    <a href="#cookie-settings" class="footer__link" id="footer-cookie-btn" data-i18n="footer.cookieSettings">Cookie-Einstellungen</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JS for FAQ, Mobile Menu and Language Switcher -->
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq__question').forEach(button => {
+            button.addEventListener('click', () => {
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+                button.setAttribute('aria-expanded', !isExpanded);
+                const answer = button.nextElementSibling;
+                answer.classList.toggle('is-open');
+            });
+        });
+
+        // Mobile Menu Toggle
+        const navToggle = document.querySelector('.nav__toggle');
+        const navList = document.querySelector('.nav__list');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = navList.classList.contains('is-open');
+                navList.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', !isOpen);
+                navToggle.textContent = isOpen ? '☰' : '✕';
+            });
+        }
+
+        // Language Switcher
+        const langButton = document.getElementById('lang-button');
+        const langDropdown = document.getElementById('lang-dropdown');
+
+        if (langButton && langDropdown) {
+            langButton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isOpen = langDropdown.classList.contains('is-open');
+                langDropdown.classList.toggle('is-open');
+                langButton.setAttribute('aria-expanded', !isOpen);
+            });
+
+            document.addEventListener('click', () => {
+                langDropdown.classList.remove('is-open');
+                langButton.setAttribute('aria-expanded', 'false');
+            });
+
+            langDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        }
+
+        // Dropdown Navigation
+        const dropdownItems = document.querySelectorAll('.nav__item--has-dropdown');
+
+        dropdownItems.forEach(item => {
+            const link = item.querySelector('.nav__link--has-dropdown');
+            const dropdown = item.querySelector('.nav__dropdown');
+
+            if (link && dropdown) {
+                link.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        dropdownItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.classList.remove('is-open');
+                            }
+                        });
+                        item.classList.toggle('is-open');
+                    }
+                });
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav__item--has-dropdown')) {
+                dropdownItems.forEach(item => {
+                    item.classList.remove('is-open');
+                });
+            }
+        });
+    </script>
+
+    <!-- i18n Translation System -->
+    <!-- Cookie Consent -->
+    <script src="assets/js/cookies.js"></script>
+
+    <!-- Navigation Helpers -->
+    <script src="assets/js/navigation-helpers.js"></script>
+    <!-- Search Modal -->
+    <div class="search-modal">
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input type="text" class="search-input" placeholder="Suchen Sie nach Themen, Leistungen oder Informationen...">
+                <button class="search-close" aria-label="Schließen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Sticky Contact CTA -->
+<a href="kontakt.html" class="sticky-cta">
+    <svg class="sticky-cta__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+    </svg>
+    <span class="sticky-cta__text" data-i18n="features.stickyCta.contact">Jetzt Beratung anfragen</span>
+</a>
+
+<!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Nach oben scrollen">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/features.js"></script>
+
+    <!-- Batch 2: WhatsApp Direct Link -->
+    <a href="https://wa.me/4924219984810?text=Guten%20Tag%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Steuerberatung."
+        class="whatsapp-btn" target="_blank" rel="noopener noreferrer"
+        aria-label="WhatsApp-Kontakt öffnen">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-btn__tooltip">WhatsApp schreiben</span>
+    </a>
+
+    <!-- Batch 2: Click-to-Call (mobile only) -->
+    <a href="tel:+4924219984810" class="call-btn" aria-label="Jetzt anrufen">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        <span class="call-btn__tooltip">Jetzt anrufen</span>
+    </a>
+
+</body>
+</html>
+<!-- Updated 1771721945 -->
+<!-- Updated 1771723401 -->

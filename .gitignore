@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Netlify (contains site ID — do not commit)
+.netlify/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backup & temp files
+*.bak
+*.backup
+*.tmp
+*~
+
+# Build artifacts
+deploy.zip
+dist/
