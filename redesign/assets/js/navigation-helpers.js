@@ -177,21 +177,39 @@ function initTOCToggle() {
     const tocContainer = document.querySelector('.toc-sidebar');
     if (!tocContainer) return;
 
-    // Toggle TOC - close button inside TOC
+    const tocToggleBtn = document.querySelector('.toc-toggle-btn');
+
+    function syncTocState() {
+        const isOpen = tocContainer.classList.contains('is-open');
+        if (tocToggleBtn) tocToggleBtn.classList.toggle('is-active', isOpen);
+    }
+
+    // Toggle TOC - close button inside TOC (X button)
     const tocToggle = document.querySelector('.toc-toggle');
     if (tocToggle) {
         tocToggle.addEventListener('click', () => {
             tocContainer.classList.remove('is-open');
+            syncTocState();
         });
     }
 
-    // Toggle TOC - open button (bottom right)
-    const tocToggleBtn = document.querySelector('.toc-toggle-btn');
+    // Toggle TOC - open/close button (bottom right)
     if (tocToggleBtn) {
         tocToggleBtn.addEventListener('click', () => {
-            tocContainer.classList.add('is-open');
+            tocContainer.classList.toggle('is-open');
+            syncTocState();
         });
     }
+
+    // Close TOC when clicking outside
+    document.addEventListener('click', (e) => {
+        if (tocContainer.classList.contains('is-open') &&
+            !tocContainer.contains(e.target) &&
+            !tocToggleBtn?.contains(e.target)) {
+            tocContainer.classList.remove('is-open');
+            syncTocState();
+        }
+    });
 }
 
 function updateActiveSection(headings) {
@@ -280,28 +298,29 @@ function initSearch() {
 function performSearch(query, resultsContainer) {
     // Simple client-side search through page content
     const searchablePages = [
-        { title: 'Startseite', url: 'index.html', keywords: 'steuerberatung düren ibrahim erben wegzugssteuer ecommerce' },
-        { title: 'Leistungen', url: 'leistungen.html', keywords: 'steuerstrafrecht insolvenz wegzug ecommerce heilberufe immobilien nachfolge betreuung' },
-        { title: 'Steuerstraf- & Bußgeldverfahren', url: 'leistungen.html#steuerstrafrecht', keywords: 'steuerstrafrecht selbstanzeige verteidigung bußgeld ermittlung' },
-        { title: 'Wegzugssteuer & Internationales', url: 'leistungen.html#wegzug', keywords: 'wegzugssteuer ausland doppelbesteuerung international entstrickung' },
-        { title: 'E-Commerce & Online-Handel', url: 'leistungen.html#ecommerce', keywords: 'ecommerce amazon ebay shopify oss umsatzsteuer online handel' },
-        { title: 'Heilberufe & MVZ', url: 'leistungen.html#heilberufe', keywords: 'arzt zahnarzt apotheke mvz praxis medizin' },
-        { title: 'Immobilien & Vermögen', url: 'leistungen.html#immobilien', keywords: 'immobilien vermögen grundstück haus wohnung immobiliensteuer' },
-        { title: 'Nachfolge & Umstrukturierung', url: 'leistungen.html#nachfolge', keywords: 'nachfolge umstrukturierung holding umwandlung unternehmensübertragung' },
-        { title: 'Laufende Betreuung', url: 'leistungen.html#betreuung', keywords: 'buchhaltung lohnbuchhaltung jahresabschluss steuererklärung betreuung' },
-        { title: 'Über uns', url: 'ueber-uns.html', keywords: 'team kanzlei über uns philosophie standort düren' },
-        { title: 'FAQ', url: 'faq.html', keywords: 'fragen antworten häufig faq hilfe' },
-        { title: 'Wissen', url: 'wissen.html', keywords: 'wissen module außenprüfung steuerstrafrecht umwandlungssteuerrecht' },
-        { title: 'Steuerliche Außenprüfung', url: 'wissen-aussenpruefung.html', keywords: 'außenprüfung betriebsprüfung finanzamt prüfung' },
-        { title: 'Steuerstrafrecht', url: 'wissen-steuerstrafrecht.html', keywords: 'steuerstrafrecht verfahren selbstanzeige verteidigung' },
-        { title: 'Umwandlungssteuerrecht', url: 'wissen-umwandlungssteuerrecht.html', keywords: 'umwandlung verschmelzung spaltung formwechsel einbringung holding' },
-        { title: 'Tools', url: 'tools.html', keywords: 'tools rechner einkommensteuer brutto netto elterngeld steuerrechner' },
-        { title: 'Honorar', url: 'honorar.html', keywords: 'honorar preise kosten vergütung gebühren pauschale stundensatz' },
-        { title: 'Karriere', url: 'karriere.html', keywords: 'karriere jobs stellenangebote arbeiten team mitarbeiter' },
-        { title: 'Kontakt', url: 'kontakt.html', keywords: 'kontakt telefon email adresse düren weierstraße' }
+        { title: 'Startseite', url: 'index.html', keywords: 'steuerberatung düren ibrahim erben wegzugssteuer ecommerce 2025 2026 steuerkanzlei' },
+        { title: 'Leistungen', url: 'leistungen.html', keywords: 'steuerstrafrecht insolvenz wegzug ecommerce heilberufe immobilien nachfolge betreuung §370 §153' },
+        { title: 'Steuerstraf- & Bußgeldverfahren', url: 'leistungen.html#steuerstrafrecht', keywords: 'steuerstrafrecht selbstanzeige verteidigung bußgeld ermittlung §370 §371 §378 abgabenordnung ao strafrecht' },
+        { title: 'Wegzugssteuer & Internationales', url: 'leistungen.html#wegzug', keywords: 'wegzugssteuer ausland doppelbesteuerung international entstrickung §6 außensteuergesetz astg dba' },
+        { title: 'E-Commerce & Online-Handel', url: 'leistungen.html#ecommerce', keywords: 'ecommerce amazon ebay shopify oss umsatzsteuer online handel §3a §22f §25e ustg vat' },
+        { title: 'Heilberufe & MVZ', url: 'leistungen.html#heilberufe', keywords: 'arzt zahnarzt apotheke mvz praxis medizin §4 ustg steuerbefreiung heilbehandlung' },
+        { title: 'Immobilien & Vermögen', url: 'leistungen.html#immobilien', keywords: 'immobilien vermögen grundstück haus wohnung immobiliensteuer §23 estg spekulationssteuer 10 jahre' },
+        { title: 'Nachfolge & Umstrukturierung', url: 'leistungen.html#nachfolge', keywords: 'nachfolge umstrukturierung holding umwandlung unternehmensübertragung §13 §13a erbschaftsteuer schenkung' },
+        { title: 'Laufende Betreuung', url: 'leistungen.html#betreuung', keywords: 'buchhaltung lohnbuchhaltung jahresabschluss steuererklärung betreuung datev §4 estg gewinnermittlung' },
+        { title: 'Über uns', url: 'ueber-uns.html', keywords: 'kanzlei über uns philosophie standort düren weierstraße 43 52349' },
+        { title: 'FAQ', url: 'faq.html', keywords: 'fragen antworten häufig faq hilfe steuerberater kosten ablauf erstgespräch' },
+        { title: 'Wissen', url: 'wissen.html', keywords: 'wissen module außenprüfung steuerstrafrecht umwandlungssteuerrecht ratgeber leitfaden' },
+        { title: 'Steuerliche Außenprüfung', url: 'wissen-aussenpruefung.html', keywords: 'außenprüfung betriebsprüfung finanzamt prüfung §193 §194 §201 ao prüfungsanordnung schlussbesprechung' },
+        { title: 'Steuerstrafrecht', url: 'wissen-steuerstrafrecht.html', keywords: 'steuerstrafrecht verfahren selbstanzeige verteidigung §370 §371 §153 steuerhinterziehung strafbefreiende' },
+        { title: 'Umwandlungssteuerrecht', url: 'wissen-umwandlungssteuerrecht.html', keywords: 'umwandlung verschmelzung spaltung formwechsel einbringung holding §20 §21 §24 umwandlungssteuergesetz umwstg' },
+        { title: 'Tools & Steuerrechner', url: 'tools.html', keywords: 'tools rechner einkommensteuer brutto netto elterngeld steuerrechner 2025 minijob 556 grundfreibetrag 12096 pflegegeld kindergeld 250' },
+        { title: 'Honorar & Kosten', url: 'honorar.html', keywords: 'honorar preise kosten vergütung gebühren pauschale stundensatz steuerberatervergütungsverordnung stbvv rvo §13' },
+        { title: 'Karriere', url: 'karriere.html', keywords: 'karriere jobs stellenangebote arbeiten team mitarbeiter steuerberater steuerfachangestellter ausbildung' },
+        { title: 'Kontakt', url: 'kontakt.html', keywords: 'kontakt telefon email adresse düren weierstraße 43 52349 02421 99 848 10 info@stberben.com' },
+        { title: 'News & Steuernachrichten', url: 'news.html', keywords: 'news nachrichten steuern aktuell bmf bundesfinanzministerium haufe 2025 2026 gesetz änderung' }
     ];
 
-    const queryLower = query.toLowerCase();
+    const queryLower = query.toLowerCase().replace(/^§\s*/, '§');
     const results = searchablePages.filter(page => {
         const titleMatch = page.title.toLowerCase().includes(queryLower);
         const keywordsMatch = page.keywords.toLowerCase().includes(queryLower);
@@ -350,6 +369,59 @@ function escapeRegex(str) {
 }
 
 // ============================================================================
+// SOCIAL SPEED DIAL
+// ============================================================================
+function initSocialDial() {
+    const dial = document.querySelector('.social-dial');
+    const trigger = dial && dial.querySelector('.social-dial__trigger');
+    if (!dial || !trigger) return;
+
+    let isOpen = false;
+
+    function open() {
+        isOpen = true;
+        dial.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+    }
+
+    function close() {
+        isOpen = false;
+        dial.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+    }
+
+    // Click to toggle (works on touch devices)
+    trigger.addEventListener('click', function (e) {
+        e.stopPropagation();
+        isOpen ? close() : open();
+    });
+
+    // Desktop hover
+    dial.addEventListener('mouseenter', open);
+    dial.addEventListener('mouseleave', close);
+
+    // Close when clicking outside
+    document.addEventListener('click', function (e) {
+        if (isOpen && !dial.contains(e.target)) close();
+    });
+}
+
+// ============================================================================
+function initNavBodyClass() {
+    // Adds/removes body.nav-is-open so CSS can hide fixed elements (speed dial, scroll-to-top)
+    // when the mobile/tablet nav is open. Works alongside the inline nav toggle script.
+    const navToggle = document.querySelector('.nav__toggle');
+    const navList = document.querySelector('.nav__list');
+    if (!navToggle || !navList) return;
+
+    navToggle.addEventListener('click', function () {
+        // Run after the inline handler so is-open is already toggled
+        setTimeout(function () {
+            document.body.classList.toggle('nav-is-open', navList.classList.contains('is-open'));
+        }, 0);
+    });
+}
+
 // INITIALIZATION
 // ============================================================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -358,7 +430,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTableOfContents();
     initTOCToggle();
     initSearch();
+    initSocialDial();
+    initNavBodyClass();
 });
-<!-- Debug 1771717961 -->
-<!-- Deploy 1771719278 -->
-<!-- Deploy 1771719613 -->
+// nav-fix-1772025098

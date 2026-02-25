@@ -57,11 +57,14 @@
       "ctaSecondary": "Frequently Asked Questions"
     },
     "slide5": {
-      "title": "Specialization in Complex Tax Matters",
-      "subtitle": "When standard solutions are not enough: We support entrepreneurs in highly specialized tax challenges.",
-      "stat1Label": "Specializations",
-      "stat2Label": "Digital Processes",
-      "stat3Label": "Emergency Response Time"
+      "badge": "Specialization",
+      "title": "Your Legacy. Our Responsibility.",
+      "subtitle": "From family succession to business sale — we guide every generational transition with tax-optimized, discreet, and forward-thinking advice.",
+      "tag1": "Inheritance Tax Planning",
+      "tag2": "Corporate Law & Restructuring",
+      "tag3": "MBO & Business Sale",
+      "ctaPrimary": "Plan Succession",
+      "ctaSecondary": "Request Initial Consultation"
     }
   },
   "trustBar": {
@@ -489,7 +492,12 @@
         "consultation": "Initial Consultation & Costs",
         "collaboration": "Collaboration",
         "specializations": "Specializations",
-        "other": "Additional Questions"
+        "other": "Additional Questions",
+        "audits": "Audits & Proceedings",
+        "taxcriminal": "Tax Criminal Law",
+        "restructuring": "Restructuring",
+        "crisis": "Crisis & Insolvency",
+        "international": "International & Turkey"
       },
       "q1": {
         "q": "Who is your firm right for?",
@@ -570,6 +578,66 @@
       "q20": {
         "q": "Do you also work with start-ups?",
         "a": "Yes, gladly. We accompany you from founding to growth: choice of legal form, business registration, tax office registration, ongoing bookkeeping, tax returns. We have extensive experience especially with e-commerce start-ups, healthcare professions, or planned internationalization."
+      },
+      "q100": {
+        "q": "Do you actively accompany tax audits?",
+        "a": "Absolutely. We handle communication with the tax authorities, structure audit areas in advance and accompany the audit strategically – with the goal of minimizing risks and avoiding escalation."
+      },
+      "q101": {
+        "q": "Do you also advise on tax risks and liability questions?",
+        "a": "Yes. A focus of our work is the identification and assessment of tax risks, particularly in connection with managing director responsibilities, hidden profit distributions, liability standards, and tax criminal law intersections."
+      },
+      "q102": {
+        "q": "Do you accept mandates with prior burdens or past errors?",
+        "a": "Yes. Clients often come to us when earlier structures were suboptimal or risks have arisen. We analyze, prioritize, and develop legally sound solutions – even under time pressure."
+      },
+      "q103": {
+        "q": "Do you also advise on restructuring after errors?",
+        "a": "Yes. We analyze existing errors, prioritize risks, and develop legally secure correction and realignment models – with measured judgment and strategy."
+      },
+      "q104": {
+        "q": "Are you also active in tax criminal law?",
+        "a": "Yes. We advise preventively on tax criminal law risks as well as supporting ongoing proceedings – always with a focus on damage limitation, structuring, and legally sound communication."
+      },
+      "q105": {
+        "q": "How well networked is your firm in tax criminal law?",
+        "a": "Very well. We work closely with specialized lawyers and know precisely the interfaces between tax law, tax criminal law, and procedural law."
+      },
+      "q106": {
+        "q": "Do you also support voluntary disclosures or preventive measures?",
+        "a": "Yes. We advise both preventively to avoid tax criminal law risks and supportively for existing problem constellations."
+      },
+      "q107": {
+        "q": "Do you advise on restructurings and conversions?",
+        "a": "Yes. We accompany mergers, splits, contributions, changes of form, and holding restructurings – both from a tax and conceptual perspective. The goal is always a legally sound and economically sensible implementation."
+      },
+      "q108": {
+        "q": "Do you advise on shareholder conflicts or separations?",
+        "a": "Yes. Particularly in shareholder disputes, exits, or restructurings, tax expertise is crucial to avoid or limit economic damage."
+      },
+      "q109": {
+        "q": "Can you audit existing structures for soundness?",
+        "a": "Yes. Many clients commission us specifically for a tax risk and potential analysis of existing structures – without immediate restructuring, but with clear recommendations for action."
+      },
+      "q110": {
+        "q": "Do you also accompany company sales or participations?",
+        "a": "Yes. We advise on share deals, asset deals, participation acquisitions and disposals, as well as tax-optimal transaction preparation."
+      },
+      "q111": {
+        "q": "Do you only accompany clients during growth or also in crisis times?",
+        "a": "Both. We accompany our clients both in good times – with structuring, expansion, and optimization – and in difficult phases such as corporate crises, liquidity bottlenecks, or insolvency situations. Particularly in crises, forward-looking and reliable tax consulting is crucial."
+      },
+      "q112": {
+        "q": "Are you also active in advisory capacity during corporate crises and insolvencies?",
+        "a": "Yes. We advise on restructurings, reorganizations, impending insolvency, insolvency filing obligations, and in ongoing insolvency proceedings. Our focus is on liability avoidance, structure preservation, and legally sound support."
+      },
+      "q113": {
+        "q": "Do you also handle mandates with international connections outside Turkey?",
+        "a": "Yes. In addition to Turkey-related matters, we also advise on other cross-border situations, particularly in the European context and for international VAT."
+      },
+      "q114": {
+        "q": "Are you familiar with Turkish tax law?",
+        "a": "Yes. We have extensive experience in German-Turkish tax matters and work closely with qualified cooperation partners in Turkey."
       },
       "closing": {
         "heading": "Didn't find your question?",

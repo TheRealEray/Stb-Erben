@@ -172,4 +172,15 @@
     }
   };
 
+  // Footer "Cookie-Einstellungen" link handler
+  document.addEventListener('DOMContentLoaded', function() {
+    const cookieSettingsBtn = document.getElementById('footer-cookie-btn');
+    if (cookieSettingsBtn) {
+      cookieSettingsBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.CookieConsent.reset();
+      });
+    }
+  });
+
 })();
