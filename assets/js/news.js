@@ -9,7 +9,7 @@
  */
 
 const NEWS_CACHE_KEY = 'news_cache';
-const NEWS_CACHE_TTL = 60 * 60 * 1000; // 1 Stunde
+const NEWS_CACHE_TTL = 24 * 60 * 60 * 1000; // 24 Stunden (täglich aktualisiert)
 
 const RSS2JSON = 'https://api.rss2json.com/v1/api.json?rss_url=';
 

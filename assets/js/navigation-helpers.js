@@ -177,21 +177,39 @@ function initTOCToggle() {
     const tocContainer = document.querySelector('.toc-sidebar');
     if (!tocContainer) return;
 
-    // Toggle TOC - close button inside TOC
+    const tocToggleBtn = document.querySelector('.toc-toggle-btn');
+
+    function syncTocState() {
+        const isOpen = tocContainer.classList.contains('is-open');
+        if (tocToggleBtn) tocToggleBtn.classList.toggle('is-active', isOpen);
+    }
+
+    // Toggle TOC - close button inside TOC (X button)
     const tocToggle = document.querySelector('.toc-toggle');
     if (tocToggle) {
         tocToggle.addEventListener('click', () => {
             tocContainer.classList.remove('is-open');
+            syncTocState();
         });
     }
 
-    // Toggle TOC - open button (bottom right)
-    const tocToggleBtn = document.querySelector('.toc-toggle-btn');
+    // Toggle TOC - open/close button (bottom right)
     if (tocToggleBtn) {
         tocToggleBtn.addEventListener('click', () => {
-            tocContainer.classList.add('is-open');
+            tocContainer.classList.toggle('is-open');
+            syncTocState();
         });
     }
+
+    // Close TOC when clicking outside
+    document.addEventListener('click', (e) => {
+        if (tocContainer.classList.contains('is-open') &&
+            !tocContainer.contains(e.target) &&
+            !tocToggleBtn?.contains(e.target)) {
+            tocContainer.classList.remove('is-open');
+            syncTocState();
+        }
+    });
 }
 
 function updateActiveSection(headings) {
@@ -359,6 +377,3 @@ document.addEventListener('DOMContentLoaded', () => {
     initTOCToggle();
     initSearch();
 });
-<!-- Debug 1771717961 -->
-<!-- Deploy 1771719278 -->
-<!-- Deploy 1771719613 -->

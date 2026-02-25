@@ -260,6 +260,34 @@
                             </div>
                         </div>
 
+                        <!-- Sicherheitsabfrage (CAPTCHA) -->
+                        <div class="form__group form__captcha-group">
+                            <label class="form__label" for="captcha-input">
+                                Sicherheitsfrage *
+                            </label>
+                            <div class="form__captcha-row">
+                                <div class="form__captcha-question" id="captcha-display">
+                                    <!-- filled by JS -->
+                                </div>
+                                <input
+                                    type="number"
+                                    id="captcha-input"
+                                    name="captcha"
+                                    class="form__input form__captcha-input"
+                                    required
+                                    autocomplete="off"
+                                    placeholder="Ergebnis eingeben"
+                                    min="0"
+                                    max="99"
+                                >
+                            </div>
+                            <small style="color: var(--color-text-light); margin-top: 0.35rem; display: block;">
+                                Bitte lösen Sie die Aufgabe, um das Formular zu senden.
+                            </small>
+                        </div>
+                        <!-- Honeypot (für Spam-Schutz, nicht sichtbar) -->
+                        <input type="text" name="website" class="form__honeypot" tabindex="-1" autocomplete="off">
+
                         <button type="submit" class="btn btn--primary form__submit" data-i18n="pages.contact.form.submitButton">
                             Nachricht senden
                         </button>
@@ -523,6 +551,32 @@
 
     <!-- Simple JS for Form Validation and Mobile Menu -->
     <script>
+        // ── CAPTCHA ──────────────────────────────────────────────
+        let captchaAnswer = 0;
+
+        function generateCaptcha() {
+            const a = Math.floor(Math.random() * 9) + 1;
+            const b = Math.floor(Math.random() * 9) + 1;
+            const ops = ['+', '−', '×'];
+            const op = ops[Math.floor(Math.random() * ops.length)];
+            let answer;
+            if (op === '+') answer = a + b;
+            else if (op === '−') answer = Math.abs(a - b);
+            else answer = a * b;
+            // For subtraction always show larger − smaller to avoid negatives
+            const displayA = op === '−' ? Math.max(a, b) : a;
+            const displayB = op === '−' ? Math.min(a, b) : b;
+            captchaAnswer = answer;
+            const display = document.getElementById('captcha-display');
+            if (display) {
+                display.innerHTML = `<span class="form__captcha-math">${displayA} ${op} ${displayB} =</span>`;
+            }
+            const input = document.getElementById('captcha-input');
+            if (input) input.value = '';
+        }
+
+        document.addEventListener('DOMContentLoaded', generateCaptcha);
+
         // Mobile Menu Toggle
         const navToggle = document.querySelector('.nav__toggle');
         const navList = document.querySelector('.nav__list');
@@ -542,44 +596,41 @@
         form.addEventListener('submit', (e) => {
             e.preventDefault();
 
+            // Honeypot check
+            const honeypot = form.querySelector('input[name="website"]');
+            if (honeypot && honeypot.value) return;
+
             // Get form data
             const formData = new FormData(form);
             const data = Object.fromEntries(formData);
 
             // Simple validation
             if (!data.name || !data.email || !data.subject || !data.message || !data.privacy) {
-                const message = window.i18n ? window.i18n.t('pages.contact.form.requiredFieldsAlert') : 'Bitte füllen Sie alle Pflichtfelder aus.';
-                alert(message);
+                alert('Bitte füllen Sie alle Pflichtfelder aus.');
                 return;
             }
 
             // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(data.email)) {
-                const message = window.i18n ? window.i18n.t('pages.contact.form.invalidEmailAlert') : 'Bitte geben Sie eine gültige E-Mail-Adresse ein.';
-                alert(message);
+                alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
                 return;
             }
 
-            // PLACEHOLDER: Here you would normally send the data to a backend
-            // For now, we'll create a mailto link as a fallback
-            const subject = encodeURIComponent(`Kontaktanfrage: ${data.subject}`);
-            const body = encodeURIComponent(
-                `Name: ${data.name}\n` +
-                `E-Mail: ${data.email}\n` +
-                `Telefon: ${data.phone || 'Nicht angegeben'}\n\n` +
-                `Nachricht:\n${data.message}`
-            );
+            // CAPTCHA validation
+            const captchaInput = parseInt(document.getElementById('captcha-input').value, 10);
+            if (isNaN(captchaInput) || captchaInput !== captchaAnswer) {
+                alert('Die Sicherheitsfrage wurde falsch beantwortet. Bitte versuchen Sie es erneut.');
+                generateCaptcha();
+                return;
+            }
 
             // Show success message
-            const successMessage = window.i18n ? window.i18n.t('pages.contact.form.successMessage') : 'Vielen Dank für Ihre Nachricht! Wir melden uns innerhalb von 24 Stunden bei Ihnen.\n\n(HINWEIS: Dies ist eine Demo. In der Live-Version würde das Formular an Ihr Backend gesendet.)';
-            alert(successMessage);
+            alert('Vielen Dank für Ihre Nachricht! Wir melden uns innerhalb von 24 Stunden bei Ihnen.\n\n(HINWEIS: Dies ist eine Demo. In der Live-Version würde das Formular an Ihr Backend gesendet.)');
 
-            // Optional: Open mailto link
-            // window.location.href = `mailto:info@stberben.com?subject=${subject}&body=${body}`;
-
-            // Reset form
+            // Reset form and generate new CAPTCHA
             form.reset();
+            generateCaptcha();
         });
 
         // Language Switcher
