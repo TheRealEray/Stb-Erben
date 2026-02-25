@@ -44,16 +44,23 @@
 
 <main>
 
-    <!-- Breadcrumb -->
-    <div class="sp-breadcrumb">
-        <div class="container">
-            <a href="index.html">Startseite</a>
-            <span aria-hidden="true">›</span>
-            <a href="leistungen.html">Leistungen</a>
-            <span aria-hidden="true">›</span>
-            <span aria-current="page">Heilberufe &amp; MVZ</span>
-        </div>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <div class="container">
+        <ol class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link" data-i18n="breadcrumbs.home">Startseite</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+                <a href="leistungen.html" class="breadcrumbs__link">Leistungen</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__separator" aria-hidden="true">/</span>
+                <span class="breadcrumbs__current" aria-current="page">Heilberufe &amp; MVZ</span>
+            </li>
+        </ol>
     </div>
+    </nav>
 
     <!-- Hero -->
     <section class="sp-hero">
