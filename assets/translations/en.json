@@ -57,11 +57,14 @@
       "ctaSecondary": "Frequently Asked Questions"
     },
     "slide5": {
-      "title": "Specialization in Complex Tax Matters",
-      "subtitle": "When standard solutions are not enough: We support entrepreneurs in highly specialized tax challenges.",
-      "stat1Label": "Specializations",
-      "stat2Label": "Digital Processes",
-      "stat3Label": "Emergency Response Time"
+      "badge": "Specialization",
+      "title": "Your Legacy. Our Responsibility.",
+      "subtitle": "From family succession to business sale — we guide every generational transition with tax-optimized, discreet, and forward-thinking advice.",
+      "tag1": "Inheritance Tax Planning",
+      "tag2": "Corporate Law & Restructuring",
+      "tag3": "MBO & Business Sale",
+      "ctaPrimary": "Plan Succession",
+      "ctaSecondary": "Request Initial Consultation"
     }
   },
   "trustBar": {

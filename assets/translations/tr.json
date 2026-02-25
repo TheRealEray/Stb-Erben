@@ -58,11 +58,14 @@
       "badge": "24/7"
     },
     "slide5": {
-      "title": "Karmaşık Vergi Sorularında Uzmanlaşma",
-      "subtitle": "Standart çözümler yeterli olmadığında: Girişimcilere yüksek düzeyde uzmanlaşmış vergi zorluklarında eşlik ediyoruz.",
-      "stat1Label": "Uzmanlık Alanı",
-      "stat2Label": "Dijital Süreçler",
-      "stat3Label": "Acil Yanıt Süresi"
+      "badge": "Uzmanlık Alanı",
+      "title": "Mirasınız. Sorumluluğumuz.",
+      "subtitle": "Aile devrine ya da işletme satışına kadar — her nesil geçişini vergi açısından optimize edilmiş, gizli ve ileri görüşlü bir şekilde yürütüyoruz.",
+      "tag1": "Miras Vergisi Planlaması",
+      "tag2": "Şirket Hukuku & Yeniden Yapılandırma",
+      "tag3": "MBO & İşletme Satışı",
+      "ctaPrimary": "Devri Planlayın",
+      "ctaSecondary": "İlk Görüşmeyi Talep Edin"
     }
   },
   "trustBar": {

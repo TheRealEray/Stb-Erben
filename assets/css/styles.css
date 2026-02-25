@@ -4637,6 +4637,13 @@ body.is-reading-mode .article {
   animation: slideUpCTA 0.6s ease-out 0.4s both;
 }
 
+/* On mobile the sticky CTA spans full width — push dial above it */
+@media (max-width: 768px) {
+  .social-dial {
+    bottom: 5rem;
+  }
+}
+
 .social-dial__trigger {
   width: 52px;
   height: 52px;

@@ -899,11 +899,14 @@
       "ctaSecondary": "Häufige Fragen"
     },
     "slide5": {
-      "title": "Spezialisierung auf komplexe Steuerfragen",
-      "subtitle": "Wenn Standardlösungen nicht ausreichen: Wir begleiten Unternehmer bei hochspezialisierten steuerlichen Herausforderungen.",
-      "stat1Label": "Fachbereiche",
-      "stat2Label": "Digitale Prozesse",
-      "stat3Label": "Notfall-Reaktionszeit"
+      "badge": "Spezialgebiet",
+      "title": "Ihr Lebenswerk. Unsere Verantwortung.",
+      "subtitle": "Von der Familienübergabe bis zum Unternehmensverkauf — wir begleiten jeden Generationenwechsel steueroptimiert, diskret und mit Weitblick.",
+      "tag1": "Erbschaftssteuer-Planung",
+      "tag2": "Gesellschaftsrecht & UmwStG",
+      "tag3": "MBO & Unternehmensverkauf",
+      "ctaPrimary": "Nachfolge planen",
+      "ctaSecondary": "Erstgespräch anfragen"
     }
   },
   "trustBar": {
