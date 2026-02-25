@@ -370,7 +370,7 @@ li {
 
 /* === HERO ACCORDION (leistungen.html) ================================= */
 .hero--accordion {
-  background: var(--color-bg);
+  background: linear-gradient(135deg, #eef2ff 0%, #f0f9ff 50%, #faf5ff 100%);
   padding: var(--spacing-2xl) 0;
   overflow: hidden;
   position: relative;
@@ -4283,6 +4283,16 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  /* Override btn--secondary (white text/border) for light-bg context */
+  color: var(--color-primary) !important;
+  border-color: var(--color-border) !important;
+  background-color: transparent !important;
+}
+
+.print-button:hover {
+  background-color: var(--color-bg-light) !important;
+  color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
 }
 
 .print-button svg {
@@ -4578,8 +4588,7 @@ body.is-reading-mode .toc-sidebar,
 body.is-reading-mode .footer,
 body.is-reading-mode .progress-bar,
 body.is-reading-mode .back-button,
-body.is-reading-mode .whatsapp-btn,
-body.is-reading-mode .call-btn {
+body.is-reading-mode .social-dial {
   display: none !important;
 }
 
@@ -4600,141 +4609,131 @@ body.is-reading-mode .article {
   line-height: 1.85;
 }
 
-/* ─── FEATURE 9: WHATSAPP BUTTON ─── */
+/* ─── SOCIAL SPEED DIAL ─── */
 
-.whatsapp-btn {
+.social-dial {
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
-  width: 48px;
-  height: 48px;
-  background: #25d366;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.45);
   z-index: 999;
-  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   animation: slideUpCTA 0.6s ease-out 0.4s both;
-  text-decoration: none;
 }
 
-.whatsapp-btn:hover {
-  transform: scale(1.12);
-  box-shadow: 0 6px 22px rgba(37, 211, 102, 0.55);
-  opacity: 1;
-}
-
-.whatsapp-btn svg {
-  width: 1.75rem;
-  height: 1.75rem;
-  flex-shrink: 0;
-}
-
-.whatsapp-btn__tooltip {
-  position: absolute;
-  right: calc(100% + 10px);
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.78);
-  color: white;
-  font-size: 0.72rem;
-  padding: 4px 10px;
-  border-radius: 4px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.18s;
-}
-
-.whatsapp-btn:hover .whatsapp-btn__tooltip {
-  opacity: 1;
-}
-
-/* ─── FEATURE 10: CLICK-TO-CALL (MOBILE ONLY) ─── */
-
-.call-btn {
-  position: fixed;
-  bottom: 1.5rem;
-  right: 5.5rem;
-  width: 3.25rem;
-  height: 3.25rem;
+.social-dial__trigger {
+  width: 52px;
+  height: 52px;
   background: var(--color-primary);
   color: white;
   border-radius: 50%;
-  display: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 18px rgba(30, 58, 138, 0.4);
-  z-index: 999;
-  transition: transform 0.2s, box-shadow 0.2s;
-  animation: slideUpCTA 0.6s ease-out 0.2s both;
-  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(30, 58, 138, 0.45);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
 }
 
-.call-btn:hover {
-  transform: scale(1.12);
-  opacity: 1;
-}
-
-.call-btn svg {
+.social-dial__trigger svg {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-.call-btn__tooltip {
-  position: absolute;
-  right: calc(100% + 10px);
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.78);
-  color: white;
-  font-size: 0.72rem;
-  padding: 4px 10px;
-  border-radius: 4px;
-  white-space: nowrap;
-  opacity: 0;
+.social-dial__trigger:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 24px rgba(30, 58, 138, 0.55);
+}
+
+.social-dial.is-open .social-dial__trigger {
+  background-color: #dc2626;
+}
+
+.social-dial__items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+  padding-right: 11px;
   pointer-events: none;
-  transition: opacity 0.18s;
 }
 
-.call-btn:hover .call-btn__tooltip {
+.social-dial__item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: translateX(40px) scale(0.3);
+  transition: opacity 0.28s ease, transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+/* Stagger: email (5th child = closest) appears first */
+.social-dial__item:nth-child(5) { transition-delay: 0s; }
+.social-dial__item:nth-child(4) { transition-delay: 0.05s; }
+.social-dial__item:nth-child(3) { transition-delay: 0.10s; }
+.social-dial__item:nth-child(2) { transition-delay: 0.15s; }
+.social-dial__item:nth-child(1) { transition-delay: 0.20s; }
+
+.social-dial.is-open .social-dial__items {
+  pointer-events: auto;
+}
+
+.social-dial.is-open .social-dial__item {
   opacity: 1;
+  transform: translateX(0) scale(1);
+  pointer-events: auto;
 }
 
-/* Mobile: show call button, reposition WhatsApp */
-@media (max-width: 768px) {
-  .call-btn {
-    display: flex;
-    bottom: 5.25rem;
-    right: 1rem;
-    width: 3rem;
-    height: 3rem;
-  }
+/* Reverse stagger on close */
+.social-dial.is-open .social-dial__item:nth-child(1) { transition-delay: 0s; }
+.social-dial.is-open .social-dial__item:nth-child(2) { transition-delay: 0.04s; }
+.social-dial.is-open .social-dial__item:nth-child(3) { transition-delay: 0.08s; }
+.social-dial.is-open .social-dial__item:nth-child(4) { transition-delay: 0.12s; }
+.social-dial.is-open .social-dial__item:nth-child(5) { transition-delay: 0.16s; }
 
-  .whatsapp-btn {
-    bottom: 5.25rem;
-    right: 4.5rem;
-    width: 3rem;
-    height: 3rem;
-  }
+.social-dial__item--wa    { background: #25d366; }
+.social-dial__item--ig    { background: linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #8134af 100%); }
+.social-dial__item--li    { background: #0a66c2; }
+.social-dial__item--phone { background: #16a34a; }
+.social-dial__item--email { background: var(--color-primary); }
 
-  .whatsapp-btn svg {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
+.social-dial__item:hover {
+  transform: translateX(0) scale(1.15) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
 
-  .whatsapp-btn__tooltip,
-  .call-btn__tooltip {
-    display: none;
-  }
+.social-dial__item svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
 
-  /* ── TOC button: stack above Call + WhatsApp, no overlap ── */
-  .toc-toggle-btn {
-    bottom: 9.5rem;
-    right: 1.5rem;
+/* Mobile: reduce item size slightly */
+@media (max-width: 480px) {
+  .social-dial__item {
+    width: 38px;
+    height: 38px;
+  }
+  .social-dial__item svg {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+  .social-dial__items {
+    gap: 7px;
+    padding-right: 9px;
   }
 }
 
@@ -5475,3 +5474,4 @@ body.is-reading-mode .article {
   opacity: 0.5;
 }
 <!-- nav-mobile-fix-1772021699 -->
+<!-- deploy-1772023496 -->

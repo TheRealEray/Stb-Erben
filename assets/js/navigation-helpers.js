@@ -369,6 +369,44 @@ function escapeRegex(str) {
 }
 
 // ============================================================================
+// SOCIAL SPEED DIAL
+// ============================================================================
+function initSocialDial() {
+    const dial = document.querySelector('.social-dial');
+    const trigger = dial && dial.querySelector('.social-dial__trigger');
+    if (!dial || !trigger) return;
+
+    let isOpen = false;
+
+    function open() {
+        isOpen = true;
+        dial.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+    }
+
+    function close() {
+        isOpen = false;
+        dial.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+    }
+
+    // Click to toggle (works on touch devices)
+    trigger.addEventListener('click', function (e) {
+        e.stopPropagation();
+        isOpen ? close() : open();
+    });
+
+    // Desktop hover
+    dial.addEventListener('mouseenter', open);
+    dial.addEventListener('mouseleave', close);
+
+    // Close when clicking outside
+    document.addEventListener('click', function (e) {
+        if (isOpen && !dial.contains(e.target)) close();
+    });
+}
+
+// ============================================================================
 // INITIALIZATION
 // ============================================================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -377,4 +415,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initTableOfContents();
     initTOCToggle();
     initSearch();
+    initSocialDial();
 });
