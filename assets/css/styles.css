@@ -5258,7 +5258,6 @@ body.is-reading-mode .article {
 }
 /* toc-mobile-fix-1771778765 */
 /* button-layout-fix-1771779345 */
-<!-- nav-redesign 1771779957 -->
 
 /* ═══════════════════════════════════════════════════════════════
    NEWS PAGE
@@ -5488,8 +5487,6 @@ body.is-reading-mode .article {
 [data-theme="dark"] .news-hero {
   background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
 }
-<!-- Updated 1772020453 -->
-<!-- nav-fix-1772020895 -->
 
 /* ─── JOB CARD BADGE BACKGROUNDS — dark mode ─── */
 [data-theme="dark"] [style*="background: #dbeafe"],
@@ -5516,6 +5513,85 @@ body.is-reading-mode .article {
 [data-theme="dark"] #leistungen-dots-canvas {
   opacity: 0.5;
 }
-<!-- nav-mobile-fix-1772021699 -->
-<!-- deploy-1772023496 -->
-<!-- nav-fix-1772025098 -->
+
+/* ─── DARK MODE: MISSING COMPONENT OVERRIDES ─── */
+
+/* Quote block had hardcoded white background */
+[data-theme="dark"] .quote {
+  background: var(--color-bg-light) !important;
+  color: var(--color-text) !important;
+}
+[data-theme="dark"] .quote::before {
+  color: var(--color-border);
+}
+
+/* Search modal had hardcoded white background */
+[data-theme="dark"] .search-modal-content {
+  background: var(--color-bg-light) !important;
+  color: var(--color-text) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+[data-theme="dark"] .search-modal-header {
+  border-bottom-color: var(--color-border);
+}
+[data-theme="dark"] .search-input {
+  background: var(--color-bg) !important;
+  color: var(--color-text) !important;
+  border-color: var(--color-border) !important;
+}
+[data-theme="dark"] .search-result-item {
+  border-bottom-color: var(--color-border);
+}
+[data-theme="dark"] .search-result-item:hover {
+  background: var(--color-bg) !important;
+}
+
+/* Placeholder components had hardcoded brown color */
+[data-theme="dark"] .placeholder__title,
+[data-theme="dark"] .placeholder__text {
+  color: var(--color-text-light) !important;
+}
+
+/* Leistungen inline note-boxes (background: white with left-border) */
+[data-theme="dark"] [style*="background: white"][style*="border-left"] {
+  background: var(--color-bg-light) !important;
+  color: var(--color-text) !important;
+}
+
+/* Missing pastel backgrounds (faf5ff = purple, ecfeff = cyan) */
+[data-theme="dark"] [style*="background: #faf5ff"],
+[data-theme="dark"] [style*="background: #fafafa"],
+[data-theme="dark"] [style*="background: #fff7ed"] {
+  background: var(--color-bg-light) !important;
+  color: var(--color-text) !important;
+}
+
+/* Dark card text colors that don't render in dark mode */
+[data-theme="dark"] [style*="color: #991b1b"] { color: #fca5a5 !important; }
+[data-theme="dark"] [style*="color: #7c2d12"] { color: #fdba74 !important; }
+[data-theme="dark"] [style*="color: #1e3a8a"] { color: #93c5fd !important; }
+[data-theme="dark"] [style*="color: #1e40af"] { color: #93c5fd !important; }
+[data-theme="dark"] [style*="color: #065f46"] { color: #6ee7b7 !important; }
+[data-theme="dark"] [style*="color: #5b21b6"] { color: #c4b5fd !important; }
+[data-theme="dark"] [style*="color: #9f1239"] { color: #fda4af !important; }
+[data-theme="dark"] [style*="color: #164e63"] { color: #67e8f9 !important; }
+[data-theme="dark"] [style*="color: #047857"] { color: #34d399 !important; }
+[data-theme="dark"] [style*="color: #d97706"] { color: #fcd34d !important; }
+[data-theme="dark"] [style*="color: #db2777"] { color: #f9a8d4 !important; }
+[data-theme="dark"] [style*="color: #7c3aed"] { color: #c4b5fd !important; }
+[data-theme="dark"] [style*="color: #0891b2"] { color: #67e8f9 !important; }
+
+/* ─── MOBILE: BUTTON TOUCH TARGETS ─── */
+
+/* btn--large on mobile: ensure minimum 44px touch height */
+@media (max-width: 768px) {
+  .btn--large {
+    padding: 0.875rem var(--spacing-lg) !important;
+    min-height: 44px;
+  }
+
+  /* Hero slideshow: reduce min-height on small screens */
+  .hero__slideshow {
+    min-height: 420px;
+  }
+}
