@@ -12,11 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
   initStickyCTA();
   initPrintButton();
 
-  // Future batches will add more init calls here
-  // initDarkMode();
-  // initReadingMode();
-  // initLazyLoading();
-  // etc.
+  // Footer Features
+  initDarkModeToggle();
+  initNewsletterForm();
+
+  // Batch 2: Navigation & Accessibility
+  initReadingMode();
+  initLazyLoading();
 });
 
 /**
@@ -116,6 +118,148 @@ if (typeof module !== 'undefined' && module.exports) {
     initProgressBar,
     initReadingTime,
     initStickyCTA,
-    initPrintButton
+    initPrintButton,
+    initDarkModeToggle,
+    initNewsletterForm
   };
+}
+
+/**
+ * Dark Mode Toggle
+ * Handles all .dark-mode-toggle elements (header + footer).
+ * Syncs state across all instances and persists to localStorage.
+ */
+function initDarkModeToggle() {
+  const allToggles = document.querySelectorAll('.dark-mode-toggle');
+  if (!allToggles.length) return;
+
+  const applyTheme = (dark) => {
+    if (dark) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+    }
+    // Sync all toggle buttons
+    allToggles.forEach(t => t.setAttribute('aria-checked', dark ? 'true' : 'false'));
+    // Sync footer switch thumb (aria-checked drives CSS)
+    const footerSwitch = document.getElementById('dark-mode-toggle');
+    if (footerSwitch) footerSwitch.setAttribute('aria-checked', dark ? 'true' : 'false');
+  };
+
+  // Restore saved preference on load
+  const saved = localStorage.getItem('theme');
+  if (saved === 'dark') applyTheme(true);
+
+  // Handle clicks on all toggles
+  allToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      applyTheme(!isDark);
+    });
+  });
+
+  // Also keep footer switch working (id-based, legacy)
+  const footerSwitch = document.getElementById('dark-mode-toggle');
+  if (footerSwitch && !footerSwitch.classList.contains('dark-mode-toggle')) {
+    footerSwitch.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      applyTheme(!isDark);
+    });
+  }
+}
+
+/**
+ * Footer Feature: Newsletter Form
+ * Shows a success message on submit (no backend needed for demo).
+ */
+function initNewsletterForm() {
+  const form = document.getElementById('footer-newsletter-form');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const input = form.querySelector('.footer__newsletter-input');
+    const success = document.getElementById('footer-newsletter-success');
+
+    if (!input || !input.value.includes('@')) return;
+
+    if (success) success.classList.add('is-visible');
+    if (input) input.value = '';
+
+    // Hide message after 5 seconds
+    setTimeout(() => {
+      if (success) success.classList.remove('is-visible');
+    }, 5000);
+  });
+}
+
+/**
+ * Batch 2 – Feature 7: Reading Mode
+ * Hides distractions and focuses on the article content.
+ * Activated by .reading-mode-btn, exited via .reading-mode-exit.
+ */
+function initReadingMode() {
+  const btns = document.querySelectorAll('.reading-mode-btn');
+  if (!btns.length) return;
+
+  // Inject the exit button once into the body
+  const exitBtn = document.createElement('button');
+  exitBtn.className = 'reading-mode-exit';
+  exitBtn.setAttribute('aria-label', 'Lesemodus beenden');
+  exitBtn.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+      fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+    Lesemodus beenden`;
+  document.body.appendChild(exitBtn);
+
+  const enter = () => {
+    document.body.classList.add('is-reading-mode');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  const exit = () => document.body.classList.remove('is-reading-mode');
+
+  btns.forEach(btn => btn.addEventListener('click', enter));
+  exitBtn.addEventListener('click', exit);
+
+  // Also exit on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && document.body.classList.contains('is-reading-mode')) exit();
+  });
+}
+
+/**
+ * Batch 2 – Feature 8: Lazy Loading
+ * Uses native browser lazy loading as primary mechanism.
+ * Adds IntersectionObserver fallback for older browsers.
+ */
+function initLazyLoading() {
+  // Native lazy loading is already set via loading="lazy" in HTML.
+  // This adds a fade-in effect when images enter the viewport.
+  const images = document.querySelectorAll('img[loading="lazy"]');
+  if (!images.length || !('IntersectionObserver' in window)) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '50px' });
+
+  images.forEach(img => {
+    img.style.opacity = '0';
+    img.style.transition = 'opacity 0.4s ease';
+    // If already loaded (cached), show immediately
+    if (img.complete) {
+      img.style.opacity = '1';
+    } else {
+      observer.observe(img);
+      img.addEventListener('load', () => { img.style.opacity = '1'; }, { once: true });
+    }
+  });
 }

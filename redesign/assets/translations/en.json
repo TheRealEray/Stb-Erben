@@ -8,7 +8,12 @@
     "services": "Services",
     "about": "About Us",
     "faq": "FAQ",
-    "knowledge": "Knowledge",
+    "knowledge": {
+      "label": "Knowledge",
+      "aussenpruefung": "Tax Field Audit",
+      "steuerstrafrecht": "Tax Criminal Law",
+      "umwandlung": "Reorganization Tax Law"
+    },
     "tools": "Tools",
     "pricing": "Pricing",
     "career": "Career",
@@ -22,7 +27,8 @@
       "realEstate": "Real Estate & Assets",
       "succession": "Succession & Restructuring",
       "support": "Ongoing Support"
-    }
+    },
+    "news": "News"
   },
   "hero": {
     "slide1": {
@@ -178,7 +184,15 @@
     "hours": "Mon–Fri: 08:30–18:00",
     "imprint": "Imprint",
     "privacy": "Privacy Policy",
-    "copyright": "© 2026 Steuerkanzlei Ibrahim Erben. All rights reserved."
+    "cookieSettings": "Cookie Settings",
+    "followUs": "Follow Us",
+    "copyright": "© 2026 Steuerkanzlei Ibrahim Erben. All rights reserved.",
+    "newsletter": {
+      "title": "Stay Connected",
+      "desc": "Current tax news and important legislative changes directly to your inbox.",
+      "placeholder": "Your email address",
+      "success": "✓ Thank you! You will be notified."
+    }
   },
   "homepage": {
     "highlightedService": {
@@ -363,59 +377,6 @@
     "contact": {
       "hero": {
         "title": "Let's Talk",
-        "subtitle": "We look forward to your message. Contact us by phone, email, or through our contact form – we'll respond within 24 hours."
-      }
-    },
-    "about": {
-      "hero": {
-        "title": "About Steuerkanzlei Ibrahim Erben",
-        "subtitle": "Tax consulting from Düren – personal, competent, forward-thinking. Your partner for complex tax questions.",
-        "cta1": "Get to Know Us",
-        "cta2": "Our Values",
-        "stat1": "Years",
-        "stat2": "Clients"
-      },
-      "story": {
-        "heading": "We create clarity before you decide",
-        "intro": "Tax decisions are rarely urgent – but almost always consequential. When facing important strategic decisions, you don't need quick answers, but well-founded assessments, clear strategies, and a partner who thinks ahead.",
-        "paragraph2": "Many entrepreneurs come to us when traditional tax consulting is no longer sufficient. When structures grow, business areas become more complex, or international connections are added. When you need not just tax returns, but strategic structuring, risk assessment, and reliable concepts.",
-        "paragraph3": "We often work with companies that already have holding structures, participations, or cross-border models – but don't fully utilize the tax potential or overlook risks. We analyze what exists, identify weaknesses, and develop solutions that work legally and make economic sense.",
-        "paragraph4": "Additionally, we serve clients already on a path to success where tax consulting in the past was often reduced to routine declarations and structuring potentials were not recognized or utilized. This particularly includes high-growth entrepreneurs, influencers and bloggers with high reach, as well as clients with broad and dynamic business areas.",
-        "paragraph5": "What distinguishes our firm is a structured, strategic, and procedurally secure working method as well as a high success rate – particularly in structuring issues, tax audits, contentious proceedings, and sensitive tax criminal law situations. Our focus is not on short-term individual measures, but on sustainable, legally secure solutions that withstand audit and liability considerations.",
-        "paragraph6": "We also see ourselves as advisors to advisors. In complex or particularly sensitive matters, we are regularly called upon by tax advisors, auditors, and lawyers to assess specialized questions, develop structures, or technically secure planning."
-      },
-      "philosophy": {
-        "heading": "Our Philosophy",
-        "card1Title": "Personal",
-        "card1Text": "You have a dedicated contact person – no rotation, no anonymity. We get to know your business and support you long-term.",
-        "card2Title": "Proactive",
-        "card2Text": "We think ahead, inform you about legal changes, and identify optimization potential – not just on request.",
-        "card3Title": "Digital",
-        "card3Text": "Modern tools, cloud accounting, video calls – we work digitally, efficiently, and location-independently. Of course, you're also welcome in person in Düren.",
-        "card4Title": "Specialized",
-        "card4Text": "Deep knowledge in our focus areas instead of superficial all-around consulting. When we can help you, we do it right."
-      },
-      "team": {
-        "heading": "Our Team",
-        "intro": "[ASSUMPTION] Our team consists of experienced tax consultants and specialists who have specialized in their respective fields. We work hand in hand to provide you with the best consulting.",
-        "outro": "Together we form a strong team – with expertise, experience, and genuine interest in your success."
-      },
-      "location": {
-        "heading": "Our Location in Düren",
-        "intro": "[ASSUMPTION] In the heart of Düren, easily accessible with on-site parking. Prefer working digitally? No problem – many of our clients work exclusively remotely with us.",
-        "addressLabel": "Address",
-        "phoneLabel": "Phone",
-        "emailLabel": "Email"
-      },
-      "cta": {
-        "title": "Get to know us",
-        "subtitle": "In a personal conversation – on-site or digital.",
-        "button": "Schedule Appointment"
-      }
-    },
-    "contact": {
-      "hero": {
-        "title": "Let's Talk",
         "subtitle": "We look forward to your message. Contact us by phone, email, or through our contact form – we'll respond within 24 hours.",
         "badge": "24h Response"
       },
@@ -467,6 +428,53 @@
         "whatsapp": "WhatsApp",
         "telegram": "Telegram",
         "instagram": "Instagram"
+      }
+    },
+    "about": {
+      "hero": {
+        "title": "About Steuerkanzlei Ibrahim Erben",
+        "subtitle": "Tax consulting from Düren – personal, competent, forward-thinking. Your partner for complex tax questions.",
+        "cta1": "Get to Know Us",
+        "cta2": "Our Values",
+        "stat1": "Years",
+        "stat2": "Clients"
+      },
+      "story": {
+        "heading": "We create clarity before you decide",
+        "intro": "Tax decisions are rarely urgent – but almost always consequential. When facing important strategic decisions, you don't need quick answers, but well-founded assessments, clear strategies, and a partner who thinks ahead.",
+        "paragraph2": "Many entrepreneurs come to us when traditional tax consulting is no longer sufficient. When structures grow, business areas become more complex, or international connections are added. When you need not just tax returns, but strategic structuring, risk assessment, and reliable concepts.",
+        "paragraph3": "We often work with companies that already have holding structures, participations, or cross-border models – but don't fully utilize the tax potential or overlook risks. We analyze what exists, identify weaknesses, and develop solutions that work legally and make economic sense.",
+        "paragraph4": "Additionally, we serve clients already on a path to success where tax consulting in the past was often reduced to routine declarations and structuring potentials were not recognized or utilized. This particularly includes high-growth entrepreneurs, influencers and bloggers with high reach, as well as clients with broad and dynamic business areas.",
+        "paragraph5": "What distinguishes our firm is a structured, strategic, and procedurally secure working method as well as a high success rate – particularly in structuring issues, tax audits, contentious proceedings, and sensitive tax criminal law situations. Our focus is not on short-term individual measures, but on sustainable, legally secure solutions that withstand audit and liability considerations.",
+        "paragraph6": "We also see ourselves as advisors to advisors. In complex or particularly sensitive matters, we are regularly called upon by tax advisors, auditors, and lawyers to assess specialized questions, develop structures, or technically secure planning."
+      },
+      "philosophy": {
+        "heading": "Our Philosophy",
+        "card1Title": "Personal",
+        "card1Text": "You have a dedicated contact person – no rotation, no anonymity. We get to know your business and support you long-term.",
+        "card2Title": "Proactive",
+        "card2Text": "We think ahead, inform you about legal changes, and identify optimization potential – not just on request.",
+        "card3Title": "Digital",
+        "card3Text": "Modern tools, cloud accounting, video calls – we work digitally, efficiently, and location-independently. Of course, you're also welcome in person in Düren.",
+        "card4Title": "Specialized",
+        "card4Text": "Deep knowledge in our focus areas instead of superficial all-around consulting. When we can help you, we do it right."
+      },
+      "team": {
+        "heading": "Our Team",
+        "intro": "[ASSUMPTION] Our team consists of experienced tax consultants and specialists who have specialized in their respective fields. We work hand in hand to provide you with the best consulting.",
+        "outro": "Together we form a strong team – with expertise, experience, and genuine interest in your success."
+      },
+      "location": {
+        "heading": "Our Location in Düren",
+        "intro": "[ASSUMPTION] In the heart of Düren, easily accessible with on-site parking. Prefer working digitally? No problem – many of our clients work exclusively remotely with us.",
+        "addressLabel": "Address",
+        "phoneLabel": "Phone",
+        "emailLabel": "Email"
+      },
+      "cta": {
+        "title": "Get to know us",
+        "subtitle": "In a personal conversation – on-site or digital.",
+        "button": "Schedule Appointment"
       }
     },
     "faq": {
@@ -1024,5 +1032,12 @@
     "tools": "Tools",
     "pricing": "Pricing",
     "career": "Career"
+  },
+  "legal": {
+    "germanOnly": "This legal notice is only available in German as required by German law."
+  },
+  "news": {
+    "title": "Tax News",
+    "subtitle": "Latest updates in tax law, legislation and case law – updated daily."
   }
 }

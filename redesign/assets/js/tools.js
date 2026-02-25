@@ -310,9 +310,9 @@ function getToolContent(toolName) {
             <div class="calculator">
                 <div class="form__group">
                     <label class="form__label">Monatliches Arbeitsentgelt (€)</label>
-                    <input type="text" id="minijob-lohn" class="form__input currency-input" placeholder="520,00" value="520">
+                    <input type="text" id="minijob-lohn" class="form__input currency-input" placeholder="556,00" value="556">
                     <small style="color: var(--color-text-light); display: block; margin-top: var(--spacing-xs);">
-                        Bis 538 € (2024) = Minijob
+                        Bis 556 € monatlich = Minijob (ab 01.01.2025)
                     </small>
                 </div>
                 <div class="form__group">
@@ -541,7 +541,7 @@ function getToolContent(toolName) {
                     <label class="form__label">Monatlicher Beitrag zur bAV (€)</label>
                     <input type="text" id="bav-beitrag" class="form__input currency-input" placeholder="200,00" value="200">
                     <small style="color: var(--color-text-light); display: block; margin-top: var(--spacing-xs);">
-                        Max. 292 € (2024) steuer- und sozialversicherungsfrei
+                        SV-frei: max. 322 €/Monat | Steuerfrei: max. 644 €/Monat (2025)
                     </small>
                 </div>
                 <div class="form__group">
@@ -699,17 +699,17 @@ function getToolContent(toolName) {
         'tabellen': `
             <h2>Steuertabellen & Übersichten</h2>
             <p style="color: var(--color-text-light); margin-bottom: var(--spacing-lg);">
-                Aktuelle Steuertabellen, Pauschbeträge und Grenzwerte für 2024.
+                Aktuelle Steuertabellen, Pauschbeträge und Grenzwerte für 2025.
             </p>
             <div class="calculator">
                 <div style="background: var(--color-bg-light); padding: var(--spacing-lg); border-radius: var(--border-radius);">
-                    <h3 style="margin-top: 0;">Wichtige Steuerwerte 2024:</h3>
+                    <h3 style="margin-top: 0;">Wichtige Steuerwerte 2025:</h3>
 
                     <div style="margin-bottom: var(--spacing-lg);">
                         <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm);">Grundfreibetrag</h4>
                         <div style="background: white; padding: var(--spacing-md); border-radius: 4px;">
-                            <strong style="font-size: 1.25rem; color: var(--color-primary);">11.604 €</strong>
-                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Bis zu diesem Betrag keine Einkommensteuer</p>
+                            <strong style="font-size: 1.25rem; color: var(--color-primary);">12.096 €</strong>
+                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Bis zu diesem Betrag keine Einkommensteuer (2024: 11.604 €)</p>
                         </div>
                     </div>
 
@@ -733,23 +733,23 @@ function getToolContent(toolName) {
                         <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm);">Sparerpauschbetrag</h4>
                         <div style="background: white; padding: var(--spacing-md); border-radius: 4px;">
                             <strong style="font-size: 1.25rem; color: var(--color-primary);">1.000 € / 2.000 €</strong>
-                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Einzelperson / Verheiratete (ab 2023)</p>
+                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Einzelperson / Verheiratete</p>
                         </div>
                     </div>
 
                     <div style="margin-bottom: var(--spacing-lg);">
-                        <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm);">Kleinunternehmergrenze (§ 19 UStG)</h4>
+                        <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm);">Kleinunternehmergrenze (§ 19 UStG) – neu ab 2025</h4>
                         <div style="background: white; padding: var(--spacing-md); border-radius: 4px;">
-                            <strong style="font-size: 1.25rem; color: var(--color-primary);">22.000 €</strong>
-                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Umsatzgrenze im Vorjahr</p>
+                            <strong style="font-size: 1.25rem; color: var(--color-primary);">25.000 € / 100.000 €</strong>
+                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Vorjahresumsatz max. 25.000 € | lfd. Jahr max. 100.000 € (bei Überschreitung sofort steuerpflichtig)</p>
                         </div>
                     </div>
 
                     <div>
                         <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm);">Minijob-Grenze</h4>
                         <div style="background: white; padding: var(--spacing-md); border-radius: 4px;">
-                            <strong style="font-size: 1.25rem; color: var(--color-primary);">538 €</strong>
-                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Monatliche Verdienstgrenze (ab 2024)</p>
+                            <strong style="font-size: 1.25rem; color: var(--color-primary);">556 €</strong>
+                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Monatliche Verdienstgrenze ab 01.01.2025 (2024: 538 €)</p>
                         </div>
                     </div>
                 </div>
@@ -774,24 +774,25 @@ function berechneEinkommensteuer() {
     }
 
     let steuer = 0;
-    const grundfreibetrag = 11604;
+    const grundfreibetrag = 12096; // 2025
 
     if (einkommen <= grundfreibetrag) {
         steuer = 0;
-    } else if (einkommen <= 17005) {
+    } else if (einkommen <= 17443) {
         const y = (einkommen - grundfreibetrag) / 10000;
-        steuer = (922.98 * y + 1400) * y;
-    } else if (einkommen <= 66760) {
-        const z = (einkommen - 17005) / 10000;
-        steuer = (181.19 * z + 2397) * z + 1025.38;
+        steuer = (932.30 * y + 1400) * y;
+    } else if (einkommen <= 68480) {
+        const z = (einkommen - 17443) / 10000;
+        steuer = (176.64 * z + 2397) * z + 1015.13;
     } else if (einkommen <= 277825) {
-        steuer = 0.42 * einkommen - 10602.13;
+        steuer = 0.42 * einkommen - 10911.92;
     } else {
-        steuer = 0.45 * einkommen - 18936.88;
+        steuer = 0.45 * einkommen - 19246.67;
     }
+    steuer = Math.floor(steuer); // auf volle Euro abrunden
 
     let soli = 0;
-    if (steuer > 18130) {
+    if (steuer > 19950) { // Freigrenze 2025
         soli = steuer * 0.055;
     }
 
@@ -915,28 +916,29 @@ function berechneBruttoNetto() {
     }
 
     const jahresbrutto = brutto * 12;
-    const krankenversicherung = brutto * 0.073;
-    const rentenversicherung = brutto * 0.093;
-    const arbeitslosenversicherung = brutto * 0.013;
-    const pflegeversicherung = brutto * 0.01825;
+    const krankenversicherung = brutto * 0.073;    // AN-Anteil 7,3% (2025)
+    const rentenversicherung = brutto * 0.093;     // AN-Anteil 9,3% (2025)
+    const arbeitslosenversicherung = brutto * 0.013; // AN-Anteil 1,3% (2025)
+    const pflegeversicherung = brutto * 0.018;     // AN-Anteil 1,8% mit Kinder (2025)
     const sozialabgaben = krankenversicherung + rentenversicherung + arbeitslosenversicherung + pflegeversicherung;
 
     const zvEinkommen = jahresbrutto - (sozialabgaben * 12) - 1230;
     let jahressteuer = 0;
-    const grundfreibetrag = 11604;
+    const grundfreibetrag = 12096; // 2025
 
     if (zvEinkommen > grundfreibetrag) {
-        if (zvEinkommen <= 17005) {
+        if (zvEinkommen <= 17443) {
             const y = (zvEinkommen - grundfreibetrag) / 10000;
-            jahressteuer = (922.98 * y + 1400) * y;
-        } else if (zvEinkommen <= 66760) {
-            const z = (zvEinkommen - 17005) / 10000;
-            jahressteuer = (181.19 * z + 2397) * z + 1025.38;
+            jahressteuer = (932.30 * y + 1400) * y;
+        } else if (zvEinkommen <= 68480) {
+            const z = (zvEinkommen - 17443) / 10000;
+            jahressteuer = (176.64 * z + 2397) * z + 1015.13;
         } else if (zvEinkommen <= 277825) {
-            jahressteuer = 0.42 * zvEinkommen - 10602.13;
+            jahressteuer = 0.42 * zvEinkommen - 10911.92;
         } else {
-            jahressteuer = 0.45 * zvEinkommen - 18936.88;
+            jahressteuer = 0.45 * zvEinkommen - 19246.67;
         }
+        jahressteuer = Math.floor(jahressteuer);
     }
 
     if (steuerklasse === 3) jahressteuer *= 0.7;
@@ -944,7 +946,7 @@ function berechneBruttoNetto() {
 
     const monatssteuer = jahressteuer / 12;
     const kirche = kirchensteuer ? monatssteuer * 0.09 : 0;
-    const soli = jahressteuer > 18130 ? (jahressteuer * 0.055) / 12 : 0;
+    const soli = jahressteuer > 19950 ? (jahressteuer * 0.055) / 12 : 0; // Freigrenze 2025
     const gesamtabzug = sozialabgaben + monatssteuer + kirche + soli;
     const netto = brutto - gesamtabzug;
 
@@ -1047,12 +1049,13 @@ function berechnePflegegeld() {
     const pflegegrad = parseInt(document.getElementById('pflegegrad').value);
     const pflegeart = document.getElementById('pflegeart').value;
 
+    // Offizielle Werte ab 01.01.2025 (+4,5% gegenüber 2024) – Quelle: BMG
     const pflegegeld = {
         1: { geld: 0, sach: 0 },
-        2: { geld: 332, sach: 761 },
-        3: { geld: 573, sach: 1432 },
-        4: { geld: 765, sach: 1778 },
-        5: { geld: 947, sach: 2200 }
+        2: { geld: 347, sach: 796 },
+        3: { geld: 599, sach: 1497 },
+        4: { geld: 799, sach: 1859 },
+        5: { geld: 990, sach: 2299 }
     };
 
     const geld = pflegegeld[pflegegrad].geld;
@@ -1089,7 +1092,7 @@ function berechnePflegegeld() {
             ` : ''}
         </div>
         <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
-            <strong>Hinweis:</strong> Werte für 2024. Bei Kombinationsleistung können beide Leistungen anteilig bezogen werden.
+            <strong>Hinweis:</strong> Werte ab 01.01.2025 (Quelle: BMG). Bei Kombinationsleistung können beide Leistungen anteilig bezogen werden.
         </p>
     `;
 }
@@ -1411,7 +1414,7 @@ function berechneAltersvorsorge() {
         return;
     }
 
-    const maxSteuerfrei = 292;
+    const maxSteuerfrei = 322; // 4% der BBG 2025 (SV-frei)
     const steuerfreierBeitrag = Math.min(beitrag, maxSteuerfrei);
 
     const steuerersparnis = steuerfreierBeitrag * 0.30; // Annahme: 30% Durchschnittssteuersatz
@@ -1603,3 +1606,4 @@ function berechneKredit() {
         </p>
     `;
 }
+// tools-2025-update 1771780602

@@ -8,7 +8,12 @@
     "services": "Hizmetler",
     "about": "Hakkımızda",
     "faq": "SSS",
-    "knowledge": "Bilgi",
+    "knowledge": {
+      "label": "Bilgi",
+      "aussenpruefung": "Vergi Dış Denetimi",
+      "steuerstrafrecht": "Vergi Ceza Hukuku",
+      "umwandlung": "Dönüşüm Vergi Hukuku"
+    },
     "tools": "Araçlar",
     "pricing": "Ücretler",
     "career": "Kariyer",
@@ -22,7 +27,8 @@
       "realEstate": "Gayrimenkul & Varlık",
       "succession": "Halef & Yeniden Yapılandırma",
       "support": "Sürekli Destek"
-    }
+    },
+    "news": "Haberler"
   },
   "hero": {
     "slide1": {
@@ -179,7 +185,15 @@
     "hours": "Pzt–Cuma: 08:30–18:00",
     "imprint": "Künye",
     "privacy": "Gizlilik Politikası",
-    "copyright": "© 2026 Steuerkanzlei Ibrahim Erben. Tüm hakları saklıdır."
+    "cookieSettings": "Çerez Ayarları",
+    "followUs": "Bizi Takip Edin",
+    "copyright": "© 2026 Steuerkanzlei Ibrahim Erben. Tüm hakları saklıdır.",
+    "newsletter": {
+      "title": "Bağlantıda Kalın",
+      "desc": "Güncel vergi haberleri ve önemli mevzuat değişiklikleri doğrudan gelen kutunuza.",
+      "placeholder": "E-posta adresiniz",
+      "success": "✓ Teşekkürler! Bilgilendirileceksiniz."
+    }
   },
   "homepage": {
     "highlightedService": {
@@ -364,59 +378,6 @@
     "contact": {
       "hero": {
         "title": "Hadi Konuşalım",
-        "subtitle": "Mesajınızı bekliyoruz. Bize telefon, e-posta veya iletişim formu aracılığıyla ulaşın – 24 saat içinde size dönüş yapıyoruz."
-      }
-    },
-    "about": {
-      "hero": {
-        "title": "Steuerkanzlei Ibrahim Erben Hakkında",
-        "subtitle": "Düren'den vergi danışmanlığı – kişisel, yetkin, ileriye dönük. Karmaşık vergi sorunlarında ortağınız.",
-        "cta1": "Tanışalım",
-        "cta2": "Değerlerimiz",
-        "stat1": "Yıl",
-        "stat2": "Müşteri"
-      },
-      "story": {
-        "heading": "Karar vermeden önce netlik sağlıyoruz",
-        "intro": "Vergisel kararlar nadiren acildir – ancak neredeyse her zaman sonuçları ağırdır. Önemli kararlar almadan önce hızlı cevaplara değil, temelli değerlendirmelere, net stratejilere ve birlikte düşünen bir ortağa ihtiyacınız var.",
-        "paragraph2": "Birçok girişimci, klasik vergi danışmanlığı artık yeterli olmadığında bize geliyor. Yapılar büyüdüğünde, iş alanları daha karmaşık hale geldiğinde veya uluslararası bağlantılar eklendiğinde. Sadece vergi beyannamelerine değil, stratejik yapılandırmaya, risk değerlendirmesine ve güvenilir konseptlere ihtiyaç duyduğunuzda.",
-        "paragraph3": "Sıklıkla halihazırda holding yapıları, katılımlar veya sınır ötesi modellere sahip ancak vergisel potansiyeli tam olarak kullanamayan veya riskleri gözden kaçıran şirketlerle çalışıyoruz. Mevcut durumu analiz ediyor, zayıf noktaları belirliyoruz ve hukuki açıdan güvenli çalışan ve ekonomik olarak mantıklı olan çözümler geliştiriyoruz.",
-        "paragraph4": "Bunun ötesinde, geçmişte vergi danışmanlığının sıklıkla sadece rutin beyana indirgendiği ve yapılandırma potansiyellerinin tanınmadığı veya kullanılmadığı başarı yolundaki müşterilere de hizmet veriyoruz. Bu özellikle hızlı büyüyen girişimcileri, yüksek erişime sahip influencer'ları ve blogger'ları ile geniş ve dinamik iş alanlarına sahip müşterileri içerir.",
-        "paragraph5": "Kanzlemizi öne çıkaran şey, yapılandırılmış, stratejik ve prosedür güvenli çalışma yöntemimiz ile yüksek başarı oranımızdır – özellikle yapılandırma sorularında, işletme denetimlerinde, ihtilaflı prosedürlerde ve hassas vergi ceza hukuku konularında. Odağımız kısa vadeli tek önlemlerde değil, denetim ve sorumluluk açısından da geçerliliği olan sürdürülebilir, hukuki açıdan güvenli çözümlerdedir.",
-        "paragraph6": "Kendimizi aynı zamanda danışmanlar için danışman olarak görüyoruz. Karmaşık veya özellikle hassas durumlarda, özel soruları değerlendirmek, yapıları geliştirmek veya planlamaları teknik olarak güvence altına almak için vergi danışmanları, mali müşavirler ve avukatlar tarafından düzenli olarak göreve çağrılıyoruz."
-      },
-      "philosophy": {
-        "heading": "Felsefemiz",
-        "card1Title": "Kişisel",
-        "card1Text": "Sabit bir iletişim kişiniz var – rotasyon yok, anonimlik yok. İşinizi tanıyor ve size uzun vadede eşlik ediyoruz.",
-        "card2Title": "Proaktif",
-        "card2Text": "Birlikte düşünüyor, yasal değişiklikler hakkında sizi bilgilendiriyor ve optimizasyon potansiyelleri gösteriyoruz – sadece talep üzerine değil.",
-        "card3Title": "Dijital",
-        "card3Text": "Modern araçlar, bulut muhasebesi, video aramalar – dijital, verimli ve konumdan bağımsız çalışıyoruz. Düren'de yüz yüze görüşmeye de tabii ki hoş geldiniz.",
-        "card4Title": "Uzmanlaşmış",
-        "card4Text": "Yüzeysel genel danışmanlık yerine odak alanlarımızda derin bilgi. Size yardımcı olabilirsek, bunu doğru yapıyoruz."
-      },
-      "team": {
-        "heading": "Ekibimiz",
-        "intro": "[VARSAYIM] Ekibimiz, kendi uzmanlık alanlarında uzmanlaşmış deneyimli vergi danışmanları ve uzmanlardan oluşmaktadır. Size en iyi danışmanlığı sunmak için el ele çalışıyoruz.",
-        "outro": "Birlikte güçlü bir ekip oluşturuyoruz – uzmanlık, deneyim ve başarınıza gerçek ilgi ile."
-      },
-      "location": {
-        "heading": "Düren'deki Konumumuz",
-        "intro": "[VARSAYIM] Düren'in merkezinde, kolayca erişilebilir ve yerinde park yerleri ile. Dijital çalışmayı mı tercih ediyorsunuz? Sorun değil – birçok müşterimiz bizimle sadece uzaktan çalışıyor.",
-        "addressLabel": "Adres",
-        "phoneLabel": "Telefon",
-        "emailLabel": "E-posta"
-      },
-      "cta": {
-        "title": "Bizi tanıyın",
-        "subtitle": "Kişisel görüşmede – yerinde veya dijital.",
-        "button": "Randevu Al"
-      }
-    },
-    "contact": {
-      "hero": {
-        "title": "Hadi Konuşalım",
         "subtitle": "Mesajınızı bekliyoruz. Bize telefon, e-posta veya iletişim formu aracılığıyla ulaşın – 24 saat içinde size dönüş yapıyoruz.",
         "badge": "24s Yanıt"
       },
@@ -468,6 +429,53 @@
         "whatsapp": "WhatsApp",
         "telegram": "Telegram",
         "instagram": "Instagram"
+      }
+    },
+    "about": {
+      "hero": {
+        "title": "Steuerkanzlei Ibrahim Erben Hakkında",
+        "subtitle": "Düren'den vergi danışmanlığı – kişisel, yetkin, ileriye dönük. Karmaşık vergi sorunlarında ortağınız.",
+        "cta1": "Tanışalım",
+        "cta2": "Değerlerimiz",
+        "stat1": "Yıl",
+        "stat2": "Müşteri"
+      },
+      "story": {
+        "heading": "Karar vermeden önce netlik sağlıyoruz",
+        "intro": "Vergisel kararlar nadiren acildir – ancak neredeyse her zaman sonuçları ağırdır. Önemli kararlar almadan önce hızlı cevaplara değil, temelli değerlendirmelere, net stratejilere ve birlikte düşünen bir ortağa ihtiyacınız var.",
+        "paragraph2": "Birçok girişimci, klasik vergi danışmanlığı artık yeterli olmadığında bize geliyor. Yapılar büyüdüğünde, iş alanları daha karmaşık hale geldiğinde veya uluslararası bağlantılar eklendiğinde. Sadece vergi beyannamelerine değil, stratejik yapılandırmaya, risk değerlendirmesine ve güvenilir konseptlere ihtiyaç duyduğunuzda.",
+        "paragraph3": "Sıklıkla halihazırda holding yapıları, katılımlar veya sınır ötesi modellere sahip ancak vergisel potansiyeli tam olarak kullanamayan veya riskleri gözden kaçıran şirketlerle çalışıyoruz. Mevcut durumu analiz ediyor, zayıf noktaları belirliyoruz ve hukuki açıdan güvenli çalışan ve ekonomik olarak mantıklı olan çözümler geliştiriyoruz.",
+        "paragraph4": "Bunun ötesinde, geçmişte vergi danışmanlığının sıklıkla sadece rutin beyana indirgendiği ve yapılandırma potansiyellerinin tanınmadığı veya kullanılmadığı başarı yolundaki müşterilere de hizmet veriyoruz. Bu özellikle hızlı büyüyen girişimcileri, yüksek erişime sahip influencer'ları ve blogger'ları ile geniş ve dinamik iş alanlarına sahip müşterileri içerir.",
+        "paragraph5": "Kanzlemizi öne çıkaran şey, yapılandırılmış, stratejik ve prosedür güvenli çalışma yöntemimiz ile yüksek başarı oranımızdır – özellikle yapılandırma sorularında, işletme denetimlerinde, ihtilaflı prosedürlerde ve hassas vergi ceza hukuku konularında. Odağımız kısa vadeli tek önlemlerde değil, denetim ve sorumluluk açısından da geçerliliği olan sürdürülebilir, hukuki açıdan güvenli çözümlerdedir.",
+        "paragraph6": "Kendimizi aynı zamanda danışmanlar için danışman olarak görüyoruz. Karmaşık veya özellikle hassas durumlarda, özel soruları değerlendirmek, yapıları geliştirmek veya planlamaları teknik olarak güvence altına almak için vergi danışmanları, mali müşavirler ve avukatlar tarafından düzenli olarak göreve çağrılıyoruz."
+      },
+      "philosophy": {
+        "heading": "Felsefemiz",
+        "card1Title": "Kişisel",
+        "card1Text": "Sabit bir iletişim kişiniz var – rotasyon yok, anonimlik yok. İşinizi tanıyor ve size uzun vadede eşlik ediyoruz.",
+        "card2Title": "Proaktif",
+        "card2Text": "Birlikte düşünüyor, yasal değişiklikler hakkında sizi bilgilendiriyor ve optimizasyon potansiyelleri gösteriyoruz – sadece talep üzerine değil.",
+        "card3Title": "Dijital",
+        "card3Text": "Modern araçlar, bulut muhasebesi, video aramalar – dijital, verimli ve konumdan bağımsız çalışıyoruz. Düren'de yüz yüze görüşmeye de tabii ki hoş geldiniz.",
+        "card4Title": "Uzmanlaşmış",
+        "card4Text": "Yüzeysel genel danışmanlık yerine odak alanlarımızda derin bilgi. Size yardımcı olabilirsek, bunu doğru yapıyoruz."
+      },
+      "team": {
+        "heading": "Ekibimiz",
+        "intro": "[VARSAYIM] Ekibimiz, kendi uzmanlık alanlarında uzmanlaşmış deneyimli vergi danışmanları ve uzmanlardan oluşmaktadır. Size en iyi danışmanlığı sunmak için el ele çalışıyoruz.",
+        "outro": "Birlikte güçlü bir ekip oluşturuyoruz – uzmanlık, deneyim ve başarınıza gerçek ilgi ile."
+      },
+      "location": {
+        "heading": "Düren'deki Konumumuz",
+        "intro": "[VARSAYIM] Düren'in merkezinde, kolayca erişilebilir ve yerinde park yerleri ile. Dijital çalışmayı mı tercih ediyorsunuz? Sorun değil – birçok müşterimiz bizimle sadece uzaktan çalışıyor.",
+        "addressLabel": "Adres",
+        "phoneLabel": "Telefon",
+        "emailLabel": "E-posta"
+      },
+      "cta": {
+        "title": "Bizi tanıyın",
+        "subtitle": "Kişisel görüşmede – yerinde veya dijital.",
+        "button": "Randevu Al"
       }
     },
     "faq": {
@@ -1025,5 +1033,12 @@
     "tools": "Araçlar",
     "pricing": "Ücretler",
     "career": "Kariyer"
+  },
+  "legal": {
+    "germanOnly": "Bu hukuki sayfa, Alman hukuku gereği yalnızca Almanca olarak sunulmaktadır."
+  },
+  "news": {
+    "title": "Vergi Haberleri",
+    "subtitle": "Vergi hukuku, mevzuat ve içtihattan güncel gelişmeler – her gün güncellenir."
   }
 }

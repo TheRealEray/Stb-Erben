@@ -14,11 +14,17 @@
     },
     "about": "Über uns",
     "faq": "FAQ",
-    "knowledge": "Wissen",
+    "knowledge": {
+      "label": "Wissen",
+      "aussenpruefung": "Steuerliche Außenprüfung",
+      "steuerstrafrecht": "Steuerstrafrecht",
+      "umwandlung": "Umwandlungssteuerrecht"
+    },
     "tools": "Tools",
     "pricing": "Honorar",
     "career": "Karriere",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "news": "News"
   },
   "pages": {
     "services": {
@@ -854,7 +860,15 @@
     "legal": "Rechtliches",
     "imprint": "Impressum",
     "privacy": "Datenschutz",
-    "copyright": "© 2026 Steuerkanzlei Ibrahim Erben. Alle Rechte vorbehalten."
+    "cookieSettings": "Cookie-Einstellungen",
+    "followUs": "Folgen Sie uns",
+    "copyright": "© 2026 Steuerkanzlei Ibrahim Erben. Alle Rechte vorbehalten.",
+    "newsletter": {
+      "title": "Bleiben Sie informiert",
+      "desc": "Aktuelle Steuernews und wichtige Gesetzesänderungen direkt in Ihr Postfach.",
+      "placeholder": "Ihre E-Mail-Adresse",
+      "success": "✓ Vielen Dank! Sie werden benachrichtigt."
+    }
   },
   "meta": {
     "title": "Steuerberater Düren | Steuerkanzlei Ibrahim Erben | Wegzug, E-Commerce, Unternehmensberatung"
@@ -1068,5 +1082,12 @@
     "tools": "Tools",
     "pricing": "Honorar",
     "career": "Karriere"
+  },
+  "legal": {
+    "germanOnly": "Diese rechtliche Seite ist ausschließlich auf Deutsch verfügbar."
+  },
+  "news": {
+    "title": "Steuer-Aktuell",
+    "subtitle": "Aktuelle Neuigkeiten aus Steuerrecht, Gesetzgebung und Rechtsprechung – täglich aktualisiert."
   }
 }

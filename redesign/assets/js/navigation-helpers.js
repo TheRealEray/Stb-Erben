@@ -175,34 +175,22 @@ function initTableOfContents() {
 // ============================================================================
 function initTOCToggle() {
     const tocContainer = document.querySelector('.toc-sidebar');
-    console.log('initTOCToggle - tocContainer:', tocContainer);
-    if (!tocContainer) {
-        console.log('initTOCToggle - no tocContainer found, exiting');
-        return;
-    }
+    if (!tocContainer) return;
 
     // Toggle TOC - close button inside TOC
     const tocToggle = document.querySelector('.toc-toggle');
-    console.log('initTOCToggle - tocToggle (close):', tocToggle);
     if (tocToggle) {
         tocToggle.addEventListener('click', () => {
-            console.log('TOC close button clicked');
             tocContainer.classList.remove('is-open');
         });
     }
 
     // Toggle TOC - open button (bottom right)
     const tocToggleBtn = document.querySelector('.toc-toggle-btn');
-    console.log('initTOCToggle - tocToggleBtn (open):', tocToggleBtn);
     if (tocToggleBtn) {
         tocToggleBtn.addEventListener('click', () => {
-            console.log('TOC open button clicked - adding is-open class');
             tocContainer.classList.add('is-open');
-            console.log('TOC container classes:', tocContainer.classList);
         });
-        console.log('Event listener added to TOC toggle button');
-    } else {
-        console.log('WARNING: toc-toggle-btn not found!');
     }
 }
 
