@@ -185,6 +185,8 @@
     "legal": "Legal",
     "openingHours": "Opening Hours:",
     "hours": "Mon–Fri: 08:30–18:00 | Sat: 10:30–20:00",
+    "hoursMoFr": "Mon–Fri: 08:30–18:00 (Break: 13:00–14:30)",
+    "hoursSa": "Sat: 10:30–20:00",
     "imprint": "Imprint",
     "privacy": "Privacy Policy",
     "cookieSettings": "Cookie Settings",
@@ -416,7 +418,7 @@
         "phoneLabel": "Phone",
         "emailLabel": "Email",
         "hoursLabel": "Opening Hours",
-        "hoursValue": "Monday–Friday: 08:30–18:00\nSaturday: 10:30–20:00"
+        "hoursValue": "Monday–Friday: 08:30–18:00 (Break: 13:00–14:30)\nSaturday: 10:30–20:00"
       },
       "map": {
         "heading": "How to Find Us",

@@ -377,8 +377,10 @@ function initSocialDial() {
     if (!dial || !trigger) return;
 
     let isOpen = false;
+    let closeTimeout;
 
     function open() {
+        clearTimeout(closeTimeout);
         isOpen = true;
         dial.classList.add('is-open');
         trigger.setAttribute('aria-expanded', 'true');
@@ -396,9 +398,11 @@ function initSocialDial() {
         isOpen ? close() : open();
     });
 
-    // Desktop hover
+    // Desktop hover with delay to allow moving to items
     dial.addEventListener('mouseenter', open);
-    dial.addEventListener('mouseleave', close);
+    dial.addEventListener('mouseleave', function () {
+        closeTimeout = setTimeout(close, 400);
+    });
 
     // Close when clicking outside
     document.addEventListener('click', function (e) {
