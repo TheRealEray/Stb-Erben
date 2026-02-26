@@ -284,7 +284,9 @@ function initSearch() {
         clearTimeout(searchTimeout);
         const query = e.target.value.trim();
 
-        if (query.length < 2) {
+        // Allow single-character queries for numbers (e.g. "3" → finds §3, §370 etc.)
+        const minLength = /^\d/.test(query) ? 1 : 2;
+        if (query.length < minLength) {
             searchResults.innerHTML = '';
             return;
         }
@@ -321,10 +323,15 @@ function performSearch(query, resultsContainer) {
     ];
 
     const queryLower = query.toLowerCase().replace(/^§\s*/, '§');
+    // When query starts with a digit, also try matching §-prefixed version
+    const paragraphQuery = /^\d/.test(queryLower) ? '§' + queryLower : null;
     const results = searchablePages.filter(page => {
-        const titleMatch = page.title.toLowerCase().includes(queryLower);
-        const keywordsMatch = page.keywords.toLowerCase().includes(queryLower);
-        return titleMatch || keywordsMatch;
+        const titleLower = page.title.toLowerCase();
+        const keywordsLower = page.keywords.toLowerCase();
+        const titleMatch = titleLower.includes(queryLower);
+        const keywordsMatch = keywordsLower.includes(queryLower);
+        const paragraphMatch = paragraphQuery && (keywordsLower.includes(paragraphQuery) || titleLower.includes(paragraphQuery));
+        return titleMatch || keywordsMatch || paragraphMatch;
     });
 
     if (results.length === 0) {
