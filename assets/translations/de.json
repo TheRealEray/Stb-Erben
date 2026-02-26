@@ -87,7 +87,7 @@
         "service4": "Strukturierung für Skalierung (GmbH, Holdingmodelle)",
         "service5": "Import-/Export-Beratung (Brexit, Drittland, Zoll)",
         "service6": "Steuerliche Begleitung bei Internationalisierung",
-        "service7": "Verteidigung bei Umsatzsteuer-Betriebsprüfungen",
+        "service7": "Verteidigung bei steuerlichen Betriebsprüfungen",
         "cta": "Beratung anfragen"
       },
       "healthcare": {
@@ -125,7 +125,7 @@
         "service3": "Umwandlungen nach UmwStG (Verschmelzung, Spaltung, Formwechsel, Einbringung)",
         "service4": "Betriebsaufspaltung und Entflechtung",
         "service5": "Erbschaft- und Schenkungsteuer (Freibeträge, Begünstigungen)",
-        "service6": "Gesellschaftsverträge und Testamentsgestaltung (rechtliche Beratung als Nebenleistung)",
+        "service6": "Gesellschaftsverträge und Testamentsgestaltung (als Nebenleistung zur steuerrechtlichen Beratung)",
         "service7": "Laufende Begleitung und Umsetzung",
         "cta": "Beratung anfragen"
       },
@@ -146,9 +146,8 @@
       "additional": {
         "title": "Weitere Spezialisierungen",
         "intro": "Über unsere Hauptschwerpunkte hinaus bieten wir weitere spezialisierte Leistungen:",
-        "service1": "Rechtliche Beratung als Nebenleistunggemäß § 5 Abs. 1 RDG (Gesellschaftsverträge, Vertragsgestaltung im steuerlichen Kontext)",
-        "service2": "Steuerstraf- und Bußgeldverfahren:Verteidigung und Begleitung",
-        "service3": "Gemeinnützigkeit & Vereine:Vereine, Stiftungen, gGmbHs, Anerkennungsverfahren",
+        "service2": "Steuerstraf- und Bußgeldverfahren: Verteidigung und Begleitung",
+        "service3": "Vereine & Gemeinnützige: Vereine, Stiftungen, gGmbHs, Anerkennungsverfahren",
         "service4": "Digitalisierung & KI im Unternehmen:Steuerliche Einordnung, Prozessoptimierung, Automatisierung",
         "service5": "Branchen-Know-how:Handwerk & Bau, Mobilität & Logistik, Handel, Pflege & Soziales",
         "cta": "Beratung anfragen"
@@ -514,7 +513,7 @@
       },
       "location": {
         "heading": "Unser Standort in Düren",
-        "intro": "[ANNAHME] Mitten in Düren, gut erreichbar und mit Parkplätzen vor Ort. Sie arbeiten lieber digital? Kein Problem – viele unserer Mandanten arbeiten ausschließlich remote mit uns.",
+        "intro": "Im Herzen Dürens, am Kaiserplatz, gut erreichbar mit öffentlichen Verkehrsmitteln und mit Parkplätzen vor Ort. Digital für Mandanten aus nah und fern.",
         "addressLabel": "Adresse",
         "phoneLabel": "Telefon",
         "emailLabel": "Email"
@@ -598,7 +597,7 @@
       },
       "q1": {
         "q": "Für wen sind Sie die richtige Kanzlei?",
-        "a": "Wir sind spezialisiert auf Unternehmer, Selbstständige und Freiberufler mit komplexen steuerlichen Fragestellungen. Unsere Schwerpunkte liegen auf Wegzugssteuer, E-Commerce, Heilberufen, Immobilien und Unternehmensstrukturen. Wenn Sie proaktive Beratung auf Augenhöhe suchen – nicht nur jährliche Steuererklärungen –, sind Sie bei uns richtig."
+        "a": "Wir sind spezialisiert auf Unternehmen, Gesellschaften und Freiberufler mit komplexen steuerlichen Fragestellungen. Unsere Schwerpunkte liegen auf Wegzugssteuer, E-Commerce, Heilberufen, Immobilien und Unternehmensstrukturen. Wenn Sie proaktive Beratung auf Augenhöhe suchen – nicht nur jährliche Steuererklärungen –, sind Sie bei uns richtig."
       },
       "q2": {
         "q": "Arbeiten Sie auch überregional/remote?",
@@ -606,15 +605,15 @@
       },
       "q3": {
         "q": "Welche Software nutzen Sie?",
-        "a": "Wir arbeiten mit DATEV für Buchhaltung und Lohn – dem Branchenstandard für professionelle Steuerberatung. Für die digitale Zusammenarbeit nutzen wir moderne Cloud-Lösungen, sichere Dokumentenportale und Video-Conferencing. Die Zusammenarbeit ist ortsunabhängig und effizient möglich."
+        "a": "Wir arbeiten mit DATEV sowie AGENDA für Buchhaltung und Lohn – dem Branchenstandard für professionelle Steuerberatung. Für die digitale Zusammenarbeit nutzen wir moderne Cloud-Lösungen, sichere Dokumentenportale und Video-Conferencing. Die Zusammenarbeit ist ortsunabhängig und effizient möglich."
       },
       "q4": {
         "q": "Was kostet das Erstgespräch?",
-        "a": "Das erste Gespräch (30 Minuten) ist für Sie kostenfrei. Wir lernen uns kennen, Sie schildern Ihre Situation und wir klären, wie wir Ihnen helfen können. Erst danach erhalten Sie ein transparentes Angebot – ohne versteckte Kosten."
+        "a": "Das erste Kennenlerngespräch (30 Minuten) ist für Sie kostenfrei. Wir lernen uns kennen, Sie schildern Ihre Situation und wir klären, wie wir Ihnen helfen können. Sie erhalten anschließend ein transparentes Angebot – ohne versteckte Kosten."
       },
       "q5": {
         "q": "Wie läuft das Erstgespräch ab?",
-        "a": "Das Erstgespräch ist unverbindlich und dauert ca. 30 Minuten. Wir lernen uns kennen, Sie schildern Ihre Situation und Ihre Fragen. Wir geben Ihnen eine erste Einschätzung und klären, ob und wie wir zusammenarbeiten können. Danach entscheiden Sie in Ruhe, ob Sie mit uns arbeiten möchten."
+        "a": "Das Erstgespräch ist unverbindlich und dauert ca. 30 Minuten. Wir lernen uns kennen, Sie schildern Ihre Situation und Ihre Fragen. Wir geben Ihnen eine erste Einschätzung und klären, ob und wie wir zusammenarbeiten können."
       },
       "q6": {
         "q": "Welche Unterlagen sollte ich mitbringen?",
@@ -622,27 +621,27 @@
       },
       "q7": {
         "q": "Wie berechnen sich Ihre Honorare?",
-        "a": "Unsere Honorare richten sich nach der Steuerberatervergütungsverordnung (StBVV) oder nach individueller Vereinbarung. Bei Projekten (z. B. Wegzugsberatung, Strukturierung) bieten wir oft Pauschalpreise an – so wissen Sie von Anfang an, was auf Sie zukommt. Bei laufender Betreuung arbeiten wir mit monatlichen Pauschalen oder nach tatsächlichem Aufwand. Transparenz ist uns wichtig: Sie erhalten immer vorher ein klares Angebot."
+        "a": "Unsere Honorare richten sich nach der Steuerberatervergütungsverordnung (StBVV) oder nach individueller Vereinbarung. Bei Projekten (z. B. Wegzugsberatung, Strukturierung) können wir Pauschalpreise anbieten – so wissen Sie von Anfang an, was auf Sie zukommt. Bei laufender Betreuung können wir mit monatlichen Pauschalen oder nach tatsächlichem Aufwand abrechnen. Transparenz ist uns wichtig: Sie erhalten immer vorher ein klares Angebot."
       },
       "q8": {
         "q": "Gibt es Pauschalpreise?",
-        "a": "Ja, für viele Leistungen bieten wir Pauschalpreise an – zum Beispiel für Jahresabschlüsse, Steuererklärungen oder Beratungsprojekte. Bei laufender Betreuung arbeiten wir mit monatlichen Fixpreisen. So haben Sie Planungssicherheit. Wir besprechen das individuell im Erstgespräch."
+        "a": "Ja, für viele Leistungen können wir Pauschalpreise anbieten – zum Beispiel für Jahresabschlüsse, Steuererklärungen oder Beratungsprojekte. So haben Sie Planungssicherheit. Wir besprechen das individuell im Erstgespräch."
       },
       "q9": {
         "q": "Bekomme ich einen festen Ansprechpartner?",
-        "a": "Ja, unbedingt. Sie haben einen festen Steuerberater als Ansprechpartner – keine Rotation, keine Anonymität. Ihr Steuerberater kennt Ihr Geschäft, Ihre Ziele und Ihre Situation. Bei Abwesenheit (Urlaub, Krankheit) wird ein Kollege Sie vertreten – aber Ihr Hauptansprechpartner bleibt immer gleich."
+        "a": "Ja. Als inhabergeführte Kanzlei ist Ibrahim Erben Ihr direkter Ansprechpartner. Er kennt Ihr Geschäft, Ihre Ziele und Ihre Situation persönlich. Kurze Wege, schnelle Entscheidungen – ohne Rotation oder Anonymität."
       },
       "q10": {
         "q": "Wie schnell reagieren Sie auf Anfragen?",
-        "a": "Wir melden uns in der Regel innerhalb von 24 Stunden (an Werktagen). Bei dringenden Anliegen (z. B. laufende Betriebsprüfung, Fristen) oft noch am selben Tag. Telefonisch erreichen Sie uns Mo–Fr von 08:30–18:00 Uhr."
+        "a": "Wir melden uns in der Regel innerhalb von 24 Stunden (an Werktagen). Bei dringenden Anliegen (z. B. laufende Betriebsprüfung, Fristen) oft noch am selben Tag. Telefonisch erreichen Sie uns Mo–Fr von 08:30–18:00 Uhr sowie Sa von 10:30–20:00 Uhr."
       },
       "q11": {
         "q": "Können wir digital zusammenarbeiten?",
-        "a": "Ja, das ist sogar unser Standard. Wir nutzen Cloud-Buchhaltung (DATEV), sichere Dokumentenportale und Video-Calls. Viele unserer Mandanten arbeiten ausschließlich digital mit uns – ohne jemals vor Ort gewesen zu sein. Natürlich können Sie uns auch persönlich in Düren besuchen, wenn Sie das möchten."
+        "a": "Ja, digitale Zusammenarbeit ist bei uns Standard. Wir nutzen DATEV sowie AGENDA, sichere Dokumentenportale und Video-Calls. Viele unserer Mandanten arbeiten ausschließlich digital mit uns – standortunabhängig und effizient. Natürlich können Sie uns auch persönlich in Düren besuchen."
       },
       "q12": {
         "q": "Übernehmen Sie auch die laufende Buchhaltung?",
-        "a": "Ja. Wir übernehmen Finanzbuchhaltung, Lohnbuchhaltung, Jahresabschlüsse und alle Steuererklärungen – auf Wunsch komplett oder als ergänzende Beratung zu Ihrem internen Team. Wir passen uns Ihren Anforderungen an."
+        "a": "Ja. Wir übernehmen Finanzbuchhaltung, Lohnbuchhaltung, Jahresabschlüsse und alle Steuererklärungen – auf Wunsch komplett oder als Ergänzung zu Ihrem internen Team. Wir passen uns Ihren Anforderungen an."
       },
       "q13": {
         "q": "Was ist Wegzugssteuer und wen betrifft sie?",
@@ -650,7 +649,7 @@
       },
       "q14": {
         "q": "Beraten Sie auch bei E-Commerce/Amazon?",
-        "a": "Ja, E-Commerce und Online-Handel sind einer unserer Schwerpunkte. Wir beraten zu Umsatzsteuer bei internationalen Plattformen (Amazon, eBay, Shopify etc.), OSS (One-Stop-Shop), FBA, Dropshipping, Strukturierung für Wachstum und vieles mehr. Ob Sie gerade starten oder bereits international verkaufen – wir helfen Ihnen, steuerlich sicher zu wachsen."
+        "a": "Ja, E-Commerce und Online-Handel sind einer unserer Schwerpunkte. Wir beraten u.a. zu Umsatzsteuer bei internationalen Plattformen (Amazon, eBay, Shopify etc.), OSS (One-Stop-Shop), FBA, Dropshipping, Strukturierung für Wachstum sowie Skalierung und vieles mehr. Ob Sie gerade starten oder bereits international verkaufen – wir helfen Ihnen, steuerlich sicher zu wachsen."
       },
       "q15": {
         "q": "Unterstützen Sie bei Betriebsprüfungen?",
@@ -662,22 +661,22 @@
       },
       "q17": {
         "q": "Unterstützen Sie auch Heilberufe (Ärzte, Apotheken)?",
-        "a": "Ja, Heilberufe sind einer unserer Schwerpunkte. Wir beraten Ärzte, Zahnärzte, Apotheken und MVZ bei Gründung, Gesellschaftsstrukturen, Immobilienstrukturen, Nachfolgeplanung und laufender Betreuung. Heilberufe haben besondere steuerliche Anforderungen – wir kennen sie."
+        "a": "Ja, Heilberufe sind einer unserer Schwerpunkte. Wir beraten Ärzte, Zahnärzte, Apotheker und MVZ bei Gründung, Gesellschaftsstrukturen, Immobilienstrukturen, Nachfolgeplanung und laufender Betreuung. Heilberufe haben besondere steuerliche Anforderungen – wir kennen sie."
       },
       "q18": {
         "q": "Wie schnell kann ich einen Termin bekommen?",
-        "a": "In der Regel innerhalb von 3–5 Werktagen. Bei dringenden Anliegen (z. B. Betriebsprüfung, nahende Fristen) oft auch kurzfristiger. Kontaktieren Sie uns einfach – wir finden eine Lösung."
+        "a": "In der Regel innerhalb von 3–5 Werktagen. Bei dringenden Anliegen (z. B. Betriebsprüfung, nahende Fristen) auch kurzfristiger. Kontaktieren Sie uns einfach – wir finden eine Lösung."
       },
       "q19": {
-        "q": "Bieten Sie auch Rechtsberatung an?",
-        "a": "Als Steuerberater dürfen wir rechtliche Beratung als Nebenleistung gemäß § 5 Abs. 1 RDG anbieten – also Rechtsberatung, die unmittelbar mit der steuerlichen Beratung zusammenhängt (z. B. Gesellschaftsverträge im steuerlichen Kontext). Bei komplexen rechtlichen Fragen arbeiten wir mit spezialisierten Rechtsanwälten zusammen."
+        "q": "Bieten Sie auch Beratungsleistungen im Wirtschafts- sowie Gesellschaftsrecht an?",
+        "a": "Ja. Als Steuerberater erbringen wir rechtliche Beratung als Nebenleistung gemäß § 5 Abs. 1 RDG – insbesondere im Wirtschafts- und Gesellschaftsrecht, soweit diese unmittelbar mit der steuerlichen Beratung zusammenhängt. Dazu gehören z. B. die Gestaltung von Gesellschaftsverträgen, Umstrukturierungen, Holdingstrukturen und Nachfolgeregelungen. Bei darüber hinausgehenden rechtlichen Fragestellungen arbeiten wir mit spezialisierten Rechtsanwälten zusammen."
       },
       "q20": {
         "q": "Arbeiten Sie auch mit Existenzgründern?",
-        "a": "Ja, gerne. Wir begleiten Sie von der Gründung bis zum Wachstum: Rechtsformwahl, Gewerbeanmeldung, Finanzamt-Anmeldung, laufende Buchhaltung, Steuererklärungen. Besonders bei E-Commerce-Gründungen, Heilberufen oder geplanter Internationalisierung haben wir viel Erfahrung."
+        "a": "Ja, gerne. Wir begleiten Gründer von der Planung bis zum Wachstum: Rechtsformwahl, Gewerbeanmeldung, Finanzamt-Anmeldung, laufende Buchhaltung, Steuererklärungen. Besonders bei E-Commerce-Gründungen, Heilberufen oder geplanter Internationalisierung haben wir viel Erfahrung."
       },
       "q100": {
-        "q": "Begleiten Sie Betriebsprüfungen aktiv?",
+        "q": "Begleiten Sie Betriebsprüfungen?",
         "a": "Selbstverständlich. Wir übernehmen die Kommunikation mit der Finanzverwaltung, strukturieren Prüfungsfelder vor und begleiten die Prüfung strategisch – mit dem Ziel, Risiken zu minimieren und Eskalationen zu vermeiden."
       },
       "q101": {
@@ -694,7 +693,7 @@
       },
       "q104": {
         "q": "Sind Sie auch im Steuerstrafrecht tätig?",
-        "a": "Ja. Wir beraten präventiv bei steuerstrafrechtlichen Risiken sowie begleitend bei laufenden Verfahren – stets mit Fokus auf Schadensbegrenzung, Strukturierung und rechtssichere Kommunikation."
+        "a": "Ja. Wir beraten präventiv bei steuerstrafrechtlichen Risiken sowie begleitend bei laufenden Verfahren – stets mit Fokus auf Schadensbegrenzung, Strukturierung und steuerrechtssichere Kommunikation."
       },
       "q105": {
         "q": "Wie stark ist Ihre Kanzlei im Steuerstrafrecht vernetzt?",
@@ -726,15 +725,15 @@
       },
       "q112": {
         "q": "Sind Sie auch bei Unternehmenskrisen und Insolvenzen beratend tätig?",
-        "a": "Ja. Wir beraten bei Sanierungen, Restrukturierungen, drohender Zahlungsunfähigkeit, Insolvenzantragspflichten sowie im laufenden Insolvenzverfahren. Unser Fokus liegt dabei auf Haftungsvermeidung, Strukturwahrung und rechtssicherer Begleitung."
+        "a": "Ja. Wir beraten bei Sanierungen, Restrukturierungen, drohender Zahlungsunfähigkeit, Insolvenzantragspflichten sowie im laufenden Insolvenzverfahren. Unser Fokus liegt dabei auf Haftungsvermeidung, Strukturwahrung und steuerrechtssicherer Begleitung."
       },
       "q113": {
         "q": "Übernehmen Sie auch Mandate mit internationalem Bezug außerhalb der Türkei?",
-        "a": "Ja. Neben Türkei-Bezügen beraten wir auch bei weiteren grenzüberschreitenden Sachverhalten, insbesondere im europäischen Kontext sowie bei internationaler Umsatzsteuer."
+        "a": "Ja. Wir beraten bei grenzüberschreitenden Sachverhalten mit verschiedenen Ländern – insbesondere im europäischen Kontext, bei internationaler Umsatzsteuer, Wegzugsbesteuerung und Doppelbesteuerungsabkommen. Neben unserem Schwerpunkt Türkei begleiten wir auch Mandate mit Bezug zu weiteren Ländern."
       },
       "q114": {
         "q": "Kennen Sie sich im türkischen Steuerrecht aus?",
-        "a": "Ja. Wir verfügen über fundierte Erfahrung in deutsch-türkischen Steuersachverhalten und arbeiten eng mit qualifizierten Kooperationspartnern in der Türkei zusammen."
+        "a": "Ja. Wir verfügen über fundierte Kenntnisse in deutsch-türkischen Steuersachverhalten und arbeiten eng mit qualifizierten Kooperationspartnern in der Türkei zusammen."
       },
       "closing": {
         "heading": "Ihre Frage war nicht dabei?",

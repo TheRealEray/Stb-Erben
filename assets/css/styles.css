@@ -1319,6 +1319,9 @@ li {
 .card__text {
   color: var(--color-text-light);
   margin-bottom: var(--spacing-md);
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .card__link {
