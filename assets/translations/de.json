@@ -560,7 +560,7 @@
         "phoneLabel": "Telefon",
         "emailLabel": "E-Mail",
         "hoursLabel": "Öffnungszeiten",
-        "hoursValue": "Montag–Freitag08:30–18:00 Uhr"
+        "hoursValue": "Montag–Freitag: 08:30–18:00 Uhr\nSamstag: 10:30–20:00 Uhr"
       },
       "reviews": {
         "title": "Was unsere Mandanten sagen",
@@ -860,7 +860,7 @@
     "navigation": "Navigation",
     "contact": "Kontakt",
     "openingHours": "Öffnungszeiten:",
-    "hours": "Mo–Fr: 08:30–18:00",
+    "hours": "Mo–Fr: 08:30–18:00 | Sa: 10:30–20:00",
     "legal": "Rechtliches",
     "imprint": "Impressum",
     "privacy": "Datenschutz",

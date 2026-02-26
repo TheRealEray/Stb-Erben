@@ -185,7 +185,7 @@
     "navigation": "Navigasyon",
     "legal": "Yasal",
     "openingHours": "Çalışma Saatleri:",
-    "hours": "Pzt–Cuma: 08:30–18:00",
+    "hours": "Pzt–Cuma: 08:30–18:00 | Cmt: 10:30–20:00",
     "imprint": "Künye",
     "privacy": "Gizlilik Politikası",
     "cookieSettings": "Çerez Ayarları",
@@ -417,7 +417,7 @@
         "phoneLabel": "Telefon",
         "emailLabel": "E-posta",
         "hoursLabel": "Çalışma Saatleri",
-        "hoursValue": "Pazartesi–Cuma\n08:30–18:00"
+        "hoursValue": "Pazartesi–Cuma: 08:30–18:00\nCumartesi: 10:30–20:00"
       },
       "map": {
         "heading": "Bizi Nasıl Bulursunuz",
