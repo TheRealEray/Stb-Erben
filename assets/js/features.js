@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Footer Features
   initDarkModeToggle();
-  initNewsletterForm();
-
   // Batch 2: Navigation & Accessibility
   initReadingMode();
   initLazyLoading();
@@ -119,8 +117,7 @@ if (typeof module !== 'undefined' && module.exports) {
     initReadingTime,
     initStickyCTA,
     initPrintButton,
-    initDarkModeToggle,
-    initNewsletterForm
+    initDarkModeToggle
   };
 }
 
@@ -168,31 +165,6 @@ function initDarkModeToggle() {
       applyTheme(!isDark);
     });
   }
-}
-
-/**
- * Footer Feature: Newsletter Form
- * Shows a success message on submit (no backend needed for demo).
- */
-function initNewsletterForm() {
-  const form = document.getElementById('footer-newsletter-form');
-  if (!form) return;
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const input = form.querySelector('.footer__newsletter-input');
-    const success = document.getElementById('footer-newsletter-success');
-
-    if (!input || !input.value.includes('@')) return;
-
-    if (success) success.classList.add('is-visible');
-    if (input) input.value = '';
-
-    // Hide message after 5 seconds
-    setTimeout(() => {
-      if (success) success.classList.remove('is-visible');
-    }, 5000);
-  });
 }
 
 /**

@@ -191,13 +191,7 @@
     "privacy": "Privacy Policy",
     "cookieSettings": "Cookie Settings",
     "followUs": "Follow Us",
-    "copyright": "© 2026 Steuerkanzlei Ibrahim Erben. All rights reserved.",
-    "newsletter": {
-      "title": "Stay Connected",
-      "desc": "Current tax news and important legislative changes directly to your inbox.",
-      "placeholder": "Your email address",
-      "success": "✓ Thank you! You will be notified."
-    }
+    "copyright": "© 2026 Steuerkanzlei Ibrahim Erben. All rights reserved."
   },
   "homepage": {
     "highlightedService": {

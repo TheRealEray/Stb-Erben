@@ -192,13 +192,7 @@
     "privacy": "Gizlilik Politikası",
     "cookieSettings": "Çerez Ayarları",
     "followUs": "Bizi Takip Edin",
-    "copyright": "© 2026 Steuerkanzlei Ibrahim Erben. Tüm hakları saklıdır.",
-    "newsletter": {
-      "title": "Bağlantıda Kalın",
-      "desc": "Güncel vergi haberleri ve önemli mevzuat değişiklikleri doğrudan gelen kutunuza.",
-      "placeholder": "E-posta adresiniz",
-      "success": "✓ Teşekkürler! Bilgilendirileceksiniz."
-    }
+    "copyright": "© 2026 Steuerkanzlei Ibrahim Erben. Tüm hakları saklıdır."
   },
   "homepage": {
     "highlightedService": {
