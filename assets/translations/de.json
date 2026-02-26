@@ -923,7 +923,7 @@
   "problemSolution": {
     "heading": "Kennen Sie diese Fragen?",
     "problem1": {
-      "title": "Umzug ins Ausland – aber was ist mit der Steuer?",
+      "title": "Wegzug ins Ausland – aber was ist mit der Steuer?",
       "text": "Ein Wegzug aus Deutschland wirft viele steuerliche Fragen auf. Wir begleiten Sie bei der steuerlichen Bewertung und Planung – strukturiert, transparent und vorausschauend.",
       "link": "Mehr zur Wegzugsbesteuerung →"
     },
@@ -940,7 +940,7 @@
   },
   "competencies": {
     "heading": "Unsere Kernkompetenzen",
-    "subheading": "Unsere Beratung verbindet steuerliche Gestaltung, rechtliche Expertise und strategische Weitsicht. Wir begleiten Unternehmen, Unternehmer und Gesellschafter in allen steuerlich und rechtlich sensiblen Phasen – von der Strukturierung bis zur Krise.",
+    "subheading": "Unsere Beratung verbindet steuerliche Gestaltung, rechtliche Expertise und strategische Weitsicht. Wir begleiten Unternehmen, Unternehmer und Gesellschafter in allen steuerrechtlich sensiblen Phasen – von der Strukturierung bis zur Krise.",
     "exitTax": {
       "title": "Wegzugsbesteuerung & International",
       "text": "Steuerliche Wegzugsplanung, Doppelbesteuerungsabkommen, internationale Strukturen.",
@@ -948,7 +948,7 @@
     },
     "ecommerce": {
       "title": "E-Commerce & Online-Handel",
-      "text": "Umsatzsteuer bei Amazon, eBay & Co., OSS, Plattformmodelle, Skalierung.",
+      "text": "Amazon, eBay & Co., OSS, Plattformmodelle, Skalierung.",
       "link": "Mehr erfahren →"
     },
     "healthcare": {
@@ -973,7 +973,7 @@
     },
     "support": {
       "title": "Laufende Betreuung",
-      "text": "Buchhaltung, Lohnabrechnung, Jahresabschluss, Steuererklärungen – alles aus einer Hand.",
+      "text": "Buchhaltung, Lohnabrechnung, Jahresabschluss, Steuererklärungen, Steuerliche Beratung – alles aus einer Hand.",
       "link": "Mehr erfahren →"
     }
   },
@@ -986,7 +986,7 @@
     "faqTeaser": {
       "heading": "Häufige Fragen",
       "q1": "Was kostet die Erstberatung?",
-      "a1": "Das erste Gespräch (30 Minuten) ist für Sie kostenfrei. Wir lernen uns kennen, Sie schildern Ihre Situation und wir klären, wie wir Ihnen helfen können. Erst danach erhalten Sie ein transparentes Angebot.",
+      "a1": "Das erste Kennenlerngespräch (30 Minuten) ist für Sie kostenfrei. Wir lernen uns kennen, Sie schildern Ihre Situation und wir klären, wie wir Ihnen helfen können. Sie erhalten anschließend ein transparentes und individuelles Angebot.",
       "q2": "Welche Unterlagen brauche ich für das Erstgespräch?",
       "a2": "Für das Erstgespräch brauchen Sie keine Unterlagen. Eine kurze Beschreibung Ihrer Situation genügt. Alle Details besprechen wir dann im Gespräch.",
       "q3": "Arbeiten Sie auch digital/remote?",
@@ -1006,7 +1006,7 @@
       },
       "exitTax": {
         "title": "Wegzug ins Ausland?",
-        "text": "Frühzeitige Planung spart Steuern. Wir analysieren Ihre Situation und zeigen Gestaltungsmöglichkeiten.",
+        "text": "Frühzeitige Planung spart Steuern. Wir analysieren Ihre Situation und zeigen Gestaltungsmöglichkeiten auf.",
         "link": "Wegzugsberatung anfragen →"
       },
       "ecommerce": {
@@ -1030,11 +1030,11 @@
     },
     "personal": {
       "title": "Fester Ansprechpartner",
-      "text": "Sie arbeiten mit einem festen Steuerberater zusammen – keine wechselnden Ansprechpartner, keine Anonymität. Ihr Berater kennt Ihr Geschäft und Ihre Ziele."
+      "text": "Sie arbeiten mit einem festen Ansprechpartner zusammen – kein Karussell, keine Anonymität. Ihr Berater kennt Ihr Geschäft und Ihre Ziele."
     },
     "digital": {
       "title": "Vollständig digitale Prozesse",
-      "text": "Cloud-Buchhaltung, sichere Dokumentenportale, Video-Calls: Moderne Zusammenarbeit ohne Medienbrüche. Arbeiten Sie von überall – wir auch."
+      "text": "Cloud-Buchhaltung, sichere Dokumentenportale, Video-Calls: Moderne Zusammenarbeit ohne Medienbrüche. Arbeiten Sie von überall – zu jeder Tageszeit."
     },
     "proactive": {
       "title": "Proaktive Beratung",
@@ -1042,7 +1042,7 @@
     },
     "international": {
       "title": "Internationale Kompetenz",
-      "text": "Doppelbesteuerungsabkommen, grenzüberschreitende Strukturen, internationale Umsatzsteuer: Wir begleiten Sie über deutsche Grenzen hinaus."
+      "text": "Doppelbesteuerungsabkommen, grenzüberschreitende Strukturen, internationale Umsatzsteuer: Wir begleiten Sie über Grenzen hinaus."
     },
     "quality": {
       "title": "Langfristige Partnerschaft",
@@ -1051,10 +1051,10 @@
   },
   "process": {
     "heading": "In 3 Schritten zum klaren Ergebnis",
-    "subheading": "So arbeiten wir zusammen – transparent und strukturiert.",
+    "subheading": "So arbeiten wir – transparent und strukturiert.",
     "step1": {
       "title": "Erstgespräch",
-      "text": "Wir hören zu und verstehen Ihre Situation. Im persönlichen Gespräch (vor Ort oder digital) klären wir Ihre Fragen und Ziele."
+      "text": "Wir hören zu und verstehen Ihre Situation. Im Gespräch (vor Ort oder digital) klären wir Ihre Fragen und Ziele."
     },
     "step2": {
       "title": "Analyse & Strategie",
