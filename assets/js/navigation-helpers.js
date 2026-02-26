@@ -233,8 +233,121 @@ function updateActiveSection(headings) {
 }
 
 // ============================================================================
-// SEARCH FUNCTIONALITY
+// SEARCH FUNCTIONALITY — Full-text search with scroll-to + highlight
 // ============================================================================
+
+// Search index: built lazily on first search, then cached
+let _searchIndex = null;
+let _searchIndexLoading = false;
+
+// All pages to index
+const SEARCH_PAGES = [
+    { url: 'index.html', title: 'Startseite' },
+    { url: 'leistungen.html', title: 'Leistungen' },
+    { url: 'leistungen-steuerstrafrecht.html', title: 'Steuerstraf- & Bußgeldverfahren' },
+    { url: 'leistungen-insolvenz.html', title: 'Insolvenz & Sanierung' },
+    { url: 'leistungen-wegzug.html', title: 'Wegzugssteuer & Internationales' },
+    { url: 'leistungen-ecommerce.html', title: 'E-Commerce & Online-Handel' },
+    { url: 'leistungen-heilberufe.html', title: 'Heilberufe & MVZ' },
+    { url: 'leistungen-immobilien.html', title: 'Immobilien & Vermögen' },
+    { url: 'leistungen-nachfolge.html', title: 'Nachfolge & Umstrukturierung' },
+    { url: 'leistungen-betreuung.html', title: 'Laufende Betreuung' },
+    { url: 'ueber-uns.html', title: 'Über uns' },
+    { url: 'faq.html', title: 'FAQ' },
+    { url: 'wissen.html', title: 'Wissen' },
+    { url: 'wissen-aussenpruefung.html', title: 'Steuerliche Außenprüfung' },
+    { url: 'wissen-steuerstrafrecht.html', title: 'Steuerstrafrecht' },
+    { url: 'wissen-umwandlungssteuerrecht.html', title: 'Umwandlungssteuerrecht' },
+    { url: 'tools.html', title: 'Tools & Steuerrechner' },
+    { url: 'honorar.html', title: 'Honorar & Kosten' },
+    { url: 'karriere.html', title: 'Karriere' },
+    { url: 'news.html', title: 'News & Steuernachrichten' },
+    { url: 'kontakt.html', title: 'Kontakt' },
+    { url: 'impressum.html', title: 'Impressum' },
+    { url: 'datenschutz.html', title: 'Datenschutz' }
+];
+
+/**
+ * Build the search index by fetching all pages and extracting text sections.
+ * Each entry: { url, title, sections: [{ heading, text }] }
+ */
+async function buildSearchIndex() {
+    if (_searchIndex) return _searchIndex;
+    if (_searchIndexLoading) {
+        // Wait for current build to finish
+        while (_searchIndexLoading) await new Promise(r => setTimeout(r, 50));
+        return _searchIndex;
+    }
+    _searchIndexLoading = true;
+
+    const index = [];
+    const basePath = window.location.pathname.replace(/[^/]*$/, '');
+
+    const fetches = SEARCH_PAGES.map(async (page) => {
+        try {
+            const resp = await fetch(basePath + page.url);
+            if (!resp.ok) return null;
+            const html = await resp.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            // Remove script, style, nav, header, footer to get only content
+            doc.querySelectorAll('script, style, nav, header, footer, .breadcrumbs, .cookie-banner, .search-modal').forEach(el => el.remove());
+
+            const main = doc.querySelector('main') || doc.querySelector('.section') || doc.body;
+            if (!main) return null;
+
+            // Extract sections: split by headings
+            const sections = [];
+            const headings = main.querySelectorAll('h1, h2, h3, h4');
+
+            if (headings.length === 0) {
+                // No headings: use whole page as one section
+                const text = (main.textContent || '').replace(/\s+/g, ' ').trim();
+                if (text.length > 10) {
+                    sections.push({ heading: page.title, text: text });
+                }
+            } else {
+                headings.forEach((h) => {
+                    const headingText = h.textContent.trim();
+                    // Collect text after this heading until the next heading
+                    let textParts = [];
+                    let sibling = h.nextElementSibling;
+                    while (sibling && !sibling.matches('h1, h2, h3, h4')) {
+                        const t = (sibling.textContent || '').replace(/\s+/g, ' ').trim();
+                        if (t) textParts.push(t);
+                        sibling = sibling.nextElementSibling;
+                    }
+                    // Also check parent for content (e.g. heading is inside a div)
+                    if (textParts.length === 0) {
+                        const parent = h.closest('section, .section, .card, .faq__item, article, div');
+                        if (parent) {
+                            const t = (parent.textContent || '').replace(/\s+/g, ' ').trim();
+                            if (t.length > headingText.length + 5) textParts.push(t);
+                        }
+                    }
+                    const sectionText = textParts.join(' ');
+                    if (sectionText.length > 5 || headingText.length > 3) {
+                        sections.push({ heading: headingText, text: headingText + ' ' + sectionText });
+                    }
+                });
+            }
+
+            if (sections.length > 0) {
+                index.push({ url: page.url, title: page.title, sections: sections });
+            }
+        } catch (e) {
+            // Skip failed pages silently
+        }
+        return null;
+    });
+
+    await Promise.all(fetches);
+    _searchIndex = index;
+    _searchIndexLoading = false;
+    return index;
+}
+
 function initSearch() {
     const searchToggle = document.querySelector('.search-toggle');
     const searchModal = document.querySelector('.search-modal');
@@ -244,11 +357,15 @@ function initSearch() {
 
     if (!searchToggle || !searchModal) return;
 
+    // Start pre-loading the index when user hovers over search icon
+    searchToggle.addEventListener('mouseenter', () => { buildSearchIndex(); }, { once: true });
+
     // Open search modal
     searchToggle.addEventListener('click', (e) => {
         e.preventDefault();
         searchModal.classList.add('is-open');
         searchInput.focus();
+        buildSearchIndex(); // ensure index is loading
     });
 
     // Close search modal
@@ -284,57 +401,62 @@ function initSearch() {
         clearTimeout(searchTimeout);
         const query = e.target.value.trim();
 
-        // Allow single-character queries for numbers (e.g. "3" → finds §3, §370 etc.)
         const minLength = /^\d/.test(query) ? 1 : 2;
         if (query.length < minLength) {
             searchResults.innerHTML = '';
             return;
         }
 
-        searchTimeout = setTimeout(() => {
-            performSearch(query, searchResults);
+        searchTimeout = setTimeout(async () => {
+            await performSearch(query, searchResults);
         }, 300);
     });
 }
 
-function performSearch(query, resultsContainer) {
-    // Simple client-side search through page content
-    const searchablePages = [
-        { title: 'Startseite', url: 'index.html', keywords: 'steuerberatung düren ibrahim erben wegzugssteuer ecommerce 2025 2026 steuerkanzlei' },
-        { title: 'Leistungen', url: 'leistungen.html', keywords: 'steuerstrafrecht insolvenz wegzug ecommerce heilberufe immobilien nachfolge betreuung §370 §153' },
-        { title: 'Steuerstraf- & Bußgeldverfahren', url: 'leistungen.html#steuerstrafrecht', keywords: 'steuerstrafrecht selbstanzeige verteidigung bußgeld ermittlung §370 §371 §378 abgabenordnung ao strafrecht' },
-        { title: 'Wegzugssteuer & Internationales', url: 'leistungen.html#wegzug', keywords: 'wegzugssteuer ausland doppelbesteuerung international entstrickung §6 außensteuergesetz astg dba' },
-        { title: 'E-Commerce & Online-Handel', url: 'leistungen.html#ecommerce', keywords: 'ecommerce amazon ebay shopify oss umsatzsteuer online handel §3a §22f §25e ustg vat' },
-        { title: 'Heilberufe & MVZ', url: 'leistungen.html#heilberufe', keywords: 'arzt zahnarzt apotheke mvz praxis medizin §4 ustg steuerbefreiung heilbehandlung' },
-        { title: 'Immobilien & Vermögen', url: 'leistungen.html#immobilien', keywords: 'immobilien vermögen grundstück haus wohnung immobiliensteuer §23 estg spekulationssteuer 10 jahre' },
-        { title: 'Nachfolge & Umstrukturierung', url: 'leistungen.html#nachfolge', keywords: 'nachfolge umstrukturierung holding umwandlung unternehmensübertragung §13 §13a erbschaftsteuer schenkung' },
-        { title: 'Laufende Betreuung', url: 'leistungen.html#betreuung', keywords: 'buchhaltung lohnbuchhaltung jahresabschluss steuererklärung betreuung datev §4 estg gewinnermittlung' },
-        { title: 'Über uns', url: 'ueber-uns.html', keywords: 'kanzlei über uns philosophie standort düren weierstraße 43 52349' },
-        { title: 'FAQ', url: 'faq.html', keywords: 'fragen antworten häufig faq hilfe steuerberater kosten ablauf erstgespräch' },
-        { title: 'Wissen', url: 'wissen.html', keywords: 'wissen module außenprüfung steuerstrafrecht umwandlungssteuerrecht ratgeber leitfaden' },
-        { title: 'Steuerliche Außenprüfung', url: 'wissen-aussenpruefung.html', keywords: 'außenprüfung betriebsprüfung finanzamt prüfung §193 §194 §201 ao prüfungsanordnung schlussbesprechung' },
-        { title: 'Steuerstrafrecht', url: 'wissen-steuerstrafrecht.html', keywords: 'steuerstrafrecht verfahren selbstanzeige verteidigung §370 §371 §153 steuerhinterziehung strafbefreiende' },
-        { title: 'Umwandlungssteuerrecht', url: 'wissen-umwandlungssteuerrecht.html', keywords: 'umwandlung verschmelzung spaltung formwechsel einbringung holding §20 §21 §24 umwandlungssteuergesetz umwstg' },
-        { title: 'Tools & Steuerrechner', url: 'tools.html', keywords: 'tools rechner einkommensteuer brutto netto elterngeld steuerrechner 2025 minijob 556 grundfreibetrag 12096 pflegegeld kindergeld 250' },
-        { title: 'Honorar & Kosten', url: 'honorar.html', keywords: 'honorar preise kosten vergütung gebühren pauschale stundensatz steuerberatervergütungsverordnung stbvv rvo §13' },
-        { title: 'Karriere', url: 'karriere.html', keywords: 'karriere jobs stellenangebote arbeiten team mitarbeiter steuerberater steuerfachangestellter ausbildung' },
-        { title: 'Kontakt', url: 'kontakt.html', keywords: 'kontakt telefon email adresse düren weierstraße 43 52349 02421 99 848 10 info@stberben.com' },
-        { title: 'News & Steuernachrichten', url: 'news.html', keywords: 'news nachrichten steuern aktuell bmf bundesfinanzministerium haufe 2025 2026 gesetz änderung' }
-    ];
+async function performSearch(query, resultsContainer) {
+    const index = await buildSearchIndex();
+    if (!index) {
+        resultsContainer.innerHTML = '<div class="search-no-results"><p>Suchindex wird geladen...</p></div>';
+        return;
+    }
 
     const queryLower = query.toLowerCase().replace(/^§\s*/, '§');
-    // When query starts with a digit, also try matching §-prefixed version
     const paragraphQuery = /^\d/.test(queryLower) ? '§' + queryLower : null;
-    const results = searchablePages.filter(page => {
-        const titleLower = page.title.toLowerCase();
-        const keywordsLower = page.keywords.toLowerCase();
-        const titleMatch = titleLower.includes(queryLower);
-        const keywordsMatch = keywordsLower.includes(queryLower);
-        const paragraphMatch = paragraphQuery && (keywordsLower.includes(paragraphQuery) || titleLower.includes(paragraphQuery));
-        return titleMatch || keywordsMatch || paragraphMatch;
-    });
 
-    if (results.length === 0) {
+    const results = [];
+
+    for (const page of index) {
+        // Search through all sections of this page
+        for (const section of page.sections) {
+            const textLower = section.text.toLowerCase();
+            const headingLower = section.heading.toLowerCase();
+
+            const match = textLower.includes(queryLower) ||
+                          headingLower.includes(queryLower) ||
+                          (paragraphQuery && (textLower.includes(paragraphQuery) || headingLower.includes(paragraphQuery)));
+
+            if (match) {
+                // Extract context snippet around the match
+                const snippet = extractSnippet(section.text, queryLower, paragraphQuery);
+                results.push({
+                    pageTitle: page.title,
+                    sectionHeading: section.heading,
+                    url: page.url,
+                    snippet: snippet
+                });
+            }
+        }
+    }
+
+    // Deduplicate by URL (keep best match per page, max 2 per page)
+    const byPage = {};
+    for (const r of results) {
+        if (!byPage[r.url]) byPage[r.url] = [];
+        if (byPage[r.url].length < 2) byPage[r.url].push(r);
+    }
+    const dedupedResults = Object.values(byPage).flat().slice(0, 12);
+
+    if (dedupedResults.length === 0) {
         resultsContainer.innerHTML = `
             <div class="search-no-results">
                 <p>Keine Ergebnisse für "<strong>${escapeHtml(query)}</strong>" gefunden.</p>
@@ -346,18 +468,148 @@ function performSearch(query, resultsContainer) {
         return;
     }
 
-    const resultsHTML = results.map(result => `
-        <a href="${result.url}" class="search-result-item">
-            <div class="search-result-title">${highlightQuery(result.title, query)}</div>
-        </a>
-    `).join('');
+    const resultsHTML = dedupedResults.map(result => {
+        const highlightUrl = result.url + (result.url.includes('?') ? '&' : '?') + 'highlight=' + encodeURIComponent(query);
+        return `
+        <a href="${highlightUrl}" class="search-result-item">
+            <div class="search-result-title">${highlightQuery(result.pageTitle, query)}</div>
+            <div class="search-result-section">${highlightQuery(result.sectionHeading, query)}</div>
+            <div class="search-result-snippet">${highlightQuery(result.snippet, query)}</div>
+        </a>`;
+    }).join('');
 
     resultsContainer.innerHTML = `
         <div class="search-results-header">
-            <strong>${results.length}</strong> Ergebnis${results.length !== 1 ? 'se' : ''} für "<strong>${escapeHtml(query)}</strong>"
+            <strong>${dedupedResults.length}</strong> Ergebnis${dedupedResults.length !== 1 ? 'se' : ''} für "<strong>${escapeHtml(query)}</strong>"
         </div>
         ${resultsHTML}
     `;
+}
+
+/**
+ * Extract a context snippet (~120 chars) around the first match.
+ */
+function extractSnippet(text, queryLower, paragraphQuery) {
+    const textLower = text.toLowerCase();
+    let idx = textLower.indexOf(queryLower);
+    if (idx === -1 && paragraphQuery) idx = textLower.indexOf(paragraphQuery);
+    if (idx === -1) idx = 0;
+
+    const snippetRadius = 60;
+    let start = Math.max(0, idx - snippetRadius);
+    let end = Math.min(text.length, idx + queryLower.length + snippetRadius);
+
+    // Snap to word boundaries
+    if (start > 0) {
+        const ws = text.indexOf(' ', start);
+        if (ws !== -1 && ws < idx) start = ws + 1;
+    }
+    if (end < text.length) {
+        const ws = text.lastIndexOf(' ', end);
+        if (ws > idx) end = ws;
+    }
+
+    let snippet = text.slice(start, end).trim();
+    if (start > 0) snippet = '...' + snippet;
+    if (end < text.length) snippet = snippet + '...';
+    return snippet;
+}
+
+/**
+ * On page load: check for ?highlight= parameter and highlight the matching text.
+ */
+function initSearchHighlight() {
+    const params = new URLSearchParams(window.location.search);
+    const highlightTerm = params.get('highlight');
+    if (!highlightTerm || highlightTerm.length < 1) return;
+
+    // Wait for page to fully render
+    requestAnimationFrame(() => {
+        setTimeout(() => {
+            highlightAndScrollTo(highlightTerm);
+        }, 300);
+    });
+}
+
+/**
+ * Find the search term in the page text, wrap it in a <mark>, scroll to it, animate.
+ */
+function highlightAndScrollTo(term) {
+    const main = document.querySelector('main') || document.querySelector('.section') || document.body;
+    const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT, null);
+
+    const termLower = term.toLowerCase();
+    let firstMark = null;
+
+    // Collect all text nodes that contain the term
+    const matches = [];
+    while (walker.nextNode()) {
+        const node = walker.currentNode;
+        const text = node.textContent;
+        if (text.toLowerCase().includes(termLower)) {
+            matches.push(node);
+        }
+    }
+
+    // Highlight up to 5 matches
+    const maxHighlights = 5;
+    let count = 0;
+
+    for (const node of matches) {
+        if (count >= maxHighlights) break;
+
+        const text = node.textContent;
+        const idx = text.toLowerCase().indexOf(termLower);
+        if (idx === -1) continue;
+
+        // Skip if inside a script, style, or already highlighted
+        const parent = node.parentElement;
+        if (!parent || parent.tagName === 'SCRIPT' || parent.tagName === 'STYLE' || parent.classList.contains('search-highlight')) continue;
+
+        // Split the text node and wrap the match
+        const before = text.slice(0, idx);
+        const match = text.slice(idx, idx + term.length);
+        const after = text.slice(idx + term.length);
+
+        const mark = document.createElement('mark');
+        mark.className = 'search-highlight';
+        mark.textContent = match;
+
+        const frag = document.createDocumentFragment();
+        if (before) frag.appendChild(document.createTextNode(before));
+        frag.appendChild(mark);
+        if (after) frag.appendChild(document.createTextNode(after));
+
+        parent.replaceChild(frag, node);
+
+        if (!firstMark) firstMark = mark;
+        count++;
+    }
+
+    // Scroll to the first match
+    if (firstMark) {
+        const headerOffset = 100;
+        const elementPosition = firstMark.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+
+        // Remove highlights after 4 seconds with fade-out
+        setTimeout(() => {
+            document.querySelectorAll('.search-highlight').forEach(mark => {
+                mark.classList.add('search-highlight--fade');
+                setTimeout(() => {
+                    const text = mark.textContent;
+                    mark.replaceWith(document.createTextNode(text));
+                }, 600);
+            });
+
+            // Clean up URL parameter
+            const url = new URL(window.location);
+            url.searchParams.delete('highlight');
+            window.history.replaceState({}, '', url);
+        }, 4000);
+    }
 }
 
 function highlightQuery(text, query) {
@@ -441,6 +693,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTableOfContents();
     initTOCToggle();
     initSearch();
+    initSearchHighlight();
     initSocialDial();
     initNavBodyClass();
 });
