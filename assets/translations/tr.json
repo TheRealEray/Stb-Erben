@@ -185,8 +185,8 @@
     "navigation": "Navigasyon",
     "legal": "Yasal",
     "openingHours": "Çalışma Saatleri:",
-    "hours": "Pzt–Cuma: 08:30–18:00 | Cmt: 10:30–20:00",
-    "hoursMoFr": "Pzt–Cuma: 08:30–18:00 (Mola: 13:00–14:30)",
+    "hours": "Pzt–Cuma: 08:30–13:00 ve 14:30–18:00 | Cmt: 10:30–20:00",
+    "hoursMoFr": "Pzt–Cuma: 08:30–13:00 ve 14:30–18:00",
     "hoursSa": "Cmt: 10:30–20:00",
     "imprint": "Künye",
     "privacy": "Gizlilik Politikası",
@@ -413,7 +413,7 @@
         "phoneLabel": "Telefon",
         "emailLabel": "E-posta",
         "hoursLabel": "Çalışma Saatleri",
-        "hoursValue": "Pazartesi–Cuma: 08:30–18:00 (Mola: 13:00–14:30)\nCumartesi: 10:30–20:00"
+        "hoursValue": "Pazartesi–Cuma: 08:30–13:00 ve 14:30–18:00\nCumartesi: 10:30–20:00"
       },
       "map": {
         "heading": "Bizi Nasıl Bulursunuz",
@@ -534,7 +534,7 @@
       },
       "q10": {
         "q": "Sorulara ne kadar hızlı yanıt veriyorsunuz?",
-        "a": "Genellikle 24 saat içinde yanıt veriyoruz (iş günlerinde). Acil konularda (ör. devam eden denetim, son tarihler) genellikle aynı gün. Telefon ile Pzt–Cuma 08:30–18:00 arasında bize ulaşabilirsiniz."
+        "a": "Genellikle 24 saat içinde yanıt veriyoruz (iş günlerinde). Acil konularda (ör. devam eden denetim, son tarihler) genellikle aynı gün. Telefon ile Pzt–Cuma 08:30–13:00 ve 14:30–18:00 arasında bize ulaşabilirsiniz."
       },
       "q11": {
         "q": "Dijital olarak birlikte çalışabilir miyiz?",

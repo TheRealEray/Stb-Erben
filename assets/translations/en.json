@@ -184,8 +184,8 @@
     "navigation": "Navigation",
     "legal": "Legal",
     "openingHours": "Opening Hours:",
-    "hours": "Mon–Fri: 08:30–18:00 | Sat: 10:30–20:00",
-    "hoursMoFr": "Mon–Fri: 08:30–18:00 (Break: 13:00–14:30)",
+    "hours": "Mon–Fri: 08:30–13:00 & 14:30–18:00 | Sat: 10:30–20:00",
+    "hoursMoFr": "Mon–Fri: 08:30–13:00 & 14:30–18:00",
     "hoursSa": "Sat: 10:30–20:00",
     "imprint": "Imprint",
     "privacy": "Privacy Policy",
@@ -412,7 +412,7 @@
         "phoneLabel": "Phone",
         "emailLabel": "Email",
         "hoursLabel": "Opening Hours",
-        "hoursValue": "Monday–Friday: 08:30–18:00 (Break: 13:00–14:30)\nSaturday: 10:30–20:00"
+        "hoursValue": "Monday–Friday: 08:30–13:00 & 14:30–18:00\nSaturday: 10:30–20:00"
       },
       "map": {
         "heading": "How to Find Us",
@@ -533,7 +533,7 @@
       },
       "q10": {
         "q": "How quickly do you respond to inquiries?",
-        "a": "We typically respond within 24 hours (on business days). For urgent matters (e.g., ongoing audit, deadlines), often on the same day. You can reach us by phone Mon–Fri from 08:30–18:00."
+        "a": "We typically respond within 24 hours (on business days). For urgent matters (e.g., ongoing audit, deadlines), often on the same day. You can reach us by phone Mon–Fri from 08:30–13:00 & 14:30–18:00."
       },
       "q11": {
         "q": "Can we work together digitally?",
