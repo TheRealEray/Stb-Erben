@@ -6024,4 +6024,73 @@ body.is-reading-mode .article {
     .sp-why__grid { grid-template-columns: 1fr; }
     .sp-stat { flex: 0 0 50%; }
 }
-<!-- Updated 1772057238 -->
+/* ========================================
+   E-COMMERCE LOGO SLIDER
+   ======================================== */
+.ecommerce-slider {
+    overflow: hidden;
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+    position: relative;
+}
+.ecommerce-slider::before,
+.ecommerce-slider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    z-index: 2;
+    pointer-events: none;
+}
+.ecommerce-slider::before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-bg-alt, #f8f9fa), transparent);
+}
+.ecommerce-slider::after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-bg-alt, #f8f9fa), transparent);
+}
+[data-theme="dark"] .ecommerce-slider::before {
+    background: linear-gradient(to right, var(--color-bg-alt, #1a1a2e), transparent);
+}
+[data-theme="dark"] .ecommerce-slider::after {
+    background: linear-gradient(to left, var(--color-bg-alt, #1a1a2e), transparent);
+}
+.ecommerce-slider__track {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    animation: ecommerce-scroll 30s linear infinite;
+    width: max-content;
+}
+.ecommerce-slider__track:hover {
+    animation-play-state: paused;
+}
+.ecommerce-slider__item {
+    flex-shrink: 0;
+    width: 120px;
+    height: 40px;
+    opacity: 0.45;
+    transition: opacity 0.3s ease;
+}
+.ecommerce-slider__item:hover {
+    opacity: 0.8;
+}
+.ecommerce-slider__item svg {
+    width: 100%;
+    height: 100%;
+    color: var(--color-text, #1e293b);
+}
+[data-theme="dark"] .ecommerce-slider__item svg {
+    color: var(--color-text-light, #94a3b8);
+}
+@keyframes ecommerce-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+@media (max-width: 768px) {
+    .ecommerce-slider__track { gap: 2rem; }
+    .ecommerce-slider__item { width: 90px; height: 30px; }
+    .ecommerce-slider { margin-top: 2rem; }
+}
