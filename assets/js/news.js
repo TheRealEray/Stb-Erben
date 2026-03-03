@@ -3,21 +3,29 @@
  * Fetches live RSS feeds from official German tax news sources
  * and renders them as a filterable editorial article layout.
  *
- * Sources: BMF (2 feeds), Haufe Steuern, Bundesrat
- * Proxy: allorigins.win (primary) + rss2json.com (fallback)
+ * Sources: BMF, BFH, BGBl, Haufe Steuern, Haufe Immobilien, Bundesrat
+ * Static: Türkische Steuerquellen (GIB, PwC, Verginet)
+ * Proxy: Netlify Function (primary), allorigins.win, rss2json.com (fallbacks)
  * Cache: localStorage (24h TTL) — only cached when articles > 0
  */
 
-const NEWS_CACHE_KEY = 'news_cache_v2';
-const NEWS_CACHE_TTL = 24 * 60 * 60 * 1000; // 24 Stunden (täglich aktualisiert)
+const NEWS_CACHE_KEY = 'news_cache_v3';
+const NEWS_CACHE_TTL = 24 * 60 * 60 * 1000; // 24 Stunden
+const ARTICLES_PER_PAGE = 12;
+
+// ────────────────────────────────────────────────────────────────
+// RSS Feed Sources
+// ────────────────────────────────────────────────────────────────
 
 const FEEDS = [
+  // — Steuerpolitik —
   {
     url: 'https://www.bundesfinanzministerium.de/SiteGlobals/Functions/RSSFeed/DE/Pressemitteilungen/RSSPressemitteilungen.xml',
     source: 'Bundesfinanzministerium',
     category: 'Steuerpolitik',
     icon: '🏛️'
   },
+  // — Steuerrecht —
   {
     url: 'https://www.bundesfinanzministerium.de/SiteGlobals/Functions/RSSFeed/DE/Steuern/RSSSteuern.xml',
     source: 'BMF Steuern',
@@ -30,11 +38,191 @@ const FEEDS = [
     category: 'Steuerrecht',
     icon: '⚖️'
   },
+  // — Gesetzgebung —
   {
     url: 'https://www.bundesrat.de/SiteGlobals/Functions/RSSFeed/RSSGenerator_Announcement.xml?nn=4352850',
     source: 'Bundesrat',
     category: 'Gesetzgebung',
     icon: '📜'
+  },
+  {
+    url: 'https://www.recht.bund.de/de/serviceseiten/rss/rss/feeds/rss_bgbl-1-2.xml?nn=211452',
+    source: 'Bundesgesetzblatt',
+    category: 'Gesetzgebung',
+    icon: '📰'
+  },
+  // — Rechtsprechung —
+  {
+    url: 'https://www.bundesfinanzhof.de/de/precedent.rss',
+    source: 'Bundesfinanzhof',
+    category: 'Rechtsprechung',
+    icon: '⚖️'
+  },
+  {
+    url: 'https://www.bundesfinanzhof.de/de/news.rss',
+    source: 'BFH Presse',
+    category: 'Rechtsprechung',
+    icon: '🔔'
+  },
+  // — Immobilien —
+  {
+    url: 'https://www.haufe.de/xml/rss_129166.xml',
+    source: 'Haufe Immobilien',
+    category: 'Immobilien',
+    icon: '🏠'
+  }
+];
+
+// ────────────────────────────────────────────────────────────────
+// Static Resource Articles (no RSS available)
+// ────────────────────────────────────────────────────────────────
+
+const STATIC_ARTICLES = [
+  // — Türkei / International —
+  {
+    title: 'Mieteinnahmen in der Türkei: Besteuerung für Privatpersonen (GİB)',
+    link: 'https://www.gib.gov.tr/vergi-konulari/1_bireysel/9_kira_geliri/9',
+    description: 'Offizielle Informationen der türkischen Finanzverwaltung (Gelir İdaresi Başkanlığı) zur Besteuerung von Mieteinnahmen für Privatpersonen in der Türkei.',
+    date: new Date('2026-01-15'),
+    source: 'GİB Türkei',
+    category: 'Türkei / International',
+    icon: '🇹🇷',
+    isStatic: true
+  },
+  {
+    title: 'Einkommensteuer-Tarife Türkei 2026 (PwC Türkei)',
+    link: 'https://www-pwc-com-tr.translate.goog/tr/hizmetlerimiz/vergi/bultenler/2026/2026-yili-bazi-gelir-vergisi-rakamlari.html?_x_tr_sl=tr&_x_tr_tl=de&_x_tr_hl=de&_x_tr_pto=sc',
+    description: 'PwC Türkei: Aktuelle Einkommensteuer-Zahlen und Tarife für das Steuerjahr 2026 – automatisch ins Deutsche übersetzt.',
+    date: new Date('2026-01-10'),
+    source: 'PwC Türkei',
+    category: 'Türkei / International',
+    icon: '🇹🇷',
+    isStatic: true
+  },
+  {
+    title: 'Türkische Einkommensteuertarife – Verginet Übersicht',
+    link: 'https://www.verginet.net/dtt/1/gelirvergisitarifesi_3804.aspx',
+    description: 'Verginet.net: Detaillierte Übersicht der türkischen Einkommensteuertarife mit historischen Vergleichswerten und aktuellen Steuersätzen.',
+    date: new Date('2026-01-08'),
+    source: 'Verginet',
+    category: 'Türkei / International',
+    icon: '🇹🇷',
+    isStatic: true
+  },
+  {
+    title: 'Lohneinkünfte in der Türkei: Steuerliche Behandlung (GİB)',
+    link: 'https://www.gib.gov.tr/vergi-konulari/1_bireysel/11_ucret_geliri/11',
+    description: 'Offizielle Informationen der türkischen Finanzverwaltung zur Besteuerung von Lohn- und Gehaltseinkünften für Arbeitnehmer in der Türkei.',
+    date: new Date('2026-01-15'),
+    source: 'GİB Türkei',
+    category: 'Türkei / International',
+    icon: '🇹🇷',
+    isStatic: true
+  },
+  // — Branchenspezifisch: Gastro & Hotellerie —
+  {
+    title: 'DEHOGA: Aktuelle Steuerthemen für Gastronomen und Hoteliers',
+    link: 'https://www.dehoga-bundesverband.de/presse-news/aktuelles/',
+    description: 'Branchenverband DEHOGA: Aktuelle Nachrichten zu Umsatzsteuer, Trinkgeld-Regelungen, Kassensysteme und Betriebsprüfungen in der Gastronomie.',
+    date: new Date('2026-03-01'),
+    source: 'DEHOGA',
+    category: 'Gastro & Hotellerie',
+    icon: '🍽️',
+    isStatic: true
+  },
+  {
+    title: 'Registrierkassenpflicht und TSE: Was Gastronomen wissen müssen',
+    link: 'https://www.bundesfinanzministerium.de/Web/DE/Themen/Steuern/Steuerarten/Umsatzsteuer/umsatzsteuer.html',
+    description: 'Seit 2020 ist die technische Sicherheitseinrichtung (TSE) für elektronische Kassensysteme Pflicht. Gastronomie und Einzelhandel sind besonders betroffen.',
+    date: new Date('2026-02-15'),
+    source: 'BMF',
+    category: 'Gastro & Hotellerie',
+    icon: '🍽️',
+    isStatic: true
+  },
+  // — Branchenspezifisch: E-Commerce —
+  {
+    title: 'OSS-Verfahren: Umsatzsteuer im EU-Onlinehandel',
+    link: 'https://www.bzst.de/DE/Unternehmen/Umsatzsteuer/OSS/oss_node.html',
+    description: 'Bundeszentralamt für Steuern: One-Stop-Shop (OSS) für E-Commerce-Unternehmer – Umsatzsteuermeldung für EU-weite Fernverkäufe an einem Ort.',
+    date: new Date('2026-02-20'),
+    source: 'BZSt',
+    category: 'E-Commerce',
+    icon: '🛒',
+    isStatic: true
+  },
+  {
+    title: 'Amazon, eBay & Co.: Plattformhaftung und Umsatzsteuer',
+    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    description: 'Online-Marktplätze haften für die Umsatzsteuer ihrer Verkäufer. Was Händler über § 22f UStG und die Bescheinigung nach § 22f wissen müssen.',
+    date: new Date('2026-02-10'),
+    source: 'Haufe',
+    category: 'E-Commerce',
+    icon: '🛒',
+    isStatic: true
+  },
+  // — Branchenspezifisch: Heilberufe —
+  {
+    title: 'Heilberufe: Umsatzsteuerbefreiung und aktuelle BFH-Rechtsprechung',
+    link: 'https://www.bundesfinanzhof.de/de/entscheidungen/entscheidungen-online/',
+    description: 'Ärzte, Zahnärzte und Therapeuten: Die Umsatzsteuerbefreiung nach § 4 Nr. 14 UStG und aktuelle Urteile zu Heilbehandlungsleistungen.',
+    date: new Date('2026-02-18'),
+    source: 'BFH',
+    category: 'Heilberufe',
+    icon: '🏥',
+    isStatic: true
+  },
+  {
+    title: 'MVZ-Gründung: Steuerliche Strukturierung und Fallstricke',
+    link: 'https://www.kbv.de/html/mvz.php',
+    description: 'Medizinische Versorgungszentren (MVZ): Steuerliche Aspekte der Gründung, Rechtsformwahl und Gewinnverteilung zwischen den Gesellschaftern.',
+    date: new Date('2026-01-25'),
+    source: 'KBV',
+    category: 'Heilberufe',
+    icon: '🏥',
+    isStatic: true
+  },
+  // — Branchenspezifisch: Juweliere & Einzelhandel —
+  {
+    title: 'Differenzbesteuerung nach § 25a UStG: Für Juweliere und Antiquitätenhändler',
+    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    description: 'Beim An- und Verkauf gebrauchter Waren (Schmuck, Uhren, Antiquitäten) kann die Differenzbesteuerung die Umsatzsteuer erheblich reduzieren.',
+    date: new Date('2026-02-05'),
+    source: 'Haufe',
+    category: 'Juweliere & Einzelhandel',
+    icon: '💎',
+    isStatic: true
+  },
+  {
+    title: 'Bargeldintensive Branchen: Kassenführung und Betriebsprüfung',
+    link: 'https://www.bundesfinanzministerium.de/Web/DE/Themen/Steuern/Steuerarten/Umsatzsteuer/umsatzsteuer.html',
+    description: 'Juweliere, Gastronomen und Einzelhändler stehen bei Betriebsprüfungen unter besonderer Beobachtung. Ordnungsgemäße Kassenführung ist Pflicht.',
+    date: new Date('2026-01-20'),
+    source: 'BMF',
+    category: 'Juweliere & Einzelhandel',
+    icon: '💎',
+    isStatic: true
+  },
+  // — Branchenspezifisch: Handwerk & Mittelstand —
+  {
+    title: 'ZDH: Steuerpolitik für das Handwerk – aktuelle Positionen',
+    link: 'https://www.zdh.de/fachbereiche/wirtschaft-energie-umwelt/steuern-und-finanzen/',
+    description: 'Zentralverband des Deutschen Handwerks: Forderungen und Stellungnahmen zu Einkommensteuer, Gewerbesteuer und Fachkräftesicherung im Handwerk.',
+    date: new Date('2026-02-25'),
+    source: 'ZDH',
+    category: 'Handwerk & Mittelstand',
+    icon: '🔧',
+    isStatic: true
+  },
+  {
+    title: 'Investitionsabzugsbetrag nach § 7g EStG: Steuervorteile für den Mittelstand',
+    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    description: 'Kleine und mittlere Unternehmen können mit dem Investitionsabzugsbetrag bis zu 50% der geplanten Investitionskosten vorab steuerlich geltend machen.',
+    date: new Date('2026-01-30'),
+    source: 'Haufe',
+    category: 'Handwerk & Mittelstand',
+    icon: '🔧',
+    isStatic: true
   }
 ];
 
@@ -45,7 +233,6 @@ const FEEDS = [
 function parseRSSXml(xmlStr, feed) {
   try {
     const doc = new DOMParser().parseFromString(xmlStr, 'application/xml');
-    // Check for parse error
     if (doc.querySelector('parsererror')) return [];
 
     const items = doc.querySelectorAll('item');
@@ -54,10 +241,8 @@ function parseRSSXml(xmlStr, feed) {
     return Array.from(items).slice(0, 10).map(item => {
       const text = tag => item.querySelector(tag)?.textContent?.trim() || '';
 
-      // <link> in RSS is a self-closing tag or contains text — try multiple approaches
       let link = text('link');
       if (!link) {
-        // Some feeds put the URL in guid
         const guid = item.querySelector('guid');
         if (guid && guid.getAttribute('isPermaLink') !== 'false') {
           link = guid.textContent.trim();
@@ -95,7 +280,7 @@ function stripHtml(html) {
 // ────────────────────────────────────────────────────────────────
 
 async function fetchFeed(feed) {
-  // Strategy 1: Netlify Function (server-side, most reliable, no CORS)
+  // Strategy 1: Netlify Function
   try {
     const fnUrl = `/.netlify/functions/news?url=${encodeURIComponent(feed.url)}`;
     const res = await fetch(fnUrl, { signal: AbortSignal.timeout(10000) });
@@ -106,7 +291,7 @@ async function fetchFeed(feed) {
     }
   } catch {}
 
-  // Strategy 2: allorigins.win — public CORS proxy
+  // Strategy 2: allorigins.win
   try {
     const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(feed.url)}`;
     const res = await fetch(proxyUrl, { signal: AbortSignal.timeout(8000) });
@@ -119,7 +304,7 @@ async function fetchFeed(feed) {
     }
   } catch {}
 
-  // Strategy 3: rss2json.com — parses RSS for us
+  // Strategy 3: rss2json.com
   try {
     const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}&count=10`;
     const res = await fetch(apiUrl, { signal: AbortSignal.timeout(6000) });
@@ -143,13 +328,15 @@ async function fetchFeed(feed) {
 }
 
 async function loadAllNews() {
-  // Check localStorage cache (only exists if a previous fetch returned articles)
+  // Check localStorage cache
   try {
     const cached = localStorage.getItem(NEWS_CACHE_KEY);
     if (cached) {
       const { data, ts } = JSON.parse(cached);
       if (Date.now() - ts < NEWS_CACHE_TTL && Array.isArray(data) && data.length > 0) {
-        return data.map(a => ({ ...a, date: new Date(a.date) }));
+        // Merge cached RSS articles with static articles
+        const rssArticles = data.map(a => ({ ...a, date: new Date(a.date) }));
+        return mergeWithStatic(rssArticles);
       }
     }
   } catch {}
@@ -170,14 +357,27 @@ async function loadAllNews() {
     })
     .sort((a, b) => b.date - a.date);
 
-  // Cache only when we actually got articles
+  // Cache only RSS articles (static are always added fresh)
   if (unique.length > 0) {
     try {
       localStorage.setItem(NEWS_CACHE_KEY, JSON.stringify({ data: unique, ts: Date.now() }));
     } catch {}
   }
 
-  return unique;
+  return mergeWithStatic(unique);
+}
+
+/** Merge RSS articles with static resource articles */
+function mergeWithStatic(rssArticles) {
+  const all = [...rssArticles, ...STATIC_ARTICLES];
+  // Sort: RSS articles first (by date), then static articles at the end of each category
+  all.sort((a, b) => {
+    // Static articles go after RSS articles of the same date
+    if (a.isStatic && !b.isStatic) return 1;
+    if (!a.isStatic && b.isStatic) return -1;
+    return b.date - a.date;
+  });
+  return all;
 }
 
 // ────────────────────────────────────────────────────────────────
@@ -197,11 +397,12 @@ function renderNmFeatured(article) {
   const desc = article.description
     ? `<p class="nm-featured__desc">${article.description}…</p>`
     : '';
+  const staticBadge = article.isStatic ? ' · Ressource' : '';
   return `
     <div class="nm-featured" role="article">
       <div class="nm-featured__content">
         <div class="nm-featured__badge">★ Top-Beitrag</div>
-        <div class="nm-featured__source">${article.icon}&nbsp;${article.source}&ensp;·&ensp;${article.category}</div>
+        <div class="nm-featured__source">${article.icon}&nbsp;${article.source}&ensp;·&ensp;${article.category}${staticBadge}</div>
         <h2 class="nm-featured__title">${article.title}</h2>
         ${desc}
         <div class="nm-featured__footer">
@@ -227,11 +428,15 @@ function renderNmCard(article, index) {
     ? `<p class="nm-card__desc">${article.description}…</p>`
     : '';
   const delay = (index % 9) * 0.055;
+  const staticTag = article.isStatic
+    ? '<span class="nm-card__static-tag">Ressource</span>'
+    : '';
   return `
     <article class="nm-card" data-category="${article.category}" style="animation-delay:${delay}s">
       <div class="nm-card__meta">
         <span class="nm-card__source">${article.icon}&nbsp;${article.source}</span>
         <span class="nm-card__category">${article.category}</span>
+        ${staticTag}
       </div>
       <h3 class="nm-card__title">${article.title}</h3>
       ${desc}
@@ -298,7 +503,7 @@ function renderNmEmpty() {
   `;
 }
 
-/** Error state — links to original sources as fallback */
+/** Error state */
 function renderNmError() {
   return `
     <div class="nm-empty">
@@ -311,6 +516,7 @@ function renderNmError() {
       <p>Nachrichten konnten nicht geladen werden.</p>
       <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;">
         <a href="https://www.bundesfinanzministerium.de/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html" target="_blank" rel="noopener" class="btn btn--secondary" style="font-size:.85rem">BMF Pressemitteilungen</a>
+        <a href="https://www.bundesfinanzhof.de/de/entscheidungen/entscheidungen-online/" target="_blank" rel="noopener" class="btn btn--secondary" style="font-size:.85rem">BFH Entscheidungen</a>
         <a href="https://www.haufe.de/steuern/steuer-aktuell/" target="_blank" rel="noopener" class="btn btn--secondary" style="font-size:.85rem">Haufe Steuer</a>
         <a href="https://www.bundesrat.de/DE/presse/pressemitteilungen/pressemitteilungen-node.html" target="_blank" rel="noopener" class="btn btn--secondary" style="font-size:.85rem">Bundesrat</a>
       </div>
@@ -319,15 +525,35 @@ function renderNmError() {
   `;
 }
 
+/** Load more button */
+function renderLoadMoreButton(remaining) {
+  return `
+    <div class="nm-load-more" id="nm-load-more">
+      <button class="nm-load-more__btn" onclick="loadMoreArticles()">
+        Weitere ${Math.min(remaining, ARTICLES_PER_PAGE)} von ${remaining} Artikeln laden
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+    </div>
+  `;
+}
+
 // ────────────────────────────────────────────────────────────────
-// State & Filter
+// State & Filter & Pagination
 // ────────────────────────────────────────────────────────────────
 
 let allArticles = [];
 let activeCategory = 'all';
+let visibleCount = ARTICLES_PER_PAGE;
+
+function getFilteredArticles() {
+  return activeCategory === 'all'
+    ? allArticles
+    : allArticles.filter(a => a.category === activeCategory);
+}
 
 function filterAndRender(category) {
   activeCategory = category;
+  visibleCount = ARTICLES_PER_PAGE; // Reset pagination on filter change
 
   const featured  = document.getElementById('nm-featured');
   const grid      = document.getElementById('news-grid');
@@ -337,9 +563,7 @@ function filterAndRender(category) {
 
   if (!grid) return;
 
-  const filtered = category === 'all'
-    ? allArticles
-    : allArticles.filter(a => a.category === category);
+  const filtered = getFilteredArticles();
 
   // Update tab active state
   if (filters) {
@@ -358,17 +582,52 @@ function filterAndRender(category) {
     featured.innerHTML = filtered.length > 0 ? renderNmFeatured(filtered[0]) : '';
   }
 
-  // Grid: remaining articles
+  // Grid: remaining articles (paginated)
   const rest = filtered.slice(1);
+  const visible = rest.slice(0, visibleCount);
+  const remaining = rest.length - visible.length;
+
   if (gridCount) {
     gridCount.textContent = rest.length > 0 ? `${rest.length} weitere` : '';
   }
-  grid.innerHTML = rest.length > 0
-    ? rest.map((a, i) => renderNmCard(a, i)).join('')
-    : filtered.length === 0
-      ? renderNmEmpty()
-      : '';
+
+  if (visible.length > 0) {
+    grid.innerHTML = visible.map((a, i) => renderNmCard(a, i)).join('');
+    if (remaining > 0) {
+      grid.insertAdjacentHTML('beforeend', renderLoadMoreButton(remaining));
+    }
+  } else if (filtered.length === 0) {
+    grid.innerHTML = renderNmEmpty();
+  } else {
+    grid.innerHTML = '';
+  }
 }
+
+/** Load more articles (pagination) */
+function loadMoreArticles() {
+  visibleCount += ARTICLES_PER_PAGE;
+
+  const grid = document.getElementById('news-grid');
+  const gridCount = document.getElementById('nm-grid-count');
+  if (!grid) return;
+
+  const filtered = getFilteredArticles();
+  const rest = filtered.slice(1);
+  const visible = rest.slice(0, visibleCount);
+  const remaining = rest.length - visible.length;
+
+  if (gridCount) {
+    gridCount.textContent = rest.length > 0 ? `${rest.length} weitere` : '';
+  }
+
+  grid.innerHTML = visible.map((a, i) => renderNmCard(a, i)).join('');
+  if (remaining > 0) {
+    grid.insertAdjacentHTML('beforeend', renderLoadMoreButton(remaining));
+  }
+}
+
+// Make loadMoreArticles available globally
+window.loadMoreArticles = loadMoreArticles;
 
 // ────────────────────────────────────────────────────────────────
 // Init
@@ -398,6 +657,11 @@ async function initNews() {
     }
 
     const categories = getCategories(allArticles);
+
+    // Category display names with count
+    const catLabels = {
+      'all': 'Alle'
+    };
 
     // Render tab bar
     if (filters) {

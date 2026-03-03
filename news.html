@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steuer-Aktuell | Steuerkanzlei Ibrahim Erben</title>
-    <meta name="description" content="Aktuelle Neuigkeiten aus der Steuerwelt – täglich aktualisiert. Gesetzgebung, Rechtsprechung, Finanzverwaltung.">
+    <meta name="description" content="Aktuelle Neuigkeiten aus der Steuerwelt – täglich aktualisiert. Gesetzgebung, Rechtsprechung, Steuerpolitik, Immobilien, E-Commerce, Gastro, Heilberufe und mehr.">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -547,6 +547,57 @@
             background-size: 200% 100%;
         }
         [data-theme="dark"] .nm-skeleton__footer { border-top-color: #253050; }
+
+        /* Static tag */
+        .nm-card__static-tag {
+            background: #fef3c7;
+            color: #92400e;
+            font-size: 0.58rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 0.12rem 0.45rem;
+            border-radius: 2px;
+        }
+        [data-theme="dark"] .nm-card__static-tag {
+            background: rgba(146,64,14,0.25);
+            color: #fbbf24;
+        }
+
+        /* Load more */
+        .nm-load-more {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 2rem 0 0.5rem;
+        }
+        .nm-load-more__btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #fff;
+            color: #1e3a8a;
+            border: 2px solid #1e3a8a;
+            border-radius: 6px;
+            padding: 0.75rem 2rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s, transform 0.15s;
+        }
+        .nm-load-more__btn:hover {
+            background: #1e3a8a;
+            color: #fff;
+            transform: translateY(-1px);
+        }
+        [data-theme="dark"] .nm-load-more__btn {
+            background: #1a2235;
+            color: #93b8f5;
+            border-color: #93b8f5;
+        }
+        [data-theme="dark"] .nm-load-more__btn:hover {
+            background: #93b8f5;
+            color: #0e1628;
+        }
     </style>
 </head>
 <body>
@@ -659,7 +710,7 @@
                     Steuer<span class="nm-masthead__title-dot">·</span>Aktuell
                 </h1>
                 <p class="nm-masthead__subtitle" data-i18n="news.subtitle">
-                    Aktuelle Neuigkeiten aus Steuerrecht, Gesetzgebung und Rechtsprechung – täglich aktualisiert.
+                    Aktuelle Neuigkeiten aus Steuerrecht, Gesetzgebung, Rechtsprechung und Branchennews – täglich aktualisiert.
                 </p>
 
                 <div class="nm-masthead__count-pill">
@@ -674,7 +725,7 @@
         <div class="nm-ticker">
             <div class="nm-ticker__label">QUELLEN</div>
             <div class="nm-ticker__track">
-                <span class="nm-ticker__text">Bundesfinanzministerium &nbsp;◆&nbsp; Haufe Steuer &nbsp;◆&nbsp; NWB &nbsp;◆&nbsp; Bundesrat &nbsp;◆&nbsp; Steuerrecht &amp; Gesetzgebung &nbsp;◆&nbsp; Bundesfinanzministerium &nbsp;◆&nbsp; Haufe Steuer &nbsp;◆&nbsp; NWB &nbsp;◆&nbsp; Bundesrat &nbsp;◆&nbsp; Steuerrecht &amp; Gesetzgebung &nbsp;◆&nbsp;</span>
+                <span class="nm-ticker__text">Bundesfinanzministerium &nbsp;◆&nbsp; Bundesfinanzhof &nbsp;◆&nbsp; Bundesgesetzblatt &nbsp;◆&nbsp; Haufe Steuer &nbsp;◆&nbsp; Haufe Immobilien &nbsp;◆&nbsp; Bundesrat &nbsp;◆&nbsp; GİB T&uuml;rkei &nbsp;◆&nbsp; DEHOGA &nbsp;◆&nbsp; BZSt &nbsp;◆&nbsp; ZDH &nbsp;◆&nbsp; Bundesfinanzministerium &nbsp;◆&nbsp; Bundesfinanzhof &nbsp;◆&nbsp; Bundesgesetzblatt &nbsp;◆&nbsp; Haufe Steuer &nbsp;◆&nbsp; Haufe Immobilien &nbsp;◆&nbsp; Bundesrat &nbsp;◆&nbsp; GİB T&uuml;rkei &nbsp;◆&nbsp; DEHOGA &nbsp;◆&nbsp; BZSt &nbsp;◆&nbsp; ZDH &nbsp;◆&nbsp;</span>
             </div>
         </div>
     </div>
@@ -713,7 +764,7 @@
         <div class="container">
             <div class="nm-sources-bar__inner">
                 <span class="nm-sources-bar__label">Quellen</span>
-                Bundesfinanzministerium · Haufe Steuer · NWB · Bundesrat — Artikel werden direkt von den Verlagen verlinkt. Alle Rechte bei den jeweiligen Herausgebern.
+                Bundesfinanzministerium · Bundesfinanzhof · Bundesgesetzblatt · Haufe Steuer · Haufe Immobilien · Bundesrat · GİB Türkei · PwC Türkei · Verginet · DEHOGA · BZSt · ZDH · KBV — Artikel werden direkt von den Verlagen verlinkt. Alle Rechte bei den jeweiligen Herausgebern.
             </div>
         </div>
     </div>
