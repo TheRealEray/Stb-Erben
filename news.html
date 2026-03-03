@@ -188,11 +188,46 @@
             z-index: 90;
             box-shadow: 0 2px 12px rgba(0,0,0,0.05);
         }
+        .nm-tabs-wrap {
+            position: relative;
+            display: flex;
+            align-items: stretch;
+        }
+        .nm-tabs-arrow {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            flex-shrink: 0;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            color: #64748b;
+            z-index: 2;
+            transition: color 0.2s, background 0.2s;
+        }
+        .nm-tabs-arrow:hover {
+            color: #1e3a8a;
+            background: #f1f5f9;
+        }
+        .nm-tabs-arrow--left {
+            border-right: 1px solid #e2e8f0;
+            box-shadow: 4px 0 8px rgba(0,0,0,0.04);
+        }
+        .nm-tabs-arrow--right {
+            border-left: 1px solid #e2e8f0;
+            box-shadow: -4px 0 8px rgba(0,0,0,0.04);
+        }
+        .nm-tabs-arrow.is-visible {
+            display: flex;
+        }
         .nm-tabs {
             display: flex;
             overflow-x: auto;
             scrollbar-width: none;
             -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth;
+            flex: 1;
         }
         .nm-tabs::-webkit-scrollbar { display: none; }
         .nm-tab {
@@ -518,6 +553,16 @@
             background: #1a2235;
             border-bottom-color: #2a3a5c;
         }
+        [data-theme="dark"] .nm-tabs-arrow {
+            background: #1a2235;
+            color: rgba(255,255,255,0.4);
+        }
+        [data-theme="dark"] .nm-tabs-arrow:hover {
+            color: #93b8f5;
+            background: #253050;
+        }
+        [data-theme="dark"] .nm-tabs-arrow--left { border-right-color: #2a3a5c; }
+        [data-theme="dark"] .nm-tabs-arrow--right { border-left-color: #2a3a5c; }
         [data-theme="dark"] .nm-tab { color: rgba(255,255,255,0.45); }
         [data-theme="dark"] .nm-tab:hover,
         [data-theme="dark"] .nm-tab.is-active { color: #93b8f5; }
@@ -725,7 +770,7 @@
         <div class="nm-ticker">
             <div class="nm-ticker__label">QUELLEN</div>
             <div class="nm-ticker__track">
-                <span class="nm-ticker__text">Bundesfinanzministerium &nbsp;◆&nbsp; Bundesfinanzhof &nbsp;◆&nbsp; Bundesgesetzblatt &nbsp;◆&nbsp; Haufe Steuer &nbsp;◆&nbsp; Haufe Immobilien &nbsp;◆&nbsp; Bundesrat &nbsp;◆&nbsp; GİB T&uuml;rkei &nbsp;◆&nbsp; DEHOGA &nbsp;◆&nbsp; BZSt &nbsp;◆&nbsp; ZDH &nbsp;◆&nbsp; Bundesfinanzministerium &nbsp;◆&nbsp; Bundesfinanzhof &nbsp;◆&nbsp; Bundesgesetzblatt &nbsp;◆&nbsp; Haufe Steuer &nbsp;◆&nbsp; Haufe Immobilien &nbsp;◆&nbsp; Bundesrat &nbsp;◆&nbsp; GİB T&uuml;rkei &nbsp;◆&nbsp; DEHOGA &nbsp;◆&nbsp; BZSt &nbsp;◆&nbsp; ZDH &nbsp;◆&nbsp;</span>
+                <span class="nm-ticker__text">BMF &nbsp;◆&nbsp; BFH &nbsp;◆&nbsp; BGBl &nbsp;◆&nbsp; Haufe Steuer &nbsp;◆&nbsp; Haufe Immobilien &nbsp;◆&nbsp; Haufe Recht &nbsp;◆&nbsp; Haufe Personal &nbsp;◆&nbsp; Haufe Finance &nbsp;◆&nbsp; Bundesrat &nbsp;◆&nbsp; GİB T&uuml;rkei &nbsp;◆&nbsp; DEHOGA &nbsp;◆&nbsp; BZSt &nbsp;◆&nbsp; IHK &nbsp;◆&nbsp; ZDH &nbsp;◆&nbsp; KBV &nbsp;◆&nbsp; BMF &nbsp;◆&nbsp; BFH &nbsp;◆&nbsp; BGBl &nbsp;◆&nbsp; Haufe Steuer &nbsp;◆&nbsp; Haufe Immobilien &nbsp;◆&nbsp; Haufe Recht &nbsp;◆&nbsp; Haufe Personal &nbsp;◆&nbsp; Haufe Finance &nbsp;◆&nbsp; Bundesrat &nbsp;◆&nbsp; GİB T&uuml;rkei &nbsp;◆&nbsp; DEHOGA &nbsp;◆&nbsp; BZSt &nbsp;◆&nbsp; IHK &nbsp;◆&nbsp; ZDH &nbsp;◆&nbsp; KBV &nbsp;◆&nbsp;</span>
             </div>
         </div>
     </div>
@@ -733,8 +778,16 @@
     <!-- ═══ TAB BAR ═══ -->
     <div class="nm-tabbar">
         <div class="container">
-            <div class="nm-tabs" id="news-filters" role="tablist" aria-label="Nach Kategorie filtern">
-                <button class="nm-tab is-active" data-cat="all">Alle</button>
+            <div class="nm-tabs-wrap">
+                <button class="nm-tabs-arrow nm-tabs-arrow--left" id="nm-arrow-left" aria-label="Kategorien nach links scrollen">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <div class="nm-tabs" id="news-filters" role="tablist" aria-label="Nach Kategorie filtern">
+                    <button class="nm-tab is-active" data-cat="all">Alle</button>
+                </div>
+                <button class="nm-tabs-arrow nm-tabs-arrow--right" id="nm-arrow-right" aria-label="Kategorien nach rechts scrollen">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
             </div>
         </div>
     </div>
@@ -764,7 +817,7 @@
         <div class="container">
             <div class="nm-sources-bar__inner">
                 <span class="nm-sources-bar__label">Quellen</span>
-                Bundesfinanzministerium · Bundesfinanzhof · Bundesgesetzblatt · Haufe Steuer · Haufe Immobilien · Bundesrat · GİB Türkei · PwC Türkei · Verginet · DEHOGA · BZSt · ZDH · KBV — Artikel werden direkt von den Verlagen verlinkt. Alle Rechte bei den jeweiligen Herausgebern.
+                BMF · BFH · BGBl · Haufe (Steuer, Immobilien, Recht, Personal, Finance) · Bundesrat · GİB Türkei · PwC Türkei · Verginet · DEHOGA · BZSt · IHK · ZDH · KBV · BÄK — Artikel werden direkt von den Verlagen verlinkt. Alle Rechte bei den jeweiligen Herausgebern.
             </div>
         </div>
     </div>
@@ -901,6 +954,43 @@
                 weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
             });
         }
+
+        // Tab arrow scroll buttons
+        (function() {
+            const tabs = document.getElementById('news-filters');
+            const leftBtn = document.getElementById('nm-arrow-left');
+            const rightBtn = document.getElementById('nm-arrow-right');
+            if (!tabs || !leftBtn || !rightBtn) return;
+
+            const SCROLL_AMOUNT = 200;
+
+            function updateArrows() {
+                const { scrollLeft, scrollWidth, clientWidth } = tabs;
+                const canScrollLeft = scrollLeft > 2;
+                const canScrollRight = scrollLeft + clientWidth < scrollWidth - 2;
+                leftBtn.classList.toggle('is-visible', canScrollLeft);
+                rightBtn.classList.toggle('is-visible', canScrollRight);
+            }
+
+            leftBtn.addEventListener('click', () => {
+                tabs.scrollBy({ left: -SCROLL_AMOUNT, behavior: 'smooth' });
+            });
+            rightBtn.addEventListener('click', () => {
+                tabs.scrollBy({ left: SCROLL_AMOUNT, behavior: 'smooth' });
+            });
+
+            tabs.addEventListener('scroll', updateArrows, { passive: true });
+            window.addEventListener('resize', updateArrows);
+
+            // Initial check + delayed re-check (tabs get populated async by news.js)
+            updateArrows();
+            setTimeout(updateArrows, 2000);
+            setTimeout(updateArrows, 5000);
+
+            // Observe DOM changes in tabs (news.js fills them)
+            const observer = new MutationObserver(updateArrows);
+            observer.observe(tabs, { childList: true });
+        })();
     </script>
 
     <!-- Social Speed Dial -->

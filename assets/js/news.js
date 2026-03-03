@@ -3,13 +3,13 @@
  * Fetches live RSS feeds from official German tax news sources
  * and renders them as a filterable editorial article layout.
  *
- * Sources: BMF, BFH, BGBl, Haufe Steuern, Haufe Immobilien, Bundesrat
- * Static: Türkische Steuerquellen (GIB, PwC, Verginet)
+ * Sources: BMF, BFH, BGBl, Haufe (Steuern/Immobilien/Recht/Personal/Finance), Bundesrat
+ * Static: Türkische Steuerquellen, Branchennews (Gastro, E-Commerce, Heilberufe, Juweliere, Handwerk)
  * Proxy: Netlify Function (primary), allorigins.win, rss2json.com (fallbacks)
  * Cache: localStorage (24h TTL) — only cached when articles > 0
  */
 
-const NEWS_CACHE_KEY = 'news_cache_v3';
+const NEWS_CACHE_KEY = 'news_cache_v4';
 const NEWS_CACHE_TTL = 24 * 60 * 60 * 1000; // 24 Stunden
 const ARTICLES_PER_PAGE = 12;
 
@@ -70,6 +70,27 @@ const FEEDS = [
     source: 'Haufe Immobilien',
     category: 'Immobilien',
     icon: '🏠'
+  },
+  // — Recht & Wirtschaft —
+  {
+    url: 'https://www.haufe.de/xml/rss_129178.xml',
+    source: 'Haufe Recht',
+    category: 'Recht & Wirtschaft',
+    icon: '📖'
+  },
+  // — Personal & Lohn —
+  {
+    url: 'https://www.haufe.de/xml/rss_129174.xml',
+    source: 'Haufe Personal',
+    category: 'Personal & Lohn',
+    icon: '👥'
+  },
+  // — Finanzen & Rechnungswesen —
+  {
+    url: 'https://www.haufe.de/xml/rss_129154.xml',
+    source: 'Haufe Finance',
+    category: 'Finanzen & Rechnungswesen',
+    icon: '💰'
   }
 ];
 
@@ -140,6 +161,36 @@ const STATIC_ARTICLES = [
     icon: '🍽️',
     isStatic: true
   },
+  {
+    title: 'Umsatzsteuer in der Gastronomie: 19% vs. 7% – Was gilt wann?',
+    link: 'https://www.ihk.de/produktmarken/beratung-und-service/recht-und-steuern/steuerrecht',
+    description: 'Speisen vor Ort: 19% USt. Speisen zum Mitnehmen: 7% USt. Getränke immer 19%. Die Abgrenzung ist in der Praxis komplex – besonders bei Catering und Lieferdiensten.',
+    date: new Date('2026-02-28'),
+    source: 'IHK',
+    category: 'Gastro & Hotellerie',
+    icon: '🍽️',
+    isStatic: true
+  },
+  {
+    title: 'Trinkgeld steuerfrei: Voraussetzungen und Fallstricke für Arbeitgeber',
+    link: 'https://www.haufe.de/personal/haufe-personal-office-platin/',
+    description: 'Freiwilliges Trinkgeld ist für Arbeitnehmer steuerfrei (§ 3 Nr. 51 EStG). Aber: Zwangsweise erhobenes Service-Entgelt ist steuerpflichtig. Was Gastronomen beachten müssen.',
+    date: new Date('2026-02-08'),
+    source: 'Haufe',
+    category: 'Gastro & Hotellerie',
+    icon: '🍽️',
+    isStatic: true
+  },
+  {
+    title: 'Betriebsprüfung in der Gastronomie: Worauf das Finanzamt achtet',
+    link: 'https://www.bundesfinanzministerium.de/Web/DE/Themen/Steuern/Steuerverwaltung_Steuererhebung/Betriebspruefung/betriebspruefung.html',
+    description: 'Gastronomie gehört zu den prüfungsintensivsten Branchen. Kassennachschau, Vermögenszuwachsrechnung, Zeitreihenvergleich – die wichtigsten Prüfungsmethoden.',
+    date: new Date('2026-01-22'),
+    source: 'BMF',
+    category: 'Gastro & Hotellerie',
+    icon: '🍽️',
+    isStatic: true
+  },
   // — Branchenspezifisch: E-Commerce —
   {
     title: 'OSS-Verfahren: Umsatzsteuer im EU-Onlinehandel',
@@ -157,6 +208,36 @@ const STATIC_ARTICLES = [
     description: 'Online-Marktplätze haften für die Umsatzsteuer ihrer Verkäufer. Was Händler über § 22f UStG und die Bescheinigung nach § 22f wissen müssen.',
     date: new Date('2026-02-10'),
     source: 'Haufe',
+    category: 'E-Commerce',
+    icon: '🛒',
+    isStatic: true
+  },
+  {
+    title: 'Dropshipping: Steuerliche Behandlung bei internationalen Lieferketten',
+    link: 'https://www.bzst.de/DE/Unternehmen/Umsatzsteuer/umsatzsteuer_node.html',
+    description: 'Beim Dropshipping aus Drittländern (China, USA) gelten besondere Umsatzsteuer-Regelungen: Import-OSS, Zollrecht und die Lieferschwelle von 150 EUR.',
+    date: new Date('2026-02-25'),
+    source: 'BZSt',
+    category: 'E-Commerce',
+    icon: '🛒',
+    isStatic: true
+  },
+  {
+    title: 'Buchführungspflichten für Online-Händler: GoBD im E-Commerce',
+    link: 'https://www.bundesfinanzministerium.de/Web/DE/Themen/Steuern/Steuerverwaltung_Steuererhebung/Abgabenordnung/abgabenordnung.html',
+    description: 'GoBD-konforme Buchhaltung: Warenwirtschaftssysteme, elektronische Rechnungen, Aufbewahrungsfristen und Verfahrensdokumentation für Online-Shops.',
+    date: new Date('2026-01-18'),
+    source: 'BMF',
+    category: 'E-Commerce',
+    icon: '🛒',
+    isStatic: true
+  },
+  {
+    title: 'Kleinunternehmerregelung im E-Commerce: § 19 UStG richtig nutzen',
+    link: 'https://www.ihk.de/produktmarken/beratung-und-service/recht-und-steuern/steuerrecht',
+    description: 'Umsatzgrenze, EU-Fernverkäufe, OSS-Pflicht: Wann gilt die Kleinunternehmerregelung noch? Was passiert bei Überschreiten der Grenzen im Onlinehandel?',
+    date: new Date('2026-01-12'),
+    source: 'IHK',
     category: 'E-Commerce',
     icon: '🛒',
     isStatic: true
@@ -182,6 +263,36 @@ const STATIC_ARTICLES = [
     icon: '🏥',
     isStatic: true
   },
+  {
+    title: 'Praxisbewertung beim Verkauf: Ertragswertverfahren für Ärzte',
+    link: 'https://www.bundesaerztekammer.de/',
+    description: 'Beim Praxisverkauf ist die steuerliche Bewertung entscheidend: Ertragswertverfahren, Substanzwertverfahren und die Fünftelregelung (§ 34 EStG) für Veräußerungsgewinne.',
+    date: new Date('2026-02-12'),
+    source: 'BÄK',
+    category: 'Heilberufe',
+    icon: '🏥',
+    isStatic: true
+  },
+  {
+    title: 'Rürup-Rente für Freiberufler: Maximale Steuerersparnis 2026',
+    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    description: 'Ärzte und Apotheker als Freiberufler: Bis zu 30.826 EUR (2026) als Sonderausgaben absetzbar. Basisrente als Baustein der Altersvorsorge.',
+    date: new Date('2026-01-28'),
+    source: 'Haufe',
+    category: 'Heilberufe',
+    icon: '🏥',
+    isStatic: true
+  },
+  {
+    title: 'Gewerbesteuer bei Ärzten: Wann droht die Abfärbung?',
+    link: 'https://www.bundesfinanzhof.de/de/entscheidungen/entscheidungen-online/',
+    description: 'Freiberufliche Einkünfte vs. gewerbliche Einkünfte: Die Abfärberegelung (§ 15 Abs. 3 Nr. 1 EStG) kann eine gesamte Praxis gewerbesteuerpflichtig machen.',
+    date: new Date('2026-01-15'),
+    source: 'BFH',
+    category: 'Heilberufe',
+    icon: '🏥',
+    isStatic: true
+  },
   // — Branchenspezifisch: Juweliere & Einzelhandel —
   {
     title: 'Differenzbesteuerung nach § 25a UStG: Für Juweliere und Antiquitätenhändler',
@@ -199,6 +310,26 @@ const STATIC_ARTICLES = [
     description: 'Juweliere, Gastronomen und Einzelhändler stehen bei Betriebsprüfungen unter besonderer Beobachtung. Ordnungsgemäße Kassenführung ist Pflicht.',
     date: new Date('2026-01-20'),
     source: 'BMF',
+    category: 'Juweliere & Einzelhandel',
+    icon: '💎',
+    isStatic: true
+  },
+  {
+    title: 'Goldhandel: Umsatzsteuer bei Anlagegold vs. Schmuck',
+    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    description: 'Anlagegold (Barren, Münzen) ist nach § 25c UStG umsatzsteuerfrei. Schmuckgold wird mit 19% besteuert. Die Abgrenzung ist für Juweliere entscheidend.',
+    date: new Date('2026-02-22'),
+    source: 'Haufe',
+    category: 'Juweliere & Einzelhandel',
+    icon: '💎',
+    isStatic: true
+  },
+  {
+    title: 'Wareneinsatzquote: So berechnen Einzelhändler ihre Kennzahl richtig',
+    link: 'https://www.ihk.de/produktmarken/beratung-und-service/recht-und-steuern/steuerrecht',
+    description: 'Die Wareneinsatzquote ist eine Schlüsselkennzahl bei Betriebsprüfungen im Einzelhandel. Abweichungen von Branchenrichtsätzen führen zu Hinzuschätzungen.',
+    date: new Date('2026-01-10'),
+    source: 'IHK',
     category: 'Juweliere & Einzelhandel',
     icon: '💎',
     isStatic: true
@@ -222,6 +353,57 @@ const STATIC_ARTICLES = [
     source: 'Haufe',
     category: 'Handwerk & Mittelstand',
     icon: '🔧',
+    isStatic: true
+  },
+  {
+    title: 'Handwerkerbonus: § 35a EStG – Steuerermäßigung für Handwerkerleistungen',
+    link: 'https://www.zdh.de/fachbereiche/wirtschaft-energie-umwelt/steuern-und-finanzen/',
+    description: 'Endkunden können 20% der Lohnkosten (max. 1.200 EUR/Jahr) für Handwerkerleistungen von der Steuer absetzen. Wichtig für die Kundenakquise.',
+    date: new Date('2026-02-18'),
+    source: 'ZDH',
+    category: 'Handwerk & Mittelstand',
+    icon: '🔧',
+    isStatic: true
+  },
+  {
+    title: 'Gewerbesteuer-Freibetrag und Anrechnung: Was Handwerker wissen müssen',
+    link: 'https://www.ihk.de/produktmarken/beratung-und-service/recht-und-steuern/steuerrecht',
+    description: 'Personengesellschaften im Handwerk: 24.500 EUR Freibetrag, Anrechnung auf die ESt (§ 35 EStG). So optimieren Sie die Gesamtsteuerbelastung.',
+    date: new Date('2026-01-14'),
+    source: 'IHK',
+    category: 'Handwerk & Mittelstand',
+    icon: '🔧',
+    isStatic: true
+  },
+  // — Türkei / International (erweitert) —
+  {
+    title: 'Doppelbesteuerungsabkommen Deutschland-Türkei: Überblick',
+    link: 'https://www.bundesfinanzministerium.de/Web/DE/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Tuerkei/tuerkei.html',
+    description: 'Das DBA Deutschland-Türkei regelt, welcher Staat Einkünfte besteuern darf. Relevant für Mieteinnahmen, Renten, Dividenden und Arbeitslöhne.',
+    date: new Date('2026-02-20'),
+    source: 'BMF',
+    category: 'Türkei / International',
+    icon: '🇹🇷',
+    isStatic: true
+  },
+  {
+    title: 'Immobilienbesitz in der Türkei: Deutsche Steuererklärung nicht vergessen',
+    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    description: 'Deutsche Steuerpflichtige mit Immobilien in der Türkei müssen Mieteinnahmen in Deutschland angeben. Anrechnung türkischer Steuern nach DBA möglich.',
+    date: new Date('2026-02-05'),
+    source: 'Haufe',
+    category: 'Türkei / International',
+    icon: '🇹🇷',
+    isStatic: true
+  },
+  {
+    title: 'Erbschaftsteuer bei Vermögen in der Türkei',
+    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    description: 'Wer Vermögen in der Türkei erbt oder vererbt, unterliegt möglicherweise der Doppelbesteuerung. Das DBA regelt die Anrechnungsmethode.',
+    date: new Date('2026-01-28'),
+    source: 'Haufe',
+    category: 'Türkei / International',
+    icon: '🇹🇷',
     isStatic: true
   }
 ];
