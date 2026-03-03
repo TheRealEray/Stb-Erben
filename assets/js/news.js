@@ -143,7 +143,7 @@ const STATIC_ARTICLES = [
   // — Branchenspezifisch: Gastro & Hotellerie —
   {
     title: 'DEHOGA: Aktuelle Steuerthemen für Gastronomen und Hoteliers',
-    link: 'https://www.dehoga-bundesverband.de/presse-news/aktuelles/',
+    link: 'https://www.dehoga-bundesverband.de/presse-events/aktuelles-statements/',
     description: 'Branchenverband DEHOGA: Aktuelle Nachrichten zu Umsatzsteuer, Trinkgeld-Regelungen, Kassensysteme und Betriebsprüfungen in der Gastronomie.',
     date: new Date('2026-03-01'),
     source: 'DEHOGA',
@@ -163,7 +163,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'Umsatzsteuer in der Gastronomie: 19% vs. 7% – Was gilt wann?',
-    link: 'https://www.ihk.de/produktmarken/beratung-und-service/recht-und-steuern/steuerrecht',
+    link: 'https://www.ihk.de/themen/recht-und-steuern/recht-und-steuern-index-5533742',
     description: 'Speisen vor Ort: 19% USt. Speisen zum Mitnehmen: 7% USt. Getränke immer 19%. Die Abgrenzung ist in der Praxis komplex – besonders bei Catering und Lieferdiensten.',
     date: new Date('2026-02-28'),
     source: 'IHK',
@@ -183,7 +183,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'Betriebsprüfung in der Gastronomie: Worauf das Finanzamt achtet',
-    link: 'https://www.bundesfinanzministerium.de/Web/DE/Themen/Steuern/Steuerverwaltung_Steuererhebung/Betriebspruefung/betriebspruefung.html',
+    link: 'https://www.bundesfinanzministerium.de/Web/DE/Themen/Steuern/Steuerverwaltungu-Steuerrecht/Betriebspruefung/betriebspruefung.html',
     description: 'Gastronomie gehört zu den prüfungsintensivsten Branchen. Kassennachschau, Vermögenszuwachsrechnung, Zeitreihenvergleich – die wichtigsten Prüfungsmethoden.',
     date: new Date('2026-01-22'),
     source: 'BMF',
@@ -194,7 +194,7 @@ const STATIC_ARTICLES = [
   // — Branchenspezifisch: E-Commerce —
   {
     title: 'OSS-Verfahren: Umsatzsteuer im EU-Onlinehandel',
-    link: 'https://www.bzst.de/DE/Unternehmen/Umsatzsteuer/OSS/oss_node.html',
+    link: 'https://www.bzst.de/DE/Unternehmen/Umsatzsteuer/One-Stop-Shop_EU/one_stop_shop_eu_node.html',
     description: 'Bundeszentralamt für Steuern: One-Stop-Shop (OSS) für E-Commerce-Unternehmer – Umsatzsteuermeldung für EU-weite Fernverkäufe an einem Ort.',
     date: new Date('2026-02-20'),
     source: 'BZSt',
@@ -204,7 +204,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'Amazon, eBay & Co.: Plattformhaftung und Umsatzsteuer',
-    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    link: 'https://www.haufe.de/steuern/',
     description: 'Online-Marktplätze haften für die Umsatzsteuer ihrer Verkäufer. Was Händler über § 22f UStG und die Bescheinigung nach § 22f wissen müssen.',
     date: new Date('2026-02-10'),
     source: 'Haufe',
@@ -224,7 +224,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'Buchführungspflichten für Online-Händler: GoBD im E-Commerce',
-    link: 'https://www.bundesfinanzministerium.de/Web/DE/Themen/Steuern/Steuerverwaltung_Steuererhebung/Abgabenordnung/abgabenordnung.html',
+    link: 'https://www.bundesfinanzministerium.de/Web/DE/Themen/Steuern/Steuerverwaltungu-Steuerrecht/Abgabeordnung/abgabenordnung.html',
     description: 'GoBD-konforme Buchhaltung: Warenwirtschaftssysteme, elektronische Rechnungen, Aufbewahrungsfristen und Verfahrensdokumentation für Online-Shops.',
     date: new Date('2026-01-18'),
     source: 'BMF',
@@ -234,7 +234,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'Kleinunternehmerregelung im E-Commerce: § 19 UStG richtig nutzen',
-    link: 'https://www.ihk.de/produktmarken/beratung-und-service/recht-und-steuern/steuerrecht',
+    link: 'https://www.ihk.de/themen/recht-und-steuern/recht-und-steuern-index-5533742',
     description: 'Umsatzgrenze, EU-Fernverkäufe, OSS-Pflicht: Wann gilt die Kleinunternehmerregelung noch? Was passiert bei Überschreiten der Grenzen im Onlinehandel?',
     date: new Date('2026-01-12'),
     source: 'IHK',
@@ -255,7 +255,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'MVZ-Gründung: Steuerliche Strukturierung und Fallstricke',
-    link: 'https://www.kbv.de/html/mvz.php',
+    link: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/statistik-mvz',
     description: 'Medizinische Versorgungszentren (MVZ): Steuerliche Aspekte der Gründung, Rechtsformwahl und Gewinnverteilung zwischen den Gesellschaftern.',
     date: new Date('2026-01-25'),
     source: 'KBV',
@@ -275,7 +275,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'Rürup-Rente für Freiberufler: Maximale Steuerersparnis 2026',
-    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    link: 'https://www.haufe.de/steuern/',
     description: 'Ärzte und Apotheker als Freiberufler: Bis zu 30.826 EUR (2026) als Sonderausgaben absetzbar. Basisrente als Baustein der Altersvorsorge.',
     date: new Date('2026-01-28'),
     source: 'Haufe',
@@ -296,7 +296,7 @@ const STATIC_ARTICLES = [
   // — Branchenspezifisch: Juweliere & Einzelhandel —
   {
     title: 'Differenzbesteuerung nach § 25a UStG: Für Juweliere und Antiquitätenhändler',
-    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    link: 'https://www.haufe.de/steuern/',
     description: 'Beim An- und Verkauf gebrauchter Waren (Schmuck, Uhren, Antiquitäten) kann die Differenzbesteuerung die Umsatzsteuer erheblich reduzieren.',
     date: new Date('2026-02-05'),
     source: 'Haufe',
@@ -316,7 +316,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'Goldhandel: Umsatzsteuer bei Anlagegold vs. Schmuck',
-    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    link: 'https://www.haufe.de/steuern/',
     description: 'Anlagegold (Barren, Münzen) ist nach § 25c UStG umsatzsteuerfrei. Schmuckgold wird mit 19% besteuert. Die Abgrenzung ist für Juweliere entscheidend.',
     date: new Date('2026-02-22'),
     source: 'Haufe',
@@ -326,7 +326,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'Wareneinsatzquote: So berechnen Einzelhändler ihre Kennzahl richtig',
-    link: 'https://www.ihk.de/produktmarken/beratung-und-service/recht-und-steuern/steuerrecht',
+    link: 'https://www.ihk.de/themen/recht-und-steuern/recht-und-steuern-index-5533742',
     description: 'Die Wareneinsatzquote ist eine Schlüsselkennzahl bei Betriebsprüfungen im Einzelhandel. Abweichungen von Branchenrichtsätzen führen zu Hinzuschätzungen.',
     date: new Date('2026-01-10'),
     source: 'IHK',
@@ -337,7 +337,7 @@ const STATIC_ARTICLES = [
   // — Branchenspezifisch: Handwerk & Mittelstand —
   {
     title: 'ZDH: Steuerpolitik für das Handwerk – aktuelle Positionen',
-    link: 'https://www.zdh.de/fachbereiche/wirtschaft-energie-umwelt/steuern-und-finanzen/',
+    link: 'https://www.zdh.de/ueber-uns/fachbereich-steuern-und-finanzen/',
     description: 'Zentralverband des Deutschen Handwerks: Forderungen und Stellungnahmen zu Einkommensteuer, Gewerbesteuer und Fachkräftesicherung im Handwerk.',
     date: new Date('2026-02-25'),
     source: 'ZDH',
@@ -347,7 +347,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'Investitionsabzugsbetrag nach § 7g EStG: Steuervorteile für den Mittelstand',
-    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    link: 'https://www.haufe.de/steuern/',
     description: 'Kleine und mittlere Unternehmen können mit dem Investitionsabzugsbetrag bis zu 50% der geplanten Investitionskosten vorab steuerlich geltend machen.',
     date: new Date('2026-01-30'),
     source: 'Haufe',
@@ -357,7 +357,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'Handwerkerbonus: § 35a EStG – Steuerermäßigung für Handwerkerleistungen',
-    link: 'https://www.zdh.de/fachbereiche/wirtschaft-energie-umwelt/steuern-und-finanzen/',
+    link: 'https://www.zdh.de/ueber-uns/fachbereich-steuern-und-finanzen/',
     description: 'Endkunden können 20% der Lohnkosten (max. 1.200 EUR/Jahr) für Handwerkerleistungen von der Steuer absetzen. Wichtig für die Kundenakquise.',
     date: new Date('2026-02-18'),
     source: 'ZDH',
@@ -367,7 +367,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'Gewerbesteuer-Freibetrag und Anrechnung: Was Handwerker wissen müssen',
-    link: 'https://www.ihk.de/produktmarken/beratung-und-service/recht-und-steuern/steuerrecht',
+    link: 'https://www.ihk.de/themen/recht-und-steuern/recht-und-steuern-index-5533742',
     description: 'Personengesellschaften im Handwerk: 24.500 EUR Freibetrag, Anrechnung auf die ESt (§ 35 EStG). So optimieren Sie die Gesamtsteuerbelastung.',
     date: new Date('2026-01-14'),
     source: 'IHK',
@@ -388,7 +388,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'Immobilienbesitz in der Türkei: Deutsche Steuererklärung nicht vergessen',
-    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    link: 'https://www.haufe.de/steuern/',
     description: 'Deutsche Steuerpflichtige mit Immobilien in der Türkei müssen Mieteinnahmen in Deutschland angeben. Anrechnung türkischer Steuern nach DBA möglich.',
     date: new Date('2026-02-05'),
     source: 'Haufe',
@@ -398,7 +398,7 @@ const STATIC_ARTICLES = [
   },
   {
     title: 'Erbschaftsteuer bei Vermögen in der Türkei',
-    link: 'https://www.haufe.de/steuern/steuer-aktuell/',
+    link: 'https://www.haufe.de/steuern/',
     description: 'Wer Vermögen in der Türkei erbt oder vererbt, unterliegt möglicherweise der Doppelbesteuerung. Das DBA regelt die Anrechnungsmethode.',
     date: new Date('2026-01-28'),
     source: 'Haufe',

@@ -310,9 +310,9 @@ function getToolContent(toolName) {
             <div class="calculator">
                 <div class="form__group">
                     <label class="form__label">Monatliches Arbeitsentgelt (€)</label>
-                    <input type="text" id="minijob-lohn" class="form__input currency-input" placeholder="556,00" value="556">
+                    <input type="text" id="minijob-lohn" class="form__input currency-input" placeholder="603,00" value="603">
                     <small style="color: var(--color-text-light); display: block; margin-top: var(--spacing-xs);">
-                        Bis 556 € monatlich = Minijob (ab 01.01.2025)
+                        Bis 603 € monatlich = Minijob (ab 01.01.2026)
                     </small>
                 </div>
                 <div class="form__group">
@@ -541,7 +541,7 @@ function getToolContent(toolName) {
                     <label class="form__label">Monatlicher Beitrag zur bAV (€)</label>
                     <input type="text" id="bav-beitrag" class="form__input currency-input" placeholder="200,00" value="200">
                     <small style="color: var(--color-text-light); display: block; margin-top: var(--spacing-xs);">
-                        SV-frei: max. 322 €/Monat | Steuerfrei: max. 644 €/Monat (2025)
+                        SV-frei: max. 338 €/Monat | Steuerfrei: max. 676 €/Monat (2026)
                     </small>
                 </div>
                 <div class="form__group">
@@ -699,25 +699,25 @@ function getToolContent(toolName) {
         'tabellen': `
             <h2>Steuertabellen & Übersichten</h2>
             <p style="color: var(--color-text-light); margin-bottom: var(--spacing-lg);">
-                Aktuelle Steuertabellen, Pauschbeträge und Grenzwerte für 2025.
+                Aktuelle Steuertabellen, Pauschbeträge und Grenzwerte für 2026.
             </p>
             <div class="calculator">
                 <div style="background: var(--color-bg-light); padding: var(--spacing-lg); border-radius: var(--border-radius);">
-                    <h3 style="margin-top: 0;">Wichtige Steuerwerte 2025:</h3>
+                    <h3 style="margin-top: 0;">Wichtige Steuerwerte 2026:</h3>
 
                     <div style="margin-bottom: var(--spacing-lg);">
                         <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm);">Grundfreibetrag</h4>
                         <div style="background: white; padding: var(--spacing-md); border-radius: 4px;">
-                            <strong style="font-size: 1.25rem; color: var(--color-primary);">12.096 €</strong>
-                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Bis zu diesem Betrag keine Einkommensteuer (2024: 11.604 €)</p>
+                            <strong style="font-size: 1.25rem; color: var(--color-primary);">12.348 €</strong>
+                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Bis zu diesem Betrag keine Einkommensteuer (2025: 12.096 €)</p>
                         </div>
                     </div>
 
                     <div style="margin-bottom: var(--spacing-lg);">
                         <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm);">Pendlerpauschale</h4>
                         <div style="background: white; padding: var(--spacing-md); border-radius: 4px;">
-                            <strong style="font-size: 1.25rem; color: var(--color-primary);">0,30 € / 0,38 €</strong>
-                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Pro Entfernungskilometer (ab 21 km: 0,38 €)</p>
+                            <strong style="font-size: 1.25rem; color: var(--color-primary);">0,38 €</strong>
+                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Einheitlich 0,38 € pro Entfernungskilometer ab dem 1. km (2025: 0,30 € bis km 20)</p>
                         </div>
                     </div>
 
@@ -738,21 +738,169 @@ function getToolContent(toolName) {
                     </div>
 
                     <div style="margin-bottom: var(--spacing-lg);">
-                        <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm);">Kleinunternehmergrenze (§ 19 UStG) – neu ab 2025</h4>
+                        <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm);">Kleinunternehmergrenze (§ 19 UStG)</h4>
                         <div style="background: white; padding: var(--spacing-md); border-radius: 4px;">
                             <strong style="font-size: 1.25rem; color: var(--color-primary);">25.000 € / 100.000 €</strong>
                             <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Vorjahresumsatz max. 25.000 € | lfd. Jahr max. 100.000 € (bei Überschreitung sofort steuerpflichtig)</p>
                         </div>
                     </div>
 
-                    <div>
+                    <div style="margin-bottom: var(--spacing-lg);">
                         <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm);">Minijob-Grenze</h4>
                         <div style="background: white; padding: var(--spacing-md); border-radius: 4px;">
-                            <strong style="font-size: 1.25rem; color: var(--color-primary);">556 €</strong>
-                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Monatliche Verdienstgrenze ab 01.01.2025 (2024: 538 €)</p>
+                            <strong style="font-size: 1.25rem; color: var(--color-primary);">603 €</strong>
+                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Monatliche Verdienstgrenze ab 01.01.2026 (2025: 556 €)</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm);">Kindergeld</h4>
+                        <div style="background: white; padding: var(--spacing-md); border-radius: 4px;">
+                            <strong style="font-size: 1.25rem; color: var(--color-primary);">259 € / Monat</strong>
+                            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem; color: var(--color-text-light);">Pro Kind und Monat (2025: 255 €)</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        `,
+        'ust-rechner': `
+            <h2>Umsatzsteuer-Rechner</h2>
+            <p style="color: var(--color-text-light); margin-bottom: var(--spacing-lg);">
+                Berechnen Sie Netto-, Brutto- und Umsatzsteuerbeträge mit 7 % oder 19 %.
+            </p>
+            <div class="calculator">
+                <div class="form__group">
+                    <label class="form__label">Betrag (€)</label>
+                    <input type="text" id="ust-betrag" class="form__input currency-input" placeholder="1.000,00" value="1000">
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Berechnungsrichtung</label>
+                    <select id="ust-richtung" class="form__select">
+                        <option value="netto-zu-brutto">Netto → Brutto (USt aufschlagen)</option>
+                        <option value="brutto-zu-netto">Brutto → Netto (USt herausrechnen)</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Steuersatz</label>
+                    <select id="ust-satz" class="form__select">
+                        <option value="19">19 % (Regelsteuersatz)</option>
+                        <option value="7">7 % (ermäßigt)</option>
+                    </select>
+                </div>
+                <button onclick="berechneUmsatzsteuer()" class="btn btn--primary" style="width: 100%;">Berechnen</button>
+                <div id="ust-result" class="calculator__result" style="display: none;"></div>
+            </div>
+        `,
+        'grest-rechner': `
+            <h2>Grunderwerbsteuer-Rechner</h2>
+            <p style="color: var(--color-text-light); margin-bottom: var(--spacing-lg);">
+                Berechnen Sie die Grunderwerbsteuer für Ihren Immobilienkauf nach Bundesland.
+            </p>
+            <div class="calculator">
+                <div class="form__group">
+                    <label class="form__label">Kaufpreis der Immobilie (€)</label>
+                    <input type="text" id="grest-kaufpreis" class="form__input currency-input" placeholder="300.000,00" value="300000">
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Bundesland</label>
+                    <select id="grest-bundesland" class="form__select">
+                        <option value="BW">Baden-Württemberg (5,0 %)</option>
+                        <option value="BY">Bayern (3,5 %)</option>
+                        <option value="BE">Berlin (6,0 %)</option>
+                        <option value="BB">Brandenburg (6,5 %)</option>
+                        <option value="HB">Bremen (5,0 %)</option>
+                        <option value="HH">Hamburg (5,5 %)</option>
+                        <option value="HE">Hessen (6,0 %)</option>
+                        <option value="MV">Mecklenburg-Vorpommern (6,0 %)</option>
+                        <option value="NI">Niedersachsen (5,0 %)</option>
+                        <option value="NW" selected>Nordrhein-Westfalen (6,5 %)</option>
+                        <option value="RP">Rheinland-Pfalz (5,0 %)</option>
+                        <option value="SL">Saarland (6,5 %)</option>
+                        <option value="SN">Sachsen (5,5 %)</option>
+                        <option value="ST">Sachsen-Anhalt (5,0 %)</option>
+                        <option value="SH">Schleswig-Holstein (6,5 %)</option>
+                        <option value="TH">Thüringen (5,0 %)</option>
+                    </select>
+                </div>
+                <button onclick="berechneGrunderwerbsteuer()" class="btn btn--primary" style="width: 100%;">Berechnen</button>
+                <div id="grest-result" class="calculator__result" style="display: none;"></div>
+            </div>
+        `,
+        'gehaltsvergleich': `
+            <h2>Gehaltsvergleich-Rechner</h2>
+            <p style="color: var(--color-text-light); margin-bottom: var(--spacing-lg);">
+                Vergleichen Sie Arbeitgeber-Bruttokosten mit der Netto-Auszahlung – so sehen Sie die tatsächlichen Personalkosten.
+            </p>
+            <div class="calculator">
+                <div class="form__group">
+                    <label class="form__label">Bruttogehalt Arbeitnehmer (€/Monat)</label>
+                    <input type="text" id="gv-brutto" class="form__input currency-input" placeholder="3.500,00" value="3500">
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Steuerklasse</label>
+                    <select id="gv-steuerklasse" class="form__select">
+                        <option value="1">I - Alleinstehend</option>
+                        <option value="3">III - Verheiratet (höheres Einkommen)</option>
+                        <option value="4">IV - Verheiratet</option>
+                        <option value="5">V - Verheiratet (niedrigeres Einkommen)</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <div class="form__checkbox-wrapper">
+                        <input type="checkbox" id="gv-kirche" class="form__checkbox">
+                        <label for="gv-kirche" class="form__checkbox-label">Kirchensteuerpflichtig</label>
+                    </div>
+                </div>
+                <button onclick="berechneGehaltsvergleich()" class="btn btn--primary" style="width: 100%;">Berechnen</button>
+                <div id="gv-result" class="calculator__result" style="display: none;"></div>
+            </div>
+        `,
+        'afa-rechner': `
+            <h2>Abschreibungs-Rechner (AfA)</h2>
+            <p style="color: var(--color-text-light); margin-bottom: var(--spacing-lg);">
+                Berechnen Sie die jährliche Abschreibung für Wirtschaftsgüter (linear oder degressiv).
+            </p>
+            <div class="calculator">
+                <div class="form__group">
+                    <label class="form__label">Anschaffungskosten (€)</label>
+                    <input type="text" id="afa-kosten" class="form__input currency-input" placeholder="50.000,00" value="50000">
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Nutzungsdauer (Jahre)</label>
+                    <input type="number" id="afa-nutzungsdauer" class="form__input" placeholder="10" value="10" min="1" max="50">
+                    <small style="color: var(--color-text-light); display: block; margin-top: var(--spacing-xs);">
+                        Gemäß amtlicher AfA-Tabelle (z. B. PKW: 6 J., Büromöbel: 13 J., Computer: 3 J., Gebäude: 33/50 J.)
+                    </small>
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Abschreibungsmethode</label>
+                    <select id="afa-methode" class="form__select">
+                        <option value="linear">Linear (gleichbleibend)</option>
+                        <option value="degressiv">Degressiv (20 %, max. das 2-fache der linearen AfA)</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Restwert (€, optional)</label>
+                    <input type="text" id="afa-restwert" class="form__input currency-input" placeholder="0,00" value="0">
+                </div>
+                <button onclick="berechneAfA()" class="btn btn--primary" style="width: 100%;">Berechnen</button>
+                <div id="afa-result" class="calculator__result" style="display: none;"></div>
+            </div>
+        `,
+        'steuerkalender': `
+            <h2>Steuertermin-Kalender 2026</h2>
+            <p style="color: var(--color-text-light); margin-bottom: var(--spacing-lg);">
+                Alle wichtigen steuerlichen Abgabetermine auf einen Blick – mit und ohne Steuerberater.
+            </p>
+            <div class="calculator">
+                <div class="form__group">
+                    <div class="form__checkbox-wrapper">
+                        <input type="checkbox" id="sk-steuerberater" class="form__checkbox" checked>
+                        <label for="sk-steuerberater" class="form__checkbox-label">Steuerberater mandatiert (verlängerte Fristen)</label>
+                    </div>
+                </div>
+                <button onclick="zeigeSteutertermine()" class="btn btn--primary" style="width: 100%;">Termine anzeigen</button>
+                <div id="sk-result" class="calculator__result" style="display: none;"></div>
             </div>
         `
     };
@@ -774,25 +922,25 @@ function berechneEinkommensteuer() {
     }
 
     let steuer = 0;
-    const grundfreibetrag = 12096; // 2025
+    const grundfreibetrag = 12348; // 2026
 
     if (einkommen <= grundfreibetrag) {
         steuer = 0;
-    } else if (einkommen <= 17443) {
+    } else if (einkommen <= 17799) {
         const y = (einkommen - grundfreibetrag) / 10000;
-        steuer = (932.30 * y + 1400) * y;
-    } else if (einkommen <= 68480) {
-        const z = (einkommen - 17443) / 10000;
-        steuer = (176.64 * z + 2397) * z + 1015.13;
+        steuer = (914.51 * y + 1400) * y;
+    } else if (einkommen <= 69878) {
+        const z = (einkommen - 17799) / 10000;
+        steuer = (173.10 * z + 2397) * z + 1034.87;
     } else if (einkommen <= 277825) {
-        steuer = 0.42 * einkommen - 10911.92;
+        steuer = 0.42 * einkommen - 11135.63;
     } else {
-        steuer = 0.45 * einkommen - 19246.67;
+        steuer = 0.45 * einkommen - 19470.38;
     }
     steuer = Math.floor(steuer); // auf volle Euro abrunden
 
     let soli = 0;
-    if (steuer > 19950) { // Freigrenze 2025
+    if (steuer > 20350) { // Freigrenze 2026
         soli = steuer * 0.055;
     }
 
@@ -916,27 +1064,27 @@ function berechneBruttoNetto() {
     }
 
     const jahresbrutto = brutto * 12;
-    const krankenversicherung = brutto * 0.073;    // AN-Anteil 7,3% (2025)
-    const rentenversicherung = brutto * 0.093;     // AN-Anteil 9,3% (2025)
-    const arbeitslosenversicherung = brutto * 0.013; // AN-Anteil 1,3% (2025)
-    const pflegeversicherung = brutto * 0.018;     // AN-Anteil 1,8% mit Kinder (2025)
+    const krankenversicherung = brutto * 0.073;    // AN-Anteil 7,3% (2026)
+    const rentenversicherung = brutto * 0.093;     // AN-Anteil 9,3% (2026)
+    const arbeitslosenversicherung = brutto * 0.013; // AN-Anteil 1,3% (2026)
+    const pflegeversicherung = brutto * 0.019;     // AN-Anteil 1,9% mit Kindern (2026)
     const sozialabgaben = krankenversicherung + rentenversicherung + arbeitslosenversicherung + pflegeversicherung;
 
     const zvEinkommen = jahresbrutto - (sozialabgaben * 12) - 1230;
     let jahressteuer = 0;
-    const grundfreibetrag = 12096; // 2025
+    const grundfreibetrag = 12348; // 2026
 
     if (zvEinkommen > grundfreibetrag) {
-        if (zvEinkommen <= 17443) {
+        if (zvEinkommen <= 17799) {
             const y = (zvEinkommen - grundfreibetrag) / 10000;
-            jahressteuer = (932.30 * y + 1400) * y;
-        } else if (zvEinkommen <= 68480) {
-            const z = (zvEinkommen - 17443) / 10000;
-            jahressteuer = (176.64 * z + 2397) * z + 1015.13;
+            jahressteuer = (914.51 * y + 1400) * y;
+        } else if (zvEinkommen <= 69878) {
+            const z = (zvEinkommen - 17799) / 10000;
+            jahressteuer = (173.10 * z + 2397) * z + 1034.87;
         } else if (zvEinkommen <= 277825) {
-            jahressteuer = 0.42 * zvEinkommen - 10911.92;
+            jahressteuer = 0.42 * zvEinkommen - 11135.63;
         } else {
-            jahressteuer = 0.45 * zvEinkommen - 19246.67;
+            jahressteuer = 0.45 * zvEinkommen - 19470.38;
         }
         jahressteuer = Math.floor(jahressteuer);
     }
@@ -946,7 +1094,7 @@ function berechneBruttoNetto() {
 
     const monatssteuer = jahressteuer / 12;
     const kirche = kirchensteuer ? monatssteuer * 0.09 : 0;
-    const soli = jahressteuer > 19950 ? (jahressteuer * 0.055) / 12 : 0; // Freigrenze 2025
+    const soli = jahressteuer > 20350 ? (jahressteuer * 0.055) / 12 : 0; // Freigrenze 2026
     const gesamtabzug = sozialabgaben + monatssteuer + kirche + soli;
     const netto = brutto - gesamtabzug;
 
@@ -1002,9 +1150,16 @@ function berechneElterngeld() {
         return;
     }
 
-    let prozentsatz = 65;
-    if (netto < 1000) prozentsatz = 67;
-    if (netto < 1200) prozentsatz = 67;
+    let prozentsatz;
+    if (netto < 1000) {
+        // Unter 1.000€: Ersatzrate steigt um 0,1 PP je 2€ unter 1.000€
+        prozentsatz = Math.min(100, 67 + (1000 - netto) * 0.05);
+    } else if (netto <= 1200) {
+        prozentsatz = 67;
+    } else {
+        // Über 1.200€: Ersatzrate sinkt um 0,1 PP je 2€ über 1.200€, min. 65%
+        prozentsatz = Math.max(65, 67 - (netto - 1200) * 0.05);
+    }
 
     let elterngeld = netto * (prozentsatz / 100);
     const minElterngeld = 300;
@@ -1054,7 +1209,7 @@ function berechnePflegegeld() {
         1: { geld: 0, sach: 0 },
         2: { geld: 347, sach: 796 },
         3: { geld: 599, sach: 1497 },
-        4: { geld: 799, sach: 1859 },
+        4: { geld: 800, sach: 1859 },
         5: { geld: 990, sach: 2299 }
     };
 
@@ -1151,9 +1306,72 @@ function berechneMutterschutz() {
     `;
 }
 
+// Berechnet Ostersonntag nach der Gauss'schen Osterformel
+function osterSonntag(jahr) {
+    const a = jahr % 19;
+    const b = Math.floor(jahr / 100);
+    const c = jahr % 100;
+    const d = Math.floor(b / 4);
+    const e = b % 4;
+    const f = Math.floor((b + 8) / 25);
+    const g = Math.floor((b - f + 1) / 3);
+    const h = (19 * a + b - d - g + 15) % 30;
+    const i = Math.floor(c / 4);
+    const k = c % 4;
+    const l = (32 + 2 * e + 2 * i - h - k) % 7;
+    const m = Math.floor((a + 11 * h + 22 * l) / 451);
+    const monat = Math.floor((h + l - 7 * m + 114) / 31);
+    const tag = ((h + l - 7 * m + 114) % 31) + 1;
+    return new Date(jahr, monat - 1, tag);
+}
+
+// Gibt alle gesetzlichen Feiertage für ein Bundesland und Jahr zurück
+function getFeiertage(jahr, bundesland) {
+    const ostern = osterSonntag(jahr);
+    const osterTag = ostern.getDate();
+    const osterMonat = ostern.getMonth();
+
+    function osterOffset(tage) {
+        return new Date(jahr, osterMonat, osterTag + tage);
+    }
+
+    // Bundesweite Feiertage
+    const feiertage = [
+        new Date(jahr, 0, 1),    // Neujahr
+        osterOffset(-2),          // Karfreitag
+        osterOffset(1),           // Ostermontag
+        new Date(jahr, 4, 1),    // Tag der Arbeit
+        osterOffset(39),          // Christi Himmelfahrt
+        osterOffset(50),          // Pfingstmontag
+        new Date(jahr, 9, 3),    // Tag der Deutschen Einheit
+        new Date(jahr, 11, 25),  // 1. Weihnachtstag
+        new Date(jahr, 11, 26),  // 2. Weihnachtstag
+    ];
+
+    // Länderspezifische Feiertage
+    if (['BW', 'BY', 'ST'].includes(bundesland)) {
+        feiertage.push(new Date(jahr, 0, 6)); // Heilige Drei Könige
+    }
+    if (['NW', 'BW', 'BY', 'HE', 'NI', 'RP', 'SL'].includes(bundesland)) {
+        feiertage.push(osterOffset(60)); // Fronleichnam
+    }
+    if (['BY', 'SL'].includes(bundesland)) {
+        feiertage.push(new Date(jahr, 7, 15)); // Mariä Himmelfahrt
+    }
+    if (['BB', 'MV', 'SN', 'ST', 'TH'].includes(bundesland)) {
+        feiertage.push(new Date(jahr, 9, 31)); // Reformationstag
+    }
+    if (['NW', 'BW', 'BY', 'RP', 'SL'].includes(bundesland)) {
+        feiertage.push(new Date(jahr, 10, 1)); // Allerheiligen
+    }
+
+    return feiertage;
+}
+
 function berechneArbeitstage() {
     const startDatum = document.getElementById('start-datum').value;
     const endDatum = document.getElementById('end-datum').value;
+    const bundesland = document.getElementById('at-bundesland').value;
 
     if (!startDatum || !endDatum) {
         alert('Bitte geben Sie Start- und Enddatum ein.');
@@ -1168,28 +1386,35 @@ function berechneArbeitstage() {
         return;
     }
 
+    // Feiertage für alle betroffenen Jahre sammeln
+    const alleFeiertage = new Set();
+    for (let j = start.getFullYear(); j <= end.getFullYear(); j++) {
+        getFeiertage(j, bundesland).forEach(f => alleFeiertage.add(f.toDateString()));
+    }
+
     const timeDiff = end.getTime() - start.getTime();
     const totalDays = Math.ceil(timeDiff / (1000 * 3600 * 24)) + 1;
 
     let workingDays = 0;
-    let saturdays = 0;
-    let sundays = 0;
+    let feiertageImZeitraum = 0;
 
     let currentDate = new Date(start);
     while (currentDate <= end) {
         const dayOfWeek = currentDate.getDay();
         if (dayOfWeek !== 0 && dayOfWeek !== 6) {
-            workingDays++;
-        } else if (dayOfWeek === 6) {
-            saturdays++;
-        } else {
-            sundays++;
+            if (alleFeiertage.has(currentDate.toDateString())) {
+                feiertageImZeitraum++;
+            } else {
+                workingDays++;
+            }
         }
         currentDate.setDate(currentDate.getDate() + 1);
     }
 
-    const estimatedHolidays = Math.round((10 * totalDays) / 365);
-    const netWorkingDays = Math.max(0, workingDays - estimatedHolidays);
+    const bundeslandName = {
+        'NW': 'Nordrhein-Westfalen', 'BY': 'Bayern',
+        'BW': 'Baden-Württemberg', 'Other': 'Bundesweit (9 Feiertage)'
+    }[bundesland] || bundesland;
 
     document.getElementById('arbeitstage-result').style.display = 'block';
     document.getElementById('arbeitstage-result').innerHTML = `
@@ -1200,20 +1425,20 @@ function berechneArbeitstage() {
                 <span class="result-value">${start.toLocaleDateString('de-DE')} - ${end.toLocaleDateString('de-DE')}</span>
             </div>
             <div class="result-item">
+                <span class="result-label">Bundesland:</span>
+                <span class="result-value">${bundeslandName}</span>
+            </div>
+            <div class="result-item">
                 <span class="result-label">Kalendertage gesamt:</span>
                 <span class="result-value">${totalDays} Tage</span>
             </div>
             <div class="result-item">
-                <span class="result-label">Werktage (Mo-Fr):</span>
-                <span class="result-value">${workingDays} Tage</span>
-            </div>
-            <div class="result-item">
-                <span class="result-label">Geschätzte Feiertage:</span>
-                <span class="result-value">ca. ${estimatedHolidays} Tage</span>
+                <span class="result-label">Feiertage (Mo-Fr):</span>
+                <span class="result-value">${feiertageImZeitraum} Tage</span>
             </div>
             <div class="result-item highlight">
-                <span class="result-label"><strong>Arbeitstage (ca.):</strong></span>
-                <span class="result-value"><strong>${netWorkingDays} Tage</strong></span>
+                <span class="result-label"><strong>Arbeitstage:</strong></span>
+                <span class="result-value"><strong>${workingDays} Tage</strong></span>
             </div>
         </div>
     `;
@@ -1414,7 +1639,7 @@ function berechneAltersvorsorge() {
         return;
     }
 
-    const maxSteuerfrei = 322; // 4% der BBG 2025 (SV-frei)
+    const maxSteuerfrei = 338; // 4% der BBG 2026 (SV-frei)
     const steuerfreierBeitrag = Math.min(beitrag, maxSteuerfrei);
 
     const steuerersparnis = steuerfreierBeitrag * 0.30; // Annahme: 30% Durchschnittssteuersatz
@@ -1606,4 +1831,391 @@ function berechneKredit() {
         </p>
     `;
 }
-// tools-2025-update 1771780602
+// ===== NEUE TOOLS 2026 =====
+
+function berechneUmsatzsteuer() {
+    const betrag = parseGermanNumber(document.getElementById('ust-betrag').value);
+    const richtung = document.getElementById('ust-richtung').value;
+    const satz = parseFloat(document.getElementById('ust-satz').value);
+
+    if (!betrag || betrag <= 0) {
+        alert('Bitte geben Sie einen gültigen Betrag ein.');
+        return;
+    }
+
+    let netto, brutto, ust;
+
+    if (richtung === 'netto-zu-brutto') {
+        netto = betrag;
+        ust = netto * (satz / 100);
+        brutto = netto + ust;
+    } else {
+        brutto = betrag;
+        netto = brutto / (1 + satz / 100);
+        ust = brutto - netto;
+    }
+
+    document.getElementById('ust-result').style.display = 'block';
+    document.getElementById('ust-result').innerHTML = `
+        <h3>Berechnungsergebnis</h3>
+        <div class="result-grid">
+            <div class="result-item">
+                <span class="result-label">Nettobetrag:</span>
+                <span class="result-value">${formatGermanNumber(netto)} €</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Umsatzsteuer (${satz} %):</span>
+                <span class="result-value">${formatGermanNumber(ust)} €</span>
+            </div>
+            <div class="result-item highlight">
+                <span class="result-label"><strong>Bruttobetrag:</strong></span>
+                <span class="result-value"><strong>${formatGermanNumber(brutto)} €</strong></span>
+            </div>
+        </div>
+        <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
+            <strong>Hinweis:</strong> Der ermäßigte Satz von 7 % gilt u. a. für Lebensmittel, Bücher und ÖPNV. Für innergemeinschaftliche Lieferungen (Reverse Charge) entfällt die deutsche USt – kontaktieren Sie uns für Details.
+        </p>
+    `;
+}
+
+function berechneGrunderwerbsteuer() {
+    const kaufpreis = parseGermanNumber(document.getElementById('grest-kaufpreis').value);
+    const bundesland = document.getElementById('grest-bundesland').value;
+
+    if (!kaufpreis || kaufpreis <= 0) {
+        alert('Bitte geben Sie einen gültigen Kaufpreis ein.');
+        return;
+    }
+
+    const saetze = {
+        'BW': { satz: 5.0, name: 'Baden-Württemberg' },
+        'BY': { satz: 3.5, name: 'Bayern' },
+        'BE': { satz: 6.0, name: 'Berlin' },
+        'BB': { satz: 6.5, name: 'Brandenburg' },
+        'HB': { satz: 5.0, name: 'Bremen' },
+        'HH': { satz: 5.5, name: 'Hamburg' },
+        'HE': { satz: 6.0, name: 'Hessen' },
+        'MV': { satz: 6.0, name: 'Mecklenburg-Vorpommern' },
+        'NI': { satz: 5.0, name: 'Niedersachsen' },
+        'NW': { satz: 6.5, name: 'Nordrhein-Westfalen' },
+        'RP': { satz: 5.0, name: 'Rheinland-Pfalz' },
+        'SL': { satz: 6.5, name: 'Saarland' },
+        'SN': { satz: 5.5, name: 'Sachsen' },
+        'ST': { satz: 5.0, name: 'Sachsen-Anhalt' },
+        'SH': { satz: 6.5, name: 'Schleswig-Holstein' },
+        'TH': { satz: 5.0, name: 'Thüringen' }
+    };
+
+    const info = saetze[bundesland];
+    const steuer = kaufpreis * (info.satz / 100);
+    const notarkosten = kaufpreis * 0.015;
+    const grundbuch = kaufpreis * 0.005;
+    const nebenkosten = steuer + notarkosten + grundbuch;
+
+    document.getElementById('grest-result').style.display = 'block';
+    document.getElementById('grest-result').innerHTML = `
+        <h3>Berechnungsergebnis</h3>
+        <div class="result-grid">
+            <div class="result-item">
+                <span class="result-label">Kaufpreis:</span>
+                <span class="result-value">${formatGermanNumber(kaufpreis)} €</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Bundesland:</span>
+                <span class="result-value">${info.name}</span>
+            </div>
+            <div class="result-item highlight">
+                <span class="result-label"><strong>Grunderwerbsteuer (${info.satz} %):</strong></span>
+                <span class="result-value"><strong>${formatGermanNumber(steuer)} €</strong></span>
+            </div>
+            <h4 style="margin: var(--spacing-md) 0 var(--spacing-sm) 0; font-size: 1rem;">Geschätzte Kaufnebenkosten:</h4>
+            <div class="result-item">
+                <span class="result-label">Notarkosten (ca. 1,5 %):</span>
+                <span class="result-value">${formatGermanNumber(notarkosten)} €</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Grundbuchkosten (ca. 0,5 %):</span>
+                <span class="result-value">${formatGermanNumber(grundbuch)} €</span>
+            </div>
+            <div class="result-item highlight" style="border-top: 2px solid var(--color-primary); padding-top: var(--spacing-md); margin-top: var(--spacing-md);">
+                <span class="result-label"><strong>Nebenkosten gesamt:</strong></span>
+                <span class="result-value"><strong>${formatGermanNumber(nebenkosten)} €</strong></span>
+            </div>
+        </div>
+        <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
+            <strong>Hinweis:</strong> Maklerprovision (3,57–7,14 %) ist nicht enthalten. Notarkosten sind Richtwerte. Für Immobiliengestaltungen sprechen Sie uns gerne an.
+        </p>
+    `;
+}
+
+function berechneGehaltsvergleich() {
+    const brutto = parseGermanNumber(document.getElementById('gv-brutto').value);
+    const steuerklasse = parseInt(document.getElementById('gv-steuerklasse').value);
+    const kirchensteuer = document.getElementById('gv-kirche').checked;
+
+    if (!brutto || brutto <= 0) {
+        alert('Bitte geben Sie ein gültiges Bruttogehalt ein.');
+        return;
+    }
+
+    // AG-Anteile Sozialversicherung (2026)
+    const ag_kv = brutto * 0.073;
+    const ag_kv_zusatz = brutto * 0.0145; // Durchschnittlicher Zusatzbeitrag
+    const ag_rv = brutto * 0.093;
+    const ag_av = brutto * 0.013;
+    const ag_pv = brutto * 0.017;
+    const ag_u1 = brutto * 0.017; // Umlage U1 (Durchschnitt)
+    const ag_u2 = brutto * 0.005; // Umlage U2
+    const ag_insolvenz = brutto * 0.0006; // Insolvenzgeldumlage
+    const ag_sv = ag_kv + ag_kv_zusatz + ag_rv + ag_av + ag_pv + ag_u1 + ag_u2 + ag_insolvenz;
+    const ag_gesamt = brutto + ag_sv;
+
+    // AN-Anteile (vereinfacht)
+    const an_kv = brutto * 0.073;
+    const an_kv_zusatz = brutto * 0.0145;
+    const an_rv = brutto * 0.093;
+    const an_av = brutto * 0.013;
+    const an_pv = brutto * 0.019;
+    const an_sv = an_kv + an_kv_zusatz + an_rv + an_av + an_pv;
+
+    // ESt (vereinfacht)
+    const jahresbrutto = brutto * 12;
+    const zvE = jahresbrutto - (an_sv * 12) - 1230;
+    let jahressteuer = 0;
+    const grundfreibetrag = 12348;
+
+    if (zvE > grundfreibetrag) {
+        if (zvE <= 17799) {
+            const y = (zvE - grundfreibetrag) / 10000;
+            jahressteuer = (914.51 * y + 1400) * y;
+        } else if (zvE <= 69878) {
+            const z = (zvE - 17799) / 10000;
+            jahressteuer = (173.10 * z + 2397) * z + 1034.87;
+        } else if (zvE <= 277825) {
+            jahressteuer = 0.42 * zvE - 11135.63;
+        } else {
+            jahressteuer = 0.45 * zvE - 19470.38;
+        }
+        jahressteuer = Math.floor(jahressteuer);
+    }
+
+    if (steuerklasse === 3) jahressteuer *= 0.7;
+    else if (steuerklasse === 5) jahressteuer *= 1.3;
+
+    const monatssteuer = jahressteuer / 12;
+    const kirche = kirchensteuer ? monatssteuer * 0.09 : 0;
+    const soli = jahressteuer > 20350 ? (jahressteuer * 0.055) / 12 : 0;
+    const netto = brutto - an_sv - monatssteuer - kirche - soli;
+    const differenz = ag_gesamt - netto;
+    const quote = ((netto / ag_gesamt) * 100).toFixed(1);
+
+    document.getElementById('gv-result').style.display = 'block';
+    document.getElementById('gv-result').innerHTML = `
+        <h3>Berechnungsergebnis</h3>
+        <div class="result-grid">
+            <h4 style="margin: 0 0 var(--spacing-sm) 0; font-size: 1rem; color: var(--color-primary);">Arbeitgeber-Kosten</h4>
+            <div class="result-item">
+                <span class="result-label">Bruttogehalt:</span>
+                <span class="result-value">${formatGermanNumber(brutto)} €</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">AG-Sozialabgaben:</span>
+                <span class="result-value">+ ${formatGermanNumber(ag_sv)} €</span>
+            </div>
+            <div class="result-item highlight">
+                <span class="result-label"><strong>AG-Gesamtkosten:</strong></span>
+                <span class="result-value"><strong>${formatGermanNumber(ag_gesamt)} €</strong></span>
+            </div>
+
+            <h4 style="margin: var(--spacing-md) 0 var(--spacing-sm) 0; font-size: 1rem; color: var(--color-primary);">Arbeitnehmer-Auszahlung</h4>
+            <div class="result-item">
+                <span class="result-label">AN-Sozialabgaben:</span>
+                <span class="result-value">- ${formatGermanNumber(an_sv)} €</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Lohnsteuer + Soli${kirchensteuer ? ' + KiSt' : ''}:</span>
+                <span class="result-value">- ${formatGermanNumber(monatssteuer + soli + kirche)} €</span>
+            </div>
+            <div class="result-item highlight" style="border-top: 2px solid var(--color-primary); padding-top: var(--spacing-md); margin-top: var(--spacing-md);">
+                <span class="result-label"><strong>Netto-Auszahlung:</strong></span>
+                <span class="result-value" style="color: var(--color-primary);"><strong>${formatGermanNumber(netto)} €</strong></span>
+            </div>
+
+            <h4 style="margin: var(--spacing-md) 0 var(--spacing-sm) 0; font-size: 1rem; color: var(--color-primary);">Vergleich</h4>
+            <div class="result-item">
+                <span class="result-label">Differenz AG-Kosten vs. Netto:</span>
+                <span class="result-value" style="color: var(--color-error);">${formatGermanNumber(differenz)} €</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Netto-Quote (Netto / AG-Kosten):</span>
+                <span class="result-value">${quote} %</span>
+            </div>
+        </div>
+        <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
+            <strong>Erkenntnis:</strong> Von ${formatGermanNumber(ag_gesamt)} € Personalkosten kommen nur ${formatGermanNumber(netto)} € beim Arbeitnehmer an – das sind ${quote} %.
+        </p>
+    `;
+}
+
+function berechneAfA() {
+    const anschaffung = parseGermanNumber(document.getElementById('afa-kosten').value);
+    const nutzungsdauer = parseInt(document.getElementById('afa-nutzungsdauer').value);
+    const methode = document.getElementById('afa-methode').value;
+    const restwert = parseGermanNumber(document.getElementById('afa-restwert').value) || 0;
+
+    if (!anschaffung || anschaffung <= 0 || !nutzungsdauer || nutzungsdauer <= 0) {
+        alert('Bitte geben Sie gültige Werte ein.');
+        return;
+    }
+
+    const abschreibungsBasis = anschaffung - restwert;
+    let tabelle = [];
+
+    if (methode === 'linear') {
+        const jaehrlich = abschreibungsBasis / nutzungsdauer;
+        let buchwert = anschaffung;
+        for (let j = 1; j <= nutzungsdauer; j++) {
+            buchwert -= jaehrlich;
+            tabelle.push({ jahr: j, afa: jaehrlich, buchwert: Math.max(restwert, buchwert) });
+        }
+    } else {
+        // Degressiv: 20 %, max. das 2-fache der linearen AfA, Wechsel zu linear wenn vorteilhafter
+        const linearRate = 100 / nutzungsdauer;
+        const degressivRate = Math.min(20, linearRate * 2);
+        let buchwert = anschaffung;
+
+        for (let j = 1; j <= nutzungsdauer; j++) {
+            const degressivAfa = buchwert * (degressivRate / 100);
+            const restJahre = nutzungsdauer - j + 1;
+            const linearAfa = (buchwert - restwert) / restJahre;
+
+            // Wechsel zu linear, wenn linear vorteilhafter
+            const afa = (linearAfa >= degressivAfa) ? linearAfa : degressivAfa;
+            buchwert -= afa;
+            tabelle.push({
+                jahr: j,
+                afa: afa,
+                buchwert: Math.max(restwert, buchwert),
+                wechsel: linearAfa >= degressivAfa
+            });
+        }
+    }
+
+    // Nur die ersten 10 Jahre anzeigen + Zusammenfassung
+    const maxAnzeige = Math.min(tabelle.length, 10);
+    let tabelleHTML = tabelle.slice(0, maxAnzeige).map(row => `
+        <div class="result-item">
+            <span class="result-label">Jahr ${row.jahr}${row.wechsel ? ' (→ linear)' : ''}:</span>
+            <span class="result-value">${formatGermanNumber(row.afa)} € &nbsp; <small style="color: var(--color-text-light);">Buchwert: ${formatGermanNumber(row.buchwert)} €</small></span>
+        </div>
+    `).join('');
+
+    if (tabelle.length > maxAnzeige) {
+        tabelleHTML += `<p style="font-size: 0.875rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">… und ${tabelle.length - maxAnzeige} weitere Jahre</p>`;
+    }
+
+    const gesamtAfA = tabelle.reduce((sum, r) => sum + r.afa, 0);
+
+    document.getElementById('afa-result').style.display = 'block';
+    document.getElementById('afa-result').innerHTML = `
+        <h3>Abschreibungsplan (${methode === 'linear' ? 'Linear' : 'Degressiv'})</h3>
+        <div class="result-grid">
+            <div class="result-item">
+                <span class="result-label">Anschaffungskosten:</span>
+                <span class="result-value">${formatGermanNumber(anschaffung)} €</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Nutzungsdauer:</span>
+                <span class="result-value">${nutzungsdauer} Jahre</span>
+            </div>
+            ${methode === 'linear' ? `
+            <div class="result-item highlight">
+                <span class="result-label"><strong>Jährliche AfA:</strong></span>
+                <span class="result-value"><strong>${formatGermanNumber(abschreibungsBasis / nutzungsdauer)} €</strong></span>
+            </div>` : ''}
+            <h4 style="margin: var(--spacing-md) 0 var(--spacing-sm) 0; font-size: 1rem;">Abschreibungsverlauf:</h4>
+            ${tabelleHTML}
+            <div class="result-item highlight" style="border-top: 2px solid var(--color-primary); padding-top: var(--spacing-md); margin-top: var(--spacing-md);">
+                <span class="result-label"><strong>Gesamt-AfA:</strong></span>
+                <span class="result-value"><strong>${formatGermanNumber(gesamtAfA)} €</strong></span>
+            </div>
+        </div>
+        <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
+            <strong>Hinweis:</strong> ${methode === 'degressiv' ? 'Bei degressiver AfA erfolgt automatisch ein Wechsel zur linearen Methode, sobald diese vorteilhafter ist (§ 7 Abs. 2 EStG).' : 'Lineare AfA verteilt die Kosten gleichmäßig über die Nutzungsdauer (§ 7 Abs. 1 EStG).'} GWG bis 800 € netto können sofort abgeschrieben werden.
+        </p>
+    `;
+}
+
+function zeigeSteutertermine() {
+    const mitSteuerberater = document.getElementById('sk-steuerberater').checked;
+
+    const termine = [
+        {
+            kategorie: 'Einkommensteuer',
+            einreichung: mitSteuerberater ? '30.04.2028' : '31.07.2027',
+            vorauszahlung: '10.03. / 10.06. / 10.09. / 10.12.2026',
+            hinweis: mitSteuerberater ? 'Verlängerte Abgabefrist durch Steuerberater' : 'Abgabe der ESt-Erklärung 2025'
+        },
+        {
+            kategorie: 'Umsatzsteuer-Voranmeldung',
+            einreichung: 'Monatlich: 10. des Folgemonats | Vierteljährlich: 10.04. / 10.07. / 10.10.2026 / 10.01.2027',
+            vorauszahlung: 'Gleichzeitig mit Abgabe',
+            hinweis: 'Dauerfristverlängerung möglich (+ 1 Monat, Sondervorauszahlung 1/11)'
+        },
+        {
+            kategorie: 'Gewerbesteuer',
+            einreichung: mitSteuerberater ? '30.04.2028' : '31.07.2027',
+            vorauszahlung: '15.02. / 15.05. / 15.08. / 15.11.2026',
+            hinweis: 'GewSt-Erklärung 2025'
+        },
+        {
+            kategorie: 'Körperschaftsteuer',
+            einreichung: mitSteuerberater ? '30.04.2028' : '31.07.2027',
+            vorauszahlung: '10.03. / 10.06. / 10.09. / 10.12.2026',
+            hinweis: 'KSt-Erklärung 2025'
+        },
+        {
+            kategorie: 'Lohnsteuer-Anmeldung',
+            einreichung: 'Monatlich: 10. des Folgemonats | Vierteljährlich: 10.04. / 10.07. / 10.10.2026 / 10.01.2027',
+            vorauszahlung: 'Gleichzeitig mit Abgabe',
+            hinweis: 'Abgabezeitraum abhängig von der Lohnsteuerschuld des Vorjahres'
+        },
+        {
+            kategorie: 'Grundsteuer',
+            einreichung: '—',
+            vorauszahlung: '15.02. / 15.05. / 15.08. / 15.11.2026',
+            hinweis: 'Vierteljährliche Vorauszahlung an die Gemeinde'
+        }
+    ];
+
+    const termineHTML = termine.map(t => `
+        <div style="padding: var(--spacing-md); background: var(--color-bg-light); border-radius: var(--border-radius); border-left: 4px solid var(--color-primary);">
+            <h4 style="margin: 0 0 var(--spacing-xs) 0; font-size: 1rem; color: var(--color-primary);">${t.kategorie}</h4>
+            <div style="display: flex; flex-direction: column; gap: var(--spacing-xs); font-size: 0.875rem;">
+                <div><strong>Erklärung:</strong> ${t.einreichung}</div>
+                <div><strong>Vorauszahlung:</strong> ${t.vorauszahlung}</div>
+                <div style="color: var(--color-text-light);"><em>${t.hinweis}</em></div>
+            </div>
+        </div>
+    `).join('');
+
+    document.getElementById('sk-result').style.display = 'block';
+    document.getElementById('sk-result').innerHTML = `
+        <h3>Steuertermine 2026 ${mitSteuerberater ? '(mit Steuerberater)' : '(ohne Steuerberater)'}</h3>
+        <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+            ${termineHTML}
+        </div>
+        <div style="margin-top: var(--spacing-xl); padding: var(--spacing-md); background: white; border-left: 4px solid var(--color-primary); border-radius: 4px;">
+            <p style="margin: 0; font-weight: 600; color: var(--color-primary);">💡 Vorteil Steuerberater</p>
+            <p style="margin-top: var(--spacing-xs); margin-bottom: 0;">
+                ${mitSteuerberater
+                    ? 'Mit einem Steuerberater haben Sie bis zu 9 Monate mehr Zeit für die Abgabe Ihrer Steuererklärungen. Wir übernehmen die Einhaltung aller Fristen für Sie.'
+                    : 'Ohne Steuerberater müssen Sie alle Fristen selbst im Blick behalten. Beauftragen Sie uns und profitieren Sie von verlängerten Abgabefristen.'}
+            </p>
+        </div>
+        <a href="kontakt.html" class="btn btn--primary" style="width: 100%; margin-top: var(--spacing-lg);">
+            Steuerliche Betreuung anfragen
+        </a>
+    `;
+}
+// tools-2026-update
