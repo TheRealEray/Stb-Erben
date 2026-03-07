@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /_netlify_form_detect.html
+Disallow: /.netlify/
+Disallow: /netlify/
+
+Sitemap: https://steuerkanzlei-erben-demo.netlify.app/sitemap.xml
