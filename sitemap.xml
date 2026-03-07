@@ -4,10 +4,10 @@
 
   <!-- Startseite -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://steuerkanzlei-erben-demo.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://steuerkanzlei-erben-demo.netlify.app/en/index.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://steuerkanzlei-erben-demo.netlify.app/tr/index.html"/>
+    <loc>https://therealeray.github.io/Stb-Erben/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://therealeray.github.io/Stb-Erben/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://therealeray.github.io/Stb-Erben/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://therealeray.github.io/Stb-Erben/tr/index.html"/>
     <lastmod>2026-03-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -15,7 +15,7 @@
 
   <!-- Leistungen Übersicht -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/leistungen.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -23,49 +23,49 @@
 
   <!-- Leistungen Detail -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-steuerstrafrecht.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/leistungen-steuerstrafrecht.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-insolvenz.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/leistungen-insolvenz.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-wegzug.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/leistungen-wegzug.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-ecommerce.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/leistungen-ecommerce.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-heilberufe.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/leistungen-heilberufe.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-immobilien.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/leistungen-immobilien.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-nachfolge.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/leistungen-nachfolge.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-betreuung.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/leistungen-betreuung.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -73,7 +73,7 @@
 
   <!-- Über uns -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/ueber-uns.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/ueber-uns.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -81,7 +81,7 @@
 
   <!-- FAQ -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/faq.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/faq.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -89,25 +89,25 @@
 
   <!-- Wissen -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/wissen.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/wissen.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/wissen-aussenpruefung.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/wissen-aussenpruefung.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/wissen-steuerstrafrecht.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/wissen-steuerstrafrecht.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/wissen-umwandlungssteuerrecht.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/wissen-umwandlungssteuerrecht.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -115,7 +115,7 @@
 
   <!-- Tools -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/tools.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/tools.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -123,7 +123,7 @@
 
   <!-- Honorar -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/honorar.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/honorar.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -131,7 +131,7 @@
 
   <!-- Karriere -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/karriere.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/karriere.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -139,7 +139,7 @@
 
   <!-- News -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/news.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/news.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -147,7 +147,7 @@
 
   <!-- Kontakt -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/kontakt.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/kontakt.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -155,7 +155,7 @@
 
   <!-- Impressum -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/impressum.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/impressum.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -163,7 +163,7 @@
 
   <!-- Datenschutz -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/datenschutz.html</loc>
+    <loc>https://therealeray.github.io/Stb-Erben/datenschutz.html</loc>
     <lastmod>2026-03-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -171,19 +171,19 @@
 
   <!-- Sprachvarianten -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/en/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://steuerkanzlei-erben-demo.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://steuerkanzlei-erben-demo.netlify.app/en/index.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://steuerkanzlei-erben-demo.netlify.app/tr/index.html"/>
+    <loc>https://therealeray.github.io/Stb-Erben/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://therealeray.github.io/Stb-Erben/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://therealeray.github.io/Stb-Erben/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://therealeray.github.io/Stb-Erben/tr/index.html"/>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/tr/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://steuerkanzlei-erben-demo.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://steuerkanzlei-erben-demo.netlify.app/en/index.html"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://steuerkanzlei-erben-demo.netlify.app/tr/index.html"/>
+    <loc>https://therealeray.github.io/Stb-Erben/tr/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://therealeray.github.io/Stb-Erben/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://therealeray.github.io/Stb-Erben/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://therealeray.github.io/Stb-Erben/tr/index.html"/>
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

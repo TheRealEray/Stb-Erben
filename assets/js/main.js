@@ -55,17 +55,25 @@ document.addEventListener('DOMContentLoaded', () => {
   // ========================================
   // FAQ Accordion
   // ========================================
-  const faqQuestions = document.querySelectorAll('.faq__question');
+  const faqQuestions = document.querySelectorAll('.faq__question, .sp-faq__question');
 
-  faqQuestions.forEach((question) => {
+  faqQuestions.forEach((question, index) => {
+    const answer = question.nextElementSibling;
+    const isAnswer = answer && (answer.classList.contains('faq__answer') || answer.classList.contains('sp-faq__answer'));
+    if (isAnswer && !answer.id) {
+      const id = 'faq-answer-' + index;
+      answer.id = id;
+      question.setAttribute('aria-controls', id);
+    }
     question.addEventListener('click', () => {
       const isExpanded = question.getAttribute('aria-expanded') === 'true';
       const answer = question.nextElementSibling;
+      const isAnswer = answer && (answer.classList.contains('faq__answer') || answer.classList.contains('sp-faq__answer'));
 
       // Toggle current item
       question.setAttribute('aria-expanded', !isExpanded);
 
-      if (answer && answer.classList.contains('faq__answer')) {
+      if (isAnswer) {
         if (isExpanded) {
           answer.style.maxHeight = null;
           answer.style.paddingTop = null;
