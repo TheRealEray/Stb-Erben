@@ -5669,6 +5669,18 @@ body.is-reading-mode .article {
     color: #fff;
     padding: 4rem 0 4.5rem;
 }
+
+/* Service-Detail Hero Backgrounds */
+.sp-hero--steuerstrafrecht { background: linear-gradient(135deg, rgba(15,20,50,0.82) 0%, rgba(30,58,138,0.72) 100%), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&q=80') center/cover no-repeat; }
+.sp-hero--insolvenz        { background: linear-gradient(135deg, rgba(15,20,50,0.82) 0%, rgba(30,58,138,0.72) 100%), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80') center/cover no-repeat; }
+.sp-hero--wegzug           { background: linear-gradient(135deg, rgba(15,20,50,0.82) 0%, rgba(30,58,138,0.72) 100%), url('https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1920&q=80') center/cover no-repeat; }
+.sp-hero--ecommerce        { background: linear-gradient(135deg, rgba(15,20,50,0.82) 0%, rgba(30,58,138,0.72) 100%), url('https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1920&q=80') center/cover no-repeat; }
+.sp-hero--heilberufe       { background: linear-gradient(135deg, rgba(15,20,50,0.82) 0%, rgba(30,58,138,0.72) 100%), url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1920&q=80') center/cover no-repeat; }
+.sp-hero--immobilien       { background: linear-gradient(135deg, rgba(15,20,50,0.82) 0%, rgba(30,58,138,0.72) 100%), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80') center/cover no-repeat; }
+.sp-hero--nachfolge        { background: linear-gradient(135deg, rgba(15,20,50,0.82) 0%, rgba(30,58,138,0.72) 100%), url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&q=80') center/cover no-repeat; }
+.sp-hero--betreuung        { background: linear-gradient(135deg, rgba(15,20,50,0.82) 0%, rgba(30,58,138,0.72) 100%), url('https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1920&q=80') center/cover no-repeat; }
+.sp-hero--honorar          { background: linear-gradient(135deg, rgba(15,20,50,0.82) 0%, rgba(30,58,138,0.72) 100%), url('https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1920&q=80') center/cover no-repeat; }
+
 .sp-hero__tag {
     display: inline-block;
     background: rgba(255,255,255,0.12);
