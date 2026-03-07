@@ -45,19 +45,6 @@
       "badge": "24/7"
     },
     "slide3": {
-      "title": "Yurtdışına Çıkış Planlıyor musunuz?",
-      "subtitle": "Erken planlama pahalı vergi tuzaklarından kaçınmanızı sağlar. Durumunuzu analiz ediyor ve tasarım olanaklarını gösteriyoruz.",
-      "ctaPrimary": "Çıkış Danışmanlığı Başlat",
-      "ctaSecondary": "İlk Görüşme"
-    },
-    "slide4": {
-      "title": "E-Ticaret & Online Satış",
-      "subtitle": "Amazon, eBay, Shopify – uluslararası KDV'yi doğru yönetin. Başından itibaren vergisel olarak güvenli büyüme.",
-      "ctaPrimary": "E-Ticaret Danışmanlığı",
-      "ctaSecondary": "Sık Sorulan Sorular",
-      "badge": "24/7"
-    },
-    "slide5": {
       "badge": "Uzmanlık Alanı",
       "title": "Mirasınız. Sorumluluğumuz.",
       "subtitle": "Aile devrine ya da işletme satışına kadar — her nesil geçişini vergi açısından optimize edilmiş, gizli ve ileri görüşlü bir şekilde yürütüyoruz.",
@@ -66,6 +53,18 @@
       "tag3": "MBO & İşletme Satışı",
       "ctaPrimary": "Devri Planlayın",
       "ctaSecondary": "İlk Görüşmeyi Talep Edin"
+    },
+    "slide4": {
+      "title": "Yurtdışına Çıkış Planlıyor musunuz?",
+      "subtitle": "Erken planlama pahalı vergi tuzaklarından kaçınmanızı sağlar. Durumunuzu analiz ediyor ve tasarım olanaklarını gösteriyoruz.",
+      "ctaPrimary": "Çıkış Danışmanlığı Başlat",
+      "ctaSecondary": "İlk Görüşme"
+    },
+    "slide5": {
+      "title": "E-Ticaret & Online Satış",
+      "subtitle": "Amazon, eBay, Shopify – uluslararası KDV'yi doğru yönetin. Başından itibaren vergisel olarak güvenli büyüme.",
+      "ctaPrimary": "E-Ticaret Danışmanlığı",
+      "ctaSecondary": "Sık Sorulan Sorular"
     }
   },
   "trustBar": {

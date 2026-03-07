@@ -887,18 +887,6 @@
       "ctaSecondary": "Notfallkontakt"
     },
     "slide3": {
-      "title": "Planen Sie den Wegzug ins Ausland?",
-      "subtitle": "Frühzeitige Planung vermeidet teure Steuerfallen. Wir analysieren Ihre Situation und zeigen Gestaltungsmöglichkeiten auf.",
-      "ctaPrimary": "Wegzugsberatung starten",
-      "ctaSecondary": "Erstgespräch buchen"
-    },
-    "slide4": {
-      "title": "E-Commerce & Online-Handel",
-      "subtitle": "Amazon, eBay, Shopify – internationale Umsatzsteuer korrekt handhaben. Von Anfang an steuerlich sicher skalieren.",
-      "ctaPrimary": "E-Commerce Beratung",
-      "ctaSecondary": "Häufige Fragen"
-    },
-    "slide5": {
       "badge": "Spezialgebiet",
       "title": "Ihr Lebenswerk. Unsere Verantwortung.",
       "subtitle": "Von der Familienübergabe bis zum Unternehmensverkauf — wir begleiten jeden Generationenwechsel steueroptimiert, diskret und mit Weitblick.",
@@ -907,6 +895,18 @@
       "tag3": "MBO & Unternehmensverkauf",
       "ctaPrimary": "Nachfolge planen",
       "ctaSecondary": "Erstgespräch anfragen"
+    },
+    "slide4": {
+      "title": "Planen Sie den Wegzug ins Ausland?",
+      "subtitle": "Frühzeitige Planung vermeidet teure Steuerfallen. Wir analysieren Ihre Situation und zeigen Gestaltungsmöglichkeiten auf.",
+      "ctaPrimary": "Wegzugsberatung starten",
+      "ctaSecondary": "Erstgespräch buchen"
+    },
+    "slide5": {
+      "title": "E-Commerce & Online-Handel",
+      "subtitle": "Amazon, eBay, Shopify – internationale Umsatzsteuer korrekt handhaben. Von Anfang an steuerlich sicher skalieren.",
+      "ctaPrimary": "E-Commerce Beratung",
+      "ctaSecondary": "Häufige Fragen"
     }
   },
   "trustBar": {

@@ -45,18 +45,6 @@
       "badge": "24/7"
     },
     "slide3": {
-      "title": "Planning to Move Abroad?",
-      "subtitle": "Early planning avoids expensive tax traps. We analyze your situation and show design opportunities.",
-      "ctaPrimary": "Start Exit Tax Consultation",
-      "ctaSecondary": "Book Initial Meeting"
-    },
-    "slide4": {
-      "title": "E-Commerce & Online Business",
-      "subtitle": "Amazon, eBay, Shopify – handle international VAT correctly. Scale tax-securely from the start.",
-      "ctaPrimary": "E-Commerce Consulting",
-      "ctaSecondary": "Frequently Asked Questions"
-    },
-    "slide5": {
       "badge": "Specialization",
       "title": "Your Legacy. Our Responsibility.",
       "subtitle": "From family succession to business sale — we guide every generational transition with tax-optimized, discreet, and forward-thinking advice.",
@@ -65,6 +53,18 @@
       "tag3": "MBO & Business Sale",
       "ctaPrimary": "Plan Succession",
       "ctaSecondary": "Request Initial Consultation"
+    },
+    "slide4": {
+      "title": "Planning to Move Abroad?",
+      "subtitle": "Early planning avoids expensive tax traps. We analyze your situation and show design opportunities.",
+      "ctaPrimary": "Start Exit Tax Consultation",
+      "ctaSecondary": "Book Initial Meeting"
+    },
+    "slide5": {
+      "title": "E-Commerce & Online Business",
+      "subtitle": "Amazon, eBay, Shopify – handle international VAT correctly. Scale tax-securely from the start.",
+      "ctaPrimary": "E-Commerce Consulting",
+      "ctaSecondary": "Frequently Asked Questions"
     }
   },
   "trustBar": {
