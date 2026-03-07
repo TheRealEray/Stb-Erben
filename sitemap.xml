@@ -4,10 +4,11 @@
 
   <!-- Startseite -->
   <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://steuerkanzlei-erben-demo.netlify.app/index.html"/>
+    <loc>https://steuerkanzlei-erben-demo.netlify.app/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steuerkanzlei-erben-demo.netlify.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://steuerkanzlei-erben-demo.netlify.app/en/index.html"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://steuerkanzlei-erben-demo.netlify.app/tr/index.html"/>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,6 +16,7 @@
   <!-- Leistungen Übersicht -->
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -22,41 +24,49 @@
   <!-- Leistungen Detail -->
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-steuerstrafrecht.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-insolvenz.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-wegzug.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-ecommerce.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-heilberufe.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-immobilien.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-nachfolge.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/leistungen-betreuung.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -64,6 +74,7 @@
   <!-- Über uns -->
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/ueber-uns.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -71,6 +82,7 @@
   <!-- FAQ -->
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/faq.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -78,21 +90,25 @@
   <!-- Wissen -->
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/wissen.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/wissen-aussenpruefung.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/wissen-steuerstrafrecht.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/wissen-umwandlungssteuerrecht.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -100,6 +116,7 @@
   <!-- Tools -->
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/tools.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -107,6 +124,7 @@
   <!-- Honorar -->
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/honorar.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -114,6 +132,7 @@
   <!-- Karriere -->
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/karriere.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -121,6 +140,7 @@
   <!-- News -->
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/news.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -128,36 +148,27 @@
   <!-- Kontakt -->
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/kontakt.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-
-  <!-- Rechtliches -->
-  <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/impressum.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  <url>
-    <loc>https://steuerkanzlei-erben-demo.netlify.app/datenschutz.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
   </url>
 
   <!-- Sprachvarianten -->
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/en/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://steuerkanzlei-erben-demo.netlify.app/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steuerkanzlei-erben-demo.netlify.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://steuerkanzlei-erben-demo.netlify.app/en/index.html"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://steuerkanzlei-erben-demo.netlify.app/tr/index.html"/>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/tr/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://steuerkanzlei-erben-demo.netlify.app/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://steuerkanzlei-erben-demo.netlify.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://steuerkanzlei-erben-demo.netlify.app/en/index.html"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://steuerkanzlei-erben-demo.netlify.app/tr/index.html"/>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

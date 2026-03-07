@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steuer-Tools & Rechner | Steuerkanzlei Ibrahim Erben Düren</title>
+    <title>Steuerrechner & Tools | Steuerkanzlei Erben Düren</title>
     <meta name="description" content="Hilfreiche Steuerrechner und Tools: Einkommensteuer, Elterngeld, Brutto/Netto, Gründercheck und mehr. Kostenlose Online-Rechner für Ihre Steuerplanung.">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -17,6 +17,9 @@
     <meta property="og:site_name" content="Steuerkanzlei Ibrahim Erben">
     <meta property="og:locale" content="de_DE">
     <meta property="og:image" content="https://steuerkanzlei-erben-demo.netlify.app/assets/images/logo.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Steuerrechner – Steuerkanzlei Ibrahim Erben">
+    <meta name="twitter:description" content="14 kostenlose Steuerrechner: Einkommensteuer, Brutto-Netto, Gewerbesteuer und mehr.">
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -153,40 +156,40 @@
             <div class="service-detail__category" style="margin-bottom: var(--spacing-2xl);">
                 <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.tools.taxCalculators.heading">Steuerrechner</h2>
                 <div class="grid grid--3">
-                    <div class="card card--hover" onclick="openTool('einkommensteuer')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('einkommensteuer')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-chart.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.taxCalculators.incomeTax.title">Einkommensteuer-Rechner</h3>
                         <p class="card__text" data-i18n="pages.tools.taxCalculators.incomeTax.text">Berechnen Sie Ihre Einkommensteuer und Solidaritätszuschlag</p>
                         <span class="card__link" data-i18n="pages.tools.taxCalculators.incomeTax.link">Zum Rechner →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('schenkungssteuer')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('schenkungssteuer')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-refresh.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.taxCalculators.giftTax.title">Schenkungssteuer-Rechner</h3>
                         <p class="card__text" data-i18n="pages.tools.taxCalculators.giftTax.text">Freibeträge und Steuer bei Schenkungen ermitteln</p>
                         <span class="card__link" data-i18n="pages.tools.taxCalculators.giftTax.link">Zum Rechner →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('brutto-netto')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('brutto-netto')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-monitor.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.taxCalculators.grossNet.title">Brutto/Nettolohnrechner</h3>
                         <p class="card__text" data-i18n="pages.tools.taxCalculators.grossNet.text">Nettogehalt aus Bruttolohn berechnen inkl. Sozialabgaben</p>
                         <span class="card__link" data-i18n="pages.tools.taxCalculators.grossNet.link">Zum Rechner →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('ust-rechner')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('ust-rechner')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-refresh.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title">Umsatzsteuer-Rechner</h3>
                         <p class="card__text">Netto ↔ Brutto umrechnen mit 7 % oder 19 % USt</p>
                         <span class="card__link">Zum Rechner →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('grest-rechner')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('grest-rechner')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-building.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title">Grunderwerbsteuer-Rechner</h3>
                         <p class="card__text">Grunderwerbsteuer und Kaufnebenkosten nach Bundesland</p>
                         <span class="card__link">Zum Rechner →</span>
-                    </div>
+                    </button>
                 </div>
             </div>
 
@@ -194,47 +197,47 @@
             <div class="service-detail__category" style="margin-bottom: var(--spacing-2xl);">
                 <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.tools.socialSecurity.heading">Sozialversicherung & Arbeit</h2>
                 <div class="grid grid--3">
-                    <div class="card card--hover" onclick="openTool('elterngeld')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('elterngeld')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-user.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.socialSecurity.parentalBenefit.title">Elterngeld-Rechner</h3>
                         <p class="card__text" data-i18n="pages.tools.socialSecurity.parentalBenefit.text">Elterngeldanspruch berechnen und optimieren</p>
                         <span class="card__link" data-i18n="pages.tools.socialSecurity.parentalBenefit.link">Zum Rechner →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('pflegegeld')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('pflegegeld')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-heart-pulse.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.socialSecurity.careBenefit.title">Pflegegeld-Rechner</h3>
                         <p class="card__text" data-i18n="pages.tools.socialSecurity.careBenefit.text">Pflegegeld und Pflegesachleistungen ermitteln</p>
                         <span class="card__link" data-i18n="pages.tools.socialSecurity.careBenefit.link">Zum Rechner →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('mutterschutz')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('mutterschutz')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-shield.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.socialSecurity.maternityProtection.title">Mutterschutz-Rechner</h3>
                         <p class="card__text" data-i18n="pages.tools.socialSecurity.maternityProtection.text">Mutterschutzfristen berechnen</p>
                         <span class="card__link" data-i18n="pages.tools.socialSecurity.maternityProtection.link">Zum Rechner →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('arbeitstage')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('arbeitstage')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-clock.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.socialSecurity.workingDays.title">Arbeitstage-Rechner</h3>
                         <p class="card__text" data-i18n="pages.tools.socialSecurity.workingDays.text">Arbeitstage zwischen zwei Daten ermitteln</p>
                         <span class="card__link" data-i18n="pages.tools.socialSecurity.workingDays.link">Zum Rechner →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('minijob')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('minijob')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-checkmark.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.socialSecurity.miniJob.title">Minijob-Rechner</h3>
                         <p class="card__text" data-i18n="pages.tools.socialSecurity.miniJob.text">Abgaben und Kosten bei Minijobs berechnen</p>
                         <span class="card__link" data-i18n="pages.tools.socialSecurity.miniJob.link">Zum Rechner →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('gehaltsvergleich')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('gehaltsvergleich')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-chart.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title">Gehaltsvergleich-Rechner</h3>
                         <p class="card__text">Arbeitgeber-Kosten vs. Netto-Auszahlung vergleichen</p>
                         <span class="card__link">Zum Rechner →</span>
-                    </div>
+                    </button>
                 </div>
             </div>
 
@@ -242,40 +245,40 @@
             <div class="service-detail__category" style="margin-bottom: var(--spacing-2xl);">
                 <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.tools.businessStartup.heading">Unternehmensgründung</h2>
                 <div class="grid grid--3">
-                    <div class="card card--hover" onclick="openTool('gruendercheck')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('gruendercheck')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-target.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.businessStartup.founderCheck.title">Gründercheck</h3>
                         <p class="card__text" data-i18n="pages.tools.businessStartup.founderCheck.text">Sind Sie bereit für die Selbstständigkeit? Prüfen Sie es</p>
                         <span class="card__link" data-i18n="pages.tools.businessStartup.founderCheck.link">Zum Tool →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('businessplan')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('businessplan')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-building.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.businessStartup.businessPlan.title">Businessplan</h3>
                         <p class="card__text" data-i18n="pages.tools.businessStartup.businessPlan.text">Vorlage und Leitfaden für Ihren Businessplan</p>
                         <span class="card__link" data-i18n="pages.tools.businessStartup.businessPlan.link">Zum Tool →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('foerderrechner')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('foerderrechner')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-zap.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.businessStartup.fundingCalculator.title">Förderrechner</h3>
                         <p class="card__text" data-i18n="pages.tools.businessStartup.fundingCalculator.text">Welche Fördermittel stehen Ihnen zu?</p>
                         <span class="card__link" data-i18n="pages.tools.businessStartup.fundingCalculator.link">Zum Rechner →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('gmbh-checkliste')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('gmbh-checkliste')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-checkmark.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.businessStartup.gmbhChecklist.title">Gründungscheckliste GmbH</h3>
                         <p class="card__text" data-i18n="pages.tools.businessStartup.gmbhChecklist.text">Alle Schritte zur GmbH-Gründung im Überblick</p>
                         <span class="card__link" data-i18n="pages.tools.businessStartup.gmbhChecklist.link">Zur Checkliste →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('altersvorsorge')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('altersvorsorge')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-shield.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.businessStartup.pensionPlan.title">Betriebliche Altersvorsorge</h3>
                         <p class="card__text" data-i18n="pages.tools.businessStartup.pensionPlan.text">Rechner für betriebliche Altersvorsorge</p>
                         <span class="card__link" data-i18n="pages.tools.businessStartup.pensionPlan.link">Zum Rechner →</span>
-                    </div>
+                    </button>
                 </div>
             </div>
 
@@ -283,54 +286,54 @@
             <div class="service-detail__category">
                 <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.tools.additionalTools.heading">Weitere Tools</h2>
                 <div class="grid grid--3">
-                    <div class="card card--hover" onclick="openTool('fristenrechner')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('fristenrechner')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-clock.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.additionalTools.deadlineCalculator.title">Fristenrechner (BGB)</h3>
                         <p class="card__text" data-i18n="pages.tools.additionalTools.deadlineCalculator.text">Gesetzliche Fristen nach BGB berechnen</p>
                         <span class="card__link" data-i18n="pages.tools.additionalTools.deadlineCalculator.link">Zum Rechner →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('kreditrechner')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('kreditrechner')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-chart.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.additionalTools.loanCalculator.title">Kreditrechner</h3>
                         <p class="card__text" data-i18n="pages.tools.additionalTools.loanCalculator.text">Kreditraten und Zinsen berechnen</p>
                         <span class="card__link" data-i18n="pages.tools.additionalTools.loanCalculator.link">Zum Rechner →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('mustervertraege')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('mustervertraege')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-monitor.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.additionalTools.sampleContracts.title">Musterverträge</h3>
                         <p class="card__text" data-i18n="pages.tools.additionalTools.sampleContracts.text">Kostenlose Musterverträge und Vorlagen</p>
                         <span class="card__link" data-i18n="pages.tools.additionalTools.sampleContracts.link">Zu den Vorlagen →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('formulare')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('formulare')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-mail.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.additionalTools.forms.title">Formulare</h3>
                         <p class="card__text" data-i18n="pages.tools.additionalTools.forms.text">Wichtige Steuerformulare zum Download</p>
                         <span class="card__link" data-i18n="pages.tools.additionalTools.forms.link">Zu den Formularen →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('tabellen')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('tabellen')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-chart.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title" data-i18n="pages.tools.additionalTools.tables.title">Tabellen</h3>
                         <p class="card__text" data-i18n="pages.tools.additionalTools.tables.text">Steuertabellen und Übersichten</p>
                         <span class="card__link" data-i18n="pages.tools.additionalTools.tables.link">Zu den Tabellen →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('afa-rechner')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('afa-rechner')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-target.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title">AfA-Rechner</h3>
                         <p class="card__text">Abschreibung für Wirtschaftsgüter berechnen (linear/degressiv)</p>
                         <span class="card__link">Zum Rechner →</span>
-                    </div>
+                    </button>
 
-                    <div class="card card--hover" onclick="openTool('steuerkalender')" style="cursor: pointer;">
+                    <button type="button" class="card card--hover" onclick="openTool('steuerkalender')" style="cursor: pointer;">
                         <img loading="lazy" src="assets/images/icon-clock.svg" alt="" class="card__icon" aria-hidden="true">
                         <h3 class="card__title">Steuertermin-Kalender</h3>
                         <p class="card__text">Alle wichtigen Abgabetermine 2026 im Überblick</p>
                         <span class="card__link">Zum Kalender →</span>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>

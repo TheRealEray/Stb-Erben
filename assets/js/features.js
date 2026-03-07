@@ -93,21 +93,10 @@ function initStickyCTA() {
 /**
  * Feature 5: Print Button
  * Enhanced print functionality
- * (Click handler is inline in HTML, but we can add enhancements here)
  */
 function initPrintButton() {
   const printButtons = document.querySelectorAll('.print-button');
   if (printButtons.length === 0) return;
-
-  printButtons.forEach(button => {
-    // Add keyboard shortcut listener (Ctrl/Cmd + P)
-    document.addEventListener('keydown', (e) => {
-      if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
-        // Browser will handle this natively, but we could add tracking here
-        console.log('Print initiated via keyboard shortcut');
-      }
-    });
-  });
 }
 
 // Export functions for testing/debugging

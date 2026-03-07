@@ -26,7 +26,7 @@
     const date = new Date();
     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
     const expires = `expires=${date.toUTCString()}`;
-    document.cookie = `${name}=${value};${expires};path=/;SameSite=Lax`;
+    document.cookie = `${name}=${value};${expires};path=/;SameSite=Lax;Secure`;
   }
 
   /**
@@ -93,7 +93,6 @@
     hideBanner(banner);
 
     // Optional: Enable analytics or other tracking here
-    console.log('Cookies accepted');
   }
 
   /**
@@ -104,7 +103,6 @@
     hideBanner(banner);
 
     // Optional: Disable analytics or tracking here
-    console.log('Cookies declined');
   }
 
   /**
@@ -115,8 +113,6 @@
     const consent = getCookie(COOKIE_NAME);
 
     if (consent) {
-      // User has already made a choice
-      console.log('Cookie consent:', consent);
       return;
     }
 

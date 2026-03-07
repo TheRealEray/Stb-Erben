@@ -4,7 +4,6 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('[main.js] DOM Content Loaded - Initializing UI components');
 
   // ========================================
   // Mobile Navigation Toggle
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
       navToggle.setAttribute('aria-expanded', !isExpanded);
       navList.classList.toggle('is-open');
-      console.log('[main.js] Mobile navigation toggled:', !isExpanded);
     });
   }
 
@@ -34,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const isExpanded = langButton.getAttribute('aria-expanded') === 'true';
       langButton.setAttribute('aria-expanded', !isExpanded);
       langDropdown.classList.toggle('is-open');
-      console.log('[main.js] Language switcher toggled:', !isExpanded);
     });
 
     // Close dropdown when clicking outside
@@ -81,6 +78,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-  console.log('[main.js] ✅ UI components initialized successfully');
 });

@@ -12,7 +12,6 @@ class I18n {
 
     // THEN detect language (needs supportedLanguages to be defined)
     this.currentLang = this.detectLanguage();
-    console.log('[i18n] Constructor - Detected language:', this.currentLang);
   }
 
   /**
@@ -23,7 +22,6 @@ class I18n {
     const urlParams = new URLSearchParams(window.location.search);
     const urlLang = urlParams.get('lang');
     if (urlLang && this.supportedLanguages.includes(urlLang)) {
-      console.log('[i18n] Language from URL:', urlLang);
       // Sync localStorage with URL
       localStorage.setItem('preferred-language', urlLang);
       return urlLang;
@@ -32,19 +30,16 @@ class I18n {
     // 2. Check localStorage
     const storedLang = localStorage.getItem('preferred-language');
     if (storedLang && this.supportedLanguages.includes(storedLang)) {
-      console.log('[i18n] Language from localStorage:', storedLang);
       return storedLang;
     }
 
     // 3. Check browser language
     const browserLang = navigator.language.split('-')[0];
     if (this.supportedLanguages.includes(browserLang)) {
-      console.log('[i18n] Language from browser:', browserLang);
       return browserLang;
     }
 
     // 4. Default to German
-    console.log('[i18n] Using default language: de');
     return this.fallbackLang;
   }
 
@@ -52,10 +47,8 @@ class I18n {
    * Load translation file for specified language
    */
   async loadTranslations(lang) {
-    console.log(`[i18n] Loading translations for: ${lang}`);
     try {
       const path = `assets/translations/${lang}.json`;
-      console.log(`[i18n] Fetching: ${path}`);
 
       // Add cache busting and no-cache headers to prevent browser caching
       const response = await fetch(path, {
@@ -66,21 +59,18 @@ class I18n {
           'Expires': '0'
         }
       });
-      console.log(`[i18n] Fetch response status: ${response.status}`);
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       this.translations = await response.json();
-      console.log(`[i18n] Successfully loaded translations for ${lang}`, this.translations);
       return true;
     } catch (error) {
       console.error(`[i18n] Error loading translations for ${lang}:`, error);
 
       // Try fallback language if not already trying it
       if (lang !== this.fallbackLang) {
-        console.log(`[i18n] Falling back to ${this.fallbackLang}`);
         return this.loadTranslations(this.fallbackLang);
       }
       return false;
@@ -98,7 +88,6 @@ class I18n {
       if (value && typeof value === 'object' && k in value) {
         value = value[k];
       } else {
-        console.warn(`[i18n] Translation key not found: ${key}`);
         return key;
       }
     }
@@ -110,8 +99,6 @@ class I18n {
    * Apply translations to all elements with data-i18n attribute
    */
   applyTranslations() {
-    console.log('[i18n] Applying translations...');
-
     // Update page title
     const titleElement = document.querySelector('title[data-i18n]');
     if (titleElement) {
@@ -119,7 +106,6 @@ class I18n {
       const translation = this.t(key);
       if (translation && translation !== key) {
         document.title = translation;
-        console.log(`[i18n] Updated title: ${translation}`);
       }
     }
 
@@ -130,21 +116,17 @@ class I18n {
       const translation = this.t(key);
       if (translation && translation !== key) {
         metaDesc.setAttribute('content', translation);
-        console.log(`[i18n] Updated meta description`);
       }
     }
 
     // Text content
-    let translatedCount = 0;
     document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n');
       const translation = this.t(key);
       if (translation && translation !== key) {
         element.textContent = translation;
-        translatedCount++;
       }
     });
-    console.log(`[i18n] Translated ${translatedCount} elements`);
 
     // HTML content (for elements that need HTML)
     document.querySelectorAll('[data-i18n-html]').forEach(element => {
@@ -193,8 +175,6 @@ class I18n {
    * Update all navigation links to include current language
    */
   updateNavigationLinks() {
-    console.log('[i18n] Updating navigation links with current language:', this.currentLang);
-
     // Update all internal navigation links (but not language switcher links)
     document.querySelectorAll('a[href]:not(.lang-switcher__option)').forEach(link => {
       const href = link.getAttribute('href');
@@ -244,12 +224,10 @@ class I18n {
    * Update language switcher UI
    */
   updateLanguageSwitcher() {
-    console.log('[i18n] Updating language switcher UI');
-
     const langFlags = {
-      'de': '🇩🇪',
-      'tr': '🇹🇷',
-      'en': '🇬🇧'
+      'de': '\u{1F1E9}\u{1F1EA}',
+      'tr': '\u{1F1F9}\u{1F1F7}',
+      'en': '\u{1F1EC}\u{1F1E7}'
     };
 
     const langNames = {
@@ -294,8 +272,6 @@ class I18n {
    * Change language
    */
   async changeLanguage(lang) {
-    console.log(`[i18n] Changing language to: ${lang}`);
-
     if (!this.supportedLanguages.includes(lang)) {
       console.error(`[i18n] Language ${lang} is not supported`);
       return false;
@@ -303,7 +279,6 @@ class I18n {
 
     this.currentLang = lang;
     localStorage.setItem('preferred-language', lang);
-    console.log(`[i18n] Saved language to localStorage: ${lang}`);
 
     // Update URL without reload
     const url = new URL(window.location);
@@ -314,14 +289,12 @@ class I18n {
       url.searchParams.set('lang', lang);
     }
     window.history.pushState({}, '', url);
-    console.log(`[i18n] Updated URL: ${url}`);
 
     // Load and apply translations
     await this.loadTranslations(lang);
     this.applyTranslations();
     this.updateLanguageSwitcher();
 
-    console.log(`[i18n] Language change completed: ${lang}`);
     return true;
   }
 
@@ -329,8 +302,6 @@ class I18n {
    * Initialize i18n system
    */
   async init() {
-    console.log('[i18n] Initializing i18n system...');
-
     // Load translations for current language
     const loaded = await this.loadTranslations(this.currentLang);
     if (!loaded) {
@@ -346,22 +317,16 @@ class I18n {
 
     // Set up language switcher click handlers
     const options = document.querySelectorAll('.lang-switcher__option');
-    console.log(`[i18n] Found ${options.length} language options`);
 
-    options.forEach((option, index) => {
-      console.log(`[i18n] Setting up click handler for option ${index}`);
-
+    options.forEach((option) => {
       option.addEventListener('click', async (e) => {
         e.preventDefault();
         e.stopPropagation();
 
         const href = option.getAttribute('href');
-        console.log(`[i18n] Language option clicked: ${href}`);
-
         const match = href.match(/lang=(\w+)/);
         if (match) {
           const newLang = match[1];
-          console.log(`[i18n] Switching to language: ${newLang}`);
           await this.changeLanguage(newLang);
 
           // Close dropdown
@@ -369,20 +334,15 @@ class I18n {
           if (dropdown) {
             dropdown.classList.remove('is-open');
           }
-        } else {
-          console.error(`[i18n] Could not extract language from href: ${href}`);
         }
       });
     });
-
-    console.log(`[i18n] ✅ i18n initialized successfully with language: ${this.currentLang}`);
   }
 }
 
 // Initialize i18n when DOM is ready
 let i18n;
 document.addEventListener('DOMContentLoaded', async () => {
-  console.log('[i18n] DOM Content Loaded - Starting initialization');
   try {
     i18n = new I18n();
     await i18n.init();
