@@ -2272,6 +2272,10 @@ li {
     justify-content: center;
   }
 
+  .hero__tags {
+    display: none;
+  }
+
   .hero--static {
     min-height: 450px;
     padding: var(--spacing-xl) 0;
@@ -2438,10 +2442,6 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .hero__tags {
-    display: none;
   }
 
   .hero__badge {
@@ -5643,10 +5643,6 @@ body.is-reading-mode .article {
     min-height: 44px;
   }
 
-  /* Hero slideshow: reduce min-height on small screens */
-  .hero__slideshow {
-    min-height: 420px;
-  }
 }
 
 
