@@ -7,6 +7,15 @@
     <meta name="description" content="Transparente Honorare: Kostenloser Erstkontakt, Erstgespräch ab EUR 395/Std., individuelle Auftragspauschalen. Faire Preise für professionelle Steuerberatung.">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .pricing-table { width: 100%; border-collapse: collapse; margin: 1rem 0 0.5rem; }
+        .pricing-table th, .pricing-table td { padding: 0.625rem 0; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.15); font-size: 0.9rem; }
+        .pricing-table th { color: rgba(255,255,255,0.55); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        .pricing-table td:last-child { text-align: right; font-weight: 600; white-space: nowrap; }
+        .pricing-table tr:last-child td { border-bottom: none; }
+        .pricing-table .pricing-table__avg { border-top: 2px solid rgba(255,255,255,0.3); }
+        .pricing-table .pricing-table__avg td { padding-top: 0.875rem; font-size: 1rem; font-weight: 700; color: #fff; }
+    </style>
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -99,275 +108,277 @@
 
     </header>
 
-    <!-- Progress Bar -->
-    <div class="progress-bar" role="progressbar" aria-label="Reading progress">
-        <div class="progress-bar__fill"></div>
-    </div>
+<main>
+
     <!-- Breadcrumbs -->
     <nav class="breadcrumbs" aria-label="Breadcrumb">
         <div class="container">
             <ol class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
-                    <a href="index.html" class="breadcrumbs__link" data-i18n="breadcrumbs.home">Startseite</a>
+                    <a href="index.html" class="breadcrumbs__link">Startseite</a>
                 </li>
                 <li class="breadcrumbs__item">
                     <span class="breadcrumbs__separator" aria-hidden="true">/</span>
-                    <span class="breadcrumbs__current" aria-current="page" data-i18n="breadcrumbs.pricing">Honorar</span>
+                    <span class="breadcrumbs__current" aria-current="page">Honorar</span>
                 </li>
             </ol>
         </div>
     </nav>
 
-
-
-    <!-- Hero Section -->
-    <section class="hero hero--static" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url('https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1920&q=80') center/cover no-repeat;">
+    <!-- Hero -->
+    <section class="sp-hero" style="background: linear-gradient(135deg, rgba(15, 20, 50, 0.82) 0%, rgba(30, 58, 138, 0.72) 100%), url('https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1920&q=80') center/cover no-repeat;">
         <div class="container">
-            <div class="hero__content">
-                <div class="hero__text">
-                    <h1 class="hero__title" data-i18n="pages.pricing.hero.title">Honorar & Vergütung</h1>
-                    <p class="hero__subtitle" data-i18n="pages.pricing.hero.subtitle">
-                        Transparente Preise, faire Konditionen. Wir legen Wert auf klare Kommunikation – auch bei den Kosten.
-                    </p>
-                </div>
+            <span class="sp-hero__tag">Honorar &amp; Vergütung</span>
+            <h1 class="sp-hero__title">Transparente Preise, faire Konditionen</h1>
+            <p class="sp-hero__lead">Wir legen Wert auf klare Kommunikation – auch bei den Kosten. Alle Preise verstehen sich zzgl. gesetzlicher Mehrwertsteuer.</p>
+            <div class="sp-hero__actions">
+                <a href="kontakt.html" class="btn btn--primary btn--large">Erstgespräch anfragen</a>
+                <a href="leistungen.html" class="btn btn--outline btn--large">Alle Leistungen</a>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Overview -->
+    <!-- Stats bar -->
+    <div class="sp-stats">
+        <div class="sp-stat"><span class="sp-stat__number">Kostenfrei</span><span class="sp-stat__label">Erstkontakt per Telefon</span></div>
+        <div class="sp-stat"><span class="sp-stat__number">EUR 180–220</span><span class="sp-stat__label">Durchschn. Stundensatz</span></div>
+        <div class="sp-stat"><span class="sp-stat__number">StBVV</span><span class="sp-stat__label">Gesetzeskonforme Abrechnung</span></div>
+        <div class="sp-stat"><span class="sp-stat__number">Transparent</span><span class="sp-stat__label">Vorab-Kalkulation</span></div>
+        <div class="sp-stat"><span class="sp-stat__number">Individuell</span><span class="sp-stat__label">Auf Ihr Mandat zugeschnitten</span></div>
+    </div>
+
+    <!-- So werden Sie Mandant -->
+    <section class="section-alt">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:2.5rem;">So werden Sie Mandant</h2>
+            <ol class="sp-process" style="grid-template-columns: repeat(3, 1fr);">
+                <li class="sp-step">
+                    <span class="sp-step__num">01</span>
+                    <div>
+                        <h3 class="sp-step__title">Erstkontakt</h3>
+                        <p class="sp-step__desc">Kostenfreies Telefonat – schildern Sie uns kurz Ihr Anliegen. Wir klären, ob und wie wir Ihnen helfen können.</p>
+                    </div>
+                </li>
+                <li class="sp-step">
+                    <span class="sp-step__num">02</span>
+                    <div>
+                        <h3 class="sp-step__title">Erstgespräch</h3>
+                        <p class="sp-step__desc">Persönlich oder digital: Wir analysieren Ihre Situation, besprechen Ihre Ziele und erarbeiten konkrete Handlungsempfehlungen.</p>
+                    </div>
+                </li>
+                <li class="sp-step">
+                    <span class="sp-step__num">03</span>
+                    <div>
+                        <h3 class="sp-step__title">Zusammenarbeit</h3>
+                        <p class="sp-step__desc">Sie erhalten ein individuelles Angebot. Nach Beauftragung starten wir nahtlos – mit klaren Prozessen und festen Ansprechpartnern.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Vergütungsstruktur -->
     <section class="section">
         <div class="container">
-            <p class="text-center mb-xl" style="color: var(--color-text-light); max-width: 800px; margin-left: auto; margin-right: auto;" data-i18n="pages.pricing.intro">
-                Jedes Mandat ist individuell. Wir bieten verschiedene Vergütungsmodelle – je nachdem, was zu Ihrer Situation passt. Alle Preise verstehen sich zzgl. gesetzlicher Mehrwertsteuer.
-            </p>
-
-            <!-- Section 1: Kostenloser Erstkontakt -->
-            <div class="service-detail__category" style="background: linear-gradient(135deg, #dcfce7 0%, #d1fae5 100%); border: 2px solid #10b981; box-shadow: 0 6px 16px rgba(16, 185, 129, 0.15); margin-bottom: var(--spacing-2xl);">
-                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                    <img loading="lazy" src="assets/images/icon-phone.svg" alt="" class="icon icon-lg" style="display: inline-block; color: #059669;">
-                    <h2 style="margin: 0; color: #065f46;" data-i18n="pages.pricing.freeContact.title">Kostenloser Erstkontakt</h2>
-                </div>
-                <p style="font-size: 1.0625rem; font-weight: 500; color: #047857; margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.freeContact.intro">
-                    Das erste Telefonat ist immer kostenfrei. Schildern Sie uns kurz Ihr Anliegen – wir klären, ob und wie wir Ihnen helfen können.
-                </p>
-                <div style="background: white; padding: var(--spacing-lg); border-radius: var(--border-radius); margin-bottom: var(--spacing-md);">
-                    <div style="display: flex; align-items: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-sm);">
-                        <img loading="lazy" src="assets/images/icon-phone.svg" alt="" style="width: 24px; height: 24px; color: #059669;">
-                        <strong style="font-size: 1.125rem; color: #065f46;" data-i18n="pages.pricing.freeContact.phoneLabel">Rufen Sie uns an:</strong>
-                    </div>
-                    <p style="font-size: 1.5rem; font-weight: 600; color: #059669; margin: 0;">
-                        <a href="tel:+4924219984810" style="color: #059669; text-decoration: none;">02421 99 848 10</a>
-                    </p>
-                </div>
-                <ul style="list-style: none; padding: 0; margin-bottom: var(--spacing-md);">
-                    <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid rgba(16, 185, 129, 0.2);" data-i18n="pages.pricing.freeContact.benefit1">✓ Erste Einschätzung Ihrer Situation</li>
-                    <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid rgba(16, 185, 129, 0.2);" data-i18n="pages.pricing.freeContact.benefit2">✓ Klärung, ob wir der richtige Ansprechpartner sind</li>
-                    <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid rgba(16, 185, 129, 0.2);" data-i18n="pages.pricing.freeContact.benefit3">✓ Unverbindlich und kostenfrei</li>
-                    <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.freeContact.benefit4">✓ Keine Verpflichtung zur Zusammenarbeit</li>
-                </ul>
-            </div>
-
-            <!-- Section 2: Erstgespräch -->
-            <div class="service-detail__category" style="margin-bottom: var(--spacing-2xl);">
-                <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.pricing.initialConsultation.title">Erstgespräch</h2>
-                <div class="grid grid--2">
-                    <div class="card" style="background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%); border: 2px solid #3b82f6;">
-                        <h3 style="color: #1e40af; margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.initialConsultation.option1.title">Beratungsgespräch</h3>
-                        <div style="font-size: 2rem; font-weight: 700; color: #1e3a8a; margin-bottom: var(--spacing-sm);">
-                            <span data-i18n="pages.pricing.initialConsultation.option1.price">EUR 395</span>
-                        </div>
-                        <p style="color: #3b82f6; font-weight: 500; margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.initialConsultation.option1.unit">pro Stunde (netto)</p>
-                        <p style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.initialConsultation.option1.description">
-                            Wenn Sie eine konkrete steuerliche Fragestellung haben und eine fundierte Beratung wünschen, berechnen wir EUR 395 netto pro Stunde.
-                        </p>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.initialConsultation.option1.benefit1">✓ Detaillierte Analyse Ihrer Situation</li>
-                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.initialConsultation.option1.benefit2">✓ Konkrete Handlungsempfehlungen</li>
-                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.initialConsultation.option1.benefit3">✓ Schriftliche Zusammenfassung</li>
-                        </ul>
-                    </div>
-
-                    <div class="card" style="background: linear-gradient(135deg, #dcfce7 0%, #d1fae5 100%); border: 2px solid #10b981;">
-                        <h3 style="color: #065f46; margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.initialConsultation.option2.title">Kennenlern-Gespräch</h3>
-                        <div style="font-size: 2rem; font-weight: 700; color: #059669; margin-bottom: var(--spacing-sm);">
-                            <span data-i18n="pages.pricing.initialConsultation.option2.price">Kostenfrei</span>
-                        </div>
-                        <p style="color: #10b981; font-weight: 500; margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.initialConsultation.option2.unit">bei Übernahme laufender Betreuung</p>
-                        <p style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.initialConsultation.option2.description">
-                            Wenn es nur um ein erstes Kennenlernen geht oder Sie an einer laufenden Zusammenarbeit interessiert sind, ist das Erstgespräch für Sie kostenfrei.
-                        </p>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.initialConsultation.option2.benefit1">✓ Unverbindliches Kennenlernen</li>
-                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.initialConsultation.option2.benefit2">✓ Vorstellung unserer Arbeitsweise</li>
-                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.initialConsultation.option2.benefit3">✓ Individuelle Angebotserstellung</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section 3: Gestaltungsberatung -->
-            <div class="service-detail__category" style="margin-bottom: var(--spacing-2xl);">
-                <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.pricing.designConsulting.title">Gestaltungsberatung & Projektarbeit</h2>
-                <p style="margin-bottom: var(--spacing-lg);" data-i18n="pages.pricing.designConsulting.intro">
-                    Bei komplexen steuerlichen Fragestellungen, Strukturierungen oder einmaligen Projekten arbeiten wir entweder auf Stundenbasis oder mit Auftragspauschalen.
-                </p>
-
-                <div class="grid grid--2">
-                    <div class="card">
-                        <h3 style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.hourlyRate.title">Stundensätze</h3>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--color-primary); margin-bottom: var(--spacing-sm);">
-                            <span data-i18n="pages.pricing.designConsulting.hourlyRate.range">EUR 180 - 220</span>
-                        </div>
-                        <p style="color: var(--color-text-light); margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.hourlyRate.unit">durchschnittlich pro Stunde (netto)</p>
-                        <p style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.hourlyRate.description">
-                            Wir arbeiten im Team: Steuerberater und qualifizierte Fachmitarbeiter. So profitieren Sie von Expertise auf verschiedenen Ebenen – bei fairen Stundensätzen.
-                        </p>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.designConsulting.hourlyRate.benefit1">✓ Team-Ansatz für optimale Effizienz</li>
-                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.designConsulting.hourlyRate.benefit2">✓ Transparente Zeiterfassung</li>
-                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.designConsulting.hourlyRate.benefit3">✓ Regelmäßige Zwischenrechnungen</li>
-                        </ul>
-                    </div>
-
-                    <div class="card">
-                        <h3 style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.flatFee.title">Auftragspauschalen</h3>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--color-primary); margin-bottom: var(--spacing-sm);">
-                            <span data-i18n="pages.pricing.designConsulting.flatFee.price">Nach Vereinbarung</span>
-                        </div>
-                        <p style="color: var(--color-text-light); margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.flatFee.unit">für definierte Leistungen</p>
-                        <p style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.flatFee.description">
-                            Für klar definierte Projekte bieten wir Festpreise an. So haben Sie Planungssicherheit und wissen vorab, welche Kosten auf Sie zukommen.
-                        </p>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.designConsulting.flatFee.benefit1">✓ Planungssicherheit durch Festpreis</li>
-                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.designConsulting.flatFee.benefit2">✓ Keine versteckten Kosten</li>
-                            <li style="padding: var(--spacing-sm) 0;" data-i18n="pages.pricing.designConsulting.flatFee.benefit3">✓ Klare Leistungsbeschreibung</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div style="background: var(--color-bg-light); padding: var(--spacing-lg); border-radius: var(--border-radius); margin-top: var(--spacing-lg);">
-                    <h4 style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.designConsulting.examples.title">Beispiele für Gestaltungsberatung:</h4>
-                    <ul class="service-detail__list">
-                        <li data-i18n="pages.pricing.designConsulting.examples.item1">Gutachten und Stellungnahmen</li>
-                        <li data-i18n="pages.pricing.designConsulting.examples.item2">Umwandlungen (Verschmelzung, Spaltung, Formwechsel)</li>
-                        <li data-i18n="pages.pricing.designConsulting.examples.item3">Gründungsberatung (GmbH, Holding, UG)</li>
-                        <li data-i18n="pages.pricing.designConsulting.examples.item4">Wegzugsplanung und internationale Strukturierung</li>
-                        <li data-i18n="pages.pricing.designConsulting.examples.item5">Nachfolgeplanung und Unternehmensübertragung</li>
-                        <li data-i18n="pages.pricing.designConsulting.examples.item6">Due Diligence und Unternehmensbewertung</li>
+            <div class="sp-split">
+                <div class="sp-split__text">
+                    <h2>Unsere Vergütungsmodelle</h2>
+                    <p>Jedes Mandat ist individuell. Wir bieten verschiedene Vergütungsmodelle – je nachdem, was zu Ihrer Situation passt.</p>
+                    <ul class="sp-checklist">
+                        <li><strong>Erstgespräch:</strong> EUR 395 pro Stunde (netto) bei konkreter Beratung – oder kostenfrei bei Interesse an laufender Zusammenarbeit</li>
+                        <li><strong>Zeitgebühr:</strong> Abrechnung nach Stundensätzen je nach Qualifikation des eingesetzten Beraters</li>
+                        <li><strong>Auftragspauschalen:</strong> Festpreise für klar definierte Projekte wie Gutachten, Umstrukturierungen oder Gründungsberatung</li>
+                        <li><strong>StBVV-Gebühren:</strong> Laufende Betreuung nach der gesetzlichen Steuerberatervergütungsverordnung</li>
+                        <li><strong>Erfolgshonorar:</strong> Bei Gestaltungsberatung anteilig an der erzielten Steuerersparnis (seit 1.7.2008 zulässig)</li>
                     </ul>
                 </div>
+                <aside class="sp-keybox">
+                    <span class="sp-keybox__label">Stundensätze nach Qualifikation</span>
+                    <table class="pricing-table">
+                        <thead>
+                            <tr><th>Qualifikation</th><th>EUR/Std.</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Kanzleiinhaber / Steuerberater</td><td>295 – 395</td></tr>
+                            <tr><td>Erfahrene Fachberater</td><td>195 – 295</td></tr>
+                            <tr><td>Qualifizierte Fachmitarbeiter</td><td>120 – 195</td></tr>
+                            <tr class="pricing-table__avg"><td>Durchschnittssatz</td><td>rd. 180 – 220</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="sp-keybox__note">Durch den gezielten Einsatz verschiedener Qualifikationsstufen profitieren Sie von Expertise auf allen Ebenen – bei einem fairen Durchschnittssatz.</p>
+                    <a href="kontakt.html" class="sp-keybox__cta">Individuelles Angebot anfragen →</a>
+                </aside>
             </div>
-
-            <!-- Section 4: Laufende Betreuung -->
-            <div class="service-detail__category" style="margin-bottom: var(--spacing-2xl);">
-                <h2 style="margin-bottom: var(--spacing-lg);" data-i18n="pages.pricing.ongoingSupport.title">Laufende Steuerberatung</h2>
-                <p style="margin-bottom: var(--spacing-lg);" data-i18n="pages.pricing.ongoingSupport.intro">
-                    Die laufende steuerliche Betreuung wird nach der Steuerberatervergütungsverordnung (StBVV) abgerechnet. Die Höhe richtet sich nach verschiedenen Faktoren:
-                </p>
-
-                <div class="grid grid--3">
-                    <div class="card card--icon">
-                        <img loading="lazy" src="assets/images/icon-chart.svg" alt="" class="card__icon" aria-hidden="true">
-                        <h3 class="card__title" data-i18n="pages.pricing.ongoingSupport.factor1.title">Gegenstandswert</h3>
-                        <p class="card__text" data-i18n="pages.pricing.ongoingSupport.factor1.text">Umsatz, Gewinn, Bilanzsumme – je nach Leistung</p>
-                    </div>
-
-                    <div class="card card--icon">
-                        <img loading="lazy" src="assets/images/icon-target.svg" alt="" class="card__icon" aria-hidden="true">
-                        <h3 class="card__title" data-i18n="pages.pricing.ongoingSupport.factor2.title">Komplexität</h3>
-                        <p class="card__text" data-i18n="pages.pricing.ongoingSupport.factor2.text">Rechtsform, Anzahl Geschäftsvorfälle, Besonderheiten</p>
-                    </div>
-
-                    <div class="card card--icon">
-                        <img loading="lazy" src="assets/images/icon-user.svg" alt="" class="card__icon" aria-hidden="true">
-                        <h3 class="card__title" data-i18n="pages.pricing.ongoingSupport.factor3.title">Umfang</h3>
-                        <p class="card__text" data-i18n="pages.pricing.ongoingSupport.factor3.text">Anzahl Mitarbeiter, Konten, Belege</p>
-                    </div>
-                </div>
-
-                <div style="background: var(--color-bg-light); padding: var(--spacing-lg); border-radius: var(--border-radius); margin-top: var(--spacing-lg);">
-                    <p style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.ongoingSupport.approach">
-                        <strong>Unser Ansatz:</strong> Wir orientieren uns in der Regel am Mittelwert der StBVV. So erhalten Sie qualitativ hochwertige Leistungen zu fairen Konditionen.
-                    </p>
-                    <h4 style="margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.ongoingSupport.services.title">Typische Leistungen der laufenden Betreuung:</h4>
-                    <ul class="service-detail__list">
-                        <li data-i18n="pages.pricing.ongoingSupport.services.item1">Monatliche Finanzbuchhaltung</li>
-                        <li data-i18n="pages.pricing.ongoingSupport.services.item2">Lohnbuchhaltung und Lohnsteueranmeldungen</li>
-                        <li data-i18n="pages.pricing.ongoingSupport.services.item3">Umsatzsteuer-Voranmeldungen</li>
-                        <li data-i18n="pages.pricing.ongoingSupport.services.item4">Jahresabschluss (HGB, EStG) oder EÜR</li>
-                        <li data-i18n="pages.pricing.ongoingSupport.services.item5">Alle Steuererklärungen (ESt, KSt, GewSt, USt)</li>
-                        <li data-i18n="pages.pricing.ongoingSupport.services.item6">Betriebswirtschaftliche Auswertungen (BWA)</li>
-                        <li data-i18n="pages.pricing.ongoingSupport.services.item7">Laufende steuerliche Beratung</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- CTA Section -->
-            <div style="background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%); padding: var(--spacing-2xl); border-radius: var(--border-radius); text-align: center;">
-                <h2 style="color: #1e3a8a; margin-bottom: var(--spacing-md);" data-i18n="pages.pricing.cta.title">Individuelles Angebot gewünscht?</h2>
-                <p style="font-size: 1.125rem; color: #3b82f6; margin-bottom: var(--spacing-lg); max-width: 700px; margin-left: auto; margin-right: auto;" data-i18n="pages.pricing.cta.text">
-                    Sprechen Sie uns im Ersttermin auf ein individuelles Angebot an. Wir erstellen Ihnen eine transparente Kalkulation – abgestimmt auf Ihre Anforderungen.
-                </p>
-                <a href="kontakt.html" class="btn btn--primary btn--large" data-i18n="pages.pricing.cta.button">Jetzt Erstgespräch anfragen</a>
-            </div>
-
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="section section-alt">
-        <div class="container-narrow">
-            <h2 class="text-center" style="margin-bottom: var(--spacing-xl);" data-i18n="pages.pricing.faq.title">Häufige Fragen zum Honorar</h2>
-            <ul class="faq__list">
-                <li class="faq__item">
-                    <button class="faq__question" aria-expanded="false">
-                        <span data-i18n="pages.pricing.faq.q1">Sind die genannten Preise Brutto oder Netto?</span>
-                        <span class="faq__icon" aria-hidden="true">▼</span>
-                    </button>
-                    <div class="faq__answer">
-                        <p data-i18n="pages.pricing.faq.a1">Alle genannten Preise verstehen sich als Netto-Preise. Hinzu kommt die gesetzliche Mehrwertsteuer (derzeit 19%).</p>
-                    </div>
-                </li>
-                <li class="faq__item">
-                    <button class="faq__question" aria-expanded="false">
-                        <span data-i18n="pages.pricing.faq.q2">Kann ich vorab wissen, was die Beratung kostet?</span>
-                        <span class="faq__icon" aria-hidden="true">▼</span>
-                    </button>
-                    <div class="faq__answer">
-                        <p data-i18n="pages.pricing.faq.a2">Ja. Nach dem Erstgespräch erhalten Sie von uns ein transparentes Angebot. Bei laufender Betreuung zeigen wir Ihnen anhand Ihrer Zahlen eine konkrete Kalkulation. Bei Projektarbeit vereinbaren wir vorab einen Festpreis oder ein Budget.</p>
-                    </div>
-                </li>
-                <li class="faq__item">
-                    <button class="faq__question" aria-expanded="false">
-                        <span data-i18n="pages.pricing.faq.q3">Was ist die Steuerberatervergütungsverordnung (StBVV)?</span>
-                        <span class="faq__icon" aria-hidden="true">▼</span>
-                    </button>
-                    <div class="faq__answer">
-                        <p data-i18n="pages.pricing.faq.a3">Die StBVV regelt die Gebühren für steuerliche Leistungen gesetzlich. Sie enthält Gebührentabellen und Rahmen (von 1/10 bis 10/10), innerhalb derer Steuerberater ihre Vergütung festlegen können. Wir orientieren uns in der Regel am Mittelwert (5/10 bis 6/10).</p>
-                    </div>
-                </li>
-                <li class="faq__item">
-                    <button class="faq__question" aria-expanded="false">
-                        <span data-i18n="pages.pricing.faq.q4">Gibt es versteckte Kosten?</span>
-                        <span class="faq__icon" aria-hidden="true">▼</span>
-                    </button>
-                    <div class="faq__answer">
-                        <p data-i18n="pages.pricing.faq.a4">Nein. Wir legen Wert auf Transparenz. Alle Kosten werden vorab besprochen und schriftlich festgehalten. Änderungen oder zusätzliche Leistungen stimmen wir vorher mit Ihnen ab.</p>
-                    </div>
-                </li>
-                <li class="faq__item">
-                    <button class="faq__question" aria-expanded="false">
-                        <span data-i18n="pages.pricing.faq.q5">Wie wird bei laufender Betreuung abgerechnet?</span>
-                        <span class="faq__icon" aria-hidden="true">▼</span>
-                    </button>
-                    <div class="faq__answer">
-                        <p data-i18n="pages.pricing.faq.a5">In der Regel monatlich oder quartalsweise. Sie erhalten eine detaillierte Rechnung mit Aufschlüsselung der erbrachten Leistungen. So behalten Sie jederzeit den Überblick.</p>
-                    </div>
-                </li>
-            </ul>
+    <!-- Gestaltungsberatung & Projektarbeit -->
+    <section class="section-alt">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:0.5rem;">Gestaltungsberatung &amp; Projektarbeit</h2>
+            <p style="text-align:center; color: var(--color-text-light); margin-bottom:2.5rem; max-width:600px; margin-left:auto; margin-right:auto;">Bei komplexen steuerlichen Fragestellungen arbeiten wir auf Stundenbasis oder mit Auftragspauschalen.</p>
+            <div class="sp-why__grid">
+                <div class="sp-why__item">
+                    <span class="sp-why__icon">📋</span>
+                    <h3 class="sp-why__title">Gutachten &amp; Stellungnahmen</h3>
+                    <p class="sp-why__text">Steuerliche Gutachten, Einspruchsbegründungen und verbindliche Auskünfte gegenüber dem Finanzamt.</p>
+                </div>
+                <div class="sp-why__item">
+                    <span class="sp-why__icon">🔄</span>
+                    <h3 class="sp-why__title">Umstrukturierung &amp; Umwandlung</h3>
+                    <p class="sp-why__text">Verschmelzung, Spaltung, Formwechsel, Einbringung – steuerlich optimal strukturiert.</p>
+                </div>
+                <div class="sp-why__item">
+                    <span class="sp-why__icon">🏢</span>
+                    <h3 class="sp-why__title">Gründungsberatung</h3>
+                    <p class="sp-why__text">GmbH, Holding, UG – Rechtsformwahl, Satzungsgestaltung und steuerliche Optimierung ab Tag eins.</p>
+                </div>
+                <div class="sp-why__item">
+                    <span class="sp-why__icon">🌍</span>
+                    <h3 class="sp-why__title">Nachfolge &amp; Wegzugsplanung</h3>
+                    <p class="sp-why__text">Unternehmensübertragung, Erbschaftsteuer-Optimierung, Wegzugssteuer und internationale Strukturierung.</p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Laufende Betreuung nach StBVV -->
+    <section class="section">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:0.5rem;">Laufende Betreuung nach StBVV</h2>
+            <p style="text-align:center; color: var(--color-text-light); margin-bottom:2.5rem; max-width:640px; margin-left:auto; margin-right:auto;">Die laufende steuerliche Betreuung wird nach der Steuerberatervergütungsverordnung (StBVV) abgerechnet. Die Höhe richtet sich nach drei Faktoren:</p>
+            <div class="sp-why__grid" style="margin-bottom: 2rem;">
+                <div class="sp-why__item">
+                    <span class="sp-why__icon">📊</span>
+                    <h3 class="sp-why__title">Gegenstandswert</h3>
+                    <p class="sp-why__text">Umsatz, Gewinn oder Bilanzsumme – je nach Art der Leistung.</p>
+                </div>
+                <div class="sp-why__item">
+                    <span class="sp-why__icon">⚙️</span>
+                    <h3 class="sp-why__title">Komplexität</h3>
+                    <p class="sp-why__text">Rechtsform, Anzahl der Geschäftsvorfälle und steuerliche Besonderheiten.</p>
+                </div>
+                <div class="sp-why__item">
+                    <span class="sp-why__icon">📁</span>
+                    <h3 class="sp-why__title">Umfang</h3>
+                    <p class="sp-why__text">Anzahl der Mitarbeiter, Konten, Belege und Meldungen.</p>
+                </div>
+            </div>
+            <div class="sp-split">
+                <div class="sp-split__text">
+                    <h3 style="margin-bottom: 0.75rem;">Typische Leistungen der laufenden Betreuung</h3>
+                    <ul class="sp-checklist">
+                        <li>Monatliche Finanzbuchhaltung</li>
+                        <li>Lohnbuchhaltung und Lohnsteueranmeldungen</li>
+                        <li>Umsatzsteuer-Voranmeldungen</li>
+                        <li>Jahresabschluss (Bilanz nach HGB oder EÜR)</li>
+                        <li>Alle Steuererklärungen (ESt, KSt, GewSt, USt usw.)</li>
+                        <li>Betriebswirtschaftliche Auswertungen (BWA)</li>
+                        <li>Laufende steuerliche Beratung und Optimierung</li>
+                    </ul>
+                </div>
+                <aside class="sp-keybox">
+                    <span class="sp-keybox__label">Unser Ansatz</span>
+                    <p class="sp-keybox__text">Wir orientieren uns in der Regel am Mittelwert der StBVV (5/10 bis 6/10). So erhalten Sie qualitativ hochwertige Leistungen zu fairen, nachvollziehbaren Konditionen.</p>
+                    <p class="sp-keybox__note">Vor Beginn der Zusammenarbeit erhalten Sie eine konkrete Kalkulation auf Basis Ihrer Zahlen – keine Überraschungen.</p>
+                    <a href="kontakt.html" class="sp-keybox__cta">Kalkulation anfordern →</a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparenz-Grundsätze -->
+    <section class="section-alt">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:0.5rem;">Unsere Transparenz-Grundsätze</h2>
+            <p style="text-align:center; color: var(--color-text-light); margin-bottom:2.5rem; max-width:540px; margin-left:auto; margin-right:auto;">Was Sie von unserer Honorargestaltung erwarten können:</p>
+            <div class="sp-why__grid">
+                <div class="sp-why__item">
+                    <span class="sp-why__icon">✓</span>
+                    <h3 class="sp-why__title">Keine versteckten Kosten</h3>
+                    <p class="sp-why__text">Alle Kosten werden vorab besprochen und schriftlich festgehalten. Zusätzliche Leistungen stimmen wir vorher mit Ihnen ab.</p>
+                </div>
+                <div class="sp-why__item">
+                    <span class="sp-why__icon">📄</span>
+                    <h3 class="sp-why__title">Vorab-Kalkulation</h3>
+                    <p class="sp-why__text">Nach dem Erstgespräch erhalten Sie ein individuelles Angebot mit konkreter Kalkulation auf Basis Ihrer Zahlen.</p>
+                </div>
+                <div class="sp-why__item">
+                    <span class="sp-why__icon">⏱️</span>
+                    <h3 class="sp-why__title">Transparente Zeiterfassung</h3>
+                    <p class="sp-why__text">Bei Stundenhonoraren dokumentieren wir jede Leistung nachvollziehbar. Sie sehen exakt, wofür Sie bezahlen.</p>
+                </div>
+                <div class="sp-why__item">
+                    <span class="sp-why__icon">📬</span>
+                    <h3 class="sp-why__title">Regelmäßige Abrechnung</h3>
+                    <p class="sp-why__text">Monatliche oder quartalsweise Rechnungen mit detaillierter Aufschlüsselung – damit Sie den Überblick behalten.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:0.5rem;">Häufig gestellte Fragen</h2>
+            <p class="sp-faq__intro">Antworten auf die Fragen, die uns Mandanten am häufigsten zum Honorar stellen.</p>
+            <div class="sp-faq">
+                <div class="sp-faq__item">
+                    <button class="sp-faq__question">
+                        Sind die genannten Preise Brutto oder Netto?
+                        <span class="sp-faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
+                    </button>
+                    <div class="sp-faq__answer"><p>Alle genannten Preise verstehen sich als Netto-Preise. Hinzu kommt die gesetzliche Mehrwertsteuer (derzeit 19%).</p></div>
+                </div>
+                <div class="sp-faq__item">
+                    <button class="sp-faq__question">
+                        Kann ich vorab wissen, was die Beratung kostet?
+                        <span class="sp-faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
+                    </button>
+                    <div class="sp-faq__answer"><p>Ja. Nach dem Erstgespräch erhalten Sie von uns ein transparentes Angebot. Bei laufender Betreuung zeigen wir Ihnen anhand Ihrer Zahlen eine konkrete Kalkulation. Bei Projektarbeit vereinbaren wir vorab einen Festpreis oder ein Budget.</p></div>
+                </div>
+                <div class="sp-faq__item">
+                    <button class="sp-faq__question">
+                        Was ist die Steuerberatervergütungsverordnung (StBVV)?
+                        <span class="sp-faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
+                    </button>
+                    <div class="sp-faq__answer"><p>Die StBVV regelt die Gebühren für steuerliche Leistungen gesetzlich. Sie enthält Gebührentabellen und Rahmen (von 1/10 bis 10/10), innerhalb derer Steuerberater ihre Vergütung festlegen können. Wir orientieren uns in der Regel am Mittelwert (5/10 bis 6/10).</p></div>
+                </div>
+                <div class="sp-faq__item">
+                    <button class="sp-faq__question">
+                        Gibt es versteckte Kosten?
+                        <span class="sp-faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
+                    </button>
+                    <div class="sp-faq__answer"><p>Nein. Wir legen Wert auf Transparenz. Alle Kosten werden vorab besprochen und schriftlich festgehalten. Änderungen oder zusätzliche Leistungen stimmen wir vorher mit Ihnen ab.</p></div>
+                </div>
+                <div class="sp-faq__item">
+                    <button class="sp-faq__question">
+                        Wie wird bei laufender Betreuung abgerechnet?
+                        <span class="sp-faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
+                    </button>
+                    <div class="sp-faq__answer"><p>In der Regel monatlich oder quartalsweise. Sie erhalten eine detaillierte Rechnung mit Aufschlüsselung der erbrachten Leistungen. So behalten Sie jederzeit den Überblick.</p></div>
+                </div>
+                <div class="sp-faq__item">
+                    <button class="sp-faq__question">
+                        Ist das Erstgespräch kostenlos?
+                        <span class="sp-faq__icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg></span>
+                    </button>
+                    <div class="sp-faq__answer"><p>Der erste telefonische Kontakt ist immer kostenfrei. Wenn Sie an einer laufenden Zusammenarbeit interessiert sind, ist auch das ausführliche Erstgespräch für Sie kostenfrei. Nur bei konkreter Fachberatung ohne anschließende Mandatsübernahme berechnen wir EUR 395 pro Stunde (netto).</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-section__title">Individuelles Angebot gewünscht?</h2>
+            <p class="cta-section__subtitle">Sprechen Sie uns an – wir erstellen Ihnen eine transparente Kalkulation, abgestimmt auf Ihre Anforderungen.</p>
+            <a href="kontakt.html" class="btn btn--primary btn--large">Jetzt Erstgespräch anfragen</a>
+        </div>
+    </section>
+
+</main>
 
     <!-- Footer -->
         <footer class="footer">
@@ -503,20 +514,9 @@
 
     <!-- Simple JS for FAQ, Mobile Menu and Language Switcher -->
     <script>
-        // FAQ Accordion
-        document.querySelectorAll('.faq__question').forEach(button => {
-            button.addEventListener('click', () => {
-                const isExpanded = button.getAttribute('aria-expanded') === 'true';
-                button.setAttribute('aria-expanded', !isExpanded);
-                const answer = button.nextElementSibling;
-                answer.classList.toggle('is-open');
-            });
-        });
-
         // Mobile Menu Toggle
         const navToggle = document.querySelector('.nav__toggle');
         const navList = document.querySelector('.nav__list');
-
         if (navToggle) {
             navToggle.addEventListener('click', () => {
                 const isOpen = navList.classList.contains('is-open');
@@ -529,7 +529,6 @@
         // Language Switcher
         const langButton = document.getElementById('lang-button');
         const langDropdown = document.getElementById('lang-dropdown');
-
         if (langButton && langDropdown) {
             langButton.addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -537,45 +536,40 @@
                 langDropdown.classList.toggle('is-open');
                 langButton.setAttribute('aria-expanded', !isOpen);
             });
-
             document.addEventListener('click', () => {
                 langDropdown.classList.remove('is-open');
                 langButton.setAttribute('aria-expanded', 'false');
             });
-
-            langDropdown.addEventListener('click', (e) => {
-                e.stopPropagation();
-            });
+            langDropdown.addEventListener('click', (e) => { e.stopPropagation(); });
         }
 
         // Dropdown Navigation
         const dropdownItems = document.querySelectorAll('.nav__item--has-dropdown');
-
         dropdownItems.forEach(item => {
             const link = item.querySelector('.nav__link--has-dropdown');
             const dropdown = item.querySelector('.nav__dropdown');
-
             if (link && dropdown) {
                 link.addEventListener('click', (e) => {
                     if (window.getComputedStyle(navToggle).display !== "none") {
                         e.preventDefault();
-                        dropdownItems.forEach(otherItem => {
-                            if (otherItem !== item) {
-                                otherItem.classList.remove('is-open');
-                            }
-                        });
+                        dropdownItems.forEach(o => { if (o !== item) o.classList.remove('is-open'); });
                         item.classList.toggle('is-open');
                     }
                 });
             }
         });
-
         document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav__item--has-dropdown')) {
-                dropdownItems.forEach(item => {
-                    item.classList.remove('is-open');
-                });
-            }
+            if (!e.target.closest('.nav__item--has-dropdown')) dropdownItems.forEach(i => i.classList.remove('is-open'));
+        });
+
+        // FAQ Accordion (sp-faq pattern)
+        document.querySelectorAll('.sp-faq__question').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var item = btn.closest('.sp-faq__item');
+                var isOpen = item.classList.contains('is-open');
+                document.querySelectorAll('.sp-faq__item').forEach(function(i) { i.classList.remove('is-open'); });
+                if (!isOpen) item.classList.add('is-open');
+            });
         });
     </script>
 
@@ -648,5 +642,3 @@
 
 </body>
 </html>
-<!-- Updated 1771721945 -->
-<!-- Updated 1771723401 -->
