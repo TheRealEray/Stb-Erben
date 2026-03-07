@@ -63,13 +63,14 @@ function initTableOfContents() {
     const contentSections = document.querySelectorAll('section[id]');
 
     // If no sections with IDs, fall back to old behavior
+    let allHeadings;
     if (contentSections.length === 0) {
         const contentArea = document.querySelector('.toc-content-area') || document.querySelector('main') || document.querySelector('.section');
         if (!contentArea) return;
-        var allHeadings = contentArea.querySelectorAll('h2, h3');
+        allHeadings = contentArea.querySelectorAll('h2, h3');
     } else {
         // Find all h2 and h3 headings within content sections only
-        var allHeadings = [];
+        allHeadings = [];
         contentSections.forEach(section => {
             const sectionHeadings = section.querySelectorAll('h2, h3');
             sectionHeadings.forEach(h => allHeadings.push(h));
@@ -697,4 +698,3 @@ document.addEventListener('DOMContentLoaded', () => {
     initSocialDial();
     initNavBodyClass();
 });
-// nav-fix-1772025098

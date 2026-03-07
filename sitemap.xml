@@ -153,6 +153,22 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Impressum -->
+  <url>
+    <loc>https://steuerkanzlei-erben-demo.netlify.app/impressum.html</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Datenschutz -->
+  <url>
+    <loc>https://steuerkanzlei-erben-demo.netlify.app/datenschutz.html</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
   <!-- Sprachvarianten -->
   <url>
     <loc>https://steuerkanzlei-erben-demo.netlify.app/en/index.html</loc>

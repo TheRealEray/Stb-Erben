@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initProgressBar();
   initReadingTime();
   initStickyCTA();
-  initPrintButton();
 
   // Footer Features
   initDarkModeToggle();
@@ -90,22 +89,12 @@ function initStickyCTA() {
   observer.observe(footer);
 }
 
-/**
- * Feature 5: Print Button
- * Enhanced print functionality
- */
-function initPrintButton() {
-  const printButtons = document.querySelectorAll('.print-button');
-  if (printButtons.length === 0) return;
-}
-
 // Export functions for testing/debugging
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     initProgressBar,
     initReadingTime,
     initStickyCTA,
-    initPrintButton,
     initDarkModeToggle
   };
 }
