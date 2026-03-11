@@ -813,19 +813,19 @@
         "intro": "Die laufende steuerliche Betreuung wird nach der Steuerberatervergütungsverordnung (StBVV) abgerechnet. Die Höhe richtet sich nach verschiedenen Faktoren:",
         "factor1": {
           "title": "Gegenstandswert",
-          "text": "Umsatz, Gewinn, Bilanzsumme – je nach Leistung"
+          "text": "Abhängig von der Art der Leistung"
         },
         "factor2": {
-          "title": "Komplexität",
-          "text": "Rechtsform, Anzahl Geschäftsvorfälle, Besonderheiten"
+          "title": "Komplexität und Schwierigkeitsgrad",
+          "text": "Komplexe steuerliche Sachverhalte, internationale Steuerfragen, steuerliche Besonderheiten"
         },
         "factor3": {
           "title": "Umfang",
-          "text": "Anzahl Mitarbeiter, Konten, Belege"
+          "text": "Anzahl Mitarbeiter, Konten, Belege und Meldungen, Menge, Zeitumfang"
         },
-        "approach": "Unser Ansatz:Wir orientieren uns in der Regel am Mittelwert der StBVV. So erhalten Sie qualitativ hochwertige Leistungen zu fairen Konditionen.",
+        "approach": "Unser Ansatz:Wir orientieren uns in der Regel am Mittelwert der StBVV. So erhalten Sie qualitativ hochwertige Leistungen zu fairen, nachvollziehbaren Konditionen.",
         "services": {
-          "title": "Typische Leistungen der laufenden Betreuung:",
+          "title": "Typische Leistungen aus der laufenden Betreuung:",
           "item1": "Monatliche Finanzbuchhaltung",
           "item2": "Lohnbuchhaltung und Lohnsteueranmeldungen",
           "item3": "Umsatzsteuer-Voranmeldungen",
@@ -843,11 +843,11 @@
       "faq": {
         "title": "Häufige Fragen zum Honorar",
         "q1": "Sind die genannten Preise Brutto oder Netto?",
-        "a1": "Alle genannten Preise verstehen sich als Netto-Preise. Hinzu kommt die gesetzliche Mehrwertsteuer (derzeit 19%).",
+        "a1": "Alle genannten Preise verstehen sich als Netto-Preise. Hinzu kommt die gesetzliche Umsatzsteuer (derzeit 19%).",
         "q2": "Kann ich vorab wissen, was die Beratung kostet?",
         "a2": "Ja. Nach dem Erstgespräch erhalten Sie von uns ein transparentes Angebot. Bei laufender Betreuung zeigen wir Ihnen anhand Ihrer Zahlen eine konkrete Kalkulation. Bei Projektarbeit vereinbaren wir vorab einen Festpreis oder ein Budget.",
         "q3": "Was ist die Steuerberatervergütungsverordnung (StBVV)?",
-        "a3": "Die StBVV regelt die Gebühren für steuerliche Leistungen gesetzlich. Sie enthält Gebührentabellen und Rahmen (von 1/10 bis 10/10), innerhalb derer Steuerberater ihre Vergütung festlegen können. Wir orientieren uns in der Regel am Mittelwert (5/10 bis 6/10).",
+        "a3": "Die StBVV regelt die Gebühren für steuerliche Leistungen gesetzlich. Sie enthält u.a. Regelungen und Rahmen, innerhalb derer Steuerberater ihre Vergütung festlegen können. Wir orientieren uns in der Regel am Mittelwert.",
         "q4": "Gibt es versteckte Kosten?",
         "a4": "Nein. Wir legen Wert auf Transparenz. Alle Kosten werden vorab besprochen und schriftlich festgehalten. Änderungen oder zusätzliche Leistungen stimmen wir vorher mit Ihnen ab.",
         "q5": "Wie wird bei laufender Betreuung abgerechnet?",
