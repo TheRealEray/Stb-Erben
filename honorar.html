@@ -32,6 +32,10 @@
         .pricing-table tr:last-child td { border-bottom: none; }
         .pricing-table .pricing-table__avg { border-top: 2px solid rgba(255,255,255,0.3); }
         .pricing-table .pricing-table__avg td { padding-top: 0.875rem; font-size: 1rem; font-weight: 700; color: #fff; }
+        @media (max-width: 480px) {
+            .pricing-table th, .pricing-table td { font-size: 0.8rem; }
+            .pricing-table .pricing-table__avg td { font-size: 0.9rem; }
+        }
     </style>
     <link rel="alternate" hreflang="de" href="https://therealeray.github.io/Stb-Erben/honorar.html">
     <link rel="alternate" hreflang="x-default" href="https://therealeray.github.io/Stb-Erben/honorar.html">
@@ -193,7 +197,7 @@
     <section class="section-alt">
         <div class="container">
             <h2 style="text-align:center; margin-bottom:2.5rem;">So werden Sie Mandant</h2>
-            <ol class="sp-process" style="grid-template-columns: repeat(4, 1fr);">
+            <ol class="sp-process">
                 <li class="sp-step">
                     <span class="sp-step__num">01</span>
                     <div>

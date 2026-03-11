@@ -5886,6 +5886,9 @@ body.is-reading-mode .article {
     .sp-split { grid-template-columns: 1fr; }
     .sp-keybox { position: static; }
 }
+@media (max-width: 480px) {
+    .sp-keybox { padding: 1.25rem; }
+}
 @media (max-width: 768px) {
     .sp-problems { grid-template-columns: 1fr; }
     .sp-process {
@@ -6180,6 +6183,7 @@ body.is-reading-mode .article {
 }
 @media (max-width: 768px) {
     .sp-why__grid, .sp-why__grid--4col { grid-template-columns: 1fr; }
+    .sp-stats { flex-wrap: wrap; }
     .sp-stat { flex: 0 0 50%; }
     .honorar-principles { grid-template-columns: 1fr; }
 }

@@ -139,11 +139,12 @@ function getToolContent(toolName) {
                 <div class="form__group">
                     <label class="form__label">Verwandtschaftsgrad</label>
                     <select id="verwandtschaft" class="form__select">
-                        <option value="1">Steuerklasse I - Ehepartner/Lebenspartner</option>
-                        <option value="2">Steuerklasse I - Kinder/Enkelkinder</option>
-                        <option value="3">Steuerklasse I - Eltern/Großeltern</option>
-                        <option value="4">Steuerklasse II - Geschwister/Nichten/Neffen</option>
-                        <option value="5">Steuerklasse III - Alle übrigen</option>
+                        <option value="1">Steuerklasse I - Ehepartner/Lebenspartner (500.000 €)</option>
+                        <option value="2">Steuerklasse I - Kinder (400.000 €)</option>
+                        <option value="3">Steuerklasse I - Enkelkinder (200.000 €)</option>
+                        <option value="4">Steuerklasse II - Eltern/Großeltern (20.000 €)</option>
+                        <option value="5">Steuerklasse II - Geschwister/Nichten/Neffen (20.000 €)</option>
+                        <option value="6">Steuerklasse III - Alle übrigen (20.000 €)</option>
                     </select>
                 </div>
                 <button onclick="berechneSchenkungssteuer()" class="btn btn--primary" style="width: 100%;">Berechnen</button>
@@ -239,11 +240,18 @@ function getToolContent(toolName) {
                 </div>
                 <div class="form__group">
                     <label class="form__label">Art der Pflege</label>
-                    <select id="pflegeart" class="form__select">
+                    <select id="pflegeart" class="form__select" onchange="document.getElementById('kombi-anteil-group').style.display = this.value === 'kombi' ? 'block' : 'none'">
                         <option value="geld">Pflegegeld (häusliche Pflege durch Angehörige)</option>
                         <option value="sach">Pflegesachleistung (professioneller Pflegedienst)</option>
                         <option value="kombi">Kombinationsleistung</option>
                     </select>
+                </div>
+                <div id="kombi-anteil-group" class="form__group" style="display: none;">
+                    <label class="form__label">Anteil Sachleistung: <span id="kombi-anteil-display">50</span> %</label>
+                    <input type="range" id="kombi-anteil" min="0" max="100" value="50" style="width: 100%;" oninput="document.getElementById('kombi-anteil-display').textContent = this.value">
+                    <small style="color: var(--color-text-light); display: block; margin-top: var(--spacing-xs);">
+                        0 % = nur Pflegegeld, 100 % = nur Sachleistung
+                    </small>
                 </div>
                 <button onclick="berechnePflegegeld()" class="btn btn--primary" style="width: 100%;">Berechnen</button>
                 <div id="pflegegeld-result" class="calculator__result" style="display: none;"></div>
@@ -252,12 +260,19 @@ function getToolContent(toolName) {
         'mutterschutz': `
             <h2>Mutterschutz-Rechner</h2>
             <p style="color: var(--color-text-light); margin-bottom: var(--spacing-lg);">
-                Berechnen Sie die Mutterschutzfristen vor und nach der Entbindung.
+                Berechnen Sie die Mutterschutzfristen und das Mutterschaftsgeld.
             </p>
             <div class="calculator">
                 <div class="form__group">
                     <label class="form__label">Voraussichtlicher Entbindungstermin</label>
                     <input type="date" id="entbindungstermin" class="form__input">
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Durchschn. Nettogehalt der letzten 3 Monate (€)</label>
+                    <input type="text" id="mutterschutz-netto" class="form__input currency-input" placeholder="2.500,00">
+                    <small style="color: var(--color-text-light); display: block; margin-top: var(--spacing-xs);">
+                        Für die Berechnung des Mutterschaftsgeldes (optional)
+                    </small>
                 </div>
                 <div class="form__group">
                     <div class="form__checkbox-wrapper">
@@ -293,10 +308,26 @@ function getToolContent(toolName) {
                     <label class="form__label">Bundesland</label>
                     <select id="at-bundesland" class="form__select">
                         <option value="NW" selected>Nordrhein-Westfalen</option>
-                        <option value="BY">Bayern</option>
                         <option value="BW">Baden-Württemberg</option>
-                        <option value="Other">Andere</option>
+                        <option value="BY">Bayern</option>
+                        <option value="BE">Berlin</option>
+                        <option value="BB">Brandenburg</option>
+                        <option value="HB">Bremen</option>
+                        <option value="HH">Hamburg</option>
+                        <option value="HE">Hessen</option>
+                        <option value="MV">Mecklenburg-Vorpommern</option>
+                        <option value="NI">Niedersachsen</option>
+                        <option value="RP">Rheinland-Pfalz</option>
+                        <option value="SL">Saarland</option>
+                        <option value="SN">Sachsen</option>
+                        <option value="ST">Sachsen-Anhalt</option>
+                        <option value="SH">Schleswig-Holstein</option>
+                        <option value="TH">Thüringen</option>
                     </select>
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Urlaubstage im Zeitraum (optional)</label>
+                    <input type="number" id="at-urlaub" class="form__input" placeholder="0" min="0" value="0">
                 </div>
                 <button onclick="berechneArbeitstage()" class="btn btn--primary" style="width: 100%;">Berechnen</button>
                 <div id="arbeitstage-result" class="calculator__result" style="display: none;"></div>
@@ -435,6 +466,27 @@ function getToolContent(toolName) {
                     </select>
                 </div>
                 <div class="form__group">
+                    <label class="form__label">Bundesland</label>
+                    <select id="foerder-bundesland" class="form__select">
+                        <option value="NW" selected>Nordrhein-Westfalen</option>
+                        <option value="BY">Bayern</option>
+                        <option value="BW">Baden-Württemberg</option>
+                        <option value="BE">Berlin</option>
+                        <option value="BB">Brandenburg</option>
+                        <option value="HB">Bremen</option>
+                        <option value="HH">Hamburg</option>
+                        <option value="HE">Hessen</option>
+                        <option value="MV">Mecklenburg-Vorpommern</option>
+                        <option value="NI">Niedersachsen</option>
+                        <option value="RP">Rheinland-Pfalz</option>
+                        <option value="SL">Saarland</option>
+                        <option value="SN">Sachsen</option>
+                        <option value="ST">Sachsen-Anhalt</option>
+                        <option value="SH">Schleswig-Holstein</option>
+                        <option value="TH">Thüringen</option>
+                    </select>
+                </div>
+                <div class="form__group">
                     <label class="form__label">Kapitalbedarf (€)</label>
                     <input type="text" id="kapitalbedarf" class="form__input currency-input" placeholder="50.000,00" value="50000">
                 </div>
@@ -446,6 +498,15 @@ function getToolContent(toolName) {
                         <option value="handwerk">Handwerk</option>
                         <option value="dienstleistung">Dienstleistung</option>
                         <option value="andere">Andere</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Gründungsphase</label>
+                    <select id="gruendungsphase" class="form__select">
+                        <option value="vorbereitung">Vorbereitung/Planung</option>
+                        <option value="gruendung">Gründung (< 1 Jahr)</option>
+                        <option value="wachstum">Wachstum (1-5 Jahre)</option>
+                        <option value="etabliert">Etabliert (> 5 Jahre)</option>
                     </select>
                 </div>
                 <div class="form__group">
@@ -808,7 +869,7 @@ function getToolContent(toolName) {
                         <option value="BY">Bayern (3,5 %)</option>
                         <option value="BE">Berlin (6,0 %)</option>
                         <option value="BB">Brandenburg (6,5 %)</option>
-                        <option value="HB">Bremen (5,0 %)</option>
+                        <option value="HB">Bremen (5,5 %)</option>
                         <option value="HH">Hamburg (5,5 %)</option>
                         <option value="HE">Hessen (6,0 %)</option>
                         <option value="MV">Mecklenburg-Vorpommern (6,0 %)</option>
@@ -921,31 +982,25 @@ function berechneEinkommensteuer() {
         return;
     }
 
-    let steuer = 0;
-    const grundfreibetrag = 12348; // 2026
-
-    if (einkommen <= grundfreibetrag) {
-        steuer = 0;
-    } else if (einkommen <= 17799) {
-        const y = (einkommen - grundfreibetrag) / 10000;
-        steuer = (914.51 * y + 1400) * y;
-    } else if (einkommen <= 69878) {
-        const z = (einkommen - 17799) / 10000;
-        steuer = (173.10 * z + 2397) * z + 1034.87;
-    } else if (einkommen <= 277825) {
-        steuer = 0.42 * einkommen - 11135.63;
+    // Steuerklasse III/V → Splitting, I/II/IV/VI → Grundtarif
+    let steuer;
+    let tarifHinweis;
+    if (steuerklasse === 3 || steuerklasse === 4) {
+        steuer = berechneEStSplitting(einkommen);
+        tarifHinweis = 'Splitting-Verfahren (§32a Abs. 5 EStG)';
     } else {
-        steuer = 0.45 * einkommen - 19470.38;
+        steuer = berechneEStGrundtarif(einkommen);
+        tarifHinweis = 'Grundtarif (§32a EStG)';
     }
-    steuer = Math.floor(steuer); // auf volle Euro abrunden
 
     let soli = 0;
-    if (steuer > 20350) { // Freigrenze 2026
+    if (steuer > 20350) {
         soli = steuer * 0.055;
     }
 
     const gesamt = steuer + soli;
     const durchschnitt = (gesamt / einkommen * 100).toFixed(2);
+    const grenzsteuersatz = einkommen <= 12348 ? 0 : einkommen <= 17799 ? 14 : einkommen <= 69878 ? 24 : einkommen <= 277825 ? 42 : 45;
 
     document.getElementById('einkommen-result').style.display = 'block';
     document.getElementById('einkommen-result').innerHTML = `
@@ -954,6 +1009,10 @@ function berechneEinkommensteuer() {
             <div class="result-item">
                 <span class="result-label">Zu versteuerndes Einkommen:</span>
                 <span class="result-value">${formatGermanNumber(einkommen)} €</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Tarif:</span>
+                <span class="result-value">${tarifHinweis}</span>
             </div>
             <div class="result-item">
                 <span class="result-label">Einkommensteuer:</span>
@@ -971,9 +1030,16 @@ function berechneEinkommensteuer() {
                 <span class="result-label">Durchschnittssteuersatz:</span>
                 <span class="result-value">${durchschnitt} %</span>
             </div>
+            <div class="result-item">
+                <span class="result-label">Grenzsteuersatz:</span>
+                <span class="result-value">${grenzsteuersatz} %</span>
+            </div>
         </div>
         <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
-            <strong>Hinweis:</strong> Dies ist eine vereinfachte Berechnung. Für eine genaue Steuerberechnung kontaktieren Sie uns bitte.
+            <strong>Hinweis:</strong> Für eine exakte Steuerberechnung inkl. Sonderausgaben und außergewöhnlichen Belastungen kontaktieren Sie uns bitte.
+        </p>
+        <p style="font-size: 0.75rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">
+            Berechnungsgrundlage: §32a EStG, Tarif 2026
         </p>
     `;
 }
@@ -987,12 +1053,14 @@ function berechneSchenkungssteuer() {
         return;
     }
 
+    // Freibeträge nach §16 ErbStG (bei Schenkung)
     const freibetraege = {
         1: { betrag: 500000, klasse: 'I', beschreibung: 'Ehepartner/Lebenspartner' },
-        2: { betrag: 400000, klasse: 'I', beschreibung: 'Kinder/Enkelkinder' },
-        3: { betrag: 100000, klasse: 'I', beschreibung: 'Eltern/Großeltern' },
-        4: { betrag: 20000, klasse: 'II', beschreibung: 'Geschwister/Nichten/Neffen' },
-        5: { betrag: 20000, klasse: 'III', beschreibung: 'Alle übrigen' }
+        2: { betrag: 400000, klasse: 'I', beschreibung: 'Kinder' },
+        3: { betrag: 200000, klasse: 'I', beschreibung: 'Enkelkinder' },
+        4: { betrag: 20000, klasse: 'II', beschreibung: 'Eltern/Großeltern' },
+        5: { betrag: 20000, klasse: 'II', beschreibung: 'Geschwister/Nichten/Neffen' },
+        6: { betrag: 20000, klasse: 'III', beschreibung: 'Alle übrigen' }
     };
 
     const steuersaetze = {
@@ -1047,9 +1115,38 @@ function berechneSchenkungssteuer() {
             </div>
         </div>
         <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
-            <strong>Hinweis:</strong> Der Freibetrag kann alle 10 Jahre erneut genutzt werden.
+            <strong>Hinweis:</strong> Der Freibetrag kann alle 10 Jahre erneut genutzt werden. Bei Erbschaft gelten für Eltern/Großeltern abweichende Freibeträge (Steuerklasse I, 100.000 €).
+        </p>
+        <p style="font-size: 0.75rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">
+            Berechnungsgrundlage: §§15–19 ErbStG
         </p>
     `;
+}
+
+// Hilfsfunktion: Einkommensteuer nach §32a EStG 2026 (Grundtarif)
+function berechneEStGrundtarif(zvE) {
+    if (zvE <= 0) return 0;
+    const grundfreibetrag = 12348;
+    let steuer = 0;
+    if (zvE <= grundfreibetrag) {
+        steuer = 0;
+    } else if (zvE <= 17799) {
+        const y = (zvE - grundfreibetrag) / 10000;
+        steuer = (914.51 * y + 1400) * y;
+    } else if (zvE <= 69878) {
+        const z = (zvE - 17799) / 10000;
+        steuer = (173.10 * z + 2397) * z + 1034.87;
+    } else if (zvE <= 277825) {
+        steuer = 0.42 * zvE - 11135.63;
+    } else {
+        steuer = 0.45 * zvE - 19470.38;
+    }
+    return Math.floor(steuer);
+}
+
+// Hilfsfunktion: Splitting-Tarif (§32a Abs. 5 EStG)
+function berechneEStSplitting(zvE) {
+    return 2 * berechneEStGrundtarif(zvE / 2);
 }
 
 function berechneBruttoNetto() {
@@ -1063,38 +1160,59 @@ function berechneBruttoNetto() {
         return;
     }
 
+    // Beitragsbemessungsgrenzen 2026 (monatlich)
+    const bbgRvAv = 8450;    // RV/AV: 101.400 €/Jahr
+    const bbgKvPv = 5512.50; // KV/PV: 66.150 €/Jahr
+
     const jahresbrutto = brutto * 12;
-    const krankenversicherung = brutto * 0.073;    // AN-Anteil 7,3% (2026)
-    const rentenversicherung = brutto * 0.093;     // AN-Anteil 9,3% (2026)
-    const arbeitslosenversicherung = brutto * 0.013; // AN-Anteil 1,3% (2026)
-    const pflegeversicherung = brutto * 0.019;     // AN-Anteil 1,9% mit Kindern (2026)
-    const sozialabgaben = krankenversicherung + rentenversicherung + arbeitslosenversicherung + pflegeversicherung;
 
-    const zvEinkommen = jahresbrutto - (sozialabgaben * 12) - 1230;
-    let jahressteuer = 0;
-    const grundfreibetrag = 12348; // 2026
+    // SV-Beiträge mit BBG-Caps
+    const kvBasis = Math.min(brutto, bbgKvPv);
+    const rvBasis = Math.min(brutto, bbgRvAv);
 
-    if (zvEinkommen > grundfreibetrag) {
-        if (zvEinkommen <= 17799) {
-            const y = (zvEinkommen - grundfreibetrag) / 10000;
-            jahressteuer = (914.51 * y + 1400) * y;
-        } else if (zvEinkommen <= 69878) {
-            const z = (zvEinkommen - 17799) / 10000;
-            jahressteuer = (173.10 * z + 2397) * z + 1034.87;
-        } else if (zvEinkommen <= 277825) {
-            jahressteuer = 0.42 * zvEinkommen - 11135.63;
-        } else {
-            jahressteuer = 0.45 * zvEinkommen - 19470.38;
-        }
-        jahressteuer = Math.floor(jahressteuer);
+    const krankenversicherung = kvBasis * 0.073;      // AN-Anteil allg. KV 7,3%
+    const kvZusatzbeitrag = kvBasis * 0.00875;        // Durchschnitt Zusatzbeitrag 2026: 1,75% → AN 0,875%
+    const rentenversicherung = rvBasis * 0.093;       // AN-Anteil 9,3%
+    const arbeitslosenversicherung = rvBasis * 0.013; // AN-Anteil 1,3%
+
+    // Pflegeversicherung 2026: differenziert nach Kindern
+    let pvSatz;
+    if (kinder === 0) {
+        pvSatz = 0.023; // Kinderlos ab 23: 2,3% (Basis 1,7% + 0,6% Zuschlag)
+    } else if (kinder === 1) {
+        pvSatz = 0.017; // 1 Kind: 1,7%
+    } else if (kinder === 2) {
+        pvSatz = 0.0145; // 2 Kinder: 1,45% (1,7% - 0,25%)
+    } else if (kinder === 3) {
+        pvSatz = 0.012; // 3 Kinder: 1,2% (1,7% - 2×0,25%)
+    } else if (kinder === 4) {
+        pvSatz = 0.0095; // 4 Kinder: 0,95% (1,7% - 3×0,25%)
+    } else {
+        pvSatz = 0.007; // 5+ Kinder: 0,7% (1,7% - 4×0,25%)
     }
+    const pflegeversicherung = kvBasis * pvSatz;
 
-    if (steuerklasse === 3) jahressteuer *= 0.7;
-    else if (steuerklasse === 5) jahressteuer *= 1.3;
+    const sozialabgaben = krankenversicherung + kvZusatzbeitrag + rentenversicherung + arbeitslosenversicherung + pflegeversicherung;
+
+    // Zu versteuerndes Einkommen (vereinfacht)
+    const zvEinkommen = jahresbrutto - (sozialabgaben * 12) - 1230; // Werbungskostenpauschale
+    let jahressteuer = 0;
+
+    // Steuerklasse bestimmt Tarif
+    if (steuerklasse === 3) {
+        // Splitting-Tarif
+        jahressteuer = berechneEStSplitting(zvEinkommen);
+    } else if (steuerklasse === 5) {
+        // Differenz-Methode (vereinfacht: ~1.6x Grundtarif)
+        jahressteuer = Math.floor(berechneEStGrundtarif(zvEinkommen) * 1.6);
+    } else {
+        // Grundtarif für SK I, II, IV, VI
+        jahressteuer = berechneEStGrundtarif(zvEinkommen);
+    }
 
     const monatssteuer = jahressteuer / 12;
     const kirche = kirchensteuer ? monatssteuer * 0.09 : 0;
-    const soli = jahressteuer > 20350 ? (jahressteuer * 0.055) / 12 : 0; // Freigrenze 2026
+    const soli = jahressteuer > 20350 ? (jahressteuer * 0.055) / 12 : 0;
     const gesamtabzug = sozialabgaben + monatssteuer + kirche + soli;
     const netto = brutto - gesamtabzug;
 
@@ -1107,19 +1225,19 @@ function berechneBruttoNetto() {
                 <span class="result-value"><strong>${formatGermanNumber(brutto)} €</strong></span>
             </div>
             <div class="result-item">
-                <span class="result-label">Krankenversicherung:</span>
-                <span class="result-value">- ${formatGermanNumber(krankenversicherung)} €</span>
+                <span class="result-label">Krankenversicherung (7,3% + ${(0.875).toFixed(3)}% ZB):</span>
+                <span class="result-value">- ${formatGermanNumber(krankenversicherung + kvZusatzbeitrag)} €</span>
             </div>
             <div class="result-item">
-                <span class="result-label">Rentenversicherung:</span>
+                <span class="result-label">Rentenversicherung (9,3%):</span>
                 <span class="result-value">- ${formatGermanNumber(rentenversicherung)} €</span>
             </div>
             <div class="result-item">
-                <span class="result-label">Arbeitslosenversicherung:</span>
+                <span class="result-label">Arbeitslosenversicherung (1,3%):</span>
                 <span class="result-value">- ${formatGermanNumber(arbeitslosenversicherung)} €</span>
             </div>
             <div class="result-item">
-                <span class="result-label">Pflegeversicherung:</span>
+                <span class="result-label">Pflegeversicherung (${(pvSatz * 100).toFixed(2)}%):</span>
                 <span class="result-value">- ${formatGermanNumber(pflegeversicherung)} €</span>
             </div>
             <div class="result-item">
@@ -1134,7 +1252,10 @@ function berechneBruttoNetto() {
             </div>
         </div>
         <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
-            <strong>Hinweis:</strong> Vereinfachte Berechnung ohne Zusatzfreibeträge.
+            <strong>Hinweis:</strong> Vereinfachte Berechnung. BBG KV/PV: ${formatGermanNumber(bbgKvPv, 2)} €, BBG RV/AV: ${formatGermanNumber(bbgRvAv, 0)} €.
+        </p>
+        <p style="font-size: 0.75rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">
+            Berechnungsgrundlage: SV-Rechengrößen 2026, §32a EStG
         </p>
     `;
 }
@@ -1150,26 +1271,45 @@ function berechneElterngeld() {
         return;
     }
 
+    // Ersatzrate nach BEEG
     let prozentsatz;
     if (netto < 1000) {
-        // Unter 1.000€: Ersatzrate steigt um 0,1 PP je 2€ unter 1.000€
+        // Unter 1.000€: +0,1 PP je 2€ unter 1.000€ → max 100%
         prozentsatz = Math.min(100, 67 + (1000 - netto) * 0.05);
     } else if (netto <= 1200) {
         prozentsatz = 67;
+    } else if (netto <= 1240) {
+        // Gleitzone 1.200-1.240€: von 67% auf 65%
+        prozentsatz = 67 - (netto - 1200) * 0.05;
     } else {
-        // Über 1.200€: Ersatzrate sinkt um 0,1 PP je 2€ über 1.200€, min. 65%
-        prozentsatz = Math.max(65, 67 - (netto - 1200) * 0.05);
+        // Über 1.240€: 65%
+        prozentsatz = 65;
     }
 
-    let elterngeld = netto * (prozentsatz / 100);
-    const minElterngeld = 300;
-    const maxElterngeld = variante === 'basis' ? 1800 : 900;
-    elterngeld = Math.max(minElterngeld, Math.min(maxElterngeld, elterngeld));
+    // Basiselterngeld berechnen
+    let basisElterngeld = netto * (prozentsatz / 100);
+    basisElterngeld = Math.max(300, Math.min(1800, basisElterngeld));
 
-    if (geschwister) elterngeld *= 1.1;
+    let elterngeld;
+    if (variante === 'basis') {
+        elterngeld = basisElterngeld;
+    } else {
+        // ElterngeldPlus: max. 50% des theoretischen Basiselterngeldes, min. 150€
+        elterngeld = Math.max(150, Math.min(basisElterngeld / 2, 900));
+    }
+
+    // Geschwisterbonus: 10% mit Minimum 75€/Monat
+    let geschwisterBonus = 0;
+    if (geschwister) {
+        geschwisterBonus = Math.max(75, elterngeld * 0.1);
+        elterngeld += geschwisterBonus;
+    }
+
+    // Mehrlingszuschlag: 300€ pro weiterem Kind
     if (mehrlinge) elterngeld += 300;
 
     const monate = variante === 'basis' ? 12 : 24;
+    const partnerMonate = variante === 'basis' ? 2 : 4;
     const gesamt = elterngeld * monate;
 
     document.getElementById('elterngeld-result').style.display = 'block';
@@ -1182,21 +1322,28 @@ function berechneElterngeld() {
             </div>
             <div class="result-item">
                 <span class="result-label">Ersatzrate:</span>
-                <span class="result-value">${prozentsatz} %</span>
+                <span class="result-value">${prozentsatz.toFixed(1)} %</span>
             </div>
+            ${geschwister ? `<div class="result-item"><span class="result-label">Geschwisterbonus:</span><span class="result-value">+ ${formatGermanNumber(geschwisterBonus)} €</span></div>` : ''}
             <div class="result-item highlight">
-                <span class="result-label"><strong>Monatliches Elterngeld:</strong></span>
+                <span class="result-label"><strong>Monatliches ${variante === 'basis' ? 'Basis' : ''}elterngeld${variante === 'plus' ? 'Plus' : ''}:</strong></span>
                 <span class="result-value"><strong>${formatGermanNumber(elterngeld)} €</strong></span>
             </div>
             <div class="result-item">
                 <span class="result-label">Bezugsdauer:</span>
-                <span class="result-value">${monate} Monate</span>
+                <span class="result-value">${monate} + ${partnerMonate} Partnermonate</span>
             </div>
             <div class="result-item highlight">
-                <span class="result-label"><strong>Gesamtsumme:</strong></span>
+                <span class="result-label"><strong>Gesamtsumme (ohne Partnerm.):</strong></span>
                 <span class="result-value"><strong>${formatGermanNumber(gesamt)} €</strong></span>
             </div>
         </div>
+        <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
+            <strong>Hinweis:</strong> Einkommensgrenze: Ab 175.000 € zvE kein Anspruch.${variante === 'plus' ? ' ElterngeldPlus: max. 50 % des Basiselterngeldes.' : ''} Geschwisterbonus: mind. 75 €/Monat.
+        </p>
+        <p style="font-size: 0.75rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">
+            Berechnungsgrundlage: BEEG, Stand 2026
+        </p>
     `;
 }
 
@@ -1205,7 +1352,7 @@ function berechnePflegegeld() {
     const pflegeart = document.getElementById('pflegeart').value;
 
     // Offizielle Werte ab 01.01.2025 (+4,5% gegenüber 2024) – Quelle: BMG
-    const pflegegeld = {
+    const pflegesaetze = {
         1: { geld: 0, sach: 0 },
         2: { geld: 347, sach: 796 },
         3: { geld: 599, sach: 1497 },
@@ -1213,11 +1360,26 @@ function berechnePflegegeld() {
         5: { geld: 990, sach: 2299 }
     };
 
-    const geld = pflegegeld[pflegegrad].geld;
-    const sach = pflegegeld[pflegegrad].sach;
+    const geld = pflegesaetze[pflegegrad].geld;
+    const sach = pflegesaetze[pflegegrad].sach;
+    const entlastung = 125; // §45b SGB XI, für alle Pflegegrade
 
-    let leistung = pflegeart === 'geld' ? geld : sach;
-    let leistungsart = pflegeart === 'geld' ? 'Pflegegeld' : 'Pflegesachleistung';
+    let leistung, leistungsart, kombiSach = 0, kombiGeld = 0;
+
+    if (pflegeart === 'geld') {
+        leistung = geld;
+        leistungsart = 'Pflegegeld';
+    } else if (pflegeart === 'sach') {
+        leistung = sach;
+        leistungsart = 'Pflegesachleistung';
+    } else {
+        // Kombinationsleistung: X% Sachleistung → (100-X)% Pflegegeld
+        const sachAnteil = parseInt(document.getElementById('kombi-anteil').value) / 100;
+        kombiSach = sach * sachAnteil;
+        kombiGeld = geld * (1 - sachAnteil);
+        leistung = kombiSach + kombiGeld;
+        leistungsart = 'Kombinationsleistung';
+    }
 
     document.getElementById('pflegegeld-result').style.display = 'block';
     document.getElementById('pflegegeld-result').innerHTML = `
@@ -1231,23 +1393,44 @@ function berechnePflegegeld() {
                 <span class="result-label">Leistungsart:</span>
                 <span class="result-value">${leistungsart}</span>
             </div>
+            ${pflegeart === 'kombi' ? `
+            <div class="result-item">
+                <span class="result-label">Sachleistung (${document.getElementById('kombi-anteil').value} %):</span>
+                <span class="result-value">${formatGermanNumber(kombiSach)} €</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Pflegegeld (${100 - parseInt(document.getElementById('kombi-anteil').value)} %):</span>
+                <span class="result-value">${formatGermanNumber(kombiGeld)} €</span>
+            </div>
+            ` : ''}
             <div class="result-item highlight">
                 <span class="result-label"><strong>Monatliche Leistung:</strong></span>
                 <span class="result-value"><strong>${formatGermanNumber(leistung)} €</strong></span>
             </div>
-            ${pflegeart === 'kombi' ? `
             <div class="result-item">
-                <span class="result-label">Pflegegeld (max.):</span>
+                <span class="result-label">+ Entlastungsbetrag (§45b):</span>
+                <span class="result-value">${formatGermanNumber(entlastung)} €</span>
+            </div>
+            <div class="result-item highlight">
+                <span class="result-label"><strong>Gesamt inkl. Entlastung:</strong></span>
+                <span class="result-value"><strong>${formatGermanNumber(leistung + entlastung)} €</strong></span>
+            </div>
+            ${pflegeart !== 'kombi' ? `
+            <div class="result-item">
+                <span class="result-label">Max. Pflegegeld:</span>
                 <span class="result-value">${formatGermanNumber(geld)} €</span>
             </div>
             <div class="result-item">
-                <span class="result-label">Pflegesachleistung (max.):</span>
+                <span class="result-label">Max. Sachleistung:</span>
                 <span class="result-value">${formatGermanNumber(sach)} €</span>
             </div>
             ` : ''}
         </div>
         <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
-            <strong>Hinweis:</strong> Werte ab 01.01.2025 (Quelle: BMG). Bei Kombinationsleistung können beide Leistungen anteilig bezogen werden.
+            <strong>Hinweis:</strong> Entlastungsbetrag: 125 €/Monat für alle Pflegegrade (§45b SGB XI). Werte ab 01.01.2025.
+        </p>
+        <p style="font-size: 0.75rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">
+            Berechnungsgrundlage: §§36/37 SGB XI, Stand 2025
         </p>
     `;
 }
@@ -1256,6 +1439,8 @@ function berechneMutterschutz() {
     const entbindungstermin = new Date(document.getElementById('entbindungstermin').value);
     const mehrlingsgeburt = document.getElementById('mehrlingsgeburt').checked;
     const fruehgeburt = document.getElementById('fruehgeburt').checked;
+    const nettoInput = document.getElementById('mutterschutz-netto');
+    const netto = nettoInput && nettoInput.value ? parseGermanNumber(nettoInput.value) : 0;
 
     if (!entbindungstermin || isNaN(entbindungstermin)) {
         alert('Bitte geben Sie einen gültigen Entbindungstermin ein.');
@@ -1273,6 +1458,36 @@ function berechneMutterschutz() {
     schutzEnde.setDate(schutzEnde.getDate() + (wochenNach * 7));
 
     const gesamtTage = Math.ceil((schutzEnde - schutzBeginn) / (1000 * 60 * 60 * 24));
+
+    // Mutterschaftsgeld-Berechnung (§19 MuSchG + §24i SGB V)
+    let mutterschaftsgeldHTML = '';
+    if (netto > 0) {
+        const kkTagessatz = 13; // Krankenkasse: max. 13€/Tag
+        const nettoProTag = netto / 30; // Kalendertagsbasis
+        const agZuschuss = Math.max(0, nettoProTag - kkTagessatz); // AG-Zuschuss = Differenz
+        const gesamtProTag = kkTagessatz + agZuschuss;
+        const gesamtMutterschutzgeld = gesamtProTag * gesamtTage;
+
+        mutterschaftsgeldHTML = `
+            <h4 style="margin: var(--spacing-md) 0 var(--spacing-sm) 0; font-size: 1rem;">Mutterschaftsgeld:</h4>
+            <div class="result-item">
+                <span class="result-label">Krankenkasse (max. 13 €/Tag):</span>
+                <span class="result-value">${formatGermanNumber(kkTagessatz)} €/Tag</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">AG-Zuschuss (Differenz zum Netto):</span>
+                <span class="result-value">${formatGermanNumber(agZuschuss)} €/Tag</span>
+            </div>
+            <div class="result-item highlight">
+                <span class="result-label"><strong>Tägliches Mutterschaftsgeld:</strong></span>
+                <span class="result-value"><strong>${formatGermanNumber(gesamtProTag)} €</strong></span>
+            </div>
+            <div class="result-item highlight">
+                <span class="result-label"><strong>Gesamt (${gesamtTage} Tage):</strong></span>
+                <span class="result-value"><strong>${formatGermanNumber(gesamtMutterschutzgeld)} €</strong></span>
+            </div>
+        `;
+    }
 
     document.getElementById('mutterschutz-result').style.display = 'block';
     document.getElementById('mutterschutz-result').innerHTML = `
@@ -1302,7 +1517,14 @@ function berechneMutterschutz() {
                 <span class="result-label">Gesamtdauer:</span>
                 <span class="result-value">${gesamtTage} Tage</span>
             </div>
+            ${mutterschaftsgeldHTML}
         </div>
+        <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
+            <strong>Hinweis:</strong> Mutterschaftsgeld: 13 €/Tag von der Krankenkasse + AG-Zuschuss bis zum vollen Nettolohn. Privat Versicherte erhalten einmalig max. 210 € vom BVA.
+        </p>
+        <p style="font-size: 0.75rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">
+            Berechnungsgrundlage: MuSchG, §24i SGB V, Stand 2026
+        </p>
     `;
 }
 
@@ -1352,17 +1574,29 @@ function getFeiertage(jahr, bundesland) {
     if (['BW', 'BY', 'ST'].includes(bundesland)) {
         feiertage.push(new Date(jahr, 0, 6)); // Heilige Drei Könige
     }
-    if (['NW', 'BW', 'BY', 'HE', 'NI', 'RP', 'SL'].includes(bundesland)) {
+    if (bundesland === 'BE') {
+        feiertage.push(new Date(jahr, 2, 8)); // Internationaler Frauentag
+    }
+    if (bundesland === 'MV') {
+        feiertage.push(new Date(jahr, 2, 8)); // Internationaler Frauentag (ab 2023)
+    }
+    if (['NW', 'BW', 'BY', 'HE', 'RP', 'SL'].includes(bundesland)) {
         feiertage.push(osterOffset(60)); // Fronleichnam
     }
     if (['BY', 'SL'].includes(bundesland)) {
         feiertage.push(new Date(jahr, 7, 15)); // Mariä Himmelfahrt
     }
-    if (['BB', 'MV', 'SN', 'ST', 'TH'].includes(bundesland)) {
+    if (bundesland === 'TH') {
+        feiertage.push(new Date(jahr, 8, 20)); // Weltkindertag
+    }
+    if (['BB', 'HB', 'HH', 'MV', 'NI', 'SN', 'ST', 'SH', 'TH'].includes(bundesland)) {
         feiertage.push(new Date(jahr, 9, 31)); // Reformationstag
     }
     if (['NW', 'BW', 'BY', 'RP', 'SL'].includes(bundesland)) {
         feiertage.push(new Date(jahr, 10, 1)); // Allerheiligen
+    }
+    if (bundesland === 'SN') {
+        feiertage.push(new Date(jahr, 10, 19)); // Buß- und Bettag
     }
 
     return feiertage;
@@ -1372,6 +1606,7 @@ function berechneArbeitstage() {
     const startDatum = document.getElementById('start-datum').value;
     const endDatum = document.getElementById('end-datum').value;
     const bundesland = document.getElementById('at-bundesland').value;
+    const urlaubstage = parseInt(document.getElementById('at-urlaub').value) || 0;
 
     if (!startDatum || !endDatum) {
         alert('Bitte geben Sie Start- und Enddatum ein.');
@@ -1411,9 +1646,14 @@ function berechneArbeitstage() {
         currentDate.setDate(currentDate.getDate() + 1);
     }
 
+    const nettoArbeitstage = Math.max(0, workingDays - urlaubstage);
+
     const bundeslandName = {
-        'NW': 'Nordrhein-Westfalen', 'BY': 'Bayern',
-        'BW': 'Baden-Württemberg', 'Other': 'Bundesweit (9 Feiertage)'
+        'NW': 'Nordrhein-Westfalen', 'BY': 'Bayern', 'BW': 'Baden-Württemberg',
+        'BE': 'Berlin', 'BB': 'Brandenburg', 'HB': 'Bremen', 'HH': 'Hamburg',
+        'HE': 'Hessen', 'MV': 'Mecklenburg-Vorpommern', 'NI': 'Niedersachsen',
+        'RP': 'Rheinland-Pfalz', 'SL': 'Saarland', 'SN': 'Sachsen',
+        'ST': 'Sachsen-Anhalt', 'SH': 'Schleswig-Holstein', 'TH': 'Thüringen'
     }[bundesland] || bundesland;
 
     document.getElementById('arbeitstage-result').style.display = 'block';
@@ -1422,7 +1662,7 @@ function berechneArbeitstage() {
         <div class="result-grid">
             <div class="result-item">
                 <span class="result-label">Zeitraum:</span>
-                <span class="result-value">${start.toLocaleDateString('de-DE')} - ${end.toLocaleDateString('de-DE')}</span>
+                <span class="result-value">${start.toLocaleDateString('de-DE')} – ${end.toLocaleDateString('de-DE')}</span>
             </div>
             <div class="result-item">
                 <span class="result-label">Bundesland:</span>
@@ -1433,14 +1673,27 @@ function berechneArbeitstage() {
                 <span class="result-value">${totalDays} Tage</span>
             </div>
             <div class="result-item">
-                <span class="result-label">Feiertage (Mo-Fr):</span>
+                <span class="result-label">Feiertage (Mo–Fr):</span>
                 <span class="result-value">${feiertageImZeitraum} Tage</span>
             </div>
+            <div class="result-item">
+                <span class="result-label">Arbeitstage (ohne Urlaub):</span>
+                <span class="result-value">${workingDays} Tage</span>
+            </div>
+            ${urlaubstage > 0 ? `
+            <div class="result-item">
+                <span class="result-label">Urlaubstage:</span>
+                <span class="result-value">- ${urlaubstage} Tage</span>
+            </div>
+            ` : ''}
             <div class="result-item highlight">
-                <span class="result-label"><strong>Arbeitstage:</strong></span>
-                <span class="result-value"><strong>${workingDays} Tage</strong></span>
+                <span class="result-label"><strong>Netto-Arbeitstage:</strong></span>
+                <span class="result-value"><strong>${nettoArbeitstage} Tage</strong></span>
             </div>
         </div>
+        <p style="font-size: 0.75rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">
+            Berechnungsgrundlage: Gesetzliche Feiertage nach Landesrecht, 5-Tage-Woche (Mo–Fr)
+        </p>
     `;
 }
 
@@ -1453,15 +1706,31 @@ function berechneMinijob() {
         return;
     }
 
-    const arbeitgeber_rv = lohn * 0.15; // Rentenversicherung Arbeitgeber
-    const arbeitgeber_kv = lohn * 0.13; // Krankenversicherung Arbeitgeber (pauschal)
-    const arbeitgeber_steuer = lohn * 0.02; // Pauschalsteuer
-    const arbeitgeber_umlage = lohn * 0.015; // Umlagen
+    let ag_rv, ag_kv, ag_steuer, ag_u1, ag_u2, ag_insolvenz, ag_unfall, an_rv;
 
-    const arbeitnehmer_rv = lohn * 0.0372; // Rentenversicherung Arbeitnehmer (kann sich befreien)
+    if (art === 'gewerblich') {
+        ag_rv = lohn * 0.15;          // RV pauschal 15%
+        ag_kv = lohn * 0.13;          // KV pauschal 13%
+        ag_steuer = lohn * 0.02;      // Pauschalsteuer 2%
+        ag_u1 = lohn * 0.008;         // U1: 0,8% (2026)
+        ag_u2 = lohn * 0.0022;        // U2: 0,22% (2026)
+        ag_insolvenz = lohn * 0.0015; // Insolvenzgeldumlage: 0,15% (2026)
+        ag_unfall = 0;
+        an_rv = lohn * 0.036;         // AN-RV: 3,6% (18,6% - 15%)
+    } else {
+        // Privathaushalt
+        ag_rv = lohn * 0.05;          // RV pauschal 5%
+        ag_kv = lohn * 0.05;          // KV pauschal 5%
+        ag_steuer = lohn * 0.02;      // Pauschalsteuer 2%
+        ag_u1 = lohn * 0.008;         // U1: 0,8%
+        ag_u2 = lohn * 0.0022;        // U2: 0,22%
+        ag_insolvenz = 0;             // Keine Insolvenzumlage
+        ag_unfall = lohn * 0.016;     // Unfallversicherung 1,6%
+        an_rv = lohn * 0.136;         // AN-RV: 13,6% (18,6% - 5%)
+    }
 
-    const arbeitgeber_gesamt = arbeitgeber_rv + arbeitgeber_kv + arbeitgeber_steuer + arbeitgeber_umlage;
-    const netto_an = lohn - arbeitnehmer_rv;
+    const ag_gesamt = ag_rv + ag_kv + ag_steuer + ag_u1 + ag_u2 + ag_insolvenz + ag_unfall;
+    const netto_an = lohn - an_rv;
 
     document.getElementById('minijob-result').style.display = 'block';
     document.getElementById('minijob-result').innerHTML = `
@@ -1477,29 +1746,31 @@ function berechneMinijob() {
             </div>
             <h4 style="margin: var(--spacing-md) 0 var(--spacing-sm) 0; font-size: 1rem;">Arbeitgeberabgaben:</h4>
             <div class="result-item">
-                <span class="result-label">Rentenversicherung (15%):</span>
-                <span class="result-value">${formatGermanNumber(arbeitgeber_rv)} €</span>
+                <span class="result-label">Rentenversicherung (${art === 'gewerblich' ? '15' : '5'}%):</span>
+                <span class="result-value">${formatGermanNumber(ag_rv)} €</span>
             </div>
             <div class="result-item">
-                <span class="result-label">Krankenversicherung (13%):</span>
-                <span class="result-value">${formatGermanNumber(arbeitgeber_kv)} €</span>
+                <span class="result-label">Krankenversicherung (${art === 'gewerblich' ? '13' : '5'}%):</span>
+                <span class="result-value">${formatGermanNumber(ag_kv)} €</span>
             </div>
             <div class="result-item">
                 <span class="result-label">Pauschalsteuer (2%):</span>
-                <span class="result-value">${formatGermanNumber(arbeitgeber_steuer)} €</span>
+                <span class="result-value">${formatGermanNumber(ag_steuer)} €</span>
             </div>
             <div class="result-item">
-                <span class="result-label">Umlagen:</span>
-                <span class="result-value">${formatGermanNumber(arbeitgeber_umlage)} €</span>
+                <span class="result-label">U1 (0,8%) + U2 (0,22%):</span>
+                <span class="result-value">${formatGermanNumber(ag_u1 + ag_u2)} €</span>
             </div>
+            ${ag_insolvenz > 0 ? `<div class="result-item"><span class="result-label">Insolvenzgeldumlage (0,15%):</span><span class="result-value">${formatGermanNumber(ag_insolvenz)} €</span></div>` : ''}
+            ${ag_unfall > 0 ? `<div class="result-item"><span class="result-label">Unfallversicherung (1,6%):</span><span class="result-value">${formatGermanNumber(ag_unfall)} €</span></div>` : ''}
             <div class="result-item highlight">
                 <span class="result-label"><strong>Gesamtkosten Arbeitgeber:</strong></span>
-                <span class="result-value"><strong>${formatGermanNumber(lohn + arbeitgeber_gesamt)} €</strong></span>
+                <span class="result-value"><strong>${formatGermanNumber(lohn + ag_gesamt)} €</strong></span>
             </div>
             <h4 style="margin: var(--spacing-md) 0 var(--spacing-sm) 0; font-size: 1rem;">Arbeitnehmer:</h4>
             <div class="result-item">
-                <span class="result-label">RV-Beitrag (3,72% - optional):</span>
-                <span class="result-value">${formatGermanNumber(arbeitnehmer_rv)} €</span>
+                <span class="result-label">RV-Beitrag (${art === 'gewerblich' ? '3,6' : '13,6'}% - optional):</span>
+                <span class="result-value">${formatGermanNumber(an_rv)} €</span>
             </div>
             <div class="result-item highlight">
                 <span class="result-label"><strong>Auszahlung (mit RV):</strong></span>
@@ -1507,7 +1778,10 @@ function berechneMinijob() {
             </div>
         </div>
         <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
-            <strong>Hinweis:</strong> Arbeitnehmer können sich von der RV-Pflicht befreien lassen und erhalten dann ${formatGermanNumber(lohn)} € netto.
+            <strong>Hinweis:</strong> Arbeitnehmer können sich von der RV-Pflicht befreien lassen und erhalten dann ${formatGermanNumber(lohn)} € netto. Verdienstgrenze 2026: 538 €/Monat.
+        </p>
+        <p style="font-size: 0.75rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">
+            Berechnungsgrundlage: Abgaben nach SGB, Minijob-Zentrale Stand 2026
         </p>
     `;
 }
@@ -1570,44 +1844,101 @@ function berechneFoerderung() {
     const gruendungsart = document.getElementById('gruendungsart').value;
     const kapitalbedarf = parseGermanNumber(document.getElementById('kapitalbedarf').value);
     const algBezug = document.getElementById('alg-bezug').checked;
+    const bundesland = document.getElementById('foerder-bundesland').value;
+    const phase = document.getElementById('gruendungsphase').value;
 
     let foerderungen = [];
 
+    // Bundesweite Förderungen
     if (algBezug) {
         foerderungen.push({
             name: 'Gründungszuschuss (Agentur für Arbeit)',
             betrag: 'Bis zu 15.000 €',
-            beschreibung: '6 Monate 300 € + Grundsicherung, danach 6 Monate 300 €'
+            beschreibung: '6 Monate ALG I + 300 €, danach 9 Monate 300 € (auf Antrag)',
+            kategorie: 'Bund'
         });
     }
 
     if (kapitalbedarf >= 25000) {
         foerderungen.push({
-            name: 'KfW-Gründerkredit',
+            name: 'KfW-Gründerkredit – StartGeld',
             betrag: 'Bis zu 125.000 €',
-            beschreibung: 'Zinsgünstiges Darlehen der KfW-Bank für Existenzgründer'
+            beschreibung: 'Zinsgünstiges Darlehen für Existenzgründer und junge Unternehmen (< 5 Jahre). Haftungsfreistellung 80 %.',
+            kategorie: 'Bund'
+        });
+    }
+
+    if (kapitalbedarf >= 100000) {
+        foerderungen.push({
+            name: 'KfW-Gründerkredit – Universell',
+            betrag: 'Bis zu 25 Mio. €',
+            beschreibung: 'Für größere Investitions- und Betriebsmittelfinanzierungen',
+            kategorie: 'Bund'
         });
     }
 
     foerderungen.push({
         name: 'BAFA-Förderung für Unternehmensberatung',
         betrag: 'Bis zu 4.000 €',
-        beschreibung: 'Zuschuss für professionelle Gründungsberatung (50-80%)'
+        beschreibung: 'Zuschuss für professionelle Gründungsberatung (50-80 % der Beratungskosten)',
+        kategorie: 'Bund'
     });
 
     if (gruendungsart === 'team') {
         foerderungen.push({
             name: 'EXIST-Gründerstipendium',
             betrag: 'Bis zu 150.000 €',
-            beschreibung: 'Für innovative technologieorientierte oder wissensbasierte Gründungen'
+            beschreibung: 'Für innovative technologieorientierte oder wissensbasierte Gründungen aus der Hochschule',
+            kategorie: 'Bund'
         });
     }
 
-    foerderungen.push({
-        name: 'Mikrokredite',
-        betrag: 'Bis zu 25.000 €',
-        beschreibung: 'Für kleinere Finanzierungsbedarfe ohne Bankkredit'
-    });
+    if (kapitalbedarf <= 25000 && kapitalbedarf > 0) {
+        foerderungen.push({
+            name: 'Mikrokreditfonds Deutschland',
+            betrag: 'Bis zu 25.000 €',
+            beschreibung: 'Für kleinere Finanzierungsbedarfe, auch ohne Sicherheiten oder Bankkredit',
+            kategorie: 'Bund'
+        });
+    }
+
+    // Länderspezifische Förderungen
+    if (bundesland === 'NW') {
+        foerderungen.push({
+            name: 'NRW.BANK Gründungskredit',
+            betrag: 'Bis zu 10 Mio. €',
+            beschreibung: 'Zinsgünstiges Darlehen der NRW.BANK für Gründer und KMU in NRW',
+            kategorie: 'NRW'
+        });
+        if (phase === 'vorbereitung' || phase === 'gruendung') {
+            foerderungen.push({
+                name: 'Beratungsprogramm Wirtschaft NRW',
+                betrag: 'Zuschuss 50-80 %',
+                beschreibung: 'Förderung qualifizierter Unternehmensberatungen für Gründer und KMU in NRW',
+                kategorie: 'NRW'
+            });
+        }
+        foerderungen.push({
+            name: 'NRW.BANK Mikrodarlehen',
+            betrag: 'Bis zu 25.000 €',
+            beschreibung: 'Schnelle, unkomplizierte Finanzierung für Kleinstgründungen in NRW',
+            kategorie: 'NRW'
+        });
+    } else if (bundesland === 'BY') {
+        foerderungen.push({
+            name: 'LfA Startkredit',
+            betrag: 'Bis zu 10 Mio. €',
+            beschreibung: 'Bayerisches Förderdarlehen für Gründer und Unternehmer',
+            kategorie: 'Bayern'
+        });
+    } else if (bundesland === 'BW') {
+        foerderungen.push({
+            name: 'L-Bank Gründungsfinanzierung',
+            betrag: 'Bis zu 5 Mio. €',
+            beschreibung: 'Förderdarlehen der L-Bank Baden-Württemberg',
+            kategorie: 'BW'
+        });
+    }
 
     document.getElementById('foerderung-result').style.display = 'block';
     document.getElementById('foerderung-result').innerHTML = `
@@ -1615,18 +1946,33 @@ function berechneFoerderung() {
         <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
             ${foerderungen.map(f => `
                 <div style="padding: var(--spacing-md); background: var(--color-bg-light); border-radius: var(--border-radius); border-left: 4px solid var(--color-primary);">
-                    <h4 style="margin: 0 0 var(--spacing-xs) 0; font-size: 1rem; color: var(--color-primary);">${f.name}</h4>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h4 style="margin: 0 0 var(--spacing-xs) 0; font-size: 1rem; color: var(--color-primary);">${f.name}</h4>
+                        <span style="font-size: 0.75rem; padding: 2px 8px; background: var(--color-primary); color: white; border-radius: 12px;">${f.kategorie}</span>
+                    </div>
                     <p style="margin: 0 0 var(--spacing-xs) 0; font-weight: 600;">${f.betrag}</p>
                     <p style="margin: 0; font-size: 0.875rem; color: var(--color-text-light);">${f.beschreibung}</p>
                 </div>
             `).join('')}
         </div>
-        <div style="margin-top: var(--spacing-xl); padding: var(--spacing-md); background: white; border-left: 4px solid var(--color-primary); border-radius: 4px;">
-            <p style="margin: 0; font-weight: 600; color: var(--color-primary);">💡 Unser Service</p>
+        <div style="margin-top: var(--spacing-lg); padding: var(--spacing-md); background: var(--color-bg-light); border-radius: var(--border-radius);">
+            <p style="margin: 0 0 var(--spacing-sm) 0; font-weight: 600;">Weitere Informationsquellen:</p>
+            <ul style="margin: 0; padding-left: var(--spacing-lg); font-size: 0.875rem;">
+                <li><a href="https://www.foerderdatenbank.de" target="_blank" rel="noopener">Förderdatenbank des Bundes</a></li>
+                ${bundesland === 'NW' ? '<li><a href="https://www.nrwbank.de" target="_blank" rel="noopener">NRW.BANK Förderprodukte</a></li>' : ''}
+                <li><a href="https://www.kfw.de/inlandsfoerderung/Unternehmen/Gr%C3%BCnden/" target="_blank" rel="noopener">KfW Gründungsförderung</a></li>
+                <li><a href="https://www.bafa.de/DE/Wirtschafts_Mittelstandsfoerderung/Beratung_Finanzierung/Unternehmensberatung/unternehmensberatung_node.html" target="_blank" rel="noopener">BAFA Beratungsförderung</a></li>
+            </ul>
+        </div>
+        <div style="margin-top: var(--spacing-md); padding: var(--spacing-md); background: white; border-left: 4px solid var(--color-primary); border-radius: 4px;">
+            <p style="margin: 0; font-weight: 600; color: var(--color-primary);">Unser Service</p>
             <p style="margin-top: var(--spacing-xs); margin-bottom: 0;">
                 Wir unterstützen Sie bei der Beantragung von Fördermitteln und erstellen die erforderlichen Unterlagen.
             </p>
         </div>
+        <p style="font-size: 0.75rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">
+            Berechnungsgrundlage: Förderprogramme ohne Gewähr, Stand 2026
+        </p>
     `;
 }
 
@@ -1639,14 +1985,26 @@ function berechneAltersvorsorge() {
         return;
     }
 
-    const maxSteuerfrei = 338; // 4% der BBG 2026 (SV-frei)
+    // BBG RV 2026: 8.450€/Monat = 101.400€/Jahr
+    const maxSvFrei = 338;   // 4% BBG = 4.056€/Jahr → 338€/Monat
+    const maxSteuerfrei = 676; // 8% BBG = 8.112€/Jahr → 676€/Monat
+
+    const svFreierBeitrag = Math.min(beitrag, maxSvFrei);
     const steuerfreierBeitrag = Math.min(beitrag, maxSteuerfrei);
 
-    const steuerersparnis = steuerfreierBeitrag * 0.30; // Annahme: 30% Durchschnittssteuersatz
-    const svErsparnis = steuerfreierBeitrag * 0.20; // SV-Ersparnis ca. 20%
+    // Steuerersparnis auf den steuerfreien Anteil (Annahme: 30% Durchschnittssteuersatz)
+    const steuerersparnis = steuerfreierBeitrag * 0.30;
+    // SV-Ersparnis nur auf den SV-freien Anteil (~20% AN-Anteil SV)
+    const svErsparnis = svFreierBeitrag * 0.20;
 
     const gesamtErsparnis = steuerersparnis + svErsparnis;
     const eigenanteil = beitrag - gesamtErsparnis;
+
+    // AG-Pflichtzuschuss: mind. 15% des umgewandelten Betrags
+    const agZuschuss = beitrag * 0.15;
+
+    // Geringverdiener-Förderung (§100 EStG): bis 2.575€/Monat
+    const geringverdiener = brutto <= 2575;
 
     const jahresbeitrag = beitrag * 12;
     const jahresersparnis = gesamtErsparnis * 12;
@@ -1664,16 +2022,28 @@ function berechneAltersvorsorge() {
                 <span class="result-value">${formatGermanNumber(beitrag)} €</span>
             </div>
             <div class="result-item">
-                <span class="result-label">Steuerersparnis:</span>
+                <span class="result-label">Steuerfrei (max. ${maxSteuerfrei} €):</span>
+                <span class="result-value">${formatGermanNumber(steuerfreierBeitrag)} €</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">SV-frei (max. ${maxSvFrei} €):</span>
+                <span class="result-value">${formatGermanNumber(svFreierBeitrag)} €</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Steuerersparnis (~30 %):</span>
                 <span class="result-value">${formatGermanNumber(steuerersparnis)} €</span>
             </div>
             <div class="result-item">
-                <span class="result-label">SV-Ersparnis:</span>
+                <span class="result-label">SV-Ersparnis (~20 %):</span>
                 <span class="result-value">${formatGermanNumber(svErsparnis)} €</span>
             </div>
             <div class="result-item highlight">
                 <span class="result-label"><strong>Ihr Eigenanteil:</strong></span>
                 <span class="result-value"><strong>${formatGermanNumber(eigenanteil)} €</strong></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">AG-Pflichtzuschuss (15 %):</span>
+                <span class="result-value">${formatGermanNumber(agZuschuss)} €</span>
             </div>
             <div class="result-item">
                 <span class="result-label">Jahresbeitrag:</span>
@@ -1684,8 +2054,16 @@ function berechneAltersvorsorge() {
                 <span class="result-value">${formatGermanNumber(jahresersparnis)} €</span>
             </div>
         </div>
+        ${geringverdiener ? `
+        <div style="margin-top: var(--spacing-md); padding: var(--spacing-md); background: var(--color-bg-light); border-left: 4px solid var(--color-success, #28a745); border-radius: 4px;">
+            <p style="margin: 0; font-weight: 600; color: var(--color-success, #28a745);">Geringverdiener-Förderung möglich (§100 EStG)</p>
+            <p style="margin: var(--spacing-xs) 0 0 0; font-size: 0.875rem;">Bei einem Brutto bis 2.575 €/Monat kann der AG 30 % seines Zuschusses steuerlich fördern lassen.</p>
+        </div>` : ''}
         <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
-            <strong>Vorteil:</strong> Für nur ${formatGermanNumber(eigenanteil)} € erhalten Sie ${formatGermanNumber(beitrag)} € Altersvorsorge!
+            <strong>Vorteil:</strong> Für nur ${formatGermanNumber(Math.max(0, eigenanteil))} € erhalten Sie ${formatGermanNumber(beitrag)} € Altersvorsorge! Der AG muss mind. 15 % als Zuschuss leisten.
+        </p>
+        <p style="font-size: 0.75rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">
+            Berechnungsgrundlage: §3 Nr. 63 EStG, BetrAVG, BBG RV 2026: 101.400 €/Jahr
         </p>
     `;
 }
@@ -1875,6 +2253,9 @@ function berechneUmsatzsteuer() {
         <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
             <strong>Hinweis:</strong> Der ermäßigte Satz von 7 % gilt u. a. für Lebensmittel, Bücher und ÖPNV. Für innergemeinschaftliche Lieferungen (Reverse Charge) entfällt die deutsche USt – kontaktieren Sie uns für Details.
         </p>
+        <p style="font-size: 0.75rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">
+            Berechnungsgrundlage: §12 UStG
+        </p>
     `;
 }
 
@@ -1892,7 +2273,7 @@ function berechneGrunderwerbsteuer() {
         'BY': { satz: 3.5, name: 'Bayern' },
         'BE': { satz: 6.0, name: 'Berlin' },
         'BB': { satz: 6.5, name: 'Brandenburg' },
-        'HB': { satz: 5.0, name: 'Bremen' },
+        'HB': { satz: 5.5, name: 'Bremen' },
         'HH': { satz: 5.5, name: 'Hamburg' },
         'HE': { satz: 6.0, name: 'Hessen' },
         'MV': { satz: 6.0, name: 'Mecklenburg-Vorpommern' },
@@ -1945,6 +2326,9 @@ function berechneGrunderwerbsteuer() {
         <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
             <strong>Hinweis:</strong> Maklerprovision (3,57–7,14 %) ist nicht enthalten. Notarkosten sind Richtwerte. Für Immobiliengestaltungen sprechen Sie uns gerne an.
         </p>
+        <p style="font-size: 0.75rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">
+            Berechnungsgrundlage: §11 GrEStG, Steuersätze Stand 2025
+        </p>
     `;
 }
 
@@ -1958,49 +2342,44 @@ function berechneGehaltsvergleich() {
         return;
     }
 
+    // BBG 2026
+    const bbgRvAv = 8450;
+    const bbgKvPv = 5512.50;
+    const kvBasis = Math.min(brutto, bbgKvPv);
+    const rvBasis = Math.min(brutto, bbgRvAv);
+
     // AG-Anteile Sozialversicherung (2026)
-    const ag_kv = brutto * 0.073;
-    const ag_kv_zusatz = brutto * 0.0145; // Durchschnittlicher Zusatzbeitrag
-    const ag_rv = brutto * 0.093;
-    const ag_av = brutto * 0.013;
-    const ag_pv = brutto * 0.017;
-    const ag_u1 = brutto * 0.017; // Umlage U1 (Durchschnitt)
-    const ag_u2 = brutto * 0.005; // Umlage U2
-    const ag_insolvenz = brutto * 0.0006; // Insolvenzgeldumlage
+    const ag_kv = kvBasis * 0.073;
+    const ag_kv_zusatz = kvBasis * 0.00875; // AG-Anteil Zusatzbeitrag 2026
+    const ag_rv = rvBasis * 0.093;
+    const ag_av = rvBasis * 0.013;
+    const ag_pv = kvBasis * 0.017;      // AG-Anteil PV
+    const ag_u1 = brutto * 0.008;       // Umlage U1 (2026: 0,8%)
+    const ag_u2 = brutto * 0.0022;      // Umlage U2 (2026: 0,22%)
+    const ag_insolvenz = brutto * 0.0015; // Insolvenzgeldumlage (2026: 0,15%)
     const ag_sv = ag_kv + ag_kv_zusatz + ag_rv + ag_av + ag_pv + ag_u1 + ag_u2 + ag_insolvenz;
     const ag_gesamt = brutto + ag_sv;
 
-    // AN-Anteile (vereinfacht)
-    const an_kv = brutto * 0.073;
-    const an_kv_zusatz = brutto * 0.0145;
-    const an_rv = brutto * 0.093;
-    const an_av = brutto * 0.013;
-    const an_pv = brutto * 0.019;
+    // AN-Anteile mit BBG-Caps
+    const an_kv = kvBasis * 0.073;
+    const an_kv_zusatz = kvBasis * 0.00875;
+    const an_rv = rvBasis * 0.093;
+    const an_av = rvBasis * 0.013;
+    const an_pv = kvBasis * 0.017;      // AN-Anteil PV (mit Kindern)
     const an_sv = an_kv + an_kv_zusatz + an_rv + an_av + an_pv;
 
-    // ESt (vereinfacht)
+    // ESt mit korrektem Tarif
     const jahresbrutto = brutto * 12;
     const zvE = jahresbrutto - (an_sv * 12) - 1230;
-    let jahressteuer = 0;
-    const grundfreibetrag = 12348;
+    let jahressteuer;
 
-    if (zvE > grundfreibetrag) {
-        if (zvE <= 17799) {
-            const y = (zvE - grundfreibetrag) / 10000;
-            jahressteuer = (914.51 * y + 1400) * y;
-        } else if (zvE <= 69878) {
-            const z = (zvE - 17799) / 10000;
-            jahressteuer = (173.10 * z + 2397) * z + 1034.87;
-        } else if (zvE <= 277825) {
-            jahressteuer = 0.42 * zvE - 11135.63;
-        } else {
-            jahressteuer = 0.45 * zvE - 19470.38;
-        }
-        jahressteuer = Math.floor(jahressteuer);
+    if (steuerklasse === 3) {
+        jahressteuer = berechneEStSplitting(zvE);
+    } else if (steuerklasse === 5) {
+        jahressteuer = Math.floor(berechneEStGrundtarif(zvE) * 1.6);
+    } else {
+        jahressteuer = berechneEStGrundtarif(zvE);
     }
-
-    if (steuerklasse === 3) jahressteuer *= 0.7;
-    else if (steuerklasse === 5) jahressteuer *= 1.3;
 
     const monatssteuer = jahressteuer / 12;
     const kirche = kirchensteuer ? monatssteuer * 0.09 : 0;
@@ -2053,6 +2432,9 @@ function berechneGehaltsvergleich() {
         </div>
         <p style="margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-light);">
             <strong>Erkenntnis:</strong> Von ${formatGermanNumber(ag_gesamt)} € Personalkosten kommen nur ${formatGermanNumber(netto)} € beim Arbeitnehmer an – das sind ${quote} %.
+        </p>
+        <p style="font-size: 0.75rem; color: var(--color-text-light); margin-top: var(--spacing-sm);">
+            Berechnungsgrundlage: AG-Gesamtkosten inkl. aller Umlagen, SV-Rechengrößen 2026
         </p>
     `;
 }
