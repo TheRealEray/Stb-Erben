@@ -956,13 +956,16 @@
         "approach": "Yaklaşımımız: Genellikle StBVV'nin orta değerine yöneliyoruz. Böylece adil koşullarda kaliteli hizmetler alırsınız.",
         "services": {
           "title": "Sürekli desteğin tipik hizmetleri:",
-          "item1": "Aylık mali muhasebe",
-          "item2": "Bordro muhasebesi ve bordro vergisi kayıtları",
-          "item3": "KDV ön beyanları",
-          "item4": "Yıllık mali tablo (HGB, EStG) veya EÜR",
-          "item5": "Tüm vergi beyannameleri (ESt, KSt, GewSt, USt)",
-          "item6": "İşletme değerlendirmeleri (BWA)",
-          "item7": "Sürekli vergi danışmanlığı"
+          "item1": "Sürekli mali muhasebe",
+          "item2": "Maaş ve ücret hesaplaması",
+          "item3": "Sosyal sigorta bildirimleri",
+          "item4": "Bordro vergisi kayıtları",
+          "item5": "KDV ön beyanları",
+          "item6": "Sermaye şirketleri için yıllık mali tablolar (örn. GmbH)",
+          "item7": "Kâr tespiti (§ 4 (1) EStG'ye göre bilanço ve § 4 (3) EStG'ye göre gelir-gider hesabı)",
+          "item8": "Tüm ticari ve özel vergi beyannamelerinin hazırlanması",
+          "item9": "İşletme değerlendirmeleri",
+          "item10": "Sürekli vergi danışmanlığı ve tasarım desteği"
         }
       },
       "cta": {

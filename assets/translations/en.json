@@ -956,13 +956,16 @@
         "approach": "Our approach: We generally orient ourselves to the mid-range of the StBVV. This way you receive high-quality services at fair terms.",
         "services": {
           "title": "Typical services of ongoing support:",
-          "item1": "Monthly financial accounting",
-          "item2": "Payroll accounting and payroll tax registrations",
-          "item3": "VAT advance returns",
-          "item4": "Annual financial statements (HGB, EStG) or EÜR",
-          "item5": "All tax returns (income tax, corporate tax, trade tax, VAT)",
-          "item6": "Business evaluations (BWA)",
-          "item7": "Ongoing tax consulting"
+          "item1": "Ongoing financial accounting",
+          "item2": "Payroll and salary accounting",
+          "item3": "Social security notifications",
+          "item4": "Payroll tax registrations",
+          "item5": "VAT advance returns",
+          "item6": "Annual financial statements for corporations (e.g. GmbH)",
+          "item7": "Profit determination (balance sheet accounting per § 4 (1) EStG and income-surplus calculation per § 4 (3) EStG)",
+          "item8": "Preparation of all business and personal tax returns",
+          "item9": "Business evaluations",
+          "item10": "Ongoing tax consulting and advisory support"
         }
       },
       "cta": {

@@ -825,14 +825,17 @@
         },
         "approach": "Unser Ansatz:Wir orientieren uns in der Regel am Mittelwert der StBVV. So erhalten Sie qualitativ hochwertige Leistungen zu fairen, nachvollziehbaren Konditionen.",
         "services": {
-          "title": "Typische Leistungen aus der laufenden Betreuung:",
-          "item1": "Monatliche Finanzbuchhaltung",
-          "item2": "Lohnbuchhaltung und Lohnsteueranmeldungen",
-          "item3": "Umsatzsteuer-Voranmeldungen",
-          "item4": "Jahresabschluss (HGB, EStG) oder EÜR",
-          "item5": "Alle Steuererklärungen (ESt, KSt, GewSt, USt)",
-          "item6": "Betriebswirtschaftliche Auswertungen (BWA)",
-          "item7": "Laufende steuerliche Beratung"
+          "title": "Typische Leistungen der laufenden Betreuung:",
+          "item1": "Laufende Finanzbuchhaltung",
+          "item2": "Lohn- und Gehaltsabrechnung",
+          "item3": "Meldungen zur Sozialversicherung",
+          "item4": "Lohnsteueranmeldungen",
+          "item5": "Umsatzsteuer-Voranmeldungen",
+          "item6": "Jahresabschlüsse für Kapitalgesellschaften (z. B. GmbH)",
+          "item7": "Gewinnermittlungen (Bilanzierung nach § 4 Abs. 1 EStG sowie Einnahmen-Überschuss-Rechnung nach § 4 Abs. 3 EStG)",
+          "item8": "Erstellung aller betrieblichen und privaten Steuererklärungen",
+          "item9": "Betriebswirtschaftliche Auswertungen",
+          "item10": "Laufende steuerliche Beratung und Gestaltungsbegleitung"
         }
       },
       "cta": {
