@@ -217,33 +217,65 @@ function initLazyLoading() {
 }
 
 /**
- * Scroll Reveal
- * Adds smooth fade-in-up animation to service boxes and sections
- * as they scroll into view. Uses IntersectionObserver for performance.
+ * Apple-Style Scroll-Linked Animation
+ * Opacity and scale are continuously tied to scroll position.
+ * Elements fade in as they enter from the bottom, stay visible in the
+ * middle zone, and fade out as they exit at the top.
  */
 function initScrollReveal() {
-  if (!('IntersectionObserver' in window)) return;
+  var cards = document.querySelectorAll('.service-detail__category, .cta-section');
+  if (!cards.length) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  // Target: service category boxes, CTA section, and similar content blocks
-  const revealTargets = document.querySelectorAll(
-    '.service-detail__category, .cta-section'
-  );
-  if (!revealTargets.length) return;
+  cards.forEach(function(c) { c.classList.add('scroll-linked'); });
 
-  // Add the scroll-reveal class (starts hidden)
-  revealTargets.forEach(el => el.classList.add('scroll-reveal'));
+  var ticking = false;
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
+  function update() {
+    var vh = window.innerHeight;
+
+    cards.forEach(function(card) {
+      var rect = card.getBoundingClientRect();
+
+      // Off-screen: fully hidden
+      if (rect.bottom < 0 || rect.top > vh) {
+        card.style.opacity = '0';
+        card.style.transform = 'scale(0.97)';
+        return;
       }
-    });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -60px 0px'
-  });
 
-  revealTargets.forEach(el => observer.observe(el));
+      // Enter: fade in as card enters from the bottom 30% of viewport
+      var enter = 1;
+      if (rect.top > vh * 0.65) {
+        enter = 1 - (rect.top - vh * 0.65) / (vh * 0.35);
+      }
+
+      // Exit: fade out as card leaves through the top 20% of viewport
+      var exit = 1;
+      if (rect.bottom < vh * 0.25) {
+        exit = rect.bottom / (vh * 0.25);
+      }
+
+      var progress = Math.min(enter, exit);
+      progress = Math.max(0, Math.min(1, progress));
+
+      // Smooth easing curve (ease-out quad)
+      var eased = 1 - (1 - progress) * (1 - progress);
+
+      card.style.opacity = eased;
+      card.style.transform = 'scale(' + (0.97 + 0.03 * eased) + ')';
+    });
+
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(update);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Set initial state
+  update();
 }

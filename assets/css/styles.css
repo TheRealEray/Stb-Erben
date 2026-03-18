@@ -3396,27 +3396,15 @@ img {
   animation: fadeInUp 0.6s ease-out;
 }
 
-/* ── Scroll Reveal Animations ─────────────────────────── */
-.scroll-reveal {
-  opacity: 0;
-  transition: opacity 0.8s ease;
-  will-change: opacity;
+/* ── Apple-Style Scroll-Linked Animations ─────────────── */
+.scroll-linked {
+  will-change: opacity, transform;
 }
 
-.scroll-reveal.is-visible {
-  opacity: 1;
-}
-
-/* Staggered delays for sequential boxes */
-.scroll-reveal:nth-child(even) {
-  transition-delay: 0.1s;
-}
-
-/* Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
-  .scroll-reveal {
-    opacity: 1;
-    transition: none;
+  .scroll-linked {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
 
