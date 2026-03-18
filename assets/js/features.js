@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Batch 2: Navigation & Accessibility
   initReadingMode();
   initLazyLoading();
+  // Scroll reveal animations
+  initScrollReveal();
 });
 
 /**
@@ -212,4 +214,36 @@ function initLazyLoading() {
       img.addEventListener('load', () => { img.style.opacity = '1'; }, { once: true });
     }
   });
+}
+
+/**
+ * Scroll Reveal
+ * Adds smooth fade-in-up animation to service boxes and sections
+ * as they scroll into view. Uses IntersectionObserver for performance.
+ */
+function initScrollReveal() {
+  if (!('IntersectionObserver' in window)) return;
+
+  // Target: service category boxes, CTA section, and similar content blocks
+  const revealTargets = document.querySelectorAll(
+    '.service-detail__category, .cta-section'
+  );
+  if (!revealTargets.length) return;
+
+  // Add the scroll-reveal class (starts hidden)
+  revealTargets.forEach(el => el.classList.add('scroll-reveal'));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -60px 0px'
+  });
+
+  revealTargets.forEach(el => observer.observe(el));
 }
