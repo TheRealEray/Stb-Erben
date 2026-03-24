@@ -1120,6 +1120,43 @@
       "title": "Haben Sie Fragen zu diesen Themen?",
       "text": "Nehmen Sie Kontakt mit uns auf – wir beraten Sie gerne zu Ihrem konkreten Fall.",
       "button": "Jetzt Kontakt aufnehmen"
+    },
+    "backLink": "Zurück zur Wissensübersicht",
+    "readingMode": "Lesemodus",
+    "readingTime": "Lesezeit:",
+    "readingTimeMinutes": "Minuten",
+    "criminal": {
+      "hero": {
+        "title": "Steuerstrafrecht",
+        "subtitle": "Verfahrensablauf und Verteidigungsstrategien"
+      },
+      "cta": {
+        "title": "Haben Sie Fragen zum Steuerstrafrecht?",
+        "text": "Nehmen Sie Kontakt zu uns auf – wir beraten Sie gerne zu Ihrem konkreten Fall.",
+        "button": "Jetzt Kontakt aufnehmen"
+      }
+    },
+    "audit": {
+      "hero": {
+        "title": "Steuerliche Außenprüfung",
+        "subtitle": "Ablauf, Rechte und strategische Begleitung"
+      },
+      "cta": {
+        "title": "Haben Sie Fragen zur steuerlichen Außenprüfung?",
+        "text": "Nehmen Sie Kontakt zu uns auf – wir beraten Sie gerne zu Ihrem konkreten Fall.",
+        "button": "Jetzt Kontakt aufnehmen"
+      }
+    },
+    "restructuring": {
+      "hero": {
+        "title": "Umwandlungssteuerrecht",
+        "subtitle": "Umwandlungen, Holding-Strukturen und internationale Sachverhalte"
+      },
+      "cta": {
+        "title": "Haben Sie Fragen zum Umwandlungssteuerrecht?",
+        "text": "Nehmen Sie Kontakt zu uns auf – wir beraten Sie gerne zu Ihrem konkreten Fall.",
+        "button": "Jetzt Kontakt aufnehmen"
+      }
     }
   }
 }

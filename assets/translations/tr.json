@@ -1131,6 +1131,43 @@
       "title": "Bu konularda sorularınız mı var?",
       "text": "Bizimle iletişime geçin – somut durumunuz hakkında size memnuniyetle danışmanlık yapıyoruz.",
       "button": "Şimdi iletişime geçin"
+    },
+    "backLink": "Bilgi Genel Bakışa Dön",
+    "readingMode": "Okuma Modu",
+    "readingTime": "Okuma süresi:",
+    "readingTimeMinutes": "dakika",
+    "criminal": {
+      "hero": {
+        "title": "Vergi Ceza Hukuku",
+        "subtitle": "Dava Süreci ve Savunma Stratejileri"
+      },
+      "cta": {
+        "title": "Vergi ceza hukuku hakkında sorularınız mı var?",
+        "text": "Bizimle iletişime geçin – somut durumunuz hakkında size memnuniyetle danışmanlık yapıyoruz.",
+        "button": "Şimdi iletişime geçin"
+      }
+    },
+    "audit": {
+      "hero": {
+        "title": "Vergi Denetimi",
+        "subtitle": "Süreç, Haklar ve Stratejik Rehberlik"
+      },
+      "cta": {
+        "title": "Vergi denetimi hakkında sorularınız mı var?",
+        "text": "Bizimle iletişime geçin – somut durumunuz hakkında size memnuniyetle danışmanlık yapıyoruz.",
+        "button": "Şimdi iletişime geçin"
+      }
+    },
+    "restructuring": {
+      "hero": {
+        "title": "Kurumsal Yeniden Yapılandırma Vergi Hukuku",
+        "subtitle": "Birleşmeler, Holding Yapıları ve Uluslararası Konular"
+      },
+      "cta": {
+        "title": "Yeniden yapılandırma vergi hukuku hakkında sorularınız mı var?",
+        "text": "Bizimle iletişime geçin – somut durumunuz hakkında size memnuniyetle danışmanlık yapıyoruz.",
+        "button": "Şimdi iletişime geçin"
+      }
     }
   }
 }

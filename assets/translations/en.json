@@ -1131,6 +1131,43 @@
       "title": "Do you have questions about these topics?",
       "text": "Get in touch with us – we are happy to advise you on your specific case.",
       "button": "Contact us now"
+    },
+    "backLink": "Back to Knowledge Overview",
+    "readingMode": "Reading Mode",
+    "readingTime": "Reading time:",
+    "readingTimeMinutes": "minutes",
+    "criminal": {
+      "hero": {
+        "title": "Tax Criminal Law",
+        "subtitle": "Procedure and Defence Strategies"
+      },
+      "cta": {
+        "title": "Do you have questions about tax criminal law?",
+        "text": "Get in touch with us – we are happy to advise you on your specific case.",
+        "button": "Contact us now"
+      }
+    },
+    "audit": {
+      "hero": {
+        "title": "Tax Field Audit",
+        "subtitle": "Process, Rights and Strategic Guidance"
+      },
+      "cta": {
+        "title": "Do you have questions about tax audits?",
+        "text": "Get in touch with us – we are happy to advise you on your specific case.",
+        "button": "Contact us now"
+      }
+    },
+    "restructuring": {
+      "hero": {
+        "title": "Corporate Restructuring Tax Law",
+        "subtitle": "Mergers, Holding Structures and International Matters"
+      },
+      "cta": {
+        "title": "Do you have questions about restructuring tax law?",
+        "text": "Get in touch with us – we are happy to advise you on your specific case.",
+        "button": "Contact us now"
+      }
     }
   }
 }
