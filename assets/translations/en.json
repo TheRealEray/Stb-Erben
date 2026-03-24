@@ -1106,5 +1106,31 @@
   "news": {
     "title": "Newsticker",
     "subtitle": "Latest updates in tax law, legislation and case law – updated daily."
+  },
+  "knowledge": {
+    "hero": {
+      "title": "Knowledge",
+      "subtitle": "Modular knowledge base – systematically structured"
+    },
+    "modules": {
+      "heading": "Our Knowledge Modules",
+      "audit": {
+        "title": "Tax Audit",
+        "text": "Process, rights and strategic guidance – from audit notification to transition into criminal tax proceedings"
+      },
+      "criminal": {
+        "title": "Tax Criminal Law",
+        "text": "Procedure, defence strategies and voluntary disclosure"
+      },
+      "restructuring": {
+        "title": "Corporate Restructuring Tax",
+        "text": "Introduction and 6 modules on mergers, holding structures and international matters"
+      }
+    },
+    "cta": {
+      "title": "Do you have questions about these topics?",
+      "text": "Get in touch with us – we are happy to advise you on your specific case.",
+      "button": "Contact us now"
+    }
   }
 }

@@ -1106,5 +1106,31 @@
   "news": {
     "title": "Newsticker",
     "subtitle": "Vergi hukuku, mevzuat ve içtihattan güncel gelişmeler – her gün güncellenir."
+  },
+  "knowledge": {
+    "hero": {
+      "title": "Bilgi",
+      "subtitle": "Modüler bilgi yapısı – sistematik olarak oluşturulmuş"
+    },
+    "modules": {
+      "heading": "Bilgi Modüllerimiz",
+      "audit": {
+        "title": "Vergi Denetimi",
+        "text": "Süreç, haklar ve stratejik rehberlik – denetim bildiriminden vergi ceza davasına geçişe kadar"
+      },
+      "criminal": {
+        "title": "Vergi Ceza Hukuku",
+        "text": "Dava süreci, savunma stratejileri ve gönüllü bildirim"
+      },
+      "restructuring": {
+        "title": "Kurumsal Yeniden Yapılandırma Vergisi",
+        "text": "Giriş ve birleşmeler, holding yapıları ve uluslararası konulara ilişkin 6 modül"
+      }
+    },
+    "cta": {
+      "title": "Bu konularda sorularınız mı var?",
+      "text": "Bizimle iletişime geçin – somut durumunuz hakkında size memnuniyetle danışmanlık yapıyoruz.",
+      "button": "Şimdi iletişime geçin"
+    }
   }
 }
