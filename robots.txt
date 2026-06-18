@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://therealeray.github.io/Stb-Erben/sitemap.xml
+Sitemap: https://stberben.com/sitemap.xml
