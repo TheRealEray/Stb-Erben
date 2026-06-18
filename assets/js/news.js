@@ -458,22 +458,11 @@ function stripHtml(html) {
 }
 
 // ────────────────────────────────────────────────────────────────
-// Fetch — 3-strategy proxy chain
+// Fetch — 2-strategy proxy chain
 // ────────────────────────────────────────────────────────────────
 
 async function fetchFeed(feed) {
-  // Strategy 1: Netlify Function
-  try {
-    const fnUrl = `/.netlify/functions/news?url=${encodeURIComponent(feed.url)}`;
-    const res = await fetch(fnUrl, { signal: AbortSignal.timeout(10000) });
-    if (res.ok) {
-      const xmlStr = await res.text();
-      const articles = parseRSSXml(xmlStr, feed);
-      if (articles.length > 0) return articles;
-    }
-  } catch {}
-
-  // Strategy 2: allorigins.win
+  // Strategy 1: allorigins.win
   try {
     const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(feed.url)}`;
     const res = await fetch(proxyUrl, { signal: AbortSignal.timeout(8000) });
@@ -486,7 +475,7 @@ async function fetchFeed(feed) {
     }
   } catch {}
 
-  // Strategy 3: rss2json.com
+  // Strategy 2: rss2json.com
   try {
     const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}&count=10`;
     const res = await fetch(apiUrl, { signal: AbortSignal.timeout(6000) });
