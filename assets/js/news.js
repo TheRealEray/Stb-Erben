@@ -563,22 +563,38 @@ function getCategories(articles) {
   return [...new Set(articles.map(a => a.category))].sort();
 }
 
+/** Escape HTML special chars — prevents XSS from (untrusted) feed content */
+function esc(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+/** Only allow http(s) links; block javascript:/data: etc. */
+function safeUrl(url) {
+  const u = String(url == null ? '' : url).trim();
+  return /^https?:\/\//i.test(u) ? esc(u) : '#';
+}
+
 /** Featured hero card (first article) */
 function renderNmFeatured(article) {
   const desc = article.description
-    ? `<p class="nm-featured__desc">${article.description}…</p>`
+    ? `<p class="nm-featured__desc">${esc(article.description)}…</p>`
     : '';
   const staticBadge = article.isStatic ? ' · Ressource' : '';
   return `
     <div class="nm-featured" role="article">
       <div class="nm-featured__content">
         <div class="nm-featured__badge">★ Top-Beitrag</div>
-        <div class="nm-featured__source">${article.icon}&nbsp;${article.source}&ensp;·&ensp;${article.category}${staticBadge}</div>
-        <h2 class="nm-featured__title">${article.title}</h2>
+        <div class="nm-featured__source">${esc(article.icon)}&nbsp;${esc(article.source)}&ensp;·&ensp;${esc(article.category)}${staticBadge}</div>
+        <h2 class="nm-featured__title">${esc(article.title)}</h2>
         ${desc}
         <div class="nm-featured__footer">
           <time class="nm-featured__date" datetime="${article.date.toISOString()}">${formatDate(article.date)}</time>
-          <a href="${article.link}" target="_blank" rel="noopener noreferrer" class="nm-featured__link">
+          <a href="${safeUrl(article.link)}" target="_blank" rel="noopener noreferrer" class="nm-featured__link">
             Artikel lesen
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -596,24 +612,24 @@ function renderNmFeatured(article) {
 /** Grid card (remaining articles) */
 function renderNmCard(article, index) {
   const desc = article.description
-    ? `<p class="nm-card__desc">${article.description}…</p>`
+    ? `<p class="nm-card__desc">${esc(article.description)}…</p>`
     : '';
   const delay = (index % 9) * 0.055;
   const staticTag = article.isStatic
     ? '<span class="nm-card__static-tag">Ressource</span>'
     : '';
   return `
-    <article class="nm-card" data-category="${article.category}" style="animation-delay:${delay}s">
+    <article class="nm-card" data-category="${esc(article.category)}" style="animation-delay:${delay}s">
       <div class="nm-card__meta">
-        <span class="nm-card__source">${article.icon}&nbsp;${article.source}</span>
-        <span class="nm-card__category">${article.category}</span>
+        <span class="nm-card__source">${esc(article.icon)}&nbsp;${esc(article.source)}</span>
+        <span class="nm-card__category">${esc(article.category)}</span>
         ${staticTag}
       </div>
-      <h3 class="nm-card__title">${article.title}</h3>
+      <h3 class="nm-card__title">${esc(article.title)}</h3>
       ${desc}
       <div class="nm-card__footer">
         <time class="nm-card__date" datetime="${article.date.toISOString()}">${formatDate(article.date)}</time>
-        <a href="${article.link}" target="_blank" rel="noopener noreferrer" class="nm-card__link">
+        <a href="${safeUrl(article.link)}" target="_blank" rel="noopener noreferrer" class="nm-card__link">
           Lesen
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">

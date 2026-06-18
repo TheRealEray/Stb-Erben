@@ -516,15 +516,21 @@
             <p class="text-center" style="color: var(--color-text-light); margin-bottom: var(--spacing-xl);" data-i18n="pages.contact.map.intro">
                 Weierstraße 43, 52349 Düren – mitten in Düren, gut erreichbar.
             </p>
-            <iframe
-                class="map-embed"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.8!2d6.4814!3d50.8053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf3f9c1f9c9c9d%3A0x1!2sWeierstra%C3%9Fe%2043%2C%2052349%20D%C3%BCren!5e0!3m2!1sde!2sde!4v1234567890"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                title="Standort Steuerkanzlei Ibrahim Erben in Düren">
-            </iframe>
+            <div class="map-consent" style="position:relative; min-height:400px; margin-top: var(--spacing-xl);">
+                <iframe
+                    class="map-embed"
+                    data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.8!2d6.4814!3d50.8053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf3f9c1f9c9c9d%3A0x1!2sWeierstra%C3%9Fe%2043%2C%2052349%20D%C3%BCren!5e0!3m2!1sde!2sde!4v1234567890"
+                    style="border:0; margin-top:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Standort Steuerkanzlei Ibrahim Erben in Düren">
+                </iframe>
+                <div class="map-consent__overlay" style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1rem; text-align:center; padding:1.5rem; background:var(--color-bg); border:1px solid var(--color-border); border-radius:var(--border-radius);">
+                    <p style="margin:0; max-width:46ch; color:var(--color-text-light); font-size:0.9rem;">Mit dem Laden der Karte akzeptieren Sie die <a href="datenschutz.html">Datenschutzerklärung</a> von Google. Dabei wird Ihre IP-Adresse an Google übertragen.</p>
+                    <button type="button" class="btn btn--primary js-map-load">Karte laden</button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -855,6 +861,8 @@
 
     <!-- Navigation Helpers -->
     <script src="assets/js/navigation-helpers.js?v=2026030701" defer></script>
+    <!-- Google Maps 2-Klick-Consent -->
+    <script src="assets/js/map-consent.js?v=2026030701" defer></script>
     <!-- Search Modal -->
     <div class="search-modal">
         <div class="search-modal-content">
