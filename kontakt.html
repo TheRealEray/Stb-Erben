@@ -754,31 +754,33 @@
                 termin: 'Terminanfrage'
             }[data.subject] || data.subject;
 
-            // Submit via FormSubmit (no email client, no backend needed)
+            // Submit via Web3Forms (no email client, no backend needed)
             const submitBtn = form.querySelector('.form__submit');
             submitBtn.disabled = true;
             submitBtn.textContent = 'Wird gesendet…';
 
             try {
-                const response = await fetch('https://formsubmit.co/ajax/info@stberben.com', {
+                const response = await fetch('https://api.web3forms.com/submit', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({
-                        _subject: `Kontaktanfrage: ${subjectLabel}`,
+                        access_key: 'e73ec960-d685-4d5e-9581-1fa83d8b39d2',
+                        subject: `Kontaktanfrage: ${subjectLabel}`,
+                        from_name: data.name,
+                        replyto: data.email,
                         name: data.name,
                         email: data.email,
                         telefon: data.phone || 'Nicht angegeben',
                         betreff: subjectLabel,
-                        nachricht: data.message,
-                        _template: 'table'
+                        nachricht: data.message
                     })
                 });
 
                 const result = await response.json();
-                if (!response.ok || result.success === 'false') throw new Error(result.message || 'Fehler');
+                if (!response.ok || !result.success) throw new Error(result.message || 'Fehler');
 
                 // Show success state
                 const successEl = document.getElementById('form-success');

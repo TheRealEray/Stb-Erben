@@ -21,3 +21,6 @@
 # Build artifacts
 deploy.zip
 dist/
+
+# Playwright MCP test artifacts
+.playwright-mcp/
