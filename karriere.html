@@ -894,6 +894,15 @@
       var email = this.email.value.trim();
       var motivationsschreiben = this.motivationsschreiben.value.trim();
 
+      if (!this.datenschutz.checked) {
+        msg.style.display = 'block';
+        msg.style.background = '#fef2f2';
+        msg.style.border = '1px solid #fca5a5';
+        msg.style.color = '#dc2626';
+        msg.textContent = 'Bitte stimmen Sie der Datenschutzerklärung zu, um Ihre Bewerbung absenden zu können.';
+        return;
+      }
+
       if (!vorname || !nachname || !email || !motivationsschreiben) {
         msg.style.display = 'block';
         msg.style.background = '#fef2f2';
