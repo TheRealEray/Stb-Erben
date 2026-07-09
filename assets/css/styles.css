@@ -4122,12 +4122,9 @@ img {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .scroll-to-top {
-    /* Move to left side so it doesn't clash with TOC/Call/WA on the right */
-    bottom: 5rem;
-    left: 1.5rem;
-    right: auto;
-    width: 44px;
-    height: 44px;
+    /* Hidden on mobile: sticky CTA + social dial are enough floating
+       elements; browsers make scrolling back up easy anyway. */
+    display: none;
   }
 
   .toc-sidebar {

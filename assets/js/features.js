@@ -63,32 +63,37 @@ function initReadingTime() {
 
 /**
  * Feature 4: Sticky Contact CTA
- * Always-visible call to action button
- * (No JS needed - pure CSS, but function here for consistency)
+ * Shown only after scrolling past the hero (which has its own CTAs);
+ * hidden again while the footer is in view to avoid overlap.
+ * JS-off fallback: CSS keeps the CTA always visible.
  */
 function initStickyCTA() {
   const stickyCTA = document.querySelector('.sticky-cta');
   if (!stickyCTA) return;
 
-  // Optional: Hide CTA when footer is visible to avoid overlap
   const footer = document.querySelector('.footer');
-  if (!footer) return;
+  let footerVisible = false;
+  const SCROLL_THRESHOLD = 500;
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        stickyCTA.style.opacity = '0';
-        stickyCTA.style.pointerEvents = 'none';
-      } else {
-        stickyCTA.style.opacity = '1';
-        stickyCTA.style.pointerEvents = 'auto';
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
+  function updateVisibility() {
+    const show = window.pageYOffset > SCROLL_THRESHOLD && !footerVisible;
+    stickyCTA.style.opacity = show ? '1' : '0';
+    stickyCTA.style.pointerEvents = show ? 'auto' : 'none';
+  }
 
-  observer.observe(footer);
+  stickyCTA.style.transition = 'opacity 0.25s ease';
+  updateVisibility();
+  window.addEventListener('scroll', updateVisibility, { passive: true });
+
+  if (footer) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        footerVisible = entry.isIntersecting;
+        updateVisibility();
+      });
+    }, { threshold: 0.1 });
+    observer.observe(footer);
+  }
 }
 
 // Export functions for testing/debugging
