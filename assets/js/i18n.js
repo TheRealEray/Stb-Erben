@@ -33,10 +33,14 @@ class I18n {
       return storedLang;
     }
 
-    // 3. Check browser language
-    const browserLang = navigator.language.split('-')[0];
-    if (this.supportedLanguages.includes(browserLang)) {
-      return browserLang;
+    // 3. Fall back to the language this page was served in.
+    // Deliberately NOT navigator.language: search engines render with an
+    // English locale, which made Googlebot see English titles/content on
+    // the German URLs. Visitors switch languages via the language picker
+    // (stored in localStorage) or the dedicated /en/ and /tr/ pages.
+    const documentLang = (document.documentElement.lang || '').split('-')[0];
+    if (this.supportedLanguages.includes(documentLang)) {
+      return documentLang;
     }
 
     // 4. Default to German
